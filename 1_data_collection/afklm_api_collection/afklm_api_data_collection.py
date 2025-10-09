@@ -15,8 +15,6 @@ The script will iterate over:
 For each querry, a .json file named according to the parameters of the querry and page number will be produced in the /data folder. Upon ulterior runs of this script, it will skip any API calls for which there is already a corresponding .json file (page nb and call parameter) 
 
 '''
-
-
 ### Library import
 
 import pandas as pd
