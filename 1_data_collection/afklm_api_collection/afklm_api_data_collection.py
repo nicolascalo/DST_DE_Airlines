@@ -1,24 +1,32 @@
+### Library import
+
 import pandas as pd
 import requests
-
-import pprint
 import re
 import time
 import json
-import datetime
 import os
+
+### Creation of folders for retrieved data
 
 if not os.path.isdir("data"):
     os.mkdir("data")
 
-API_key = "ect462qphynr9znnq4zn9fy5"
-API_secret = "9xay0N3nuK"
 
+### Loading API keys to use
+
+with open(f"afklm_api_keys.txt", "r") as f:
+    API_key_list =  f.read().split("\n")
+
+API_key_list_length = len(API_key_list)
+
+### Definition of base urls for API call
 
 base_url ="https://api.airfranceklm.com/opendata/flightstatus/?"
-headers = {"API-Key": API_key,'Content-Type': 'application/x-www-form-urlencoded'}
+headers = {'Content-Type': 'application/x-www-form-urlencoded'}
 
 
+### Definition of default parameters for API call
 
 aircraftRegistration  = ''	#	string	Registration code of the aircraft		PHBEF	
 aircraftType = ''	#	string	Filter by a type of aircraft		737	
@@ -42,36 +50,39 @@ carrierCode = ",".join(carrierCode)
 operatingAirlineCode = ",".join(operatingAirlineCode)
 serviceType = ",".join(serviceType)
 
-
-
-
 pageNumber = 1	#	integer<int32>	Indicates the page number you are requesting, the first page is page 0. If it's not provided first page will be returned		1	
-pageSize = ''	#	integer<int32>	Indicates the number of items per page	null	100	
+pageSize = ''	#	integer<int32>	Indicates the number of items per page	null	100	-> Does not seem to do anything
+
+
+
+### Cleaning of empty parameter calls
 
 
 params = [f"{aircraftRegistration=}", f"{aircraftType=}", f"{arrivalCity=}", f"{carrierCode=}", f"{consumerHost=}", f"{departureCity=}", f"{destination=}", f"{flightNumber=}", f"{movementType=}", f"{operatingAirlineCode=}", f"{operationalSuffix=}", f"{origin=}",  f"{pageSize=}" , f"{serviceType=}", f"{timeOriginType=}", f"{timeType=}", f"{endRange=}", f"{startRange=}"]
 
 params_not_null = [re.sub("\'","",param) for param in params if not (re.search("\'\'",param)) ]
 
-call_parameters = "&".join(params_not_null)
+call_parameters_url = "&".join(params_not_null)
 
-url = base_url + call_parameters
-
-
+url = base_url + call_parameters_url
 
 
-while os.path.isfile(f"data/afklm_api_data_collection_{re.sub(":","_",call_parameters)}_{pageNumber}.json"):
+
+### Checking of presence of already downloaded pages for the current parameter set and adjustment of the page number to fetch
+
+
+while os.path.isfile(f"data/afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json"):
     pageNumber = pageNumber + 1
-    
-    
-    
 
 url_page = (url + f"&{pageNumber=}").replace("?&","?")
 
-page_max = 1000
+page_max = 10000 # Temporary number of pages in the collection totaluntil update after 1st API call
 
 
-print(f"API call parameters = {call_parameters}")
+print(f"API call parameters = {call_parameters_url}")
+
+
+API_key_counter = 0
 
 
 while pageNumber < page_max:
@@ -79,42 +90,45 @@ while pageNumber < page_max:
     print(f"Querrying page {pageNumber} / {page_max}")
     print(url_page)
     
-
+    API_key = API_key_list[API_key_counter]
+    headers = {"API-Key": API_key}
     response = requests.get(url_page, headers=headers)
-
-
 
     time.sleep(1.5) # API limited to 1 call / s, 100 / day
     
-    
-    print(f"Page found: {response.__bool__()}")
-
+    print("")
+    url_page = (url + f"&{pageNumber=}").replace("?&","?")
+    print(f"Page found: {response.__bool__()}\n")
 
     if  response.__bool__() : # True if response < 400
 
         data = response.json()
         
-        page_max =  data['page']['totalPages']
+        page_max =  data['page']['totalPages'] # Update total number of pages
         
         json_str = json.dumps(data, indent=4)
         
-        # current_time = datetime.datetime.now()
-        # current_time = f"{current_time.year}-{current_time.month}-{current_time.day}-{current_time.hour}h{current_time.minute}m{current_time.second}s"
-        
-        with open(f"data/afklm_api_data_collection_{re.sub(":","_",call_parameters)}_{pageNumber}.json", "w") as f:
+        with open(f"data/afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json", "w") as f:
             f.write(json_str)
+            
+        pageNumber = pageNumber + 1
+    
+    elif API_key_list_length > API_key_counter + 1 : # Iterate of API key list to test the next one
         
+        API_key_counter = API_key_counter + 1
         
+        print("Trying next API key\n")
         
     else:
-        print(f"Page nb {pageNumber} not found")
+        
+        print(f"Provided API keys could retrieve anymore any pages")
+        print(response)
 
-        print("Aborting the API call")
+        print("Aborting the API call\n")
         
         break
     
-    pageNumber = pageNumber + 1
-    url_page = (url + f"&{pageNumber=}").replace("?&","?")
-    print("")
+    
+    
         
 
