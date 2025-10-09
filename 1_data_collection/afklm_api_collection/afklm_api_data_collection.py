@@ -1,3 +1,22 @@
+'''
+Written by Nicolas Calo
+
+Script for data mining on the AIr France KLM ""https://api.airfranceklm.com/opendata/flightstatus/" API.
+
+This script requires an afklm_api_keys.txt file containing the personal API keys (one on each line) to use to querry the API.
+
+An additional df_call_parameters.csv file can be provided to set up the parameters to querry. This csv should contain a dataframe precising all the combinations of values needed to be retrived (one querry for each row of the datafrane)
+
+The script will iterate over:
+- each row of the dataframe for the parameters (or use a single set of default values if no csv provided)
+- each page of the query results
+- each provided API keys when a key daily allotment has beem totally consumed
+
+For each querry, a .json file named according to the parameters of the querry and page number will be produced in the /data folder. Upon ulterior runs of this script, it will skip any API calls for which there is already a corresponding .json file (page nb and call parameter) 
+
+'''
+
+
 ### Library import
 
 import pandas as pd
