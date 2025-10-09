@@ -1,0 +1,146 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 150,
+            "flightScheduleDate": "2025-10-09",
+            "id": "20251009+EK+0150",
+            "haul": "LONG",
+            "route": [
+                "AMS",
+                "DXB"
+            ],
+            "airline": {
+                "code": "EK",
+                "name": "EMIRATES"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251009+EK+0149",
+                    "flightScheduleDate": "2025-10-09",
+                    "airlineCode": "EK",
+                    "flightNumber": "0149"
+                }
+            },
+            "flightStatusPublic": "ON_TIME",
+            "flightStatusPublicLangTransl": "On time",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ONTIME",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "G09"
+                                ],
+                                "parkingPosition": "G09",
+                                "pierCode": "G",
+                                "terminalCode": "03",
+                                "boardingPier": "G",
+                                "checkInZone": [
+                                    "29"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-09T21:50:00.000+02:00",
+                            "latestPublished": "2025-10-09T21:50:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "DXB",
+                            "name": "DUBAI INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Dubai International Airport",
+                            "city": {
+                                "code": "DXB",
+                                "name": "DUBAI",
+                                "nameLangTranl": "Dubai",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "AE",
+                                    "name": "UNITED ARAB EMIRATES",
+                                    "nameLangTranl": "United Arab Emirates",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 25.25,
+                                "longitude": 55.3578
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-09T23:50:00.000+04:00",
+                            "latestPublished": "2025-10-09T23:50:00.000+04:00",
+                            "estimated": {
+                                "value": "2025-10-09T23:50:00.000+04:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ON_TIME",
+                    "legStatusPublicLangTransl": "On time",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0200",
+                    "aircraft": {
+                        "registration": "A6EEQ",
+                        "typeCode": "388",
+                        "typeName": "AIRBUS A380-800 PASSENGER",
+                        "physicalPaxConfiguration": "F014J076Y429",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 1,
+        "pageNumber": 0,
+        "fullCount": 1,
+        "pageCount": 1,
+        "totalPages": 1
+    }
+}

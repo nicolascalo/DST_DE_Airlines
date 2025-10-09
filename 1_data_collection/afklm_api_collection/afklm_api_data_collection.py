@@ -46,12 +46,15 @@ dict_call_parameters = {
 "serviceType": []	, #	array[string]	IATA service type code		J	
 "timeOriginType": ''	, #	string	S": Scheduled, M": Modified, I": Internal, P": Public	SMIP	S	
 "timeType": ''	, #	string	Type of time used in startRange and endRange U": UTC time, L": Local Time	UL	U	
-"endRange": '2025-07-23T23":59":59Z'	, #	string<date-time>	End on this date time		2023-12-31T23":59":59.000Z	required
-"startRange": '2025-07-21T09":00":00Z'	, #	string<date-time>	Start from this date time		2023-12-31T09":00":00.000Z	required
-"carrierCode": ",".join(carrierCode),
-"operatingAirlineCode": ",".join(operatingAirlineCode),
-"serviceType": ",".join(serviceType),
+"endRange": '2025-07-23T23:59:59Z'	, #	string<date-time>	End on this date time		2023-12-31T23":59":59.000Z	required
+"startRange": '2025-07-21T09:00:00Z'	#	string<date-time>	Start from this date time		2023-12-31T09":00":00.000Z	required
 }
+
+
+
+dict_call_parameters["carrierCode"] =",".join(dict_call_parameters['carrierCode'])
+dict_call_parameters["operatingAirlineCode"] =",".join(dict_call_parameters['operatingAirlineCode'])
+dict_call_parameters["serviceType"] =",".join(dict_call_parameters['serviceType'])
 
 
 pageNumber = 1	 #	integer<int32>	Indicates the page number you are requesting, the first page is page 0. If it's not provided first page will be returned		1	
@@ -69,9 +72,10 @@ if os.path.isfile("df_call_parameters.csv"):
 
 i = 0
 
+
 for i in range(0, len(df_call_parameters)): ### loop over the csv file containing the parameter list to send to the API
     
-    print(f"{i=}")
+    API_key_counter = 0
     
     df_subset = df_call_parameters.iloc[[i]]
 
@@ -86,10 +90,14 @@ for i in range(0, len(df_call_parameters)): ### loop over the csv file containin
     url = base_url + call_parameters_url
     url = url.replace(" ","")
 
+    if df_subset['endRange'] < df_subset['startRange']:
+        print("ERROR: endRange < startRange")
+        break
 
     ### Checking of presence of already downloaded pages for the current parameter set and adjustment of the page number to fetch
 
-
+    pageNumber = 0
+    
     while os.path.isfile(f"data/afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json"):
         pageNumber = pageNumber + 1
 
@@ -97,12 +105,12 @@ for i in range(0, len(df_call_parameters)): ### loop over the csv file containin
 
     page_max = 10000 # Temporary number of pages in the collection total until update after 1st API call
 
+    print("")
+    print(f"API call parameters: {call_parameters_url}")
 
-    print(f"API call parameters = {call_parameters_url}")
 
-
-    API_key_counter = 0
-    print(f"{API_key_counter}")
+    
+    # print(f"{API_key_counter}")
 
 
     while pageNumber < page_max and pageNumber < 4: # pageNumber < 4 for testing purposes only and not to consume to quickly the API call daily limit
@@ -111,16 +119,16 @@ for i in range(0, len(df_call_parameters)): ### loop over the csv file containin
         print(url_page)
         
         API_key = API_key_list[API_key_counter]
-        headers = {"API-Key": API_key}
-        
+        headers['API-Key'] = API_key
+        print(f"{API_key = }")
         
         response = requests.get(url_page, headers=headers)
 
         time.sleep(1.5) # API limited to 1 call / s, 100 / day
         
-        print("")
+        
         url_page = (url + f"&{pageNumber=}").replace("?&","?")
-        print(f"Page found: {response.__bool__()}\n")
+        print(f"Page found: {response.__bool__()}")
 
         if  response.__bool__() : # True if response < 400
 
@@ -138,17 +146,17 @@ for i in range(0, len(df_call_parameters)): ### loop over the csv file containin
         elif API_key_list_length > API_key_counter + 1 : # Iterate of API key list to test the next one
             
             API_key_counter = API_key_counter + 1
-            
+            print(response)
             print("Trying next API key\n")
             
         else:
             
-            print(f"Provided API keys could retrieve anymore any pages or issues in the parameters of the call")
+            print(f"Provided API keys could not retrieve anymore any pages / issues in the parameters of the call")
             print(response)
-
-            print("Aborting the API call\n")
-            
             break
+           
+
+            
         
         
       
