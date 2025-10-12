@@ -38,8 +38,18 @@ if not os.path.isdir("data"):
 
 with open(f"afklm_api_keys.txt", "r") as f:
     API_key_list =  f.read().split("\n")
+    
+API_key_list_cleaned = []
 
-API_key_list_length = len(API_key_list)
+for api in API_key_list:
+    
+    api_cleaned = re.sub(" #.*","",api)
+    API_key_list_cleaned.append(api_cleaned)
+    
+    
+
+
+API_key_list_length = len(API_key_list_cleaned)
 
 ### Definition of base urls for API call
 
@@ -139,7 +149,7 @@ for i in range(0, len(df_call_parameters)): ### loop over the csv file containin
         print(f"Querrying page {pageNumber} / {page_max}")
         print(url_page)
         
-        API_key = API_key_list[API_key_counter]
+        API_key = API_key_list_cleaned[API_key_counter]
         headers['API-Key'] = API_key
         print(f"{API_key = }")
         
