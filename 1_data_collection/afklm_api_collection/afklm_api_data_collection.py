@@ -36,7 +36,7 @@ if not os.path.isdir("data"):
 
 ### Loading API keys to use
 
-with open(f"afklm_api_keys.txt", "r") as f:
+with open(f"./afklm_api_keys.txt", "r") as f:
     API_key_list =  f.read().split("\n")
     
 API_key_list_cleaned = []
@@ -121,6 +121,8 @@ for i in range(0, len(df_call_parameters)): ### loop over the csv file containin
     url = base_url + call_parameters_url
     url = url.replace(" ","")
 
+    ### Check date coherence
+
     if df_subset['endRange'].item() < df_subset['startRange'].item():
         print("ERROR: endRange < startRange")
         break
@@ -144,7 +146,7 @@ for i in range(0, len(df_call_parameters)): ### loop over the csv file containin
     # print(f"{API_key_counter}")
 
 
-    while pageNumber < page_max & pageNumber < 4: # pageNumber < 4 for testing purposes only and not to consume to quickly the API call daily limit
+    while pageNumber <= page_max # & pageNumber < 4: # pageNumber < 4 for testing purposes only and not to consume to quickly the API call daily limit
         
         print(f"Querrying page {pageNumber} / {page_max}")
         print(url_page)
@@ -159,6 +161,7 @@ for i in range(0, len(df_call_parameters)): ### loop over the csv file containin
         
         
         url_page = (url + f"&{pageNumber=}").replace("?&","?")
+        
         print(f"Page found: {response.__bool__()}")
 
         if  response.__bool__() : # True if response < 400
