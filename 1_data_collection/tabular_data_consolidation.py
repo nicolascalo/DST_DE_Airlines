@@ -66,9 +66,9 @@ df_edigla_clean_count_iata.info()
 
 
 
-df_edigla_clean_count_iata.to_csv("df_edigla_clean_count_iata_icao_wiki")
+df_edigla_clean_count_iata.to_csv("df_edigla_clean_count_iata_icao_wiki.csv")
 
 df_edigla_clean_count_iata_eu = df_edigla_clean_count_iata[(df_edigla_clean_count_iata['departure_continent'] == 'Europe' )&( df_edigla_clean_count_iata['destination_continent'] == 'Europe')]
 
 
-df_edigla_clean_count_iata_eu.to_csv("df_edigla_clean_count_iata_icao_wiki_eu")
+df_edigla_clean_count_iata_eu.to_csv("df_edigla_clean_count_iata_icao_wiki_eu.csv")
