@@ -1,0 +1,12 @@
+version: "3.3"
+services:
+  mongodb:
+    image : mongo:7.0
+    container_name: dst_de_airlines
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: datascientest
+      MONGO_INITDB_ROOT_PASSWORD: dst123
+    volumes:
+      - ./afklm_db:/data/db
+    ports:
+      - 27017:27017
