@@ -136,7 +136,17 @@ for i in range(0, len(df_call_parameters)): ### loop over the csv file containin
 
     url_page = (url + f"&{pageNumber=}").replace("?&","?")
 
-    page_max = 10000 # Temporary number of pages in the collection total until update after 1st API call
+    file_page_0 = f"data/afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_0.json"
+
+    if os.path.isfile(file_page_0):
+        
+        
+        with open(file_page_0) as f:
+            data = json.load(f)
+
+        page_max =  data['page']['totalPages']
+    else:  
+        page_max = 10000 # Temporary number of pages in the collection total until update after 1st API call
 
     print("")
     print(f"API call parameters: {call_parameters_url}")
@@ -146,7 +156,7 @@ for i in range(0, len(df_call_parameters)): ### loop over the csv file containin
     # print(f"{API_key_counter}")
 
     
-    while pageNumber <= page_max & pageNumber < 2: # & pageNumber < 4: pageNumber < 4 for testing purposes only and not to consume to quickly the API call daily limit
+    while pageNumber <= page_max : # & pageNumber < 4: pageNumber < 4 for testing purposes only and not to consume to quickly the API call daily limit
         
         print(f"Querrying page {pageNumber} / {page_max}")
         print(url_page)
