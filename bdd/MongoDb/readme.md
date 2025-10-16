@@ -8,12 +8,16 @@
 
 Required parameters are documented in the `docker-composestruct` file.
 
-2. Start the Docker container:
+2. Navigate to the MongoDb folder:
+```bash
+cd bdd/MongoDb
+
+3. Start the Docker container:
 ```bash
 docker-compose up -d
 ```
 
-3. Access the container:
+4. Access the container:
 ```bash
 docker exec -it <container_name> bash
 ```
