@@ -8,4 +8,4 @@ load_dotenv()
 
 
 
-mongo_db_connect = MongoClient(os.getenv('MONGODB_URI'))
+mongo_db_connect = MongoClient(os.getenv('MONGODB_URI'))[os.getenv('DATABASE_NAME')]
