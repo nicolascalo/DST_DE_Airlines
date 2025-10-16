@@ -144,7 +144,7 @@ for i in range(0, len(df_call_parameters)): ### loop over the csv file containin
         with open(file_page_0) as f:
             data = json.load(f)
 
-        page_max =  data['page']['totalPages']
+        page_max =  data['page']['totalPages']+1
     else:  
         page_max = 10000 # Temporary number of pages in the collection total until update after 1st API call
 
