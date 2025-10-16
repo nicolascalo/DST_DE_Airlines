@@ -6,6 +6,8 @@
 
 1. Fill in the `docker-compose.yml` file
 
+Required parameters are documented in the `docker-composestruct` file.
+
 2. Start the Docker container:
 ```bash
 docker-compose up -d
