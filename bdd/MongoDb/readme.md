@@ -11,6 +11,7 @@ Required parameters are documented in the `docker-composestruct` file.
 2. Navigate to the MongoDb folder:
 ```bash
 cd bdd/MongoDb
+```
 
 3. Start the Docker container:
 ```bash
