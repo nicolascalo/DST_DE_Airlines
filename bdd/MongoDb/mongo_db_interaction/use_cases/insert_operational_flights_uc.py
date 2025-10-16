@@ -1,5 +1,7 @@
-from ..services.exploitation_json import count_json
+from ..services.exploitation_json import count_object_json
 from ..repositories.operational_flights import insert_one, insert_many
+from ..services.folder_exploration import get_folder_path_in_env
+
 
 
 
@@ -13,10 +15,12 @@ def insert(file):
 
 
 def is_many_objects_in_file(file):
-    if count_json(file) > 1:
+    if count_object_json(file) > 1:
         return True
     else :
         return False
 
-
-insert("/home/johan/Documents/Formation/Projet/Recherche_Mongo/afklm_api_data_collection_arrivalCity=DXB_0.json")
+def build_insert_path_file(file):
+    folder_path = get_folder_path_in_env
+    file_path = folder_path + file
+    return file_path
