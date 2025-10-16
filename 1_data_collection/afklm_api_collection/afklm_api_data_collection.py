@@ -129,7 +129,7 @@ for i in range(0, len(df_call_parameters)): ### loop over the csv file containin
 
     ### Checking of presence of already downloaded pages for the current parameter set and adjustment of the page number to fetch
 
-    pageNumber = 0
+    pageNumber = 1
     
     while os.path.isfile(f"data/afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json"):
         pageNumber = pageNumber + 1
