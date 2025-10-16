@@ -15,9 +15,12 @@ def insert_many(json_file):
 
     mongo_db_connect[collection].insert_one(json_file)
 
+def create_index():
+    mongo_db_connect[collection].create_index([("operationalFlights.id", 1)], unique=True)
+
 
 def get_by_id(id):
-    mongo_db_connect[collection].findOne({"operationalFlights.id:"+id})
+    mongo_db_connect[collection].findOne({"operationalFlights.id":id})
 
 
 
