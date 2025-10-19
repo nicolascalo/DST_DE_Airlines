@@ -1,0 +1,1011 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 7448,
+            "flightScheduleDate": "2025-10-08",
+            "id": "20251008+TO+7448",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "ARN"
+            ],
+            "airline": {
+                "code": "TO",
+                "name": "TRANSAVIA FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251008+TO+8099",
+                    "flightScheduleDate": "2025-10-08",
+                    "airlineCode": "TO",
+                    "flightNumber": "8099"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    "E03"
+                                ],
+                                "parkingPosition": "A41",
+                                "pierCode": "3",
+                                "terminalCode": "3",
+                                "boardingPier": "E",
+                                "boardingTerminal": "3",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "D",
+                                "parkingPositionCustomStatus": "M",
+                                "checkInAerogare": "3",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-08T13:49:00.000+02:00",
+                            "scheduled": "2025-10-08T13:45:00.000+02:00",
+                            "latestPublished": "2025-10-08T13:49:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-08T13:59:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-08T16:15:00.000+02:00",
+                            "latestPublished": "2025-10-08T16:27:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-08T16:27:00.000+02:00"
+                            },
+                            "estimatedArrival": "2025-10-08T16:27:00.000+02:00",
+                            "estimatedTouchDownTime": "2025-10-08T16:20:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H30M",
+                    "departureDateTimeDifference": "PT4M",
+                    "arrivalDateTimeDifference": "PT12M",
+                    "timeToArrival": "PT-239H-59M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHXSE",
+                        "typeCode": "32N",
+                        "typeName": "AIRBUS A320NEO",
+                        "ownerAirlineCode": "TO",
+                        "ownerAirlineName": "TRANSAVIA FRANCE",
+                        "physicalPaxConfiguration": "Y186",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y186"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "05"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "4"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT12M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "05",
+                                "delayDuration": "4"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7448,
+            "flightScheduleDate": "2025-10-09",
+            "id": "20251009+TO+7448",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "ARN"
+            ],
+            "airline": {
+                "code": "TO",
+                "name": "TRANSAVIA FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251009+TO+3501",
+                    "flightScheduleDate": "2025-10-09",
+                    "airlineCode": "TO",
+                    "flightNumber": "3501"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    "E08"
+                                ],
+                                "parkingPosition": "G04",
+                                "pierCode": "3",
+                                "terminalCode": "3",
+                                "boardingPier": "E",
+                                "boardingTerminal": "3",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "L",
+                                "parkingPositionType": "L",
+                                "parkingPositionCustomStatus": "M",
+                                "checkInAerogare": "3",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-09T16:08:00.000+02:00",
+                            "scheduled": "2025-10-09T16:10:00.000+02:00",
+                            "latestPublished": "2025-10-09T16:08:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-09T16:21:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-09T18:40:00.000+02:00",
+                            "latestPublished": "2025-10-09T18:52:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-09T18:52:00.000+02:00"
+                            },
+                            "estimatedArrival": "2025-10-09T18:52:00.000+02:00",
+                            "estimatedTouchDownTime": "2025-10-09T18:45:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H30M",
+                    "departureDateTimeDifference": "PT-2M",
+                    "arrivalDateTimeDifference": "PT12M",
+                    "timeToArrival": "PT-213H-34M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "YLABQ",
+                        "typeCode": "223",
+                        "typeName": "AIRBUS A220-300 PASSENGER",
+                        "ownerAirlineCode": "BT",
+                        "ownerAirlineName": "AIR BALTIC CORPORATION AS",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y189"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT12M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7448,
+            "flightScheduleDate": "2025-10-10",
+            "id": "20251010+TO+7448",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "ARN"
+            ],
+            "airline": {
+                "code": "TO",
+                "name": "TRANSAVIA FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251010+TO+3501",
+                    "flightScheduleDate": "2025-10-10",
+                    "airlineCode": "TO",
+                    "flightNumber": "3501"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    "E09"
+                                ],
+                                "parkingPosition": "E01",
+                                "pierCode": "3",
+                                "terminalCode": "3",
+                                "boardingPier": "E",
+                                "boardingTerminal": "3",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "L",
+                                "parkingPositionType": "L",
+                                "parkingPositionCustomStatus": "M",
+                                "checkInAerogare": "3",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-10T16:50:00.000+02:00",
+                            "scheduled": "2025-10-10T16:35:00.000+02:00",
+                            "latestPublished": "2025-10-10T16:50:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-10T17:07:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-10T19:05:00.000+02:00",
+                            "latestPublished": "2025-10-10T19:41:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-10T19:41:00.000+02:00"
+                            },
+                            "estimatedArrival": "2025-10-10T19:41:00.000+02:00",
+                            "estimatedTouchDownTime": "2025-10-10T19:34:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H30M",
+                    "departureDateTimeDifference": "PT15M",
+                    "arrivalDateTimeDifference": "PT36M",
+                    "timeToArrival": "PT-188H-45M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHUYV",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "TO",
+                        "ownerAirlineName": "TRANSAVIA FRANCE",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y189"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "05"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "15"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT15M",
+                        "delayDurationArrival": "PT36M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "05",
+                                "delayDuration": "15"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7448,
+            "flightScheduleDate": "2025-10-12",
+            "id": "20251012+TO+7448",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "ARN"
+            ],
+            "airline": {
+                "code": "TO",
+                "name": "TRANSAVIA FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251012+TO+4709",
+                    "flightScheduleDate": "2025-10-12",
+                    "airlineCode": "TO",
+                    "flightNumber": "4709"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    "E20"
+                                ],
+                                "parkingPosition": "D01",
+                                "pierCode": "3",
+                                "terminalCode": "3",
+                                "boardingPier": "E",
+                                "boardingTerminal": "3",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "E",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "3",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-12T16:04:00.000+02:00",
+                            "scheduled": "2025-10-12T15:45:00.000+02:00",
+                            "latestPublished": "2025-10-12T16:04:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-12T16:15:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-12T18:15:00.000+02:00",
+                            "latestPublished": "2025-10-12T18:43:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-12T18:43:00.000+02:00"
+                            },
+                            "estimatedArrival": "2025-10-12T18:43:00.000+02:00",
+                            "estimatedTouchDownTime": "2025-10-12T18:35:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H30M",
+                    "departureDateTimeDifference": "PT19M",
+                    "arrivalDateTimeDifference": "PT28M",
+                    "timeToArrival": "PT-141H-43M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHXSI",
+                        "typeCode": "32N",
+                        "typeName": "AIRBUS A320NEO",
+                        "ownerAirlineCode": "TO",
+                        "ownerAirlineName": "TRANSAVIA FRANCE",
+                        "physicalPaxConfiguration": "Y186",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y186"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "05"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "19"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT19M",
+                        "delayDurationArrival": "PT28M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "05",
+                                "delayDuration": "19"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7448,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+TO+7448",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "ARN"
+            ],
+            "airline": {
+                "code": "TO",
+                "name": "TRANSAVIA FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+TO+8337",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "TO",
+                    "flightNumber": "8337"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    "E04"
+                                ],
+                                "parkingPosition": "A42",
+                                "pierCode": "3",
+                                "terminalCode": "3",
+                                "boardingPier": "E",
+                                "boardingTerminal": "3",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "D",
+                                "parkingPositionCustomStatus": "M",
+                                "checkInAerogare": "3",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T14:02:00.000+02:00",
+                            "scheduled": "2025-10-13T13:35:00.000+02:00",
+                            "latestPublished": "2025-10-13T14:02:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T14:19:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T16:05:00.000+02:00",
+                            "latestPublished": "2025-10-13T16:41:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T16:41:00.000+02:00"
+                            },
+                            "estimatedArrival": "2025-10-13T16:41:00.000+02:00",
+                            "estimatedTouchDownTime": "2025-10-13T16:33:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H30M",
+                    "departureDateTimeDifference": "PT27M",
+                    "arrivalDateTimeDifference": "PT36M",
+                    "timeToArrival": "PT-119H-45M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHXSR",
+                        "typeCode": "32N",
+                        "typeName": "AIRBUS A320NEO",
+                        "ownerAirlineCode": "TO",
+                        "ownerAirlineName": "TRANSAVIA FRANCE",
+                        "physicalPaxConfiguration": "Y186",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y186"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "05"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "27"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT27M",
+                        "delayDurationArrival": "PT36M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "05",
+                                "delayDuration": "27"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7448,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+TO+7448",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "ARN"
+            ],
+            "airline": {
+                "code": "TO",
+                "name": "TRANSAVIA FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+TO+3021",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "TO",
+                    "flightNumber": "3021"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    "E14"
+                                ],
+                                "parkingPosition": "D04",
+                                "pierCode": "3",
+                                "terminalCode": "3",
+                                "boardingPier": "E",
+                                "boardingTerminal": "3",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "E",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "3",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T13:46:00.000+02:00",
+                            "scheduled": "2025-10-14T13:45:00.000+02:00",
+                            "latestPublished": "2025-10-14T13:46:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T13:56:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T16:15:00.000+02:00",
+                            "latestPublished": "2025-10-14T16:27:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T16:27:00.000+02:00"
+                            },
+                            "estimatedArrival": "2025-10-14T16:27:00.000+02:00",
+                            "estimatedTouchDownTime": "2025-10-14T16:21:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H30M",
+                    "departureDateTimeDifference": "PT1M",
+                    "arrivalDateTimeDifference": "PT12M",
+                    "timeToArrival": "PT-95H-59M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHXSU",
+                        "typeCode": "32N",
+                        "typeName": "AIRBUS A320NEO",
+                        "ownerAirlineCode": "TO",
+                        "ownerAirlineName": "TRANSAVIA FRANCE",
+                        "physicalPaxConfiguration": "Y186",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y186"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "02"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "1"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT12M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "02",
+                                "delayDuration": "1"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 6,
+        "pageNumber": 1,
+        "fullCount": 106,
+        "pageCount": 6,
+        "totalPages": 2
+    }
+}

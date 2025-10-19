@@ -1,0 +1,871 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 3052,
+            "flightScheduleDate": "2025-10-05",
+            "id": "20251005+EZY+3052",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "BFS"
+            ],
+            "airline": {
+                "code": "EZY"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251005+EZY+3051",
+                    "flightScheduleDate": "2025-10-05",
+                    "airlineCode": "EZY",
+                    "flightNumber": "3051"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "H04"
+                                ],
+                                "parkingPosition": "H04",
+                                "pierCode": "H",
+                                "terminalCode": "03",
+                                "boardingPier": "H",
+                                "checkInZone": [
+                                    "26"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-05T17:22:00.000+02:00",
+                            "scheduled": "2025-10-05T16:35:00.000+02:00",
+                            "latestPublished": "2025-10-05T17:22:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-05T17:37:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BFS",
+                            "name": "BELFAST INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Belfast International Airport",
+                            "city": {
+                                "code": "BFS",
+                                "name": "BELFAST",
+                                "nameLangTranl": "Belfast",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 54.6533,
+                                "longitude": -6.2247
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-05T15:35:00.000+01:00",
+                            "latestPublished": "2025-10-05T15:35:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-05T15:35:00.000+01:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT47M",
+                    "timeToArrival": "PT-333H-59M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "GEZWD",
+                        "typeCode": "320",
+                        "typeName": "AIRBUS A320",
+                        "ownerAirlineCode": "U2",
+                        "ownerAirlineName": "EASYJET AIRLINE COMPANY LIMITED",
+                        "physicalPaxConfiguration": "Y180",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "93"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0047"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT47M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "93",
+                                "delayDuration": "0047"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 3052,
+            "flightScheduleDate": "2025-10-06",
+            "id": "20251006+EZY+3052",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "BFS"
+            ],
+            "airline": {
+                "code": "EZY"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251006+EZY+3051",
+                    "flightScheduleDate": "2025-10-06",
+                    "airlineCode": "EZY",
+                    "flightNumber": "3051"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "H01"
+                                ],
+                                "parkingPosition": "H01",
+                                "pierCode": "H",
+                                "terminalCode": "03",
+                                "boardingPier": "H",
+                                "checkInZone": [
+                                    "26"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-06T13:38:00.000+02:00",
+                            "scheduled": "2025-10-06T13:15:00.000+02:00",
+                            "latestPublished": "2025-10-06T13:38:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-06T13:54:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BFS",
+                            "name": "BELFAST INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Belfast International Airport",
+                            "city": {
+                                "code": "BFS",
+                                "name": "BELFAST",
+                                "nameLangTranl": "Belfast",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 54.6533,
+                                "longitude": -6.2247
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-06T12:15:00.000+01:00",
+                            "latestPublished": "2025-10-06T12:15:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-06T12:15:00.000+01:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT23M",
+                    "timeToArrival": "PT-313H-19M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "GEZWD",
+                        "typeCode": "320",
+                        "typeName": "AIRBUS A320",
+                        "ownerAirlineCode": "U2",
+                        "ownerAirlineName": "EASYJET AIRLINE COMPANY LIMITED",
+                        "physicalPaxConfiguration": "Y180",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 3052,
+            "flightScheduleDate": "2025-10-09",
+            "id": "20251009+EZY+3052",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "BFS"
+            ],
+            "airline": {
+                "code": "EZY"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251009+EZY+3051",
+                    "flightScheduleDate": "2025-10-09",
+                    "airlineCode": "EZY",
+                    "flightNumber": "3051"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "H07"
+                                ],
+                                "parkingPosition": "H07",
+                                "pierCode": "H",
+                                "terminalCode": "03",
+                                "boardingPier": "H",
+                                "checkInZone": [
+                                    "26"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-09T21:54:00.000+02:00",
+                            "scheduled": "2025-10-09T21:45:00.000+02:00",
+                            "latestPublished": "2025-10-09T21:54:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-09T21:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BFS",
+                            "name": "BELFAST INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Belfast International Airport",
+                            "city": {
+                                "code": "BFS",
+                                "name": "BELFAST",
+                                "nameLangTranl": "Belfast",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 54.6533,
+                                "longitude": -6.2247
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-09T20:45:00.000+01:00",
+                            "latestPublished": "2025-10-09T20:45:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-09T20:45:00.000+01:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT9M",
+                    "timeToArrival": "PT-232H-49M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "GEZTC",
+                        "typeCode": "320",
+                        "typeName": "AIRBUS A320",
+                        "ownerAirlineCode": "U2",
+                        "ownerAirlineName": "EASYJET AIRLINE COMPANY LIMITED",
+                        "physicalPaxConfiguration": "Y180",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 3052,
+            "flightScheduleDate": "2025-10-10",
+            "id": "20251010+EZY+3052",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "BFS"
+            ],
+            "airline": {
+                "code": "EZY"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251010+EZY+3051",
+                    "flightScheduleDate": "2025-10-10",
+                    "airlineCode": "EZY",
+                    "flightNumber": "3051"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "H03"
+                                ],
+                                "parkingPosition": "H03",
+                                "pierCode": "H",
+                                "terminalCode": "03",
+                                "boardingPier": "H",
+                                "checkInZone": [
+                                    "26"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-10T21:48:00.000+02:00",
+                            "scheduled": "2025-10-10T21:45:00.000+02:00",
+                            "latestPublished": "2025-10-10T21:48:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-10T22:01:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BFS",
+                            "name": "BELFAST INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Belfast International Airport",
+                            "city": {
+                                "code": "BFS",
+                                "name": "BELFAST",
+                                "nameLangTranl": "Belfast",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 54.6533,
+                                "longitude": -6.2247
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-10T20:45:00.000+01:00",
+                            "latestPublished": "2025-10-10T20:45:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-10T20:45:00.000+01:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT3M",
+                    "timeToArrival": "PT-208H-49M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "GEZDJ",
+                        "typeCode": "319",
+                        "typeName": "AIRBUS A319",
+                        "ownerAirlineCode": "U2",
+                        "ownerAirlineName": "EASYJET AIRLINE COMPANY LIMITED",
+                        "physicalPaxConfiguration": "Y156",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 3052,
+            "flightScheduleDate": "2025-10-12",
+            "id": "20251012+EZY+3052",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "BFS"
+            ],
+            "airline": {
+                "code": "EZY"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251012+EZY+3051",
+                    "flightScheduleDate": "2025-10-12",
+                    "airlineCode": "EZY",
+                    "flightNumber": "3051"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "H01"
+                                ],
+                                "parkingPosition": "H01",
+                                "pierCode": "H",
+                                "terminalCode": "03",
+                                "boardingPier": "H",
+                                "checkInZone": [
+                                    "26"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-12T16:26:00.000+02:00",
+                            "scheduled": "2025-10-12T16:35:00.000+02:00",
+                            "latestPublished": "2025-10-12T16:26:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-12T16:45:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BFS",
+                            "name": "BELFAST INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Belfast International Airport",
+                            "city": {
+                                "code": "BFS",
+                                "name": "BELFAST",
+                                "nameLangTranl": "Belfast",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 54.6533,
+                                "longitude": -6.2247
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-12T15:35:00.000+01:00",
+                            "latestPublished": "2025-10-12T15:35:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-12T15:35:00.000+01:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT-9M",
+                    "timeToArrival": "PT-165H-59M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "GEZUF",
+                        "typeCode": "320",
+                        "typeName": "AIRBUS A320",
+                        "ownerAirlineCode": "U2",
+                        "ownerAirlineName": "EASYJET AIRLINE COMPANY LIMITED",
+                        "physicalPaxConfiguration": "Y180",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 3052,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+EZY+3052",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "BFS"
+            ],
+            "airline": {
+                "code": "EZY"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+EZY+3051",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "EZY",
+                    "flightNumber": "3051"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "H02"
+                                ],
+                                "parkingPosition": "H02",
+                                "pierCode": "H",
+                                "terminalCode": "03",
+                                "boardingPier": "H",
+                                "checkInZone": [
+                                    "26"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T14:10:00.000+02:00",
+                            "scheduled": "2025-10-13T13:15:00.000+02:00",
+                            "latestPublished": "2025-10-13T14:10:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T14:16:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BFS",
+                            "name": "BELFAST INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Belfast International Airport",
+                            "city": {
+                                "code": "BFS",
+                                "name": "BELFAST",
+                                "nameLangTranl": "Belfast",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 54.6533,
+                                "longitude": -6.2247
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T12:15:00.000+01:00",
+                            "latestPublished": "2025-10-13T12:15:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-13T12:15:00.000+01:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT55M",
+                    "timeToArrival": "PT-145H-19M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "GEZGN",
+                        "typeCode": "319",
+                        "typeName": "AIRBUS A319",
+                        "ownerAirlineCode": "U2",
+                        "ownerAirlineName": "EASYJET AIRLINE COMPANY LIMITED",
+                        "physicalPaxConfiguration": "Y156",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "93"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0055"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT55M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "93",
+                                "delayDuration": "0055"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 6,
+        "pageNumber": 1,
+        "fullCount": 106,
+        "pageCount": 6,
+        "totalPages": 2
+    }
+}

@@ -1,0 +1,2113 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 1539,
+            "flightScheduleDate": "2025-09-20",
+            "id": "20250920+HV+1539",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "EFL"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250919+HV+6888",
+                    "flightScheduleDate": "2025-09-19",
+                    "airlineCode": "HV",
+                    "flightNumber": "6888"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D86"
+                                ],
+                                "parkingPosition": "D56",
+                                "pierCode": "D",
+                                "terminalCode": "01",
+                                "boardingPier": "D",
+                                "checkInZone": [
+                                    "02",
+                                    "03"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-20T05:12:00.000+02:00",
+                            "scheduled": "2025-09-20T05:05:00.000+02:00",
+                            "latestPublished": "2025-09-20T05:12:00.000+02:00",
+                            "actualTakeOffTime": "2025-09-20T05:19:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "EFL",
+                            "name": "KEFALLINIA AIRPORT",
+                            "nameLangTranl": "Kefallinia",
+                            "city": {
+                                "code": "EFL",
+                                "name": "KEFALLINIA",
+                                "nameLangTranl": "Kefallinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.12,
+                                "longitude": 20.5006
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-20T06:05:00.000+03:00",
+                            "latestPublished": "2025-09-20T06:05:00.000+03:00",
+                            "estimated": {
+                                "value": "2025-09-20T06:05:00.000+03:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "C",
+                    "serviceTypeName": "Passenger Only",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT7M",
+                    "timeToArrival": "PT-705H-40M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "PHHSK",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1025,
+            "flightScheduleDate": "2025-09-22",
+            "id": "20250922+OR+1025",
+            "haul": "MEDIUM",
+            "route": [
+                "EFL",
+                "AMS",
+                "PVK"
+            ],
+            "airline": {
+                "code": "OR",
+                "name": "TUI AIRLINES NEDERLAND B V"
+            },
+            "flightStatusPublic": "PARTIALLY_CANCELLED",
+            "flightStatusPublicLangTransl": "Partially cancelled",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "EFL",
+                            "name": "KEFALLINIA AIRPORT",
+                            "nameLangTranl": "Kefallinia",
+                            "city": {
+                                "code": "EFL",
+                                "name": "KEFALLINIA",
+                                "nameLangTranl": "Kefallinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.12,
+                                "longitude": 20.5006
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-22T14:50:00.000+03:00",
+                            "latestPublished": "2025-09-22T14:50:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "Z10"
+                                ],
+                                "parkingPosition": "D10",
+                                "pierCode": "Z",
+                                "baggageBelt": [
+                                    "017"
+                                ],
+                                "parkingPositionType": "C",
+                                "arrivalHall": [
+                                    "3"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-22T14:04:00.000+02:00",
+                            "scheduled": "2025-09-22T13:50:00.000+02:00",
+                            "latestPublished": "2025-09-22T14:04:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-22T14:04:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-09-22T13:59:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "arrivalDateTimeDifference": "PT14M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "OMGTK",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT14M",
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D62"
+                                ],
+                                "parkingPosition": "D04",
+                                "pierCode": "D",
+                                "terminalCode": "03",
+                                "boardingPier": "D",
+                                "checkInZone": [
+                                    "22",
+                                    "23"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-22T05:37:00.000+02:00",
+                            "scheduled": "2025-09-22T13:50:00.000+02:00",
+                            "modified": "2025-09-22T13:50:00.000+02:00",
+                            "latestPublished": "2025-09-22T05:37:00.000+02:00",
+                            "actualTakeOffTime": "2025-09-22T05:56:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "PVK",
+                            "name": "AKTION AIRPORT",
+                            "nameLangTranl": "Aktion",
+                            "city": {
+                                "code": "PVK",
+                                "name": "PREVEZA/LEFKADA",
+                                "nameLangTranl": "Preveza Lefkada",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.9256,
+                                "longitude": 20.7653
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-22T14:50:00.000+03:00",
+                            "modified": "2025-09-22T14:50:00.000+03:00",
+                            "latestPublished": "2025-09-22T14:50:00.000+03:00",
+                            "estimated": {
+                                "value": "2025-09-22T14:50:00.000+03:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT-8H-13M",
+                    "timeToArrival": "PT-648H-55M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "OMGTK",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1583,
+            "flightScheduleDate": "2025-09-23",
+            "id": "20250923+HV+1583",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "EFL"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250923+HV+6492",
+                    "flightScheduleDate": "2025-09-23",
+                    "airlineCode": "HV",
+                    "flightNumber": "6492"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C22"
+                                ],
+                                "parkingPosition": "Y72",
+                                "pierCode": "C",
+                                "terminalCode": "01",
+                                "boardingPier": "C",
+                                "checkInZone": [
+                                    "02",
+                                    "03"
+                                ],
+                                "parkingPositionType": "L",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-23T17:15:00.000+02:00",
+                            "scheduled": "2025-09-23T16:50:00.000+02:00",
+                            "latestPublished": "2025-09-23T17:15:00.000+02:00",
+                            "actualTakeOffTime": "2025-09-23T17:19:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "EFL",
+                            "name": "KEFALLINIA AIRPORT",
+                            "nameLangTranl": "Kefallinia",
+                            "city": {
+                                "code": "EFL",
+                                "name": "KEFALLINIA",
+                                "nameLangTranl": "Kefallinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.12,
+                                "longitude": 20.5006
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-23T17:50:00.000+03:00",
+                            "latestPublished": "2025-09-23T17:50:00.000+03:00",
+                            "estimated": {
+                                "value": "2025-09-23T17:50:00.000+03:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "C",
+                    "serviceTypeName": "Passenger Only",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT25M",
+                    "timeToArrival": "PT-621H-55M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "PHHXK",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6563,
+            "flightScheduleDate": "2025-09-26",
+            "id": "20250926+HV+6563",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "EFL"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250925+HV+6120",
+                    "flightScheduleDate": "2025-09-25",
+                    "airlineCode": "HV",
+                    "flightNumber": "6120"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C16"
+                                ],
+                                "parkingPosition": "C16",
+                                "pierCode": "C",
+                                "terminalCode": "01",
+                                "boardingPier": "C",
+                                "checkInZone": [
+                                    "02",
+                                    "03"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-26T06:48:00.000+02:00",
+                            "scheduled": "2025-09-26T06:45:00.000+02:00",
+                            "latestPublished": "2025-09-26T06:48:00.000+02:00",
+                            "actualTakeOffTime": "2025-09-26T06:59:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "EFL",
+                            "name": "KEFALLINIA AIRPORT",
+                            "nameLangTranl": "Kefallinia",
+                            "city": {
+                                "code": "EFL",
+                                "name": "KEFALLINIA",
+                                "nameLangTranl": "Kefallinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.12,
+                                "longitude": 20.5006
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-26T07:45:00.000+03:00",
+                            "latestPublished": "2025-09-26T07:45:00.000+03:00",
+                            "estimated": {
+                                "value": "2025-09-26T07:45:00.000+03:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT3M",
+                    "timeToArrival": "PT-560H",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "PHYHW",
+                        "typeCode": "32Q",
+                        "typeName": "AIRBUS A321NEO",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y232",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1251,
+            "flightScheduleDate": "2025-09-26",
+            "id": "20250926+OR+1251",
+            "haul": "MEDIUM",
+            "route": [
+                "EFL",
+                "AMS",
+                "ZTH"
+            ],
+            "airline": {
+                "code": "OR",
+                "name": "TUI AIRLINES NEDERLAND B V"
+            },
+            "flightStatusPublic": "PARTIALLY_CANCELLED",
+            "flightStatusPublicLangTransl": "Partially cancelled",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "EFL",
+                            "name": "KEFALLINIA AIRPORT",
+                            "nameLangTranl": "Kefallinia",
+                            "city": {
+                                "code": "EFL",
+                                "name": "KEFALLINIA",
+                                "nameLangTranl": "Kefallinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.12,
+                                "longitude": 20.5006
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-26T17:00:00.000+03:00",
+                            "latestPublished": "2025-09-26T17:00:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D82"
+                                ],
+                                "parkingPosition": "D54",
+                                "pierCode": "D",
+                                "baggageBelt": [
+                                    "019"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "3"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-26T16:15:00.000+02:00",
+                            "scheduled": "2025-09-26T16:00:00.000+02:00",
+                            "latestPublished": "2025-09-26T16:15:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-26T16:15:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-09-26T16:08:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "arrivalDateTimeDifference": "PT15M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "PHTFO",
+                        "typeCode": "7M8",
+                        "typeName": "BOEING 737MAX 8 PASSENGER",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT15M",
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D68"
+                                ],
+                                "parkingPosition": "D12",
+                                "pierCode": "D",
+                                "terminalCode": "03",
+                                "boardingPier": "D",
+                                "checkInZone": [
+                                    "22",
+                                    "23"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-26T07:23:00.000+02:00",
+                            "scheduled": "2025-09-26T16:00:00.000+02:00",
+                            "modified": "2025-09-26T16:00:00.000+02:00",
+                            "latestPublished": "2025-09-26T07:23:00.000+02:00",
+                            "actualTakeOffTime": "2025-09-26T07:38:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ZTH",
+                            "name": "DIONSIOS SALOMOS AIRPORT",
+                            "nameLangTranl": "Zakynthos International Airport,",
+                            "city": {
+                                "code": "ZTH",
+                                "name": "ZAKINTHOS ISLAND",
+                                "nameLangTranl": "Zakinthos Island",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 37.7508,
+                                "longitude": 20.8842
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-26T17:00:00.000+03:00",
+                            "modified": "2025-09-26T17:00:00.000+03:00",
+                            "latestPublished": "2025-09-26T17:00:00.000+03:00",
+                            "estimated": {
+                                "value": "2025-09-26T17:00:00.000+03:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT-8H-37M",
+                    "timeToArrival": "PT-550H-45M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "PHTFO",
+                        "typeCode": "7M8",
+                        "typeName": "BOEING 737MAX 8 PASSENGER",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1539,
+            "flightScheduleDate": "2025-09-27",
+            "id": "20250927+HV+1539",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "EFL"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250926+HV+5676",
+                    "flightScheduleDate": "2025-09-26",
+                    "airlineCode": "HV",
+                    "flightNumber": "5676"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D86"
+                                ],
+                                "parkingPosition": "D56",
+                                "pierCode": "D",
+                                "terminalCode": "01",
+                                "boardingPier": "D",
+                                "checkInZone": [
+                                    "02",
+                                    "03"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-27T04:58:00.000+02:00",
+                            "scheduled": "2025-09-27T05:05:00.000+02:00",
+                            "latestPublished": "2025-09-27T04:58:00.000+02:00",
+                            "actualTakeOffTime": "2025-09-27T05:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "EFL",
+                            "name": "KEFALLINIA AIRPORT",
+                            "nameLangTranl": "Kefallinia",
+                            "city": {
+                                "code": "EFL",
+                                "name": "KEFALLINIA",
+                                "nameLangTranl": "Kefallinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.12,
+                                "longitude": 20.5006
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-27T06:05:00.000+03:00",
+                            "latestPublished": "2025-09-27T06:05:00.000+03:00",
+                            "estimated": {
+                                "value": "2025-09-27T06:05:00.000+03:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "C",
+                    "serviceTypeName": "Passenger Only",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT-7M",
+                    "timeToArrival": "PT-537H-40M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "PHHSG",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1025,
+            "flightScheduleDate": "2025-09-29",
+            "id": "20250929+OR+1025",
+            "haul": "MEDIUM",
+            "route": [
+                "EFL",
+                "AMS",
+                "PVK"
+            ],
+            "airline": {
+                "code": "OR",
+                "name": "TUI AIRLINES NEDERLAND B V"
+            },
+            "flightStatusPublic": "PARTIALLY_CANCELLED",
+            "flightStatusPublicLangTransl": "Partially cancelled",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "EFL",
+                            "name": "KEFALLINIA AIRPORT",
+                            "nameLangTranl": "Kefallinia",
+                            "city": {
+                                "code": "EFL",
+                                "name": "KEFALLINIA",
+                                "nameLangTranl": "Kefallinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.12,
+                                "longitude": 20.5006
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-29T14:50:00.000+03:00",
+                            "latestPublished": "2025-09-29T14:50:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A04"
+                                ],
+                                "parkingPosition": "G79",
+                                "pierCode": "A",
+                                "baggageBelt": [
+                                    "016"
+                                ],
+                                "parkingPositionType": "L",
+                                "disembarkingContactType": "L",
+                                "arrivalHall": [
+                                    "3"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-29T15:29:00.000+02:00",
+                            "scheduled": "2025-09-29T13:50:00.000+02:00",
+                            "latestPublished": "2025-09-29T15:29:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-29T15:29:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-09-29T15:23:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "arrivalDateTimeDifference": "PT1H39M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "PHTFT",
+                        "typeCode": "7M8",
+                        "typeName": "BOEING 737MAX 8 PASSENGER",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT1H39M",
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D66"
+                                ],
+                                "parkingPosition": "D10",
+                                "pierCode": "D",
+                                "terminalCode": "03",
+                                "boardingPier": "D",
+                                "checkInZone": [
+                                    "22",
+                                    "23"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-29T05:31:00.000+02:00",
+                            "scheduled": "2025-09-29T13:50:00.000+02:00",
+                            "modified": "2025-09-29T13:50:00.000+02:00",
+                            "latestPublished": "2025-09-29T05:31:00.000+02:00",
+                            "actualTakeOffTime": "2025-09-29T05:42:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "PVK",
+                            "name": "AKTION AIRPORT",
+                            "nameLangTranl": "Aktion",
+                            "city": {
+                                "code": "PVK",
+                                "name": "PREVEZA/LEFKADA",
+                                "nameLangTranl": "Preveza Lefkada",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.9256,
+                                "longitude": 20.7653
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-29T14:50:00.000+03:00",
+                            "modified": "2025-09-29T14:50:00.000+03:00",
+                            "latestPublished": "2025-09-29T14:50:00.000+03:00",
+                            "estimated": {
+                                "value": "2025-09-29T14:50:00.000+03:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT-8H-19M",
+                    "timeToArrival": "PT-480H-55M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "PHTFT",
+                        "typeCode": "7M8",
+                        "typeName": "BOEING 737MAX 8 PASSENGER",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1583,
+            "flightScheduleDate": "2025-09-30",
+            "id": "20250930+HV+1583",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "EFL"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250930+HV+1528",
+                    "flightScheduleDate": "2025-09-30",
+                    "airlineCode": "HV",
+                    "flightNumber": "1528"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C14"
+                                ],
+                                "parkingPosition": "C14",
+                                "pierCode": "C",
+                                "terminalCode": "01",
+                                "boardingPier": "C",
+                                "checkInZone": [
+                                    "02",
+                                    "03"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-30T17:23:00.000+02:00",
+                            "scheduled": "2025-09-30T16:50:00.000+02:00",
+                            "latestPublished": "2025-09-30T17:23:00.000+02:00",
+                            "actualTakeOffTime": "2025-09-30T17:34:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "EFL",
+                            "name": "KEFALLINIA AIRPORT",
+                            "nameLangTranl": "Kefallinia",
+                            "city": {
+                                "code": "EFL",
+                                "name": "KEFALLINIA",
+                                "nameLangTranl": "Kefallinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.12,
+                                "longitude": 20.5006
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-30T17:50:00.000+03:00",
+                            "latestPublished": "2025-09-30T17:50:00.000+03:00",
+                            "estimated": {
+                                "value": "2025-09-30T17:50:00.000+03:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "C",
+                    "serviceTypeName": "Passenger Only",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT33M",
+                    "timeToArrival": "PT-453H-55M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "PHHXM",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6563,
+            "flightScheduleDate": "2025-10-03",
+            "id": "20251003+HV+6563",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "EFL"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251002+HV+6004",
+                    "flightScheduleDate": "2025-10-02",
+                    "airlineCode": "HV",
+                    "flightNumber": "6004"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D86"
+                                ],
+                                "parkingPosition": "D56",
+                                "pierCode": "D",
+                                "terminalCode": "01",
+                                "boardingPier": "D",
+                                "checkInZone": [
+                                    "02",
+                                    "03"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-03T06:50:00.000+02:00",
+                            "scheduled": "2025-10-03T06:45:00.000+02:00",
+                            "latestPublished": "2025-10-03T06:50:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-03T07:16:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "EFL",
+                            "name": "KEFALLINIA AIRPORT",
+                            "nameLangTranl": "Kefallinia",
+                            "city": {
+                                "code": "EFL",
+                                "name": "KEFALLINIA",
+                                "nameLangTranl": "Kefallinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.12,
+                                "longitude": 20.5006
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-03T07:45:00.000+03:00",
+                            "latestPublished": "2025-10-03T07:45:00.000+03:00",
+                            "estimated": {
+                                "value": "2025-10-03T07:45:00.000+03:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT5M",
+                    "timeToArrival": "PT-392H",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "PHYHS",
+                        "typeCode": "32Q",
+                        "typeName": "AIRBUS A321NEO",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y232",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1251,
+            "flightScheduleDate": "2025-10-03",
+            "id": "20251003+OR+1251",
+            "haul": "MEDIUM",
+            "route": [
+                "EFL",
+                "AMS",
+                "ZTH"
+            ],
+            "airline": {
+                "code": "OR",
+                "name": "TUI AIRLINES NEDERLAND B V"
+            },
+            "flightStatusPublic": "PARTIALLY_CANCELLED",
+            "flightStatusPublicLangTransl": "Partially cancelled",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "EFL",
+                            "name": "KEFALLINIA AIRPORT",
+                            "nameLangTranl": "Kefallinia",
+                            "city": {
+                                "code": "EFL",
+                                "name": "KEFALLINIA",
+                                "nameLangTranl": "Kefallinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.12,
+                                "longitude": 20.5006
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-03T17:00:00.000+03:00",
+                            "latestPublished": "2025-10-03T17:00:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D60"
+                                ],
+                                "parkingPosition": "D04",
+                                "pierCode": "D",
+                                "baggageBelt": [
+                                    "018"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "3"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-03T16:51:00.000+02:00",
+                            "scheduled": "2025-10-03T16:00:00.000+02:00",
+                            "latestPublished": "2025-10-03T16:51:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-03T16:51:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-03T16:37:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "arrivalDateTimeDifference": "PT51M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "OMGTF",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT51M",
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D68"
+                                ],
+                                "parkingPosition": "D12",
+                                "pierCode": "D",
+                                "terminalCode": "03",
+                                "boardingPier": "D",
+                                "checkInZone": [
+                                    "22",
+                                    "23"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-03T07:30:00.000+02:00",
+                            "scheduled": "2025-10-03T16:00:00.000+02:00",
+                            "modified": "2025-10-03T16:00:00.000+02:00",
+                            "latestPublished": "2025-10-03T07:30:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-03T07:40:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ZTH",
+                            "name": "DIONSIOS SALOMOS AIRPORT",
+                            "nameLangTranl": "Zakynthos International Airport,",
+                            "city": {
+                                "code": "ZTH",
+                                "name": "ZAKINTHOS ISLAND",
+                                "nameLangTranl": "Zakinthos Island",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 37.7508,
+                                "longitude": 20.8842
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-03T17:00:00.000+03:00",
+                            "modified": "2025-10-03T17:00:00.000+03:00",
+                            "latestPublished": "2025-10-03T17:00:00.000+03:00",
+                            "estimated": {
+                                "value": "2025-10-03T17:00:00.000+03:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT-8H-30M",
+                    "timeToArrival": "PT-382H-45M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "OMGTF",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1539,
+            "flightScheduleDate": "2025-10-04",
+            "id": "20251004+HV+1539",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "EFL"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251003+HV+6410",
+                    "flightScheduleDate": "2025-10-03",
+                    "airlineCode": "HV",
+                    "flightNumber": "6410"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D82"
+                                ],
+                                "parkingPosition": "D52",
+                                "pierCode": "D",
+                                "terminalCode": "01",
+                                "boardingPier": "D",
+                                "checkInZone": [
+                                    "02",
+                                    "03"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-04T04:55:00.000+02:00",
+                            "scheduled": "2025-10-04T05:05:00.000+02:00",
+                            "latestPublished": "2025-10-04T04:55:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-04T05:02:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "EFL",
+                            "name": "KEFALLINIA AIRPORT",
+                            "nameLangTranl": "Kefallinia",
+                            "city": {
+                                "code": "EFL",
+                                "name": "KEFALLINIA",
+                                "nameLangTranl": "Kefallinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.12,
+                                "longitude": 20.5006
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-04T06:05:00.000+03:00",
+                            "latestPublished": "2025-10-04T06:05:00.000+03:00",
+                            "estimated": {
+                                "value": "2025-10-04T06:05:00.000+03:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "C",
+                    "serviceTypeName": "Passenger Only",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT-10M",
+                    "timeToArrival": "PT-369H-40M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "PHHSM",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6563,
+            "flightScheduleDate": "2025-10-10",
+            "id": "20251010+HV+6563",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "EFL"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251009+HV+6728",
+                    "flightScheduleDate": "2025-10-09",
+                    "airlineCode": "HV",
+                    "flightNumber": "6728"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C14"
+                                ],
+                                "parkingPosition": "C14",
+                                "pierCode": "C",
+                                "terminalCode": "01",
+                                "boardingPier": "C",
+                                "checkInZone": [
+                                    "02",
+                                    "03"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-10T06:57:00.000+02:00",
+                            "scheduled": "2025-10-10T06:45:00.000+02:00",
+                            "latestPublished": "2025-10-10T06:57:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-10T07:09:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "EFL",
+                            "name": "KEFALLINIA AIRPORT",
+                            "nameLangTranl": "Kefallinia",
+                            "city": {
+                                "code": "EFL",
+                                "name": "KEFALLINIA",
+                                "nameLangTranl": "Kefallinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.12,
+                                "longitude": 20.5006
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-10T07:45:00.000+03:00",
+                            "latestPublished": "2025-10-10T07:45:00.000+03:00",
+                            "estimated": {
+                                "value": "2025-10-10T07:45:00.000+03:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT12M",
+                    "timeToArrival": "PT-224H",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "PHYHV",
+                        "typeCode": "32Q",
+                        "typeName": "AIRBUS A321NEO",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y232",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 12,
+        "pageNumber": 1,
+        "fullCount": 112,
+        "pageCount": 12,
+        "totalPages": 2
+    }
+}

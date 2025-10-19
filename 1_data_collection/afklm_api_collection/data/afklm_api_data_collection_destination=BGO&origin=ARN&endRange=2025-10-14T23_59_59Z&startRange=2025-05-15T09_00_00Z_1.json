@@ -1,0 +1,2428 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 4899,
+            "flightScheduleDate": "2025-09-23",
+            "id": "20250923+SK+4899",
+            "route": [
+                "ARN",
+                "BGO"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3300,
+                    "airline": {
+                        "code": "A3",
+                        "name": "AEGEAN AIRLINES S A"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3846,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250923+SK+0186",
+                    "flightScheduleDate": "2025-09-23",
+                    "airlineCode": "SK",
+                    "flightNumber": "0186"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "F34"
+                                ],
+                                "terminalCode": "5",
+                                "boardingTerminal": "5",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-23T18:03:00.000+02:00",
+                            "scheduled": "2025-09-23T17:15:00.000+02:00",
+                            "latestPublished": "2025-09-23T18:03:00.000+02:00",
+                            "actualTakeOffTime": "2025-09-23T18:15:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-23T19:29:00.000+02:00",
+                            "scheduled": "2025-09-23T18:35:00.000+02:00",
+                            "latestPublished": "2025-09-23T19:29:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-23T19:29:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-09-23T19:20:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "departureDateTimeDifference": "PT48M",
+                    "arrivalDateTimeDifference": "PT54M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "EIFPR",
+                        "typeCode": "CRJ",
+                        "typeName": "CANADAIR REG.JET",
+                        "ownerAirlineCode": "WX",
+                        "ownerAirlineName": "CITYJET",
+                        "physicalPaxConfiguration": "C004M084",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG",
+                        "cockpitCrewEmployer": "WX",
+                        "cabinCrewEmployer": "WX"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT54M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4899,
+            "flightScheduleDate": "2025-09-24",
+            "id": "20250924+SK+4899",
+            "haul": "MEDIUM",
+            "route": [
+                "ARN",
+                "BGO"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3300,
+                    "flightScheduleDate": "2025-09-24",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "A3",
+                        "name": "AEGEAN AIRLINES S A"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3846,
+                    "flightScheduleDate": "2025-09-24",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5521,
+                    "flightScheduleDate": "2025-09-24",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "TP",
+                        "name": "TAP PORTUGAL"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250924+SK+0739",
+                    "flightScheduleDate": "2025-09-24",
+                    "airlineCode": "SK",
+                    "flightNumber": "0739"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "F38"
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "5",
+                                "boardingTerminal": "5",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "5",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-24T17:12:00.000+02:00",
+                            "scheduled": "2025-09-24T17:15:00.000+02:00",
+                            "latestPublished": "2025-09-24T17:12:00.000+02:00",
+                            "actualTakeOffTime": "2025-09-24T17:24:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-24T18:34:00.000+02:00",
+                            "scheduled": "2025-09-24T18:35:00.000+02:00",
+                            "latestPublished": "2025-09-24T18:34:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-24T18:34:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-09-24T18:30:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "departureDateTimeDifference": "PT-3M",
+                    "arrivalDateTimeDifference": "PT-1M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "EIFPF",
+                        "typeCode": "CRJ",
+                        "typeName": "CANADAIR REG.JET",
+                        "ownerAirlineCode": "WX",
+                        "ownerAirlineName": "CITYJET",
+                        "physicalPaxConfiguration": "C001M001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C004M084",
+                        "cockpitCrewEmployer": "WX",
+                        "cabinCrewEmployer": "WX"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4899,
+            "flightScheduleDate": "2025-09-25",
+            "id": "20250925+SK+4899",
+            "route": [
+                "ARN",
+                "BGO"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3300,
+                    "airline": {
+                        "code": "A3",
+                        "name": "AEGEAN AIRLINES S A"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3846,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250925+SK+0739",
+                    "flightScheduleDate": "2025-09-25",
+                    "airlineCode": "SK",
+                    "flightNumber": "0739"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "F26"
+                                ],
+                                "terminalCode": "5",
+                                "boardingTerminal": "5",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-25T17:11:00.000+02:00",
+                            "scheduled": "2025-09-25T17:15:00.000+02:00",
+                            "latestPublished": "2025-09-25T17:11:00.000+02:00",
+                            "actualTakeOffTime": "2025-09-25T17:20:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-25T18:28:00.000+02:00",
+                            "scheduled": "2025-09-25T18:35:00.000+02:00",
+                            "latestPublished": "2025-09-25T18:28:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-25T18:28:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-09-25T18:25:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "departureDateTimeDifference": "PT-4M",
+                    "arrivalDateTimeDifference": "PT-7M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "EIFPS",
+                        "typeCode": "CRJ",
+                        "typeName": "CANADAIR REG.JET",
+                        "ownerAirlineCode": "WX",
+                        "ownerAirlineName": "CITYJET",
+                        "physicalPaxConfiguration": "C014M076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG",
+                        "cockpitCrewEmployer": "WX",
+                        "cabinCrewEmployer": "WX"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 899,
+            "flightScheduleDate": "2025-09-28",
+            "id": "20250928+SK+0899",
+            "route": [
+                "ARN",
+                "BGO"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3300,
+                    "airline": {
+                        "code": "A3",
+                        "name": "AEGEAN AIRLINES S A"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3845,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250928+SK+2472",
+                    "flightScheduleDate": "2025-09-28",
+                    "airlineCode": "SK",
+                    "flightNumber": "2472"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "E9"
+                                ],
+                                "terminalCode": "5",
+                                "boardingTerminal": "5",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-28T16:49:00.000+02:00",
+                            "scheduled": "2025-09-28T16:55:00.000+02:00",
+                            "latestPublished": "2025-09-28T16:49:00.000+02:00",
+                            "actualTakeOffTime": "2025-09-28T16:57:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-28T18:04:00.000+02:00",
+                            "scheduled": "2025-09-28T18:15:00.000+02:00",
+                            "latestPublished": "2025-09-28T18:04:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-28T18:04:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-09-28T18:02:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "departureDateTimeDifference": "PT-6M",
+                    "arrivalDateTimeDifference": "PT-11M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SERSY",
+                        "typeCode": "EMJ",
+                        "typeName": "EMBRAER 170/195",
+                        "physicalPaxConfiguration": "C014M100",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1481,
+            "flightScheduleDate": "2025-09-28",
+            "id": "20250928+SK+1481",
+            "route": [
+                "ARN",
+                "BGO"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3841,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5521,
+                    "airline": {
+                        "code": "TP",
+                        "name": "TAP PORTUGAL"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250928+SK+2472",
+                    "flightScheduleDate": "2025-09-28",
+                    "airlineCode": "SK",
+                    "flightNumber": "2472"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "E1"
+                                ],
+                                "terminalCode": "5",
+                                "boardingTerminal": "5",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-28T20:51:00.000+02:00",
+                            "scheduled": "2025-09-28T20:50:00.000+02:00",
+                            "latestPublished": "2025-09-28T20:51:00.000+02:00",
+                            "actualTakeOffTime": "2025-09-28T20:58:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-28T22:09:00.000+02:00",
+                            "scheduled": "2025-09-28T22:10:00.000+02:00",
+                            "latestPublished": "2025-09-28T22:09:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-28T22:09:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-09-28T22:07:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "departureDateTimeDifference": "PT1M",
+                    "arrivalDateTimeDifference": "PT-1M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SERSY",
+                        "typeCode": "EMJ",
+                        "typeName": "EMBRAER 170/195",
+                        "physicalPaxConfiguration": "C014M100",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4899,
+            "flightScheduleDate": "2025-09-29",
+            "id": "20250929+SK+4899",
+            "route": [
+                "ARN",
+                "BGO"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3300,
+                    "airline": {
+                        "code": "A3",
+                        "name": "AEGEAN AIRLINES S A"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3846,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5521,
+                    "airline": {
+                        "code": "TP",
+                        "name": "TAP PORTUGAL"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250929+SK+0739",
+                    "flightScheduleDate": "2025-09-29",
+                    "airlineCode": "SK",
+                    "flightNumber": "0739"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "F38"
+                                ],
+                                "terminalCode": "5",
+                                "boardingTerminal": "5",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-29T17:15:00.000+02:00",
+                            "scheduled": "2025-09-29T17:15:00.000+02:00",
+                            "latestPublished": "2025-09-29T17:15:00.000+02:00",
+                            "actualTakeOffTime": "2025-09-29T17:25:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-29T18:30:00.000+02:00",
+                            "scheduled": "2025-09-29T18:35:00.000+02:00",
+                            "latestPublished": "2025-09-29T18:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-29T18:30:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-09-29T18:28:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "departureDateTimeDifference": "PT0S",
+                    "arrivalDateTimeDifference": "PT-5M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "EIFPX",
+                        "typeCode": "CRJ",
+                        "typeName": "CANADAIR REG.JET",
+                        "ownerAirlineCode": "WX",
+                        "ownerAirlineName": "CITYJET",
+                        "physicalPaxConfiguration": "C014M076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG",
+                        "cockpitCrewEmployer": "WX",
+                        "cabinCrewEmployer": "WX"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4899,
+            "flightScheduleDate": "2025-09-30",
+            "id": "20250930+SK+4899",
+            "route": [
+                "ARN",
+                "BGO"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3300,
+                    "airline": {
+                        "code": "A3",
+                        "name": "AEGEAN AIRLINES S A"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3846,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250930+SK+0739",
+                    "flightScheduleDate": "2025-09-30",
+                    "airlineCode": "SK",
+                    "flightNumber": "0739"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "E1"
+                                ],
+                                "terminalCode": "5",
+                                "boardingTerminal": "5",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-30T17:12:00.000+02:00",
+                            "scheduled": "2025-09-30T17:15:00.000+02:00",
+                            "latestPublished": "2025-09-30T17:12:00.000+02:00",
+                            "actualTakeOffTime": "2025-09-30T17:20:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-30T18:28:00.000+02:00",
+                            "scheduled": "2025-09-30T18:35:00.000+02:00",
+                            "latestPublished": "2025-09-30T18:28:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-30T18:28:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-09-30T18:25:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "departureDateTimeDifference": "PT-3M",
+                    "arrivalDateTimeDifference": "PT-7M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "EIGEH",
+                        "typeCode": "CRJ",
+                        "typeName": "CANADAIR REG.JET",
+                        "ownerAirlineCode": "WX",
+                        "ownerAirlineName": "CITYJET",
+                        "physicalPaxConfiguration": "C004M084",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG",
+                        "cockpitCrewEmployer": "WX",
+                        "cabinCrewEmployer": "WX"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4899,
+            "flightScheduleDate": "2025-10-01",
+            "id": "20251001+SK+4899",
+            "route": [
+                "ARN",
+                "BGO"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3300,
+                    "airline": {
+                        "code": "A3",
+                        "name": "AEGEAN AIRLINES S A"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3846,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5521,
+                    "airline": {
+                        "code": "TP",
+                        "name": "TAP PORTUGAL"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251001+SK+0739",
+                    "flightScheduleDate": "2025-10-01",
+                    "airlineCode": "SK",
+                    "flightNumber": "0739"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "E1"
+                                ],
+                                "terminalCode": "5",
+                                "boardingTerminal": "5",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-01T17:11:00.000+02:00",
+                            "scheduled": "2025-10-01T17:15:00.000+02:00",
+                            "latestPublished": "2025-10-01T17:11:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-01T17:21:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-01T18:29:00.000+02:00",
+                            "scheduled": "2025-10-01T18:35:00.000+02:00",
+                            "latestPublished": "2025-10-01T18:29:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-01T18:29:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-01T18:26:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "departureDateTimeDifference": "PT-4M",
+                    "arrivalDateTimeDifference": "PT-6M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "EIFPF",
+                        "typeCode": "CRJ",
+                        "typeName": "CANADAIR REG.JET",
+                        "ownerAirlineCode": "WX",
+                        "ownerAirlineName": "CITYJET",
+                        "physicalPaxConfiguration": "C014M076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG",
+                        "cockpitCrewEmployer": "WX",
+                        "cabinCrewEmployer": "WX"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4899,
+            "flightScheduleDate": "2025-10-02",
+            "id": "20251002+SK+4899",
+            "route": [
+                "ARN",
+                "BGO"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3846,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251002+SK+0739",
+                    "flightScheduleDate": "2025-10-02",
+                    "airlineCode": "SK",
+                    "flightNumber": "0739"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "F38"
+                                ],
+                                "terminalCode": "5",
+                                "boardingTerminal": "5",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-02T17:10:00.000+02:00",
+                            "scheduled": "2025-10-02T17:15:00.000+02:00",
+                            "latestPublished": "2025-10-02T17:10:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-02T17:17:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-02T18:30:00.000+02:00",
+                            "scheduled": "2025-10-02T18:35:00.000+02:00",
+                            "latestPublished": "2025-10-02T18:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-02T18:30:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-02T18:28:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "departureDateTimeDifference": "PT-5M",
+                    "arrivalDateTimeDifference": "PT-5M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "EIFPX",
+                        "typeCode": "CRJ",
+                        "typeName": "CANADAIR REG.JET",
+                        "ownerAirlineCode": "WX",
+                        "ownerAirlineName": "CITYJET",
+                        "physicalPaxConfiguration": "C014M076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG",
+                        "cockpitCrewEmployer": "WX",
+                        "cabinCrewEmployer": "WX"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1481,
+            "flightScheduleDate": "2025-10-05",
+            "id": "20251005+SK+1481",
+            "route": [
+                "ARN",
+                "BGO"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3841,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5521,
+                    "airline": {
+                        "code": "TP",
+                        "name": "TAP PORTUGAL"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "terminalCode": "5",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-05T20:30:00.000+02:00",
+                            "latestPublished": "2025-10-05T20:30:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-05T21:50:00.000+02:00",
+                            "latestPublished": "2025-10-05T21:50:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-05T21:50:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "CR9",
+                        "typeName": "CANADAIR REGIONAL JET 900 AND CHALLENGER 890",
+                        "ownerAirlineCode": "WX",
+                        "ownerAirlineName": "CITYJET",
+                        "physicalPaxConfiguration": "C014M076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG",
+                        "cockpitCrewEmployer": "WX",
+                        "cabinCrewEmployer": "WX"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4899,
+            "flightScheduleDate": "2025-10-08",
+            "id": "20251008+SK+4899",
+            "route": [
+                "ARN",
+                "BGO"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3300,
+                    "airline": {
+                        "code": "A3",
+                        "name": "AEGEAN AIRLINES S A"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3846,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5521,
+                    "airline": {
+                        "code": "TP",
+                        "name": "TAP PORTUGAL"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251008+SK+0739",
+                    "flightScheduleDate": "2025-10-08",
+                    "airlineCode": "SK",
+                    "flightNumber": "0739"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "F34"
+                                ],
+                                "terminalCode": "5",
+                                "boardingTerminal": "5",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-08T17:13:00.000+02:00",
+                            "scheduled": "2025-10-08T17:15:00.000+02:00",
+                            "latestPublished": "2025-10-08T17:13:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-08T17:22:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-08T18:32:00.000+02:00",
+                            "scheduled": "2025-10-08T18:35:00.000+02:00",
+                            "latestPublished": "2025-10-08T18:32:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-08T18:32:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-08T18:30:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "departureDateTimeDifference": "PT-2M",
+                    "arrivalDateTimeDifference": "PT-3M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "EIHSA",
+                        "typeCode": "CRJ",
+                        "typeName": "CANADAIR REG.JET",
+                        "ownerAirlineCode": "WX",
+                        "ownerAirlineName": "CITYJET",
+                        "physicalPaxConfiguration": "C014M076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG",
+                        "cockpitCrewEmployer": "WX",
+                        "cabinCrewEmployer": "WX"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4899,
+            "flightScheduleDate": "2025-10-09",
+            "id": "20251009+SK+4899",
+            "haul": "MEDIUM",
+            "route": [
+                "ARN",
+                "BGO"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3846,
+                    "flightScheduleDate": "2025-10-09",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251009+SK+0739",
+                    "flightScheduleDate": "2025-10-09",
+                    "airlineCode": "SK",
+                    "flightNumber": "0739"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "F34"
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "5",
+                                "boardingTerminal": "5",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "5",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-09T17:20:00.000+02:00",
+                            "scheduled": "2025-10-09T17:15:00.000+02:00",
+                            "latestPublished": "2025-10-09T17:20:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-09T17:27:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-09T18:44:00.000+02:00",
+                            "scheduled": "2025-10-09T18:35:00.000+02:00",
+                            "latestPublished": "2025-10-09T18:44:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-09T18:44:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-09T18:40:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "departureDateTimeDifference": "PT5M",
+                    "arrivalDateTimeDifference": "PT9M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "EIGEH",
+                        "typeCode": "CRJ",
+                        "typeName": "CANADAIR REG.JET",
+                        "ownerAirlineCode": "WX",
+                        "ownerAirlineName": "CITYJET",
+                        "physicalPaxConfiguration": "C001M001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C004M084",
+                        "cockpitCrewEmployer": "WX",
+                        "cabinCrewEmployer": "WX"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 899,
+            "flightScheduleDate": "2025-10-12",
+            "id": "20251012+SK+0899",
+            "route": [
+                "ARN",
+                "BGO"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3300,
+                    "airline": {
+                        "code": "A3",
+                        "name": "AEGEAN AIRLINES S A"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3845,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251012+SK+2472",
+                    "flightScheduleDate": "2025-10-12",
+                    "airlineCode": "SK",
+                    "flightNumber": "2472"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "F37"
+                                ],
+                                "terminalCode": "5",
+                                "boardingTerminal": "5",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-12T16:54:00.000+02:00",
+                            "scheduled": "2025-10-12T16:55:00.000+02:00",
+                            "latestPublished": "2025-10-12T16:54:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-12T17:07:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-12T18:21:00.000+02:00",
+                            "scheduled": "2025-10-12T18:15:00.000+02:00",
+                            "latestPublished": "2025-10-12T18:21:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-12T18:21:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-12T18:16:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "departureDateTimeDifference": "PT-1M",
+                    "arrivalDateTimeDifference": "PT6M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SERSP",
+                        "typeCode": "EMJ",
+                        "typeName": "EMBRAER 170/195",
+                        "physicalPaxConfiguration": "C010M112",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1481,
+            "flightScheduleDate": "2025-10-12",
+            "id": "20251012+SK+1481",
+            "route": [
+                "ARN",
+                "BGO"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3841,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5521,
+                    "airline": {
+                        "code": "TP",
+                        "name": "TAP PORTUGAL"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "terminalCode": "5",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-12T20:30:00.000+02:00",
+                            "latestPublished": "2025-10-12T20:30:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-12T21:50:00.000+02:00",
+                            "latestPublished": "2025-10-12T21:50:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-12T21:50:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "CR9",
+                        "typeName": "CANADAIR REGIONAL JET 900 AND CHALLENGER 890",
+                        "ownerAirlineCode": "WX",
+                        "ownerAirlineName": "CITYJET",
+                        "physicalPaxConfiguration": "C014M076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG",
+                        "cockpitCrewEmployer": "WX",
+                        "cabinCrewEmployer": "WX"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4899,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+SK+4899",
+            "route": [
+                "ARN",
+                "BGO"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3300,
+                    "airline": {
+                        "code": "A3",
+                        "name": "AEGEAN AIRLINES S A"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3846,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5521,
+                    "airline": {
+                        "code": "TP",
+                        "name": "TAP PORTUGAL"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+SK+0739",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "SK",
+                    "flightNumber": "0739"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "terminalCode": "5",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T17:15:00.000+02:00",
+                            "latestPublished": "2025-10-13T17:15:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T18:35:00.000+02:00",
+                            "latestPublished": "2025-10-13T18:35:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T18:35:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "CR9",
+                        "typeName": "CANADAIR REGIONAL JET 900 AND CHALLENGER 890",
+                        "ownerAirlineCode": "WX",
+                        "ownerAirlineName": "CITYJET",
+                        "physicalPaxConfiguration": "C014M076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG",
+                        "cockpitCrewEmployer": "WX",
+                        "cabinCrewEmployer": "WX"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4899,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+SK+4899",
+            "route": [
+                "ARN",
+                "BGO"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3300,
+                    "airline": {
+                        "code": "A3",
+                        "name": "AEGEAN AIRLINES S A"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3846,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+SK+0739",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "SK",
+                    "flightNumber": "0739"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "F38"
+                                ],
+                                "terminalCode": "5",
+                                "boardingTerminal": "5",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T17:12:00.000+02:00",
+                            "scheduled": "2025-10-14T17:15:00.000+02:00",
+                            "latestPublished": "2025-10-14T17:12:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T17:23:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T18:32:00.000+02:00",
+                            "scheduled": "2025-10-14T18:35:00.000+02:00",
+                            "latestPublished": "2025-10-14T18:32:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T18:32:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T18:29:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "departureDateTimeDifference": "PT-3M",
+                    "arrivalDateTimeDifference": "PT-3M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "EIFPX",
+                        "typeCode": "CRJ",
+                        "typeName": "CANADAIR REG.JET",
+                        "ownerAirlineCode": "WX",
+                        "ownerAirlineName": "CITYJET",
+                        "physicalPaxConfiguration": "C014M076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG",
+                        "cockpitCrewEmployer": "WX",
+                        "cabinCrewEmployer": "WX"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 16,
+        "pageNumber": 1,
+        "fullCount": 116,
+        "pageCount": 16,
+        "totalPages": 2
+    }
+}

@@ -1,0 +1,1080 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 1102,
+            "flightScheduleDate": "2025-10-02",
+            "id": "20251002+OR+1102",
+            "haul": "MEDIUM",
+            "route": [
+                "AOK",
+                "AMS"
+            ],
+            "airline": {
+                "code": "OR",
+                "name": "TUI AIRLINES NEDERLAND B V"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251002+OR+1101",
+                    "flightScheduleDate": "2025-10-02",
+                    "airlineCode": "OR",
+                    "flightNumber": "1101"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AOK",
+                            "name": "KARPATHOS AIRPORT",
+                            "nameLangTranl": "Karpathos",
+                            "city": {
+                                "code": "AOK",
+                                "name": "KARPATHOS",
+                                "nameLangTranl": "Karpathos",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 35.4214,
+                                "longitude": 27.1461
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-02T23:15:00.000+03:00",
+                            "latestPublished": "2025-10-02T23:15:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D66"
+                                ],
+                                "parkingPosition": "D12",
+                                "pierCode": "D",
+                                "baggageBelt": [
+                                    "016"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "3"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-02T22:40:00.000+02:00",
+                            "scheduled": "2025-10-02T22:15:00.000+02:00",
+                            "latestPublished": "2025-10-02T22:40:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-02T22:40:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-02T22:24:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "arrivalDateTimeDifference": "PT25M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "OMGTF",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "YY",
+                        "ownerAirlineName": "FICTITIOUS FUEL COMPANY FOR AF OA.NI",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT25M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1042,
+            "flightScheduleDate": "2025-10-03",
+            "id": "20251003+HV+1042",
+            "haul": "MEDIUM",
+            "route": [
+                "AOK",
+                "AMS"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251003+HV+1041",
+                    "flightScheduleDate": "2025-10-03",
+                    "airlineCode": "HV",
+                    "flightNumber": "1041"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AOK",
+                            "name": "KARPATHOS AIRPORT",
+                            "nameLangTranl": "Karpathos",
+                            "city": {
+                                "code": "AOK",
+                                "name": "KARPATHOS",
+                                "nameLangTranl": "Karpathos",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 35.4214,
+                                "longitude": 27.1461
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-03T15:35:00.000+03:00",
+                            "latestPublished": "2025-10-03T15:35:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D81"
+                                ],
+                                "parkingPosition": "D49",
+                                "pierCode": "D",
+                                "baggageBelt": [
+                                    "002"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-10-03T15:03:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-03T15:19:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-03T14:37:00.000+02:00",
+                            "scheduled": "2025-10-03T14:35:00.000+02:00",
+                            "latestPublished": "2025-10-03T14:37:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-03T14:37:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-03T14:27:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "C",
+                    "serviceTypeName": "Passenger Only",
+                    "restricted": false,
+                    "arrivalDateTimeDifference": "PT2M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "PHHXF",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1102,
+            "flightScheduleDate": "2025-10-05",
+            "id": "20251005+OR+1102",
+            "haul": "MEDIUM",
+            "route": [
+                "AOK",
+                "AMS"
+            ],
+            "airline": {
+                "code": "OR",
+                "name": "TUI AIRLINES NEDERLAND B V"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AOK",
+                            "name": "KARPATHOS AIRPORT",
+                            "nameLangTranl": "Karpathos",
+                            "city": {
+                                "code": "AOK",
+                                "name": "KARPATHOS",
+                                "nameLangTranl": "Karpathos",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 35.4214,
+                                "longitude": 27.1461
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-05T18:40:00.000+03:00",
+                            "latestPublished": "2025-10-05T18:40:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C13"
+                                ],
+                                "parkingPosition": "C13",
+                                "pierCode": "C",
+                                "baggageBelt": [
+                                    "017"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "3"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-05T18:28:00.000+02:00",
+                            "scheduled": "2025-10-05T17:40:00.000+02:00",
+                            "latestPublished": "2025-10-05T18:28:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-05T18:28:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-05T18:23:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "arrivalDateTimeDifference": "PT48M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "OMGTF",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "YY",
+                        "ownerAirlineName": "FICTITIOUS FUEL COMPANY FOR AF OA.NI",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT48M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1102,
+            "flightScheduleDate": "2025-10-06",
+            "id": "20251006+OR+1102",
+            "haul": "MEDIUM",
+            "route": [
+                "AOK",
+                "AMS"
+            ],
+            "airline": {
+                "code": "OR",
+                "name": "TUI AIRLINES NEDERLAND B V"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251006+OR+1101",
+                    "flightScheduleDate": "2025-10-06",
+                    "airlineCode": "OR",
+                    "flightNumber": "1101"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AOK",
+                            "name": "KARPATHOS AIRPORT",
+                            "nameLangTranl": "Karpathos",
+                            "city": {
+                                "code": "AOK",
+                                "name": "KARPATHOS",
+                                "nameLangTranl": "Karpathos",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 35.4214,
+                                "longitude": 27.1461
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-06T17:00:00.000+03:00",
+                            "latestPublished": "2025-10-06T17:00:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A04"
+                                ],
+                                "parkingPosition": "D88",
+                                "pierCode": "A",
+                                "baggageBelt": [
+                                    "016"
+                                ],
+                                "parkingPositionType": "L",
+                                "disembarkingContactType": "L",
+                                "arrivalHall": [
+                                    "3"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-06T16:15:00.000+02:00",
+                            "scheduled": "2025-10-06T16:00:00.000+02:00",
+                            "latestPublished": "2025-10-06T16:15:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-06T16:15:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-06T16:08:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "arrivalDateTimeDifference": "PT15M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "PHTFN",
+                        "typeCode": "7M8",
+                        "typeName": "BOEING 737MAX 8 PASSENGER",
+                        "ownerAirlineCode": "YY",
+                        "ownerAirlineName": "FICTITIOUS FUEL COMPANY FOR AF OA.NI",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT15M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1528,
+            "flightScheduleDate": "2025-10-07",
+            "id": "20251007+HV+1528",
+            "haul": "MEDIUM",
+            "route": [
+                "AOK",
+                "AMS"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251007+HV+1527",
+                    "flightScheduleDate": "2025-10-07",
+                    "airlineCode": "HV",
+                    "flightNumber": "1527"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AOK",
+                            "name": "KARPATHOS AIRPORT",
+                            "nameLangTranl": "Karpathos",
+                            "city": {
+                                "code": "AOK",
+                                "name": "KARPATHOS",
+                                "nameLangTranl": "Karpathos",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 35.4214,
+                                "longitude": 27.1461
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-07T15:50:00.000+03:00",
+                            "latestPublished": "2025-10-07T15:50:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C13"
+                                ],
+                                "parkingPosition": "C13",
+                                "pierCode": "C",
+                                "baggageBelt": [
+                                    "006"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-10-07T15:28:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-07T15:36:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-07T14:49:00.000+02:00",
+                            "scheduled": "2025-10-07T14:50:00.000+02:00",
+                            "latestPublished": "2025-10-07T14:49:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-07T14:49:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-07T14:39:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "C",
+                    "serviceTypeName": "Passenger Only",
+                    "restricted": false,
+                    "arrivalDateTimeDifference": "PT-1M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "PHHXM",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1102,
+            "flightScheduleDate": "2025-10-09",
+            "id": "20251009+OR+1102",
+            "haul": "MEDIUM",
+            "route": [
+                "AOK",
+                "AMS"
+            ],
+            "airline": {
+                "code": "OR",
+                "name": "TUI AIRLINES NEDERLAND B V"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AOK",
+                            "name": "KARPATHOS AIRPORT",
+                            "nameLangTranl": "Karpathos",
+                            "city": {
+                                "code": "AOK",
+                                "name": "KARPATHOS",
+                                "nameLangTranl": "Karpathos",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 35.4214,
+                                "longitude": 27.1461
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-09T14:45:00.000+03:00",
+                            "latestPublished": "2025-10-09T14:45:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A04"
+                                ],
+                                "parkingPosition": "D88",
+                                "pierCode": "A",
+                                "baggageBelt": [
+                                    "019"
+                                ],
+                                "parkingPositionType": "L",
+                                "disembarkingContactType": "L",
+                                "arrivalHall": [
+                                    "3"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-09T14:23:00.000+02:00",
+                            "scheduled": "2025-10-09T13:45:00.000+02:00",
+                            "latestPublished": "2025-10-09T14:23:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-09T14:23:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-09T14:07:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "arrivalDateTimeDifference": "PT38M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "PHTFN",
+                        "typeCode": "7M8",
+                        "typeName": "BOEING 737MAX 8 PASSENGER",
+                        "ownerAirlineCode": "YY",
+                        "ownerAirlineName": "FICTITIOUS FUEL COMPANY FOR AF OA.NI",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT38M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1102,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+OR+1102",
+            "haul": "MEDIUM",
+            "route": [
+                "AOK",
+                "AMS"
+            ],
+            "airline": {
+                "code": "OR",
+                "name": "TUI AIRLINES NEDERLAND B V"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AOK",
+                            "name": "KARPATHOS AIRPORT",
+                            "nameLangTranl": "Karpathos",
+                            "city": {
+                                "code": "AOK",
+                                "name": "KARPATHOS",
+                                "nameLangTranl": "Karpathos",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 35.4214,
+                                "longitude": 27.1461
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T19:00:00.000+03:00",
+                            "latestPublished": "2025-10-13T19:00:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D63"
+                                ],
+                                "parkingPosition": "D05",
+                                "pierCode": "D",
+                                "baggageBelt": [
+                                    "015"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "3"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T18:06:00.000+02:00",
+                            "scheduled": "2025-10-13T18:00:00.000+02:00",
+                            "latestPublished": "2025-10-13T18:06:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T18:06:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-13T18:00:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "arrivalDateTimeDifference": "PT6M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "OMGTF",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "YY",
+                        "ownerAirlineName": "FICTITIOUS FUEL COMPANY FOR AF OA.NI",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1528,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+HV+1528",
+            "haul": "MEDIUM",
+            "route": [
+                "AOK",
+                "AMS"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+HV+1527",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "HV",
+                    "flightNumber": "1527"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AOK",
+                            "name": "KARPATHOS AIRPORT",
+                            "nameLangTranl": "Karpathos",
+                            "city": {
+                                "code": "AOK",
+                                "name": "KARPATHOS",
+                                "nameLangTranl": "Karpathos",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 35.4214,
+                                "longitude": 27.1461
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T15:50:00.000+03:00",
+                            "latestPublished": "2025-10-14T15:50:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D78"
+                                ],
+                                "parkingPosition": "D52",
+                                "pierCode": "D",
+                                "baggageBelt": [
+                                    "004"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-10-14T15:17:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-14T15:27:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T14:45:00.000+02:00",
+                            "scheduled": "2025-10-14T14:50:00.000+02:00",
+                            "latestPublished": "2025-10-14T14:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T14:45:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T14:40:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "C",
+                    "serviceTypeName": "Passenger Only",
+                    "restricted": false,
+                    "arrivalDateTimeDifference": "PT-5M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "PHHXE",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 8,
+        "pageNumber": 1,
+        "fullCount": 108,
+        "pageCount": 8,
+        "totalPages": 2
+    }
+}

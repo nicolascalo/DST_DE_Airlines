@@ -1,0 +1,315 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 4602,
+            "flightScheduleDate": "2025-10-12",
+            "id": "20251012+EC+4602",
+            "haul": "MEDIUM",
+            "route": [
+                "FNC",
+                "CDG"
+            ],
+            "airline": {
+                "code": "EC",
+                "name": "EASYJET EUROPE AIRLINE GMBH"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251012+EC+4601",
+                    "flightScheduleDate": "2025-10-12",
+                    "airlineCode": "EC",
+                    "flightNumber": "4601"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "FNC",
+                            "name": "MADEIRA AIRPORT",
+                            "nameLangTranl": "Madeira",
+                            "city": {
+                                "code": "FNC",
+                                "name": "FUNCHAL",
+                                "nameLangTranl": "Funchal",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 32.6942,
+                                "longitude": -16.7781
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-12T09:30:00.000+01:00",
+                            "latestPublished": "2025-10-12T09:30:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "parkingPosition": "B14",
+                                "pierCode": "",
+                                "terminalCode": "2D",
+                                "baggageBelt": [
+                                    "02"
+                                ],
+                                "arrivalPositionTerminal": "2D",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "2B",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-12T14:03:00.000+02:00",
+                            "scheduled": "2025-10-12T14:00:00.000+02:00",
+                            "latestPublished": "2025-10-12T14:03:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-12T14:03:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-12T13:52:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H30M",
+                    "arrivalDateTimeDifference": "PT3M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "OEIVC",
+                        "typeCode": "32A",
+                        "typeName": "AIRBUS A320 (SHARKLETS)",
+                        "ownerAirlineCode": "EC",
+                        "ownerAirlineName": "EASYJET EUROPE AIRLINE GMBH",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4602,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+EC+4602",
+            "haul": "MEDIUM",
+            "route": [
+                "FNC",
+                "CDG"
+            ],
+            "airline": {
+                "code": "EC",
+                "name": "EASYJET EUROPE AIRLINE GMBH"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+EC+4601",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "EC",
+                    "flightNumber": "4601"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "FNC",
+                            "name": "MADEIRA AIRPORT",
+                            "nameLangTranl": "Madeira",
+                            "city": {
+                                "code": "FNC",
+                                "name": "FUNCHAL",
+                                "nameLangTranl": "Funchal",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 32.6942,
+                                "longitude": -16.7781
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T16:25:00.000+01:00",
+                            "latestPublished": "2025-10-14T16:25:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "parkingPosition": "D14",
+                                "pierCode": "",
+                                "terminalCode": "2D",
+                                "baggageBelt": [
+                                    "02"
+                                ],
+                                "arrivalPositionTerminal": "2D",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "2D",
+                                "parkingPositionCustomStatus": "D",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T20:36:00.000+02:00",
+                            "scheduled": "2025-10-14T20:55:00.000+02:00",
+                            "latestPublished": "2025-10-14T20:36:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T20:36:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T20:27:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H30M",
+                    "arrivalDateTimeDifference": "PT-19M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "OEIZQ",
+                        "typeCode": "32A",
+                        "typeName": "AIRBUS A320 (SHARKLETS)",
+                        "ownerAirlineCode": "EC",
+                        "ownerAirlineName": "EASYJET EUROPE AIRLINE GMBH",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 2,
+        "pageNumber": 1,
+        "fullCount": 102,
+        "pageCount": 2,
+        "totalPages": 2
+    }
+}

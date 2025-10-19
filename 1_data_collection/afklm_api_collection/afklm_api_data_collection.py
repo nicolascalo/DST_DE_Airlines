@@ -14,15 +14,12 @@ The script will iterate over:
 
 For each querry, a .json file named according to the parameters of the querry and page number will be produced in the /data folder. Upon ulterior runs of this script, it will skip any API calls for which there is already a corresponding .json file (page nb and call parameter) 
 
-!!! Script limited to 3 pages / requests to limit API consumption
-!!! Always define dates !!!!
+!!! define max_page_to_fetch to limit the number of pages to retrieve
+!!! Always define dates otherwise it will get the current date and tracking of what has already been retrived will not be ensured!!!!
 
 
 '''
 ### Library import
-
-
-
 
 import pandas as pd
 import requests
@@ -32,10 +29,25 @@ import json
 import os
 import datetime
 
-max_page_to_fetch = 1
 
-#os.getcwd()
-#os.chdir("1_data_collection/afklm_api_collection") 
+### Script parameters
+
+max_page_to_fetch = 1
+pageNumberStart = 1
+skip_previously_failed = True
+page_max = 100000 # Will automatically be adjusted after having retrived the fist page 
+time_analysis = datetime.datetime.now().isoformat()
+
+
+### List of already retrieved data
+
+json_list = os.listdir("data")
+
+
+### Setting up working directory
+
+if  bool(re.search("afklm_api_collection",os.getcwd())) == False:
+    os.chdir("1_data_collection/afklm_api_collection") 
 
 
 ### Creation of folders for retrieved data
@@ -44,23 +56,11 @@ if not os.path.isdir("data"):
     os.mkdir("data")
 
 
-time_analysis = datetime.datetime.now().isoformat().replace(":","_")
-
-if not os.path.isfile(f"data/afklm_api_data_collection_failed_requests.tsv"):
-    with open(f"data/afklm_api_data_collection_failed_requests.tsv", "w") as f:
-                f.write("failed_requests\treponse\tmessage\ttimestamp")
-    
-    failed_requests_history = pd.DataFrame()
-    failed_request_list = []
-else:
-    failed_requests_history = pd.read_csv(f"data/afklm_api_data_collection_failed_requests.tsv", delimiter="\t")
-    failed_request_list = failed_requests_history['failed_requests'].to_list()
 
 
 
-
-
-    
+### Import query parameters
+ 
 df_call_parameters = pd.read_csv("df_call_parameters.csv").fillna('')
 
 
@@ -108,7 +108,16 @@ dict_call_parameters = {
 "timeOriginType": ''	, #	string	S": Scheduled, M": Modified, I": Internal, P": Public	SMIP	S	
 "timeType": ''	, #	string	Type of time used in startRange and endRange U": UTC time, L": Local Time	UL	U	
 "endRange": '2025-07-23T23:59:59Z'	, #	string<date-time>	End on this date time		2023-12-31T23":59":59.000Z	required
-"startRange": '2025-07-21T09:00:00Z'	#	string<date-time>	Start from this date time		2023-12-31T09":00":00.000Z	required
+"startRange": '2025-07-21T09:00:00Z', #	string<date-time>	Start from this date time		2023-12-31T09":00":00.000Z	required
+
+"call_parameters": '', # repopulated after request
+'response': '', # repopulated after request
+'message': '', # repopulated after request
+'timestamp': '', # repopulated after request
+'nb_of_pages_already_retrieved': '', # repopulated after request
+'totalPages': '', # repopulated after request
+'completion': '' # repopulated after request
+
 }
 
 
@@ -118,33 +127,51 @@ dict_call_parameters["operatingAirlineCode"] =",".join(dict_call_parameters['ope
 dict_call_parameters["serviceType"] =",".join(dict_call_parameters['serviceType'])
 
 
-pageNumber = 1	 #	integer<int32>	Indicates the page number you are requesting, the first page is page 0. If it's not provided first page will be returned		1	
-pageSize = ''	 #	integer<int32>	Indicates the number of items per page	null	100	-> Does not seem to do anything
 
+df_call_parameters = pd.DataFrame(dict_call_parameters, index = [0]) # from defaults
 
-
-
-
-df_call_parameters = pd.DataFrame(dict_call_parameters, index = [0])
 
 
 if os.path.isfile("df_call_parameters.csv"):
     df_call_parameters = pd.read_csv("df_call_parameters.csv").fillna('')
 
 i = 0
-API_key_counter = 0
+API_key_counter = 0 # To use the first API key from the list
 
 no_more_api_key = False
 
-for i in range(0, len(df_call_parameters)): ### loop over the csv file containing the parameter list to send to the API
-    
+df_call_parameters_new = df_call_parameters.copy(deep=True) # to update the df_call_parameters csv after each querry
 
+
+### loop over the csv file containing the parameter list to send to the API
+
+for i in range(0, len(df_call_parameters)): 
+    print("")
+    df_subset = df_call_parameters.iloc[[i]].copy(deep = True).reset_index().drop(['index'], axis = 1) # parameters for the current querry
     
-    df_subset = df_call_parameters.iloc[[i]]
+    
+    pageNumber = pageNumberStart	 #	integer<int32>	Indicates the page number you are requesting, the first page is page 0. If it's not provided first page will be returned		1	
+
+
+    ### Check if query parameter already tested and skip previous failed if chosen in the script options
+    
+    text_response = str(df_subset['response'])
+    match_error  = re.search("\\d\\d\\d",text_response)
+    if match_error is None:
+        match_error = "000"
+    else:
+        match_error = match_error[0]
+        
+    if skip_previously_failed & ( int(match_error)> 200):
+        print(f"{df_subset['call_parameters'].item()}\nskipped because previously failed")
+        continue
+
 
     ### Cleaning of empty parameter calls
-
-    dict_call_parameters = df_subset.to_dict(orient="list")
+    
+    non_parameters = ["call_parameters",'response', 'message', 'timestamp', 'nb_of_pages_already_retrieved', 'totalPages', 'completion']
+    
+    dict_call_parameters = df_subset.drop(non_parameters,axis=1).to_dict(orient="list")
 
     call_parameters_url = "&".join([key + "=" + str(val[0]) for key, val in dict_call_parameters.items()
                     if val[0] != '' and val[0] != '[nan]'])
@@ -153,68 +180,63 @@ for i in range(0, len(df_call_parameters)): ### loop over the csv file containin
     url = base_url + call_parameters_url
     url = url.replace(" ","")
 
-    ### Check date coherence
+
+    ### Check date query coherence
 
     if df_subset['endRange'].item() < df_subset['startRange'].item():
         print("ERROR: endRange < startRange")
         break
 
-    ### Checking of presence of already downloaded pages for the current parameter set and adjustment of the page number to fetch
-
-    pageNumber = 1
-    
-    while os.path.isfile(f"data/afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json"):
-        pageNumber = pageNumber + 1
-
-    url_page = (url + f"&{pageNumber=}").replace("?&","?")
-    
-    if url_page in failed_request_list:
-        print("Skipped due to previous failure of the request")
-        continue
-    
-
-    file_page_1 = f"data/afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_1.json"
-
-    if os.path.isfile(file_page_1):
-        
-        
-        with open(file_page_1) as f:
-            data = json.load(f)
-
-        page_max =  data['page']['totalPages']+1
-    else:  
-        page_max = 10000 # Temporary number of pages in the collection total until update after 1st API call
 
     print("")
-    print(f"API call parameters: {call_parameters_url}")
+    print(f"{call_parameters_url}")
 
 
+    ### Loop until reached desired number of pages or max nb of pages to fetch for the query
     
-    # print(f"{API_key_counter}")
+    while (pageNumber <= page_max) & (pageNumber <= max_page_to_fetch): 
+        
+        
 
-    
-    while (pageNumber <= page_max) & (pageNumber <= max_page_to_fetch): # & pageNumber < 4: pageNumber < 4 for testing purposes only and not to consume to quickly the API call daily limit
         
-        print(f"Querrying page {pageNumber} / {page_max}")
-        print(url_page)
+        json_to_make = f"afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json"
+
         
+        if json_to_make in json_list : # skip current query if corresponding json already present
+            print(f"Fetching page {pageNumber} skipped because already retrieved")
+
+            pageNumber = pageNumber + 1
+            continue
+
+            
+
         API_key = API_key_list_cleaned[API_key_counter]
-        headers['API-Key'] = API_key
-        print(f"{API_key = }")
         
-        response = requests.get(url_page, headers=headers)
 
+        headers['API-Key'] = API_key # API key is send in the request header
+        
+
+        url_page = url + "&pageNumber="+str(pageNumber)
+
+        
         time.sleep(1.5) # API limited to 1 call / s, 100 / day
         
         
-        url_page = (url + f"&{pageNumber=}").replace("?&","?")
         
-        print(f"Page found: {response.__bool__()}")
+        response = requests.get(url_page, headers=headers)
         
-        no_more_api_key = (response.text == '<h1>Developer Over Rate</h1>') &( API_key_list_length == API_key_counter + 1)
+        
+        url_page = (url + f"&{pageNumber=}").replace("?&","?") # Cleaning url from empty fileds
+        
+        # print(f"Page found: {response.__bool__()}")
+        
+        no_more_api_key = (response.text == '<h1>Developer Over Rate</h1>') & (API_key_list_length == API_key_counter + 1)
+        
+        
+        df_subset.loc[0,['timestamp']] = time_analysis
 
         if  response.__bool__() : # True if response < 400
-
+            
             data = response.json()
             
             page_max =  data['page']['totalPages'] # Update total number of pages
@@ -223,31 +245,55 @@ for i in range(0, len(df_call_parameters)): ### loop over the csv file containin
             
             with open(f"data/afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json", "w") as f:
                 f.write(json_str)
+            
+            
+            print(f"Page {pageNumber} / {page_max}: OK")
+
+            if  df_subset['nb_of_pages_already_retrieved'].item() == '': # Check info already present in df_call_parameters.csv  
+
+                df_subset.loc[0,['nb_of_pages_already_retrieved']] = 0
                 
+            if int(pageNumber) > df_subset['nb_of_pages_already_retrieved'].item() : # Check info already present in df_call_parameters.csv  
+
+                df_subset.loc[0,['nb_of_pages_already_retrieved']] =  pageNumber
+                
+            df_subset.loc[0,['response']] = str(response)
+            df_subset.loc[0,['totalPages']] = page_max
+            df_subset.loc[0,['nb_of_pages_already_retrieved']] = pageNumber
+            df_subset.loc[0,['completion']] = f"{100*pageNumber/page_max:.2f}%"
+            
+            
+            df_call_parameters_new = pd.concat([df_call_parameters_new,df_subset],ignore_index=True)
+            df_call_parameters_new = df_call_parameters_new.drop_duplicates(subset=['call_parameters'], keep='last')
+            df_call_parameters_new.fillna('').to_csv("df_call_parameters.csv", index=0)
+
+            
             pageNumber = pageNumber + 1
         
     
         elif (response.text == '<h1>Developer Over Rate</h1>') &( API_key_list_length > API_key_counter + 1) : # Iterate of API key list to test the next one
             
-            print(response.text)
+            
+            print(f"Trying next API key previous: {API_key}, next:{API_key_list_cleaned[API_key_counter+1]}")
             API_key_counter = API_key_counter + 1
-            print(response)
-            print("Trying next API key\n")
+            
             
         elif (response.text == '<h1>Developer Over Rate</h1>'):
             break
             
         else:
             
+            print(f"Issues with the call: {response} {response.text}")
+         
+            df_subset.loc[0,['response']] = str(response)
+            df_subset.loc[0,['message']] = str(response.text)            
             
-            print(response.text)
-            print(f"Issues in the parameters of the call")
-            print(response)
+           
+            df_call_parameters_new =pd.concat([df_call_parameters_new,df_subset],ignore_index=True)
+            df_call_parameters_new = df_call_parameters_new.drop_duplicates(subset=['call_parameters'], keep='last')
             
-            with open(f"data/afklm_api_data_collection_failed_requests.tsv", "a") as f:
-                f.write("\n"+url_page+"\t" + str(response)+"\t" + response.text+"\t"+time_analysis)
+            df_call_parameters_new.fillna('').to_csv("df_call_parameters.csv", index=0)
 
-            
             break
         
         
@@ -256,11 +302,12 @@ for i in range(0, len(df_call_parameters)): ### loop over the csv file containin
         break
     
     
+'''
 
-            
+
+
         
 ### Stats pages to retrieve
-
 
 ### Setup 
 
@@ -295,5 +342,9 @@ df_json_pages_all_filtered = pd.merge(df_json_pages_all.groupby(['request']).agg
 df_json_pages_all_filtered = df_json_pages_all_filtered.rename(columns={'page.pageNumber_x':'nb_of_pages_already_retrieved',
                                                                         'page.fullCount':'total_flights'})
 
-df_json_pages_all_filtered.to_csv("afklm_api_data_collection_retriaval_count.csv")
+df_json_pages_all_filtered.to_csv("afklm_api_data_collection_retrieval_count.csv")
 
+
+
+'''
+            

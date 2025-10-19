@@ -1,0 +1,3399 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-09-11",
+            "id": "20250911+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-11T08:50:00.000+01:00",
+                            "latestPublished": "2025-09-11T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-11T11:10:00.000+02:00",
+                            "latestPublished": "2025-09-11T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-11T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-09-12",
+            "id": "20250912+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-12T08:50:00.000+01:00",
+                            "latestPublished": "2025-09-12T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-12T11:10:00.000+02:00",
+                            "latestPublished": "2025-09-12T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-12T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-09-14",
+            "id": "20250914+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-14T08:50:00.000+01:00",
+                            "latestPublished": "2025-09-14T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-14T11:10:00.000+02:00",
+                            "latestPublished": "2025-09-14T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-14T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-09-15",
+            "id": "20250915+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-15T08:50:00.000+01:00",
+                            "latestPublished": "2025-09-15T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-15T11:10:00.000+02:00",
+                            "latestPublished": "2025-09-15T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-15T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-09-16",
+            "id": "20250916+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-16T08:50:00.000+01:00",
+                            "latestPublished": "2025-09-16T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-16T11:10:00.000+02:00",
+                            "latestPublished": "2025-09-16T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-16T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-09-17",
+            "id": "20250917+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-17T08:50:00.000+01:00",
+                            "latestPublished": "2025-09-17T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-17T11:10:00.000+02:00",
+                            "latestPublished": "2025-09-17T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-17T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-09-18",
+            "id": "20250918+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-18T08:50:00.000+01:00",
+                            "latestPublished": "2025-09-18T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-18T11:10:00.000+02:00",
+                            "latestPublished": "2025-09-18T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-18T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-09-19",
+            "id": "20250919+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-19T08:50:00.000+01:00",
+                            "latestPublished": "2025-09-19T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-19T11:10:00.000+02:00",
+                            "latestPublished": "2025-09-19T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-19T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-09-21",
+            "id": "20250921+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-21T08:50:00.000+01:00",
+                            "latestPublished": "2025-09-21T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-21T11:10:00.000+02:00",
+                            "latestPublished": "2025-09-21T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-21T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-09-22",
+            "id": "20250922+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-22T08:50:00.000+01:00",
+                            "latestPublished": "2025-09-22T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-22T11:10:00.000+02:00",
+                            "latestPublished": "2025-09-22T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-22T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-09-23",
+            "id": "20250923+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-23T08:50:00.000+01:00",
+                            "latestPublished": "2025-09-23T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-23T11:10:00.000+02:00",
+                            "latestPublished": "2025-09-23T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-23T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-09-24",
+            "id": "20250924+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-24T08:50:00.000+01:00",
+                            "latestPublished": "2025-09-24T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-24T11:10:00.000+02:00",
+                            "latestPublished": "2025-09-24T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-24T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-09-25",
+            "id": "20250925+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-25T08:50:00.000+01:00",
+                            "latestPublished": "2025-09-25T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-25T11:10:00.000+02:00",
+                            "latestPublished": "2025-09-25T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-25T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-09-26",
+            "id": "20250926+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-26T08:50:00.000+01:00",
+                            "latestPublished": "2025-09-26T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-26T11:10:00.000+02:00",
+                            "latestPublished": "2025-09-26T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-26T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-09-28",
+            "id": "20250928+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-28T08:50:00.000+01:00",
+                            "latestPublished": "2025-09-28T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-28T11:10:00.000+02:00",
+                            "latestPublished": "2025-09-28T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-28T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-09-29",
+            "id": "20250929+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-29T08:50:00.000+01:00",
+                            "latestPublished": "2025-09-29T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-29T11:10:00.000+02:00",
+                            "latestPublished": "2025-09-29T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-29T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-09-30",
+            "id": "20250930+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-30T08:50:00.000+01:00",
+                            "latestPublished": "2025-09-30T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-30T11:10:00.000+02:00",
+                            "latestPublished": "2025-09-30T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-30T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-10-01",
+            "id": "20251001+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-01T08:50:00.000+01:00",
+                            "latestPublished": "2025-10-01T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-01T11:10:00.000+02:00",
+                            "latestPublished": "2025-10-01T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-01T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-10-02",
+            "id": "20251002+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-02T08:50:00.000+01:00",
+                            "latestPublished": "2025-10-02T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-02T11:10:00.000+02:00",
+                            "latestPublished": "2025-10-02T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-02T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-10-05",
+            "id": "20251005+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-05T08:50:00.000+01:00",
+                            "latestPublished": "2025-10-05T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-05T11:10:00.000+02:00",
+                            "latestPublished": "2025-10-05T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-05T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-10-06",
+            "id": "20251006+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-06T08:50:00.000+01:00",
+                            "latestPublished": "2025-10-06T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-06T11:10:00.000+02:00",
+                            "latestPublished": "2025-10-06T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-06T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-10-07",
+            "id": "20251007+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-07T08:50:00.000+01:00",
+                            "latestPublished": "2025-10-07T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-07T11:10:00.000+02:00",
+                            "latestPublished": "2025-10-07T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-07T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-10-08",
+            "id": "20251008+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-08T08:50:00.000+01:00",
+                            "latestPublished": "2025-10-08T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-08T11:10:00.000+02:00",
+                            "latestPublished": "2025-10-08T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-08T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-10-09",
+            "id": "20251009+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-09T08:50:00.000+01:00",
+                            "latestPublished": "2025-10-09T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-09T11:10:00.000+02:00",
+                            "latestPublished": "2025-10-09T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-09T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-10-10",
+            "id": "20251010+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-10T08:50:00.000+01:00",
+                            "latestPublished": "2025-10-10T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-10T11:10:00.000+02:00",
+                            "latestPublished": "2025-10-10T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-10T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-10-12",
+            "id": "20251012+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-12T08:50:00.000+01:00",
+                            "latestPublished": "2025-10-12T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-12T11:10:00.000+02:00",
+                            "latestPublished": "2025-10-12T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-12T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T08:50:00.000+01:00",
+                            "latestPublished": "2025-10-13T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T11:10:00.000+02:00",
+                            "latestPublished": "2025-10-13T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 393,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+WF+0393",
+            "route": [
+                "ABZ",
+                "BGO"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ABZ",
+                            "name": "DYCE AIRPORT",
+                            "nameLangTranl": "Dyce",
+                            "city": {
+                                "code": "ABZ",
+                                "name": "ABERDEEN",
+                                "nameLangTranl": "Aberdeen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.2042,
+                                "longitude": -2.1981
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T08:50:00.000+01:00",
+                            "latestPublished": "2025-10-14T08:50:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T11:10:00.000+02:00",
+                            "latestPublished": "2025-10-14T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T11:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 28,
+        "pageNumber": 1,
+        "fullCount": 128,
+        "pageCount": 28,
+        "totalPages": 2
+    }
+}
