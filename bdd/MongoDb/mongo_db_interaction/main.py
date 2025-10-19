@@ -10,7 +10,6 @@ from pathlib import Path
 def import_operationalflights_in_mongodb():
     folder_path = get_folder_path_in_env()
     name_files = get_name_files_by_folder(folder_path)
-    i = 0
     for name_file in name_files:
         json_file = open_json(name_file)
         insert(json_file)
