@@ -37,7 +37,7 @@ max_page_to_fetch = 1
 pageNumberStart = 1
 skip_previously_failed = True
 page_max = 100000 # Will automatically be adjusted after having retrived the fist page 
-time_analysis = datetime.datetime.now().isoformat()
+
 time_delay_query = 1.5 # API limited to 1 call / s, 100 / day
 output_format = ["json","gzip"] # ["json","gzip"]
 
@@ -154,7 +154,7 @@ for i in range(0, len(df_call_parameters)):
     df_subset = df_call_parameters.iloc[[i]].copy(deep = True).reset_index().drop(['index'], axis = 1) # parameters for the current querry
     print(Fore.RESET + f"{df_subset['call_parameters'].item()}")
     
-    pageNumber = pageNumberStart	 #	integer<int32>	Indicates the page number you are requesting, the first page is page 0. If it's not provided first page will be returned		1	
+    pageNumber = pageNumberStart	 #	integer<int32>	Indicates the page number you are requesting, the first real page is page 1. Page 0 gets the same results than page 1. If it's not provided first page will be returned		1	
 
 
     ### Check if query parameter already tested and skip previous failed if chosen in the script options
@@ -207,7 +207,9 @@ for i in range(0, len(df_call_parameters)):
         json_to_make = f"afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json"
 
         
-        if json_to_make in json_list : # skip current query if corresponding json already present
+        
+        
+        if (json_to_make in json_list)| (json_to_make in [file + ".gzip" for file in json_list] ) : # skip current query if corresponding json already present
             print(Fore.BLUE +f"Page {pageNumber} : skipped because already retrieved")
 
             pageNumber = pageNumber + 1
@@ -237,7 +239,7 @@ for i in range(0, len(df_call_parameters)):
         
         no_more_api_key = (response.text == '<h1>Developer Over Rate</h1>') & (API_key_list_length == API_key_counter + 1)
         
-        
+        time_analysis = datetime.datetime.now().isoformat()
         df_subset.loc[0,['timestamp']] = time_analysis
 
         if  response.__bool__() : # True if response < 400
