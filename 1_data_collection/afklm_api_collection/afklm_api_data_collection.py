@@ -29,7 +29,7 @@ import json
 import os
 import datetime
 from colorama import Fore, Back, Style
-
+import gzip
 
 ### Script parameters
 
@@ -39,6 +39,7 @@ skip_previously_failed = True
 page_max = 100000 # Will automatically be adjusted after having retrived the fist page 
 time_analysis = datetime.datetime.now().isoformat()
 time_delay_query = 1.5 # API limited to 1 call / s, 100 / day
+output_format = ["json","gzip"] # ["json","gzip"]
 
 ### List of already retrieved data
 
@@ -245,9 +246,16 @@ for i in range(0, len(df_call_parameters)):
             
             page_max =  data['page']['totalPages'] # Update total number of pages
             
-            with open(f"data/afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json", 'w', encoding='utf-8') as f:
-                json.dump(data, f, ensure_ascii=False, indent=4)
             
+            if "json" in output_format:
+                with open(f"data/afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json", 'w', encoding='utf-8') as f:
+                    json.dump(data, f, ensure_ascii=False, indent=4)
+                
+            if "json" in output_format:    
+                with gzip.open(f"data/afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json.gzip", 'wt', encoding='utf-8') as f:
+                    json.dump(data, f, ensure_ascii=False, indent=4)
+                
+
             
             print(Fore.GREEN +f"Page {pageNumber} : retrieval OK"+ Fore.RESET +f"    Total: {page_max} , Max: {max_page_to_fetch} ")
 
