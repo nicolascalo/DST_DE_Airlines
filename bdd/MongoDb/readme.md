@@ -46,6 +46,21 @@ cd bdd/MongoDb
 python3 -m mongo_db_interaction.main
 ```
 
+## Data Dump
+
+Export Dump :
+
+```bash
+docker exec <container_name> mongodump --username=<username> --password=<password> --db=<data_base_name> --authenticationDatabase=admin --archive | cat > <path_export_dump>/dump-$(date +%Y%m%d-%H-%M-%S).archive
+```
+
+
+Import Dump :
+```bash
+cat <path_file_toimport> | docker exec -i jojo mongorestore --username=<username> --password=<password> --authenticationDatabase=admin --archive
+```
+
+
 ## Project Structure
 ```
 bdd/MongoDb/
