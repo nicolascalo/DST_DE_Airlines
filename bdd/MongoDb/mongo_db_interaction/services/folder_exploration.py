@@ -14,5 +14,11 @@ def get_name_files_by_folder(folder_path):
     return files
 
 
+def create_file_name_collection(file_name):
+    file_name_collection = {"file_name" : file_name}
+
+    return file_name_collection
+    
+
 
 
