@@ -1,0 +1,874 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 276,
+            "flightScheduleDate": "2025-10-01",
+            "id": "20251001+RO+0276",
+            "haul": "MEDIUM",
+            "route": [
+                "SKG",
+                "OTP"
+            ],
+            "airline": {
+                "code": "RO",
+                "name": "TAROM"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6617,
+                    "flightScheduleDate": "2025-10-01",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "CANCELLED",
+            "flightStatusPublicLangTransl": "Cancelled",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "SKG",
+                            "name": "MAKEDONIA AIRPORT",
+                            "nameLangTranl": "Makedonia",
+                            "city": {
+                                "code": "SKG",
+                                "name": "THESSALONIKI",
+                                "nameLangTranl": "Thessaloniki",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.5197,
+                                "longitude": 22.9708
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-01T15:15:00.000+03:00",
+                            "latestPublished": "2025-10-01T15:15:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OTP",
+                            "name": "HENRI COANDA AIRPORT",
+                            "nameLangTranl": "Henri Coanda International Airport",
+                            "city": {
+                                "code": "BUH",
+                                "name": "BUCHAREST",
+                                "nameLangTranl": "Bucharest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RO",
+                                    "name": "ROMANIA",
+                                    "nameLangTranl": "Romania",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.5667,
+                                "longitude": 26.1
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-01T16:50:00.000+03:00",
+                            "latestPublished": "2025-10-01T16:50:00.000+03:00",
+                            "estimated": {
+                                "value": "2025-10-01T16:50:00.000+03:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H35M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "RO",
+                        "ownerAirlineName": "TAROM",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J008Y064"
+                    },
+                    "irregularity": {
+                        "cancelled": "Y",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 276,
+            "flightScheduleDate": "2025-10-02",
+            "id": "20251002+RO+0276",
+            "route": [
+                "SKG",
+                "OTP"
+            ],
+            "airline": {
+                "code": "RO",
+                "name": "TAROM"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6617,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251002+RO+0275",
+                    "flightScheduleDate": "2025-10-02",
+                    "airlineCode": "RO",
+                    "flightNumber": "0275"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "SKG",
+                            "name": "MAKEDONIA AIRPORT",
+                            "nameLangTranl": "Makedonia",
+                            "city": {
+                                "code": "SKG",
+                                "name": "THESSALONIKI",
+                                "nameLangTranl": "Thessaloniki",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.5197,
+                                "longitude": 22.9708
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "10"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-02T15:13:00.000+03:00",
+                            "scheduled": "2025-10-02T15:15:00.000+03:00",
+                            "latestPublished": "2025-10-02T15:13:00.000+03:00",
+                            "actualTakeOffTime": "2025-10-02T15:22:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OTP",
+                            "name": "HENRI COANDA AIRPORT",
+                            "nameLangTranl": "Henri Coanda International Airport",
+                            "city": {
+                                "code": "BUH",
+                                "name": "BUCHAREST",
+                                "nameLangTranl": "Bucharest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RO",
+                                    "name": "ROMANIA",
+                                    "nameLangTranl": "Romania",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.5667,
+                                "longitude": 26.1
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-02T16:40:00.000+03:00",
+                            "scheduled": "2025-10-02T16:50:00.000+03:00",
+                            "latestPublished": "2025-10-02T16:40:00.000+03:00",
+                            "estimated": {
+                                "value": "2025-10-02T16:40:00.000+03:00"
+                            },
+                            "actualTouchDownTime": "2025-10-02T16:33:00.000+03:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H35M",
+                    "departureDateTimeDifference": "PT-2M",
+                    "arrivalDateTimeDifference": "PT-10M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "YRATL",
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "RO",
+                        "ownerAirlineName": "TAROM",
+                        "physicalPaxConfiguration": "J008Y064",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIYBMLGUKQHRNAFTVSEW",
+                        "cockpitCrewEmployer": "RO",
+                        "cabinCrewEmployer": "RO"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 276,
+            "flightScheduleDate": "2025-10-03",
+            "id": "20251003+RO+0276",
+            "route": [
+                "SKG",
+                "OTP"
+            ],
+            "airline": {
+                "code": "RO",
+                "name": "TAROM"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6617,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251003+RO+0275",
+                    "flightScheduleDate": "2025-10-03",
+                    "airlineCode": "RO",
+                    "flightNumber": "0275"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "SKG",
+                            "name": "MAKEDONIA AIRPORT",
+                            "nameLangTranl": "Makedonia",
+                            "city": {
+                                "code": "SKG",
+                                "name": "THESSALONIKI",
+                                "nameLangTranl": "Thessaloniki",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.5197,
+                                "longitude": 22.9708
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "13"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-03T16:00:00.000+03:00",
+                            "scheduled": "2025-10-03T15:15:00.000+03:00",
+                            "latestPublished": "2025-10-03T16:00:00.000+03:00",
+                            "actualTakeOffTime": "2025-10-03T16:12:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OTP",
+                            "name": "HENRI COANDA AIRPORT",
+                            "nameLangTranl": "Henri Coanda International Airport",
+                            "city": {
+                                "code": "BUH",
+                                "name": "BUCHAREST",
+                                "nameLangTranl": "Bucharest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RO",
+                                    "name": "ROMANIA",
+                                    "nameLangTranl": "Romania",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.5667,
+                                "longitude": 26.1
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-03T21:42:00.000+03:00",
+                            "scheduled": "2025-10-03T16:50:00.000+03:00",
+                            "latestPublished": "2025-10-03T21:42:00.000+03:00",
+                            "estimated": {
+                                "value": "2025-10-03T21:42:00.000+03:00"
+                            },
+                            "actualTouchDownTime": "2025-10-03T21:36:00.000+03:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H35M",
+                    "departureDateTimeDifference": "PT45M",
+                    "arrivalDateTimeDifference": "PT4H52M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "YRATK",
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "RO",
+                        "ownerAirlineName": "TAROM",
+                        "physicalPaxConfiguration": "J008Y064",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIYBMLGUKQHRNAFTVSEW",
+                        "cockpitCrewEmployer": "RO",
+                        "cabinCrewEmployer": "RO"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT4H52M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 276,
+            "flightScheduleDate": "2025-10-06",
+            "id": "20251006+RO+0276",
+            "route": [
+                "SKG",
+                "OTP"
+            ],
+            "airline": {
+                "code": "RO",
+                "name": "TAROM"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6617,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251006+RO+0275",
+                    "flightScheduleDate": "2025-10-06",
+                    "airlineCode": "RO",
+                    "flightNumber": "0275"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "SKG",
+                            "name": "MAKEDONIA AIRPORT",
+                            "nameLangTranl": "Makedonia",
+                            "city": {
+                                "code": "SKG",
+                                "name": "THESSALONIKI",
+                                "nameLangTranl": "Thessaloniki",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.5197,
+                                "longitude": 22.9708
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "14"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-06T18:45:00.000+03:00",
+                            "scheduled": "2025-10-06T15:15:00.000+03:00",
+                            "latestPublished": "2025-10-06T18:45:00.000+03:00",
+                            "actualTakeOffTime": "2025-10-06T19:00:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OTP",
+                            "name": "HENRI COANDA AIRPORT",
+                            "nameLangTranl": "Henri Coanda International Airport",
+                            "city": {
+                                "code": "BUH",
+                                "name": "BUCHAREST",
+                                "nameLangTranl": "Bucharest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RO",
+                                    "name": "ROMANIA",
+                                    "nameLangTranl": "Romania",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.5667,
+                                "longitude": 26.1
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-06T20:20:00.000+03:00",
+                            "scheduled": "2025-10-06T16:50:00.000+03:00",
+                            "latestPublished": "2025-10-06T20:20:00.000+03:00",
+                            "estimated": {
+                                "value": "2025-10-06T20:20:00.000+03:00"
+                            },
+                            "actualTouchDownTime": "2025-10-06T20:15:00.000+03:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H35M",
+                    "departureDateTimeDifference": "PT3H30M",
+                    "arrivalDateTimeDifference": "PT3H30M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "YRATJ",
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "RO",
+                        "ownerAirlineName": "TAROM",
+                        "physicalPaxConfiguration": "J008Y064",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIYBMLGUKQHRNAFTVSEW",
+                        "cockpitCrewEmployer": "RO",
+                        "cabinCrewEmployer": "RO"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT3H30M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 276,
+            "flightScheduleDate": "2025-10-10",
+            "id": "20251010+RO+0276",
+            "route": [
+                "SKG",
+                "OTP"
+            ],
+            "airline": {
+                "code": "RO",
+                "name": "TAROM"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6617,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251010+RO+0275",
+                    "flightScheduleDate": "2025-10-10",
+                    "airlineCode": "RO",
+                    "flightNumber": "0275"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "SKG",
+                            "name": "MAKEDONIA AIRPORT",
+                            "nameLangTranl": "Makedonia",
+                            "city": {
+                                "code": "SKG",
+                                "name": "THESSALONIKI",
+                                "nameLangTranl": "Thessaloniki",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.5197,
+                                "longitude": 22.9708
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "12"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-10T15:15:00.000+03:00",
+                            "scheduled": "2025-10-10T15:15:00.000+03:00",
+                            "latestPublished": "2025-10-10T15:15:00.000+03:00",
+                            "actualTakeOffTime": "2025-10-10T15:24:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OTP",
+                            "name": "HENRI COANDA AIRPORT",
+                            "nameLangTranl": "Henri Coanda International Airport",
+                            "city": {
+                                "code": "BUH",
+                                "name": "BUCHAREST",
+                                "nameLangTranl": "Bucharest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RO",
+                                    "name": "ROMANIA",
+                                    "nameLangTranl": "Romania",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.5667,
+                                "longitude": 26.1
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-10T16:45:00.000+03:00",
+                            "scheduled": "2025-10-10T16:50:00.000+03:00",
+                            "latestPublished": "2025-10-10T16:45:00.000+03:00",
+                            "estimated": {
+                                "value": "2025-10-10T16:45:00.000+03:00"
+                            },
+                            "actualTouchDownTime": "2025-10-10T16:40:00.000+03:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H35M",
+                    "departureDateTimeDifference": "PT0S",
+                    "arrivalDateTimeDifference": "PT-5M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "YRATL",
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "RO",
+                        "ownerAirlineName": "TAROM",
+                        "physicalPaxConfiguration": "J008Y064",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIYBMLGUKQHRNAFTVSEW",
+                        "cockpitCrewEmployer": "RO",
+                        "cabinCrewEmployer": "RO"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 276,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+RO+0276",
+            "route": [
+                "SKG",
+                "OTP"
+            ],
+            "airline": {
+                "code": "RO",
+                "name": "TAROM"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6617,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+RO+0275",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "RO",
+                    "flightNumber": "0275"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "SKG",
+                            "name": "MAKEDONIA AIRPORT",
+                            "nameLangTranl": "Makedonia",
+                            "city": {
+                                "code": "SKG",
+                                "name": "THESSALONIKI",
+                                "nameLangTranl": "Thessaloniki",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.5197,
+                                "longitude": 22.9708
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "8"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T16:43:00.000+03:00",
+                            "scheduled": "2025-10-13T15:15:00.000+03:00",
+                            "latestPublished": "2025-10-13T16:43:00.000+03:00",
+                            "actualTakeOffTime": "2025-10-13T16:51:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OTP",
+                            "name": "HENRI COANDA AIRPORT",
+                            "nameLangTranl": "Henri Coanda International Airport",
+                            "city": {
+                                "code": "BUH",
+                                "name": "BUCHAREST",
+                                "nameLangTranl": "Bucharest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RO",
+                                    "name": "ROMANIA",
+                                    "nameLangTranl": "Romania",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.5667,
+                                "longitude": 26.1
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T18:15:00.000+03:00",
+                            "scheduled": "2025-10-13T16:50:00.000+03:00",
+                            "latestPublished": "2025-10-13T18:15:00.000+03:00",
+                            "estimated": {
+                                "value": "2025-10-13T18:15:00.000+03:00"
+                            },
+                            "actualTouchDownTime": "2025-10-13T18:10:00.000+03:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H35M",
+                    "departureDateTimeDifference": "PT1H28M",
+                    "arrivalDateTimeDifference": "PT1H25M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "YRATL",
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "RO",
+                        "ownerAirlineName": "TAROM",
+                        "physicalPaxConfiguration": "J008Y064",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIYBMLGUKQHRNAFTVSEW",
+                        "cockpitCrewEmployer": "RO",
+                        "cabinCrewEmployer": "RO"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT1H25M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 6,
+        "pageNumber": 1,
+        "fullCount": 106,
+        "pageCount": 6,
+        "totalPages": 2
+    }
+}

@@ -1,0 +1,520 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 571,
+            "flightScheduleDate": "2025-10-11",
+            "id": "20251011+AY+0571",
+            "route": [
+                "HEL",
+                "KTT"
+            ],
+            "airline": {
+                "code": "AY",
+                "name": "FINNAIR OYJ"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4626,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "HEL",
+                            "name": "HELSINKI-VANTAA AIRPORT",
+                            "nameLangTranl": "Helsinki-Vantaa",
+                            "city": {
+                                "code": "HEL",
+                                "name": "HELSINKI",
+                                "nameLangTranl": "Helsinki",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FI",
+                                    "name": "FINLAND",
+                                    "nameLangTranl": "Finland",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.3256,
+                                "longitude": 24.9717
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-11T07:00:00.000+03:00",
+                            "latestPublished": "2025-10-11T07:00:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "KTT",
+                            "name": "KITTILA AIRPORT",
+                            "nameLangTranl": "Kittila",
+                            "city": {
+                                "code": "KTT",
+                                "name": "KITTILA",
+                                "nameLangTranl": "Kittila",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FI",
+                                    "name": "FINLAND",
+                                    "nameLangTranl": "Finland",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 67.6667,
+                                "longitude": 24.9
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-11T09:00:00.000+03:00",
+                            "latestPublished": "2025-10-11T09:00:00.000+03:00",
+                            "estimated": {
+                                "value": "2025-10-11T09:00:00.000+03:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "N7",
+                        "ownerAirlineName": "NORDIC REGIONAL AIRLINES",
+                        "physicalPaxConfiguration": "Y068",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMLVSNQOZGXA",
+                        "cockpitCrewEmployer": "N7",
+                        "cabinCrewEmployer": "N7"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 577,
+            "flightScheduleDate": "2025-10-11",
+            "id": "20251011+AY+0577",
+            "route": [
+                "HEL",
+                "KTT"
+            ],
+            "airline": {
+                "code": "AY",
+                "name": "FINNAIR OYJ"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4221,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6152,
+                    "airline": {
+                        "code": "QR",
+                        "name": "QATAR AIRWAYS  QCSC"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "HEL",
+                            "name": "HELSINKI-VANTAA AIRPORT",
+                            "nameLangTranl": "Helsinki-Vantaa",
+                            "city": {
+                                "code": "HEL",
+                                "name": "HELSINKI",
+                                "nameLangTranl": "Helsinki",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FI",
+                                    "name": "FINLAND",
+                                    "nameLangTranl": "Finland",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.3256,
+                                "longitude": 24.9717
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-11T19:20:00.000+03:00",
+                            "latestPublished": "2025-10-11T19:20:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "KTT",
+                            "name": "KITTILA AIRPORT",
+                            "nameLangTranl": "Kittila",
+                            "city": {
+                                "code": "KTT",
+                                "name": "KITTILA",
+                                "nameLangTranl": "Kittila",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FI",
+                                    "name": "FINLAND",
+                                    "nameLangTranl": "Finland",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 67.6667,
+                                "longitude": 24.9
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-11T21:20:00.000+03:00",
+                            "latestPublished": "2025-10-11T21:20:00.000+03:00",
+                            "estimated": {
+                                "value": "2025-10-11T21:20:00.000+03:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "N7",
+                        "ownerAirlineName": "NORDIC REGIONAL AIRLINES",
+                        "physicalPaxConfiguration": "Y070",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMLVSNQOZGXA",
+                        "cockpitCrewEmployer": "N7",
+                        "cabinCrewEmployer": "N7"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 577,
+            "flightScheduleDate": "2025-10-12",
+            "id": "20251012+AY+0577",
+            "route": [
+                "HEL",
+                "KTT"
+            ],
+            "airline": {
+                "code": "AY",
+                "name": "FINNAIR OYJ"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4228,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6152,
+                    "airline": {
+                        "code": "QR",
+                        "name": "QATAR AIRWAYS  QCSC"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "HEL",
+                            "name": "HELSINKI-VANTAA AIRPORT",
+                            "nameLangTranl": "Helsinki-Vantaa",
+                            "city": {
+                                "code": "HEL",
+                                "name": "HELSINKI",
+                                "nameLangTranl": "Helsinki",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FI",
+                                    "name": "FINLAND",
+                                    "nameLangTranl": "Finland",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.3256,
+                                "longitude": 24.9717
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-12T19:25:00.000+03:00",
+                            "latestPublished": "2025-10-12T19:25:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "KTT",
+                            "name": "KITTILA AIRPORT",
+                            "nameLangTranl": "Kittila",
+                            "city": {
+                                "code": "KTT",
+                                "name": "KITTILA",
+                                "nameLangTranl": "Kittila",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FI",
+                                    "name": "FINLAND",
+                                    "nameLangTranl": "Finland",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 67.6667,
+                                "longitude": 24.9
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-12T20:55:00.000+03:00",
+                            "latestPublished": "2025-10-12T20:55:00.000+03:00",
+                            "estimated": {
+                                "value": "2025-10-12T20:55:00.000+03:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "320",
+                        "typeName": "AIRBUS A320",
+                        "ownerAirlineCode": "AY",
+                        "ownerAirlineName": "FINNAIR OYJ",
+                        "physicalPaxConfiguration": "Y174",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMLVSNQOZGXA",
+                        "cockpitCrewEmployer": "AY",
+                        "cabinCrewEmployer": "AY"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 577,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+AY+0577",
+            "route": [
+                "HEL",
+                "KTT"
+            ],
+            "airline": {
+                "code": "AY",
+                "name": "FINNAIR OYJ"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4226,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6152,
+                    "airline": {
+                        "code": "QR",
+                        "name": "QATAR AIRWAYS  QCSC"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "HEL",
+                            "name": "HELSINKI-VANTAA AIRPORT",
+                            "nameLangTranl": "Helsinki-Vantaa",
+                            "city": {
+                                "code": "HEL",
+                                "name": "HELSINKI",
+                                "nameLangTranl": "Helsinki",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FI",
+                                    "name": "FINLAND",
+                                    "nameLangTranl": "Finland",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.3256,
+                                "longitude": 24.9717
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T19:15:00.000+03:00",
+                            "latestPublished": "2025-10-14T19:15:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "KTT",
+                            "name": "KITTILA AIRPORT",
+                            "nameLangTranl": "Kittila",
+                            "city": {
+                                "code": "KTT",
+                                "name": "KITTILA",
+                                "nameLangTranl": "Kittila",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FI",
+                                    "name": "FINLAND",
+                                    "nameLangTranl": "Finland",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 67.6667,
+                                "longitude": 24.9
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T21:15:00.000+03:00",
+                            "latestPublished": "2025-10-14T21:15:00.000+03:00",
+                            "estimated": {
+                                "value": "2025-10-14T21:15:00.000+03:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "N7",
+                        "ownerAirlineName": "NORDIC REGIONAL AIRLINES",
+                        "physicalPaxConfiguration": "Y070",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMLVSNQOZGXA",
+                        "cockpitCrewEmployer": "N7",
+                        "cabinCrewEmployer": "N7"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 4,
+        "pageNumber": 1,
+        "fullCount": 104,
+        "pageCount": 4,
+        "totalPages": 2
+    }
+}

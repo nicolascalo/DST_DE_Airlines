@@ -1,0 +1,335 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 6188,
+            "flightScheduleDate": "2025-10-11",
+            "id": "20251011+VY+6188",
+            "haul": "MEDIUM",
+            "route": [
+                "ACE",
+                "ORY"
+            ],
+            "airline": {
+                "code": "VY",
+                "name": "VUELING AIRLINES SA"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5161,
+                    "flightScheduleDate": "2025-10-11",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "IB",
+                        "name": "IBERIA LINEAS AEREAS DE ESPANA S.A. OPERADORA"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251011+VY+6187",
+                    "flightScheduleDate": "2025-10-11",
+                    "airlineCode": "VY",
+                    "flightNumber": "6187"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ACE",
+                            "name": "LANZAROTE AIRPORT",
+                            "nameLangTranl": "Lanzarote",
+                            "city": {
+                                "code": "ACE",
+                                "name": "LANZAROTE",
+                                "nameLangTranl": "Lanzarote - Canary Islands",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 28.9375,
+                                "longitude": -13.6036
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-11T17:05:00.000+01:00",
+                            "latestPublished": "2025-10-11T17:05:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "01"
+                                ],
+                                "parkingPosition": "P13",
+                                "pierCode": "A",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    "02"
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "A",
+                                "parkingPositionCustomStatus": "D",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-11T21:22:00.000+02:00",
+                            "scheduled": "2025-10-11T21:45:00.000+02:00",
+                            "latestPublished": "2025-10-11T21:22:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-11T21:22:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-11T21:18:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H40M",
+                    "arrivalDateTimeDifference": "PT-23M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "ECMFN",
+                        "typeCode": "32A",
+                        "typeName": "AIRBUS A320 (SHARKLETS)",
+                        "ownerAirlineCode": "VY",
+                        "ownerAirlineName": "VUELING AIRLINES SA",
+                        "physicalPaxConfiguration": "Y180",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y180"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4661,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+TO+4661",
+            "haul": "MEDIUM",
+            "route": [
+                "ACE",
+                "ORY"
+            ],
+            "airline": {
+                "code": "TO",
+                "name": "TRANSAVIA FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+TO+4660",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "TO",
+                    "flightNumber": "4660"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ACE",
+                            "name": "LANZAROTE AIRPORT",
+                            "nameLangTranl": "Lanzarote",
+                            "city": {
+                                "code": "ACE",
+                                "name": "LANZAROTE",
+                                "nameLangTranl": "Lanzarote - Canary Islands",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 28.9375,
+                                "longitude": -13.6036
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T09:55:00.000+01:00",
+                            "latestPublished": "2025-10-14T09:55:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    "03"
+                                ],
+                                "parkingPosition": "D06",
+                                "pierCode": "E",
+                                "terminalCode": "3",
+                                "baggageBelt": [
+                                    "04"
+                                ],
+                                "arrivalPositionTerminal": "3",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "E",
+                                "parkingPositionCustomStatus": "D",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "3",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T14:22:00.000+02:00",
+                            "scheduled": "2025-10-14T14:35:00.000+02:00",
+                            "latestPublished": "2025-10-14T14:22:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T14:22:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T14:17:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H40M",
+                    "arrivalDateTimeDifference": "PT-13M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "FHTVZ",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "TO",
+                        "ownerAirlineName": "TRANSAVIA FRANCE",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y189"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 2,
+        "pageNumber": 1,
+        "fullCount": 102,
+        "pageCount": 2,
+        "totalPages": 2
+    }
+}

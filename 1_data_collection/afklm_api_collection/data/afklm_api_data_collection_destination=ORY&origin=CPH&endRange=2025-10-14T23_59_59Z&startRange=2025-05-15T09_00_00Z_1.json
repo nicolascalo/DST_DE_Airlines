@@ -1,0 +1,636 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 4319,
+            "flightScheduleDate": "2025-10-09",
+            "id": "20251009+TO+4319",
+            "haul": "MEDIUM",
+            "route": [
+                "CPH",
+                "ORY"
+            ],
+            "airline": {
+                "code": "TO",
+                "name": "TRANSAVIA FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251009+TO+4318",
+                    "flightScheduleDate": "2025-10-09",
+                    "airlineCode": "TO",
+                    "flightNumber": "4318"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CPH",
+                            "name": "KASTRUP AIRPORT",
+                            "nameLangTranl": "Copenhagen Airport",
+                            "city": {
+                                "code": "CPH",
+                                "name": "COPENHAGEN",
+                                "nameLangTranl": "Copenhagen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DK",
+                                    "name": "DENMARK",
+                                    "nameLangTranl": "Denmark",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 55.6081,
+                                "longitude": 12.6333
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-09T20:05:00.000+02:00",
+                            "latestPublished": "2025-10-09T20:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    "03"
+                                ],
+                                "parkingPosition": "G52",
+                                "pierCode": "E",
+                                "terminalCode": "3",
+                                "baggageBelt": [
+                                    "02"
+                                ],
+                                "arrivalPositionTerminal": "3",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "L",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingBusQuantity": "0",
+                                "disembarkingContactType": "L",
+                                "disembarkingAerogare": "3",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-09T21:52:00.000+02:00",
+                            "scheduled": "2025-10-09T22:00:00.000+02:00",
+                            "latestPublished": "2025-10-09T21:52:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-09T21:52:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-09T21:44:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H55M",
+                    "arrivalDateTimeDifference": "PT-8M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHXSI",
+                        "typeCode": "32N",
+                        "typeName": "AIRBUS A320NEO",
+                        "ownerAirlineCode": "TO",
+                        "ownerAirlineName": "TRANSAVIA FRANCE",
+                        "physicalPaxConfiguration": "Y186",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y186"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4319,
+            "flightScheduleDate": "2025-10-10",
+            "id": "20251010+TO+4319",
+            "haul": "MEDIUM",
+            "route": [
+                "CPH",
+                "ORY"
+            ],
+            "airline": {
+                "code": "TO",
+                "name": "TRANSAVIA FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251010+TO+4318",
+                    "flightScheduleDate": "2025-10-10",
+                    "airlineCode": "TO",
+                    "flightNumber": "4318"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CPH",
+                            "name": "KASTRUP AIRPORT",
+                            "nameLangTranl": "Copenhagen Airport",
+                            "city": {
+                                "code": "CPH",
+                                "name": "COPENHAGEN",
+                                "nameLangTranl": "Copenhagen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DK",
+                                    "name": "DENMARK",
+                                    "nameLangTranl": "Denmark",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 55.6081,
+                                "longitude": 12.6333
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-10T20:20:00.000+02:00",
+                            "latestPublished": "2025-10-10T20:20:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    "03"
+                                ],
+                                "parkingPosition": "F10",
+                                "pierCode": "E",
+                                "terminalCode": "3",
+                                "baggageBelt": [
+                                    "02"
+                                ],
+                                "arrivalPositionTerminal": "3",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "L",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingBusQuantity": "0",
+                                "disembarkingContactType": "L",
+                                "disembarkingAerogare": "3",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-10T22:10:00.000+02:00",
+                            "scheduled": "2025-10-10T22:15:00.000+02:00",
+                            "latestPublished": "2025-10-10T22:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-10T22:10:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-10T22:04:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H55M",
+                    "arrivalDateTimeDifference": "PT-5M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHXSF",
+                        "typeCode": "32N",
+                        "typeName": "AIRBUS A320NEO",
+                        "ownerAirlineCode": "TO",
+                        "ownerAirlineName": "TRANSAVIA FRANCE",
+                        "physicalPaxConfiguration": "Y186",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y186"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4319,
+            "flightScheduleDate": "2025-10-12",
+            "id": "20251012+TO+4319",
+            "haul": "MEDIUM",
+            "route": [
+                "CPH",
+                "ORY"
+            ],
+            "airline": {
+                "code": "TO",
+                "name": "TRANSAVIA FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251012+TO+4318",
+                    "flightScheduleDate": "2025-10-12",
+                    "airlineCode": "TO",
+                    "flightNumber": "4318"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CPH",
+                            "name": "KASTRUP AIRPORT",
+                            "nameLangTranl": "Copenhagen Airport",
+                            "city": {
+                                "code": "CPH",
+                                "name": "COPENHAGEN",
+                                "nameLangTranl": "Copenhagen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DK",
+                                    "name": "DENMARK",
+                                    "nameLangTranl": "Denmark",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 55.6081,
+                                "longitude": 12.6333
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-12T20:05:00.000+02:00",
+                            "latestPublished": "2025-10-12T20:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    "03"
+                                ],
+                                "parkingPosition": "Q22",
+                                "pierCode": "E",
+                                "terminalCode": "3",
+                                "baggageBelt": [
+                                    "01"
+                                ],
+                                "arrivalPositionTerminal": "3",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "L",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingBusQuantity": "0",
+                                "disembarkingContactType": "L",
+                                "disembarkingAerogare": "3",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-12T23:12:00.000+02:00",
+                            "scheduled": "2025-10-12T22:00:00.000+02:00",
+                            "latestPublished": "2025-10-12T23:12:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-12T23:12:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-12T23:06:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H55M",
+                    "arrivalDateTimeDifference": "PT1H12M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHTVV",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "TO",
+                        "ownerAirlineName": "TRANSAVIA FRANCE",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y189"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT1H12M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4319,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+TO+4319",
+            "haul": "MEDIUM",
+            "route": [
+                "CPH",
+                "ORY"
+            ],
+            "airline": {
+                "code": "TO",
+                "name": "TRANSAVIA FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+TO+4318",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "TO",
+                    "flightNumber": "4318"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CPH",
+                            "name": "KASTRUP AIRPORT",
+                            "nameLangTranl": "Copenhagen Airport",
+                            "city": {
+                                "code": "CPH",
+                                "name": "COPENHAGEN",
+                                "nameLangTranl": "Copenhagen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DK",
+                                    "name": "DENMARK",
+                                    "nameLangTranl": "Denmark",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 55.6081,
+                                "longitude": 12.6333
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T20:25:00.000+02:00",
+                            "latestPublished": "2025-10-14T20:25:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "parkingPosition": "C01",
+                                "pierCode": "",
+                                "terminalCode": "4",
+                                "baggageBelt": [
+                                    "04"
+                                ],
+                                "arrivalPositionTerminal": "3",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "4",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "4",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T22:22:00.000+02:00",
+                            "scheduled": "2025-10-14T22:20:00.000+02:00",
+                            "latestPublished": "2025-10-14T22:22:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T22:22:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T22:16:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H55M",
+                    "arrivalDateTimeDifference": "PT2M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHUYM",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "TO",
+                        "ownerAirlineName": "TRANSAVIA FRANCE",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y189"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 4,
+        "pageNumber": 1,
+        "fullCount": 104,
+        "pageCount": 4,
+        "totalPages": 2
+    }
+}
