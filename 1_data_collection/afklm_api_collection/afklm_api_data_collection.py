@@ -28,6 +28,7 @@ import time
 import json
 import os
 import datetime
+from colorama import Fore, Back, Style
 
 
 ### Script parameters
@@ -37,7 +38,7 @@ pageNumberStart = 1
 skip_previously_failed = True
 page_max = 100000 # Will automatically be adjusted after having retrived the fist page 
 time_analysis = datetime.datetime.now().isoformat()
-
+time_delay_query = 1.5 # API limited to 1 call / s, 100 / day
 
 ### List of already retrieved data
 
@@ -146,9 +147,11 @@ df_call_parameters_new = df_call_parameters.copy(deep=True) # to update the df_c
 ### loop over the csv file containing the parameter list to send to the API
 
 for i in range(0, len(df_call_parameters)): 
-    print("")
-    df_subset = df_call_parameters.iloc[[i]].copy(deep = True).reset_index().drop(['index'], axis = 1) # parameters for the current querry
     
+    print("")
+    
+    df_subset = df_call_parameters.iloc[[i]].copy(deep = True).reset_index().drop(['index'], axis = 1) # parameters for the current querry
+    print(Fore.RESET + f"{df_subset['call_parameters'].item()}")
     
     pageNumber = pageNumberStart	 #	integer<int32>	Indicates the page number you are requesting, the first page is page 0. If it's not provided first page will be returned		1	
 
@@ -163,7 +166,9 @@ for i in range(0, len(df_call_parameters)):
         match_error = match_error[0]
         
     if skip_previously_failed & ( int(match_error)> 200):
-        print(f"{df_subset['call_parameters'].item()}\nskipped because previously failed")
+        
+        
+        print(Fore.MAGENTA + f"skipped because previously failed")
         continue
 
 
@@ -188,8 +193,7 @@ for i in range(0, len(df_call_parameters)):
         break
 
 
-    print("")
-    print(f"{call_parameters_url}")
+    
 
 
     ### Loop until reached desired number of pages or max nb of pages to fetch for the query
@@ -203,7 +207,7 @@ for i in range(0, len(df_call_parameters)):
 
         
         if json_to_make in json_list : # skip current query if corresponding json already present
-            print(f"Fetching page {pageNumber} skipped because already retrieved")
+            print(Fore.BLUE +f"Page {pageNumber} : skipped because already retrieved")
 
             pageNumber = pageNumber + 1
             continue
@@ -216,17 +220,17 @@ for i in range(0, len(df_call_parameters)):
         headers['API-Key'] = API_key # API key is send in the request header
         
 
-        url_page = url + "&pageNumber="+str(pageNumber)
+       
 
-        
-        time.sleep(1.5) # API limited to 1 call / s, 100 / day
-        
-        
-        
+        url_page = (url + f"&{pageNumber=}").replace("?&","?") # Cleaning url from empty fileds
+
         response = requests.get(url_page, headers=headers)
         
+        time.sleep(time_delay_query) # API limited to 1 call / s, 100 / day
+               
         
-        url_page = (url + f"&{pageNumber=}").replace("?&","?") # Cleaning url from empty fileds
+        
+        
         
         # print(f"Page found: {response.__bool__()}")
         
@@ -241,13 +245,11 @@ for i in range(0, len(df_call_parameters)):
             
             page_max =  data['page']['totalPages'] # Update total number of pages
             
-            json_str = json.dumps(data, indent=4)
-            
-            with open(f"data/afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json", "w") as f:
-                f.write(json_str)
+            with open(f"data/afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json", 'w', encoding='utf-8') as f:
+                json.dump(data, f, ensure_ascii=False, indent=4)
             
             
-            print(f"Page {pageNumber} / {page_max}: OK")
+            print(Fore.GREEN +f"Page {pageNumber} : retrieval OK"+ Fore.RESET +f"    Total: {page_max} , Max: {max_page_to_fetch} ")
 
             if  df_subset['nb_of_pages_already_retrieved'].item() == '': # Check info already present in df_call_parameters.csv  
 
@@ -271,10 +273,10 @@ for i in range(0, len(df_call_parameters)):
             pageNumber = pageNumber + 1
         
     
-        elif (response.text == '<h1>Developer Over Rate</h1>') &( API_key_list_length > API_key_counter + 1) : # Iterate of API key list to test the next one
+        elif (response.text == '<h1>Developer Over Rate</h1>') & (API_key_list_length > API_key_counter + 1) : # Iterate of API key list to test the next one
             
             
-            print(f"Trying next API key previous: {API_key}, next:{API_key_list_cleaned[API_key_counter+1]}")
+            print(Fore.YELLOW + f"Trying next API key previous: {API_key}, next: {API_key_list_cleaned[API_key_counter+1]}")
             API_key_counter = API_key_counter + 1
             
             
@@ -283,7 +285,7 @@ for i in range(0, len(df_call_parameters)):
             
         else:
             
-            print(f"Issues with the call: {response} {response.text}")
+            print(Fore.RED + f"Issues with the call: {response} {response.text}")
          
             df_subset.loc[0,['response']] = str(response)
             df_subset.loc[0,['message']] = str(response.text)            
@@ -298,13 +300,13 @@ for i in range(0, len(df_call_parameters)):
         
         
     if no_more_api_key:
-        print("API keys all consumed")
+        print(Fore.RED + "API keys all consumed")
+        print(Style.RESET_ALL)
         break
     
     
+    
 '''
-
-
 
         
 ### Stats pages to retrieve
