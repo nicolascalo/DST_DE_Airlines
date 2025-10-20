@@ -30,12 +30,13 @@ import os
 import datetime
 from colorama import Fore, Back, Style
 import gzip
+import numpy as np
 
 ### Script parameters
 
 max_page_to_fetch = 1
 pageNumberStart = 1
-skip_previously_failed = True
+skip_previously_failed = False
 page_max = 100000 # Will automatically be adjusted after having retrived the fist page 
 
 time_delay_query = 1.5 # API limited to 1 call / s, 100 / day
@@ -44,6 +45,8 @@ output_format = ["json","gzip"] # ["json","gzip"]
 ### List of already retrieved data
 
 json_list = os.listdir("data")
+
+
 
 
 ### Setting up working directory
@@ -241,6 +244,8 @@ for i in range(0, len(df_call_parameters)):
         
         time_analysis = datetime.datetime.now().isoformat()
         df_subset.loc[0,['timestamp']] = time_analysis
+        df_subset.loc[0,['call_parameters']] = call_parameters_url
+        
 
         if  response.__bool__() : # True if response < 400
             
@@ -315,6 +320,37 @@ for i in range(0, len(df_call_parameters)):
         break
     
     
+### Update with new dates    
+    
+df_call_parameters = pd.read_csv("df_call_parameters.csv").fillna('')
+
+df_call_parameters_date_update = df_call_parameters.query('response == "<Response [200]>"').sort_values(['endRange'],ascending=False).groupby('call_parameters').head(1)
+    
+if len(df_call_parameters_date_update.query('completion != "100%"')) > 0:
+
+    df_call_parameters_date_update['startRange']= df_call_parameters_date_update['endRange'].map(lambda x: ((datetime.datetime.fromisoformat(x) +datetime.timedelta(0,1)).isoformat(timespec='seconds') + "Z").replace("+00:00","") )
+    df_call_parameters_date_update['endRange']= datetime.datetime.now().isoformat(timespec='seconds') + "Z"
+
+    df_call_parameters_date_update = df_call_parameters_date_update.drop(non_parameters, axis=1)
+
+    df_call_parameters_new = pd.concat([df_call_parameters, df_call_parameters_date_update],ignore_index=True).fillna('').sort_values(['startRange','endRange','response'])
+    df_call_parameters_new.fillna('').to_csv("df_call_parameters.csv", index=0)
+
+
+'''
+
+### json to json.gzip
+
+import shutil
+for file in json_list:
+
+    with open('data/'+file, 'rb') as f_in:
+        with gzip.open("data/"+file+".gzip", 'wb') as f_out:
+            shutil.copyfileobj(f_in, f_out)
+
+
+
+'''    
     
 '''
 
