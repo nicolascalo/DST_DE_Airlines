@@ -19,7 +19,7 @@ for item in bs_continent:
     continent = item.text
     
     bs_continent_children = soup.find('h2', id = continent)
-
+    print(continent)
     
     if bs_continent_children is not None:
         bs_continent_children =  soup.find('h2', id = continent).find_next('section').find_all("h3")
@@ -30,19 +30,42 @@ for item in bs_continent:
             
             bs_subcontinent_children = soup.find('h2', id = continent).find_next('section').find('h3', string = subcontinent)
             
+            print(subcontinent)
             if bs_subcontinent_children is not None:
-                bs_subcontinent_children =  soup.find('h2', id = continent).find_next('section').find('h3', string = subcontinent).find_previous('section').find_all("h4")
+
+                
+                if continent == "Oceania":
+                    #time.sleep(30)
+                    bs_subcontinent_children =  soup.find('h2', id = continent).find_next('section').find('h3', string = subcontinent).find_previous('section').find_all("h3")
+                else:
+                    bs_subcontinent_children =  soup.find('h2', id = continent).find_next('section').find('h3', string = subcontinent).find_previous('section').find_all("h4")
+                    
+                    
+                    
+                print(bs_subcontinent_children)
         
            
                 for item in bs_subcontinent_children: 
                         country = item.text
                         print(continent + " - " + subcontinent + " - " + country)
                         
-                        bs_country_children =  soup.find('h2', id = continent).find_next('section').find('h3', string = subcontinent).find_previous('section').find("h4", string = country)
+                        if continent == "Oceania":
+                            
+                            bs_country_children =  soup.find('h2', id = continent).find_next('section').find('h3', string = subcontinent).find_previous('section').find("h3", string = country)
+                            print(bs_country_children)
+                            #time.sleep(30)
+                        else:
+                            
+                            bs_country_children =  soup.find('h2', id = continent).find_next('section').find('h3', string = subcontinent).find_previous('section').find("h4", string = country)
                         #print(bs_country_children)
                                                
                         if bs_country_children is not None:
-                            bs_country_children =  soup.find('h2', id = continent).find_next('section').find('h3', string = subcontinent).find_previous('section').find("h4", string = country).find_next('table').find_previous().contents
+                            
+                            
+                            if continent == "Oceania":
+                                bs_country_children =  soup.find('h2', id = continent).find_next('section').find('h3', string = subcontinent).find_previous('section').find("h3", string = country).find_next('table').find_previous().contents
+                            else:
+                                bs_country_children =  soup.find('h2', id = continent).find_next('section').find('h3', string = subcontinent).find_previous('section').find("h4", string = country).find_next('table').find_previous().contents
                                                      
                             df_country = pd.read_html(StringIO(str(bs_country_children)))[0]
                             df_country['continent'] = continent
