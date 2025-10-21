@@ -38,7 +38,7 @@ df_wikipedia_airport_list_clean.info()
 
 
 
-df_wikipedia_airport_list_clean_short = df_wikipedia_airport_list_clean[['continent','subcontinent','country','iata']].drop_duplicates()
+df_wikipedia_airport_list_clean_short = df_wikipedia_airport_list_clean[['continent','subcontinent','country','iata']].drop_duplicates().dropna(subset='iata')
 
 df_wikipedia_airport_list_clean_short.info()
 
