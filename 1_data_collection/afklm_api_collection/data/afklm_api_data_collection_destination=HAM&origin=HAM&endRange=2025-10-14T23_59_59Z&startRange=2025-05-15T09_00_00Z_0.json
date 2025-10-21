@@ -1,0 +1,2603 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 1263,
+            "flightScheduleDate": "2025-05-20",
+            "id": "20250520+AF+1263",
+            "haul": "MEDIUM",
+            "route": [
+                "ARN",
+                "HAM",
+                "CDG"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5701,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2679,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AZ",
+                        "name": "ITA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 8637,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5273,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "G3",
+                        "name": "GOL LINHAS AEREAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5312,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "JL",
+                        "name": "JAPAN AIRLINES CO. LTD."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3115,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KQ",
+                        "name": "KENYA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9635,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MK",
+                        "name": "AIR MAURITIUS LTD"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1726,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MU",
+                        "name": "CHINA EASTERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9701,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SK",
+                        "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 8263,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "UU",
+                        "name": "AIR AUSTRAL"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    "67"
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-20T12:45:00.000+02:00",
+                            "scheduled": "2025-05-20T12:35:00.000+02:00",
+                            "latestPublished": "2025-05-20T12:45:00.000+02:00",
+                            "actualTakeOffTime": "2025-05-20T12:58:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-05-20T12:05:00.000+02:00",
+                            "gateCloseTime": "2025-05-20T12:15:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "1",
+                                "terminalCode": "2F",
+                                "baggageBelt": [
+                                    "22"
+                                ],
+                                "arrivalPositionTerminal": "2F",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-20T15:15:00.000+02:00",
+                            "latestPublished": "2025-05-20T15:22:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-05-20T15:22:00.000+02:00"
+                            },
+                            "estimatedArrival": "2025-05-20T15:22:00.000+02:00",
+                            "estimatedTouchDownTime": "2025-05-20T15:13:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "departureDateTimeDifference": "PT10M",
+                    "arrivalDateTimeDifference": "PT7M",
+                    "timeToArrival": "PT-3691H-17M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHZUQ",
+                        "typeCode": "223",
+                        "typeName": "AIRBUS A220-300 PASSENGER",
+                        "subFleetCodeId": "CA",
+                        "ownerAirlineCode": "AF",
+                        "ownerAirlineName": "AIR FRANCE",
+                        "physicalPaxConfiguration": "Y148",
+                        "operationalConfiguration": "C8Y135",
+                        "cockpitCrewEmployer": "AF",
+                        "cabinCrewEmployer": "AF",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "85"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0010"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR04"
+                        ],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "85",
+                                "delayDuration": "0010",
+                                "delayReasonCodePublic": "FSR04"
+                            }
+                        ],
+                        "cancellationReasonCodePublic": "FSCR08",
+                        "cancellationReasonPublicShort": "Flight schedule changes",
+                        "cancellationReasonPublicLong": "This flight has been cancelled because of some unforeseen changes to the flight schedule."
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-20T12:45:00.000+02:00",
+                            "scheduled": "2025-05-20T12:45:00.000+02:00",
+                            "latestPublished": "2025-05-20T12:45:00.000+02:00",
+                            "actualTakeOffTime": "2025-05-20T12:58:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAM",
+                            "name": "HAMBURG AIRPORT",
+                            "nameLangTranl": "Hamburg Airport",
+                            "city": {
+                                "code": "HAM",
+                                "name": "HAMBURG",
+                                "nameLangTranl": "Hamburg",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 53.6303,
+                                "longitude": 9.9883
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-20T14:25:00.000+02:00",
+                            "scheduled": "2025-05-20T14:30:00.000+02:00",
+                            "latestPublished": "2025-05-20T14:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-05-20T14:25:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-05-20T14:18:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H45M",
+                    "departureDateTimeDifference": "PT0S",
+                    "arrivalDateTimeDifference": "PT-5M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHZUQ",
+                        "typeCode": "223",
+                        "typeName": "AIRBUS A220-300 PASSENGER",
+                        "subFleetCodeId": "CA",
+                        "ownerAirlineCode": "AF",
+                        "ownerAirlineName": "AIR FRANCE",
+                        "physicalPaxConfiguration": "Y148",
+                        "operationalConfiguration": "C008Y135",
+                        "cockpitCrewEmployer": "AF",
+                        "cabinCrewEmployer": "AF",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "HAM",
+                            "name": "HAMBURG AIRPORT",
+                            "nameLangTranl": "Hamburg Airport",
+                            "city": {
+                                "code": "HAM",
+                                "name": "HAMBURG",
+                                "nameLangTranl": "Hamburg",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 53.6303,
+                                "longitude": 9.9883
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-20T15:31:00.000+02:00",
+                            "scheduled": "2025-05-20T15:00:00.000+02:00",
+                            "latestPublished": "2025-05-20T15:31:00.000+02:00",
+                            "actualTakeOffTime": "2025-05-20T15:48:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "parkingPosition": "F14",
+                                "pierCode": "1",
+                                "terminalCode": "2F",
+                                "baggageBelt": [
+                                    "25"
+                                ],
+                                "arrivalPositionTerminal": "2F",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "1",
+                                "parkingPositionCustomStatus": "D",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-20T17:14:00.000+02:00",
+                            "scheduled": "2025-05-20T16:30:00.000+02:00",
+                            "latestPublished": "2025-05-20T17:14:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-05-20T17:14:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-05-20T17:05:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "departureDateTimeDifference": "PT31M",
+                    "arrivalDateTimeDifference": "PT44M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHZUQ",
+                        "typeCode": "223",
+                        "typeName": "AIRBUS A220-300 PASSENGER",
+                        "subFleetCodeId": "CA",
+                        "ownerAirlineCode": "AF",
+                        "ownerAirlineName": "AIR FRANCE",
+                        "physicalPaxConfiguration": "Y148",
+                        "operationalConfiguration": "C008Y135",
+                        "cockpitCrewEmployer": "AF",
+                        "cabinCrewEmployer": "AF",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "41"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0031"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR01"
+                        ],
+                        "delayReasonPublicLangTransl": [
+                            "This flight was delayed due to technical issues."
+                        ],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT31M",
+                        "delayDurationArrival": "PT44M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "41",
+                                "delayDuration": "0031",
+                                "delayReasonCodePublic": "FSR01",
+                                "delayReasonPublicShort": "Technical issues",
+                                "delayReasonPublicLong": "This flight was delayed due to technical issues."
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Not Open"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1758,
+            "flightScheduleDate": "2025-05-29",
+            "id": "20250529+KL+1758",
+            "haul": "MEDIUM",
+            "route": [
+                "HAM",
+                "AMS"
+            ],
+            "airline": {
+                "code": "KL",
+                "name": "KLM ROYAL DUTCH AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6525,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7784,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "CZ",
+                        "name": "CHINA SOUTHERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6438,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KE",
+                        "name": "KOREAN AIR LINES CO. LTD."
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250529+KL+1757",
+                    "flightScheduleDate": "2025-05-29",
+                    "airlineCode": "KL",
+                    "flightNumber": "1757"
+                }
+            },
+            "flightStatusPublic": "ON_TIME",
+            "flightStatusPublicLangTransl": "On time",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "HAM",
+                            "name": "HAMBURG AIRPORT",
+                            "nameLangTranl": "Hamburg Airport",
+                            "city": {
+                                "code": "HAM",
+                                "name": "HAMBURG",
+                                "nameLangTranl": "Hamburg",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 53.6303,
+                                "longitude": 9.9883
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C14"
+                                ],
+                                "terminalCode": "2",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-29T19:01:00.000+02:00",
+                            "scheduled": "2025-05-29T19:01:00.000+02:00",
+                            "latestPublished": "2025-05-29T19:01:00.000+02:00",
+                            "estimatedTakeOffTime": "2025-05-29T19:10:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAM",
+                            "name": "HAMBURG AIRPORT",
+                            "nameLangTranl": "Hamburg Airport",
+                            "city": {
+                                "code": "HAM",
+                                "name": "HAMBURG",
+                                "nameLangTranl": "Hamburg",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 53.6303,
+                                "longitude": 9.9883
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-29T19:19:00.000+02:00",
+                            "latestPublished": "2025-05-29T19:19:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-05-29T19:19:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT18M",
+                    "departureDateTimeDifference": "PT0S",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHBXH",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "subFleetCodeId": "F",
+                        "ownerAirlineCode": "KL",
+                        "ownerAirlineName": "KLM ROYAL DUTCH AIRLINES",
+                        "physicalPaxConfiguration": "C036M150",
+                        "operationalConfiguration": "C020M156",
+                        "cockpitCrewEmployer": "KL",
+                        "cabinCrewEmployer": "KL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "41"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0026"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR18"
+                        ],
+                        "delayReasonPublicLangTransl": [
+                            "This flight is delayed due to a last-minute repair to the aircraft."
+                        ],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "41",
+                                "delayDuration": "0026",
+                                "delayReasonCodePublic": "FSR18",
+                                "delayReasonPublicShort": "Technical issue",
+                                "delayReasonPublicLong": "This flight is delayed due to a last-minute repair to the aircraft."
+                            }
+                        ],
+                        "cancellationReasonCodePublic": "FSCR01",
+                        "cancellationReasonPublicShort": "Technical issue",
+                        "cancellationReasonPublicLong": "This flight has been cancelled because of a technical reason."
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "HAM",
+                            "name": "HAMBURG AIRPORT",
+                            "nameLangTranl": "Hamburg Airport",
+                            "city": {
+                                "code": "HAM",
+                                "name": "HAMBURG",
+                                "nameLangTranl": "Hamburg",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 53.6303,
+                                "longitude": 9.9883
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C14"
+                                ],
+                                "terminalCode": "2",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-29T19:46:00.000+02:00",
+                            "scheduled": "2025-05-29T18:35:00.000+02:00",
+                            "modified": "2025-05-29T19:20:00.000+02:00",
+                            "latestPublished": "2025-05-29T19:46:00.000+02:00",
+                            "actualTakeOffTime": "2025-05-29T19:51:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-05-29T19:05:00.000+02:00",
+                            "gateCloseTime": "2025-05-29T19:20:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D60"
+                                ],
+                                "parkingPosition": "D04",
+                                "pierCode": "D",
+                                "baggageBelt": [
+                                    "008"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "2"
+                                ],
+                                "firstBagOnBeltTime": "2025-05-29T21:21:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-05-29T21:21:00.000+02:00",
+                                "expectedBagOnBeltTime": "2025-05-29T21:50:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-29T20:44:00.000+02:00",
+                            "scheduled": "2025-05-29T19:40:00.000+02:00",
+                            "modified": "2025-05-29T20:25:00.000+02:00",
+                            "latestPublished": "2025-05-29T20:44:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-05-29T20:44:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-05-29T20:32:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H5M",
+                    "departureDateTimeDifference": "PT1H11M",
+                    "arrivalDateTimeDifference": "PT1H4M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHBXH",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "subFleetCodeId": "F",
+                        "ownerAirlineCode": "KL",
+                        "ownerAirlineName": "KLM ROYAL DUTCH AIRLINES",
+                        "physicalPaxConfiguration": "C036M150",
+                        "operationalConfiguration": "C008M174",
+                        "cockpitCrewEmployer": "KL",
+                        "cabinCrewEmployer": "KL",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "02"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0111"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT1H11M",
+                        "delayDurationArrival": "PT1H4M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "02",
+                                "delayDuration": "0111"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1071,
+            "flightScheduleDate": "2025-06-16",
+            "id": "20250616+AF+1071",
+            "haul": "MEDIUM",
+            "route": [
+                "HEL",
+                "HAM",
+                "CDG"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightStatusPublic": "CANCELLED",
+            "flightStatusPublicLangTransl": "Cancelled",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "HEL",
+                            "name": "HELSINKI-VANTAA AIRPORT",
+                            "nameLangTranl": "Helsinki-Vantaa",
+                            "city": {
+                                "code": "HEL",
+                                "name": "HELSINKI",
+                                "nameLangTranl": "Helsinki",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FI",
+                                    "name": "FINLAND",
+                                    "nameLangTranl": "Finland",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.3256,
+                                "longitude": 24.9717
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-06-16T17:32:00.000+03:00",
+                            "scheduled": "2025-06-16T17:32:00.000+03:00",
+                            "latestPublished": "2025-06-16T17:32:00.000+03:00",
+                            "actualTakeOffTime": "2025-06-16T17:44:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAM",
+                            "name": "HAMBURG AIRPORT",
+                            "nameLangTranl": "Hamburg Airport",
+                            "city": {
+                                "code": "HAM",
+                                "name": "HAMBURG",
+                                "nameLangTranl": "Hamburg",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 53.6303,
+                                "longitude": 9.9883
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-06-16T19:09:00.000+02:00",
+                            "scheduled": "2025-06-16T19:10:00.000+02:00",
+                            "latestPublished": "2025-06-16T19:09:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-06-16T19:09:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-06-16T19:02:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H38M",
+                    "departureDateTimeDifference": "PT0S",
+                    "arrivalDateTimeDifference": "PT-1M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "FHZUX",
+                        "typeCode": "223",
+                        "typeName": "AIRBUS A220-300 PASSENGER",
+                        "subFleetCodeId": "CA",
+                        "ownerAirlineCode": "AF",
+                        "ownerAirlineName": "AIR FRANCE",
+                        "physicalPaxConfiguration": "Y148",
+                        "operationalConfiguration": "C5Y140",
+                        "cockpitCrewEmployer": "AF",
+                        "cabinCrewEmployer": "AF",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "Y",
+                        "delayCode": [
+                            "05"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0057"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "05",
+                                "delayDuration": "0057"
+                            }
+                        ],
+                        "cancellationReasonCodePublic": "FSCR08",
+                        "cancellationReasonPublicShort": "Flight schedule changes",
+                        "cancellationReasonPublicLong": "This flight has been cancelled because of some unforeseen changes to the flight schedule."
+                    }
+                },
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "HAM",
+                            "name": "HAMBURG AIRPORT",
+                            "nameLangTranl": "Hamburg Airport",
+                            "city": {
+                                "code": "HAM",
+                                "name": "HAMBURG",
+                                "nameLangTranl": "Hamburg",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 53.6303,
+                                "longitude": 9.9883
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-16T20:00:00.000+02:00",
+                            "latestPublished": "2025-06-16T20:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2F",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2F",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-16T21:00:00.000+02:00",
+                            "latestPublished": "2025-06-16T21:00:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-06-16T21:00:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHZUX",
+                        "typeCode": "223",
+                        "typeName": "AIRBUS A220-300 PASSENGER",
+                        "subFleetCodeId": "CA",
+                        "ownerAirlineCode": "AF",
+                        "ownerAirlineName": "AIR FRANCE",
+                        "physicalPaxConfiguration": "Y148",
+                        "operationalConfiguration": "C5Y140",
+                        "cockpitCrewEmployer": "AF",
+                        "cabinCrewEmployer": "AF",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "Y",
+                        "delayCode": [
+                            "41"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [
+                            "FSR01"
+                        ],
+                        "delayReasonPublicLangTransl": [
+                            "This flight is delayed due to technical issues."
+                        ],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "41",
+                                "delayReasonCodePublic": "FSR01",
+                                "delayReasonPublicShort": "Technical issues",
+                                "delayReasonPublicLong": "This flight is delayed due to technical issues."
+                            }
+                        ],
+                        "cancellationReasonCodePublic": "FSCR08",
+                        "cancellationReasonPublicShort": "Flight schedule changes",
+                        "cancellationReasonPublicLong": "This flight has been cancelled because of some unforeseen changes to the flight schedule."
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Closed",
+                        "boardingStatus": "Not Open"
+                    }
+                },
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "HEL",
+                            "name": "HELSINKI-VANTAA AIRPORT",
+                            "nameLangTranl": "Helsinki-Vantaa",
+                            "city": {
+                                "code": "HEL",
+                                "name": "HELSINKI",
+                                "nameLangTranl": "Helsinki",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FI",
+                                    "name": "FINLAND",
+                                    "nameLangTranl": "Finland",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.3256,
+                                "longitude": 24.9717
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [
+                                    "20"
+                                ],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-06-16T17:32:00.000+03:00",
+                            "scheduled": "2025-06-16T17:40:00.000+03:00",
+                            "latestPublished": "2025-06-16T17:32:00.000+03:00",
+                            "actualTakeOffTime": "2025-06-16T17:44:00.000+03:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-06-16T17:10:00.000+03:00",
+                            "gateCloseTime": "2025-06-16T17:20:00.000+03:00",
+                            "actualBoardingOpen": "2025-06-16T17:00:00.000+03:00",
+                            "firstPaxBoarding": "2025-06-16T17:05:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "2",
+                                "terminalCode": "2F",
+                                "baggageBelt": [
+                                    "26"
+                                ],
+                                "arrivalPositionTerminal": "2F",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-16T19:50:00.000+02:00",
+                            "latestPublished": "2025-06-16T19:34:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-06-16T19:34:00.000+02:00"
+                            },
+                            "estimatedArrival": "2025-06-16T19:34:00.000+02:00",
+                            "estimatedTouchDownTime": "2025-06-16T19:25:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H10M",
+                    "departureDateTimeDifference": "PT-8M",
+                    "arrivalDateTimeDifference": "PT-16M",
+                    "timeToArrival": "PT-3039H-5M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "FHZUX",
+                        "typeCode": "223",
+                        "typeName": "AIRBUS A220-300 PASSENGER",
+                        "subFleetCodeId": "CA",
+                        "ownerAirlineCode": "AF",
+                        "ownerAirlineName": "AIR FRANCE",
+                        "physicalPaxConfiguration": "Y148",
+                        "operationalConfiguration": "C5Y140",
+                        "cockpitCrewEmployer": "AF",
+                        "cabinCrewEmployer": "AF",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "Y",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": [],
+                        "cancellationReasonCodePublic": "FSCR08",
+                        "cancellationReasonPublicShort": "Flight schedule changes",
+                        "cancellationReasonPublicLong": "This flight has been cancelled because of some unforeseen changes to the flight schedule."
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1452,
+            "flightScheduleDate": "2025-06-19",
+            "id": "20250619+AF+1452",
+            "haul": "MEDIUM",
+            "route": [
+                "CDG",
+                "HAM",
+                "GOT"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2682,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AZ",
+                        "name": "ITA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 8576,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5208,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "G3",
+                        "name": "GOL LINHAS AEREAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3272,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KQ",
+                        "name": "KENYA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9642,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MK",
+                        "name": "AIR MAURITIUS LTD"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1735,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MU",
+                        "name": "CHINA EASTERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6099,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SV",
+                        "name": "SAUDI ARABIAN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 8452,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "UU",
+                        "name": "AIR AUSTRAL"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2263,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "UX",
+                        "name": "AIR EUROPA LINEAS AEREAS S.A."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    "G23"
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2G",
+                                "boardingPier": "",
+                                "boardingTerminal": "2G",
+                                "checkInZone": [
+                                    "G03",
+                                    "G08"
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-06-19T15:08:00.000+02:00",
+                            "scheduled": "2025-06-19T15:05:00.000+02:00",
+                            "latestPublished": "2025-06-19T15:08:00.000+02:00",
+                            "actualTakeOffTime": "2025-06-19T15:26:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-06-19T14:40:00.000+02:00",
+                            "gateCloseTime": "2025-06-19T14:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "GOT",
+                            "name": "LANDVETTER AIRPORT",
+                            "nameLangTranl": "Landvetter",
+                            "city": {
+                                "code": "GOT",
+                                "name": "GOTEBORG",
+                                "nameLangTranl": "Gothenburg",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.6667,
+                                "longitude": 12.2833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-19T17:10:00.000+02:00",
+                            "latestPublished": "2025-06-19T17:16:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-06-19T17:16:00.000+02:00"
+                            },
+                            "estimatedArrival": "2025-06-19T17:16:00.000+02:00",
+                            "estimatedTouchDownTime": "2025-06-19T17:11:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H5M",
+                    "departureDateTimeDifference": "PT3M",
+                    "arrivalDateTimeDifference": "PT6M",
+                    "timeToArrival": "PT-2969H-23M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBLH",
+                        "typeCode": "E90",
+                        "typeName": "EMBRAER 190",
+                        "subFleetCodeId": "NA",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y100",
+                        "operationalConfiguration": "C4Y96",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "89"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0003"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "89",
+                                "delayDuration": "0003"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    "G23"
+                                ],
+                                "parkingPosition": "J11",
+                                "pierCode": "",
+                                "terminalCode": "2G",
+                                "boardingPier": "",
+                                "boardingTerminal": "2G",
+                                "checkInZone": [
+                                    "G03",
+                                    "G08"
+                                ],
+                                "parkingPositionType": "C",
+                                "departureTerminal": "2G",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-06-19T15:08:00.000+02:00",
+                            "scheduled": "2025-06-19T15:08:00.000+02:00",
+                            "latestPublished": "2025-06-19T15:08:00.000+02:00",
+                            "actualTakeOffTime": "2025-06-19T15:26:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAM",
+                            "name": "HAMBURG AIRPORT",
+                            "nameLangTranl": "Hamburg Airport",
+                            "city": {
+                                "code": "HAM",
+                                "name": "HAMBURG",
+                                "nameLangTranl": "Hamburg",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 53.6303,
+                                "longitude": 9.9883
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-06-19T16:45:00.000+02:00",
+                            "scheduled": "2025-06-19T16:45:00.000+02:00",
+                            "latestPublished": "2025-06-19T16:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-06-19T16:45:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-06-19T16:41:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H37M",
+                    "departureDateTimeDifference": "PT0S",
+                    "arrivalDateTimeDifference": "PT0S",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBLH",
+                        "typeCode": "E90",
+                        "typeName": "EMBRAER 190",
+                        "subFleetCodeId": "NA",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y100",
+                        "operationalConfiguration": "C004Y096",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "HAM",
+                            "name": "HAMBURG AIRPORT",
+                            "nameLangTranl": "Hamburg Airport",
+                            "city": {
+                                "code": "HAM",
+                                "name": "HAMBURG",
+                                "nameLangTranl": "Hamburg",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 53.6303,
+                                "longitude": 9.9883
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-06-19T18:17:00.000+02:00",
+                            "scheduled": "2025-06-19T17:30:00.000+02:00",
+                            "latestPublished": "2025-06-19T18:17:00.000+02:00",
+                            "actualTakeOffTime": "2025-06-19T18:26:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "GOT",
+                            "name": "LANDVETTER AIRPORT",
+                            "nameLangTranl": "Landvetter",
+                            "city": {
+                                "code": "GOT",
+                                "name": "GOTEBORG",
+                                "nameLangTranl": "Gothenburg",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 57.6667,
+                                "longitude": 12.2833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-06-19T19:20:00.000+02:00",
+                            "scheduled": "2025-06-19T18:40:00.000+02:00",
+                            "latestPublished": "2025-06-19T19:20:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-06-19T19:20:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-06-19T19:16:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H10M",
+                    "departureDateTimeDifference": "PT47M",
+                    "arrivalDateTimeDifference": "PT40M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBLH",
+                        "typeCode": "E90",
+                        "typeName": "EMBRAER 190",
+                        "subFleetCodeId": "NA",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y100",
+                        "operationalConfiguration": "C004Y096",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "05"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0047"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT47M",
+                        "delayDurationArrival": "PT40M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "05",
+                                "delayDuration": "0047"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Not Open"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1220,
+            "flightScheduleDate": "2025-07-24",
+            "id": "20250724+KL+1220",
+            "haul": "MEDIUM",
+            "route": [
+                "ARN",
+                "HAM"
+            ],
+            "airline": {
+                "code": "KL",
+                "name": "KLM ROYAL DUTCH AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6354,
+                    "flightScheduleDate": "2025-07-24",
+                    "code": "D",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3805,
+                    "flightScheduleDate": "2025-07-24",
+                    "code": "D",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AZ",
+                        "name": "ITA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7750,
+                    "flightScheduleDate": "2025-07-24",
+                    "code": "D",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "CZ",
+                        "name": "CHINA SOUTHERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9434,
+                    "flightScheduleDate": "2025-07-24",
+                    "code": "D",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9483,
+                    "flightScheduleDate": "2025-07-24",
+                    "code": "D",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "GA",
+                        "name": "GARUDA INDONESIA"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6420,
+                    "flightScheduleDate": "2025-07-24",
+                    "code": "D",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KE",
+                        "name": "KOREAN AIR LINES CO. LTD."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1110,
+                    "flightScheduleDate": "2025-07-24",
+                    "code": "D",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KQ",
+                        "name": "KENYA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9302,
+                    "flightScheduleDate": "2025-07-24",
+                    "code": "D",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MF",
+                        "name": "XIAMEN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5695,
+                    "flightScheduleDate": "2025-07-24",
+                    "code": "D",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MH",
+                        "name": "MALAYSIA AIRLINES BERHAD"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1802,
+                    "flightScheduleDate": "2025-07-24",
+                    "code": "D",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MU",
+                        "name": "CHINA EASTERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6632,
+                    "flightScheduleDate": "2025-07-24",
+                    "code": "D",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SK",
+                        "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3746,
+                    "flightScheduleDate": "2025-07-24",
+                    "code": "D",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "UX",
+                        "name": "AIR EUROPA LINEAS AEREAS S.A."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ON_TIME",
+            "flightStatusPublicLangTransl": "On time",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "HAM",
+                            "name": "HAMBURG AIRPORT",
+                            "nameLangTranl": "Hamburg Airport",
+                            "city": {
+                                "code": "HAM",
+                                "name": "HAMBURG",
+                                "nameLangTranl": "Hamburg",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 53.6303,
+                                "longitude": 9.9883
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "terminalCode": "1",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-24T16:24:00.000+02:00",
+                            "latestPublished": "2025-07-24T16:24:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": [
+                                    "2"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-24T17:30:00.000+02:00",
+                            "latestPublished": "2025-07-24T17:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-24T17:30:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H6M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHHSD",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "subFleetCodeId": "I",
+                        "ownerAirlineCode": "KL",
+                        "ownerAirlineName": "KLM ROYAL DUTCH AIRLINES",
+                        "physicalPaxConfiguration": "C36M150",
+                        "operationalConfiguration": "C8M174",
+                        "cockpitCrewEmployer": "KL",
+                        "cabinCrewEmployer": "KL",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": [],
+                        "cancellationReasonCodePublic": "FSCR01",
+                        "cancellationReasonPublicShort": "Technical issue",
+                        "cancellationReasonPublicLong": "This flight has been cancelled because of a technical reason."
+                    },
+                    "otherFlightLegStatuses": {
+                        "boardingStatus": "Not Open"
+                    }
+                },
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "65"
+                                ],
+                                "terminalCode": "2",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-24T13:45:00.000+02:00",
+                            "scheduled": "2025-07-24T13:40:00.000+02:00",
+                            "latestPublished": "2025-07-24T13:45:00.000+02:00",
+                            "actualTakeOffTime": "2025-07-24T13:57:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-07-24T13:10:00.000+02:00",
+                            "gateCloseTime": "2025-07-24T13:25:00.000+02:00",
+                            "actualBoardingOpen": "2025-07-24T13:15:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": [
+                                    "2"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-24T15:45:00.000+02:00",
+                            "latestPublished": "2025-07-24T15:39:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-24T15:39:00.000+02:00"
+                            },
+                            "estimatedArrival": "2025-07-24T15:39:00.000+02:00",
+                            "estimatedTouchDownTime": "2025-07-24T15:33:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H5M",
+                    "departureDateTimeDifference": "PT5M",
+                    "arrivalDateTimeDifference": "PT-6M",
+                    "timeToArrival": "PT-2131H",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHHSD",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "subFleetCodeId": "I",
+                        "ownerAirlineCode": "KL",
+                        "ownerAirlineName": "KLM ROYAL DUTCH AIRLINES",
+                        "physicalPaxConfiguration": "C36M150",
+                        "operationalConfiguration": "C8M174",
+                        "cockpitCrewEmployer": "KL",
+                        "cabinCrewEmployer": "KL",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "81"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0005"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR06"
+                        ],
+                        "delayReasonPublicLangTransl": [
+                            "This flight was delayed due to restrictions from Air Traffic Control at the airport of Stockholm (ARN)."
+                        ],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "81",
+                                "delayDuration": "0005",
+                                "delayReasonCodePublic": "FSR06",
+                                "delayReasonPublicShort": "Restrictions from Air Traffic Control",
+                                "delayReasonPublicLong": "This flight was delayed due to restrictions from Air Traffic Control at the airport of Stockholm (ARN)."
+                            }
+                        ],
+                        "cancellationReasonCodePublic": "FSCR01",
+                        "cancellationReasonPublicShort": "Technical issue",
+                        "cancellationReasonPublicLong": "This flight has been cancelled because of a technical reason."
+                    },
+                    "otherFlightLegStatuses": {
+                        "boardingStatus": "Closed"
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ARN",
+                            "name": "ARLANDA AIRPORT",
+                            "nameLangTranl": "Arlanda Airport",
+                            "city": {
+                                "code": "STO",
+                                "name": "STOCKHOLM",
+                                "nameLangTranl": "Stockholm",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "SE",
+                                    "name": "SWEDEN",
+                                    "nameLangTranl": "Sweden",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.6619,
+                                "longitude": 17.9339
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    "65"
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-24T13:45:00.000+02:00",
+                            "scheduled": "2025-07-24T13:40:00.000+02:00",
+                            "latestPublished": "2025-07-24T13:45:00.000+02:00",
+                            "actualTakeOffTime": "2025-07-24T13:57:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAM",
+                            "name": "HAMBURG AIRPORT",
+                            "nameLangTranl": "Hamburg Airport",
+                            "city": {
+                                "code": "HAM",
+                                "name": "HAMBURG",
+                                "nameLangTranl": "Hamburg",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 53.6303,
+                                "longitude": 9.9883
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-24T15:27:00.000+02:00",
+                            "scheduled": "2025-07-24T15:10:00.000+02:00",
+                            "latestPublished": "2025-07-24T15:27:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-24T15:27:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-07-24T15:20:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "departureDateTimeDifference": "PT5M",
+                    "arrivalDateTimeDifference": "PT17M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHHSD",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "subFleetCodeId": "I",
+                        "ownerAirlineCode": "KL",
+                        "ownerAirlineName": "KLM ROYAL DUTCH AIRLINES",
+                        "physicalPaxConfiguration": "C036M150",
+                        "operationalConfiguration": "C008M174",
+                        "cockpitCrewEmployer": "KL",
+                        "cabinCrewEmployer": "KL",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT17M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1752,
+            "operationalSuffix": "R",
+            "flightScheduleDate": "2025-08-22",
+            "id": "20250822+KL+1752+R",
+            "haul": "MEDIUM",
+            "route": [
+                "HAM",
+                "HAM"
+            ],
+            "airline": {
+                "code": "KL",
+                "name": "KLM ROYAL DUTCH AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6289,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7781,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "CZ",
+                        "name": "CHINA SOUTHERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9542,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1606,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MU",
+                        "name": "CHINA EASTERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6387,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SV",
+                        "name": "SAUDI ARABIAN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3342,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "6E",
+                        "name": "INTERGLOBE AVIATION LTD. DBA INDIGO"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250822+KL+1751",
+                    "flightScheduleDate": "2025-08-22",
+                    "airlineCode": "KL",
+                    "flightNumber": "1751"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "G",
+                    "statusName": "Ground return",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "HAM",
+                            "name": "HAMBURG AIRPORT",
+                            "nameLangTranl": "Hamburg Airport",
+                            "city": {
+                                "code": "HAM",
+                                "name": "HAMBURG",
+                                "nameLangTranl": "Hamburg",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 53.6303,
+                                "longitude": 9.9883
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-22T08:40:00.000+02:00",
+                            "scheduled": "2025-08-22T08:40:00.000+02:00",
+                            "latestPublished": "2025-08-22T08:40:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAM",
+                            "name": "HAMBURG AIRPORT",
+                            "nameLangTranl": "Hamburg Airport",
+                            "city": {
+                                "code": "HAM",
+                                "name": "HAMBURG",
+                                "nameLangTranl": "Hamburg",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 53.6303,
+                                "longitude": 9.9883
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-22T09:02:00.000+02:00",
+                            "scheduled": "2025-08-22T08:55:00.000+02:00",
+                            "latestPublished": "2025-08-22T09:02:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-22T09:02:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT15M",
+                    "departureDateTimeDifference": "PT0S",
+                    "arrivalDateTimeDifference": "PT7M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHEXR",
+                        "typeCode": "E7W",
+                        "typeName": "EMBRAER 175 (ENHANCED WINGLETS)",
+                        "subFleetCodeId": "E",
+                        "ownerAirlineCode": "WA",
+                        "ownerAirlineName": "KLM CITYHOPPER",
+                        "physicalPaxConfiguration": "C024M064",
+                        "cockpitCrewEmployer": "WA",
+                        "cabinCrewEmployer": "WA",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 6,
+        "pageNumber": 0,
+        "fullCount": 6,
+        "pageCount": 6,
+        "totalPages": 1
+    }
+}

@@ -1,0 +1,1990 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 1509,
+            "flightScheduleDate": "2025-05-21",
+            "id": "20250521+UX+1509",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "FRA"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6955,
+                    "flightScheduleDate": "2025-05-21",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4373,
+                    "flightScheduleDate": "2025-05-21",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7427,
+                    "flightScheduleDate": "2025-05-21",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "JU",
+                        "name": "AIR SERBIA BELGRADE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4954,
+                    "flightScheduleDate": "2025-05-21",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MU",
+                        "name": "CHINA EASTERN AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-21T15:10:00.000+02:00",
+                            "latestPublished": "2025-05-21T15:10:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FRA",
+                            "name": "FRANKFURT INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Frankfurt Airport",
+                            "city": {
+                                "code": "FRA",
+                                "name": "FRANKFURT",
+                                "nameLangTranl": "Frankfurt/Main",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.0389,
+                                "longitude": 8.5706
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-21T17:50:00.000+02:00",
+                            "latestPublished": "2025-05-21T17:50:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-05-21T17:50:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "UX",
+                        "ownerAirlineName": "AIR EUROPA LINEAS AEREAS S.A.",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y165"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1503,
+            "flightScheduleDate": "2025-05-22",
+            "id": "20250522+UX+1503",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "FRA"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6888,
+                    "flightScheduleDate": "2025-05-22",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9235,
+                    "flightScheduleDate": "2025-05-22",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "CI",
+                        "name": "CHINA AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7557,
+                    "flightScheduleDate": "2025-05-22",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3166,
+                    "flightScheduleDate": "2025-05-22",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "VN",
+                        "name": "VIETNAM AIRLINES JSC"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-22T07:05:00.000+02:00",
+                            "latestPublished": "2025-05-22T07:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FRA",
+                            "name": "FRANKFURT INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Frankfurt Airport",
+                            "city": {
+                                "code": "FRA",
+                                "name": "FRANKFURT",
+                                "nameLangTranl": "Frankfurt/Main",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.0389,
+                                "longitude": 8.5706
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-22T09:45:00.000+02:00",
+                            "latestPublished": "2025-05-22T09:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-05-22T09:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "UX",
+                        "ownerAirlineName": "AIR EUROPA LINEAS AEREAS S.A.",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y162"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1509,
+            "flightScheduleDate": "2025-05-22",
+            "id": "20250522+UX+1509",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "FRA"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6955,
+                    "flightScheduleDate": "2025-05-22",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4373,
+                    "flightScheduleDate": "2025-05-22",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7427,
+                    "flightScheduleDate": "2025-05-22",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "JU",
+                        "name": "AIR SERBIA BELGRADE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4954,
+                    "flightScheduleDate": "2025-05-22",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MU",
+                        "name": "CHINA EASTERN AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-22T15:10:00.000+02:00",
+                            "latestPublished": "2025-05-22T15:10:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FRA",
+                            "name": "FRANKFURT INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Frankfurt Airport",
+                            "city": {
+                                "code": "FRA",
+                                "name": "FRANKFURT",
+                                "nameLangTranl": "Frankfurt/Main",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.0389,
+                                "longitude": 8.5706
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-22T17:50:00.000+02:00",
+                            "latestPublished": "2025-05-22T17:50:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-05-22T17:50:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "UX",
+                        "ownerAirlineName": "AIR EUROPA LINEAS AEREAS S.A.",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y162"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1503,
+            "flightScheduleDate": "2025-08-16",
+            "id": "20250816+UX+1503",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "FRA"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6888,
+                    "flightScheduleDate": "2025-08-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9235,
+                    "flightScheduleDate": "2025-08-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "CI",
+                        "name": "CHINA AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7557,
+                    "flightScheduleDate": "2025-08-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3166,
+                    "flightScheduleDate": "2025-08-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "VN",
+                        "name": "VIETNAM AIRLINES JSC"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-16T07:05:00.000+02:00",
+                            "latestPublished": "2025-08-16T07:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FRA",
+                            "name": "FRANKFURT INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Frankfurt Airport",
+                            "city": {
+                                "code": "FRA",
+                                "name": "FRANKFURT",
+                                "nameLangTranl": "Frankfurt/Main",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.0389,
+                                "longitude": 8.5706
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-16T09:45:00.000+02:00",
+                            "latestPublished": "2025-08-16T09:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-16T09:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "99",
+                        "ownerAirlineName": "DEFAULT AIRLINE",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y162"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1509,
+            "flightScheduleDate": "2025-08-21",
+            "id": "20250821+UX+1509",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "FRA"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6955,
+                    "flightScheduleDate": "2025-08-21",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4373,
+                    "flightScheduleDate": "2025-08-21",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7427,
+                    "flightScheduleDate": "2025-08-21",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "JU",
+                        "name": "AIR SERBIA BELGRADE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4954,
+                    "flightScheduleDate": "2025-08-21",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MU",
+                        "name": "CHINA EASTERN AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-21T15:10:00.000+02:00",
+                            "latestPublished": "2025-08-21T15:10:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FRA",
+                            "name": "FRANKFURT INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Frankfurt Airport",
+                            "city": {
+                                "code": "FRA",
+                                "name": "FRANKFURT",
+                                "nameLangTranl": "Frankfurt/Main",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.0389,
+                                "longitude": 8.5706
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-21T17:50:00.000+02:00",
+                            "latestPublished": "2025-08-21T17:50:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-21T17:50:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "UX",
+                        "ownerAirlineName": "AIR EUROPA LINEAS AEREAS S.A.",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y162"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1509,
+            "flightScheduleDate": "2025-08-24",
+            "id": "20250824+UX+1509",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "FRA"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6955,
+                    "flightScheduleDate": "2025-08-24",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4373,
+                    "flightScheduleDate": "2025-08-24",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7427,
+                    "flightScheduleDate": "2025-08-24",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "JU",
+                        "name": "AIR SERBIA BELGRADE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4954,
+                    "flightScheduleDate": "2025-08-24",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MU",
+                        "name": "CHINA EASTERN AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-24T15:10:00.000+02:00",
+                            "latestPublished": "2025-08-24T15:10:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FRA",
+                            "name": "FRANKFURT INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Frankfurt Airport",
+                            "city": {
+                                "code": "FRA",
+                                "name": "FRANKFURT",
+                                "nameLangTranl": "Frankfurt/Main",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.0389,
+                                "longitude": 8.5706
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-24T17:50:00.000+02:00",
+                            "latestPublished": "2025-08-24T17:50:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-24T17:50:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "UX",
+                        "ownerAirlineName": "AIR EUROPA LINEAS AEREAS S.A.",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y162"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1503,
+            "flightScheduleDate": "2025-08-25",
+            "id": "20250825+UX+1503",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "FRA"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6888,
+                    "flightScheduleDate": "2025-08-25",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9235,
+                    "flightScheduleDate": "2025-08-25",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "CI",
+                        "name": "CHINA AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7557,
+                    "flightScheduleDate": "2025-08-25",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3166,
+                    "flightScheduleDate": "2025-08-25",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "VN",
+                        "name": "VIETNAM AIRLINES JSC"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-25T07:05:00.000+02:00",
+                            "latestPublished": "2025-08-25T07:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FRA",
+                            "name": "FRANKFURT INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Frankfurt Airport",
+                            "city": {
+                                "code": "FRA",
+                                "name": "FRANKFURT",
+                                "nameLangTranl": "Frankfurt/Main",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.0389,
+                                "longitude": 8.5706
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-25T09:45:00.000+02:00",
+                            "latestPublished": "2025-08-25T09:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-25T09:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "7M8",
+                        "typeName": "BOEING 737MAX 8 PASSENGER",
+                        "ownerAirlineCode": "UX",
+                        "ownerAirlineName": "AIR EUROPA LINEAS AEREAS S.A.",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y165"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1509,
+            "flightScheduleDate": "2025-08-25",
+            "id": "20250825+UX+1509",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "FRA"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6955,
+                    "flightScheduleDate": "2025-08-25",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4373,
+                    "flightScheduleDate": "2025-08-25",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7427,
+                    "flightScheduleDate": "2025-08-25",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "JU",
+                        "name": "AIR SERBIA BELGRADE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4954,
+                    "flightScheduleDate": "2025-08-25",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MU",
+                        "name": "CHINA EASTERN AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-25T15:10:00.000+02:00",
+                            "latestPublished": "2025-08-25T15:10:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FRA",
+                            "name": "FRANKFURT INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Frankfurt Airport",
+                            "city": {
+                                "code": "FRA",
+                                "name": "FRANKFURT",
+                                "nameLangTranl": "Frankfurt/Main",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.0389,
+                                "longitude": 8.5706
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-25T17:50:00.000+02:00",
+                            "latestPublished": "2025-08-25T17:50:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-25T17:50:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "7M8",
+                        "typeName": "BOEING 737MAX 8 PASSENGER",
+                        "ownerAirlineCode": "UX",
+                        "ownerAirlineName": "AIR EUROPA LINEAS AEREAS S.A.",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y165"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1503,
+            "flightScheduleDate": "2025-08-26",
+            "id": "20250826+UX+1503",
+            "route": [
+                "MAD",
+                "FRA"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6888,
+                    "flightScheduleDate": "2025-08-26",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9235,
+                    "flightScheduleDate": "2025-08-26",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "CI",
+                        "name": "CHINA AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7557,
+                    "flightScheduleDate": "2025-08-26",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3166,
+                    "flightScheduleDate": "2025-08-26",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "VN",
+                        "name": "VIETNAM AIRLINES JSC"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-26T07:05:00.000+02:00",
+                            "latestPublished": "2025-08-26T07:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FRA",
+                            "name": "FRANKFURT INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Frankfurt Airport",
+                            "city": {
+                                "code": "FRA",
+                                "name": "FRANKFURT",
+                                "nameLangTranl": "Frankfurt/Main",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.0389,
+                                "longitude": 8.5706
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-26T09:45:00.000+02:00",
+                            "latestPublished": "2025-08-26T09:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-26T09:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "7M8",
+                        "typeName": "BOEING 737MAX 8 PASSENGER",
+                        "ownerAirlineCode": "UX",
+                        "ownerAirlineName": "AIR EUROPA LINEAS AEREAS S.A.",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y165"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1509,
+            "flightScheduleDate": "2025-09-03",
+            "id": "20250903+UX+1509",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "FRA"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6955,
+                    "flightScheduleDate": "2025-09-03",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4373,
+                    "flightScheduleDate": "2025-09-03",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7427,
+                    "flightScheduleDate": "2025-09-03",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "JU",
+                        "name": "AIR SERBIA BELGRADE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4954,
+                    "flightScheduleDate": "2025-09-03",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MU",
+                        "name": "CHINA EASTERN AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-03T15:10:00.000+02:00",
+                            "latestPublished": "2025-09-03T15:10:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FRA",
+                            "name": "FRANKFURT INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Frankfurt Airport",
+                            "city": {
+                                "code": "FRA",
+                                "name": "FRANKFURT",
+                                "nameLangTranl": "Frankfurt/Main",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.0389,
+                                "longitude": 8.5706
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-03T17:50:00.000+02:00",
+                            "latestPublished": "2025-09-03T17:50:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-03T17:50:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "UX",
+                        "ownerAirlineName": "AIR EUROPA LINEAS AEREAS S.A.",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y162"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1503,
+            "flightScheduleDate": "2025-10-06",
+            "id": "20251006+UX+1503",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "FRA"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6888,
+                    "flightScheduleDate": "2025-10-06",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9235,
+                    "flightScheduleDate": "2025-10-06",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "CI",
+                        "name": "CHINA AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7557,
+                    "flightScheduleDate": "2025-10-06",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3166,
+                    "flightScheduleDate": "2025-10-06",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "VN",
+                        "name": "VIETNAM AIRLINES JSC"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-06T07:05:00.000+02:00",
+                            "latestPublished": "2025-10-06T07:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FRA",
+                            "name": "FRANKFURT INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Frankfurt Airport",
+                            "city": {
+                                "code": "FRA",
+                                "name": "FRANKFURT",
+                                "nameLangTranl": "Frankfurt/Main",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.0389,
+                                "longitude": 8.5706
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-06T09:45:00.000+02:00",
+                            "latestPublished": "2025-10-06T09:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-06T09:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "7S8",
+                        "typeName": "BOEING 737-800 (SCIMITAR WINGLETS) PASSENGER",
+                        "ownerAirlineCode": "99",
+                        "ownerAirlineName": "DEFAULT AIRLINE",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J021Y168"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 11,
+        "pageNumber": 0,
+        "fullCount": 11,
+        "pageCount": 11,
+        "totalPages": 1
+    }
+}

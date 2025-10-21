@@ -1,0 +1,1426 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 5125,
+            "flightScheduleDate": "2025-09-30",
+            "id": "20250930+HV+5125",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "TIA"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2631,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250930+HV+6492",
+                    "flightScheduleDate": "2025-09-30",
+                    "airlineCode": "HV",
+                    "flightNumber": "6492"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "E08"
+                                ],
+                                "parkingPosition": "E08",
+                                "pierCode": "E",
+                                "terminalCode": "01",
+                                "boardingPier": "E",
+                                "checkInZone": [
+                                    "02",
+                                    "03"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-30T16:45:00.000+02:00",
+                            "scheduled": "2025-09-30T16:35:00.000+02:00",
+                            "latestPublished": "2025-09-30T16:45:00.000+02:00",
+                            "actualTakeOffTime": "2025-09-30T17:07:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TIA",
+                            "name": "NENE TEREZA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Nene Tereza International",
+                            "city": {
+                                "code": "TIA",
+                                "name": "TIRANA",
+                                "nameLangTranl": "Tirana",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "AL",
+                                    "name": "ALBANIA",
+                                    "nameLangTranl": "Albania",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.4169,
+                                "longitude": 19.7167
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-30T19:15:00.000+02:00",
+                            "latestPublished": "2025-09-30T19:15:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-30T19:15:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "departureDateTimeDifference": "PT10M",
+                    "timeToArrival": "PT-494H-39M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHHXK",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "93"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0010"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "93",
+                                "delayDuration": "0010"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6935,
+            "flightScheduleDate": "2025-10-03",
+            "id": "20251003+HV+6935",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "TIA"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3294,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251003+HV+6564",
+                    "flightScheduleDate": "2025-10-03",
+                    "airlineCode": "HV",
+                    "flightNumber": "6564"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D54"
+                                ],
+                                "parkingPosition": "D54",
+                                "pierCode": "D",
+                                "terminalCode": "01",
+                                "boardingPier": "D",
+                                "checkInZone": [
+                                    "02",
+                                    "03"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-03T16:58:00.000+02:00",
+                            "scheduled": "2025-10-03T16:30:00.000+02:00",
+                            "latestPublished": "2025-10-03T16:58:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-03T17:12:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TIA",
+                            "name": "NENE TEREZA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Nene Tereza International",
+                            "city": {
+                                "code": "TIA",
+                                "name": "TIRANA",
+                                "nameLangTranl": "Tirana",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "AL",
+                                    "name": "ALBANIA",
+                                    "nameLangTranl": "Albania",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.4169,
+                                "longitude": 19.7167
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-03T19:10:00.000+02:00",
+                            "latestPublished": "2025-10-03T19:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-03T19:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "departureDateTimeDifference": "PT28M",
+                    "timeToArrival": "PT-422H-44M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHYHS",
+                        "typeCode": "32Q",
+                        "typeName": "AIRBUS A321NEO",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y232",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 5125,
+            "flightScheduleDate": "2025-10-04",
+            "id": "20251004+HV+5125",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "TIA"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2631,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251004+HV+5808",
+                    "flightScheduleDate": "2025-10-04",
+                    "airlineCode": "HV",
+                    "flightNumber": "5808"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D51"
+                                ],
+                                "parkingPosition": "D51",
+                                "pierCode": "D",
+                                "terminalCode": "01",
+                                "boardingPier": "D",
+                                "checkInZone": [
+                                    "02",
+                                    "03"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-04T18:46:00.000+02:00",
+                            "scheduled": "2025-10-04T17:15:00.000+02:00",
+                            "latestPublished": "2025-10-04T18:46:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-04T18:54:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TIA",
+                            "name": "NENE TEREZA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Nene Tereza International",
+                            "city": {
+                                "code": "TIA",
+                                "name": "TIRANA",
+                                "nameLangTranl": "Tirana",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "AL",
+                                    "name": "ALBANIA",
+                                    "nameLangTranl": "Albania",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.4169,
+                                "longitude": 19.7167
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-04T19:55:00.000+02:00",
+                            "latestPublished": "2025-10-04T19:55:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-04T19:55:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "departureDateTimeDifference": "PT1H31M",
+                    "timeToArrival": "PT-397H-59M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHHZI",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "93"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0131"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT1H31M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "93",
+                                "delayDuration": "0131"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 5125,
+            "flightScheduleDate": "2025-10-06",
+            "id": "20251006+HV+5125",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "TIA"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2631,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251006+HV+6868",
+                    "flightScheduleDate": "2025-10-06",
+                    "airlineCode": "HV",
+                    "flightNumber": "6868"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D53"
+                                ],
+                                "parkingPosition": "D53",
+                                "pierCode": "D",
+                                "terminalCode": "01",
+                                "boardingPier": "D",
+                                "checkInZone": [
+                                    "02",
+                                    "03"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-06T17:05:00.000+02:00",
+                            "scheduled": "2025-10-06T16:40:00.000+02:00",
+                            "latestPublished": "2025-10-06T17:05:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-06T17:15:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TIA",
+                            "name": "NENE TEREZA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Nene Tereza International",
+                            "city": {
+                                "code": "TIA",
+                                "name": "TIRANA",
+                                "nameLangTranl": "Tirana",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "AL",
+                                    "name": "ALBANIA",
+                                    "nameLangTranl": "Albania",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.4169,
+                                "longitude": 19.7167
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-06T19:20:00.000+02:00",
+                            "latestPublished": "2025-10-06T19:20:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-06T19:20:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "departureDateTimeDifference": "PT25M",
+                    "timeToArrival": "PT-350H-34M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHYHU",
+                        "typeCode": "32Q",
+                        "typeName": "AIRBUS A321NEO",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y232",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 5125,
+            "flightScheduleDate": "2025-10-07",
+            "id": "20251007+HV+5125",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "TIA"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2631,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251007+HV+6144",
+                    "flightScheduleDate": "2025-10-07",
+                    "airlineCode": "HV",
+                    "flightNumber": "6144"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D31"
+                                ],
+                                "parkingPosition": "D31",
+                                "pierCode": "D",
+                                "terminalCode": "01",
+                                "boardingPier": "D",
+                                "checkInZone": [
+                                    "02",
+                                    "03"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-07T16:41:00.000+02:00",
+                            "scheduled": "2025-10-07T16:35:00.000+02:00",
+                            "latestPublished": "2025-10-07T16:41:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-07T16:49:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TIA",
+                            "name": "NENE TEREZA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Nene Tereza International",
+                            "city": {
+                                "code": "TIA",
+                                "name": "TIRANA",
+                                "nameLangTranl": "Tirana",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "AL",
+                                    "name": "ALBANIA",
+                                    "nameLangTranl": "Albania",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.4169,
+                                "longitude": 19.7167
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-07T19:15:00.000+02:00",
+                            "latestPublished": "2025-10-07T19:15:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-07T19:15:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "departureDateTimeDifference": "PT6M",
+                    "timeToArrival": "PT-326H-39M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHYHX",
+                        "typeCode": "32Q",
+                        "typeName": "AIRBUS A321NEO",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y232",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6935,
+            "flightScheduleDate": "2025-10-10",
+            "id": "20251010+HV+6935",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "TIA"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3294,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251010+HV+6116",
+                    "flightScheduleDate": "2025-10-10",
+                    "airlineCode": "HV",
+                    "flightNumber": "6116"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "E21"
+                                ],
+                                "parkingPosition": "G73",
+                                "pierCode": "E",
+                                "terminalCode": "01",
+                                "boardingPier": "E",
+                                "checkInZone": [
+                                    "02",
+                                    "03"
+                                ],
+                                "boardingContactType": "L",
+                                "parkingPositionType": "L",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-10T17:11:00.000+02:00",
+                            "scheduled": "2025-10-10T16:30:00.000+02:00",
+                            "latestPublished": "2025-10-10T17:11:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-10T17:23:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TIA",
+                            "name": "NENE TEREZA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Nene Tereza International",
+                            "city": {
+                                "code": "TIA",
+                                "name": "TIRANA",
+                                "nameLangTranl": "Tirana",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "AL",
+                                    "name": "ALBANIA",
+                                    "nameLangTranl": "Albania",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.4169,
+                                "longitude": 19.7167
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-10T19:10:00.000+02:00",
+                            "latestPublished": "2025-10-10T19:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-10T19:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "departureDateTimeDifference": "PT41M",
+                    "timeToArrival": "PT-254H-44M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHYHX",
+                        "typeCode": "32Q",
+                        "typeName": "AIRBUS A321NEO",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y232",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 5125,
+            "flightScheduleDate": "2025-10-11",
+            "id": "20251011+HV+5125",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "TIA"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2631,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251011+HV+5684",
+                    "flightScheduleDate": "2025-10-11",
+                    "airlineCode": "HV",
+                    "flightNumber": "5684"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D14"
+                                ],
+                                "parkingPosition": "D14",
+                                "pierCode": "D",
+                                "terminalCode": "01",
+                                "boardingPier": "D",
+                                "checkInZone": [
+                                    "02",
+                                    "03"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-11T17:29:00.000+02:00",
+                            "scheduled": "2025-10-11T17:15:00.000+02:00",
+                            "latestPublished": "2025-10-11T17:29:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-11T17:45:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TIA",
+                            "name": "NENE TEREZA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Nene Tereza International",
+                            "city": {
+                                "code": "TIA",
+                                "name": "TIRANA",
+                                "nameLangTranl": "Tirana",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "AL",
+                                    "name": "ALBANIA",
+                                    "nameLangTranl": "Albania",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.4169,
+                                "longitude": 19.7167
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-11T19:55:00.000+02:00",
+                            "latestPublished": "2025-10-11T19:55:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-11T19:55:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "departureDateTimeDifference": "PT14M",
+                    "timeToArrival": "PT-229H-59M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHHSA",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "93"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0014"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT14M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "93",
+                                "delayDuration": "0014"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 5125,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+HV+5125",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "TIA"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2631,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+HV+6008",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "HV",
+                    "flightNumber": "6008"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D22"
+                                ],
+                                "parkingPosition": "D22",
+                                "pierCode": "D",
+                                "terminalCode": "01",
+                                "boardingPier": "D",
+                                "checkInZone": [
+                                    "02",
+                                    "03"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T16:56:00.000+02:00",
+                            "scheduled": "2025-10-13T16:40:00.000+02:00",
+                            "latestPublished": "2025-10-13T16:56:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T17:09:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TIA",
+                            "name": "NENE TEREZA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Nene Tereza International",
+                            "city": {
+                                "code": "TIA",
+                                "name": "TIRANA",
+                                "nameLangTranl": "Tirana",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "AL",
+                                    "name": "ALBANIA",
+                                    "nameLangTranl": "Albania",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.4169,
+                                "longitude": 19.7167
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T19:20:00.000+02:00",
+                            "latestPublished": "2025-10-13T19:20:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T19:20:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "departureDateTimeDifference": "PT16M",
+                    "timeToArrival": "PT-182H-34M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHYHW",
+                        "typeCode": "32Q",
+                        "typeName": "AIRBUS A321NEO",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y232",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 5125,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+HV+5125",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "TIA"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2631,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+HV+5888",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "HV",
+                    "flightNumber": "5888"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D56"
+                                ],
+                                "parkingPosition": "D56",
+                                "pierCode": "D",
+                                "terminalCode": "01",
+                                "boardingPier": "D",
+                                "checkInZone": [
+                                    "02",
+                                    "03"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T16:38:00.000+02:00",
+                            "scheduled": "2025-10-14T16:35:00.000+02:00",
+                            "latestPublished": "2025-10-14T16:38:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T16:50:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TIA",
+                            "name": "NENE TEREZA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Nene Tereza International",
+                            "city": {
+                                "code": "TIA",
+                                "name": "TIRANA",
+                                "nameLangTranl": "Tirana",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "AL",
+                                    "name": "ALBANIA",
+                                    "nameLangTranl": "Albania",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.4169,
+                                "longitude": 19.7167
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T19:15:00.000+02:00",
+                            "latestPublished": "2025-10-14T19:15:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T19:15:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "departureDateTimeDifference": "PT3M",
+                    "timeToArrival": "PT-158H-39M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHYHD",
+                        "typeCode": "32Q",
+                        "typeName": "AIRBUS A321NEO",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y232",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 9,
+        "pageNumber": 1,
+        "fullCount": 109,
+        "pageCount": 9,
+        "totalPages": 2
+    }
+}

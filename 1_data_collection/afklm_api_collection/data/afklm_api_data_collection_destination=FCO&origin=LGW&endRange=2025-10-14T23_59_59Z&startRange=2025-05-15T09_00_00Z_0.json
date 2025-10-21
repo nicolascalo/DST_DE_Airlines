@@ -1,0 +1,807 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 215,
+            "flightScheduleDate": "2025-07-14",
+            "id": "20250714+AZ+0215",
+            "haul": "MEDIUM",
+            "route": [
+                "LGW",
+                "FCO"
+            ],
+            "airline": {
+                "code": "AZ",
+                "name": "ITA AIRWAYS"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 7108,
+                    "flightScheduleDate": "2025-07-14",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AR",
+                        "name": "AEROLINEAS ARGENTINAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9455,
+                    "flightScheduleDate": "2025-07-14",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "CI",
+                        "name": "CHINA AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "LGW",
+                            "name": "GATWICK AIRPORT",
+                            "nameLangTranl": "London Gatwick Airport",
+                            "city": {
+                                "code": "LON",
+                                "name": "LONDON",
+                                "nameLangTranl": "London",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 51.1481,
+                                "longitude": -0.1967
+                            },
+                            "places": {
+                                "aerogareCode": "N",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "N",
+                                "boardingPier": "",
+                                "boardingTerminal": "N",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "N",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-14T12:05:00.000+01:00",
+                            "latestPublished": "2025-07-14T12:05:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FCO",
+                            "name": "FIUMICINO AIRPORT",
+                            "nameLangTranl": "Fiumicino Airport",
+                            "city": {
+                                "code": "ROM",
+                                "name": "ROME",
+                                "nameLangTranl": "Rome",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.8003,
+                                "longitude": 12.2389
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "3",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "3",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "3",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-14T15:45:00.000+02:00",
+                            "latestPublished": "2025-07-14T15:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-14T15:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "32S",
+                        "ownerAirlineCode": "AZ",
+                        "ownerAirlineName": "ITA AIRWAYS",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J008Y162"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 215,
+            "flightScheduleDate": "2025-08-09",
+            "id": "20250809+AZ+0215",
+            "haul": "MEDIUM",
+            "route": [
+                "LGW",
+                "FCO"
+            ],
+            "airline": {
+                "code": "AZ",
+                "name": "ITA AIRWAYS"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 7108,
+                    "flightScheduleDate": "2025-08-09",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AR",
+                        "name": "AEROLINEAS ARGENTINAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9455,
+                    "flightScheduleDate": "2025-08-09",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "CI",
+                        "name": "CHINA AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "LGW",
+                            "name": "GATWICK AIRPORT",
+                            "nameLangTranl": "London Gatwick Airport",
+                            "city": {
+                                "code": "LON",
+                                "name": "LONDON",
+                                "nameLangTranl": "London",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 51.1481,
+                                "longitude": -0.1967
+                            },
+                            "places": {
+                                "aerogareCode": "N",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "N",
+                                "boardingPier": "",
+                                "boardingTerminal": "N",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "N",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-09T12:05:00.000+01:00",
+                            "latestPublished": "2025-08-09T12:05:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FCO",
+                            "name": "FIUMICINO AIRPORT",
+                            "nameLangTranl": "Fiumicino Airport",
+                            "city": {
+                                "code": "ROM",
+                                "name": "ROME",
+                                "nameLangTranl": "Rome",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.8003,
+                                "longitude": 12.2389
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "3",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "3",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "3",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-09T15:45:00.000+02:00",
+                            "latestPublished": "2025-08-09T15:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-09T15:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "319",
+                        "typeName": "AIRBUS A319",
+                        "ownerAirlineCode": "AZ",
+                        "ownerAirlineName": "ITA AIRWAYS",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J012Y126"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 215,
+            "flightScheduleDate": "2025-08-16",
+            "id": "20250816+AZ+0215",
+            "haul": "MEDIUM",
+            "route": [
+                "LGW",
+                "FCO"
+            ],
+            "airline": {
+                "code": "AZ",
+                "name": "ITA AIRWAYS"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 7108,
+                    "flightScheduleDate": "2025-08-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AR",
+                        "name": "AEROLINEAS ARGENTINAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9455,
+                    "flightScheduleDate": "2025-08-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "CI",
+                        "name": "CHINA AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "LGW",
+                            "name": "GATWICK AIRPORT",
+                            "nameLangTranl": "London Gatwick Airport",
+                            "city": {
+                                "code": "LON",
+                                "name": "LONDON",
+                                "nameLangTranl": "London",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 51.1481,
+                                "longitude": -0.1967
+                            },
+                            "places": {
+                                "aerogareCode": "N",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "N",
+                                "boardingPier": "",
+                                "boardingTerminal": "N",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "N",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-16T12:05:00.000+01:00",
+                            "latestPublished": "2025-08-16T12:05:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FCO",
+                            "name": "FIUMICINO AIRPORT",
+                            "nameLangTranl": "Fiumicino Airport",
+                            "city": {
+                                "code": "ROM",
+                                "name": "ROME",
+                                "nameLangTranl": "Rome",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.8003,
+                                "longitude": 12.2389
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "3",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "3",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "3",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-16T15:45:00.000+02:00",
+                            "latestPublished": "2025-08-16T15:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-16T15:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "32S",
+                        "ownerAirlineCode": "AZ",
+                        "ownerAirlineName": "ITA AIRWAYS",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J008Y162"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 215,
+            "flightScheduleDate": "2025-08-23",
+            "id": "20250823+AZ+0215",
+            "haul": "MEDIUM",
+            "route": [
+                "LGW",
+                "FCO"
+            ],
+            "airline": {
+                "code": "AZ",
+                "name": "ITA AIRWAYS"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 7108,
+                    "flightScheduleDate": "2025-08-23",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AR",
+                        "name": "AEROLINEAS ARGENTINAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9455,
+                    "flightScheduleDate": "2025-08-23",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "CI",
+                        "name": "CHINA AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "LGW",
+                            "name": "GATWICK AIRPORT",
+                            "nameLangTranl": "London Gatwick Airport",
+                            "city": {
+                                "code": "LON",
+                                "name": "LONDON",
+                                "nameLangTranl": "London",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 51.1481,
+                                "longitude": -0.1967
+                            },
+                            "places": {
+                                "aerogareCode": "N",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "N",
+                                "boardingPier": "",
+                                "boardingTerminal": "N",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "N",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-23T12:05:00.000+01:00",
+                            "latestPublished": "2025-08-23T12:05:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FCO",
+                            "name": "FIUMICINO AIRPORT",
+                            "nameLangTranl": "Fiumicino Airport",
+                            "city": {
+                                "code": "ROM",
+                                "name": "ROME",
+                                "nameLangTranl": "Rome",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.8003,
+                                "longitude": 12.2389
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "3",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "3",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "3",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-23T15:45:00.000+02:00",
+                            "latestPublished": "2025-08-23T15:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-23T15:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "32S",
+                        "ownerAirlineCode": "AZ",
+                        "ownerAirlineName": "ITA AIRWAYS",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J008Y162"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 215,
+            "flightScheduleDate": "2025-08-24",
+            "id": "20250824+AZ+0215",
+            "haul": "MEDIUM",
+            "route": [
+                "LGW",
+                "FCO"
+            ],
+            "airline": {
+                "code": "AZ",
+                "name": "ITA AIRWAYS"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 7108,
+                    "flightScheduleDate": "2025-08-24",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AR",
+                        "name": "AEROLINEAS ARGENTINAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9455,
+                    "flightScheduleDate": "2025-08-24",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "CI",
+                        "name": "CHINA AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "LGW",
+                            "name": "GATWICK AIRPORT",
+                            "nameLangTranl": "London Gatwick Airport",
+                            "city": {
+                                "code": "LON",
+                                "name": "LONDON",
+                                "nameLangTranl": "London",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GB",
+                                    "name": "UNITED KINGDOM",
+                                    "nameLangTranl": "United Kingdom",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 51.1481,
+                                "longitude": -0.1967
+                            },
+                            "places": {
+                                "aerogareCode": "N",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "N",
+                                "boardingPier": "",
+                                "boardingTerminal": "N",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "N",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-24T12:05:00.000+01:00",
+                            "latestPublished": "2025-08-24T12:05:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FCO",
+                            "name": "FIUMICINO AIRPORT",
+                            "nameLangTranl": "Fiumicino Airport",
+                            "city": {
+                                "code": "ROM",
+                                "name": "ROME",
+                                "nameLangTranl": "Rome",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.8003,
+                                "longitude": 12.2389
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "3",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "3",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "3",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-24T15:45:00.000+02:00",
+                            "latestPublished": "2025-08-24T15:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-24T15:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H40M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "32S",
+                        "ownerAirlineCode": "AZ",
+                        "ownerAirlineName": "ITA AIRWAYS",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J008Y162"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 5,
+        "pageNumber": 0,
+        "fullCount": 5,
+        "pageCount": 5,
+        "totalPages": 1
+    }
+}

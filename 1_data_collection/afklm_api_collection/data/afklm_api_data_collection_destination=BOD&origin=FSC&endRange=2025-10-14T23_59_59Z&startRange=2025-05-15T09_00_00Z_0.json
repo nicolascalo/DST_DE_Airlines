@@ -1,0 +1,1660 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 7671,
+            "flightScheduleDate": "2025-07-05",
+            "id": "20250705+AF+7671",
+            "haul": "MEDIUM",
+            "route": [
+                "FSC",
+                "BOD"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [
+                                    "A1"
+                                ],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-05T16:48:00.000+02:00",
+                            "scheduled": "2025-07-05T16:00:00.000+02:00",
+                            "latestPublished": "2025-07-05T16:48:00.000+02:00",
+                            "actualTakeOffTime": "2025-07-05T16:57:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-07-05T15:30:00.000+02:00",
+                            "gateCloseTime": "2025-07-05T15:45:00.000+02:00",
+                            "actualBoardingOpen": "2025-07-05T15:37:00.000+02:00",
+                            "firstPaxBoarding": "2025-07-05T15:37:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BOD",
+                            "name": "MERIGNAC AIRPORT",
+                            "nameLangTranl": "Bordeaux Mérignac Airport",
+                            "city": {
+                                "code": "BOD",
+                                "name": "BORDEAUX",
+                                "nameLangTranl": "Bordeaux",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8294,
+                                "longitude": -0.7144
+                            },
+                            "places": {
+                                "aerogareCode": "B",
+                                "gateNumber": [
+                                    "04"
+                                ],
+                                "parkingPosition": "C3",
+                                "pierCode": "",
+                                "terminalCode": "B",
+                                "baggageBelt": [
+                                    "5"
+                                ],
+                                "arrivalPositionTerminal": "B",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "B",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "B",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-05T18:16:00.000+02:00",
+                            "scheduled": "2025-07-05T17:45:00.000+02:00",
+                            "latestPublished": "2025-07-05T18:16:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-05T18:16:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-07-05T18:14:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H45M",
+                    "departureDateTimeDifference": "PT48M",
+                    "arrivalDateTimeDifference": "PT31M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBXA",
+                        "typeCode": "E70",
+                        "typeName": "EMBRAER 170",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y076",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "82"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0048"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR04"
+                        ],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT48M",
+                        "delayDurationArrival": "PT31M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "82",
+                                "delayDuration": "0048",
+                                "delayReasonCodePublic": "FSR04"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7671,
+            "flightScheduleDate": "2025-07-12",
+            "id": "20250712+AF+7671",
+            "haul": "MEDIUM",
+            "route": [
+                "FSC",
+                "BOD"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [
+                                    "B2"
+                                ],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-12T16:30:00.000+02:00",
+                            "scheduled": "2025-07-12T16:00:00.000+02:00",
+                            "latestPublished": "2025-07-12T16:30:00.000+02:00",
+                            "actualTakeOffTime": "2025-07-12T16:42:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-07-12T15:30:00.000+02:00",
+                            "gateCloseTime": "2025-07-12T15:45:00.000+02:00",
+                            "actualBoardingOpen": "2025-07-12T15:39:00.000+02:00",
+                            "firstPaxBoarding": "2025-07-12T15:09:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BOD",
+                            "name": "MERIGNAC AIRPORT",
+                            "nameLangTranl": "Bordeaux Mérignac Airport",
+                            "city": {
+                                "code": "BOD",
+                                "name": "BORDEAUX",
+                                "nameLangTranl": "Bordeaux",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8294,
+                                "longitude": -0.7144
+                            },
+                            "places": {
+                                "aerogareCode": "B",
+                                "gateNumber": [
+                                    "04"
+                                ],
+                                "parkingPosition": "C3",
+                                "pierCode": "",
+                                "terminalCode": "B",
+                                "baggageBelt": [
+                                    "5"
+                                ],
+                                "arrivalPositionTerminal": "B",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "B",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "B",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-12T18:07:00.000+02:00",
+                            "scheduled": "2025-07-12T17:45:00.000+02:00",
+                            "latestPublished": "2025-07-12T18:07:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-12T18:07:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-07-12T18:04:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H45M",
+                    "departureDateTimeDifference": "PT30M",
+                    "arrivalDateTimeDifference": "PT22M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBXE",
+                        "typeCode": "E70",
+                        "typeName": "EMBRAER 170",
+                        "subFleetCodeId": "NC",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y076",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "41"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0117"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR01"
+                        ],
+                        "delayReasonPublicLangTransl": [
+                            "This flight was delayed due to technical issues."
+                        ],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT30M",
+                        "delayDurationArrival": "PT22M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "41",
+                                "delayDuration": "0117",
+                                "delayReasonCodePublic": "FSR01",
+                                "delayReasonPublicShort": "Technical issues",
+                                "delayReasonPublicLong": "This flight was delayed due to technical issues."
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7671,
+            "flightScheduleDate": "2025-07-19",
+            "id": "20250719+AF+7671",
+            "haul": "MEDIUM",
+            "route": [
+                "FSC",
+                "BOD"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [
+                                    "B1B2"
+                                ],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-19T16:17:00.000+02:00",
+                            "scheduled": "2025-07-19T16:00:00.000+02:00",
+                            "latestPublished": "2025-07-19T16:17:00.000+02:00",
+                            "actualTakeOffTime": "2025-07-19T16:28:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-07-19T15:30:00.000+02:00",
+                            "gateCloseTime": "2025-07-19T15:45:00.000+02:00",
+                            "actualBoardingOpen": "2025-07-19T15:36:00.000+02:00",
+                            "firstPaxBoarding": "2025-07-19T15:08:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BOD",
+                            "name": "MERIGNAC AIRPORT",
+                            "nameLangTranl": "Bordeaux Mérignac Airport",
+                            "city": {
+                                "code": "BOD",
+                                "name": "BORDEAUX",
+                                "nameLangTranl": "Bordeaux",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8294,
+                                "longitude": -0.7144
+                            },
+                            "places": {
+                                "aerogareCode": "B",
+                                "gateNumber": [
+                                    "04"
+                                ],
+                                "parkingPosition": "C3",
+                                "pierCode": "",
+                                "terminalCode": "B",
+                                "baggageBelt": [
+                                    "6"
+                                ],
+                                "arrivalPositionTerminal": "B",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "B",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "B",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-19T17:55:00.000+02:00",
+                            "scheduled": "2025-07-19T17:45:00.000+02:00",
+                            "latestPublished": "2025-07-19T17:55:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-19T17:55:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-07-19T17:50:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H45M",
+                    "departureDateTimeDifference": "PT17M",
+                    "arrivalDateTimeDifference": "PT10M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBXE",
+                        "typeCode": "E70",
+                        "typeName": "EMBRAER 170",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y076",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "81"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0017"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR04"
+                        ],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT17M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "81",
+                                "delayDuration": "0017",
+                                "delayReasonCodePublic": "FSR04"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7671,
+            "flightScheduleDate": "2025-07-26",
+            "id": "20250726+AF+7671",
+            "haul": "MEDIUM",
+            "route": [
+                "FSC",
+                "BOD"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [
+                                    "A1A2"
+                                ],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-26T16:14:00.000+02:00",
+                            "scheduled": "2025-07-26T16:00:00.000+02:00",
+                            "latestPublished": "2025-07-26T16:14:00.000+02:00",
+                            "actualTakeOffTime": "2025-07-26T16:29:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-07-26T15:30:00.000+02:00",
+                            "gateCloseTime": "2025-07-26T15:45:00.000+02:00",
+                            "actualBoardingOpen": "2025-07-26T16:04:00.000+02:00",
+                            "firstPaxBoarding": "2025-07-26T15:50:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BOD",
+                            "name": "MERIGNAC AIRPORT",
+                            "nameLangTranl": "Bordeaux Mérignac Airport",
+                            "city": {
+                                "code": "BOD",
+                                "name": "BORDEAUX",
+                                "nameLangTranl": "Bordeaux",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8294,
+                                "longitude": -0.7144
+                            },
+                            "places": {
+                                "aerogareCode": "B",
+                                "gateNumber": [
+                                    "04"
+                                ],
+                                "parkingPosition": "C3",
+                                "pierCode": "",
+                                "terminalCode": "B",
+                                "baggageBelt": [
+                                    "5"
+                                ],
+                                "arrivalPositionTerminal": "B",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "B",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "B",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-26T17:52:00.000+02:00",
+                            "scheduled": "2025-07-26T17:45:00.000+02:00",
+                            "latestPublished": "2025-07-26T17:52:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-26T17:52:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-07-26T17:49:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H45M",
+                    "departureDateTimeDifference": "PT14M",
+                    "arrivalDateTimeDifference": "PT7M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBXJ",
+                        "typeCode": "E70",
+                        "typeName": "EMBRAER 170",
+                        "subFleetCodeId": "NC",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y076",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "87",
+                            "81"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0005",
+                            "0009"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR04"
+                        ],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT14M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "87",
+                                "delayDuration": "0005"
+                            },
+                            {
+                                "delayCode": "81",
+                                "delayDuration": "0009",
+                                "delayReasonCodePublic": "FSR04"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7671,
+            "flightScheduleDate": "2025-08-02",
+            "id": "20250802+AF+7671",
+            "haul": "MEDIUM",
+            "route": [
+                "FSC",
+                "BOD"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [
+                                    "A1A2"
+                                ],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": [
+                                    "A1A2"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-02T16:40:00.000+02:00",
+                            "scheduled": "2025-08-02T16:00:00.000+02:00",
+                            "latestPublished": "2025-08-02T16:40:00.000+02:00",
+                            "actualTakeOffTime": "2025-08-02T16:49:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-08-02T15:30:00.000+02:00",
+                            "gateCloseTime": "2025-08-02T15:45:00.000+02:00",
+                            "actualBoardingOpen": "2025-08-02T15:59:00.000+02:00",
+                            "firstPaxBoarding": "2025-08-02T15:59:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BOD",
+                            "name": "MERIGNAC AIRPORT",
+                            "nameLangTranl": "Bordeaux Mérignac Airport",
+                            "city": {
+                                "code": "BOD",
+                                "name": "BORDEAUX",
+                                "nameLangTranl": "Bordeaux",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8294,
+                                "longitude": -0.7144
+                            },
+                            "places": {
+                                "aerogareCode": "B",
+                                "gateNumber": [
+                                    "04"
+                                ],
+                                "parkingPosition": "C3",
+                                "pierCode": "",
+                                "terminalCode": "B",
+                                "baggageBelt": [
+                                    "5"
+                                ],
+                                "arrivalPositionTerminal": "B",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "B",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "B",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-02T18:18:00.000+02:00",
+                            "scheduled": "2025-08-02T17:45:00.000+02:00",
+                            "latestPublished": "2025-08-02T18:18:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-02T18:18:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-08-02T18:15:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H45M",
+                    "departureDateTimeDifference": "PT40M",
+                    "arrivalDateTimeDifference": "PT33M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBXH",
+                        "typeCode": "E70",
+                        "typeName": "EMBRAER 170",
+                        "subFleetCodeId": "NC",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y076",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "87"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0040"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT40M",
+                        "delayDurationArrival": "PT33M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "87",
+                                "delayDuration": "0040"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7671,
+            "flightScheduleDate": "2025-08-09",
+            "id": "20250809+AF+7671",
+            "haul": "MEDIUM",
+            "route": [
+                "FSC",
+                "BOD"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [
+                                    "A2"
+                                ],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": [
+                                    "A2"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-09T16:34:00.000+02:00",
+                            "scheduled": "2025-08-09T16:00:00.000+02:00",
+                            "latestPublished": "2025-08-09T16:34:00.000+02:00",
+                            "actualTakeOffTime": "2025-08-09T16:42:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-08-09T15:30:00.000+02:00",
+                            "gateCloseTime": "2025-08-09T15:45:00.000+02:00",
+                            "actualBoardingOpen": "2025-08-09T15:36:00.000+02:00",
+                            "firstPaxBoarding": "2025-08-09T15:39:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BOD",
+                            "name": "MERIGNAC AIRPORT",
+                            "nameLangTranl": "Bordeaux Mérignac Airport",
+                            "city": {
+                                "code": "BOD",
+                                "name": "BORDEAUX",
+                                "nameLangTranl": "Bordeaux",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8294,
+                                "longitude": -0.7144
+                            },
+                            "places": {
+                                "aerogareCode": "B",
+                                "gateNumber": [
+                                    "04"
+                                ],
+                                "parkingPosition": "C6",
+                                "pierCode": "",
+                                "terminalCode": "B",
+                                "baggageBelt": [
+                                    "6"
+                                ],
+                                "arrivalPositionTerminal": "B",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "B",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "B",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-09T18:00:00.000+02:00",
+                            "scheduled": "2025-08-09T17:45:00.000+02:00",
+                            "latestPublished": "2025-08-09T18:00:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-09T18:00:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-08-09T17:56:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H45M",
+                    "departureDateTimeDifference": "PT34M",
+                    "arrivalDateTimeDifference": "PT15M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBXM",
+                        "typeCode": "E70",
+                        "typeName": "EMBRAER 170",
+                        "subFleetCodeId": "NC",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y076",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "89",
+                            "81"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0010",
+                            "0024"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR04"
+                        ],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT34M",
+                        "delayDurationArrival": "PT15M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "89",
+                                "delayDuration": "0010"
+                            },
+                            {
+                                "delayCode": "81",
+                                "delayDuration": "0024",
+                                "delayReasonCodePublic": "FSR04"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7671,
+            "flightScheduleDate": "2025-08-16",
+            "id": "20250816+AF+7671",
+            "haul": "MEDIUM",
+            "route": [
+                "FSC",
+                "BOD"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [
+                                    "A2"
+                                ],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": [
+                                    "A2"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-16T16:34:00.000+02:00",
+                            "scheduled": "2025-08-16T16:00:00.000+02:00",
+                            "latestPublished": "2025-08-16T16:34:00.000+02:00",
+                            "actualTakeOffTime": "2025-08-16T16:47:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-08-16T15:30:00.000+02:00",
+                            "gateCloseTime": "2025-08-16T15:45:00.000+02:00",
+                            "actualBoardingOpen": "2025-08-16T16:07:00.000+02:00",
+                            "firstPaxBoarding": "2025-08-16T16:08:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BOD",
+                            "name": "MERIGNAC AIRPORT",
+                            "nameLangTranl": "Bordeaux Mérignac Airport",
+                            "city": {
+                                "code": "BOD",
+                                "name": "BORDEAUX",
+                                "nameLangTranl": "Bordeaux",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8294,
+                                "longitude": -0.7144
+                            },
+                            "places": {
+                                "aerogareCode": "B",
+                                "gateNumber": [
+                                    "04"
+                                ],
+                                "parkingPosition": "C3",
+                                "pierCode": "",
+                                "terminalCode": "B",
+                                "baggageBelt": [
+                                    "5"
+                                ],
+                                "arrivalPositionTerminal": "B",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "B",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "B",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-16T18:12:00.000+02:00",
+                            "scheduled": "2025-08-16T17:45:00.000+02:00",
+                            "latestPublished": "2025-08-16T18:12:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-16T18:12:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-08-16T18:07:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H45M",
+                    "departureDateTimeDifference": "PT34M",
+                    "arrivalDateTimeDifference": "PT27M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBXC",
+                        "typeCode": "E70",
+                        "typeName": "EMBRAER 170",
+                        "subFleetCodeId": "NC",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y076",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "87"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0034"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT34M",
+                        "delayDurationArrival": "PT27M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "87",
+                                "delayDuration": "0034"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7671,
+            "flightScheduleDate": "2025-08-23",
+            "id": "20250823+AF+7671",
+            "haul": "MEDIUM",
+            "route": [
+                "FSC",
+                "BOD"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250823+AF+7670",
+                    "flightScheduleDate": "2025-08-23",
+                    "airlineCode": "AF",
+                    "flightNumber": "7670"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [
+                                    "B1"
+                                ],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": [
+                                    "B1"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-23T16:14:00.000+02:00",
+                            "scheduled": "2025-08-23T16:00:00.000+02:00",
+                            "latestPublished": "2025-08-23T16:14:00.000+02:00",
+                            "actualTakeOffTime": "2025-08-23T16:27:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-08-23T15:30:00.000+02:00",
+                            "gateCloseTime": "2025-08-23T15:45:00.000+02:00",
+                            "actualBoardingOpen": "2025-08-23T14:41:00.000+02:00",
+                            "firstPaxBoarding": "2025-08-23T15:09:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BOD",
+                            "name": "MERIGNAC AIRPORT",
+                            "nameLangTranl": "Bordeaux Mérignac Airport",
+                            "city": {
+                                "code": "BOD",
+                                "name": "BORDEAUX",
+                                "nameLangTranl": "Bordeaux",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8294,
+                                "longitude": -0.7144
+                            },
+                            "places": {
+                                "aerogareCode": "B",
+                                "gateNumber": [
+                                    "04"
+                                ],
+                                "parkingPosition": "C6",
+                                "pierCode": "",
+                                "terminalCode": "B",
+                                "baggageBelt": [
+                                    "6"
+                                ],
+                                "arrivalPositionTerminal": "B",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "B",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "B",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-23T17:53:00.000+02:00",
+                            "scheduled": "2025-08-23T17:45:00.000+02:00",
+                            "latestPublished": "2025-08-23T17:53:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-23T17:53:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-08-23T17:47:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H45M",
+                    "departureDateTimeDifference": "PT14M",
+                    "arrivalDateTimeDifference": "PT8M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBXG",
+                        "typeCode": "E70",
+                        "typeName": "EMBRAER 170",
+                        "subFleetCodeId": "NC",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y076",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "81"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0014"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR04"
+                        ],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT14M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "81",
+                                "delayDuration": "0014",
+                                "delayReasonCodePublic": "FSR04"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7671,
+            "flightScheduleDate": "2025-08-30",
+            "id": "20250830+AF+7671",
+            "haul": "MEDIUM",
+            "route": [
+                "FSC",
+                "BOD"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250830+AF+7670",
+                    "flightScheduleDate": "2025-08-30",
+                    "airlineCode": "AF",
+                    "flightNumber": "7670"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [
+                                    "B1"
+                                ],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": [
+                                    "B1"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-30T16:19:00.000+02:00",
+                            "scheduled": "2025-08-30T16:00:00.000+02:00",
+                            "latestPublished": "2025-08-30T16:19:00.000+02:00",
+                            "actualTakeOffTime": "2025-08-30T16:27:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-08-30T15:30:00.000+02:00",
+                            "gateCloseTime": "2025-08-30T15:45:00.000+02:00",
+                            "actualBoardingOpen": "2025-08-30T14:54:00.000+02:00",
+                            "firstPaxBoarding": "2025-08-30T14:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BOD",
+                            "name": "MERIGNAC AIRPORT",
+                            "nameLangTranl": "Bordeaux Mérignac Airport",
+                            "city": {
+                                "code": "BOD",
+                                "name": "BORDEAUX",
+                                "nameLangTranl": "Bordeaux",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8294,
+                                "longitude": -0.7144
+                            },
+                            "places": {
+                                "aerogareCode": "B",
+                                "gateNumber": [
+                                    "04"
+                                ],
+                                "parkingPosition": "C3",
+                                "pierCode": "",
+                                "terminalCode": "B",
+                                "baggageBelt": [
+                                    "5"
+                                ],
+                                "arrivalPositionTerminal": "B",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "B",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "B",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-30T17:50:00.000+02:00",
+                            "scheduled": "2025-08-30T17:45:00.000+02:00",
+                            "latestPublished": "2025-08-30T17:50:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-30T17:50:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-08-30T17:46:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H45M",
+                    "departureDateTimeDifference": "PT19M",
+                    "arrivalDateTimeDifference": "PT5M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBXB",
+                        "typeCode": "E70",
+                        "typeName": "EMBRAER 170",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y076",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "81"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0019"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR04"
+                        ],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT19M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "81",
+                                "delayDuration": "0019",
+                                "delayReasonCodePublic": "FSR04"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 9,
+        "pageNumber": 0,
+        "fullCount": 9,
+        "pageCount": 9,
+        "totalPages": 1
+    }
+}

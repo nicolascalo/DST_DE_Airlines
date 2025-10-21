@@ -1,0 +1,3932 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 7818,
+            "flightScheduleDate": "2025-09-23",
+            "id": "20250923+EJU+7818",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "EJU"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250923+EJU+7817",
+                    "flightScheduleDate": "2025-09-23",
+                    "airlineCode": "EJU",
+                    "flightNumber": "7817"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-23T21:55:00.000+02:00",
+                            "latestPublished": "2025-09-23T21:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "M02"
+                                ],
+                                "parkingPosition": "H02",
+                                "pierCode": "M",
+                                "baggageBelt": [
+                                    "018"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "3"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-23T21:33:00.000+02:00",
+                            "scheduled": "2025-09-23T21:55:00.000+02:00",
+                            "latestPublished": "2025-09-23T21:33:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-23T21:33:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-09-23T21:27:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "arrivalDateTimeDifference": "PT-22M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "OELQW",
+                        "typeCode": "319",
+                        "typeName": "AIRBUS A319",
+                        "physicalPaxConfiguration": "Y156",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6918,
+            "flightScheduleDate": "2025-09-24",
+            "id": "20250924+HV+6918",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2616,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250924+HV+6917",
+                    "flightScheduleDate": "2025-09-24",
+                    "airlineCode": "HV",
+                    "flightNumber": "6917"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-24T09:15:00.000+02:00",
+                            "latestPublished": "2025-09-24T09:15:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C18"
+                                ],
+                                "parkingPosition": "C18",
+                                "pierCode": "C",
+                                "baggageBelt": [
+                                    "004"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-09-24T11:41:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-09-24T11:46:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-24T11:24:00.000+02:00",
+                            "scheduled": "2025-09-24T11:40:00.000+02:00",
+                            "latestPublished": "2025-09-24T11:24:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-24T11:24:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-09-24T11:21:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H25M",
+                    "arrivalDateTimeDifference": "PT-16M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHHZN",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6914,
+            "flightScheduleDate": "2025-09-25",
+            "id": "20250925+HV+6914",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2612,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250925+HV+6913",
+                    "flightScheduleDate": "2025-09-25",
+                    "airlineCode": "HV",
+                    "flightNumber": "6913"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-25T09:30:00.000+02:00",
+                            "latestPublished": "2025-09-25T09:30:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C10"
+                                ],
+                                "parkingPosition": "C10",
+                                "pierCode": "C",
+                                "baggageBelt": [
+                                    "004"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-09-25T12:48:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-09-25T12:48:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-25T12:14:00.000+02:00",
+                            "scheduled": "2025-09-25T11:55:00.000+02:00",
+                            "latestPublished": "2025-09-25T12:14:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-25T12:14:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-09-25T12:11:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H25M",
+                    "arrivalDateTimeDifference": "PT19M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHYHE",
+                        "typeCode": "32Q",
+                        "typeName": "AIRBUS A321NEO",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y232",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT19M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6914,
+            "flightScheduleDate": "2025-09-26",
+            "id": "20250926+HV+6914",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250926+HV+6913",
+                    "flightScheduleDate": "2025-09-26",
+                    "airlineCode": "HV",
+                    "flightNumber": "6913"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-27T01:10:00.000+02:00",
+                            "latestPublished": "2025-09-27T01:10:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C09"
+                                ],
+                                "parkingPosition": "C09",
+                                "pierCode": "C",
+                                "baggageBelt": [
+                                    "004"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-09-27T01:36:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-09-27T01:36:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-27T01:04:00.000+02:00",
+                            "scheduled": "2025-09-27T01:10:00.000+02:00",
+                            "latestPublished": "2025-09-27T01:04:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-27T01:04:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-09-27T00:55:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "arrivalDateTimeDifference": "PT-6M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHHXC",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6918,
+            "flightScheduleDate": "2025-09-27",
+            "id": "20250927+HV+6918",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250927+HV+6917",
+                    "flightScheduleDate": "2025-09-27",
+                    "airlineCode": "HV",
+                    "flightNumber": "6917"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-27T12:35:00.000+02:00",
+                            "latestPublished": "2025-09-27T12:35:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D74"
+                                ],
+                                "parkingPosition": "D48",
+                                "pierCode": "D",
+                                "baggageBelt": [
+                                    "006"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-09-27T17:00:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-09-27T17:00:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-27T15:30:00.000+02:00",
+                            "scheduled": "2025-09-27T12:35:00.000+02:00",
+                            "latestPublished": "2025-09-27T15:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-27T15:30:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-09-27T15:16:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "arrivalDateTimeDifference": "PT2H55M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHHSK",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT2H55M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6916,
+            "flightScheduleDate": "2025-09-27",
+            "id": "20250927+HV+6916",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2614,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250927+HV+6915",
+                    "flightScheduleDate": "2025-09-27",
+                    "airlineCode": "HV",
+                    "flightNumber": "6915"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-27T16:00:00.000+02:00",
+                            "latestPublished": "2025-09-27T16:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C09"
+                                ],
+                                "parkingPosition": "C09",
+                                "pierCode": "C",
+                                "baggageBelt": [
+                                    "002"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-09-27T20:52:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-09-27T20:52:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-27T19:22:00.000+02:00",
+                            "scheduled": "2025-09-27T18:20:00.000+02:00",
+                            "latestPublished": "2025-09-27T19:22:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-27T19:22:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-09-27T19:08:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H20M",
+                    "arrivalDateTimeDifference": "PT1H2M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHYHZ",
+                        "typeCode": "32Q",
+                        "typeName": "AIRBUS A321NEO",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y232",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT1H2M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7818,
+            "flightScheduleDate": "2025-09-27",
+            "id": "20250927+EJU+7818",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "EJU"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250927+EJU+7817",
+                    "flightScheduleDate": "2025-09-27",
+                    "airlineCode": "EJU",
+                    "flightNumber": "7817"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-27T22:30:00.000+02:00",
+                            "latestPublished": "2025-09-27T22:30:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "M05"
+                                ],
+                                "parkingPosition": "H05",
+                                "pierCode": "M",
+                                "baggageBelt": [
+                                    "017"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "3"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-27T22:26:00.000+02:00",
+                            "scheduled": "2025-09-27T22:30:00.000+02:00",
+                            "latestPublished": "2025-09-27T22:26:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-27T22:26:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-09-27T22:18:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "arrivalDateTimeDifference": "PT-4M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "OELSK",
+                        "typeCode": "32N",
+                        "typeName": "AIRBUS A320NEO",
+                        "physicalPaxConfiguration": "Y195",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6916,
+            "flightScheduleDate": "2025-09-28",
+            "id": "20250928+HV+6916",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2614,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250928+HV+6915",
+                    "flightScheduleDate": "2025-09-28",
+                    "airlineCode": "HV",
+                    "flightNumber": "6915"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-28T08:20:00.000+02:00",
+                            "latestPublished": "2025-09-28T08:20:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D82"
+                                ],
+                                "parkingPosition": "D54",
+                                "pierCode": "D",
+                                "baggageBelt": [
+                                    "002"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-09-28T11:55:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-09-28T11:55:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-28T10:57:00.000+02:00",
+                            "scheduled": "2025-09-28T10:45:00.000+02:00",
+                            "latestPublished": "2025-09-28T10:57:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-28T10:57:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-09-28T10:43:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H25M",
+                    "arrivalDateTimeDifference": "PT12M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHHZN",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT12M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6918,
+            "flightScheduleDate": "2025-09-29",
+            "id": "20250929+HV+6918",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2616,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250929+HV+6917",
+                    "flightScheduleDate": "2025-09-29",
+                    "airlineCode": "HV",
+                    "flightNumber": "6917"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-29T09:35:00.000+02:00",
+                            "latestPublished": "2025-09-29T09:35:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C18"
+                                ],
+                                "parkingPosition": "C18",
+                                "pierCode": "C",
+                                "baggageBelt": [
+                                    "002"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-09-29T12:15:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-09-29T12:25:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-29T11:44:00.000+02:00",
+                            "scheduled": "2025-09-29T12:00:00.000+02:00",
+                            "latestPublished": "2025-09-29T11:44:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-29T11:44:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-09-29T11:41:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H25M",
+                    "arrivalDateTimeDifference": "PT-16M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHHXM",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6916,
+            "flightScheduleDate": "2025-09-30",
+            "id": "20250930+HV+6916",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2614,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250930+HV+6915",
+                    "flightScheduleDate": "2025-09-30",
+                    "airlineCode": "HV",
+                    "flightNumber": "6915"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-30T20:35:00.000+02:00",
+                            "latestPublished": "2025-09-30T20:35:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C05"
+                                ],
+                                "parkingPosition": "C05",
+                                "pierCode": "C",
+                                "baggageBelt": [
+                                    "002"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-09-30T23:28:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-09-30T23:32:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-30T23:05:00.000+02:00",
+                            "scheduled": "2025-09-30T23:00:00.000+02:00",
+                            "latestPublished": "2025-09-30T23:05:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-30T23:05:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-09-30T22:49:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H25M",
+                    "arrivalDateTimeDifference": "PT5M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHYHV",
+                        "typeCode": "32Q",
+                        "typeName": "AIRBUS A321NEO",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y232",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7818,
+            "flightScheduleDate": "2025-09-30",
+            "id": "20250930+EJU+7818",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "EJU"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250930+EJU+7817",
+                    "flightScheduleDate": "2025-09-30",
+                    "airlineCode": "EJU",
+                    "flightNumber": "7817"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-30T21:55:00.000+02:00",
+                            "latestPublished": "2025-09-30T21:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "M06"
+                                ],
+                                "parkingPosition": "H06",
+                                "pierCode": "M",
+                                "baggageBelt": [
+                                    "018"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "3"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-09-30T21:50:00.000+02:00",
+                            "scheduled": "2025-09-30T21:55:00.000+02:00",
+                            "latestPublished": "2025-09-30T21:50:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-30T21:50:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-09-30T21:42:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "arrivalDateTimeDifference": "PT-5M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "OELSW",
+                        "typeCode": "32N",
+                        "typeName": "AIRBUS A320NEO",
+                        "physicalPaxConfiguration": "Y195",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6918,
+            "flightScheduleDate": "2025-10-01",
+            "id": "20251001+HV+6918",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2616,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251001+HV+6917",
+                    "flightScheduleDate": "2025-10-01",
+                    "airlineCode": "HV",
+                    "flightNumber": "6917"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-01T09:15:00.000+02:00",
+                            "latestPublished": "2025-10-01T09:15:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C14"
+                                ],
+                                "parkingPosition": "C14",
+                                "pierCode": "C",
+                                "baggageBelt": [
+                                    "006"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-10-01T12:48:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-01T13:04:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-01T12:27:00.000+02:00",
+                            "scheduled": "2025-10-01T11:40:00.000+02:00",
+                            "latestPublished": "2025-10-01T12:27:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-01T12:27:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-01T12:12:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H25M",
+                    "arrivalDateTimeDifference": "PT47M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHYHY",
+                        "typeCode": "32Q",
+                        "typeName": "AIRBUS A321NEO",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y232",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT47M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6914,
+            "flightScheduleDate": "2025-10-02",
+            "id": "20251002+HV+6914",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2612,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251002+HV+6913",
+                    "flightScheduleDate": "2025-10-02",
+                    "airlineCode": "HV",
+                    "flightNumber": "6913"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-02T09:30:00.000+02:00",
+                            "latestPublished": "2025-10-02T09:30:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D68"
+                                ],
+                                "parkingPosition": "D14",
+                                "pierCode": "D",
+                                "baggageBelt": [
+                                    "004"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-10-02T12:47:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-02T12:55:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-02T12:13:00.000+02:00",
+                            "scheduled": "2025-10-02T11:55:00.000+02:00",
+                            "latestPublished": "2025-10-02T12:13:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-02T12:13:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-02T12:00:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H25M",
+                    "arrivalDateTimeDifference": "PT18M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHHXN",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT18M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6918,
+            "flightScheduleDate": "2025-10-04",
+            "id": "20251004+HV+6918",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2616,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251004+HV+6917",
+                    "flightScheduleDate": "2025-10-04",
+                    "airlineCode": "HV",
+                    "flightNumber": "6917"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-04T09:40:00.000+02:00",
+                            "latestPublished": "2025-10-04T09:40:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C14"
+                                ],
+                                "parkingPosition": "C14",
+                                "pierCode": "C",
+                                "baggageBelt": [
+                                    "004"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-10-04T14:29:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-04T14:41:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-04T13:55:00.000+02:00",
+                            "scheduled": "2025-10-04T12:00:00.000+02:00",
+                            "latestPublished": "2025-10-04T13:55:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-04T13:55:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-04T13:50:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H20M",
+                    "arrivalDateTimeDifference": "PT1H55M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHHZV",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT1H55M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7818,
+            "flightScheduleDate": "2025-10-04",
+            "id": "20251004+EJU+7818",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "EJU"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251004+EJU+7817",
+                    "flightScheduleDate": "2025-10-04",
+                    "airlineCode": "EJU",
+                    "flightNumber": "7817"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-04T22:30:00.000+02:00",
+                            "latestPublished": "2025-10-04T22:30:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "M01"
+                                ],
+                                "parkingPosition": "H01",
+                                "pierCode": "M",
+                                "baggageBelt": [
+                                    "018"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "3"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-05T00:33:00.000+02:00",
+                            "scheduled": "2025-10-04T22:30:00.000+02:00",
+                            "latestPublished": "2025-10-05T00:33:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-05T00:33:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-05T00:29:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "arrivalDateTimeDifference": "PT2H3M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "OELUE",
+                        "typeCode": "32N",
+                        "typeName": "AIRBUS A320NEO",
+                        "physicalPaxConfiguration": "Y195",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT2H3M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6916,
+            "flightScheduleDate": "2025-10-05",
+            "id": "20251005+HV+6916",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2614,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251005+HV+6915",
+                    "flightScheduleDate": "2025-10-05",
+                    "airlineCode": "HV",
+                    "flightNumber": "6915"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-05T08:20:00.000+02:00",
+                            "latestPublished": "2025-10-05T08:20:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C14"
+                                ],
+                                "parkingPosition": "C14",
+                                "pierCode": "C",
+                                "baggageBelt": [
+                                    "006"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-10-05T12:03:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-05T12:14:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-05T11:29:00.000+02:00",
+                            "scheduled": "2025-10-05T10:45:00.000+02:00",
+                            "latestPublished": "2025-10-05T11:29:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-05T11:29:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-05T11:23:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H25M",
+                    "arrivalDateTimeDifference": "PT44M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHHBK",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT44M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6918,
+            "flightScheduleDate": "2025-10-06",
+            "id": "20251006+HV+6918",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2616,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251006+HV+6917",
+                    "flightScheduleDate": "2025-10-06",
+                    "airlineCode": "HV",
+                    "flightNumber": "6917"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-06T09:35:00.000+02:00",
+                            "latestPublished": "2025-10-06T09:35:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D77"
+                                ],
+                                "parkingPosition": "D43",
+                                "pierCode": "D",
+                                "baggageBelt": [
+                                    "002"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-10-06T14:57:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-06T15:06:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-06T14:28:00.000+02:00",
+                            "scheduled": "2025-10-06T12:00:00.000+02:00",
+                            "latestPublished": "2025-10-06T14:28:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-06T14:28:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-06T14:17:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H25M",
+                    "arrivalDateTimeDifference": "PT2H28M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHHZI",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT2H28M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6916,
+            "flightScheduleDate": "2025-10-07",
+            "id": "20251007+HV+6916",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2614,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251007+HV+6915",
+                    "flightScheduleDate": "2025-10-07",
+                    "airlineCode": "HV",
+                    "flightNumber": "6915"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-07T20:35:00.000+02:00",
+                            "latestPublished": "2025-10-07T20:35:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C09"
+                                ],
+                                "parkingPosition": "C09",
+                                "pierCode": "C",
+                                "baggageBelt": [
+                                    "002"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-10-08T00:02:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-08T00:19:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-07T23:45:00.000+02:00",
+                            "scheduled": "2025-10-07T23:00:00.000+02:00",
+                            "latestPublished": "2025-10-07T23:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-07T23:45:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-07T23:33:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H25M",
+                    "arrivalDateTimeDifference": "PT45M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHYHT",
+                        "typeCode": "32Q",
+                        "typeName": "AIRBUS A321NEO",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y232",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT45M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7818,
+            "flightScheduleDate": "2025-10-07",
+            "id": "20251007+EJU+7818",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "EJU"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251007+EJU+7817",
+                    "flightScheduleDate": "2025-10-07",
+                    "airlineCode": "EJU",
+                    "flightNumber": "7817"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-07T21:55:00.000+02:00",
+                            "latestPublished": "2025-10-07T21:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "M05"
+                                ],
+                                "parkingPosition": "H05",
+                                "pierCode": "M",
+                                "baggageBelt": [
+                                    "020"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-07T22:10:00.000+02:00",
+                            "scheduled": "2025-10-07T21:55:00.000+02:00",
+                            "latestPublished": "2025-10-07T22:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-07T22:10:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-07T21:53:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "arrivalDateTimeDifference": "PT15M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "OELKD",
+                        "typeCode": "319",
+                        "typeName": "AIRBUS A319",
+                        "ownerAirlineCode": "RQ",
+                        "ownerAirlineName": "KAM AIR",
+                        "physicalPaxConfiguration": "Y156",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT15M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6918,
+            "flightScheduleDate": "2025-10-08",
+            "id": "20251008+HV+6918",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2616,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251008+HV+6917",
+                    "flightScheduleDate": "2025-10-08",
+                    "airlineCode": "HV",
+                    "flightNumber": "6917"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-08T09:15:00.000+02:00",
+                            "latestPublished": "2025-10-08T09:15:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C12"
+                                ],
+                                "parkingPosition": "C12",
+                                "pierCode": "C",
+                                "baggageBelt": [
+                                    "006"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-10-08T12:24:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-08T12:42:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-08T11:44:00.000+02:00",
+                            "scheduled": "2025-10-08T11:40:00.000+02:00",
+                            "latestPublished": "2025-10-08T11:44:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-08T11:44:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-08T11:32:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H25M",
+                    "arrivalDateTimeDifference": "PT4M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHHBJ",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6914,
+            "flightScheduleDate": "2025-10-09",
+            "id": "20251009+HV+6914",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2612,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251009+HV+6913",
+                    "flightScheduleDate": "2025-10-09",
+                    "airlineCode": "HV",
+                    "flightNumber": "6913"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-09T09:30:00.000+02:00",
+                            "latestPublished": "2025-10-09T09:30:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D68"
+                                ],
+                                "parkingPosition": "D14",
+                                "pierCode": "D",
+                                "baggageBelt": [
+                                    "006"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-10-09T12:51:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-09T13:01:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-09T12:09:00.000+02:00",
+                            "scheduled": "2025-10-09T11:55:00.000+02:00",
+                            "latestPublished": "2025-10-09T12:09:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-09T12:09:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-09T11:51:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H25M",
+                    "arrivalDateTimeDifference": "PT14M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHHSK",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT14M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6918,
+            "flightScheduleDate": "2025-10-11",
+            "id": "20251011+HV+6918",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2616,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251011+HV+6917",
+                    "flightScheduleDate": "2025-10-11",
+                    "airlineCode": "HV",
+                    "flightNumber": "6917"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-11T09:40:00.000+02:00",
+                            "latestPublished": "2025-10-11T09:40:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C15"
+                                ],
+                                "parkingPosition": "C15",
+                                "pierCode": "C",
+                                "baggageBelt": [
+                                    "006"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-10-11T12:45:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-11T12:45:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-11T12:09:00.000+02:00",
+                            "scheduled": "2025-10-11T12:00:00.000+02:00",
+                            "latestPublished": "2025-10-11T12:09:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-11T12:09:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-11T11:56:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H20M",
+                    "arrivalDateTimeDifference": "PT9M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHHZV",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7818,
+            "flightScheduleDate": "2025-10-11",
+            "id": "20251011+EJU+7818",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "EJU"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251011+EJU+7817",
+                    "flightScheduleDate": "2025-10-11",
+                    "airlineCode": "EJU",
+                    "flightNumber": "7817"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-11T22:30:00.000+02:00",
+                            "latestPublished": "2025-10-11T22:30:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "M06"
+                                ],
+                                "parkingPosition": "H06",
+                                "pierCode": "M",
+                                "baggageBelt": [
+                                    "022"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-11T22:26:00.000+02:00",
+                            "scheduled": "2025-10-11T22:30:00.000+02:00",
+                            "latestPublished": "2025-10-11T22:26:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-11T22:26:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-11T22:17:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "arrivalDateTimeDifference": "PT-4M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "OELSI",
+                        "typeCode": "32N",
+                        "typeName": "AIRBUS A320NEO",
+                        "physicalPaxConfiguration": "Y195",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6916,
+            "flightScheduleDate": "2025-10-12",
+            "id": "20251012+HV+6916",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2614,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251012+HV+6915",
+                    "flightScheduleDate": "2025-10-12",
+                    "airlineCode": "HV",
+                    "flightNumber": "6915"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-12T08:20:00.000+02:00",
+                            "latestPublished": "2025-10-12T08:20:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C18"
+                                ],
+                                "parkingPosition": "C18",
+                                "pierCode": "C",
+                                "baggageBelt": [
+                                    "002"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-10-12T11:47:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-12T11:53:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-12T10:59:00.000+02:00",
+                            "scheduled": "2025-10-12T10:45:00.000+02:00",
+                            "latestPublished": "2025-10-12T10:59:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-12T10:59:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-12T10:47:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H25M",
+                    "arrivalDateTimeDifference": "PT14M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHHBJ",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT14M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6918,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+HV+6918",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2616,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+HV+6917",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "HV",
+                    "flightNumber": "6917"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T09:35:00.000+02:00",
+                            "latestPublished": "2025-10-13T09:35:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C16"
+                                ],
+                                "parkingPosition": "C16",
+                                "pierCode": "C",
+                                "baggageBelt": [
+                                    "002"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-10-13T13:53:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-13T13:53:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T12:23:00.000+02:00",
+                            "scheduled": "2025-10-13T12:00:00.000+02:00",
+                            "latestPublished": "2025-10-13T12:23:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T12:23:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-13T12:21:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H25M",
+                    "arrivalDateTimeDifference": "PT23M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHHSC",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT23M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6916,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+HV+6916",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2614,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+HV+6915",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "HV",
+                    "flightNumber": "6915"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T20:35:00.000+02:00",
+                            "latestPublished": "2025-10-14T20:35:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C12"
+                                ],
+                                "parkingPosition": "C12",
+                                "pierCode": "C",
+                                "baggageBelt": [
+                                    "004"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-10-15T00:18:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-15T00:32:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T23:20:00.000+02:00",
+                            "scheduled": "2025-10-14T23:00:00.000+02:00",
+                            "latestPublished": "2025-10-14T23:20:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T23:20:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T23:16:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H25M",
+                    "arrivalDateTimeDifference": "PT20M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHYHV",
+                        "typeCode": "32Q",
+                        "typeName": "AIRBUS A321NEO",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y232",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT20M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7818,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+EJU+7818",
+            "haul": "MEDIUM",
+            "route": [
+                "OLB",
+                "AMS"
+            ],
+            "airline": {
+                "code": "EJU"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+EJU+7817",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "EJU",
+                    "flightNumber": "7817"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T21:55:00.000+02:00",
+                            "latestPublished": "2025-10-14T21:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "M02"
+                                ],
+                                "parkingPosition": "H02",
+                                "pierCode": "M",
+                                "baggageBelt": [
+                                    "020"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T21:39:00.000+02:00",
+                            "scheduled": "2025-10-14T21:55:00.000+02:00",
+                            "latestPublished": "2025-10-14T21:39:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T21:39:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T21:32:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "arrivalDateTimeDifference": "PT-16M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "OELKD",
+                        "typeCode": "319",
+                        "typeName": "AIRBUS A319",
+                        "ownerAirlineCode": "RQ",
+                        "ownerAirlineName": "KAM AIR",
+                        "physicalPaxConfiguration": "Y156",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 27,
+        "pageNumber": 2,
+        "fullCount": 227,
+        "pageCount": 27,
+        "totalPages": 3
+    }
+}

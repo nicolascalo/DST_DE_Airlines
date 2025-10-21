@@ -1,0 +1,1002 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 727,
+            "flightScheduleDate": "2025-08-01",
+            "id": "20250801+E4+0727",
+            "haul": "MEDIUM",
+            "route": [
+                "CDG",
+                "AHO"
+            ],
+            "airline": {
+                "code": "E4",
+                "name": "ENTER AIR SPOLKA Z.O.O."
+            },
+            "flightStatusPublic": "ON_TIME",
+            "flightStatusPublicLangTransl": "On time",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "3",
+                                "boardingPier": "",
+                                "boardingTerminal": "3",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "3",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-01T18:20:00.000+02:00",
+                            "latestPublished": "2025-08-01T18:20:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-01T20:20:00.000+02:00",
+                            "latestPublished": "2025-08-01T20:20:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-01T20:20:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "C",
+                    "serviceTypeName": "Passenger Only",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SPESA",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "E4",
+                        "ownerAirlineName": "ENTER AIR SPOLKA Z.O.O.",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "14"
+                                ],
+                                "parkingPosition": "Q01",
+                                "pierCode": "",
+                                "terminalCode": "3",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "F",
+                                "parkingPositionType": "L",
+                                "departureTerminal": "Q",
+                                "parkingPositionCustomStatus": "I",
+                                "checkInAerogare": "3",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-01T18:30:00.000+02:00",
+                            "scheduled": "2025-08-01T18:20:00.000+02:00",
+                            "latestPublished": "2025-08-01T18:30:00.000+02:00",
+                            "actualTakeOffTime": "2025-08-01T18:46:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AHO",
+                            "name": "FERTILIA AIRPORT",
+                            "nameLangTranl": "Alghero Fertilia Airport",
+                            "city": {
+                                "code": "AHO",
+                                "name": "ALGHERO",
+                                "nameLangTranl": "Alghero",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.6311,
+                                "longitude": 8.2886
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-01T20:20:00.000+02:00",
+                            "latestPublished": "2025-08-01T20:28:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-01T20:28:00.000+02:00"
+                            },
+                            "estimatedArrival": "2025-08-01T20:28:00.000+02:00",
+                            "estimatedTouchDownTime": "2025-08-01T20:18:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "C",
+                    "serviceTypeName": "Passenger Only",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H",
+                    "departureDateTimeDifference": "PT10M",
+                    "arrivalDateTimeDifference": "PT8M",
+                    "timeToArrival": "PT-1934H-5M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SPESA",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "E4",
+                        "ownerAirlineName": "ENTER AIR SPOLKA Z.O.O.",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 727,
+            "flightScheduleDate": "2025-08-08",
+            "id": "20250808+E4+0727",
+            "haul": "MEDIUM",
+            "route": [
+                "CDG",
+                "AHO"
+            ],
+            "airline": {
+                "code": "E4",
+                "name": "ENTER AIR SPOLKA Z.O.O."
+            },
+            "flightStatusPublic": "ON_TIME",
+            "flightStatusPublicLangTransl": "On time",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "3",
+                                "boardingPier": "",
+                                "boardingTerminal": "3",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "3",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-08T18:20:00.000+02:00",
+                            "latestPublished": "2025-08-08T18:20:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OLB",
+                            "name": "COSTA SMERALDA AIRPORT",
+                            "nameLangTranl": "Costa Smeralda",
+                            "city": {
+                                "code": "OLB",
+                                "name": "OLBIA",
+                                "nameLangTranl": "Olbia - Sardinia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.8986,
+                                "longitude": 9.5178
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-08T20:20:00.000+02:00",
+                            "latestPublished": "2025-08-08T20:20:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-08T20:20:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "C",
+                    "serviceTypeName": "Passenger Only",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SPESA",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "E4",
+                        "ownerAirlineName": "ENTER AIR SPOLKA Z.O.O.",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "14"
+                                ],
+                                "parkingPosition": "Q10",
+                                "pierCode": "",
+                                "terminalCode": "3",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "F",
+                                "parkingPositionType": "L",
+                                "departureTerminal": "Q",
+                                "parkingPositionCustomStatus": "I",
+                                "checkInAerogare": "3",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-08T18:41:00.000+02:00",
+                            "scheduled": "2025-08-08T18:20:00.000+02:00",
+                            "latestPublished": "2025-08-08T18:41:00.000+02:00",
+                            "actualTakeOffTime": "2025-08-08T18:54:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AHO",
+                            "name": "FERTILIA AIRPORT",
+                            "nameLangTranl": "Alghero Fertilia Airport",
+                            "city": {
+                                "code": "AHO",
+                                "name": "ALGHERO",
+                                "nameLangTranl": "Alghero",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.6311,
+                                "longitude": 8.2886
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-08T20:20:00.000+02:00",
+                            "latestPublished": "2025-08-08T20:36:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-08T20:36:00.000+02:00"
+                            },
+                            "estimatedArrival": "2025-08-08T20:36:00.000+02:00",
+                            "estimatedTouchDownTime": "2025-08-08T20:26:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "C",
+                    "serviceTypeName": "Passenger Only",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H",
+                    "departureDateTimeDifference": "PT21M",
+                    "arrivalDateTimeDifference": "PT16M",
+                    "timeToArrival": "PT-1765H-57M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SPESA",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "E4",
+                        "ownerAirlineName": "ENTER AIR SPOLKA Z.O.O.",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT16M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 727,
+            "flightScheduleDate": "2025-08-15",
+            "id": "20250815+E4+0727",
+            "haul": "MEDIUM",
+            "route": [
+                "CDG",
+                "AHO"
+            ],
+            "airline": {
+                "code": "E4",
+                "name": "ENTER AIR SPOLKA Z.O.O."
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "12"
+                                ],
+                                "parkingPosition": "Q01",
+                                "pierCode": "",
+                                "terminalCode": "3",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "F",
+                                "parkingPositionType": "L",
+                                "departureTerminal": "Q",
+                                "parkingPositionCustomStatus": "I",
+                                "checkInAerogare": "3",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-15T18:24:00.000+02:00",
+                            "scheduled": "2025-08-15T18:20:00.000+02:00",
+                            "latestPublished": "2025-08-15T18:24:00.000+02:00",
+                            "actualTakeOffTime": "2025-08-15T18:35:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AHO",
+                            "name": "FERTILIA AIRPORT",
+                            "nameLangTranl": "Alghero Fertilia Airport",
+                            "city": {
+                                "code": "AHO",
+                                "name": "ALGHERO",
+                                "nameLangTranl": "Alghero",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.6311,
+                                "longitude": 8.2886
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-15T20:20:00.000+02:00",
+                            "latestPublished": "2025-08-15T20:13:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-15T20:13:00.000+02:00"
+                            },
+                            "estimatedArrival": "2025-08-15T20:13:00.000+02:00",
+                            "estimatedTouchDownTime": "2025-08-15T20:03:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "C",
+                    "serviceTypeName": "Passenger Only",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H",
+                    "departureDateTimeDifference": "PT4M",
+                    "arrivalDateTimeDifference": "PT-7M",
+                    "timeToArrival": "PT-1598H-20M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SPESA",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "E4",
+                        "ownerAirlineName": "ENTER AIR SPOLKA Z.O.O.",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 727,
+            "flightScheduleDate": "2025-08-22",
+            "id": "20250822+E4+0727",
+            "haul": "MEDIUM",
+            "route": [
+                "CDG",
+                "AHO"
+            ],
+            "airline": {
+                "code": "E4",
+                "name": "ENTER AIR SPOLKA Z.O.O."
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250822+E4+0724",
+                    "flightScheduleDate": "2025-08-22",
+                    "airlineCode": "E4",
+                    "flightNumber": "0724"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "11"
+                                ],
+                                "parkingPosition": "Q21",
+                                "pierCode": "",
+                                "terminalCode": "3",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "F",
+                                "parkingPositionType": "L",
+                                "departureTerminal": "Q",
+                                "parkingPositionCustomStatus": "I",
+                                "checkInAerogare": "3",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-22T19:12:00.000+02:00",
+                            "scheduled": "2025-08-22T18:20:00.000+02:00",
+                            "latestPublished": "2025-08-22T19:12:00.000+02:00",
+                            "actualTakeOffTime": "2025-08-22T19:28:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AHO",
+                            "name": "FERTILIA AIRPORT",
+                            "nameLangTranl": "Alghero Fertilia Airport",
+                            "city": {
+                                "code": "AHO",
+                                "name": "ALGHERO",
+                                "nameLangTranl": "Alghero",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.6311,
+                                "longitude": 8.2886
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-22T20:20:00.000+02:00",
+                            "latestPublished": "2025-08-22T21:06:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-22T21:06:00.000+02:00"
+                            },
+                            "estimatedArrival": "2025-08-22T21:06:00.000+02:00",
+                            "estimatedTouchDownTime": "2025-08-22T20:56:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "C",
+                    "serviceTypeName": "Passenger Only",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H",
+                    "departureDateTimeDifference": "PT52M",
+                    "arrivalDateTimeDifference": "PT46M",
+                    "timeToArrival": "PT-1429H-27M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SPESO",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "E4",
+                        "ownerAirlineName": "ENTER AIR SPOLKA Z.O.O.",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT46M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 727,
+            "flightScheduleDate": "2025-08-29",
+            "id": "20250829+E4+0727",
+            "haul": "MEDIUM",
+            "route": [
+                "CDG",
+                "AHO"
+            ],
+            "airline": {
+                "code": "E4",
+                "name": "ENTER AIR SPOLKA Z.O.O."
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250829+E4+0724",
+                    "flightScheduleDate": "2025-08-29",
+                    "airlineCode": "E4",
+                    "flightNumber": "0724"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "11"
+                                ],
+                                "parkingPosition": "Q19",
+                                "pierCode": "",
+                                "terminalCode": "3",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "F",
+                                "parkingPositionType": "L",
+                                "departureTerminal": "Q",
+                                "parkingPositionCustomStatus": "I",
+                                "checkInAerogare": "3",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-29T19:16:00.000+02:00",
+                            "scheduled": "2025-08-29T18:20:00.000+02:00",
+                            "latestPublished": "2025-08-29T19:16:00.000+02:00",
+                            "actualTakeOffTime": "2025-08-29T19:30:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AHO",
+                            "name": "FERTILIA AIRPORT",
+                            "nameLangTranl": "Alghero Fertilia Airport",
+                            "city": {
+                                "code": "AHO",
+                                "name": "ALGHERO",
+                                "nameLangTranl": "Alghero",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.6311,
+                                "longitude": 8.2886
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-29T20:20:00.000+02:00",
+                            "latestPublished": "2025-08-29T21:11:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-29T21:11:00.000+02:00"
+                            },
+                            "estimatedArrival": "2025-08-29T21:11:00.000+02:00",
+                            "estimatedTouchDownTime": "2025-08-29T21:01:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "C",
+                    "serviceTypeName": "Passenger Only",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H",
+                    "departureDateTimeDifference": "PT56M",
+                    "arrivalDateTimeDifference": "PT51M",
+                    "timeToArrival": "PT-1261H-22M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SPESO",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "E4",
+                        "ownerAirlineName": "ENTER AIR SPOLKA Z.O.O.",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT51M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 5,
+        "pageNumber": 0,
+        "fullCount": 5,
+        "pageCount": 5,
+        "totalPages": 1
+    }
+}

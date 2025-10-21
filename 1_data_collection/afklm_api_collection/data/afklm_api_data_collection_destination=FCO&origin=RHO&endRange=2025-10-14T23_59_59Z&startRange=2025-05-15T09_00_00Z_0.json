@@ -1,0 +1,603 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 727,
+            "flightScheduleDate": "2025-08-02",
+            "id": "20250802+AZ+0727",
+            "haul": "MEDIUM",
+            "route": [
+                "RHO",
+                "FCO"
+            ],
+            "airline": {
+                "code": "AZ",
+                "name": "ITA AIRWAYS"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2986,
+                    "flightScheduleDate": "2025-08-02",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "RHO",
+                            "name": "DIAGORAS AIRPORT",
+                            "nameLangTranl": "Rhodes International Airport, \"Diagoras\"",
+                            "city": {
+                                "code": "RHO",
+                                "name": "RHODES",
+                                "nameLangTranl": "Rhodes",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 36.4056,
+                                "longitude": 28.0861
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-02T15:10:00.000+03:00",
+                            "latestPublished": "2025-08-02T15:10:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FCO",
+                            "name": "FIUMICINO AIRPORT",
+                            "nameLangTranl": "Fiumicino Airport",
+                            "city": {
+                                "code": "ROM",
+                                "name": "ROME",
+                                "nameLangTranl": "Rome",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.8003,
+                                "longitude": 12.2389
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-02T16:45:00.000+02:00",
+                            "latestPublished": "2025-08-02T16:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-02T16:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H35M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "typeCode": "32N",
+                        "typeName": "AIRBUS A320NEO",
+                        "ownerAirlineCode": "AZ",
+                        "ownerAirlineName": "ITA AIRWAYS",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J008Y168"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 727,
+            "flightScheduleDate": "2025-08-12",
+            "id": "20250812+AZ+0727",
+            "haul": "MEDIUM",
+            "route": [
+                "RHO",
+                "FCO"
+            ],
+            "airline": {
+                "code": "AZ",
+                "name": "ITA AIRWAYS"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2986,
+                    "flightScheduleDate": "2025-08-12",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "RHO",
+                            "name": "DIAGORAS AIRPORT",
+                            "nameLangTranl": "Rhodes International Airport, \"Diagoras\"",
+                            "city": {
+                                "code": "RHO",
+                                "name": "RHODES",
+                                "nameLangTranl": "Rhodes",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 36.4056,
+                                "longitude": 28.0861
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-12T14:20:00.000+03:00",
+                            "latestPublished": "2025-08-12T14:20:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FCO",
+                            "name": "FIUMICINO AIRPORT",
+                            "nameLangTranl": "Fiumicino Airport",
+                            "city": {
+                                "code": "ROM",
+                                "name": "ROME",
+                                "nameLangTranl": "Rome",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.8003,
+                                "longitude": 12.2389
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-12T15:55:00.000+02:00",
+                            "latestPublished": "2025-08-12T15:55:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-12T15:55:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H35M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "typeCode": "319",
+                        "typeName": "AIRBUS A319",
+                        "ownerAirlineCode": "AZ",
+                        "ownerAirlineName": "ITA AIRWAYS",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J008Y132"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 731,
+            "flightScheduleDate": "2025-08-21",
+            "id": "20250821+AZ+0731",
+            "haul": "MEDIUM",
+            "route": [
+                "RHO",
+                "FCO"
+            ],
+            "airline": {
+                "code": "AZ",
+                "name": "ITA AIRWAYS"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2985,
+                    "flightScheduleDate": "2025-08-21",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "RHO",
+                            "name": "DIAGORAS AIRPORT",
+                            "nameLangTranl": "Rhodes International Airport, \"Diagoras\"",
+                            "city": {
+                                "code": "RHO",
+                                "name": "RHODES",
+                                "nameLangTranl": "Rhodes",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 36.4056,
+                                "longitude": 28.0861
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-21T14:10:00.000+03:00",
+                            "latestPublished": "2025-08-21T14:10:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FCO",
+                            "name": "FIUMICINO AIRPORT",
+                            "nameLangTranl": "Fiumicino Airport",
+                            "city": {
+                                "code": "ROM",
+                                "name": "ROME",
+                                "nameLangTranl": "Rome",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.8003,
+                                "longitude": 12.2389
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-21T15:45:00.000+02:00",
+                            "latestPublished": "2025-08-21T15:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-21T15:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H35M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "typeCode": "319",
+                        "typeName": "AIRBUS A319",
+                        "ownerAirlineCode": "AZ",
+                        "ownerAirlineName": "ITA AIRWAYS",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J008Y132"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 731,
+            "flightScheduleDate": "2025-08-28",
+            "id": "20250828+AZ+0731",
+            "haul": "MEDIUM",
+            "route": [
+                "RHO",
+                "FCO"
+            ],
+            "airline": {
+                "code": "AZ",
+                "name": "ITA AIRWAYS"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2985,
+                    "flightScheduleDate": "2025-08-28",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "RHO",
+                            "name": "DIAGORAS AIRPORT",
+                            "nameLangTranl": "Rhodes International Airport, \"Diagoras\"",
+                            "city": {
+                                "code": "RHO",
+                                "name": "RHODES",
+                                "nameLangTranl": "Rhodes",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "GR",
+                                    "name": "GREECE",
+                                    "nameLangTranl": "Greece",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 36.4056,
+                                "longitude": 28.0861
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-28T14:10:00.000+03:00",
+                            "latestPublished": "2025-08-28T14:10:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FCO",
+                            "name": "FIUMICINO AIRPORT",
+                            "nameLangTranl": "Fiumicino Airport",
+                            "city": {
+                                "code": "ROM",
+                                "name": "ROME",
+                                "nameLangTranl": "Rome",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.8003,
+                                "longitude": 12.2389
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-28T15:45:00.000+02:00",
+                            "latestPublished": "2025-08-28T15:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-28T15:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H35M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "typeCode": "319",
+                        "typeName": "AIRBUS A319",
+                        "ownerAirlineCode": "AZ",
+                        "ownerAirlineName": "ITA AIRWAYS",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J008Y132"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 4,
+        "pageNumber": 0,
+        "fullCount": 4,
+        "pageCount": 4,
+        "totalPages": 1
+    }
+}

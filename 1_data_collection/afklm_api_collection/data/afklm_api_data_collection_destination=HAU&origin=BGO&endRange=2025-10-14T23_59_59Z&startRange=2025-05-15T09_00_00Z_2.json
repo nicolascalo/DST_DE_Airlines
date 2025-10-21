@@ -1,0 +1,4086 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 1011,
+            "flightScheduleDate": "2025-09-29",
+            "id": "20250929+WF+1011",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5549,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2806,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9124,
+                    "airline": {
+                        "code": "LH",
+                        "name": "DEUTSCHE LUFTHANSA AG"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-29T15:00:00.000+02:00",
+                            "latestPublished": "2025-09-29T15:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-29T15:30:00.000+02:00",
+                            "latestPublished": "2025-09-29T15:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-29T15:30:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1017,
+            "flightScheduleDate": "2025-09-29",
+            "id": "20250929+WF+1017",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2808,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9126,
+                    "airline": {
+                        "code": "LH",
+                        "name": "DEUTSCHE LUFTHANSA AG"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-29T20:15:00.000+02:00",
+                            "latestPublished": "2025-09-29T20:15:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-29T20:45:00.000+02:00",
+                            "latestPublished": "2025-09-29T20:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-29T20:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1011,
+            "flightScheduleDate": "2025-09-30",
+            "id": "20250930+WF+1011",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2806,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9124,
+                    "airline": {
+                        "code": "LH",
+                        "name": "DEUTSCHE LUFTHANSA AG"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-30T15:00:00.000+02:00",
+                            "latestPublished": "2025-09-30T15:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-30T15:30:00.000+02:00",
+                            "latestPublished": "2025-09-30T15:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-30T15:30:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1017,
+            "flightScheduleDate": "2025-09-30",
+            "id": "20250930+WF+1017",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2891,
+                    "airline": {
+                        "code": "AY",
+                        "name": "FINNAIR OYJ"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2808,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9126,
+                    "airline": {
+                        "code": "LH",
+                        "name": "DEUTSCHE LUFTHANSA AG"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-30T20:15:00.000+02:00",
+                            "latestPublished": "2025-09-30T20:15:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-30T20:45:00.000+02:00",
+                            "latestPublished": "2025-09-30T20:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-30T20:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1011,
+            "flightScheduleDate": "2025-10-01",
+            "id": "20251001+WF+1011",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2806,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9124,
+                    "airline": {
+                        "code": "LH",
+                        "name": "DEUTSCHE LUFTHANSA AG"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-01T15:00:00.000+02:00",
+                            "latestPublished": "2025-10-01T15:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-01T15:30:00.000+02:00",
+                            "latestPublished": "2025-10-01T15:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-01T15:30:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1017,
+            "flightScheduleDate": "2025-10-01",
+            "id": "20251001+WF+1017",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2808,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-01T20:15:00.000+02:00",
+                            "latestPublished": "2025-10-01T20:15:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-01T20:45:00.000+02:00",
+                            "latestPublished": "2025-10-01T20:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-01T20:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1011,
+            "flightScheduleDate": "2025-10-02",
+            "id": "20251002+WF+1011",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5549,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2806,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9124,
+                    "airline": {
+                        "code": "LH",
+                        "name": "DEUTSCHE LUFTHANSA AG"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-02T15:00:00.000+02:00",
+                            "latestPublished": "2025-10-02T15:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-02T15:30:00.000+02:00",
+                            "latestPublished": "2025-10-02T15:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-02T15:30:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1017,
+            "flightScheduleDate": "2025-10-02",
+            "id": "20251002+WF+1017",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2891,
+                    "airline": {
+                        "code": "AY",
+                        "name": "FINNAIR OYJ"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2808,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-02T20:15:00.000+02:00",
+                            "latestPublished": "2025-10-02T20:15:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-02T20:45:00.000+02:00",
+                            "latestPublished": "2025-10-02T20:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-02T20:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1011,
+            "flightScheduleDate": "2025-10-03",
+            "id": "20251003+WF+1011",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5549,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2806,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9124,
+                    "airline": {
+                        "code": "LH",
+                        "name": "DEUTSCHE LUFTHANSA AG"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-03T15:00:00.000+02:00",
+                            "latestPublished": "2025-10-03T15:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-03T15:30:00.000+02:00",
+                            "latestPublished": "2025-10-03T15:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-03T15:30:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1017,
+            "flightScheduleDate": "2025-10-03",
+            "id": "20251003+WF+1017",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2808,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-03T20:15:00.000+02:00",
+                            "latestPublished": "2025-10-03T20:15:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-03T20:45:00.000+02:00",
+                            "latestPublished": "2025-10-03T20:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-03T20:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1011,
+            "flightScheduleDate": "2025-10-04",
+            "id": "20251004+WF+1011",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5549,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2806,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9124,
+                    "airline": {
+                        "code": "LH",
+                        "name": "DEUTSCHE LUFTHANSA AG"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-04T15:00:00.000+02:00",
+                            "latestPublished": "2025-10-04T15:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-04T15:30:00.000+02:00",
+                            "latestPublished": "2025-10-04T15:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-04T15:30:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1013,
+            "flightScheduleDate": "2025-10-04",
+            "id": "20251004+WF+1013",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2808,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-04T17:40:00.000+02:00",
+                            "latestPublished": "2025-10-04T17:40:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-04T18:10:00.000+02:00",
+                            "latestPublished": "2025-10-04T18:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-04T18:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1011,
+            "flightScheduleDate": "2025-10-05",
+            "id": "20251005+WF+1011",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5549,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2806,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9124,
+                    "airline": {
+                        "code": "LH",
+                        "name": "DEUTSCHE LUFTHANSA AG"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-05T15:00:00.000+02:00",
+                            "latestPublished": "2025-10-05T15:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-05T15:30:00.000+02:00",
+                            "latestPublished": "2025-10-05T15:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-05T15:30:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1017,
+            "flightScheduleDate": "2025-10-05",
+            "id": "20251005+WF+1017",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2808,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-05T20:15:00.000+02:00",
+                            "latestPublished": "2025-10-05T20:15:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-05T20:45:00.000+02:00",
+                            "latestPublished": "2025-10-05T20:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-05T20:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1011,
+            "flightScheduleDate": "2025-10-06",
+            "id": "20251006+WF+1011",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5549,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2806,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9124,
+                    "airline": {
+                        "code": "LH",
+                        "name": "DEUTSCHE LUFTHANSA AG"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-06T15:00:00.000+02:00",
+                            "latestPublished": "2025-10-06T15:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-06T15:30:00.000+02:00",
+                            "latestPublished": "2025-10-06T15:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-06T15:30:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1017,
+            "flightScheduleDate": "2025-10-06",
+            "id": "20251006+WF+1017",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2808,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9126,
+                    "airline": {
+                        "code": "LH",
+                        "name": "DEUTSCHE LUFTHANSA AG"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-06T20:15:00.000+02:00",
+                            "latestPublished": "2025-10-06T20:15:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-06T20:45:00.000+02:00",
+                            "latestPublished": "2025-10-06T20:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-06T20:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1011,
+            "flightScheduleDate": "2025-10-07",
+            "id": "20251007+WF+1011",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2806,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9124,
+                    "airline": {
+                        "code": "LH",
+                        "name": "DEUTSCHE LUFTHANSA AG"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-07T15:00:00.000+02:00",
+                            "latestPublished": "2025-10-07T15:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-07T15:30:00.000+02:00",
+                            "latestPublished": "2025-10-07T15:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-07T15:30:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1017,
+            "flightScheduleDate": "2025-10-07",
+            "id": "20251007+WF+1017",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2891,
+                    "airline": {
+                        "code": "AY",
+                        "name": "FINNAIR OYJ"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2808,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9126,
+                    "airline": {
+                        "code": "LH",
+                        "name": "DEUTSCHE LUFTHANSA AG"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-07T20:15:00.000+02:00",
+                            "latestPublished": "2025-10-07T20:15:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-07T20:45:00.000+02:00",
+                            "latestPublished": "2025-10-07T20:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-07T20:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1011,
+            "flightScheduleDate": "2025-10-08",
+            "id": "20251008+WF+1011",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2806,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-08T15:00:00.000+02:00",
+                            "latestPublished": "2025-10-08T15:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-08T15:30:00.000+02:00",
+                            "latestPublished": "2025-10-08T15:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-08T15:30:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1017,
+            "flightScheduleDate": "2025-10-08",
+            "id": "20251008+WF+1017",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2808,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-08T20:15:00.000+02:00",
+                            "latestPublished": "2025-10-08T20:15:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-08T20:45:00.000+02:00",
+                            "latestPublished": "2025-10-08T20:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-08T20:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1011,
+            "flightScheduleDate": "2025-10-09",
+            "id": "20251009+WF+1011",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5549,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2806,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9124,
+                    "airline": {
+                        "code": "LH",
+                        "name": "DEUTSCHE LUFTHANSA AG"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-09T15:00:00.000+02:00",
+                            "latestPublished": "2025-10-09T15:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-09T15:30:00.000+02:00",
+                            "latestPublished": "2025-10-09T15:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-09T15:30:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1017,
+            "flightScheduleDate": "2025-10-09",
+            "id": "20251009+WF+1017",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2891,
+                    "airline": {
+                        "code": "AY",
+                        "name": "FINNAIR OYJ"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2808,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-09T20:15:00.000+02:00",
+                            "latestPublished": "2025-10-09T20:15:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-09T20:45:00.000+02:00",
+                            "latestPublished": "2025-10-09T20:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-09T20:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1011,
+            "flightScheduleDate": "2025-10-10",
+            "id": "20251010+WF+1011",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5549,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2806,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9124,
+                    "airline": {
+                        "code": "LH",
+                        "name": "DEUTSCHE LUFTHANSA AG"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-10T15:00:00.000+02:00",
+                            "latestPublished": "2025-10-10T15:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-10T15:30:00.000+02:00",
+                            "latestPublished": "2025-10-10T15:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-10T15:30:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1017,
+            "flightScheduleDate": "2025-10-10",
+            "id": "20251010+WF+1017",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2808,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-10T20:15:00.000+02:00",
+                            "latestPublished": "2025-10-10T20:15:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-10T20:45:00.000+02:00",
+                            "latestPublished": "2025-10-10T20:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-10T20:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1011,
+            "flightScheduleDate": "2025-10-11",
+            "id": "20251011+WF+1011",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5549,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2806,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9124,
+                    "airline": {
+                        "code": "LH",
+                        "name": "DEUTSCHE LUFTHANSA AG"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-11T15:00:00.000+02:00",
+                            "latestPublished": "2025-10-11T15:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-11T15:30:00.000+02:00",
+                            "latestPublished": "2025-10-11T15:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-11T15:30:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1013,
+            "flightScheduleDate": "2025-10-11",
+            "id": "20251011+WF+1013",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2808,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-11T17:40:00.000+02:00",
+                            "latestPublished": "2025-10-11T17:40:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-11T18:10:00.000+02:00",
+                            "latestPublished": "2025-10-11T18:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-11T18:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1011,
+            "flightScheduleDate": "2025-10-12",
+            "id": "20251012+WF+1011",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5549,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2806,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9124,
+                    "airline": {
+                        "code": "LH",
+                        "name": "DEUTSCHE LUFTHANSA AG"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-12T15:00:00.000+02:00",
+                            "latestPublished": "2025-10-12T15:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-12T15:30:00.000+02:00",
+                            "latestPublished": "2025-10-12T15:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-12T15:30:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1017,
+            "flightScheduleDate": "2025-10-12",
+            "id": "20251012+WF+1017",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2808,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-12T20:15:00.000+02:00",
+                            "latestPublished": "2025-10-12T20:15:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-12T20:45:00.000+02:00",
+                            "latestPublished": "2025-10-12T20:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-12T20:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1011,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+WF+1011",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5549,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2806,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9124,
+                    "airline": {
+                        "code": "LH",
+                        "name": "DEUTSCHE LUFTHANSA AG"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T15:00:00.000+02:00",
+                            "latestPublished": "2025-10-13T15:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T15:30:00.000+02:00",
+                            "latestPublished": "2025-10-13T15:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T15:30:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1017,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+WF+1017",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2808,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T20:15:00.000+02:00",
+                            "latestPublished": "2025-10-13T20:15:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T20:45:00.000+02:00",
+                            "latestPublished": "2025-10-13T20:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T20:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1011,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+WF+1011",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2806,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9124,
+                    "airline": {
+                        "code": "LH",
+                        "name": "DEUTSCHE LUFTHANSA AG"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T15:00:00.000+02:00",
+                            "latestPublished": "2025-10-14T15:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T15:30:00.000+02:00",
+                            "latestPublished": "2025-10-14T15:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T15:30:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1017,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+WF+1017",
+            "route": [
+                "BGO",
+                "HAU"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2891,
+                    "airline": {
+                        "code": "AY",
+                        "name": "FINNAIR OYJ"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2808,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BGO",
+                            "name": "FLESLAND AIRPORT",
+                            "nameLangTranl": "Flesland",
+                            "city": {
+                                "code": "BGO",
+                                "name": "BERGEN",
+                                "nameLangTranl": "Bergen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2936,
+                                "longitude": 5.2194
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T20:15:00.000+02:00",
+                            "latestPublished": "2025-10-14T20:15:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HAU",
+                            "name": "KARMOY AIRPORT",
+                            "nameLangTranl": "Haugesund Karmoy Airport",
+                            "city": {
+                                "code": "HAU",
+                                "name": "HAUGESUND",
+                                "nameLangTranl": "Haugesund",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 59.4056,
+                                "longitude": 5.2792
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T20:45:00.000+02:00",
+                            "latestPublished": "2025-10-14T20:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T20:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH1",
+                        "typeName": "DE HAVILLAND DHC-8-100 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M039",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 32,
+        "pageNumber": 2,
+        "fullCount": 232,
+        "pageCount": 32,
+        "totalPages": 3
+    }
+}

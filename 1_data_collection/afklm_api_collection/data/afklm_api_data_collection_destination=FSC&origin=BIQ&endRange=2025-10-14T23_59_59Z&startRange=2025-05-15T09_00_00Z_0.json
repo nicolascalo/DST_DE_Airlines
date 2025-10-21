@@ -1,0 +1,1563 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 7672,
+            "flightScheduleDate": "2025-07-05",
+            "id": "20250705+AF+7672",
+            "haul": "MEDIUM",
+            "route": [
+                "BIQ",
+                "FSC"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BIQ",
+                            "name": "PAYS BASQUE",
+                            "nameLangTranl": "Biarritz Pays Basque Airport",
+                            "city": {
+                                "code": "BIQ",
+                                "name": "BIARRITZ",
+                                "nameLangTranl": "Biarritz",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 43.4697,
+                                "longitude": -1.5228
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [
+                                    "1"
+                                ],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-05T09:25:00.000+02:00",
+                            "scheduled": "2025-07-05T09:15:00.000+02:00",
+                            "latestPublished": "2025-07-05T09:25:00.000+02:00",
+                            "actualTakeOffTime": "2025-07-05T09:30:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-07-05T08:45:00.000+02:00",
+                            "gateCloseTime": "2025-07-05T09:00:00.000+02:00",
+                            "actualBoardingOpen": "2025-07-05T09:10:00.000+02:00",
+                            "firstPaxBoarding": "2025-07-05T08:43:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-05T10:56:00.000+02:00",
+                            "scheduled": "2025-07-05T11:00:00.000+02:00",
+                            "latestPublished": "2025-07-05T10:56:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-05T10:56:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-07-05T10:54:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H45M",
+                    "departureDateTimeDifference": "PT10M",
+                    "arrivalDateTimeDifference": "PT-4M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBXB",
+                        "typeCode": "E70",
+                        "typeName": "EMBRAER 170",
+                        "subFleetCodeId": "NC",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y076",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "15"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0010"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "15",
+                                "delayDuration": "0010"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7672,
+            "flightScheduleDate": "2025-07-12",
+            "id": "20250712+AF+7672",
+            "haul": "MEDIUM",
+            "route": [
+                "BIQ",
+                "FSC"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BIQ",
+                            "name": "PAYS BASQUE",
+                            "nameLangTranl": "Biarritz Pays Basque Airport",
+                            "city": {
+                                "code": "BIQ",
+                                "name": "BIARRITZ",
+                                "nameLangTranl": "Biarritz",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 43.4697,
+                                "longitude": -1.5228
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [
+                                    "1"
+                                ],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-12T09:21:00.000+02:00",
+                            "scheduled": "2025-07-12T09:15:00.000+02:00",
+                            "latestPublished": "2025-07-12T09:21:00.000+02:00",
+                            "actualTakeOffTime": "2025-07-12T09:28:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-07-12T08:45:00.000+02:00",
+                            "gateCloseTime": "2025-07-12T09:00:00.000+02:00",
+                            "actualBoardingOpen": "2025-07-12T08:43:00.000+02:00",
+                            "firstPaxBoarding": "2025-07-12T08:46:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-12T11:01:00.000+02:00",
+                            "scheduled": "2025-07-12T11:00:00.000+02:00",
+                            "latestPublished": "2025-07-12T11:01:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-12T11:01:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-07-12T10:57:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H45M",
+                    "departureDateTimeDifference": "PT6M",
+                    "arrivalDateTimeDifference": "PT1M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBXG",
+                        "typeCode": "E70",
+                        "typeName": "EMBRAER 170",
+                        "subFleetCodeId": "NC",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y076",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "82"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0006"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR04"
+                        ],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "82",
+                                "delayDuration": "0006",
+                                "delayReasonCodePublic": "FSR04"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7672,
+            "flightScheduleDate": "2025-07-19",
+            "id": "20250719+AF+7672",
+            "haul": "MEDIUM",
+            "route": [
+                "BIQ",
+                "FSC"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BIQ",
+                            "name": "PAYS BASQUE",
+                            "nameLangTranl": "Biarritz Pays Basque Airport",
+                            "city": {
+                                "code": "BIQ",
+                                "name": "BIARRITZ",
+                                "nameLangTranl": "Biarritz",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 43.4697,
+                                "longitude": -1.5228
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [
+                                    "1"
+                                ],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-19T09:10:00.000+02:00",
+                            "scheduled": "2025-07-19T09:15:00.000+02:00",
+                            "latestPublished": "2025-07-19T09:10:00.000+02:00",
+                            "actualTakeOffTime": "2025-07-19T09:25:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-07-19T08:45:00.000+02:00",
+                            "gateCloseTime": "2025-07-19T09:00:00.000+02:00",
+                            "actualBoardingOpen": "2025-07-19T08:44:00.000+02:00",
+                            "firstPaxBoarding": "2025-07-19T08:44:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-19T10:55:00.000+02:00",
+                            "scheduled": "2025-07-19T11:00:00.000+02:00",
+                            "latestPublished": "2025-07-19T10:55:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-19T10:55:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-07-19T10:52:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H45M",
+                    "departureDateTimeDifference": "PT-5M",
+                    "arrivalDateTimeDifference": "PT-5M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBLE",
+                        "typeCode": "E90",
+                        "typeName": "EMBRAER 190",
+                        "subFleetCodeId": "NA",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y100",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y100",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7672,
+            "flightScheduleDate": "2025-07-26",
+            "id": "20250726+AF+7672",
+            "haul": "MEDIUM",
+            "route": [
+                "BIQ",
+                "FSC"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BIQ",
+                            "name": "PAYS BASQUE",
+                            "nameLangTranl": "Biarritz Pays Basque Airport",
+                            "city": {
+                                "code": "BIQ",
+                                "name": "BIARRITZ",
+                                "nameLangTranl": "Biarritz",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 43.4697,
+                                "longitude": -1.5228
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [
+                                    "1"
+                                ],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": [
+                                    "1"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-26T09:31:00.000+02:00",
+                            "scheduled": "2025-07-26T09:15:00.000+02:00",
+                            "latestPublished": "2025-07-26T09:31:00.000+02:00",
+                            "actualTakeOffTime": "2025-07-26T09:47:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-07-26T08:45:00.000+02:00",
+                            "gateCloseTime": "2025-07-26T09:00:00.000+02:00",
+                            "actualBoardingOpen": "2025-07-26T08:36:00.000+02:00",
+                            "firstPaxBoarding": "2025-07-26T08:49:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-26T11:14:00.000+02:00",
+                            "scheduled": "2025-07-26T11:00:00.000+02:00",
+                            "latestPublished": "2025-07-26T11:14:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-26T11:14:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-07-26T11:11:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H45M",
+                    "departureDateTimeDifference": "PT16M",
+                    "arrivalDateTimeDifference": "PT14M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBXD",
+                        "typeCode": "E70",
+                        "typeName": "EMBRAER 170",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y076",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "81"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0016"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR04"
+                        ],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT16M",
+                        "delayDurationArrival": "PT14M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "81",
+                                "delayDuration": "0016",
+                                "delayReasonCodePublic": "FSR04"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7672,
+            "flightScheduleDate": "2025-08-02",
+            "id": "20250802+AF+7672",
+            "haul": "MEDIUM",
+            "route": [
+                "BIQ",
+                "FSC"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BIQ",
+                            "name": "PAYS BASQUE",
+                            "nameLangTranl": "Biarritz Pays Basque Airport",
+                            "city": {
+                                "code": "BIQ",
+                                "name": "BIARRITZ",
+                                "nameLangTranl": "Biarritz",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 43.4697,
+                                "longitude": -1.5228
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [
+                                    "1"
+                                ],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": [
+                                    "1"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-02T09:24:00.000+02:00",
+                            "scheduled": "2025-08-02T09:15:00.000+02:00",
+                            "modified": "2025-08-02T09:25:00.000+02:00",
+                            "latestPublished": "2025-08-02T09:24:00.000+02:00",
+                            "actualTakeOffTime": "2025-08-02T09:30:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-08-02T08:45:00.000+02:00",
+                            "gateCloseTime": "2025-08-02T09:00:00.000+02:00",
+                            "firstPaxBoarding": "2025-08-02T08:54:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-02T10:51:00.000+02:00",
+                            "scheduled": "2025-08-02T11:00:00.000+02:00",
+                            "modified": "2025-08-02T11:10:00.000+02:00",
+                            "latestPublished": "2025-08-02T10:51:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-02T10:51:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-08-02T10:48:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H45M",
+                    "departureDateTimeDifference": "PT9M",
+                    "arrivalDateTimeDifference": "PT-9M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBXD",
+                        "typeCode": "E70",
+                        "typeName": "EMBRAER 170",
+                        "subFleetCodeId": "NC",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y076",
+                        "operationalConfiguration": "Y076",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "64"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0009"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR02"
+                        ],
+                        "delayReasonPublicLangTransl": [
+                            "This flight was delayed due to operational issues."
+                        ],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "64",
+                                "delayDuration": "0009",
+                                "delayReasonCodePublic": "FSR02",
+                                "delayReasonPublicShort": "Operational issues",
+                                "delayReasonPublicLong": "This flight was delayed due to operational issues."
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7672,
+            "flightScheduleDate": "2025-08-09",
+            "id": "20250809+AF+7672",
+            "haul": "MEDIUM",
+            "route": [
+                "BIQ",
+                "FSC"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BIQ",
+                            "name": "PAYS BASQUE",
+                            "nameLangTranl": "Biarritz Pays Basque Airport",
+                            "city": {
+                                "code": "BIQ",
+                                "name": "BIARRITZ",
+                                "nameLangTranl": "Biarritz",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 43.4697,
+                                "longitude": -1.5228
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [
+                                    "1"
+                                ],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": [
+                                    "1"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-09T09:23:00.000+02:00",
+                            "scheduled": "2025-08-09T09:15:00.000+02:00",
+                            "latestPublished": "2025-08-09T09:23:00.000+02:00",
+                            "actualTakeOffTime": "2025-08-09T09:33:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-08-09T08:45:00.000+02:00",
+                            "gateCloseTime": "2025-08-09T09:00:00.000+02:00",
+                            "actualBoardingOpen": "2025-08-09T09:00:00.000+02:00",
+                            "firstPaxBoarding": "2025-08-09T08:45:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-09T10:56:00.000+02:00",
+                            "scheduled": "2025-08-09T11:00:00.000+02:00",
+                            "latestPublished": "2025-08-09T10:56:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-09T10:56:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-08-09T10:53:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H45M",
+                    "departureDateTimeDifference": "PT8M",
+                    "arrivalDateTimeDifference": "PT-4M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBXG",
+                        "typeCode": "E70",
+                        "typeName": "EMBRAER 170",
+                        "subFleetCodeId": "NC",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y076",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "81"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0008"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR04"
+                        ],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "81",
+                                "delayDuration": "0008",
+                                "delayReasonCodePublic": "FSR04"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7672,
+            "flightScheduleDate": "2025-08-16",
+            "id": "20250816+AF+7672",
+            "haul": "MEDIUM",
+            "route": [
+                "BIQ",
+                "FSC"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BIQ",
+                            "name": "PAYS BASQUE",
+                            "nameLangTranl": "Biarritz Pays Basque Airport",
+                            "city": {
+                                "code": "BIQ",
+                                "name": "BIARRITZ",
+                                "nameLangTranl": "Biarritz",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 43.4697,
+                                "longitude": -1.5228
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [
+                                    "1"
+                                ],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": [
+                                    "1"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-16T09:19:00.000+02:00",
+                            "scheduled": "2025-08-16T09:15:00.000+02:00",
+                            "latestPublished": "2025-08-16T09:19:00.000+02:00",
+                            "actualTakeOffTime": "2025-08-16T09:24:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-08-16T08:45:00.000+02:00",
+                            "gateCloseTime": "2025-08-16T09:00:00.000+02:00",
+                            "actualBoardingOpen": "2025-08-16T09:05:00.000+02:00",
+                            "firstPaxBoarding": "2025-08-16T08:48:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-16T10:54:00.000+02:00",
+                            "scheduled": "2025-08-16T11:00:00.000+02:00",
+                            "latestPublished": "2025-08-16T10:54:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-16T10:54:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-08-16T10:49:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H45M",
+                    "departureDateTimeDifference": "PT4M",
+                    "arrivalDateTimeDifference": "PT-6M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBXF",
+                        "typeCode": "E70",
+                        "typeName": "EMBRAER 170",
+                        "subFleetCodeId": "NC",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y076",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "83"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0004"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR04"
+                        ],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "83",
+                                "delayDuration": "0004",
+                                "delayReasonCodePublic": "FSR04"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7672,
+            "flightScheduleDate": "2025-08-23",
+            "id": "20250823+AF+7672",
+            "haul": "MEDIUM",
+            "route": [
+                "BIQ",
+                "FSC"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250822+AF+1590",
+                    "flightScheduleDate": "2025-08-22",
+                    "airlineCode": "AF",
+                    "flightNumber": "1590"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BIQ",
+                            "name": "PAYS BASQUE",
+                            "nameLangTranl": "Biarritz Pays Basque Airport",
+                            "city": {
+                                "code": "BIQ",
+                                "name": "BIARRITZ",
+                                "nameLangTranl": "Biarritz",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 43.4697,
+                                "longitude": -1.5228
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [
+                                    "1"
+                                ],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": [
+                                    "1"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-23T09:27:00.000+02:00",
+                            "scheduled": "2025-08-23T09:15:00.000+02:00",
+                            "latestPublished": "2025-08-23T09:27:00.000+02:00",
+                            "actualTakeOffTime": "2025-08-23T09:31:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-08-23T08:45:00.000+02:00",
+                            "gateCloseTime": "2025-08-23T09:00:00.000+02:00",
+                            "actualBoardingOpen": "2025-08-23T08:41:00.000+02:00",
+                            "firstPaxBoarding": "2025-08-23T08:44:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-23T11:02:00.000+02:00",
+                            "scheduled": "2025-08-23T11:00:00.000+02:00",
+                            "latestPublished": "2025-08-23T11:02:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-23T11:02:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-08-23T10:59:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H45M",
+                    "departureDateTimeDifference": "PT12M",
+                    "arrivalDateTimeDifference": "PT2M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBXD",
+                        "typeCode": "E70",
+                        "typeName": "EMBRAER 170",
+                        "subFleetCodeId": "NC",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y076",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "81"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0012"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR04"
+                        ],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT12M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "81",
+                                "delayDuration": "0012",
+                                "delayReasonCodePublic": "FSR04"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7672,
+            "flightScheduleDate": "2025-08-30",
+            "id": "20250830+AF+7672",
+            "haul": "MEDIUM",
+            "route": [
+                "BIQ",
+                "FSC"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250829+AF+1590",
+                    "flightScheduleDate": "2025-08-29",
+                    "airlineCode": "AF",
+                    "flightNumber": "1590"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BIQ",
+                            "name": "PAYS BASQUE",
+                            "nameLangTranl": "Biarritz Pays Basque Airport",
+                            "city": {
+                                "code": "BIQ",
+                                "name": "BIARRITZ",
+                                "nameLangTranl": "Biarritz",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 43.4697,
+                                "longitude": -1.5228
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [
+                                    "1"
+                                ],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": [
+                                    "1"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-30T10:09:00.000+02:00",
+                            "scheduled": "2025-08-30T09:15:00.000+02:00",
+                            "modified": "2025-08-30T10:05:00.000+02:00",
+                            "latestPublished": "2025-08-30T10:09:00.000+02:00",
+                            "actualTakeOffTime": "2025-08-30T10:19:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-08-30T09:35:00.000+02:00",
+                            "gateCloseTime": "2025-08-30T09:50:00.000+02:00",
+                            "actualBoardingOpen": "2025-08-30T09:28:00.000+02:00",
+                            "firstPaxBoarding": "2025-08-30T09:41:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-30T11:49:00.000+02:00",
+                            "scheduled": "2025-08-30T11:00:00.000+02:00",
+                            "modified": "2025-08-30T11:50:00.000+02:00",
+                            "latestPublished": "2025-08-30T11:49:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-30T11:49:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-08-30T11:36:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H45M",
+                    "departureDateTimeDifference": "PT54M",
+                    "arrivalDateTimeDifference": "PT49M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBXC",
+                        "typeCode": "E70",
+                        "typeName": "EMBRAER 170",
+                        "subFleetCodeId": "NC",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y076",
+                        "operationalConfiguration": "Y076",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "81"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0054"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR04"
+                        ],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT54M",
+                        "delayDurationArrival": "PT49M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "81",
+                                "delayDuration": "0054",
+                                "delayReasonCodePublic": "FSR04"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 9,
+        "pageNumber": 0,
+        "fullCount": 9,
+        "pageCount": 9,
+        "totalPages": 1
+    }
+}

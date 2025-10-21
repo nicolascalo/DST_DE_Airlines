@@ -1,0 +1,2711 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 237,
+            "flightScheduleDate": "2025-06-01",
+            "id": "20250601+RO+0237",
+            "haul": "MEDIUM",
+            "route": [
+                "OTP",
+                "BUD"
+            ],
+            "airline": {
+                "code": "RO",
+                "name": "TAROM"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5011,
+                    "flightScheduleDate": "2025-06-01",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AZ",
+                        "name": "ITA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5891,
+                    "flightScheduleDate": "2025-06-01",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "BT",
+                        "name": "AIR BALTIC CORPORATION AS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OTP",
+                            "name": "HENRI COANDA AIRPORT",
+                            "nameLangTranl": "Henri Coanda International Airport",
+                            "city": {
+                                "code": "BUH",
+                                "name": "BUCHAREST",
+                                "nameLangTranl": "Bucharest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RO",
+                                    "name": "ROMANIA",
+                                    "nameLangTranl": "Romania",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.5667,
+                                "longitude": 26.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-01T17:00:00.000+03:00",
+                            "latestPublished": "2025-06-01T17:00:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BUD",
+                            "name": "LISZT FERENC INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Liszt Ferenc International",
+                            "city": {
+                                "code": "BUD",
+                                "name": "BUDAPEST",
+                                "nameLangTranl": "Budapest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "HU",
+                                    "name": "HUNGARY",
+                                    "nameLangTranl": "Hungary",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4333,
+                                "longitude": 19.2333
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2A",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2A",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-01T17:50:00.000+02:00",
+                            "latestPublished": "2025-06-01T17:50:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-06-01T17:50:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H50M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "RO",
+                        "ownerAirlineName": "TAROM",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J008Y064"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 231,
+            "flightScheduleDate": "2025-06-05",
+            "id": "20250605+RO+0231",
+            "haul": "MEDIUM",
+            "route": [
+                "OTP",
+                "BUD"
+            ],
+            "airline": {
+                "code": "RO",
+                "name": "TAROM"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5009,
+                    "flightScheduleDate": "2025-06-05",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AZ",
+                        "name": "ITA AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OTP",
+                            "name": "HENRI COANDA AIRPORT",
+                            "nameLangTranl": "Henri Coanda International Airport",
+                            "city": {
+                                "code": "BUH",
+                                "name": "BUCHAREST",
+                                "nameLangTranl": "Bucharest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RO",
+                                    "name": "ROMANIA",
+                                    "nameLangTranl": "Romania",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.5667,
+                                "longitude": 26.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-05T07:55:00.000+03:00",
+                            "latestPublished": "2025-06-05T07:55:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BUD",
+                            "name": "LISZT FERENC INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Liszt Ferenc International",
+                            "city": {
+                                "code": "BUD",
+                                "name": "BUDAPEST",
+                                "nameLangTranl": "Budapest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "HU",
+                                    "name": "HUNGARY",
+                                    "nameLangTranl": "Hungary",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4333,
+                                "longitude": 19.2333
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2A",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2A",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-05T08:45:00.000+02:00",
+                            "latestPublished": "2025-06-05T08:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-06-05T08:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H50M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "RO",
+                        "ownerAirlineName": "TAROM",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J008Y060"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 231,
+            "flightScheduleDate": "2025-06-06",
+            "id": "20250606+RO+0231",
+            "haul": "MEDIUM",
+            "route": [
+                "OTP",
+                "BUD"
+            ],
+            "airline": {
+                "code": "RO",
+                "name": "TAROM"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5009,
+                    "flightScheduleDate": "2025-06-06",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AZ",
+                        "name": "ITA AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OTP",
+                            "name": "HENRI COANDA AIRPORT",
+                            "nameLangTranl": "Henri Coanda International Airport",
+                            "city": {
+                                "code": "BUH",
+                                "name": "BUCHAREST",
+                                "nameLangTranl": "Bucharest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RO",
+                                    "name": "ROMANIA",
+                                    "nameLangTranl": "Romania",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.5667,
+                                "longitude": 26.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-06T07:55:00.000+03:00",
+                            "latestPublished": "2025-06-06T07:55:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BUD",
+                            "name": "LISZT FERENC INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Liszt Ferenc International",
+                            "city": {
+                                "code": "BUD",
+                                "name": "BUDAPEST",
+                                "nameLangTranl": "Budapest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "HU",
+                                    "name": "HUNGARY",
+                                    "nameLangTranl": "Hungary",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4333,
+                                "longitude": 19.2333
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2A",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2A",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-06T08:45:00.000+02:00",
+                            "latestPublished": "2025-06-06T08:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-06-06T08:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H50M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "RO",
+                        "ownerAirlineName": "TAROM",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J016Y056"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 237,
+            "flightScheduleDate": "2025-07-01",
+            "id": "20250701+RO+0237",
+            "haul": "MEDIUM",
+            "route": [
+                "OTP",
+                "BUD"
+            ],
+            "airline": {
+                "code": "RO",
+                "name": "TAROM"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5011,
+                    "flightScheduleDate": "2025-07-01",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AZ",
+                        "name": "ITA AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "CANCELLED",
+            "flightStatusPublicLangTransl": "Cancelled",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OTP",
+                            "name": "HENRI COANDA AIRPORT",
+                            "nameLangTranl": "Henri Coanda International Airport",
+                            "city": {
+                                "code": "BUH",
+                                "name": "BUCHAREST",
+                                "nameLangTranl": "Bucharest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RO",
+                                    "name": "ROMANIA",
+                                    "nameLangTranl": "Romania",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.5667,
+                                "longitude": 26.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-01T17:00:00.000+03:00",
+                            "latestPublished": "2025-07-01T17:00:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BUD",
+                            "name": "LISZT FERENC INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Liszt Ferenc International",
+                            "city": {
+                                "code": "BUD",
+                                "name": "BUDAPEST",
+                                "nameLangTranl": "Budapest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "HU",
+                                    "name": "HUNGARY",
+                                    "nameLangTranl": "Hungary",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4333,
+                                "longitude": 19.2333
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2A",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2A",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-01T17:50:00.000+02:00",
+                            "latestPublished": "2025-07-01T17:50:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-01T17:50:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H50M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "RO",
+                        "ownerAirlineName": "TAROM",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J008Y064"
+                    },
+                    "irregularity": {
+                        "cancelled": "Y",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 237,
+            "flightScheduleDate": "2025-07-03",
+            "id": "20250703+RO+0237",
+            "haul": "MEDIUM",
+            "route": [
+                "OTP",
+                "BUD"
+            ],
+            "airline": {
+                "code": "RO",
+                "name": "TAROM"
+            },
+            "flightStatusPublic": "CANCELLED",
+            "flightStatusPublicLangTransl": "Cancelled",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OTP",
+                            "name": "HENRI COANDA AIRPORT",
+                            "nameLangTranl": "Henri Coanda International Airport",
+                            "city": {
+                                "code": "BUH",
+                                "name": "BUCHAREST",
+                                "nameLangTranl": "Bucharest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RO",
+                                    "name": "ROMANIA",
+                                    "nameLangTranl": "Romania",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.5667,
+                                "longitude": 26.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-03T17:00:00.000+03:00",
+                            "latestPublished": "2025-07-03T17:00:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BUD",
+                            "name": "LISZT FERENC INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Liszt Ferenc International",
+                            "city": {
+                                "code": "BUD",
+                                "name": "BUDAPEST",
+                                "nameLangTranl": "Budapest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "HU",
+                                    "name": "HUNGARY",
+                                    "nameLangTranl": "Hungary",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4333,
+                                "longitude": 19.2333
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2A",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2A",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-03T17:50:00.000+02:00",
+                            "latestPublished": "2025-07-03T17:50:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-03T17:50:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H50M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "RO",
+                        "ownerAirlineName": "TAROM",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J008Y064"
+                    },
+                    "irregularity": {
+                        "cancelled": "Y",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 231,
+            "flightScheduleDate": "2025-07-09",
+            "id": "20250709+RO+0231",
+            "haul": "MEDIUM",
+            "route": [
+                "OTP",
+                "BUD"
+            ],
+            "airline": {
+                "code": "RO",
+                "name": "TAROM"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5009,
+                    "flightScheduleDate": "2025-07-09",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AZ",
+                        "name": "ITA AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "CANCELLED",
+            "flightStatusPublicLangTransl": "Cancelled",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OTP",
+                            "name": "HENRI COANDA AIRPORT",
+                            "nameLangTranl": "Henri Coanda International Airport",
+                            "city": {
+                                "code": "BUH",
+                                "name": "BUCHAREST",
+                                "nameLangTranl": "Bucharest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RO",
+                                    "name": "ROMANIA",
+                                    "nameLangTranl": "Romania",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.5667,
+                                "longitude": 26.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-09T07:55:00.000+03:00",
+                            "latestPublished": "2025-07-09T07:55:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BUD",
+                            "name": "LISZT FERENC INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Liszt Ferenc International",
+                            "city": {
+                                "code": "BUD",
+                                "name": "BUDAPEST",
+                                "nameLangTranl": "Budapest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "HU",
+                                    "name": "HUNGARY",
+                                    "nameLangTranl": "Hungary",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4333,
+                                "longitude": 19.2333
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2A",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2A",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-09T08:45:00.000+02:00",
+                            "latestPublished": "2025-07-09T08:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-09T08:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H50M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "RO",
+                        "ownerAirlineName": "TAROM",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J008Y064"
+                    },
+                    "irregularity": {
+                        "cancelled": "Y",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 237,
+            "flightScheduleDate": "2025-07-16",
+            "id": "20250716+RO+0237",
+            "haul": "MEDIUM",
+            "route": [
+                "OTP",
+                "BUD"
+            ],
+            "airline": {
+                "code": "RO",
+                "name": "TAROM"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5011,
+                    "flightScheduleDate": "2025-07-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AZ",
+                        "name": "ITA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5891,
+                    "flightScheduleDate": "2025-07-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "BT",
+                        "name": "AIR BALTIC CORPORATION AS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "CANCELLED",
+            "flightStatusPublicLangTransl": "Cancelled",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OTP",
+                            "name": "HENRI COANDA AIRPORT",
+                            "nameLangTranl": "Henri Coanda International Airport",
+                            "city": {
+                                "code": "BUH",
+                                "name": "BUCHAREST",
+                                "nameLangTranl": "Bucharest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RO",
+                                    "name": "ROMANIA",
+                                    "nameLangTranl": "Romania",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.5667,
+                                "longitude": 26.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-16T17:00:00.000+03:00",
+                            "latestPublished": "2025-07-16T17:00:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BUD",
+                            "name": "LISZT FERENC INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Liszt Ferenc International",
+                            "city": {
+                                "code": "BUD",
+                                "name": "BUDAPEST",
+                                "nameLangTranl": "Budapest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "HU",
+                                    "name": "HUNGARY",
+                                    "nameLangTranl": "Hungary",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4333,
+                                "longitude": 19.2333
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2A",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2A",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-16T17:50:00.000+02:00",
+                            "latestPublished": "2025-07-16T17:50:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-16T17:50:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H50M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "RO",
+                        "ownerAirlineName": "TAROM",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J008Y064"
+                    },
+                    "irregularity": {
+                        "cancelled": "Y",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 237,
+            "flightScheduleDate": "2025-07-21",
+            "id": "20250721+RO+0237",
+            "haul": "MEDIUM",
+            "route": [
+                "OTP",
+                "BUD"
+            ],
+            "airline": {
+                "code": "RO",
+                "name": "TAROM"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5011,
+                    "flightScheduleDate": "2025-07-21",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AZ",
+                        "name": "ITA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5891,
+                    "flightScheduleDate": "2025-07-21",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "BT",
+                        "name": "AIR BALTIC CORPORATION AS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "CANCELLED",
+            "flightStatusPublicLangTransl": "Cancelled",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OTP",
+                            "name": "HENRI COANDA AIRPORT",
+                            "nameLangTranl": "Henri Coanda International Airport",
+                            "city": {
+                                "code": "BUH",
+                                "name": "BUCHAREST",
+                                "nameLangTranl": "Bucharest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RO",
+                                    "name": "ROMANIA",
+                                    "nameLangTranl": "Romania",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.5667,
+                                "longitude": 26.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-21T17:00:00.000+03:00",
+                            "latestPublished": "2025-07-21T17:00:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BUD",
+                            "name": "LISZT FERENC INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Liszt Ferenc International",
+                            "city": {
+                                "code": "BUD",
+                                "name": "BUDAPEST",
+                                "nameLangTranl": "Budapest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "HU",
+                                    "name": "HUNGARY",
+                                    "nameLangTranl": "Hungary",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4333,
+                                "longitude": 19.2333
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2A",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2A",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-21T17:50:00.000+02:00",
+                            "latestPublished": "2025-07-21T17:50:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-21T17:50:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H50M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "RO",
+                        "ownerAirlineName": "TAROM",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J008Y064"
+                    },
+                    "irregularity": {
+                        "cancelled": "Y",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 231,
+            "flightScheduleDate": "2025-07-25",
+            "id": "20250725+RO+0231",
+            "haul": "MEDIUM",
+            "route": [
+                "OTP",
+                "BUD"
+            ],
+            "airline": {
+                "code": "RO",
+                "name": "TAROM"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5009,
+                    "flightScheduleDate": "2025-07-25",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AZ",
+                        "name": "ITA AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OTP",
+                            "name": "HENRI COANDA AIRPORT",
+                            "nameLangTranl": "Henri Coanda International Airport",
+                            "city": {
+                                "code": "BUH",
+                                "name": "BUCHAREST",
+                                "nameLangTranl": "Bucharest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RO",
+                                    "name": "ROMANIA",
+                                    "nameLangTranl": "Romania",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.5667,
+                                "longitude": 26.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-25T07:55:00.000+03:00",
+                            "latestPublished": "2025-07-25T07:55:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BUD",
+                            "name": "LISZT FERENC INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Liszt Ferenc International",
+                            "city": {
+                                "code": "BUD",
+                                "name": "BUDAPEST",
+                                "nameLangTranl": "Budapest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "HU",
+                                    "name": "HUNGARY",
+                                    "nameLangTranl": "Hungary",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4333,
+                                "longitude": 19.2333
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2A",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2A",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-25T08:45:00.000+02:00",
+                            "latestPublished": "2025-07-25T08:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-25T08:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H50M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "RO",
+                        "ownerAirlineName": "TAROM",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J008Y064"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 237,
+            "flightScheduleDate": "2025-07-25",
+            "id": "20250725+RO+0237",
+            "haul": "MEDIUM",
+            "route": [
+                "OTP",
+                "BUD"
+            ],
+            "airline": {
+                "code": "RO",
+                "name": "TAROM"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5011,
+                    "flightScheduleDate": "2025-07-25",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AZ",
+                        "name": "ITA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5891,
+                    "flightScheduleDate": "2025-07-25",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "BT",
+                        "name": "AIR BALTIC CORPORATION AS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OTP",
+                            "name": "HENRI COANDA AIRPORT",
+                            "nameLangTranl": "Henri Coanda International Airport",
+                            "city": {
+                                "code": "BUH",
+                                "name": "BUCHAREST",
+                                "nameLangTranl": "Bucharest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RO",
+                                    "name": "ROMANIA",
+                                    "nameLangTranl": "Romania",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.5667,
+                                "longitude": 26.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-25T17:00:00.000+03:00",
+                            "latestPublished": "2025-07-25T17:00:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BUD",
+                            "name": "LISZT FERENC INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Liszt Ferenc International",
+                            "city": {
+                                "code": "BUD",
+                                "name": "BUDAPEST",
+                                "nameLangTranl": "Budapest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "HU",
+                                    "name": "HUNGARY",
+                                    "nameLangTranl": "Hungary",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4333,
+                                "longitude": 19.2333
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2A",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2A",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-25T17:50:00.000+02:00",
+                            "latestPublished": "2025-07-25T17:50:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-25T17:50:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H50M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "RO",
+                        "ownerAirlineName": "TAROM",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J008Y064"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 237,
+            "flightScheduleDate": "2025-08-04",
+            "id": "20250804+RO+0237",
+            "haul": "MEDIUM",
+            "route": [
+                "OTP",
+                "BUD"
+            ],
+            "airline": {
+                "code": "RO",
+                "name": "TAROM"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5011,
+                    "flightScheduleDate": "2025-08-04",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AZ",
+                        "name": "ITA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5891,
+                    "flightScheduleDate": "2025-08-04",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "BT",
+                        "name": "AIR BALTIC CORPORATION AS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OTP",
+                            "name": "HENRI COANDA AIRPORT",
+                            "nameLangTranl": "Henri Coanda International Airport",
+                            "city": {
+                                "code": "BUH",
+                                "name": "BUCHAREST",
+                                "nameLangTranl": "Bucharest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RO",
+                                    "name": "ROMANIA",
+                                    "nameLangTranl": "Romania",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.5667,
+                                "longitude": 26.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-04T17:15:00.000+03:00",
+                            "latestPublished": "2025-08-04T17:15:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BUD",
+                            "name": "LISZT FERENC INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Liszt Ferenc International",
+                            "city": {
+                                "code": "BUD",
+                                "name": "BUDAPEST",
+                                "nameLangTranl": "Budapest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "HU",
+                                    "name": "HUNGARY",
+                                    "nameLangTranl": "Hungary",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4333,
+                                "longitude": 19.2333
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2A",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2A",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-04T17:40:00.000+02:00",
+                            "latestPublished": "2025-08-04T17:40:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-04T17:40:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H25M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "typeCode": "73W",
+                        "typeName": "BOEING 737-700 (WINGLETS) PASSENGER/BBJ1",
+                        "ownerAirlineCode": "RO",
+                        "ownerAirlineName": "TAROM",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J014Y102"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 237,
+            "flightScheduleDate": "2025-08-13",
+            "id": "20250813+RO+0237",
+            "haul": "MEDIUM",
+            "route": [
+                "OTP",
+                "BUD"
+            ],
+            "airline": {
+                "code": "RO",
+                "name": "TAROM"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5011,
+                    "flightScheduleDate": "2025-08-13",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AZ",
+                        "name": "ITA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5891,
+                    "flightScheduleDate": "2025-08-13",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "BT",
+                        "name": "AIR BALTIC CORPORATION AS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "CANCELLED",
+            "flightStatusPublicLangTransl": "Cancelled",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OTP",
+                            "name": "HENRI COANDA AIRPORT",
+                            "nameLangTranl": "Henri Coanda International Airport",
+                            "city": {
+                                "code": "BUH",
+                                "name": "BUCHAREST",
+                                "nameLangTranl": "Bucharest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RO",
+                                    "name": "ROMANIA",
+                                    "nameLangTranl": "Romania",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.5667,
+                                "longitude": 26.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-13T17:00:00.000+03:00",
+                            "latestPublished": "2025-08-13T17:00:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BUD",
+                            "name": "LISZT FERENC INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Liszt Ferenc International",
+                            "city": {
+                                "code": "BUD",
+                                "name": "BUDAPEST",
+                                "nameLangTranl": "Budapest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "HU",
+                                    "name": "HUNGARY",
+                                    "nameLangTranl": "Hungary",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4333,
+                                "longitude": 19.2333
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2A",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2A",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-13T17:50:00.000+02:00",
+                            "latestPublished": "2025-08-13T17:50:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-13T17:50:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H50M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "RO",
+                        "ownerAirlineName": "TAROM",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J008Y064"
+                    },
+                    "irregularity": {
+                        "cancelled": "Y",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 231,
+            "flightScheduleDate": "2025-08-20",
+            "id": "20250820+RO+0231",
+            "haul": "MEDIUM",
+            "route": [
+                "OTP",
+                "BUD"
+            ],
+            "airline": {
+                "code": "RO",
+                "name": "TAROM"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5009,
+                    "flightScheduleDate": "2025-08-20",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AZ",
+                        "name": "ITA AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "CANCELLED",
+            "flightStatusPublicLangTransl": "Cancelled",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OTP",
+                            "name": "HENRI COANDA AIRPORT",
+                            "nameLangTranl": "Henri Coanda International Airport",
+                            "city": {
+                                "code": "BUH",
+                                "name": "BUCHAREST",
+                                "nameLangTranl": "Bucharest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RO",
+                                    "name": "ROMANIA",
+                                    "nameLangTranl": "Romania",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.5667,
+                                "longitude": 26.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-20T07:55:00.000+03:00",
+                            "latestPublished": "2025-08-20T07:55:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BUD",
+                            "name": "LISZT FERENC INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Liszt Ferenc International",
+                            "city": {
+                                "code": "BUD",
+                                "name": "BUDAPEST",
+                                "nameLangTranl": "Budapest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "HU",
+                                    "name": "HUNGARY",
+                                    "nameLangTranl": "Hungary",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4333,
+                                "longitude": 19.2333
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2A",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2A",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-20T08:45:00.000+02:00",
+                            "latestPublished": "2025-08-20T08:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-20T08:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H50M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "RO",
+                        "ownerAirlineName": "TAROM",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J008Y064"
+                    },
+                    "irregularity": {
+                        "cancelled": "Y",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 237,
+            "flightScheduleDate": "2025-08-21",
+            "id": "20250821+RO+0237",
+            "haul": "MEDIUM",
+            "route": [
+                "OTP",
+                "BUD"
+            ],
+            "airline": {
+                "code": "RO",
+                "name": "TAROM"
+            },
+            "flightStatusPublic": "CANCELLED",
+            "flightStatusPublicLangTransl": "Cancelled",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OTP",
+                            "name": "HENRI COANDA AIRPORT",
+                            "nameLangTranl": "Henri Coanda International Airport",
+                            "city": {
+                                "code": "BUH",
+                                "name": "BUCHAREST",
+                                "nameLangTranl": "Bucharest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RO",
+                                    "name": "ROMANIA",
+                                    "nameLangTranl": "Romania",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.5667,
+                                "longitude": 26.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-21T17:00:00.000+03:00",
+                            "latestPublished": "2025-08-21T17:00:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BUD",
+                            "name": "LISZT FERENC INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Liszt Ferenc International",
+                            "city": {
+                                "code": "BUD",
+                                "name": "BUDAPEST",
+                                "nameLangTranl": "Budapest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "HU",
+                                    "name": "HUNGARY",
+                                    "nameLangTranl": "Hungary",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4333,
+                                "longitude": 19.2333
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2A",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2A",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-21T17:50:00.000+02:00",
+                            "latestPublished": "2025-08-21T17:50:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-21T17:50:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H50M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "RO",
+                        "ownerAirlineName": "TAROM",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J008Y064"
+                    },
+                    "irregularity": {
+                        "cancelled": "Y",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 237,
+            "flightScheduleDate": "2025-08-26",
+            "id": "20250826+RO+0237",
+            "haul": "MEDIUM",
+            "route": [
+                "OTP",
+                "BUD"
+            ],
+            "airline": {
+                "code": "RO",
+                "name": "TAROM"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5011,
+                    "flightScheduleDate": "2025-08-26",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AZ",
+                        "name": "ITA AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "CANCELLED",
+            "flightStatusPublicLangTransl": "Cancelled",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OTP",
+                            "name": "HENRI COANDA AIRPORT",
+                            "nameLangTranl": "Henri Coanda International Airport",
+                            "city": {
+                                "code": "BUH",
+                                "name": "BUCHAREST",
+                                "nameLangTranl": "Bucharest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RO",
+                                    "name": "ROMANIA",
+                                    "nameLangTranl": "Romania",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.5667,
+                                "longitude": 26.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-26T17:00:00.000+03:00",
+                            "latestPublished": "2025-08-26T17:00:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BUD",
+                            "name": "LISZT FERENC INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Liszt Ferenc International",
+                            "city": {
+                                "code": "BUD",
+                                "name": "BUDAPEST",
+                                "nameLangTranl": "Budapest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "HU",
+                                    "name": "HUNGARY",
+                                    "nameLangTranl": "Hungary",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4333,
+                                "longitude": 19.2333
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2A",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2A",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-26T17:50:00.000+02:00",
+                            "latestPublished": "2025-08-26T17:50:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-26T17:50:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H50M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "RO",
+                        "ownerAirlineName": "TAROM",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J008Y064"
+                    },
+                    "irregularity": {
+                        "cancelled": "Y",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 231,
+            "flightScheduleDate": "2025-08-28",
+            "id": "20250828+RO+0231",
+            "haul": "MEDIUM",
+            "route": [
+                "OTP",
+                "BUD"
+            ],
+            "airline": {
+                "code": "RO",
+                "name": "TAROM"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5009,
+                    "flightScheduleDate": "2025-08-28",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AZ",
+                        "name": "ITA AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "CANCELLED",
+            "flightStatusPublicLangTransl": "Cancelled",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OTP",
+                            "name": "HENRI COANDA AIRPORT",
+                            "nameLangTranl": "Henri Coanda International Airport",
+                            "city": {
+                                "code": "BUH",
+                                "name": "BUCHAREST",
+                                "nameLangTranl": "Bucharest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RO",
+                                    "name": "ROMANIA",
+                                    "nameLangTranl": "Romania",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.5667,
+                                "longitude": 26.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-28T07:55:00.000+03:00",
+                            "latestPublished": "2025-08-28T07:55:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BUD",
+                            "name": "LISZT FERENC INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Liszt Ferenc International",
+                            "city": {
+                                "code": "BUD",
+                                "name": "BUDAPEST",
+                                "nameLangTranl": "Budapest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "HU",
+                                    "name": "HUNGARY",
+                                    "nameLangTranl": "Hungary",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4333,
+                                "longitude": 19.2333
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2A",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2A",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-28T08:45:00.000+02:00",
+                            "latestPublished": "2025-08-28T08:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-28T08:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H50M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "RO",
+                        "ownerAirlineName": "TAROM",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J008Y064"
+                    },
+                    "irregularity": {
+                        "cancelled": "Y",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 231,
+            "flightScheduleDate": "2025-09-09",
+            "id": "20250909+RO+0231",
+            "haul": "MEDIUM",
+            "route": [
+                "OTP",
+                "BUD"
+            ],
+            "airline": {
+                "code": "RO",
+                "name": "TAROM"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5009,
+                    "flightScheduleDate": "2025-09-09",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AZ",
+                        "name": "ITA AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OTP",
+                            "name": "HENRI COANDA AIRPORT",
+                            "nameLangTranl": "Henri Coanda International Airport",
+                            "city": {
+                                "code": "BUH",
+                                "name": "BUCHAREST",
+                                "nameLangTranl": "Bucharest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RO",
+                                    "name": "ROMANIA",
+                                    "nameLangTranl": "Romania",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.5667,
+                                "longitude": 26.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-09T07:55:00.000+03:00",
+                            "latestPublished": "2025-09-09T07:55:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BUD",
+                            "name": "LISZT FERENC INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Liszt Ferenc International",
+                            "city": {
+                                "code": "BUD",
+                                "name": "BUDAPEST",
+                                "nameLangTranl": "Budapest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "HU",
+                                    "name": "HUNGARY",
+                                    "nameLangTranl": "Hungary",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4333,
+                                "longitude": 19.2333
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2A",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2A",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-09T08:45:00.000+02:00",
+                            "latestPublished": "2025-09-09T08:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-09T08:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H50M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "RO",
+                        "ownerAirlineName": "TAROM",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J008Y060"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 231,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+RO+0231",
+            "haul": "MEDIUM",
+            "route": [
+                "OTP",
+                "BUD"
+            ],
+            "airline": {
+                "code": "RO",
+                "name": "TAROM"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5009,
+                    "flightScheduleDate": "2025-10-14",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AZ",
+                        "name": "ITA AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OTP",
+                            "name": "HENRI COANDA AIRPORT",
+                            "nameLangTranl": "Henri Coanda International Airport",
+                            "city": {
+                                "code": "BUH",
+                                "name": "BUCHAREST",
+                                "nameLangTranl": "Bucharest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RO",
+                                    "name": "ROMANIA",
+                                    "nameLangTranl": "Romania",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.5667,
+                                "longitude": 26.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T07:55:00.000+03:00",
+                            "latestPublished": "2025-10-14T07:55:00.000+03:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BUD",
+                            "name": "LISZT FERENC INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Liszt Ferenc International",
+                            "city": {
+                                "code": "BUD",
+                                "name": "BUDAPEST",
+                                "nameLangTranl": "Budapest",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "HU",
+                                    "name": "HUNGARY",
+                                    "nameLangTranl": "Hungary",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4333,
+                                "longitude": 19.2333
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2A",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2A",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T08:45:00.000+02:00",
+                            "latestPublished": "2025-10-14T08:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T08:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H50M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "RO",
+                        "ownerAirlineName": "TAROM",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J016Y056"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 18,
+        "pageNumber": 0,
+        "fullCount": 18,
+        "pageCount": 18,
+        "totalPages": 1
+    }
+}

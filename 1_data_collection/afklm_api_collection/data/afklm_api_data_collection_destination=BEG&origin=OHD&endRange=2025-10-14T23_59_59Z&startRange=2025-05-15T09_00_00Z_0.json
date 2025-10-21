@@ -1,0 +1,3837 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-06-13",
+            "id": "20250613+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-13T04:00:00.000+02:00",
+                            "latestPublished": "2025-06-13T04:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-13T05:30:00.000+02:00",
+                            "latestPublished": "2025-06-13T05:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-06-13T05:30:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-06-20",
+            "id": "20250620+JU+0783",
+            "haul": "MEDIUM",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "flightScheduleDate": "2025-06-20",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "flightScheduleDate": "2025-06-20",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-20T03:55:00.000+02:00",
+                            "latestPublished": "2025-06-20T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-20T05:25:00.000+02:00",
+                            "latestPublished": "2025-06-20T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-06-20T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y072"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-06-27",
+            "id": "20250627+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-27T03:55:00.000+02:00",
+                            "latestPublished": "2025-06-27T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-27T05:25:00.000+02:00",
+                            "latestPublished": "2025-06-27T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-06-27T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-06-28",
+            "id": "20250628+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-28T03:55:00.000+02:00",
+                            "latestPublished": "2025-06-28T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-28T05:25:00.000+02:00",
+                            "latestPublished": "2025-06-28T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-06-28T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-07-04",
+            "id": "20250704+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-04T03:55:00.000+02:00",
+                            "latestPublished": "2025-07-04T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-04T05:25:00.000+02:00",
+                            "latestPublished": "2025-07-04T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-04T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-07-05",
+            "id": "20250705+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-05T03:55:00.000+02:00",
+                            "latestPublished": "2025-07-05T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-05T05:25:00.000+02:00",
+                            "latestPublished": "2025-07-05T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-05T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-07-11",
+            "id": "20250711+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-11T03:55:00.000+02:00",
+                            "latestPublished": "2025-07-11T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-11T05:25:00.000+02:00",
+                            "latestPublished": "2025-07-11T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-11T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-07-12",
+            "id": "20250712+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-12T03:55:00.000+02:00",
+                            "latestPublished": "2025-07-12T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-12T05:25:00.000+02:00",
+                            "latestPublished": "2025-07-12T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-12T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-07-18",
+            "id": "20250718+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-18T03:55:00.000+02:00",
+                            "latestPublished": "2025-07-18T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-18T05:25:00.000+02:00",
+                            "latestPublished": "2025-07-18T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-18T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-07-19",
+            "id": "20250719+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-19T03:55:00.000+02:00",
+                            "latestPublished": "2025-07-19T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-19T05:25:00.000+02:00",
+                            "latestPublished": "2025-07-19T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-19T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-07-25",
+            "id": "20250725+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-25T03:55:00.000+02:00",
+                            "latestPublished": "2025-07-25T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-25T05:25:00.000+02:00",
+                            "latestPublished": "2025-07-25T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-25T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-07-26",
+            "id": "20250726+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-26T03:55:00.000+02:00",
+                            "latestPublished": "2025-07-26T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-26T05:25:00.000+02:00",
+                            "latestPublished": "2025-07-26T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-26T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-08-01",
+            "id": "20250801+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-01T03:55:00.000+02:00",
+                            "latestPublished": "2025-08-01T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-01T05:25:00.000+02:00",
+                            "latestPublished": "2025-08-01T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-01T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-08-02",
+            "id": "20250802+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-02T03:55:00.000+02:00",
+                            "latestPublished": "2025-08-02T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-02T05:25:00.000+02:00",
+                            "latestPublished": "2025-08-02T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-02T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-08-08",
+            "id": "20250808+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-08T03:55:00.000+02:00",
+                            "latestPublished": "2025-08-08T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-08T05:25:00.000+02:00",
+                            "latestPublished": "2025-08-08T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-08T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-08-09",
+            "id": "20250809+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-09T03:55:00.000+02:00",
+                            "latestPublished": "2025-08-09T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-09T05:25:00.000+02:00",
+                            "latestPublished": "2025-08-09T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-09T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-08-15",
+            "id": "20250815+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-15T03:55:00.000+02:00",
+                            "latestPublished": "2025-08-15T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-15T05:25:00.000+02:00",
+                            "latestPublished": "2025-08-15T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-15T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-08-16",
+            "id": "20250816+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-16T03:55:00.000+02:00",
+                            "latestPublished": "2025-08-16T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-16T05:25:00.000+02:00",
+                            "latestPublished": "2025-08-16T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-16T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-08-22",
+            "id": "20250822+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-22T03:55:00.000+02:00",
+                            "latestPublished": "2025-08-22T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-22T05:25:00.000+02:00",
+                            "latestPublished": "2025-08-22T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-22T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-08-23",
+            "id": "20250823+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-23T03:55:00.000+02:00",
+                            "latestPublished": "2025-08-23T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-23T05:25:00.000+02:00",
+                            "latestPublished": "2025-08-23T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-23T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-08-29",
+            "id": "20250829+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-29T03:55:00.000+02:00",
+                            "latestPublished": "2025-08-29T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-29T05:25:00.000+02:00",
+                            "latestPublished": "2025-08-29T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-29T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-08-30",
+            "id": "20250830+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-30T03:55:00.000+02:00",
+                            "latestPublished": "2025-08-30T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-30T05:25:00.000+02:00",
+                            "latestPublished": "2025-08-30T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-30T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-09-05",
+            "id": "20250905+JU+0783",
+            "haul": "MEDIUM",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "flightScheduleDate": "2025-09-05",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "flightScheduleDate": "2025-09-05",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "CANCELLED",
+            "flightStatusPublicLangTransl": "Cancelled",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-05T03:55:00.000+02:00",
+                            "latestPublished": "2025-09-05T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-05T05:25:00.000+02:00",
+                            "latestPublished": "2025-09-05T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-05T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y072"
+                    },
+                    "irregularity": {
+                        "cancelled": "Y",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-09-06",
+            "id": "20250906+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-06T03:55:00.000+02:00",
+                            "latestPublished": "2025-09-06T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-06T05:25:00.000+02:00",
+                            "latestPublished": "2025-09-06T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-06T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-09-13",
+            "id": "20250913+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-13T03:55:00.000+02:00",
+                            "latestPublished": "2025-09-13T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-13T05:25:00.000+02:00",
+                            "latestPublished": "2025-09-13T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-13T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-09-20",
+            "id": "20250920+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-20T03:55:00.000+02:00",
+                            "latestPublished": "2025-09-20T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-20T05:25:00.000+02:00",
+                            "latestPublished": "2025-09-20T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-20T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-09-27",
+            "id": "20250927+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-27T03:55:00.000+02:00",
+                            "latestPublished": "2025-09-27T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-27T05:25:00.000+02:00",
+                            "latestPublished": "2025-09-27T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-27T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 783,
+            "flightScheduleDate": "2025-10-04",
+            "id": "20251004+JU+0783",
+            "route": [
+                "OHD",
+                "BEG"
+            ],
+            "airline": {
+                "code": "JU",
+                "name": "AIR SERBIA BELGRADE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9727,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9007,
+                    "airline": {
+                        "code": "TK",
+                        "name": "TURKISH AIRLINES INC."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OHD",
+                            "name": "ST. PAUL THE APOSTLE AIRPORT",
+                            "nameLangTranl": "Saint Paul The Apostle",
+                            "city": {
+                                "code": "OHD",
+                                "name": "OHRID",
+                                "nameLangTranl": "Ohrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "MK",
+                                    "name": "MACEDONIA (FYROM)",
+                                    "nameLangTranl": "Republic Of North Macedonia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.185,
+                                "longitude": 20.7431
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-04T03:55:00.000+02:00",
+                            "latestPublished": "2025-10-04T03:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BEG",
+                            "name": "NIKOLA TESLA AIRPORT",
+                            "nameLangTranl": "Nikola Tesla Airport",
+                            "city": {
+                                "code": "BEG",
+                                "name": "BELGRADE",
+                                "nameLangTranl": "Belgrade",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "RS",
+                                    "name": "SERBIA",
+                                    "nameLangTranl": "Serbia",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8192,
+                                "longitude": 20.3122
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-04T05:25:00.000+02:00",
+                            "latestPublished": "2025-10-04T05:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-04T05:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "AT7",
+                        "typeName": "ATR 72",
+                        "ownerAirlineCode": "JU",
+                        "ownerAirlineName": "AIR SERBIA BELGRADE",
+                        "physicalPaxConfiguration": "Y072",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "YBHKMQLVUETPROZGNS",
+                        "cockpitCrewEmployer": "JU",
+                        "cabinCrewEmployer": "JU"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 28,
+        "pageNumber": 0,
+        "fullCount": 28,
+        "pageCount": 28,
+        "totalPages": 1
+    }
+}

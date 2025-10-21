@@ -1,0 +1,3230 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 4047,
+            "flightScheduleDate": "2025-05-21",
+            "id": "20250521+UX+4047",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "ALC"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6892,
+                    "flightScheduleDate": "2025-05-21",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4301,
+                    "flightScheduleDate": "2025-05-21",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-21T07:05:00.000+02:00",
+                            "latestPublished": "2025-05-21T07:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ALC",
+                            "name": "ALICANTE AIRPORT",
+                            "nameLangTranl": "Alicante",
+                            "city": {
+                                "code": "ALC",
+                                "name": "ALICANTE",
+                                "nameLangTranl": "Alicante",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.2833,
+                                "longitude": -0.5667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-21T08:10:00.000+02:00",
+                            "latestPublished": "2025-05-21T08:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-05-21T08:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H5M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "7S8",
+                        "typeName": "BOEING 737-800 (SCIMITAR WINGLETS) PASSENGER",
+                        "ownerAirlineCode": "99",
+                        "ownerAirlineName": "DEFAULT AIRLINE",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J021Y168"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4047,
+            "flightScheduleDate": "2025-05-23",
+            "id": "20250523+UX+4047",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "ALC"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6892,
+                    "flightScheduleDate": "2025-05-23",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4301,
+                    "flightScheduleDate": "2025-05-23",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-23T07:05:00.000+02:00",
+                            "latestPublished": "2025-05-23T07:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ALC",
+                            "name": "ALICANTE AIRPORT",
+                            "nameLangTranl": "Alicante",
+                            "city": {
+                                "code": "ALC",
+                                "name": "ALICANTE",
+                                "nameLangTranl": "Alicante",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.2833,
+                                "longitude": -0.5667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-23T08:10:00.000+02:00",
+                            "latestPublished": "2025-05-23T08:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-05-23T08:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H5M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "UX",
+                        "ownerAirlineName": "AIR EUROPA LINEAS AEREAS S.A.",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y162"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4049,
+            "flightScheduleDate": "2025-05-26",
+            "id": "20250526+UX+4049",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "ALC"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6868,
+                    "flightScheduleDate": "2025-05-26",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2406,
+                    "flightScheduleDate": "2025-05-26",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AZ",
+                        "name": "ITA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7589,
+                    "flightScheduleDate": "2025-05-26",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7501,
+                    "flightScheduleDate": "2025-05-26",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "JU",
+                        "name": "AIR SERBIA BELGRADE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4972,
+                    "flightScheduleDate": "2025-05-26",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MU",
+                        "name": "CHINA EASTERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 8365,
+                    "flightScheduleDate": "2025-05-26",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SK",
+                        "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-26T15:10:00.000+02:00",
+                            "latestPublished": "2025-05-26T15:10:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ALC",
+                            "name": "ALICANTE AIRPORT",
+                            "nameLangTranl": "Alicante",
+                            "city": {
+                                "code": "ALC",
+                                "name": "ALICANTE",
+                                "nameLangTranl": "Alicante",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.2833,
+                                "longitude": -0.5667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-26T16:20:00.000+02:00",
+                            "latestPublished": "2025-05-26T16:20:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-05-26T16:20:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H10M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "99",
+                        "ownerAirlineName": "DEFAULT AIRLINE",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y162"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4047,
+            "flightScheduleDate": "2025-05-29",
+            "id": "20250529+UX+4047",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "ALC"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6892,
+                    "flightScheduleDate": "2025-05-29",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4301,
+                    "flightScheduleDate": "2025-05-29",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-29T07:05:00.000+02:00",
+                            "latestPublished": "2025-05-29T07:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ALC",
+                            "name": "ALICANTE AIRPORT",
+                            "nameLangTranl": "Alicante",
+                            "city": {
+                                "code": "ALC",
+                                "name": "ALICANTE",
+                                "nameLangTranl": "Alicante",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.2833,
+                                "longitude": -0.5667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-29T08:10:00.000+02:00",
+                            "latestPublished": "2025-05-29T08:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-05-29T08:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H5M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "UX",
+                        "ownerAirlineName": "AIR EUROPA LINEAS AEREAS S.A.",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y162"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4047,
+            "flightScheduleDate": "2025-05-30",
+            "id": "20250530+UX+4047",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "ALC"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6892,
+                    "flightScheduleDate": "2025-05-30",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4301,
+                    "flightScheduleDate": "2025-05-30",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-30T07:05:00.000+02:00",
+                            "latestPublished": "2025-05-30T07:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ALC",
+                            "name": "ALICANTE AIRPORT",
+                            "nameLangTranl": "Alicante",
+                            "city": {
+                                "code": "ALC",
+                                "name": "ALICANTE",
+                                "nameLangTranl": "Alicante",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.2833,
+                                "longitude": -0.5667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-30T08:10:00.000+02:00",
+                            "latestPublished": "2025-05-30T08:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-05-30T08:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H5M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "UX",
+                        "ownerAirlineName": "AIR EUROPA LINEAS AEREAS S.A.",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y162"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4047,
+            "flightScheduleDate": "2025-06-01",
+            "id": "20250601+UX+4047",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "ALC"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6892,
+                    "flightScheduleDate": "2025-06-01",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4301,
+                    "flightScheduleDate": "2025-06-01",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-01T07:05:00.000+02:00",
+                            "latestPublished": "2025-06-01T07:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ALC",
+                            "name": "ALICANTE AIRPORT",
+                            "nameLangTranl": "Alicante",
+                            "city": {
+                                "code": "ALC",
+                                "name": "ALICANTE",
+                                "nameLangTranl": "Alicante",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.2833,
+                                "longitude": -0.5667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-01T08:10:00.000+02:00",
+                            "latestPublished": "2025-06-01T08:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-06-01T08:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H5M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "UX",
+                        "ownerAirlineName": "AIR EUROPA LINEAS AEREAS S.A.",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y162"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4047,
+            "flightScheduleDate": "2025-06-03",
+            "id": "20250603+UX+4047",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "ALC"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6892,
+                    "flightScheduleDate": "2025-06-03",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4301,
+                    "flightScheduleDate": "2025-06-03",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-03T07:05:00.000+02:00",
+                            "latestPublished": "2025-06-03T07:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ALC",
+                            "name": "ALICANTE AIRPORT",
+                            "nameLangTranl": "Alicante",
+                            "city": {
+                                "code": "ALC",
+                                "name": "ALICANTE",
+                                "nameLangTranl": "Alicante",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.2833,
+                                "longitude": -0.5667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-03T08:10:00.000+02:00",
+                            "latestPublished": "2025-06-03T08:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-06-03T08:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H5M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "7M8",
+                        "typeName": "BOEING 737MAX 8 PASSENGER",
+                        "ownerAirlineCode": "UX",
+                        "ownerAirlineName": "AIR EUROPA LINEAS AEREAS S.A.",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y165"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4047,
+            "flightScheduleDate": "2025-06-04",
+            "id": "20250604+UX+4047",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "ALC"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6892,
+                    "flightScheduleDate": "2025-06-04",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4301,
+                    "flightScheduleDate": "2025-06-04",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-04T07:05:00.000+02:00",
+                            "latestPublished": "2025-06-04T07:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ALC",
+                            "name": "ALICANTE AIRPORT",
+                            "nameLangTranl": "Alicante",
+                            "city": {
+                                "code": "ALC",
+                                "name": "ALICANTE",
+                                "nameLangTranl": "Alicante",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.2833,
+                                "longitude": -0.5667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-04T08:10:00.000+02:00",
+                            "latestPublished": "2025-06-04T08:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-06-04T08:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H5M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "738",
+                        "typeName": "BOEING 737-800 PASSENGER",
+                        "ownerAirlineCode": "99",
+                        "ownerAirlineName": "DEFAULT AIRLINE",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J021Y168"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4047,
+            "flightScheduleDate": "2025-06-05",
+            "id": "20250605+UX+4047",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "ALC"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6892,
+                    "flightScheduleDate": "2025-06-05",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4301,
+                    "flightScheduleDate": "2025-06-05",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-05T07:05:00.000+02:00",
+                            "latestPublished": "2025-06-05T07:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ALC",
+                            "name": "ALICANTE AIRPORT",
+                            "nameLangTranl": "Alicante",
+                            "city": {
+                                "code": "ALC",
+                                "name": "ALICANTE",
+                                "nameLangTranl": "Alicante",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.2833,
+                                "longitude": -0.5667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-05T08:10:00.000+02:00",
+                            "latestPublished": "2025-06-05T08:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-06-05T08:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H5M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "UX",
+                        "ownerAirlineName": "AIR EUROPA LINEAS AEREAS S.A.",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y162"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4047,
+            "flightScheduleDate": "2025-06-06",
+            "id": "20250606+UX+4047",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "ALC"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6892,
+                    "flightScheduleDate": "2025-06-06",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4301,
+                    "flightScheduleDate": "2025-06-06",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-06T07:05:00.000+02:00",
+                            "latestPublished": "2025-06-06T07:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ALC",
+                            "name": "ALICANTE AIRPORT",
+                            "nameLangTranl": "Alicante",
+                            "city": {
+                                "code": "ALC",
+                                "name": "ALICANTE",
+                                "nameLangTranl": "Alicante",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.2833,
+                                "longitude": -0.5667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-06T08:10:00.000+02:00",
+                            "latestPublished": "2025-06-06T08:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-06-06T08:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H5M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "7M8",
+                        "typeName": "BOEING 737MAX 8 PASSENGER",
+                        "ownerAirlineCode": "UX",
+                        "ownerAirlineName": "AIR EUROPA LINEAS AEREAS S.A.",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y165"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4047,
+            "flightScheduleDate": "2025-06-08",
+            "id": "20250608+UX+4047",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "ALC"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6892,
+                    "flightScheduleDate": "2025-06-08",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4301,
+                    "flightScheduleDate": "2025-06-08",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-08T07:05:00.000+02:00",
+                            "latestPublished": "2025-06-08T07:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ALC",
+                            "name": "ALICANTE AIRPORT",
+                            "nameLangTranl": "Alicante",
+                            "city": {
+                                "code": "ALC",
+                                "name": "ALICANTE",
+                                "nameLangTranl": "Alicante",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.2833,
+                                "longitude": -0.5667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-08T08:10:00.000+02:00",
+                            "latestPublished": "2025-06-08T08:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-06-08T08:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H5M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "7M8",
+                        "typeName": "BOEING 737MAX 8 PASSENGER",
+                        "ownerAirlineCode": "UX",
+                        "ownerAirlineName": "AIR EUROPA LINEAS AEREAS S.A.",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y165"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4049,
+            "flightScheduleDate": "2025-07-04",
+            "id": "20250704+UX+4049",
+            "route": [
+                "MAD",
+                "ALC"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6868,
+                    "flightScheduleDate": "2025-07-04",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2406,
+                    "flightScheduleDate": "2025-07-04",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AZ",
+                        "name": "ITA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7589,
+                    "flightScheduleDate": "2025-07-04",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7501,
+                    "flightScheduleDate": "2025-07-04",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "JU",
+                        "name": "AIR SERBIA BELGRADE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4972,
+                    "flightScheduleDate": "2025-07-04",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MU",
+                        "name": "CHINA EASTERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 8365,
+                    "flightScheduleDate": "2025-07-04",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SK",
+                        "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-04T15:10:00.000+02:00",
+                            "latestPublished": "2025-07-04T15:10:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ALC",
+                            "name": "ALICANTE AIRPORT",
+                            "nameLangTranl": "Alicante",
+                            "city": {
+                                "code": "ALC",
+                                "name": "ALICANTE",
+                                "nameLangTranl": "Alicante",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.2833,
+                                "longitude": -0.5667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-04T16:20:00.000+02:00",
+                            "latestPublished": "2025-07-04T16:20:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-04T16:20:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H10M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "UX",
+                        "ownerAirlineName": "AIR EUROPA LINEAS AEREAS S.A.",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y165"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4047,
+            "flightScheduleDate": "2025-08-05",
+            "id": "20250805+UX+4047",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "ALC"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6892,
+                    "flightScheduleDate": "2025-08-05",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4301,
+                    "flightScheduleDate": "2025-08-05",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-05T07:05:00.000+02:00",
+                            "latestPublished": "2025-08-05T07:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ALC",
+                            "name": "ALICANTE AIRPORT",
+                            "nameLangTranl": "Alicante",
+                            "city": {
+                                "code": "ALC",
+                                "name": "ALICANTE",
+                                "nameLangTranl": "Alicante",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.2833,
+                                "longitude": -0.5667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-05T08:10:00.000+02:00",
+                            "latestPublished": "2025-08-05T08:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-05T08:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H5M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "99",
+                        "ownerAirlineName": "DEFAULT AIRLINE",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y165"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4047,
+            "flightScheduleDate": "2025-08-19",
+            "id": "20250819+UX+4047",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "ALC"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6892,
+                    "flightScheduleDate": "2025-08-19",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4301,
+                    "flightScheduleDate": "2025-08-19",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-19T07:05:00.000+02:00",
+                            "latestPublished": "2025-08-19T07:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ALC",
+                            "name": "ALICANTE AIRPORT",
+                            "nameLangTranl": "Alicante",
+                            "city": {
+                                "code": "ALC",
+                                "name": "ALICANTE",
+                                "nameLangTranl": "Alicante",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.2833,
+                                "longitude": -0.5667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-19T08:10:00.000+02:00",
+                            "latestPublished": "2025-08-19T08:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-19T08:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H5M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "UX",
+                        "ownerAirlineName": "AIR EUROPA LINEAS AEREAS S.A.",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y162"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4047,
+            "flightScheduleDate": "2025-08-25",
+            "id": "20250825+UX+4047",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "ALC"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6892,
+                    "flightScheduleDate": "2025-08-25",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4301,
+                    "flightScheduleDate": "2025-08-25",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-25T07:05:00.000+02:00",
+                            "latestPublished": "2025-08-25T07:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ALC",
+                            "name": "ALICANTE AIRPORT",
+                            "nameLangTranl": "Alicante",
+                            "city": {
+                                "code": "ALC",
+                                "name": "ALICANTE",
+                                "nameLangTranl": "Alicante",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.2833,
+                                "longitude": -0.5667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-25T08:10:00.000+02:00",
+                            "latestPublished": "2025-08-25T08:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-25T08:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H5M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "UX",
+                        "ownerAirlineName": "AIR EUROPA LINEAS AEREAS S.A.",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y162"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4047,
+            "flightScheduleDate": "2025-08-30",
+            "id": "20250830+UX+4047",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "ALC"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6892,
+                    "flightScheduleDate": "2025-08-30",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4301,
+                    "flightScheduleDate": "2025-08-30",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-30T07:05:00.000+02:00",
+                            "latestPublished": "2025-08-30T07:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ALC",
+                            "name": "ALICANTE AIRPORT",
+                            "nameLangTranl": "Alicante",
+                            "city": {
+                                "code": "ALC",
+                                "name": "ALICANTE",
+                                "nameLangTranl": "Alicante",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.2833,
+                                "longitude": -0.5667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-30T08:10:00.000+02:00",
+                            "latestPublished": "2025-08-30T08:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-30T08:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H5M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "UX",
+                        "ownerAirlineName": "AIR EUROPA LINEAS AEREAS S.A.",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y162"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4047,
+            "flightScheduleDate": "2025-09-25",
+            "id": "20250925+UX+4047",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "ALC"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6892,
+                    "flightScheduleDate": "2025-09-25",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4301,
+                    "flightScheduleDate": "2025-09-25",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-25T07:05:00.000+02:00",
+                            "latestPublished": "2025-09-25T07:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ALC",
+                            "name": "ALICANTE AIRPORT",
+                            "nameLangTranl": "Alicante",
+                            "city": {
+                                "code": "ALC",
+                                "name": "ALICANTE",
+                                "nameLangTranl": "Alicante",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.2833,
+                                "longitude": -0.5667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-09-25T08:10:00.000+02:00",
+                            "latestPublished": "2025-09-25T08:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-09-25T08:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H5M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "UX",
+                        "ownerAirlineName": "AIR EUROPA LINEAS AEREAS S.A.",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y162"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4047,
+            "flightScheduleDate": "2025-10-05",
+            "id": "20251005+UX+4047",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "ALC"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6892,
+                    "flightScheduleDate": "2025-10-05",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4301,
+                    "flightScheduleDate": "2025-10-05",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-05T07:05:00.000+02:00",
+                            "latestPublished": "2025-10-05T07:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ALC",
+                            "name": "ALICANTE AIRPORT",
+                            "nameLangTranl": "Alicante",
+                            "city": {
+                                "code": "ALC",
+                                "name": "ALICANTE",
+                                "nameLangTranl": "Alicante",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.2833,
+                                "longitude": -0.5667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-05T08:10:00.000+02:00",
+                            "latestPublished": "2025-10-05T08:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-05T08:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H5M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "UX",
+                        "ownerAirlineName": "AIR EUROPA LINEAS AEREAS S.A.",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y162"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4047,
+            "flightScheduleDate": "2025-10-07",
+            "id": "20251007+UX+4047",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "ALC"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6892,
+                    "flightScheduleDate": "2025-10-07",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4301,
+                    "flightScheduleDate": "2025-10-07",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-07T07:05:00.000+02:00",
+                            "latestPublished": "2025-10-07T07:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ALC",
+                            "name": "ALICANTE AIRPORT",
+                            "nameLangTranl": "Alicante",
+                            "city": {
+                                "code": "ALC",
+                                "name": "ALICANTE",
+                                "nameLangTranl": "Alicante",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.2833,
+                                "longitude": -0.5667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-07T08:10:00.000+02:00",
+                            "latestPublished": "2025-10-07T08:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-07T08:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H5M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "99",
+                        "ownerAirlineName": "DEFAULT AIRLINE",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y162"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4047,
+            "flightScheduleDate": "2025-10-08",
+            "id": "20251008+UX+4047",
+            "haul": "MEDIUM",
+            "route": [
+                "MAD",
+                "ALC"
+            ],
+            "airline": {
+                "code": "UX",
+                "name": "AIR EUROPA LINEAS AEREAS S.A."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6892,
+                    "flightScheduleDate": "2025-10-08",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4301,
+                    "flightScheduleDate": "2025-10-08",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MAD",
+                            "name": "ADOLFO SUAREZ MADRID-BARAJAS AIRPORT",
+                            "nameLangTranl": "Barajas International Airport",
+                            "city": {
+                                "code": "MAD",
+                                "name": "MADRID",
+                                "nameLangTranl": "Madrid",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.4722,
+                                "longitude": -3.5633
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-08T07:05:00.000+02:00",
+                            "latestPublished": "2025-10-08T07:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ALC",
+                            "name": "ALICANTE AIRPORT",
+                            "nameLangTranl": "Alicante",
+                            "city": {
+                                "code": "ALC",
+                                "name": "ALICANTE",
+                                "nameLangTranl": "Alicante",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.2833,
+                                "longitude": -0.5667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-08T08:10:00.000+02:00",
+                            "latestPublished": "2025-10-08T08:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-08T08:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H5M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "UX",
+                        "ownerAirlineName": "AIR EUROPA LINEAS AEREAS S.A.",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "J024Y165"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 20,
+        "pageNumber": 0,
+        "fullCount": 20,
+        "pageCount": 20,
+        "totalPages": 1
+    }
+}

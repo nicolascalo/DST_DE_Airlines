@@ -1,0 +1,1620 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 7646,
+            "flightScheduleDate": "2025-07-05",
+            "id": "20250705+AF+7646",
+            "haul": "MEDIUM",
+            "route": [
+                "AJA",
+                "BOD"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AJA",
+                            "name": "NAPOLEON BONAPARTE AIRPORT",
+                            "nameLangTranl": "Ajaccio Napoleon Bonaparte Airport",
+                            "city": {
+                                "code": "AJA",
+                                "name": "AJACCIO",
+                                "nameLangTranl": "Ajaccio - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.9242,
+                                "longitude": 8.8031
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-05T12:12:00.000+02:00",
+                            "scheduled": "2025-07-05T11:40:00.000+02:00",
+                            "latestPublished": "2025-07-05T12:12:00.000+02:00",
+                            "actualTakeOffTime": "2025-07-05T12:16:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-07-05T11:40:00.000+02:00",
+                            "gateCloseTime": "2025-07-05T11:55:00.000+02:00",
+                            "actualBoardingOpen": "2025-07-05T11:07:00.000+02:00",
+                            "firstPaxBoarding": "2025-07-05T11:39:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BOD",
+                            "name": "MERIGNAC AIRPORT",
+                            "nameLangTranl": "Bordeaux Mérignac Airport",
+                            "city": {
+                                "code": "BOD",
+                                "name": "BORDEAUX",
+                                "nameLangTranl": "Bordeaux",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8294,
+                                "longitude": -0.7144
+                            },
+                            "places": {
+                                "aerogareCode": "B",
+                                "gateNumber": [
+                                    "04"
+                                ],
+                                "parkingPosition": "C1",
+                                "pierCode": "",
+                                "terminalCode": "B",
+                                "baggageBelt": [
+                                    "5"
+                                ],
+                                "arrivalPositionTerminal": "B",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "B",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "B",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-05T13:37:00.000+02:00",
+                            "scheduled": "2025-07-05T13:20:00.000+02:00",
+                            "latestPublished": "2025-07-05T13:37:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-05T13:37:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-07-05T13:34:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H40M",
+                    "departureDateTimeDifference": "PT32M",
+                    "arrivalDateTimeDifference": "PT17M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBXF",
+                        "typeCode": "E70",
+                        "typeName": "EMBRAER 170",
+                        "subFleetCodeId": "NC",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y076",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "83"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0032"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR04"
+                        ],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT32M",
+                        "delayDurationArrival": "PT17M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "83",
+                                "delayDuration": "0032",
+                                "delayReasonCodePublic": "FSR04"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7646,
+            "flightScheduleDate": "2025-07-12",
+            "id": "20250712+AF+7646",
+            "haul": "MEDIUM",
+            "route": [
+                "AJA",
+                "BOD"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AJA",
+                            "name": "NAPOLEON BONAPARTE AIRPORT",
+                            "nameLangTranl": "Ajaccio Napoleon Bonaparte Airport",
+                            "city": {
+                                "code": "AJA",
+                                "name": "AJACCIO",
+                                "nameLangTranl": "Ajaccio - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.9242,
+                                "longitude": 8.8031
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-12T11:40:00.000+02:00",
+                            "scheduled": "2025-07-12T11:40:00.000+02:00",
+                            "latestPublished": "2025-07-12T11:40:00.000+02:00",
+                            "actualTakeOffTime": "2025-07-12T11:47:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-07-12T11:00:00.000+02:00",
+                            "gateCloseTime": "2025-07-12T11:25:00.000+02:00",
+                            "actualBoardingOpen": "2025-07-12T11:08:00.000+02:00",
+                            "firstPaxBoarding": "2025-07-12T11:09:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BOD",
+                            "name": "MERIGNAC AIRPORT",
+                            "nameLangTranl": "Bordeaux Mérignac Airport",
+                            "city": {
+                                "code": "BOD",
+                                "name": "BORDEAUX",
+                                "nameLangTranl": "Bordeaux",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8294,
+                                "longitude": -0.7144
+                            },
+                            "places": {
+                                "aerogareCode": "B",
+                                "gateNumber": [
+                                    "04"
+                                ],
+                                "parkingPosition": "C1",
+                                "pierCode": "",
+                                "terminalCode": "B",
+                                "baggageBelt": [
+                                    "5"
+                                ],
+                                "arrivalPositionTerminal": "B",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "B",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "B",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-12T13:08:00.000+02:00",
+                            "scheduled": "2025-07-12T13:20:00.000+02:00",
+                            "latestPublished": "2025-07-12T13:08:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-12T13:08:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-07-12T13:04:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H40M",
+                    "departureDateTimeDifference": "PT0S",
+                    "arrivalDateTimeDifference": "PT-12M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBXB",
+                        "typeCode": "E70",
+                        "typeName": "EMBRAER 170",
+                        "subFleetCodeId": "NC",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y076",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7646,
+            "flightScheduleDate": "2025-07-19",
+            "id": "20250719+AF+7646",
+            "haul": "MEDIUM",
+            "route": [
+                "AJA",
+                "BOD"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AJA",
+                            "name": "NAPOLEON BONAPARTE AIRPORT",
+                            "nameLangTranl": "Ajaccio Napoleon Bonaparte Airport",
+                            "city": {
+                                "code": "AJA",
+                                "name": "AJACCIO",
+                                "nameLangTranl": "Ajaccio - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.9242,
+                                "longitude": 8.8031
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-19T12:03:00.000+02:00",
+                            "scheduled": "2025-07-19T11:40:00.000+02:00",
+                            "latestPublished": "2025-07-19T12:03:00.000+02:00",
+                            "actualTakeOffTime": "2025-07-19T12:11:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-07-19T12:14:00.000+02:00",
+                            "gateCloseTime": "2025-07-19T12:29:00.000+02:00",
+                            "actualBoardingOpen": "2025-07-19T11:35:00.000+02:00",
+                            "firstPaxBoarding": "2025-07-19T11:39:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BOD",
+                            "name": "MERIGNAC AIRPORT",
+                            "nameLangTranl": "Bordeaux Mérignac Airport",
+                            "city": {
+                                "code": "BOD",
+                                "name": "BORDEAUX",
+                                "nameLangTranl": "Bordeaux",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8294,
+                                "longitude": -0.7144
+                            },
+                            "places": {
+                                "aerogareCode": "B",
+                                "gateNumber": [
+                                    "04"
+                                ],
+                                "parkingPosition": "C1",
+                                "pierCode": "",
+                                "terminalCode": "B",
+                                "baggageBelt": [
+                                    "5"
+                                ],
+                                "arrivalPositionTerminal": "B",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "B",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "B",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-19T13:31:00.000+02:00",
+                            "scheduled": "2025-07-19T13:20:00.000+02:00",
+                            "latestPublished": "2025-07-19T13:31:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-19T13:31:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-07-19T13:28:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H40M",
+                    "departureDateTimeDifference": "PT23M",
+                    "arrivalDateTimeDifference": "PT11M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBXG",
+                        "typeCode": "E70",
+                        "typeName": "EMBRAER 170",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y076",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "82"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0023"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR04"
+                        ],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT23M",
+                        "delayDurationArrival": "PT11M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "82",
+                                "delayDuration": "0023",
+                                "delayReasonCodePublic": "FSR04"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7646,
+            "flightScheduleDate": "2025-07-26",
+            "id": "20250726+AF+7646",
+            "haul": "MEDIUM",
+            "route": [
+                "AJA",
+                "BOD"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AJA",
+                            "name": "NAPOLEON BONAPARTE AIRPORT",
+                            "nameLangTranl": "Ajaccio Napoleon Bonaparte Airport",
+                            "city": {
+                                "code": "AJA",
+                                "name": "AJACCIO",
+                                "nameLangTranl": "Ajaccio - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.9242,
+                                "longitude": 8.8031
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": [
+                                    "E"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-26T12:16:00.000+02:00",
+                            "scheduled": "2025-07-26T11:40:00.000+02:00",
+                            "latestPublished": "2025-07-26T12:16:00.000+02:00",
+                            "actualTakeOffTime": "2025-07-26T12:25:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-07-26T11:20:00.000+02:00",
+                            "gateCloseTime": "2025-07-26T11:35:00.000+02:00",
+                            "actualBoardingOpen": "2025-07-26T11:41:00.000+02:00",
+                            "firstPaxBoarding": "2025-07-26T11:54:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BOD",
+                            "name": "MERIGNAC AIRPORT",
+                            "nameLangTranl": "Bordeaux Mérignac Airport",
+                            "city": {
+                                "code": "BOD",
+                                "name": "BORDEAUX",
+                                "nameLangTranl": "Bordeaux",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8294,
+                                "longitude": -0.7144
+                            },
+                            "places": {
+                                "aerogareCode": "B",
+                                "gateNumber": [
+                                    "04"
+                                ],
+                                "parkingPosition": "C1",
+                                "pierCode": "",
+                                "terminalCode": "B",
+                                "baggageBelt": [
+                                    "5"
+                                ],
+                                "arrivalPositionTerminal": "B",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "B",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "B",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-26T13:45:00.000+02:00",
+                            "scheduled": "2025-07-26T13:20:00.000+02:00",
+                            "latestPublished": "2025-07-26T13:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-26T13:45:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-07-26T13:41:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H40M",
+                    "departureDateTimeDifference": "PT36M",
+                    "arrivalDateTimeDifference": "PT25M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBXL",
+                        "typeCode": "E70",
+                        "typeName": "EMBRAER 170",
+                        "subFleetCodeId": "NC",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y076",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "81"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0036"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR04"
+                        ],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT36M",
+                        "delayDurationArrival": "PT25M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "81",
+                                "delayDuration": "0036",
+                                "delayReasonCodePublic": "FSR04"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7646,
+            "flightScheduleDate": "2025-08-02",
+            "id": "20250802+AF+7646",
+            "haul": "MEDIUM",
+            "route": [
+                "AJA",
+                "BOD"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AJA",
+                            "name": "NAPOLEON BONAPARTE AIRPORT",
+                            "nameLangTranl": "Ajaccio Napoleon Bonaparte Airport",
+                            "city": {
+                                "code": "AJA",
+                                "name": "AJACCIO",
+                                "nameLangTranl": "Ajaccio - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.9242,
+                                "longitude": 8.8031
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": [
+                                    "F"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-02T11:46:00.000+02:00",
+                            "scheduled": "2025-08-02T11:40:00.000+02:00",
+                            "latestPublished": "2025-08-02T11:46:00.000+02:00",
+                            "actualTakeOffTime": "2025-08-02T11:54:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-08-02T11:10:00.000+02:00",
+                            "gateCloseTime": "2025-08-02T11:25:00.000+02:00",
+                            "actualBoardingOpen": "2025-08-02T11:11:00.000+02:00",
+                            "firstPaxBoarding": "2025-08-02T11:26:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BOD",
+                            "name": "MERIGNAC AIRPORT",
+                            "nameLangTranl": "Bordeaux Mérignac Airport",
+                            "city": {
+                                "code": "BOD",
+                                "name": "BORDEAUX",
+                                "nameLangTranl": "Bordeaux",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8294,
+                                "longitude": -0.7144
+                            },
+                            "places": {
+                                "aerogareCode": "B",
+                                "gateNumber": [
+                                    "04"
+                                ],
+                                "parkingPosition": "C1",
+                                "pierCode": "",
+                                "terminalCode": "B",
+                                "baggageBelt": [
+                                    "5"
+                                ],
+                                "arrivalPositionTerminal": "B",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "B",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "B",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-02T13:19:00.000+02:00",
+                            "scheduled": "2025-08-02T13:20:00.000+02:00",
+                            "latestPublished": "2025-08-02T13:19:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-02T13:19:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-08-02T13:16:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H40M",
+                    "departureDateTimeDifference": "PT6M",
+                    "arrivalDateTimeDifference": "PT-1M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBXG",
+                        "typeCode": "E70",
+                        "typeName": "EMBRAER 170",
+                        "subFleetCodeId": "NC",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y076",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "81"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0006"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR04"
+                        ],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "81",
+                                "delayDuration": "0006",
+                                "delayReasonCodePublic": "FSR04"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7646,
+            "flightScheduleDate": "2025-08-09",
+            "id": "20250809+AF+7646",
+            "haul": "MEDIUM",
+            "route": [
+                "AJA",
+                "BOD"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AJA",
+                            "name": "NAPOLEON BONAPARTE AIRPORT",
+                            "nameLangTranl": "Ajaccio Napoleon Bonaparte Airport",
+                            "city": {
+                                "code": "AJA",
+                                "name": "AJACCIO",
+                                "nameLangTranl": "Ajaccio - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.9242,
+                                "longitude": 8.8031
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": [
+                                    "F"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-09T11:40:00.000+02:00",
+                            "scheduled": "2025-08-09T11:40:00.000+02:00",
+                            "latestPublished": "2025-08-09T11:40:00.000+02:00",
+                            "actualTakeOffTime": "2025-08-09T11:47:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-08-09T11:10:00.000+02:00",
+                            "gateCloseTime": "2025-08-09T11:25:00.000+02:00",
+                            "actualBoardingOpen": "2025-08-09T11:04:00.000+02:00",
+                            "firstPaxBoarding": "2025-08-09T11:16:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BOD",
+                            "name": "MERIGNAC AIRPORT",
+                            "nameLangTranl": "Bordeaux Mérignac Airport",
+                            "city": {
+                                "code": "BOD",
+                                "name": "BORDEAUX",
+                                "nameLangTranl": "Bordeaux",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8294,
+                                "longitude": -0.7144
+                            },
+                            "places": {
+                                "aerogareCode": "B",
+                                "gateNumber": [
+                                    "04"
+                                ],
+                                "parkingPosition": "C4",
+                                "pierCode": "",
+                                "terminalCode": "B",
+                                "baggageBelt": [
+                                    "6"
+                                ],
+                                "arrivalPositionTerminal": "B",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "B",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "B",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-09T13:08:00.000+02:00",
+                            "scheduled": "2025-08-09T13:20:00.000+02:00",
+                            "latestPublished": "2025-08-09T13:08:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-09T13:08:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-08-09T13:04:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H40M",
+                    "departureDateTimeDifference": "PT0S",
+                    "arrivalDateTimeDifference": "PT-12M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBXF",
+                        "typeCode": "E70",
+                        "typeName": "EMBRAER 170",
+                        "subFleetCodeId": "NC",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y076",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7646,
+            "flightScheduleDate": "2025-08-16",
+            "id": "20250816+AF+7646",
+            "haul": "MEDIUM",
+            "route": [
+                "AJA",
+                "BOD"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AJA",
+                            "name": "NAPOLEON BONAPARTE AIRPORT",
+                            "nameLangTranl": "Ajaccio Napoleon Bonaparte Airport",
+                            "city": {
+                                "code": "AJA",
+                                "name": "AJACCIO",
+                                "nameLangTranl": "Ajaccio - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.9242,
+                                "longitude": 8.8031
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-16T11:59:00.000+02:00",
+                            "scheduled": "2025-08-16T11:40:00.000+02:00",
+                            "latestPublished": "2025-08-16T11:59:00.000+02:00",
+                            "actualTakeOffTime": "2025-08-16T12:09:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-08-16T11:10:00.000+02:00",
+                            "gateCloseTime": "2025-08-16T11:25:00.000+02:00",
+                            "actualBoardingOpen": "2025-08-16T11:09:00.000+02:00",
+                            "firstPaxBoarding": "2025-08-16T11:20:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BOD",
+                            "name": "MERIGNAC AIRPORT",
+                            "nameLangTranl": "Bordeaux Mérignac Airport",
+                            "city": {
+                                "code": "BOD",
+                                "name": "BORDEAUX",
+                                "nameLangTranl": "Bordeaux",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8294,
+                                "longitude": -0.7144
+                            },
+                            "places": {
+                                "aerogareCode": "B",
+                                "gateNumber": [
+                                    "04"
+                                ],
+                                "parkingPosition": "C1",
+                                "pierCode": "",
+                                "terminalCode": "B",
+                                "baggageBelt": [
+                                    "5"
+                                ],
+                                "arrivalPositionTerminal": "B",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "B",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "B",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-16T13:29:00.000+02:00",
+                            "scheduled": "2025-08-16T13:20:00.000+02:00",
+                            "latestPublished": "2025-08-16T13:29:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-16T13:29:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-08-16T13:26:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H40M",
+                    "departureDateTimeDifference": "PT19M",
+                    "arrivalDateTimeDifference": "PT9M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBXA",
+                        "typeCode": "E70",
+                        "typeName": "EMBRAER 170",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y076",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "05"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0026"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT19M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "05",
+                                "delayDuration": "0026"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7646,
+            "flightScheduleDate": "2025-08-23",
+            "id": "20250823+AF+7646",
+            "haul": "MEDIUM",
+            "route": [
+                "AJA",
+                "BOD"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250823+AF+7598",
+                    "flightScheduleDate": "2025-08-23",
+                    "airlineCode": "AF",
+                    "flightNumber": "7598"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AJA",
+                            "name": "NAPOLEON BONAPARTE AIRPORT",
+                            "nameLangTranl": "Ajaccio Napoleon Bonaparte Airport",
+                            "city": {
+                                "code": "AJA",
+                                "name": "AJACCIO",
+                                "nameLangTranl": "Ajaccio - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.9242,
+                                "longitude": 8.8031
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": [
+                                    "E"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-23T14:38:00.000+02:00",
+                            "scheduled": "2025-08-23T11:40:00.000+02:00",
+                            "latestPublished": "2025-08-23T14:38:00.000+02:00",
+                            "actualTakeOffTime": "2025-08-23T14:50:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-08-23T14:15:00.000+02:00",
+                            "gateCloseTime": "2025-08-23T14:30:00.000+02:00",
+                            "actualBoardingOpen": "2025-08-23T13:50:00.000+02:00",
+                            "firstPaxBoarding": "2025-08-23T13:56:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BOD",
+                            "name": "MERIGNAC AIRPORT",
+                            "nameLangTranl": "Bordeaux Mérignac Airport",
+                            "city": {
+                                "code": "BOD",
+                                "name": "BORDEAUX",
+                                "nameLangTranl": "Bordeaux",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8294,
+                                "longitude": -0.7144
+                            },
+                            "places": {
+                                "aerogareCode": "B",
+                                "gateNumber": [
+                                    "04"
+                                ],
+                                "parkingPosition": "C6",
+                                "pierCode": "",
+                                "terminalCode": "B",
+                                "baggageBelt": [
+                                    "6"
+                                ],
+                                "arrivalPositionTerminal": "B",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "B",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "B",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-23T16:07:00.000+02:00",
+                            "scheduled": "2025-08-23T13:20:00.000+02:00",
+                            "latestPublished": "2025-08-23T16:07:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-23T16:07:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-08-23T16:05:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H40M",
+                    "departureDateTimeDifference": "PT2H58M",
+                    "arrivalDateTimeDifference": "PT2H47M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBLK",
+                        "typeCode": "E90",
+                        "typeName": "EMBRAER 190",
+                        "subFleetCodeId": "NA",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y100",
+                        "operationalConfiguration": "Y100",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "81"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0258"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR04"
+                        ],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT2H58M",
+                        "delayDurationArrival": "PT2H47M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "81",
+                                "delayDuration": "0258",
+                                "delayReasonCodePublic": "FSR04"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7646,
+            "flightScheduleDate": "2025-08-30",
+            "id": "20250830+AF+7646",
+            "haul": "MEDIUM",
+            "route": [
+                "AJA",
+                "BOD"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250830+AF+7598",
+                    "flightScheduleDate": "2025-08-30",
+                    "airlineCode": "AF",
+                    "flightNumber": "7598"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AJA",
+                            "name": "NAPOLEON BONAPARTE AIRPORT",
+                            "nameLangTranl": "Ajaccio Napoleon Bonaparte Airport",
+                            "city": {
+                                "code": "AJA",
+                                "name": "AJACCIO",
+                                "nameLangTranl": "Ajaccio - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.9242,
+                                "longitude": 8.8031
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-30T12:28:00.000+02:00",
+                            "scheduled": "2025-08-30T11:40:00.000+02:00",
+                            "latestPublished": "2025-08-30T12:28:00.000+02:00",
+                            "actualTakeOffTime": "2025-08-30T12:35:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-08-30T11:30:00.000+02:00",
+                            "gateCloseTime": "2025-08-30T11:45:00.000+02:00",
+                            "actualBoardingOpen": "2025-08-30T12:17:00.000+02:00",
+                            "firstPaxBoarding": "2025-08-30T11:46:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BOD",
+                            "name": "MERIGNAC AIRPORT",
+                            "nameLangTranl": "Bordeaux Mérignac Airport",
+                            "city": {
+                                "code": "BOD",
+                                "name": "BORDEAUX",
+                                "nameLangTranl": "Bordeaux",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8294,
+                                "longitude": -0.7144
+                            },
+                            "places": {
+                                "aerogareCode": "B",
+                                "gateNumber": [
+                                    "04"
+                                ],
+                                "parkingPosition": "C1",
+                                "pierCode": "",
+                                "terminalCode": "B",
+                                "baggageBelt": [
+                                    "5"
+                                ],
+                                "arrivalPositionTerminal": "B",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "B",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "B",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-30T13:57:00.000+02:00",
+                            "scheduled": "2025-08-30T13:20:00.000+02:00",
+                            "latestPublished": "2025-08-30T13:57:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-30T13:57:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-08-30T13:54:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H40M",
+                    "departureDateTimeDifference": "PT48M",
+                    "arrivalDateTimeDifference": "PT37M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHBXD",
+                        "typeCode": "E70",
+                        "typeName": "EMBRAER 170",
+                        "ownerAirlineCode": "A5",
+                        "ownerAirlineName": "HOP",
+                        "physicalPaxConfiguration": "Y076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y076",
+                        "cockpitCrewEmployer": "A5",
+                        "cabinCrewEmployer": "A5",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "93",
+                            "87"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0021",
+                            "0027"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT48M",
+                        "delayDurationArrival": "PT37M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "93",
+                                "delayDuration": "0021"
+                            },
+                            {
+                                "delayCode": "87",
+                                "delayDuration": "0027"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 9,
+        "pageNumber": 0,
+        "fullCount": 9,
+        "pageCount": 9,
+        "totalPages": 1
+    }
+}
