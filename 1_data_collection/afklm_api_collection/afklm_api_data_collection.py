@@ -30,15 +30,15 @@ import os
 import datetime
 from colorama import Fore, Back, Style
 import gzip
-import numpy as np
+
 
 ### Script parameters
 
 max_page_to_fetch = 1
-pageNumberStart = 1
+pageNumberStart = 0
 skip_previously_failed = False
 page_max = 100000 # Will automatically be adjusted after having retrived the fist page 
-
+refresh_stats = False
 time_delay_query = 1.5 # API limited to 1 call / s, 100 / day
 output_format = ["json","gzip"] # ["json","gzip"]
 
@@ -55,6 +55,10 @@ if  bool(re.search("afklm_api_collection",os.getcwd())) == False:
     os.chdir("1_data_collection/afklm_api_collection") 
 
 
+if  bool(re.search("DST_DE_Airlines$",os.getcwd())) == True:
+    os.chdir("1_data_collection/afklm_api_collection") 
+
+
 ### Creation of folders for retrieved data
 
 if not os.path.isdir("data"):
@@ -67,6 +71,71 @@ if not os.path.isdir("data"):
 ### Import query parameters
  
 df_call_parameters = pd.read_csv("df_call_parameters.csv").fillna('')
+
+
+
+### Refresh stats completion
+
+if refresh_stats:
+    
+    json_list_no_gzip = [val for val in json_list if 'gzip' not in val]
+    
+    df_json_list_no_gzip = pd.DataFrame({"index":range(0,len(json_list_no_gzip)), 'json_file':json_list_no_gzip})
+    
+    
+    json_param_list = [re.sub("afklm_api_data_collection_","",json) for json in json_list_no_gzip]
+    json_param_list = [re.sub("Z_.*","Z",json) for json in json_param_list]
+    json_param_list = [re.sub("_",":",json) for json in json_param_list]
+    
+    df_json_list_no_gzip['call_parameters'] = json_param_list
+    
+    
+    json_pages = [re.sub(".*_","",json) for json in json_list_no_gzip]
+    json_pages = [re.sub("\\..*","",json) for json in json_pages]
+    df_json_list_no_gzip['page'] = json_pages
+    
+    df_retrived_nb = df_json_list_no_gzip['call_parameters'].value_counts().rename_axis('call_parameters').reset_index(name='nb_of_pages_already_retrieved')
+    df_retrived_nb['nb_of_pages_already_retrieved'] = df_retrived_nb['nb_of_pages_already_retrieved'].astype('int')
+    
+    max_page_list = []
+    totalFlights_list = []
+    
+    df_single_file_list = df_json_list_no_gzip.groupby('call_parameters').head(1).copy(deep= True)
+    
+    for json_file in df_single_file_list['json_file'].values:
+        
+        
+         with open("data/" + json_file) as json_file:
+            data = json.load(json_file)
+            page_max =  data['page']['totalPages']
+            max_page_list.append(page_max)
+            totalFlights =  data['page']['fullCount']
+            totalFlights_list.append(totalFlights)
+            
+            
+
+
+    df_single_file_list['totalPages'] = max_page_list
+    df_single_file_list['totalPages'] = df_single_file_list['totalPages'].astype('int')
+    df_single_file_list['totalFlights'] = totalFlights_list
+    df_single_file_list['totalFlights'] = df_single_file_list['totalFlights'].astype('int')
+    
+    
+    
+    
+    df_call_parameters_updated = df_call_parameters.drop(['nb_of_pages_already_retrieved','totalPages','totalFlights','completion','response','message'],axis = 1,errors='ignore').merge(df_single_file_list.drop(['page','json_file','index'], axis = 1), how= 'inner').merge(df_retrived_nb, how= 'inner')
+    
+    df_call_parameters_updated['completion'] = (100 * df_call_parameters_updated['nb_of_pages_already_retrieved'].values  / df_call_parameters_updated['totalPages'].values ).round(0)
+    df_call_parameters_updated['completion'] = df_call_parameters_updated['completion'].astype('int').astype('str').replace(".0","")+"%"
+    
+    
+    df_call_parameters_updated['response'] = '<Response [200]>'
+    
+    pd.concat([df_call_parameters, df_call_parameters_updated]).drop_duplicates(keep='last',subset='call_parameters').fillna('').to_csv("df_call_parameters.csv")
+    df_call_parameters = pd.read_csv("df_call_parameters.csv").fillna('')
+
+
+
 
 
 ### Loading API keys to use
@@ -148,6 +217,16 @@ no_more_api_key = False
 df_call_parameters_new = df_call_parameters.copy(deep=True) # to update the df_call_parameters csv after each querry
 
 
+
+
+
+
+
+
+
+
+
+
 ### loop over the csv file containing the parameter list to send to the API
 
 for i in range(0, len(df_call_parameters)): 
@@ -202,7 +281,7 @@ for i in range(0, len(df_call_parameters)):
 
     ### Loop until reached desired number of pages or max nb of pages to fetch for the query
     
-    while (pageNumber <= page_max) & (pageNumber <= max_page_to_fetch): 
+    while (pageNumber + 1 <= page_max) & (pageNumber + 1 <= max_page_to_fetch): 
         
         
 
@@ -214,6 +293,9 @@ for i in range(0, len(df_call_parameters)):
         
         if (json_to_make in json_list)| (json_to_make in [file + ".gzip" for file in json_list] ) : # skip current query if corresponding json already present
             print(Fore.BLUE +f"Page {pageNumber} : skipped because already retrieved")
+            
+            
+            
 
             pageNumber = pageNumber + 1
             continue
@@ -252,7 +334,7 @@ for i in range(0, len(df_call_parameters)):
             data = response.json()
             
             page_max =  data['page']['totalPages'] # Update total number of pages
-            
+            fullCount =  data['page']['fullCount'] 
             
             if "json" in output_format:
                 with open(f"data/afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json", 'w', encoding='utf-8') as f:
@@ -272,12 +354,14 @@ for i in range(0, len(df_call_parameters)):
                 
             if int(pageNumber) > df_subset['nb_of_pages_already_retrieved'].item() : # Check info already present in df_call_parameters.csv  
 
-                df_subset.loc[0,['nb_of_pages_already_retrieved']] =  pageNumber
+                df_subset.loc[0,['nb_of_pages_already_retrieved']] =  pageNumber + 1
                 
             df_subset.loc[0,['response']] = str(response)
-            df_subset.loc[0,['totalPages']] = page_max
-            df_subset.loc[0,['nb_of_pages_already_retrieved']] = pageNumber
-            df_subset.loc[0,['completion']] = f"{100*pageNumber/page_max:.2f}%"
+            df_subset.loc[0,['totalPages']] = f"{(page_max):.0f}" 
+            df_subset.loc[0,['totalFlights']] = f"{(fullCount):.0f}" 
+            df_subset.loc[0,['nb_of_pages_already_retrieved']] = f"{(pageNumber+1):.0f}"
+            df_subset.loc[0,['completion']] = f"{100*(pageNumber+1)/page_max:.0f}%"
+            df_subset.loc[0,['message']] = ""
             
             
             df_call_parameters_new = pd.concat([df_call_parameters_new,df_subset],ignore_index=True)
@@ -320,13 +404,13 @@ for i in range(0, len(df_call_parameters)):
         break
     
     
-### Update with new dates    
+### Update with new dates when all pages of current file retrived or failed
     
 df_call_parameters = pd.read_csv("df_call_parameters.csv").fillna('')
 
 df_call_parameters_date_update = df_call_parameters.query('response == "<Response [200]>"').sort_values(['endRange'],ascending=False).groupby('call_parameters').head(1)
     
-if len(df_call_parameters_date_update.query('completion != "100%"')) > 0:
+if len(df_call_parameters_date_update.query('completion != "100%"')) == 0:
 
     df_call_parameters_date_update['startRange']= df_call_parameters_date_update['endRange'].map(lambda x: ((datetime.datetime.fromisoformat(x) +datetime.timedelta(0,1)).isoformat(timespec='seconds') + "Z").replace("+00:00","") )
     df_call_parameters_date_update['endRange']= datetime.datetime.now().isoformat(timespec='seconds') + "Z"
