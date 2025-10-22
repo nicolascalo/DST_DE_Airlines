@@ -34,7 +34,7 @@ import gzip
 
 ### Script parameters
 
-max_page_to_fetch = 1
+max_page_to_fetch = 2000
 pageNumberStart = 0
 skip_previously_failed = False
 page_max = 100000 # Will automatically be adjusted after having retrived the fist page 
@@ -42,21 +42,18 @@ refresh_stats = False
 time_delay_query = 1.5 # API limited to 1 call / s, 100 / day
 output_format = ["json","gzip"] # ["json","gzip"]
 
-### List of already retrieved data
-
-json_list = os.listdir("data")
-
 
 
 
 ### Setting up working directory
 
-if  bool(re.search("afklm_api_collection",os.getcwd())) == False:
-    os.chdir("1_data_collection/afklm_api_collection") 
-
 
 if  bool(re.search("DST_DE_Airlines$",os.getcwd())) == True:
     os.chdir("1_data_collection/afklm_api_collection") 
+
+
+if  bool(re.search("1_data_collection$",os.getcwd())) == True:
+    os.chdir("afklm_api_collection") 
 
 
 ### Creation of folders for retrieved data
@@ -64,6 +61,10 @@ if  bool(re.search("DST_DE_Airlines$",os.getcwd())) == True:
 if not os.path.isdir("data"):
     os.mkdir("data")
 
+
+### List of already retrieved data
+
+json_list = os.listdir("data")
 
 
 
@@ -131,7 +132,7 @@ if refresh_stats:
     
     df_call_parameters_updated['response'] = '<Response [200]>'
     
-    pd.concat([df_call_parameters, df_call_parameters_updated]).drop_duplicates(keep='last',subset='call_parameters').fillna('').to_csv("df_call_parameters.csv")
+    pd.concat([df_call_parameters, df_call_parameters_updated]).drop_duplicates(keep='last',subset='call_parameters').fillna('').to_csv("df_call_parameters.csv", index = 0)
     df_call_parameters = pd.read_csv("df_call_parameters.csv").fillna('')
 
 
@@ -257,7 +258,7 @@ for i in range(0, len(df_call_parameters)):
 
     ### Cleaning of empty parameter calls
     
-    non_parameters = ["call_parameters",'response', 'message', 'timestamp', 'nb_of_pages_already_retrieved', 'totalPages', 'completion']
+    non_parameters = ["call_parameters",'response', 'message', 'timestamp', 'nb_of_pages_already_retrieved', 'totalPages', 'completion','totalFlights']
     
     dict_call_parameters = df_subset.drop(non_parameters,axis=1).to_dict(orient="list")
 
@@ -352,14 +353,17 @@ for i in range(0, len(df_call_parameters)):
 
                 df_subset.loc[0,['nb_of_pages_already_retrieved']] = 0
                 
-            if int(pageNumber) > df_subset['nb_of_pages_already_retrieved'].item() : # Check info already present in df_call_parameters.csv  
+            if int(pageNumber +1) > int(df_subset['nb_of_pages_already_retrieved'].item()) : # Check info already present in df_call_parameters.csv  
 
-                df_subset.loc[0,['nb_of_pages_already_retrieved']] =  pageNumber + 1
+                
+                df_subset.loc[0,['nb_of_pages_already_retrieved']] = f"{(pageNumber+1):.0f}"
+                
+                
                 
             df_subset.loc[0,['response']] = str(response)
             df_subset.loc[0,['totalPages']] = f"{(page_max):.0f}" 
             df_subset.loc[0,['totalFlights']] = f"{(fullCount):.0f}" 
-            df_subset.loc[0,['nb_of_pages_already_retrieved']] = f"{(pageNumber+1):.0f}"
+            
             df_subset.loc[0,['completion']] = f"{100*(pageNumber+1)/page_max:.0f}%"
             df_subset.loc[0,['message']] = ""
             

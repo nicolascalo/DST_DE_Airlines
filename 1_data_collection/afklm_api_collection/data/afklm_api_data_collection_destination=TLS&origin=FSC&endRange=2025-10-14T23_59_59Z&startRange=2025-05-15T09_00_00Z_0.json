@@ -1,0 +1,1451 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 726,
+            "flightScheduleDate": "2025-07-05",
+            "id": "20250705+XK+0726",
+            "haul": "MEDIUM",
+            "route": [
+                "FSC",
+                "TLS"
+            ],
+            "airline": {
+                "code": "XK",
+                "name": "AIR CORSICA"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4698,
+                    "flightScheduleDate": "2025-07-05",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "boardingPier": "",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-05T07:00:00.000+02:00",
+                            "latestPublished": "2025-07-05T07:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TLS",
+                            "name": "BLAGNAC AIRPORT",
+                            "nameLangTranl": "Toulouse Blagnac Airport",
+                            "city": {
+                                "code": "TLS",
+                                "name": "TOULOUSE",
+                                "nameLangTranl": "Toulouse",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 43.6303,
+                                "longitude": 1.365
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "02"
+                                ],
+                                "parkingPosition": "E40",
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    "2"
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-05T08:32:00.000+02:00",
+                            "scheduled": "2025-07-05T08:20:00.000+02:00",
+                            "latestPublished": "2025-07-05T08:32:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-05T08:32:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-07-05T08:29:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "arrivalDateTimeDifference": "PT12M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHIXB",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "5O",
+                        "ownerAirlineName": "ASL AIRLINES FRANCE",
+                        "physicalPaxConfiguration": "Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y186"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "81"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "11"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT12M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "81",
+                                "delayDuration": "11"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 726,
+            "flightScheduleDate": "2025-07-12",
+            "id": "20250712+XK+0726",
+            "haul": "MEDIUM",
+            "route": [
+                "FSC",
+                "TLS"
+            ],
+            "airline": {
+                "code": "XK",
+                "name": "AIR CORSICA"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4698,
+                    "flightScheduleDate": "2025-07-12",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "boardingPier": "",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-12T07:00:00.000+02:00",
+                            "latestPublished": "2025-07-12T07:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TLS",
+                            "name": "BLAGNAC AIRPORT",
+                            "nameLangTranl": "Toulouse Blagnac Airport",
+                            "city": {
+                                "code": "TLS",
+                                "name": "TOULOUSE",
+                                "nameLangTranl": "Toulouse",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 43.6303,
+                                "longitude": 1.365
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "02"
+                                ],
+                                "parkingPosition": "E40",
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    "2"
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-12T08:21:00.000+02:00",
+                            "scheduled": "2025-07-12T08:20:00.000+02:00",
+                            "latestPublished": "2025-07-12T08:21:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-12T08:21:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-07-12T08:19:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "arrivalDateTimeDifference": "PT1M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHIXB",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "5O",
+                        "ownerAirlineName": "ASL AIRLINES FRANCE",
+                        "physicalPaxConfiguration": "Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y186"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 726,
+            "flightScheduleDate": "2025-07-19",
+            "id": "20250719+XK+0726",
+            "haul": "MEDIUM",
+            "route": [
+                "FSC",
+                "TLS"
+            ],
+            "airline": {
+                "code": "XK",
+                "name": "AIR CORSICA"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4698,
+                    "flightScheduleDate": "2025-07-19",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "boardingPier": "",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-19T07:00:00.000+02:00",
+                            "latestPublished": "2025-07-19T07:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TLS",
+                            "name": "BLAGNAC AIRPORT",
+                            "nameLangTranl": "Toulouse Blagnac Airport",
+                            "city": {
+                                "code": "TLS",
+                                "name": "TOULOUSE",
+                                "nameLangTranl": "Toulouse",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 43.6303,
+                                "longitude": 1.365
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "02"
+                                ],
+                                "parkingPosition": "E40",
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    "3"
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-19T08:19:00.000+02:00",
+                            "scheduled": "2025-07-19T08:20:00.000+02:00",
+                            "latestPublished": "2025-07-19T08:19:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-19T08:19:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-07-19T08:14:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "arrivalDateTimeDifference": "PT-1M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHIXB",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "5O",
+                        "ownerAirlineName": "ASL AIRLINES FRANCE",
+                        "physicalPaxConfiguration": "Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y186"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 726,
+            "flightScheduleDate": "2025-07-26",
+            "id": "20250726+XK+0726",
+            "haul": "MEDIUM",
+            "route": [
+                "FSC",
+                "TLS"
+            ],
+            "airline": {
+                "code": "XK",
+                "name": "AIR CORSICA"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4698,
+                    "flightScheduleDate": "2025-07-26",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "boardingPier": "",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-07-26T07:00:00.000+02:00",
+                            "latestPublished": "2025-07-26T07:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TLS",
+                            "name": "BLAGNAC AIRPORT",
+                            "nameLangTranl": "Toulouse Blagnac Airport",
+                            "city": {
+                                "code": "TLS",
+                                "name": "TOULOUSE",
+                                "nameLangTranl": "Toulouse",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 43.6303,
+                                "longitude": 1.365
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "02"
+                                ],
+                                "parkingPosition": "E40",
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    "2"
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-07-26T08:22:00.000+02:00",
+                            "scheduled": "2025-07-26T08:20:00.000+02:00",
+                            "latestPublished": "2025-07-26T08:22:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-07-26T08:22:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-07-26T08:17:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "arrivalDateTimeDifference": "PT2M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHIXA",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "5O",
+                        "ownerAirlineName": "ASL AIRLINES FRANCE",
+                        "physicalPaxConfiguration": "Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y186"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "81"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "5"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "81",
+                                "delayDuration": "5"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 726,
+            "flightScheduleDate": "2025-08-02",
+            "id": "20250802+XK+0726",
+            "haul": "MEDIUM",
+            "route": [
+                "FSC",
+                "TLS"
+            ],
+            "airline": {
+                "code": "XK",
+                "name": "AIR CORSICA"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4698,
+                    "flightScheduleDate": "2025-08-02",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "boardingPier": "",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-02T07:00:00.000+02:00",
+                            "latestPublished": "2025-08-02T07:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TLS",
+                            "name": "BLAGNAC AIRPORT",
+                            "nameLangTranl": "Toulouse Blagnac Airport",
+                            "city": {
+                                "code": "TLS",
+                                "name": "TOULOUSE",
+                                "nameLangTranl": "Toulouse",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 43.6303,
+                                "longitude": 1.365
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "02"
+                                ],
+                                "parkingPosition": "E40",
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    "2"
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-02T08:16:00.000+02:00",
+                            "scheduled": "2025-08-02T08:20:00.000+02:00",
+                            "latestPublished": "2025-08-02T08:16:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-02T08:16:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-08-02T08:13:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "arrivalDateTimeDifference": "PT-4M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHIXA",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "5O",
+                        "ownerAirlineName": "ASL AIRLINES FRANCE",
+                        "physicalPaxConfiguration": "Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y186"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 726,
+            "flightScheduleDate": "2025-08-09",
+            "id": "20250809+XK+0726",
+            "haul": "MEDIUM",
+            "route": [
+                "FSC",
+                "TLS"
+            ],
+            "airline": {
+                "code": "XK",
+                "name": "AIR CORSICA"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4698,
+                    "flightScheduleDate": "2025-08-09",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "boardingPier": "",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-09T07:00:00.000+02:00",
+                            "latestPublished": "2025-08-09T07:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TLS",
+                            "name": "BLAGNAC AIRPORT",
+                            "nameLangTranl": "Toulouse Blagnac Airport",
+                            "city": {
+                                "code": "TLS",
+                                "name": "TOULOUSE",
+                                "nameLangTranl": "Toulouse",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 43.6303,
+                                "longitude": 1.365
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "02"
+                                ],
+                                "parkingPosition": "E40",
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    "2"
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-09T08:11:00.000+02:00",
+                            "scheduled": "2025-08-09T08:20:00.000+02:00",
+                            "latestPublished": "2025-08-09T08:11:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-09T08:11:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-08-09T08:07:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "arrivalDateTimeDifference": "PT-9M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHIXA",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "5O",
+                        "ownerAirlineName": "ASL AIRLINES FRANCE",
+                        "physicalPaxConfiguration": "Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y186"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 726,
+            "flightScheduleDate": "2025-08-16",
+            "id": "20250816+XK+0726",
+            "haul": "MEDIUM",
+            "route": [
+                "FSC",
+                "TLS"
+            ],
+            "airline": {
+                "code": "XK",
+                "name": "AIR CORSICA"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4698,
+                    "flightScheduleDate": "2025-08-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "boardingPier": "",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-16T07:00:00.000+02:00",
+                            "latestPublished": "2025-08-16T07:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TLS",
+                            "name": "BLAGNAC AIRPORT",
+                            "nameLangTranl": "Toulouse Blagnac Airport",
+                            "city": {
+                                "code": "TLS",
+                                "name": "TOULOUSE",
+                                "nameLangTranl": "Toulouse",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 43.6303,
+                                "longitude": 1.365
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "04"
+                                ],
+                                "parkingPosition": "U12",
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    "4"
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-16T08:23:00.000+02:00",
+                            "scheduled": "2025-08-16T08:20:00.000+02:00",
+                            "latestPublished": "2025-08-16T08:23:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-16T08:23:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-08-16T08:19:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "arrivalDateTimeDifference": "PT3M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHIXA",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "5O",
+                        "ownerAirlineName": "ASL AIRLINES FRANCE",
+                        "physicalPaxConfiguration": "Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y186"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "89"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "10"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "89",
+                                "delayDuration": "10"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 726,
+            "flightScheduleDate": "2025-08-23",
+            "id": "20250823+XK+0726",
+            "haul": "MEDIUM",
+            "route": [
+                "FSC",
+                "TLS"
+            ],
+            "airline": {
+                "code": "XK",
+                "name": "AIR CORSICA"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4698,
+                    "flightScheduleDate": "2025-08-23",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250822+XK+0755",
+                    "flightScheduleDate": "2025-08-22",
+                    "airlineCode": "XK",
+                    "flightNumber": "0755"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "boardingPier": "",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-23T07:00:00.000+02:00",
+                            "latestPublished": "2025-08-23T07:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TLS",
+                            "name": "BLAGNAC AIRPORT",
+                            "nameLangTranl": "Toulouse Blagnac Airport",
+                            "city": {
+                                "code": "TLS",
+                                "name": "TOULOUSE",
+                                "nameLangTranl": "Toulouse",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 43.6303,
+                                "longitude": 1.365
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "02"
+                                ],
+                                "parkingPosition": "E42",
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    "3"
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-23T08:19:00.000+02:00",
+                            "scheduled": "2025-08-23T08:20:00.000+02:00",
+                            "latestPublished": "2025-08-23T08:19:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-23T08:19:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-08-23T08:13:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "arrivalDateTimeDifference": "PT-1M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHIXA",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "5O",
+                        "ownerAirlineName": "ASL AIRLINES FRANCE",
+                        "physicalPaxConfiguration": "Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y186"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "81"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "3"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "81",
+                                "delayDuration": "3"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 726,
+            "flightScheduleDate": "2025-08-30",
+            "id": "20250830+XK+0726",
+            "haul": "MEDIUM",
+            "route": [
+                "FSC",
+                "TLS"
+            ],
+            "airline": {
+                "code": "XK",
+                "name": "AIR CORSICA"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4698,
+                    "flightScheduleDate": "2025-08-30",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20250829+XK+0755",
+                    "flightScheduleDate": "2025-08-29",
+                    "airlineCode": "XK",
+                    "flightNumber": "0755"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "FSC",
+                            "name": "SUD CORSE AIRPORT",
+                            "nameLangTranl": "Figari Sud Corse Airport",
+                            "city": {
+                                "code": "FSC",
+                                "name": "FIGARI",
+                                "nameLangTranl": "Figari - Corsica",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.5,
+                                "longitude": 9.1
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "boardingPier": "",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-30T07:00:00.000+02:00",
+                            "latestPublished": "2025-08-30T07:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TLS",
+                            "name": "BLAGNAC AIRPORT",
+                            "nameLangTranl": "Toulouse Blagnac Airport",
+                            "city": {
+                                "code": "TLS",
+                                "name": "TOULOUSE",
+                                "nameLangTranl": "Toulouse",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 43.6303,
+                                "longitude": 1.365
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "02"
+                                ],
+                                "parkingPosition": "E30",
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    "3"
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "parkingPositionCustomStatus": "M",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-30T08:37:00.000+02:00",
+                            "scheduled": "2025-08-30T08:20:00.000+02:00",
+                            "latestPublished": "2025-08-30T08:37:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-30T08:37:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-08-30T08:32:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "arrivalDateTimeDifference": "PT17M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHIXA",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "5O",
+                        "ownerAirlineName": "ASL AIRLINES FRANCE",
+                        "physicalPaxConfiguration": "Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y186"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "81"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "10"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT17M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "81",
+                                "delayDuration": "10"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 9,
+        "pageNumber": 0,
+        "fullCount": 9,
+        "pageCount": 9,
+        "totalPages": 1
+    }
+}

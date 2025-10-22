@@ -1,0 +1,1500 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 1273,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+KL+1273",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "CPH"
+            ],
+            "airline": {
+                "code": "KL",
+                "name": "KLM ROYAL DUTCH AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6311,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3769,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AZ",
+                        "name": "ITA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7630,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "CZ",
+                        "name": "CHINA SOUTHERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9258,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9377,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MF",
+                        "name": "XIAMEN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5639,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MH",
+                        "name": "MALAYSIA AIRLINES BERHAD"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6607,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SK",
+                        "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6809,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SV",
+                        "name": "SAUDI ARABIAN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3225,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "6E",
+                        "name": "INTERGLOBE AVIATION LTD. DBA INDIGO"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "onwardFlightData": {
+                    "id": "20251014+KL+1274",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "KL",
+                    "flightNumber": "1274"
+                },
+                "previousFlightData": {
+                    "id": "20251014+KL+1198",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "KL",
+                    "flightNumber": "1198"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B07"
+                                ],
+                                "parkingPosition": "A54",
+                                "pierCode": "B",
+                                "terminalCode": "01",
+                                "boardingPier": "B",
+                                "checkInZone": [
+                                    "06",
+                                    "07",
+                                    "08"
+                                ],
+                                "boardingContactType": "L",
+                                "parkingPositionType": "L",
+                                "paxDepartureGate": [
+                                    "B07"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T14:28:00.000+02:00",
+                            "scheduled": "2025-10-14T14:25:00.000+02:00",
+                            "latestPublished": "2025-10-14T14:28:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T14:37:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T13:55:00.000+02:00",
+                            "gateCloseTime": "2025-10-14T14:10:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-14T13:47:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CPH",
+                            "name": "KASTRUP AIRPORT",
+                            "nameLangTranl": "Copenhagen Airport",
+                            "city": {
+                                "code": "CPH",
+                                "name": "COPENHAGEN",
+                                "nameLangTranl": "Copenhagen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DK",
+                                    "name": "DENMARK",
+                                    "nameLangTranl": "Denmark",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 55.6081,
+                                "longitude": 12.6333
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T15:47:00.000+02:00",
+                            "scheduled": "2025-10-14T15:45:00.000+02:00",
+                            "latestPublished": "2025-10-14T15:47:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T15:47:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T15:41:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "departureDateTimeDifference": "PT3M",
+                    "arrivalDateTimeDifference": "PT2M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHEZL",
+                        "typeCode": "E90",
+                        "typeName": "EMBRAER 190",
+                        "subFleetCodeId": "E",
+                        "ownerAirlineCode": "WA",
+                        "ownerAirlineName": "KLM CITYHOPPER",
+                        "physicalPaxConfiguration": "C036M064",
+                        "operationalConfiguration": "C004M096",
+                        "cockpitCrewEmployer": "WA",
+                        "cabinCrewEmployer": "WA",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "89"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0003"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR05"
+                        ],
+                        "delayReasonPublicLangTransl": [
+                            "This flight was delayed due to restrictions from Air Traffic Control at the airport of Amsterdam (AMS)."
+                        ],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "89",
+                                "delayDuration": "0003",
+                                "delayReasonCodePublic": "FSR05",
+                                "delayReasonPublicShort": "Restrictions from Air Traffic Control",
+                                "delayReasonPublicLong": "This flight was delayed due to restrictions from Air Traffic Control at the airport of Amsterdam (AMS)."
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 548,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+SK+0548",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "CPH"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2850,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+SK+0547",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "SK",
+                    "flightNumber": "0547"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C10"
+                                ],
+                                "parkingPosition": "C10",
+                                "pierCode": "C",
+                                "boardingPier": "C",
+                                "checkInZone": [
+                                    "01",
+                                    "02"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T14:51:00.000+02:00",
+                            "scheduled": "2025-10-14T14:50:00.000+02:00",
+                            "latestPublished": "2025-10-14T14:51:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T15:01:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CPH",
+                            "name": "KASTRUP AIRPORT",
+                            "nameLangTranl": "Copenhagen Airport",
+                            "city": {
+                                "code": "CPH",
+                                "name": "COPENHAGEN",
+                                "nameLangTranl": "Copenhagen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DK",
+                                    "name": "DENMARK",
+                                    "nameLangTranl": "Denmark",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 55.6081,
+                                "longitude": 12.6333
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A11"
+                                ],
+                                "terminalCode": "3",
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T16:07:00.000+02:00",
+                            "scheduled": "2025-10-14T16:10:00.000+02:00",
+                            "latestPublished": "2025-10-14T16:07:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T16:07:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T16:01:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "departureDateTimeDifference": "PT1M",
+                    "arrivalDateTimeDifference": "PT-3M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SERUB",
+                        "typeCode": "32S",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1275,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+KL+1275",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "CPH"
+            ],
+            "airline": {
+                "code": "KL",
+                "name": "KLM ROYAL DUTCH AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6312,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7631,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "CZ",
+                        "name": "CHINA SOUTHERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9212,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9472,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "GA",
+                        "name": "GARUDA INDONESIA"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5687,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "G3",
+                        "name": "GOL LINHAS AEREAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1129,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KQ",
+                        "name": "KENYA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9379,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MF",
+                        "name": "XIAMEN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6609,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SK",
+                        "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6341,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SV",
+                        "name": "SAUDI ARABIAN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3226,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "6E",
+                        "name": "INTERGLOBE AVIATION LTD. DBA INDIGO"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "onwardFlightData": {
+                    "id": "20251014+KL+1276",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "KL",
+                    "flightNumber": "1276"
+                },
+                "previousFlightData": {
+                    "id": "20251014+KL+1598",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "KL",
+                    "flightNumber": "1598"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D74"
+                                ],
+                                "parkingPosition": "D44",
+                                "pierCode": "D",
+                                "terminalCode": "01",
+                                "boardingPier": "D",
+                                "checkInZone": [
+                                    "06",
+                                    "07",
+                                    "08"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": [
+                                    "D74"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T16:52:00.000+02:00",
+                            "scheduled": "2025-10-14T16:55:00.000+02:00",
+                            "latestPublished": "2025-10-14T16:52:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T17:06:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T16:27:00.000+02:00",
+                            "gateCloseTime": "2025-10-14T16:40:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-14T16:17:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CPH",
+                            "name": "KASTRUP AIRPORT",
+                            "nameLangTranl": "Copenhagen Airport",
+                            "city": {
+                                "code": "CPH",
+                                "name": "COPENHAGEN",
+                                "nameLangTranl": "Copenhagen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DK",
+                                    "name": "DENMARK",
+                                    "nameLangTranl": "Denmark",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 55.6081,
+                                "longitude": 12.6333
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T18:12:00.000+02:00",
+                            "scheduled": "2025-10-14T18:15:00.000+02:00",
+                            "latestPublished": "2025-10-14T18:12:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T18:12:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T18:05:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "departureDateTimeDifference": "PT-3M",
+                    "arrivalDateTimeDifference": "PT-3M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHBGG",
+                        "typeCode": "73W",
+                        "typeName": "BOEING 737-700 (WINGLETS) PASSENGER/BBJ1",
+                        "subFleetCodeId": "E",
+                        "ownerAirlineCode": "KL",
+                        "ownerAirlineName": "KLM ROYAL DUTCH AIRLINES",
+                        "physicalPaxConfiguration": "C036M106",
+                        "operationalConfiguration": "C008M130",
+                        "cockpitCrewEmployer": "KL",
+                        "cabinCrewEmployer": "KL",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1550,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+SK+1550",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "CPH"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+SK+1549",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "SK",
+                    "flightNumber": "1549"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C06"
+                                ],
+                                "parkingPosition": "C06",
+                                "pierCode": "C",
+                                "terminalCode": "1A",
+                                "boardingPier": "C",
+                                "checkInZone": [
+                                    "02",
+                                    "03",
+                                    "01",
+                                    "02",
+                                    "03",
+                                    "01"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T17:39:00.000+02:00",
+                            "scheduled": "2025-10-14T17:40:00.000+02:00",
+                            "latestPublished": "2025-10-14T17:39:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T17:48:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CPH",
+                            "name": "KASTRUP AIRPORT",
+                            "nameLangTranl": "Copenhagen Airport",
+                            "city": {
+                                "code": "CPH",
+                                "name": "COPENHAGEN",
+                                "nameLangTranl": "Copenhagen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DK",
+                                    "name": "DENMARK",
+                                    "nameLangTranl": "Denmark",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 55.6081,
+                                "longitude": 12.6333
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T17:40:00.000+02:00",
+                            "latestPublished": "2025-10-14T17:40:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T17:40:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT-1M",
+                    "timeToArrival": "PT-185H-21M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "OYKBO",
+                        "typeCode": "319",
+                        "typeName": "AIRBUS A319",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "Y130",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 3541,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+D8+3541",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "CPH"
+            ],
+            "airline": {
+                "code": "D8",
+                "name": "NORWEGIAN AIR INTERNATIONAL LTD."
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+D8+3540",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "D8",
+                    "flightNumber": "3540"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D60"
+                                ],
+                                "parkingPosition": "D02",
+                                "pierCode": "D",
+                                "terminalCode": "03",
+                                "boardingPier": "D",
+                                "checkInZone": [
+                                    "27"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T18:31:00.000+02:00",
+                            "scheduled": "2025-10-14T18:35:00.000+02:00",
+                            "latestPublished": "2025-10-14T18:31:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T18:40:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CPH",
+                            "name": "KASTRUP AIRPORT",
+                            "nameLangTranl": "Copenhagen Airport",
+                            "city": {
+                                "code": "CPH",
+                                "name": "COPENHAGEN",
+                                "nameLangTranl": "Copenhagen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DK",
+                                    "name": "DENMARK",
+                                    "nameLangTranl": "Denmark",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 55.6081,
+                                "longitude": 12.6333
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T18:35:00.000+02:00",
+                            "latestPublished": "2025-10-14T18:35:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T18:35:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT-4M",
+                    "timeToArrival": "PT-184H-26M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SERPM",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1277,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+KL+1277",
+            "route": [
+                "AMS",
+                "CPH"
+            ],
+            "airline": {
+                "code": "KL",
+                "name": "KLM ROYAL DUTCH AIRLINES"
+            },
+            "flightRelations": {
+                "onwardFlightData": {
+                    "id": "20251014+KL+1278",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "KL",
+                    "flightNumber": "1278"
+                }
+            },
+            "flightStatusPublic": "CANCELLED",
+            "flightStatusPublicLangTransl": "Cancelled",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T18:50:00.000+02:00",
+                            "latestPublished": "2025-10-14T18:50:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CPH",
+                            "name": "KASTRUP AIRPORT",
+                            "nameLangTranl": "Copenhagen Airport",
+                            "city": {
+                                "code": "CPH",
+                                "name": "COPENHAGEN",
+                                "nameLangTranl": "Copenhagen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DK",
+                                    "name": "DENMARK",
+                                    "nameLangTranl": "Denmark",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 55.6081,
+                                "longitude": 12.6333
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T20:10:00.000+02:00",
+                            "latestPublished": "2025-10-14T20:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T20:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "E7W",
+                        "typeName": "EMBRAER 175 (ENHANCED WINGLETS)",
+                        "subFleetCodeId": "E",
+                        "ownerAirlineCode": "WA",
+                        "ownerAirlineName": "KLM CITYHOPPER",
+                        "physicalPaxConfiguration": "C024M064",
+                        "operationalConfiguration": "C020M068",
+                        "cockpitCrewEmployer": "WA",
+                        "cabinCrewEmployer": "WA"
+                    },
+                    "irregularity": {
+                        "cancelled": "Y",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": [],
+                        "cancellationReasonCodePublic": "FSCR06",
+                        "cancellationReasonPublicShort": "Flight schedule changes",
+                        "cancellationReasonPublicLong": "This flight has been cancelled because of some unforeseen changes to the flight schedule."
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 554,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+SK+0554",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "CPH"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+SK+0553",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "SK",
+                    "flightNumber": "0553"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C12"
+                                ],
+                                "parkingPosition": "C12",
+                                "pierCode": "C",
+                                "terminalCode": "1A",
+                                "boardingPier": "C",
+                                "checkInZone": [
+                                    "01",
+                                    "02"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T20:13:00.000+02:00",
+                            "scheduled": "2025-10-14T20:20:00.000+02:00",
+                            "latestPublished": "2025-10-14T20:13:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T20:29:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CPH",
+                            "name": "KASTRUP AIRPORT",
+                            "nameLangTranl": "Copenhagen Airport",
+                            "city": {
+                                "code": "CPH",
+                                "name": "COPENHAGEN",
+                                "nameLangTranl": "Copenhagen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DK",
+                                    "name": "DENMARK",
+                                    "nameLangTranl": "Denmark",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 55.6081,
+                                "longitude": 12.6333
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T20:20:00.000+02:00",
+                            "latestPublished": "2025-10-14T20:20:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T20:20:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT-7M",
+                    "timeToArrival": "PT-182H-41M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "EISIS",
+                        "typeCode": "32N",
+                        "typeName": "AIRBUS A320NEO",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1279,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+KL+1279",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "CPH"
+            ],
+            "airline": {
+                "code": "KL",
+                "name": "KLM ROYAL DUTCH AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6314,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7637,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "CZ",
+                        "name": "CHINA SOUTHERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6443,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KE",
+                        "name": "KOREAN AIR LINES CO. LTD."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1139,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KQ",
+                        "name": "KENYA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9383,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MF",
+                        "name": "XIAMEN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1797,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MU",
+                        "name": "CHINA EASTERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6613,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SK",
+                        "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6313,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SV",
+                        "name": "SAUDI ARABIAN AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "onwardFlightData": {
+                    "id": "20251015+KL+1266",
+                    "flightScheduleDate": "2025-10-15",
+                    "airlineCode": "KL",
+                    "flightNumber": "1266"
+                },
+                "previousFlightData": {
+                    "id": "20251014+KL+1576",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "KL",
+                    "flightNumber": "1576"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C08"
+                                ],
+                                "parkingPosition": "C08",
+                                "pierCode": "C",
+                                "terminalCode": "01",
+                                "boardingPier": "C",
+                                "checkInZone": [
+                                    "06",
+                                    "07",
+                                    "08"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": [
+                                    "C08"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T21:09:00.000+02:00",
+                            "scheduled": "2025-10-14T21:05:00.000+02:00",
+                            "latestPublished": "2025-10-14T21:09:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T21:21:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T20:37:00.000+02:00",
+                            "gateCloseTime": "2025-10-14T20:50:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-14T20:31:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CPH",
+                            "name": "KASTRUP AIRPORT",
+                            "nameLangTranl": "Copenhagen Airport",
+                            "city": {
+                                "code": "CPH",
+                                "name": "COPENHAGEN",
+                                "nameLangTranl": "Copenhagen",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DK",
+                                    "name": "DENMARK",
+                                    "nameLangTranl": "Denmark",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 55.6081,
+                                "longitude": 12.6333
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T22:30:00.000+02:00",
+                            "scheduled": "2025-10-14T22:30:00.000+02:00",
+                            "latestPublished": "2025-10-14T22:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T22:30:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T22:24:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H25M",
+                    "departureDateTimeDifference": "PT4M",
+                    "arrivalDateTimeDifference": "PT0S",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHBCG",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "subFleetCodeId": "G",
+                        "ownerAirlineCode": "KL",
+                        "ownerAirlineName": "KLM ROYAL DUTCH AIRLINES",
+                        "physicalPaxConfiguration": "C036M150",
+                        "operationalConfiguration": "C012M168",
+                        "cockpitCrewEmployer": "KL",
+                        "cabinCrewEmployer": "KL",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "81"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0004"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR06"
+                        ],
+                        "delayReasonPublicLangTransl": [
+                            "This flight was delayed due to restrictions from Air Traffic Control at the airport of Amsterdam (AMS)."
+                        ],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "81",
+                                "delayDuration": "0004",
+                                "delayReasonCodePublic": "FSR06",
+                                "delayReasonPublicShort": "Restrictions from Air Traffic Control",
+                                "delayReasonPublicLong": "This flight was delayed due to restrictions from Air Traffic Control at the airport of Amsterdam (AMS)."
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 8,
+        "pageNumber": 20,
+        "fullCount": 2008,
+        "pageCount": 8,
+        "totalPages": 21
+    }
+}

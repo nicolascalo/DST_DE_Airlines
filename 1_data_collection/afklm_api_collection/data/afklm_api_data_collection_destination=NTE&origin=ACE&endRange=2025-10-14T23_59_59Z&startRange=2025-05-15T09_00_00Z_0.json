@@ -1,0 +1,801 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 704,
+            "flightScheduleDate": "2025-08-12",
+            "id": "20250812+E4+0704",
+            "haul": "MEDIUM",
+            "route": [
+                "ACE",
+                "NTE",
+                "CDG"
+            ],
+            "airline": {
+                "code": "E4",
+                "name": "ENTER AIR SPOLKA Z.O.O."
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ACE",
+                            "name": "LANZAROTE AIRPORT",
+                            "nameLangTranl": "Lanzarote",
+                            "city": {
+                                "code": "ACE",
+                                "name": "LANZAROTE",
+                                "nameLangTranl": "Lanzarote - Canary Islands",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 28.9375,
+                                "longitude": -13.6036
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-12T11:30:00.000+01:00",
+                            "latestPublished": "2025-08-12T11:30:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "NTE",
+                            "name": "NANTES ATLANTIQUE AIRPORT",
+                            "nameLangTranl": "Nantes Atlantique Airport",
+                            "city": {
+                                "code": "NTE",
+                                "name": "NANTES",
+                                "nameLangTranl": "Nantes",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.1583,
+                                "longitude": -1.6097
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-12T15:05:00.000+02:00",
+                            "latestPublished": "2025-08-12T15:05:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-12T15:05:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "C",
+                    "serviceTypeName": "Passenger Only",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H35M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "SPESA",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "E4",
+                        "ownerAirlineName": "ENTER AIR SPOLKA Z.O.O.",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "NTE",
+                            "name": "NANTES ATLANTIQUE AIRPORT",
+                            "nameLangTranl": "Nantes Atlantique Airport",
+                            "city": {
+                                "code": "NTE",
+                                "name": "NANTES",
+                                "nameLangTranl": "Nantes",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.1583,
+                                "longitude": -1.6097
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-12T16:05:00.000+02:00",
+                            "latestPublished": "2025-08-12T16:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "parkingPosition": "Q21",
+                                "pierCode": "",
+                                "terminalCode": "3",
+                                "baggageBelt": [
+                                    "01"
+                                ],
+                                "arrivalPositionTerminal": "3",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "L",
+                                "arrivalTerminal": "Q",
+                                "parkingPositionCustomStatus": "I",
+                                "disembarkingBusQuantity": "0",
+                                "disembarkingContactType": "F",
+                                "disembarkingAerogare": "3",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-12T16:51:00.000+02:00",
+                            "scheduled": "2025-08-12T17:10:00.000+02:00",
+                            "latestPublished": "2025-08-12T16:51:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-12T16:51:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-08-12T16:43:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "C",
+                    "serviceTypeName": "Passenger Only",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H5M",
+                    "arrivalDateTimeDifference": "PT-19M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SPESA",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "E4",
+                        "ownerAirlineName": "ENTER AIR SPOLKA Z.O.O.",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 704,
+            "flightScheduleDate": "2025-08-19",
+            "id": "20250819+E4+0704",
+            "haul": "MEDIUM",
+            "route": [
+                "ACE",
+                "NTE",
+                "CDG"
+            ],
+            "airline": {
+                "code": "E4",
+                "name": "ENTER AIR SPOLKA Z.O.O."
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ACE",
+                            "name": "LANZAROTE AIRPORT",
+                            "nameLangTranl": "Lanzarote",
+                            "city": {
+                                "code": "ACE",
+                                "name": "LANZAROTE",
+                                "nameLangTranl": "Lanzarote - Canary Islands",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 28.9375,
+                                "longitude": -13.6036
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-19T11:20:00.000+01:00",
+                            "latestPublished": "2025-08-19T11:20:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "NTE",
+                            "name": "NANTES ATLANTIQUE AIRPORT",
+                            "nameLangTranl": "Nantes Atlantique Airport",
+                            "city": {
+                                "code": "NTE",
+                                "name": "NANTES",
+                                "nameLangTranl": "Nantes",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.1583,
+                                "longitude": -1.6097
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-19T14:55:00.000+02:00",
+                            "latestPublished": "2025-08-19T14:55:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-19T14:55:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "C",
+                    "serviceTypeName": "Passenger Only",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H35M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "SPEXA",
+                        "typeCode": "7M8",
+                        "typeName": "BOEING 737MAX 8 PASSENGER",
+                        "ownerAirlineCode": "E4",
+                        "ownerAirlineName": "ENTER AIR SPOLKA Z.O.O.",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "NTE",
+                            "name": "NANTES ATLANTIQUE AIRPORT",
+                            "nameLangTranl": "Nantes Atlantique Airport",
+                            "city": {
+                                "code": "NTE",
+                                "name": "NANTES",
+                                "nameLangTranl": "Nantes",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.1583,
+                                "longitude": -1.6097
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-19T15:55:00.000+02:00",
+                            "latestPublished": "2025-08-19T15:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "parkingPosition": "R14",
+                                "pierCode": "",
+                                "terminalCode": "3",
+                                "baggageBelt": [
+                                    "03"
+                                ],
+                                "arrivalPositionTerminal": "3",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "L",
+                                "arrivalTerminal": "R",
+                                "parkingPositionCustomStatus": "I",
+                                "disembarkingBusQuantity": "0",
+                                "disembarkingContactType": "F",
+                                "disembarkingAerogare": "3",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-19T16:34:00.000+02:00",
+                            "scheduled": "2025-08-19T17:00:00.000+02:00",
+                            "latestPublished": "2025-08-19T16:34:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-19T16:34:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-08-19T16:27:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "C",
+                    "serviceTypeName": "Passenger Only",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H5M",
+                    "arrivalDateTimeDifference": "PT-26M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SPEXA",
+                        "typeCode": "7M8",
+                        "typeName": "BOEING 737MAX 8 PASSENGER",
+                        "ownerAirlineCode": "E4",
+                        "ownerAirlineName": "ENTER AIR SPOLKA Z.O.O.",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 704,
+            "flightScheduleDate": "2025-08-26",
+            "id": "20250826+E4+0704",
+            "haul": "MEDIUM",
+            "route": [
+                "ACE",
+                "NTE",
+                "CDG"
+            ],
+            "airline": {
+                "code": "E4"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ACE",
+                            "name": "LANZAROTE AIRPORT",
+                            "nameLangTranl": "Lanzarote",
+                            "city": {
+                                "code": "ACE",
+                                "name": "LANZAROTE",
+                                "nameLangTranl": "Lanzarote - Canary Islands",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 28.9375,
+                                "longitude": -13.6036
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-26T09:20:00.000+01:00",
+                            "latestPublished": "2025-08-26T09:20:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "NTE",
+                            "name": "NANTES ATLANTIQUE AIRPORT",
+                            "nameLangTranl": "Nantes Atlantique Airport",
+                            "city": {
+                                "code": "NTE",
+                                "name": "NANTES",
+                                "nameLangTranl": "Nantes",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.1583,
+                                "longitude": -1.6097
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-26T12:55:00.000+02:00",
+                            "latestPublished": "2025-08-26T12:55:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-26T12:55:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "C",
+                    "serviceTypeName": "Passenger Only",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H35M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "SPESO",
+                        "typeCode": "73H",
+                        "ownerAirlineCode": "E4",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "NTE",
+                            "name": "NANTES ATLANTIQUE AIRPORT",
+                            "nameLangTranl": "Nantes Atlantique Airport",
+                            "city": {
+                                "code": "NTE",
+                                "name": "NANTES",
+                                "nameLangTranl": "Nantes",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.1583,
+                                "longitude": -1.6097
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-26T13:55:00.000+02:00",
+                            "latestPublished": "2025-08-26T13:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "parkingPosition": "R14",
+                                "pierCode": "",
+                                "terminalCode": "3",
+                                "baggageBelt": [
+                                    "01"
+                                ],
+                                "arrivalPositionTerminal": "3",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "L",
+                                "arrivalTerminal": "R",
+                                "parkingPositionCustomStatus": "I",
+                                "disembarkingBusQuantity": "0",
+                                "disembarkingContactType": "F",
+                                "disembarkingAerogare": "3",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-26T14:44:00.000+02:00",
+                            "scheduled": "2025-08-26T15:00:00.000+02:00",
+                            "latestPublished": "2025-08-26T14:44:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-26T14:44:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-08-26T14:37:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "C",
+                    "serviceTypeName": "Passenger Only",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H5M",
+                    "arrivalDateTimeDifference": "PT-16M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SPESO",
+                        "typeCode": "73H",
+                        "ownerAirlineCode": "E4",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 3,
+        "pageNumber": 0,
+        "fullCount": 3,
+        "pageCount": 3,
+        "totalPages": 1
+    }
+}
