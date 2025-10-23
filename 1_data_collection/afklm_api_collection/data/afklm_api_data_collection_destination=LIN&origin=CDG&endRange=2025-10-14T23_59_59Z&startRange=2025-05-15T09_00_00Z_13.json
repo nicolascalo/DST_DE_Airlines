@@ -1,0 +1,1793 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 1212,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+AF+1212",
+            "haul": "MEDIUM",
+            "route": [
+                "CDG",
+                "LIN"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 8602,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+AF+1781",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "AF",
+                    "flightNumber": "1781"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    "F51"
+                                ],
+                                "parkingPosition": "F84",
+                                "pierCode": "",
+                                "terminalCode": "2F",
+                                "boardingPier": "2",
+                                "boardingTerminal": "2F",
+                                "checkInZone": [
+                                    "F05",
+                                    "F06"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "2",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": [
+                                    "F51"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T07:19:00.000+02:00",
+                            "scheduled": "2025-10-14T07:20:00.000+02:00",
+                            "latestPublished": "2025-10-14T07:19:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T07:34:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T06:50:00.000+02:00",
+                            "gateCloseTime": "2025-10-14T07:00:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-14T06:50:00.000+02:00",
+                            "firstPaxBoarding": "2025-10-14T06:51:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "LIN",
+                            "name": "LINATE AIRPORT",
+                            "nameLangTranl": "Linate Airport",
+                            "city": {
+                                "code": "MIL",
+                                "name": "MILAN",
+                                "nameLangTranl": "Milan",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 45.4494,
+                                "longitude": 9.2783
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T08:44:00.000+02:00",
+                            "scheduled": "2025-10-14T08:50:00.000+02:00",
+                            "latestPublished": "2025-10-14T08:44:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T08:44:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T08:40:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "departureDateTimeDifference": "PT-1M",
+                    "arrivalDateTimeDifference": "PT-6M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHPNE",
+                        "typeCode": "223",
+                        "typeName": "AIRBUS A220-300 PASSENGER",
+                        "subFleetCodeId": "CA",
+                        "ownerAirlineCode": "AF",
+                        "ownerAirlineName": "AIR FRANCE",
+                        "physicalPaxConfiguration": "Y148",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C014Y125",
+                        "cockpitCrewEmployer": "AF",
+                        "cabinCrewEmployer": "AF",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 305,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+AZ+0305",
+            "haul": "MEDIUM",
+            "route": [
+                "CDG",
+                "LIN"
+            ],
+            "airline": {
+                "code": "AZ",
+                "name": "ITA AIRWAYS"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9802,
+                    "flightScheduleDate": "2025-10-14",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6663,
+                    "flightScheduleDate": "2025-10-14",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+AZ+0300",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "AZ",
+                    "flightNumber": "0300"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    "D50"
+                                ],
+                                "parkingPosition": "D24",
+                                "pierCode": "",
+                                "terminalCode": "2B",
+                                "boardingPier": "",
+                                "boardingTerminal": "2D",
+                                "checkInZone": [
+                                    "B02"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "2D",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T09:58:00.000+02:00",
+                            "scheduled": "2025-10-14T09:45:00.000+02:00",
+                            "latestPublished": "2025-10-14T09:58:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T10:11:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "LIN",
+                            "name": "LINATE AIRPORT",
+                            "nameLangTranl": "Linate Airport",
+                            "city": {
+                                "code": "MIL",
+                                "name": "MILAN",
+                                "nameLangTranl": "Milan",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 45.4494,
+                                "longitude": 9.2783
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T11:15:00.000+02:00",
+                            "latestPublished": "2025-10-14T11:31:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T11:31:00.000+02:00"
+                            },
+                            "estimatedArrival": "2025-10-14T11:31:00.000+02:00",
+                            "estimatedTouchDownTime": "2025-10-14T11:26:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "departureDateTimeDifference": "PT13M",
+                    "arrivalDateTimeDifference": "PT16M",
+                    "timeToArrival": "PT-216H-39M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "IADVH",
+                        "typeCode": "221",
+                        "typeName": "AIRBUS A220-100 PASSENGER",
+                        "ownerAirlineCode": "AZ",
+                        "ownerAirlineName": "ITA AIRWAYS",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT16M",
+                        "delayInformation": []
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1412,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+AF+1412",
+            "route": [
+                "CDG",
+                "LIN"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 8385,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3162,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KQ",
+                        "name": "KENYA AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "CANCELLED",
+            "flightStatusPublicLangTransl": "Cancelled",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "terminalCode": "2F",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T09:50:00.000+02:00",
+                            "latestPublished": "2025-10-14T09:50:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "LIN",
+                            "name": "LINATE AIRPORT",
+                            "nameLangTranl": "Linate Airport",
+                            "city": {
+                                "code": "MIL",
+                                "name": "MILAN",
+                                "nameLangTranl": "Milan",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 45.4494,
+                                "longitude": 9.2783
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T11:20:00.000+02:00",
+                            "latestPublished": "2025-10-14T11:20:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T11:20:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "318",
+                        "typeName": "AIRBUS A318",
+                        "ownerAirlineCode": "AF",
+                        "ownerAirlineName": "AIR FRANCE",
+                        "physicalPaxConfiguration": "Y131",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C010Y116",
+                        "cockpitCrewEmployer": "AF",
+                        "cabinCrewEmployer": "AF"
+                    },
+                    "irregularity": {
+                        "cancelled": "Y",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": [],
+                        "cancellationReasonCodePublic": "FSCR06",
+                        "cancellationReasonPublicShort": "Flight schedule changes",
+                        "cancellationReasonPublicLong": "This flight has been cancelled because of some unforeseen changes to the flight schedule."
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1012,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+AF+1012",
+            "haul": "MEDIUM",
+            "route": [
+                "CDG",
+                "LIN"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 8539,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5262,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "G3",
+                        "name": "GOL LINHAS AEREAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3066,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KQ",
+                        "name": "KENYA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5103,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "WS",
+                        "name": "WESTJET"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+AF+1213",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "AF",
+                    "flightNumber": "1213"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    "F47"
+                                ],
+                                "parkingPosition": "F66",
+                                "pierCode": "",
+                                "terminalCode": "2F",
+                                "boardingPier": "2",
+                                "boardingTerminal": "2F",
+                                "checkInZone": [
+                                    "F05",
+                                    "F06"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "2",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": [
+                                    "F47"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T12:23:00.000+02:00",
+                            "scheduled": "2025-10-14T12:25:00.000+02:00",
+                            "latestPublished": "2025-10-14T12:23:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T12:40:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T11:55:00.000+02:00",
+                            "gateCloseTime": "2025-10-14T12:05:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-14T11:46:00.000+02:00",
+                            "firstPaxBoarding": "2025-10-14T11:51:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "LIN",
+                            "name": "LINATE AIRPORT",
+                            "nameLangTranl": "Linate Airport",
+                            "city": {
+                                "code": "MIL",
+                                "name": "MILAN",
+                                "nameLangTranl": "Milan",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 45.4494,
+                                "longitude": 9.2783
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T13:48:00.000+02:00",
+                            "scheduled": "2025-10-14T13:55:00.000+02:00",
+                            "latestPublished": "2025-10-14T13:48:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T13:48:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T13:45:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "departureDateTimeDifference": "PT-2M",
+                    "arrivalDateTimeDifference": "PT-7M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHPNE",
+                        "typeCode": "223",
+                        "typeName": "AIRBUS A220-300 PASSENGER",
+                        "subFleetCodeId": "CA",
+                        "ownerAirlineCode": "AF",
+                        "ownerAirlineName": "AIR FRANCE",
+                        "physicalPaxConfiguration": "Y148",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C020Y115",
+                        "cockpitCrewEmployer": "AF",
+                        "cabinCrewEmployer": "AF",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 313,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+AZ+0313",
+            "haul": "MEDIUM",
+            "route": [
+                "CDG",
+                "LIN"
+            ],
+            "airline": {
+                "code": "AZ",
+                "name": "ITA AIRWAYS"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9700,
+                    "flightScheduleDate": "2025-10-14",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6686,
+                    "flightScheduleDate": "2025-10-14",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+AZ+0312",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "AZ",
+                    "flightNumber": "0312"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    "D50"
+                                ],
+                                "parkingPosition": "D24",
+                                "pierCode": "",
+                                "terminalCode": "2B",
+                                "boardingPier": "",
+                                "boardingTerminal": "2D",
+                                "checkInZone": [
+                                    "B02"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "2D",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T16:50:00.000+02:00",
+                            "scheduled": "2025-10-14T16:50:00.000+02:00",
+                            "latestPublished": "2025-10-14T16:50:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T17:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "LIN",
+                            "name": "LINATE AIRPORT",
+                            "nameLangTranl": "Linate Airport",
+                            "city": {
+                                "code": "MIL",
+                                "name": "MILAN",
+                                "nameLangTranl": "Milan",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 45.4494,
+                                "longitude": 9.2783
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T18:20:00.000+02:00",
+                            "latestPublished": "2025-10-14T18:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T18:25:00.000+02:00"
+                            },
+                            "estimatedArrival": "2025-10-14T18:25:00.000+02:00",
+                            "estimatedTouchDownTime": "2025-10-14T18:20:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "departureDateTimeDifference": "PT0S",
+                    "arrivalDateTimeDifference": "PT5M",
+                    "timeToArrival": "PT-209H-45M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "EIMVC",
+                        "typeCode": "221",
+                        "typeName": "AIRBUS A220-100 PASSENGER",
+                        "ownerAirlineCode": "AZ",
+                        "ownerAirlineName": "ITA AIRWAYS",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4563,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+EC+4563",
+            "haul": "MEDIUM",
+            "route": [
+                "CDG",
+                "LIN"
+            ],
+            "airline": {
+                "code": "EC",
+                "name": "EASYJET EUROPE AIRLINE GMBH"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+EC+4576",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "EC",
+                    "flightNumber": "4576"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    "D52"
+                                ],
+                                "parkingPosition": "D18",
+                                "pierCode": "",
+                                "terminalCode": "2D",
+                                "boardingPier": "",
+                                "boardingTerminal": "2D",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "2D",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T17:21:00.000+02:00",
+                            "scheduled": "2025-10-14T17:25:00.000+02:00",
+                            "latestPublished": "2025-10-14T17:21:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T17:31:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "LIN",
+                            "name": "LINATE AIRPORT",
+                            "nameLangTranl": "Linate Airport",
+                            "city": {
+                                "code": "MIL",
+                                "name": "MILAN",
+                                "nameLangTranl": "Milan",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 45.4494,
+                                "longitude": 9.2783
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T18:48:00.000+02:00",
+                            "scheduled": "2025-10-14T18:55:00.000+02:00",
+                            "latestPublished": "2025-10-14T18:48:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T18:48:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T18:43:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "departureDateTimeDifference": "PT-4M",
+                    "arrivalDateTimeDifference": "PT-7M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "OEICL",
+                        "typeCode": "320",
+                        "typeName": "AIRBUS A320",
+                        "ownerAirlineCode": "EC",
+                        "ownerAirlineName": "EASYJET EUROPE AIRLINE GMBH",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1312,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+AF+1312",
+            "haul": "MEDIUM",
+            "route": [
+                "CDG",
+                "LIN"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 8302,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5084,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "G3",
+                        "name": "GOL LINHAS AEREAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5141,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "WS",
+                        "name": "WESTJET"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+AF+7465",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "AF",
+                    "flightNumber": "7465"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    "F26"
+                                ],
+                                "parkingPosition": "F02",
+                                "pierCode": "",
+                                "terminalCode": "2F",
+                                "boardingPier": "1",
+                                "boardingTerminal": "2F",
+                                "checkInZone": [
+                                    "F05",
+                                    "F06"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "1",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": [
+                                    "F26"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T18:29:00.000+02:00",
+                            "scheduled": "2025-10-14T18:20:00.000+02:00",
+                            "latestPublished": "2025-10-14T18:29:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T18:40:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T18:00:00.000+02:00",
+                            "gateCloseTime": "2025-10-14T18:10:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-14T17:48:00.000+02:00",
+                            "firstPaxBoarding": "2025-10-14T17:48:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "LIN",
+                            "name": "LINATE AIRPORT",
+                            "nameLangTranl": "Linate Airport",
+                            "city": {
+                                "code": "MIL",
+                                "name": "MILAN",
+                                "nameLangTranl": "Milan",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 45.4494,
+                                "longitude": 9.2783
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T19:44:00.000+02:00",
+                            "scheduled": "2025-10-14T19:45:00.000+02:00",
+                            "latestPublished": "2025-10-14T19:44:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T19:44:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T19:41:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H25M",
+                    "departureDateTimeDifference": "PT9M",
+                    "arrivalDateTimeDifference": "PT-1M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHZUJ",
+                        "typeCode": "223",
+                        "typeName": "AIRBUS A220-300 PASSENGER",
+                        "subFleetCodeId": "CA",
+                        "ownerAirlineCode": "AF",
+                        "ownerAirlineName": "AIR FRANCE",
+                        "physicalPaxConfiguration": "Y148",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C017Y120",
+                        "cockpitCrewEmployer": "AF",
+                        "cabinCrewEmployer": "AF",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "87"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0009"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "87",
+                                "delayDuration": "0009"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4559,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+EC+4559",
+            "haul": "MEDIUM",
+            "route": [
+                "CDG",
+                "LIN"
+            ],
+            "airline": {
+                "code": "EC",
+                "name": "EASYJET EUROPE AIRLINE GMBH"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+EC+4646",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "EC",
+                    "flightNumber": "4646"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    "D51"
+                                ],
+                                "parkingPosition": "D20",
+                                "pierCode": "",
+                                "terminalCode": "2D",
+                                "boardingPier": "",
+                                "boardingTerminal": "2D",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "2D",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T18:37:00.000+02:00",
+                            "scheduled": "2025-10-14T18:45:00.000+02:00",
+                            "latestPublished": "2025-10-14T18:37:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T18:49:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "LIN",
+                            "name": "LINATE AIRPORT",
+                            "nameLangTranl": "Linate Airport",
+                            "city": {
+                                "code": "MIL",
+                                "name": "MILAN",
+                                "nameLangTranl": "Milan",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 45.4494,
+                                "longitude": 9.2783
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T19:56:00.000+02:00",
+                            "scheduled": "2025-10-14T20:15:00.000+02:00",
+                            "latestPublished": "2025-10-14T19:56:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T19:56:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T19:51:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "departureDateTimeDifference": "PT-8M",
+                    "arrivalDateTimeDifference": "PT-19M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "OELQC",
+                        "typeCode": "319",
+                        "typeName": "AIRBUS A319",
+                        "ownerAirlineCode": "EC",
+                        "ownerAirlineName": "EASYJET EUROPE AIRLINE GMBH",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1732,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+AF+1732",
+            "haul": "MEDIUM",
+            "route": [
+                "CDG",
+                "LIN"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+AF+1829",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "AF",
+                    "flightNumber": "1829"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    "F25"
+                                ],
+                                "parkingPosition": "D09",
+                                "pierCode": "",
+                                "terminalCode": "2F",
+                                "boardingPier": "1",
+                                "boardingTerminal": "2F",
+                                "checkInZone": [
+                                    "F05",
+                                    "F06"
+                                ],
+                                "boardingContactType": "L",
+                                "parkingPositionType": "L",
+                                "departureTerminal": "2D",
+                                "parkingPositionCustomStatus": "M",
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": [
+                                    "F25"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T20:59:00.000+02:00",
+                            "scheduled": "2025-10-14T21:00:00.000+02:00",
+                            "latestPublished": "2025-10-14T20:59:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T21:12:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T20:20:00.000+02:00",
+                            "gateCloseTime": "2025-10-14T20:40:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-14T20:11:00.000+02:00",
+                            "firstPaxBoarding": "2025-10-14T20:12:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "LIN",
+                            "name": "LINATE AIRPORT",
+                            "nameLangTranl": "Linate Airport",
+                            "city": {
+                                "code": "MIL",
+                                "name": "MILAN",
+                                "nameLangTranl": "Milan",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 45.4494,
+                                "longitude": 9.2783
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T22:25:00.000+02:00",
+                            "scheduled": "2025-10-14T22:30:00.000+02:00",
+                            "latestPublished": "2025-10-14T22:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T22:25:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T22:21:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "departureDateTimeDifference": "PT-1M",
+                    "arrivalDateTimeDifference": "PT-5M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FHPNS",
+                        "typeCode": "223",
+                        "typeName": "AIRBUS A220-300 PASSENGER",
+                        "subFleetCodeId": "CA",
+                        "ownerAirlineCode": "AF",
+                        "ownerAirlineName": "AIR FRANCE",
+                        "physicalPaxConfiguration": "Y148",
+                        "operationalConfiguration": "C014Y125",
+                        "cockpitCrewEmployer": "AF",
+                        "cabinCrewEmployer": "AF",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 311,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+AZ+0311",
+            "haul": "MEDIUM",
+            "route": [
+                "CDG",
+                "LIN"
+            ],
+            "airline": {
+                "code": "AZ",
+                "name": "ITA AIRWAYS"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9812,
+                    "flightScheduleDate": "2025-10-14",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+AZ+0358",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "AZ",
+                    "flightNumber": "0358"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    "D66"
+                                ],
+                                "parkingPosition": "D12",
+                                "pierCode": "",
+                                "terminalCode": "2B",
+                                "boardingPier": "",
+                                "boardingTerminal": "2D",
+                                "checkInZone": [
+                                    "B02"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "2D",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T21:16:00.000+02:00",
+                            "scheduled": "2025-10-14T21:30:00.000+02:00",
+                            "latestPublished": "2025-10-14T21:16:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T21:31:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "LIN",
+                            "name": "LINATE AIRPORT",
+                            "nameLangTranl": "Linate Airport",
+                            "city": {
+                                "code": "MIL",
+                                "name": "MILAN",
+                                "nameLangTranl": "Milan",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "IT",
+                                    "name": "ITALY",
+                                    "nameLangTranl": "Italy",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 45.4494,
+                                "longitude": 9.2783
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T23:00:00.000+02:00",
+                            "latestPublished": "2025-10-14T22:51:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T22:51:00.000+02:00"
+                            },
+                            "estimatedArrival": "2025-10-14T22:51:00.000+02:00",
+                            "estimatedTouchDownTime": "2025-10-14T22:46:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "departureDateTimeDifference": "PT-14M",
+                    "arrivalDateTimeDifference": "PT-9M",
+                    "timeToArrival": "PT-205H-19M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "EIMVC",
+                        "typeCode": "221",
+                        "typeName": "AIRBUS A220-100 PASSENGER",
+                        "ownerAirlineCode": "AZ",
+                        "ownerAirlineName": "ITA AIRWAYS",
+                        "physicalPaxConfiguration": "J001Y001",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 10,
+        "pageNumber": 13,
+        "fullCount": 1310,
+        "pageCount": 10,
+        "totalPages": 14
+    }
+}

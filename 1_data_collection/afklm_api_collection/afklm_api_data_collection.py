@@ -323,7 +323,7 @@ for i in range(0, len(df_call_parameters)):
         
         # print(f"Page found: {response.__bool__()}")
         
-        no_more_api_key = (response.text == '<h1>Developer Over Rate</h1>') & (API_key_list_length == API_key_counter + 1)
+        no_more_api_key = ("Developer" in response.text) & (API_key_list_length == API_key_counter + 1)
         
         time_analysis = datetime.datetime.now().isoformat()
         df_subset.loc[0,['timestamp']] = time_analysis
@@ -376,14 +376,14 @@ for i in range(0, len(df_call_parameters)):
             pageNumber = pageNumber + 1
         
     
-        elif (response.text == '<h1>Developer Over Rate</h1>') & (API_key_list_length > API_key_counter + 1) : # Iterate of API key list to test the next one
+        elif ("Developer" in response.text)  & (API_key_list_length > API_key_counter + 1) : # Iterate of API key list to test the next one
             
             
             print(Fore.YELLOW + f"Trying next API key previous: {API_key}, next: {API_key_list_cleaned[API_key_counter+1]}")
             API_key_counter = API_key_counter + 1
             
             
-        elif (response.text == '<h1>Developer Over Rate</h1>'):
+        elif ("Developer" in response.text) :
             break
             
         else:
