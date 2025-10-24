@@ -29,6 +29,8 @@ Fill in the `.env` file at the project root.
 
 Required environment variables are documented in the `envstruct` file.
 
+!!! Il faudrait définir le "DATABASE_NAME"pour qu'il soit fixe car il doit correspondre au dump ?   
+
 ## Data Loading
 
 1. Activate the virtual environment:
@@ -57,7 +59,7 @@ docker exec <container_name> mongodump --username=<username> --password=<passwor
 
 Import Dump :
 ```bash
-cat <path_file_toimport> | docker exec -i jojo mongorestore --username=<username> --password=<password> --authenticationDatabase=admin --archive
+cat <path_file_toimport> | docker exec -i <docker_container_name> mongorestore --username=<username> --password=<password> --authenticationDatabase=admin --archive
 ```
 
 
