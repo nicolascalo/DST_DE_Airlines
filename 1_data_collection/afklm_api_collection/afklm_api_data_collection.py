@@ -28,7 +28,7 @@ import time
 import json
 import os
 import datetime
-from colorama import Fore, Back, Style
+from colorama import Fore, Style
 import gzip
 
 
@@ -42,6 +42,8 @@ refresh_stats = False
 time_delay_query = 1.5 # API limited to 1 call / s, 100 / day
 output_format = ["json","gzip"] # ["json","gzip"]
 
+path_data_storage = "data"
+path_call_parameter_csv = "df_call_parameters.csv"
 
 
 
@@ -58,20 +60,20 @@ if  bool(re.search("1_data_collection$",os.getcwd())) == True:
 
 ### Creation of folders for retrieved data
 
-if not os.path.isdir("data"):
-    os.mkdir("data")
+if not os.path.isdir(path_data_storage):
+    os.mkdir(path_data_storage)
 
 
 ### List of already retrieved data
 
-json_list = os.listdir("data")
+json_list = os.listdir(path_data_storage)
 
 
 
 
 ### Import query parameters
  
-df_call_parameters = pd.read_csv("df_call_parameters.csv").fillna('')
+df_call_parameters = pd.read_csv(path_call_parameter_csv).fillna('')
 
 
 
@@ -106,7 +108,7 @@ if refresh_stats:
     for json_file in df_single_file_list['json_file'].values:
         
         
-         with open("data/" + json_file) as json_file:
+         with open("{path_data_storage}/" + json_file) as json_file:
             data = json.load(json_file)
             page_max =  data['page']['totalPages']
             max_page_list.append(page_max)
@@ -132,8 +134,8 @@ if refresh_stats:
     
     df_call_parameters_updated['response'] = '<Response [200]>'
     
-    pd.concat([df_call_parameters, df_call_parameters_updated]).drop_duplicates(keep='last',subset='call_parameters').fillna('').to_csv("df_call_parameters.csv", index = 0)
-    df_call_parameters = pd.read_csv("df_call_parameters.csv").fillna('')
+    pd.concat([df_call_parameters, df_call_parameters_updated]).drop_duplicates(keep='last',subset='call_parameters').fillna('').to_csv(path_call_parameter_csv, index = 0)
+    df_call_parameters = pd.read_csv(path_call_parameter_csv).fillna('')
 
 
 
@@ -207,8 +209,8 @@ df_call_parameters = pd.DataFrame(dict_call_parameters, index = [0]) # from defa
 
 
 
-if os.path.isfile("df_call_parameters.csv"):
-    df_call_parameters = pd.read_csv("df_call_parameters.csv").fillna('')
+if os.path.isfile(path_call_parameter_csv):
+    df_call_parameters = pd.read_csv(path_call_parameter_csv).fillna('')
 
 i = 0
 API_key_counter = 0 # To use the first API key from the list
@@ -338,11 +340,11 @@ for i in range(0, len(df_call_parameters)):
             fullCount =  data['page']['fullCount'] 
             
             if "json" in output_format:
-                with open(f"data/afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json", 'w', encoding='utf-8') as f:
+                with open(f"{path_data_storage}/afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json", 'w', encoding='utf-8') as f:
                     json.dump(data, f, ensure_ascii=False, indent=4)
                 
             if "json" in output_format:    
-                with gzip.open(f"data/afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json.gzip", 'wt', encoding='utf-8') as f:
+                with gzip.open(f"{path_data_storage}/afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json.gzip", 'wt', encoding='utf-8') as f:
                     json.dump(data, f, ensure_ascii=False, indent=4)
                 
 
@@ -370,7 +372,7 @@ for i in range(0, len(df_call_parameters)):
             
             df_call_parameters_new = pd.concat([df_call_parameters_new,df_subset],ignore_index=True)
             df_call_parameters_new = df_call_parameters_new.drop_duplicates(subset=['call_parameters'], keep='last')
-            df_call_parameters_new.fillna('').to_csv("df_call_parameters.csv", index=0)
+            df_call_parameters_new.fillna('').to_csv(path_call_parameter_csv, index=0)
 
             
             pageNumber = pageNumber + 1
@@ -397,7 +399,7 @@ for i in range(0, len(df_call_parameters)):
             df_call_parameters_new =pd.concat([df_call_parameters_new,df_subset],ignore_index=True)
             df_call_parameters_new = df_call_parameters_new.drop_duplicates(subset=['call_parameters'], keep='last')
             
-            df_call_parameters_new.fillna('').to_csv("df_call_parameters.csv", index=0)
+            df_call_parameters_new.fillna('').to_csv(path_call_parameter_csv, index=0)
 
             break
         
@@ -410,7 +412,7 @@ for i in range(0, len(df_call_parameters)):
     
 ### Update with new dates when all pages of current file retrived or failed
     
-df_call_parameters = pd.read_csv("df_call_parameters.csv").fillna('')
+df_call_parameters = pd.read_csv(path_call_parameter_csv).fillna('')
 
 df_call_parameters_date_update = df_call_parameters.query('response == "<Response [200]>"').sort_values(['endRange'],ascending=False).groupby('call_parameters').head(1)
     
@@ -422,7 +424,7 @@ if len(df_call_parameters_date_update.query('completion != "100%"')) == 0:
     df_call_parameters_date_update = df_call_parameters_date_update.drop(non_parameters, axis=1)
 
     df_call_parameters_new = pd.concat([df_call_parameters, df_call_parameters_date_update],ignore_index=True).fillna('').sort_values(['startRange','endRange','response'])
-    df_call_parameters_new.fillna('').to_csv("df_call_parameters.csv", index=0)
+    df_call_parameters_new.fillna('').to_csv(path_call_parameter_csv, index=0)
 
 
 '''
@@ -433,7 +435,7 @@ import shutil
 for file in json_list:
 
     with open('data/'+file, 'rb') as f_in:
-        with gzip.open("data/"+file+".gzip", 'wb') as f_out:
+        with gzip.open("{path_data_storage}/"+file+".gzip", 'wb') as f_out:
             shutil.copyfileobj(f_in, f_out)
 
 
@@ -451,13 +453,13 @@ df_json_pages_all = pd.DataFrame() # Initialize empty dataframe to store final v
 
 ### json file import
 
-json_list = os.listdir("data") # Listing of json files to process
+json_list = os.listdir(path_data_storage) # Listing of json files to process
 
 print("Starting json import")
 for json_file_name in json_list:
 
 
-    with open("data/" + json_file_name) as json_file:
+    with open("{path_data_storage}/" + json_file_name) as json_file:
         json_file = json.load(json_file)
         
     
