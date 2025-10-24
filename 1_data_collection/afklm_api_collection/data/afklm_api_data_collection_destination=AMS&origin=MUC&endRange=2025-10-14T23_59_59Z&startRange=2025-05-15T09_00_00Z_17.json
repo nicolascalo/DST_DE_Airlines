@@ -1,0 +1,1786 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 1850,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+KL+1850",
+            "haul": "MEDIUM",
+            "route": [
+                "MUC",
+                "AMS"
+            ],
+            "airline": {
+                "code": "KL",
+                "name": "KLM ROYAL DUTCH AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6416,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1344,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "CZ",
+                        "name": "CHINA SOUTHERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9629,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9016,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "GA",
+                        "name": "GARUDA INDONESIA"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1792,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KQ",
+                        "name": "KENYA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9683,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MF",
+                        "name": "XIAMEN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1594,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MU",
+                        "name": "CHINA EASTERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6677,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SK",
+                        "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3360,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "6E",
+                        "name": "INTERGLOBE AVIATION LTD. DBA INDIGO"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+KL+1849",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "KL",
+                    "flightNumber": "1849"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MUC",
+                            "name": "MUNICH INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Munich International Airport",
+                            "city": {
+                                "code": "MUC",
+                                "name": "MUNICH",
+                                "nameLangTranl": "Munich",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.3539,
+                                "longitude": 11.7861
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D15"
+                                ],
+                                "terminalCode": "1",
+                                "checkInZone": [],
+                                "paxDepartureGate": [
+                                    "D15"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T09:36:00.000+02:00",
+                            "scheduled": "2025-10-14T09:25:00.000+02:00",
+                            "latestPublished": "2025-10-14T09:36:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T09:56:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T09:00:00.000+02:00",
+                            "gateCloseTime": "2025-10-14T09:10:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-14T09:06:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A04"
+                                ],
+                                "parkingPosition": "A31",
+                                "pierCode": "A",
+                                "baggageBelt": [
+                                    "011"
+                                ],
+                                "parkingPositionType": "L",
+                                "disembarkingContactType": "L",
+                                "arrivalHall": [
+                                    "2"
+                                ],
+                                "firstBagOnBeltTime": "2025-10-14T11:40:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-14T11:41:00.000+02:00",
+                                "expectedBagOnBeltTime": "2025-10-14T12:15:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T11:14:00.000+02:00",
+                            "scheduled": "2025-10-14T11:00:00.000+02:00",
+                            "latestPublished": "2025-10-14T11:14:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T11:14:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T11:10:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H35M",
+                    "departureDateTimeDifference": "PT11M",
+                    "arrivalDateTimeDifference": "PT14M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHNXL",
+                        "typeCode": "295",
+                        "typeName": "EMBRAER 195 E2",
+                        "subFleetCodeId": "E",
+                        "ownerAirlineCode": "WA",
+                        "ownerAirlineName": "KLM CITYHOPPER",
+                        "physicalPaxConfiguration": "C028M104",
+                        "operationalConfiguration": "C020M112",
+                        "cockpitCrewEmployer": "WA",
+                        "cabinCrewEmployer": "WA",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "84"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0011"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR04"
+                        ],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT11M",
+                        "delayDurationArrival": "PT14M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "84",
+                                "delayDuration": "0011",
+                                "delayReasonCodePublic": "FSR04"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 2302,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+LH+2302",
+            "haul": "MEDIUM",
+            "route": [
+                "MUC",
+                "AMS"
+            ],
+            "airline": {
+                "code": "LH",
+                "name": "DEUTSCHE LUFTHANSA AG"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MUC",
+                            "name": "MUNICH INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Munich International Airport",
+                            "city": {
+                                "code": "MUC",
+                                "name": "MUNICH",
+                                "nameLangTranl": "Munich",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.3539,
+                                "longitude": 11.7861
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T10:35:00.000+02:00",
+                            "latestPublished": "2025-10-14T10:35:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B17"
+                                ],
+                                "parkingPosition": "B17",
+                                "pierCode": "B",
+                                "baggageBelt": [
+                                    "002"
+                                ],
+                                "parkingPositionType": "L",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-10-14T11:04:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-14T11:15:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T10:38:00.000+02:00",
+                            "scheduled": "2025-10-14T10:35:00.000+02:00",
+                            "latestPublished": "2025-10-14T10:38:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T10:38:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T10:34:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "arrivalDateTimeDifference": "PT3M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "DAIUK",
+                        "typeCode": "320",
+                        "typeName": "AIRBUS A320",
+                        "ownerAirlineCode": "LH",
+                        "ownerAirlineName": "DEUTSCHE LUFTHANSA AG",
+                        "physicalPaxConfiguration": "F010Y138",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1852,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+KL+1852",
+            "haul": "MEDIUM",
+            "route": [
+                "MUC",
+                "AMS"
+            ],
+            "airline": {
+                "code": "KL",
+                "name": "KLM ROYAL DUTCH AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6417,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7635,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "CZ",
+                        "name": "CHINA SOUTHERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9630,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1794,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KQ",
+                        "name": "KENYA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9685,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MF",
+                        "name": "XIAMEN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1596,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MU",
+                        "name": "CHINA EASTERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6679,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SK",
+                        "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+KL+1851",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "KL",
+                    "flightNumber": "1851"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MUC",
+                            "name": "MUNICH INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Munich International Airport",
+                            "city": {
+                                "code": "MUC",
+                                "name": "MUNICH",
+                                "nameLangTranl": "Munich",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.3539,
+                                "longitude": 11.7861
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D15"
+                                ],
+                                "terminalCode": "1",
+                                "checkInZone": [],
+                                "paxDepartureGate": [
+                                    "D15"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T12:07:00.000+02:00",
+                            "scheduled": "2025-10-14T11:50:00.000+02:00",
+                            "latestPublished": "2025-10-14T12:07:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T12:27:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T11:20:00.000+02:00",
+                            "gateCloseTime": "2025-10-14T11:35:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-14T11:33:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D85"
+                                ],
+                                "parkingPosition": "D53",
+                                "pierCode": "D",
+                                "baggageBelt": [
+                                    "010"
+                                ],
+                                "parkingPositionType": "C",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "2"
+                                ],
+                                "firstBagOnBeltTime": "2025-10-14T14:03:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-14T14:15:00.000+02:00",
+                                "expectedBagOnBeltTime": "2025-10-14T14:34:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T13:38:00.000+02:00",
+                            "scheduled": "2025-10-14T13:25:00.000+02:00",
+                            "latestPublished": "2025-10-14T13:38:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T13:38:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T13:34:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H35M",
+                    "departureDateTimeDifference": "PT17M",
+                    "arrivalDateTimeDifference": "PT13M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHBXM",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "subFleetCodeId": "F",
+                        "ownerAirlineCode": "KL",
+                        "ownerAirlineName": "KLM ROYAL DUTCH AIRLINES",
+                        "physicalPaxConfiguration": "C036M150",
+                        "operationalConfiguration": "C020M156",
+                        "cockpitCrewEmployer": "KL",
+                        "cabinCrewEmployer": "KL",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "36",
+                            "83"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0009",
+                            "0008"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR04"
+                        ],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT17M",
+                        "delayDurationArrival": "PT13M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "36",
+                                "delayDuration": "0009"
+                            },
+                            {
+                                "delayCode": "83",
+                                "delayDuration": "0008",
+                                "delayReasonCodePublic": "FSR04"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1854,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+KL+1854",
+            "haul": "MEDIUM",
+            "route": [
+                "MUC",
+                "AMS"
+            ],
+            "airline": {
+                "code": "KL",
+                "name": "KLM ROYAL DUTCH AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6418,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7636,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "CZ",
+                        "name": "CHINA SOUTHERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9631,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6500,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KE",
+                        "name": "KOREAN AIR LINES CO. LTD."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1796,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KQ",
+                        "name": "KENYA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9687,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MF",
+                        "name": "XIAMEN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1598,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MU",
+                        "name": "CHINA EASTERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6681,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SK",
+                        "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+KL+1853",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "KL",
+                    "flightNumber": "1853"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MUC",
+                            "name": "MUNICH INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Munich International Airport",
+                            "city": {
+                                "code": "MUC",
+                                "name": "MUNICH",
+                                "nameLangTranl": "Munich",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.3539,
+                                "longitude": 11.7861
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D15"
+                                ],
+                                "terminalCode": "1",
+                                "checkInZone": [],
+                                "paxDepartureGate": [
+                                    "D15"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T14:58:00.000+02:00",
+                            "scheduled": "2025-10-14T14:00:00.000+02:00",
+                            "latestPublished": "2025-10-14T14:58:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T15:06:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T14:20:00.000+02:00",
+                            "gateCloseTime": "2025-10-14T14:30:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-14T14:52:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A04"
+                                ],
+                                "parkingPosition": "A52",
+                                "pierCode": "A",
+                                "baggageBelt": [
+                                    "012"
+                                ],
+                                "parkingPositionType": "L",
+                                "disembarkingContactType": "L",
+                                "arrivalHall": [
+                                    "2"
+                                ],
+                                "firstBagOnBeltTime": "2025-10-14T16:46:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-14T16:46:00.000+02:00",
+                                "expectedBagOnBeltTime": "2025-10-14T17:21:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T16:19:00.000+02:00",
+                            "scheduled": "2025-10-14T15:30:00.000+02:00",
+                            "latestPublished": "2025-10-14T16:19:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T16:19:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T16:16:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "departureDateTimeDifference": "PT58M",
+                    "arrivalDateTimeDifference": "PT49M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHNXM",
+                        "typeCode": "295",
+                        "typeName": "EMBRAER 195 E2",
+                        "subFleetCodeId": "E",
+                        "ownerAirlineCode": "WA",
+                        "ownerAirlineName": "KLM CITYHOPPER",
+                        "physicalPaxConfiguration": "C028M104",
+                        "operationalConfiguration": "C016M116",
+                        "cockpitCrewEmployer": "WA",
+                        "cabinCrewEmployer": "WA",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "93",
+                            "81"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0047",
+                            "0011"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR15",
+                            "FSR06"
+                        ],
+                        "delayReasonPublicLangTransl": [
+                            "This flight was delayed due to the late arrival of the aircraft.",
+                            "This flight was delayed due to restrictions from Air Traffic Control at the airport of Munich (MUC)."
+                        ],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT58M",
+                        "delayDurationArrival": "PT49M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "93",
+                                "delayDuration": "0047",
+                                "delayReasonCodePublic": "FSR15",
+                                "delayReasonPublicShort": "Delayed incoming aircraft",
+                                "delayReasonPublicLong": "This flight was delayed due to the late arrival of the aircraft."
+                            },
+                            {
+                                "delayCode": "81",
+                                "delayDuration": "0011",
+                                "delayReasonCodePublic": "FSR06",
+                                "delayReasonPublicShort": "Restrictions from Air Traffic Control",
+                                "delayReasonPublicLong": "This flight was delayed due to restrictions from Air Traffic Control at the airport of Munich (MUC)."
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 2304,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+LH+2304",
+            "haul": "MEDIUM",
+            "route": [
+                "MUC",
+                "AMS"
+            ],
+            "airline": {
+                "code": "LH",
+                "name": "DEUTSCHE LUFTHANSA AG"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MUC",
+                            "name": "MUNICH INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Munich International Airport",
+                            "city": {
+                                "code": "MUC",
+                                "name": "MUNICH",
+                                "nameLangTranl": "Munich",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.3539,
+                                "longitude": 11.7861
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T15:00:00.000+02:00",
+                            "latestPublished": "2025-10-14T15:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B27"
+                                ],
+                                "parkingPosition": "B27",
+                                "pierCode": "B",
+                                "baggageBelt": [
+                                    "006"
+                                ],
+                                "parkingPositionType": "L",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-10-14T15:11:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-14T15:15:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T14:50:00.000+02:00",
+                            "scheduled": "2025-10-14T15:00:00.000+02:00",
+                            "latestPublished": "2025-10-14T14:50:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T14:50:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T14:46:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "arrivalDateTimeDifference": "PT-10M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "DAILT",
+                        "typeCode": "319",
+                        "typeName": "AIRBUS A319",
+                        "ownerAirlineCode": "LH",
+                        "ownerAirlineName": "DEUTSCHE LUFTHANSA AG",
+                        "physicalPaxConfiguration": "F010Y138",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 2306,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+LH+2306",
+            "haul": "MEDIUM",
+            "route": [
+                "MUC",
+                "AMS"
+            ],
+            "airline": {
+                "code": "LH",
+                "name": "DEUTSCHE LUFTHANSA AG"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MUC",
+                            "name": "MUNICH INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Munich International Airport",
+                            "city": {
+                                "code": "MUC",
+                                "name": "MUNICH",
+                                "nameLangTranl": "Munich",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.3539,
+                                "longitude": 11.7861
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T16:15:00.000+02:00",
+                            "latestPublished": "2025-10-14T16:15:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B15"
+                                ],
+                                "parkingPosition": "B15",
+                                "pierCode": "B",
+                                "baggageBelt": [
+                                    "006"
+                                ],
+                                "parkingPositionType": "L",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-10-14T17:21:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-14T17:25:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T17:05:00.000+02:00",
+                            "scheduled": "2025-10-14T16:15:00.000+02:00",
+                            "latestPublished": "2025-10-14T17:05:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T17:05:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T17:01:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "arrivalDateTimeDifference": "PT50M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "DAINP",
+                        "typeCode": "32N",
+                        "typeName": "AIRBUS A320NEO",
+                        "physicalPaxConfiguration": "F010Y180",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT50M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1856,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+KL+1856",
+            "haul": "MEDIUM",
+            "route": [
+                "MUC",
+                "AMS"
+            ],
+            "airline": {
+                "code": "KL",
+                "name": "KLM ROYAL DUTCH AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6419,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1347,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "CZ",
+                        "name": "CHINA SOUTHERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9231,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "GA",
+                        "name": "GARUDA INDONESIA"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6498,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KE",
+                        "name": "KOREAN AIR LINES CO. LTD."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9689,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MF",
+                        "name": "XIAMEN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6683,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SK",
+                        "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+KL+1855",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "KL",
+                    "flightNumber": "1855"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MUC",
+                            "name": "MUNICH INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Munich International Airport",
+                            "city": {
+                                "code": "MUC",
+                                "name": "MUNICH",
+                                "nameLangTranl": "Munich",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.3539,
+                                "longitude": 11.7861
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D05"
+                                ],
+                                "terminalCode": "1",
+                                "checkInZone": [],
+                                "paxDepartureGate": [
+                                    "D05"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T17:54:00.000+02:00",
+                            "scheduled": "2025-10-14T17:50:00.000+02:00",
+                            "latestPublished": "2025-10-14T17:54:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T18:01:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T17:25:00.000+02:00",
+                            "gateCloseTime": "2025-10-14T17:35:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-14T17:17:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A04"
+                                ],
+                                "parkingPosition": "B93",
+                                "pierCode": "A",
+                                "baggageBelt": [
+                                    "010"
+                                ],
+                                "parkingPositionType": "L",
+                                "disembarkingContactType": "L",
+                                "arrivalHall": [
+                                    "2"
+                                ],
+                                "firstBagOnBeltTime": "2025-10-14T19:34:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-14T19:35:00.000+02:00",
+                                "expectedBagOnBeltTime": "2025-10-14T20:09:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T19:11:00.000+02:00",
+                            "scheduled": "2025-10-14T19:20:00.000+02:00",
+                            "latestPublished": "2025-10-14T19:11:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T19:11:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T19:08:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "departureDateTimeDifference": "PT4M",
+                    "arrivalDateTimeDifference": "PT-9M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHEXZ",
+                        "typeCode": "E7W",
+                        "typeName": "EMBRAER 175 (ENHANCED WINGLETS)",
+                        "subFleetCodeId": "E",
+                        "ownerAirlineCode": "WA",
+                        "ownerAirlineName": "KLM CITYHOPPER",
+                        "physicalPaxConfiguration": "C024M064",
+                        "operationalConfiguration": "C008M080",
+                        "cockpitCrewEmployer": "WA",
+                        "cabinCrewEmployer": "WA",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "81"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0004"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR06"
+                        ],
+                        "delayReasonPublicLangTransl": [
+                            "This flight was delayed due to restrictions from Air Traffic Control at the airport of Munich (MUC)."
+                        ],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "81",
+                                "delayDuration": "0004",
+                                "delayReasonCodePublic": "FSR06",
+                                "delayReasonPublicShort": "Restrictions from Air Traffic Control",
+                                "delayReasonPublicLong": "This flight was delayed due to restrictions from Air Traffic Control at the airport of Munich (MUC)."
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 2308,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+LH+2308",
+            "haul": "MEDIUM",
+            "route": [
+                "MUC",
+                "AMS"
+            ],
+            "airline": {
+                "code": "LH",
+                "name": "DEUTSCHE LUFTHANSA AG"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MUC",
+                            "name": "MUNICH INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Munich International Airport",
+                            "city": {
+                                "code": "MUC",
+                                "name": "MUNICH",
+                                "nameLangTranl": "Munich",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.3539,
+                                "longitude": 11.7861
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T20:20:00.000+02:00",
+                            "latestPublished": "2025-10-14T20:20:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B23"
+                                ],
+                                "parkingPosition": "B23",
+                                "pierCode": "B",
+                                "baggageBelt": [
+                                    "006"
+                                ],
+                                "parkingPositionType": "L",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "1"
+                                ],
+                                "firstBagOnBeltTime": "2025-10-14T20:51:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-14T20:56:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T20:32:00.000+02:00",
+                            "scheduled": "2025-10-14T20:20:00.000+02:00",
+                            "latestPublished": "2025-10-14T20:32:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T20:32:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T20:29:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "arrivalDateTimeDifference": "PT12M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "DAIZZ",
+                        "typeCode": "320",
+                        "typeName": "AIRBUS A320",
+                        "ownerAirlineCode": "LH",
+                        "ownerAirlineName": "DEUTSCHE LUFTHANSA AG",
+                        "physicalPaxConfiguration": "F010Y090",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT12M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1858,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+KL+1858",
+            "haul": "MEDIUM",
+            "route": [
+                "MUC",
+                "AMS"
+            ],
+            "airline": {
+                "code": "KL",
+                "name": "KLM ROYAL DUTCH AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6420,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7645,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "CZ",
+                        "name": "CHINA SOUTHERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9691,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MF",
+                        "name": "XIAMEN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5419,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "WY",
+                        "name": "OMAN AIR (S.A.O.C.)"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3361,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "6E",
+                        "name": "INTERGLOBE AVIATION LTD. DBA INDIGO"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+KL+1857",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "KL",
+                    "flightNumber": "1857"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MUC",
+                            "name": "MUNICH INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Munich International Airport",
+                            "city": {
+                                "code": "MUC",
+                                "name": "MUNICH",
+                                "nameLangTranl": "Munich",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "DE",
+                                    "name": "GERMANY",
+                                    "nameLangTranl": "Germany",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.3539,
+                                "longitude": 11.7861
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D15"
+                                ],
+                                "terminalCode": "1",
+                                "checkInZone": [],
+                                "paxDepartureGate": [
+                                    "D15"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T20:51:00.000+02:00",
+                            "scheduled": "2025-10-14T20:50:00.000+02:00",
+                            "latestPublished": "2025-10-14T20:51:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T21:00:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T20:25:00.000+02:00",
+                            "gateCloseTime": "2025-10-14T20:35:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-14T20:08:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B24"
+                                ],
+                                "parkingPosition": "B24",
+                                "pierCode": "B",
+                                "baggageBelt": [
+                                    "013"
+                                ],
+                                "parkingPositionType": "L",
+                                "disembarkingContactType": "C",
+                                "arrivalHall": [
+                                    "2"
+                                ],
+                                "firstBagOnBeltTime": "2025-10-14T23:46:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-14T23:46:00.000+02:00",
+                                "expectedBagOnBeltTime": "2025-10-14T23:05:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T22:16:00.000+02:00",
+                            "scheduled": "2025-10-14T22:25:00.000+02:00",
+                            "latestPublished": "2025-10-14T22:16:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T22:16:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T22:13:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H35M",
+                    "departureDateTimeDifference": "PT1M",
+                    "arrivalDateTimeDifference": "PT-9M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHEXW",
+                        "typeCode": "E7W",
+                        "typeName": "EMBRAER 175 (ENHANCED WINGLETS)",
+                        "subFleetCodeId": "E",
+                        "ownerAirlineCode": "WA",
+                        "ownerAirlineName": "KLM CITYHOPPER",
+                        "physicalPaxConfiguration": "C024M064",
+                        "operationalConfiguration": "C008M080",
+                        "cockpitCrewEmployer": "WA",
+                        "cabinCrewEmployer": "WA",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "81"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0001"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR06"
+                        ],
+                        "delayReasonPublicLangTransl": [
+                            "This flight was delayed due to restrictions from Air Traffic Control at the airport of Munich (MUC)."
+                        ],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "81",
+                                "delayDuration": "0001",
+                                "delayReasonCodePublic": "FSR06",
+                                "delayReasonPublicShort": "Restrictions from Air Traffic Control",
+                                "delayReasonPublicLong": "This flight was delayed due to restrictions from Air Traffic Control at the airport of Munich (MUC)."
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 9,
+        "pageNumber": 17,
+        "fullCount": 1709,
+        "pageCount": 9,
+        "totalPages": 18
+    }
+}

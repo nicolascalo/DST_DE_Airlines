@@ -1,0 +1,3846 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 7600,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+TO+7600",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "OPO"
+            ],
+            "airline": {
+                "code": "TO",
+                "name": "TRANSAVIA FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251012+TO+4205",
+                    "flightScheduleDate": "2025-10-12",
+                    "airlineCode": "TO",
+                    "flightNumber": "4205"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    "E07"
+                                ],
+                                "parkingPosition": "N11",
+                                "pierCode": "3",
+                                "terminalCode": "3",
+                                "boardingPier": "E",
+                                "boardingTerminal": "3",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "L",
+                                "parkingPositionType": "L",
+                                "parkingPositionCustomStatus": "M",
+                                "checkInAerogare": "3",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T06:22:00.000+02:00",
+                            "scheduled": "2025-10-13T06:10:00.000+02:00",
+                            "latestPublished": "2025-10-13T06:22:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T06:30:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OPO",
+                            "name": "PORTO AIRPORT",
+                            "nameLangTranl": "Francisco Sá Carneiro Airport",
+                            "city": {
+                                "code": "OPO",
+                                "name": "PORTO",
+                                "nameLangTranl": "Porto",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.1678,
+                                "longitude": -8.6667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T07:22:00.000+01:00",
+                            "scheduled": "2025-10-13T07:20:00.000+01:00",
+                            "latestPublished": "2025-10-13T07:22:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-13T07:22:00.000+01:00"
+                            },
+                            "actualTouchDownTime": "2025-10-13T07:13:00.000+01:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H10M",
+                    "departureDateTimeDifference": "PT12M",
+                    "arrivalDateTimeDifference": "PT2M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "FGZHZ",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "TO",
+                        "ownerAirlineName": "TRANSAVIA FRANCE",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y189"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "05"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "12"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT12M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "05",
+                                "delayDuration": "12"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 457,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+TP+0457",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "OPO"
+            ],
+            "airline": {
+                "code": "TP",
+                "name": "TAP PORTUGAL"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 7305,
+                    "flightScheduleDate": "2025-10-13",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AD",
+                        "name": "AZUL LINHAS AEREAS BRASILEIRAS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 8239,
+                    "flightScheduleDate": "2025-10-13",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "S4",
+                        "name": "SATA INTERNATIONAL SERVICOS E TRANSPORTES AEREOS S.A."
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251012+TP+0456",
+                    "flightScheduleDate": "2025-10-12",
+                    "airlineCode": "TP",
+                    "flightNumber": "0456"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "B16"
+                                ],
+                                "parkingPosition": "S25",
+                                "pierCode": "1",
+                                "terminalCode": "1",
+                                "boardingPier": "B",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "B",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T07:01:00.000+02:00",
+                            "scheduled": "2025-10-13T07:00:00.000+02:00",
+                            "latestPublished": "2025-10-13T07:01:00.000+02:00",
+                            "estimatedTakeOffTime": "2025-10-13T07:06:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OPO",
+                            "name": "PORTO AIRPORT",
+                            "nameLangTranl": "Francisco Sá Carneiro Airport",
+                            "city": {
+                                "code": "OPO",
+                                "name": "PORTO",
+                                "nameLangTranl": "Porto",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.1678,
+                                "longitude": -8.6667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T08:10:00.000+01:00",
+                            "latestPublished": "2025-10-13T08:11:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-13T08:11:00.000+01:00"
+                            },
+                            "estimatedArrival": "2025-10-13T08:11:00.000+01:00",
+                            "estimatedTouchDownTime": "2025-10-13T08:06:00.000+01:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H10M",
+                    "departureDateTimeDifference": "PT1M",
+                    "arrivalDateTimeDifference": "PT1M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "CSTNX",
+                        "typeCode": "320",
+                        "typeName": "AIRBUS A320",
+                        "ownerAirlineCode": "TP",
+                        "ownerAirlineName": "TAP PORTUGAL",
+                        "physicalPaxConfiguration": "C012Y156",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C012Y156"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4885,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+EC+4885",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "OPO"
+            ],
+            "airline": {
+                "code": "EC",
+                "name": "EASYJET EUROPE AIRLINE GMBH"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251012+EC+4832",
+                    "flightScheduleDate": "2025-10-12",
+                    "airlineCode": "EC",
+                    "flightNumber": "4832"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "B14"
+                                ],
+                                "parkingPosition": "R22",
+                                "pierCode": "1",
+                                "terminalCode": "1",
+                                "boardingPier": "B",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "B",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T07:21:00.000+02:00",
+                            "scheduled": "2025-10-13T07:20:00.000+02:00",
+                            "latestPublished": "2025-10-13T07:21:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T07:35:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OPO",
+                            "name": "PORTO AIRPORT",
+                            "nameLangTranl": "Francisco Sá Carneiro Airport",
+                            "city": {
+                                "code": "OPO",
+                                "name": "PORTO",
+                                "nameLangTranl": "Porto",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.1678,
+                                "longitude": -8.6667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T08:30:00.000+01:00",
+                            "latestPublished": "2025-10-13T08:40:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-13T08:40:00.000+01:00"
+                            },
+                            "estimatedArrival": "2025-10-13T08:40:00.000+01:00",
+                            "estimatedTouchDownTime": "2025-10-13T08:35:00.000+01:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H10M",
+                    "departureDateTimeDifference": "PT1M",
+                    "arrivalDateTimeDifference": "PT10M",
+                    "timeToArrival": "PT-268H-2M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "OEIVD",
+                        "typeCode": "32A",
+                        "typeName": "AIRBUS A320 (SHARKLETS)",
+                        "ownerAirlineCode": "EC",
+                        "ownerAirlineName": "EASYJET EUROPE AIRLINE GMBH",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7612,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+TO+7612",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "OPO"
+            ],
+            "airline": {
+                "code": "TO",
+                "name": "TRANSAVIA FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251012+TO+3019",
+                    "flightScheduleDate": "2025-10-12",
+                    "airlineCode": "TO",
+                    "flightNumber": "3019"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    "E10"
+                                ],
+                                "pierCode": "3",
+                                "terminalCode": "3",
+                                "boardingPier": "E",
+                                "boardingTerminal": "3",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "3",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T08:30:00.000+02:00",
+                            "scheduled": "2025-10-13T08:30:00.000+02:00",
+                            "latestPublished": "2025-10-13T08:30:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T08:39:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OPO",
+                            "name": "PORTO AIRPORT",
+                            "nameLangTranl": "Francisco Sá Carneiro Airport",
+                            "city": {
+                                "code": "OPO",
+                                "name": "PORTO",
+                                "nameLangTranl": "Porto",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.1678,
+                                "longitude": -8.6667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T09:33:00.000+01:00",
+                            "scheduled": "2025-10-13T09:40:00.000+01:00",
+                            "latestPublished": "2025-10-13T09:33:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-13T09:33:00.000+01:00"
+                            },
+                            "actualTouchDownTime": "2025-10-13T09:24:00.000+01:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H10M",
+                    "departureDateTimeDifference": "PT0S",
+                    "arrivalDateTimeDifference": "PT-7M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "FHTVD",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "TO",
+                        "ownerAirlineName": "TRANSAVIA FRANCE",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y189"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 453,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+TP+0453",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "OPO"
+            ],
+            "airline": {
+                "code": "TP",
+                "name": "TAP PORTUGAL"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 7300,
+                    "flightScheduleDate": "2025-10-13",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AD",
+                        "name": "AZUL LINHAS AEREAS BRASILEIRAS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 8919,
+                    "flightScheduleDate": "2025-10-13",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "S4",
+                        "name": "SATA INTERNATIONAL SERVICOS E TRANSPORTES AEREOS S.A."
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+TP+0452",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "TP",
+                    "flightNumber": "0452"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "B15"
+                                ],
+                                "parkingPosition": "S24",
+                                "pierCode": "1",
+                                "terminalCode": "1",
+                                "boardingPier": "B",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "B",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T10:07:00.000+02:00",
+                            "scheduled": "2025-10-13T09:55:00.000+02:00",
+                            "latestPublished": "2025-10-13T10:07:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T10:21:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OPO",
+                            "name": "PORTO AIRPORT",
+                            "nameLangTranl": "Francisco Sá Carneiro Airport",
+                            "city": {
+                                "code": "OPO",
+                                "name": "PORTO",
+                                "nameLangTranl": "Porto",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.1678,
+                                "longitude": -8.6667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T11:05:00.000+01:00",
+                            "latestPublished": "2025-10-13T11:26:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-13T11:26:00.000+01:00"
+                            },
+                            "estimatedArrival": "2025-10-13T11:26:00.000+01:00",
+                            "estimatedTouchDownTime": "2025-10-13T11:21:00.000+01:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H10M",
+                    "departureDateTimeDifference": "PT12M",
+                    "arrivalDateTimeDifference": "PT21M",
+                    "timeToArrival": "PT-265H-16M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "CSTTZ",
+                        "typeCode": "E95",
+                        "typeName": "EMBRAER 195 AND LEGACY 1000",
+                        "ownerAirlineCode": "NI",
+                        "ownerAirlineName": "PORTUGALIA- COMPANHIA PORTUGUESE DE TRANSPORTES",
+                        "physicalPaxConfiguration": "C006Y112",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C006Y112"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT21M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1985,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+VY+1985",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "OPO"
+            ],
+            "airline": {
+                "code": "VY",
+                "name": "VUELING AIRLINES SA"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5034,
+                    "flightScheduleDate": "2025-10-13",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "IB",
+                        "name": "IBERIA LINEAS AEREAS DE ESPANA S.A. OPERADORA"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+VY+1468",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "VY",
+                    "flightNumber": "1468"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "A20"
+                                ],
+                                "parkingPosition": "P10",
+                                "pierCode": "1",
+                                "terminalCode": "1",
+                                "boardingPier": "A",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "A",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T11:53:00.000+02:00",
+                            "scheduled": "2025-10-13T12:00:00.000+02:00",
+                            "latestPublished": "2025-10-13T11:53:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T12:03:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OPO",
+                            "name": "PORTO AIRPORT",
+                            "nameLangTranl": "Francisco Sá Carneiro Airport",
+                            "city": {
+                                "code": "OPO",
+                                "name": "PORTO",
+                                "nameLangTranl": "Porto",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.1678,
+                                "longitude": -8.6667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T13:10:00.000+01:00",
+                            "latestPublished": "2025-10-13T13:08:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-13T13:08:00.000+01:00"
+                            },
+                            "estimatedArrival": "2025-10-13T13:08:00.000+01:00",
+                            "estimatedTouchDownTime": "2025-10-13T13:03:00.000+01:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H10M",
+                    "departureDateTimeDifference": "PT-7M",
+                    "arrivalDateTimeDifference": "PT-2M",
+                    "timeToArrival": "PT-263H-34M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "ECMFN",
+                        "typeCode": "32A",
+                        "typeName": "AIRBUS A320 (SHARKLETS)",
+                        "ownerAirlineCode": "VY",
+                        "ownerAirlineName": "VUELING AIRLINES SA",
+                        "physicalPaxConfiguration": "Y180",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y180"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7604,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+TO+7604",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "OPO"
+            ],
+            "airline": {
+                "code": "TO",
+                "name": "TRANSAVIA FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+TO+3921",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "TO",
+                    "flightNumber": "3921"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    "E14"
+                                ],
+                                "parkingPosition": "D04",
+                                "pierCode": "3",
+                                "terminalCode": "3",
+                                "boardingPier": "E",
+                                "boardingTerminal": "3",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "E",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "3",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T12:17:00.000+02:00",
+                            "scheduled": "2025-10-13T12:25:00.000+02:00",
+                            "latestPublished": "2025-10-13T12:17:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T12:25:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OPO",
+                            "name": "PORTO AIRPORT",
+                            "nameLangTranl": "Francisco Sá Carneiro Airport",
+                            "city": {
+                                "code": "OPO",
+                                "name": "PORTO",
+                                "nameLangTranl": "Porto",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.1678,
+                                "longitude": -8.6667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T13:17:00.000+01:00",
+                            "scheduled": "2025-10-13T13:35:00.000+01:00",
+                            "latestPublished": "2025-10-13T13:17:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-13T13:17:00.000+01:00"
+                            },
+                            "actualTouchDownTime": "2025-10-13T13:11:00.000+01:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H10M",
+                    "departureDateTimeDifference": "PT-8M",
+                    "arrivalDateTimeDifference": "PT-18M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "FGZHC",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "TO",
+                        "ownerAirlineName": "TRANSAVIA FRANCE",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y189"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7618,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+TO+7618",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "OPO"
+            ],
+            "airline": {
+                "code": "TO",
+                "name": "TRANSAVIA FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+TO+7135",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "TO",
+                    "flightNumber": "7135"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    "E04"
+                                ],
+                                "parkingPosition": "A42",
+                                "pierCode": "3",
+                                "terminalCode": "3",
+                                "boardingPier": "E",
+                                "boardingTerminal": "3",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "D",
+                                "parkingPositionCustomStatus": "M",
+                                "checkInAerogare": "3",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T15:59:00.000+02:00",
+                            "scheduled": "2025-10-13T15:40:00.000+02:00",
+                            "latestPublished": "2025-10-13T15:59:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T16:14:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OPO",
+                            "name": "PORTO AIRPORT",
+                            "nameLangTranl": "Francisco Sá Carneiro Airport",
+                            "city": {
+                                "code": "OPO",
+                                "name": "PORTO",
+                                "nameLangTranl": "Porto",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.1678,
+                                "longitude": -8.6667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T17:01:00.000+01:00",
+                            "scheduled": "2025-10-13T16:50:00.000+01:00",
+                            "latestPublished": "2025-10-13T17:01:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-13T17:01:00.000+01:00"
+                            },
+                            "actualTouchDownTime": "2025-10-13T16:55:00.000+01:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H10M",
+                    "departureDateTimeDifference": "PT19M",
+                    "arrivalDateTimeDifference": "PT11M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "FHTVN",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "TO",
+                        "ownerAirlineName": "TRANSAVIA FRANCE",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y189"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "05"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "19"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT19M",
+                        "delayDurationArrival": "PT11M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "05",
+                                "delayDuration": "19"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 455,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+TP+0455",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "OPO"
+            ],
+            "airline": {
+                "code": "TP",
+                "name": "TAP PORTUGAL"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 7302,
+                    "flightScheduleDate": "2025-10-13",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AD",
+                        "name": "AZUL LINHAS AEREAS BRASILEIRAS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 8009,
+                    "flightScheduleDate": "2025-10-13",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "S4",
+                        "name": "SATA INTERNATIONAL SERVICOS E TRANSPORTES AEREOS S.A."
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+TP+0454",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "TP",
+                    "flightNumber": "0454"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "B16"
+                                ],
+                                "parkingPosition": "S25",
+                                "pierCode": "1",
+                                "terminalCode": "1",
+                                "boardingPier": "B",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "B",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T17:47:00.000+02:00",
+                            "scheduled": "2025-10-13T16:50:00.000+02:00",
+                            "latestPublished": "2025-10-13T17:47:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T17:58:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OPO",
+                            "name": "PORTO AIRPORT",
+                            "nameLangTranl": "Francisco Sá Carneiro Airport",
+                            "city": {
+                                "code": "OPO",
+                                "name": "PORTO",
+                                "nameLangTranl": "Porto",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.1678,
+                                "longitude": -8.6667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T18:00:00.000+01:00",
+                            "latestPublished": "2025-10-13T19:03:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-13T19:03:00.000+01:00"
+                            },
+                            "estimatedArrival": "2025-10-13T19:03:00.000+01:00",
+                            "estimatedTouchDownTime": "2025-10-13T18:58:00.000+01:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H10M",
+                    "departureDateTimeDifference": "PT57M",
+                    "arrivalDateTimeDifference": "PT1H3M",
+                    "timeToArrival": "PT-257H-39M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "CSTTZ",
+                        "typeCode": "E95",
+                        "typeName": "EMBRAER 195 AND LEGACY 1000",
+                        "ownerAirlineCode": "NI",
+                        "ownerAirlineName": "PORTUGALIA- COMPANHIA PORTUGUESE DE TRANSPORTES",
+                        "physicalPaxConfiguration": "C006Y112",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C006Y112"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT1H3M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7608,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+TO+7608",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "OPO"
+            ],
+            "airline": {
+                "code": "TO",
+                "name": "TRANSAVIA FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+TO+4715",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "TO",
+                    "flightNumber": "4715"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    "E20"
+                                ],
+                                "parkingPosition": "D01",
+                                "pierCode": "3",
+                                "terminalCode": "3",
+                                "boardingPier": "E",
+                                "boardingTerminal": "3",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "E",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "3",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T17:49:00.000+02:00",
+                            "scheduled": "2025-10-13T17:35:00.000+02:00",
+                            "latestPublished": "2025-10-13T17:49:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T18:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OPO",
+                            "name": "PORTO AIRPORT",
+                            "nameLangTranl": "Francisco Sá Carneiro Airport",
+                            "city": {
+                                "code": "OPO",
+                                "name": "PORTO",
+                                "nameLangTranl": "Porto",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.1678,
+                                "longitude": -8.6667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T19:01:00.000+01:00",
+                            "scheduled": "2025-10-13T18:45:00.000+01:00",
+                            "latestPublished": "2025-10-13T19:01:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-13T19:01:00.000+01:00"
+                            },
+                            "actualTouchDownTime": "2025-10-13T18:52:00.000+01:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H10M",
+                    "departureDateTimeDifference": "PT14M",
+                    "arrivalDateTimeDifference": "PT16M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "FHXSD",
+                        "typeCode": "32N",
+                        "typeName": "AIRBUS A320NEO",
+                        "ownerAirlineCode": "TO",
+                        "ownerAirlineName": "TRANSAVIA FRANCE",
+                        "physicalPaxConfiguration": "Y186",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y186"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "05"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "14"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT14M",
+                        "delayDurationArrival": "PT16M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "05",
+                                "delayDuration": "14"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7620,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+TO+7620",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "OPO"
+            ],
+            "airline": {
+                "code": "TO",
+                "name": "TRANSAVIA FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+TO+7027",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "TO",
+                    "flightNumber": "7027"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    "E11"
+                                ],
+                                "parkingPosition": "A52",
+                                "pierCode": "3",
+                                "terminalCode": "3",
+                                "boardingPier": "E",
+                                "boardingTerminal": "3",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "3",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "3",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T21:09:00.000+02:00",
+                            "scheduled": "2025-10-13T21:15:00.000+02:00",
+                            "latestPublished": "2025-10-13T21:09:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T21:20:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OPO",
+                            "name": "PORTO AIRPORT",
+                            "nameLangTranl": "Francisco Sá Carneiro Airport",
+                            "city": {
+                                "code": "OPO",
+                                "name": "PORTO",
+                                "nameLangTranl": "Porto",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.1678,
+                                "longitude": -8.6667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T22:16:00.000+01:00",
+                            "scheduled": "2025-10-13T22:25:00.000+01:00",
+                            "latestPublished": "2025-10-13T22:16:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-13T22:16:00.000+01:00"
+                            },
+                            "actualTouchDownTime": "2025-10-13T22:06:00.000+01:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H10M",
+                    "departureDateTimeDifference": "PT-6M",
+                    "arrivalDateTimeDifference": "PT-9M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "FHUYM",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "TO",
+                        "ownerAirlineName": "TRANSAVIA FRANCE",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y189"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7780,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+EC+7780",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "OPO"
+            ],
+            "airline": {
+                "code": "EC",
+                "name": "EASYJET EUROPE AIRLINE GMBH"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+EC+7779",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "EC",
+                    "flightNumber": "7779"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "B18"
+                                ],
+                                "parkingPosition": "T26",
+                                "pierCode": "1",
+                                "terminalCode": "1",
+                                "boardingPier": "B",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "B",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T22:20:00.000+02:00",
+                            "scheduled": "2025-10-13T21:55:00.000+02:00",
+                            "latestPublished": "2025-10-13T22:20:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T22:30:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OPO",
+                            "name": "PORTO AIRPORT",
+                            "nameLangTranl": "Francisco Sá Carneiro Airport",
+                            "city": {
+                                "code": "OPO",
+                                "name": "PORTO",
+                                "nameLangTranl": "Porto",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.1678,
+                                "longitude": -8.6667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T23:05:00.000+01:00",
+                            "latestPublished": "2025-10-13T23:35:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-13T23:35:00.000+01:00"
+                            },
+                            "estimatedArrival": "2025-10-13T23:35:00.000+01:00",
+                            "estimatedTouchDownTime": "2025-10-13T23:30:00.000+01:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H10M",
+                    "departureDateTimeDifference": "PT25M",
+                    "arrivalDateTimeDifference": "PT30M",
+                    "timeToArrival": "PT-253H-7M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "OELSF",
+                        "typeCode": "32N",
+                        "typeName": "AIRBUS A320NEO",
+                        "ownerAirlineCode": "EC",
+                        "ownerAirlineName": "EASYJET EUROPE AIRLINE GMBH",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT30M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7600,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+TO+7600",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "OPO"
+            ],
+            "airline": {
+                "code": "TO",
+                "name": "TRANSAVIA FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+TO+7269",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "TO",
+                    "flightNumber": "7269"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    "E03"
+                                ],
+                                "parkingPosition": "A41",
+                                "pierCode": "3",
+                                "terminalCode": "3",
+                                "boardingPier": "E",
+                                "boardingTerminal": "3",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "D",
+                                "parkingPositionCustomStatus": "M",
+                                "checkInAerogare": "3",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T06:06:00.000+02:00",
+                            "scheduled": "2025-10-14T06:10:00.000+02:00",
+                            "latestPublished": "2025-10-14T06:06:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T06:16:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OPO",
+                            "name": "PORTO AIRPORT",
+                            "nameLangTranl": "Francisco Sá Carneiro Airport",
+                            "city": {
+                                "code": "OPO",
+                                "name": "PORTO",
+                                "nameLangTranl": "Porto",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.1678,
+                                "longitude": -8.6667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T07:10:00.000+01:00",
+                            "scheduled": "2025-10-14T07:20:00.000+01:00",
+                            "latestPublished": "2025-10-14T07:10:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-14T07:10:00.000+01:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T07:00:00.000+01:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H10M",
+                    "departureDateTimeDifference": "PT-4M",
+                    "arrivalDateTimeDifference": "PT-10M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "FGZHP",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "TO",
+                        "ownerAirlineName": "TRANSAVIA FRANCE",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y189"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 457,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+TP+0457",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "OPO"
+            ],
+            "airline": {
+                "code": "TP",
+                "name": "TAP PORTUGAL"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 7305,
+                    "flightScheduleDate": "2025-10-14",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AD",
+                        "name": "AZUL LINHAS AEREAS BRASILEIRAS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 8239,
+                    "flightScheduleDate": "2025-10-14",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "S4",
+                        "name": "SATA INTERNATIONAL SERVICOS E TRANSPORTES AEREOS S.A."
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+TP+0456",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "TP",
+                    "flightNumber": "0456"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "B12"
+                                ],
+                                "parkingPosition": "M02",
+                                "pierCode": "1",
+                                "terminalCode": "1",
+                                "boardingPier": "B",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "L",
+                                "parkingPositionType": "L",
+                                "parkingPositionCustomStatus": "M",
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T06:49:00.000+02:00",
+                            "scheduled": "2025-10-14T07:00:00.000+02:00",
+                            "latestPublished": "2025-10-14T06:49:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T06:56:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OPO",
+                            "name": "PORTO AIRPORT",
+                            "nameLangTranl": "Francisco Sá Carneiro Airport",
+                            "city": {
+                                "code": "OPO",
+                                "name": "PORTO",
+                                "nameLangTranl": "Porto",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.1678,
+                                "longitude": -8.6667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T08:10:00.000+01:00",
+                            "latestPublished": "2025-10-14T08:01:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-14T08:01:00.000+01:00"
+                            },
+                            "estimatedArrival": "2025-10-14T08:01:00.000+01:00",
+                            "estimatedTouchDownTime": "2025-10-14T07:56:00.000+01:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H10M",
+                    "departureDateTimeDifference": "PT-11M",
+                    "arrivalDateTimeDifference": "PT-9M",
+                    "timeToArrival": "PT-244H-41M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "CSTNV",
+                        "typeCode": "320",
+                        "typeName": "AIRBUS A320",
+                        "ownerAirlineCode": "TP",
+                        "ownerAirlineName": "TAP PORTUGAL",
+                        "physicalPaxConfiguration": "C012Y156",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C012Y156"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 453,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+TP+0453",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "OPO"
+            ],
+            "airline": {
+                "code": "TP",
+                "name": "TAP PORTUGAL"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 7300,
+                    "flightScheduleDate": "2025-10-14",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AD",
+                        "name": "AZUL LINHAS AEREAS BRASILEIRAS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 8919,
+                    "flightScheduleDate": "2025-10-14",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "S4",
+                        "name": "SATA INTERNATIONAL SERVICOS E TRANSPORTES AEREOS S.A."
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+TP+0452",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "TP",
+                    "flightNumber": "0452"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "B16"
+                                ],
+                                "parkingPosition": "S25",
+                                "pierCode": "1",
+                                "terminalCode": "1",
+                                "boardingPier": "B",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "B",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T09:47:00.000+02:00",
+                            "scheduled": "2025-10-14T09:55:00.000+02:00",
+                            "latestPublished": "2025-10-14T09:47:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T09:56:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OPO",
+                            "name": "PORTO AIRPORT",
+                            "nameLangTranl": "Francisco Sá Carneiro Airport",
+                            "city": {
+                                "code": "OPO",
+                                "name": "PORTO",
+                                "nameLangTranl": "Porto",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.1678,
+                                "longitude": -8.6667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T11:05:00.000+01:00",
+                            "latestPublished": "2025-10-14T11:01:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-14T11:01:00.000+01:00"
+                            },
+                            "estimatedArrival": "2025-10-14T11:01:00.000+01:00",
+                            "estimatedTouchDownTime": "2025-10-14T10:56:00.000+01:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H10M",
+                    "departureDateTimeDifference": "PT-8M",
+                    "arrivalDateTimeDifference": "PT-4M",
+                    "timeToArrival": "PT-241H-41M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "CSTTX",
+                        "typeCode": "E95",
+                        "typeName": "EMBRAER 195 AND LEGACY 1000",
+                        "ownerAirlineCode": "NI",
+                        "ownerAirlineName": "PORTUGALIA- COMPANHIA PORTUGUESE DE TRANSPORTES",
+                        "physicalPaxConfiguration": "C006Y112",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C006Y112"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7604,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+TO+7604",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "OPO"
+            ],
+            "airline": {
+                "code": "TO",
+                "name": "TRANSAVIA FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+TO+3819",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "TO",
+                    "flightNumber": "3819"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    "E14"
+                                ],
+                                "parkingPosition": "D04",
+                                "pierCode": "3",
+                                "terminalCode": "3",
+                                "boardingPier": "E",
+                                "boardingTerminal": "3",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "E",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "3",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T11:57:00.000+02:00",
+                            "scheduled": "2025-10-14T11:40:00.000+02:00",
+                            "latestPublished": "2025-10-14T11:57:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T12:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OPO",
+                            "name": "PORTO AIRPORT",
+                            "nameLangTranl": "Francisco Sá Carneiro Airport",
+                            "city": {
+                                "code": "OPO",
+                                "name": "PORTO",
+                                "nameLangTranl": "Porto",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.1678,
+                                "longitude": -8.6667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T12:59:00.000+01:00",
+                            "scheduled": "2025-10-14T12:50:00.000+01:00",
+                            "latestPublished": "2025-10-14T12:59:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-14T12:59:00.000+01:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T12:51:00.000+01:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H10M",
+                    "departureDateTimeDifference": "PT17M",
+                    "arrivalDateTimeDifference": "PT9M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "FGZHO",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "TO",
+                        "ownerAirlineName": "TRANSAVIA FRANCE",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y189"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "05"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "17"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT17M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "05",
+                                "delayDuration": "17"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1985,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+VY+1985",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "OPO"
+            ],
+            "airline": {
+                "code": "VY",
+                "name": "VUELING AIRLINES SA"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5034,
+                    "flightScheduleDate": "2025-10-14",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "IB",
+                        "name": "IBERIA LINEAS AEREAS DE ESPANA S.A. OPERADORA"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+VY+8325",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "VY",
+                    "flightNumber": "8325"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "A11"
+                                ],
+                                "parkingPosition": "P41",
+                                "pierCode": "1",
+                                "terminalCode": "1",
+                                "boardingPier": "A",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "A",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T13:11:00.000+02:00",
+                            "scheduled": "2025-10-14T13:10:00.000+02:00",
+                            "latestPublished": "2025-10-14T13:11:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T13:21:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OPO",
+                            "name": "PORTO AIRPORT",
+                            "nameLangTranl": "Francisco Sá Carneiro Airport",
+                            "city": {
+                                "code": "OPO",
+                                "name": "PORTO",
+                                "nameLangTranl": "Porto",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.1678,
+                                "longitude": -8.6667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T14:20:00.000+01:00",
+                            "latestPublished": "2025-10-14T14:26:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-14T14:26:00.000+01:00"
+                            },
+                            "estimatedArrival": "2025-10-14T14:26:00.000+01:00",
+                            "estimatedTouchDownTime": "2025-10-14T14:21:00.000+01:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H10M",
+                    "departureDateTimeDifference": "PT1M",
+                    "arrivalDateTimeDifference": "PT6M",
+                    "timeToArrival": "PT-238H-16M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "ECNUP",
+                        "typeCode": "320",
+                        "typeName": "AIRBUS A320",
+                        "ownerAirlineCode": "V7",
+                        "ownerAirlineName": "VOLOTEA S.A.",
+                        "physicalPaxConfiguration": "Y180",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y180"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7616,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+TO+7616",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "OPO"
+            ],
+            "airline": {
+                "code": "TO",
+                "name": "TRANSAVIA FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+TO+3453",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "TO",
+                    "flightNumber": "3453"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    "E07"
+                                ],
+                                "parkingPosition": "F20",
+                                "pierCode": "3",
+                                "terminalCode": "3",
+                                "boardingPier": "E",
+                                "boardingTerminal": "3",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "L",
+                                "parkingPositionType": "L",
+                                "parkingPositionCustomStatus": "M",
+                                "checkInAerogare": "3",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T15:15:00.000+02:00",
+                            "scheduled": "2025-10-14T13:50:00.000+02:00",
+                            "latestPublished": "2025-10-14T15:15:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T15:26:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OPO",
+                            "name": "PORTO AIRPORT",
+                            "nameLangTranl": "Francisco Sá Carneiro Airport",
+                            "city": {
+                                "code": "OPO",
+                                "name": "PORTO",
+                                "nameLangTranl": "Porto",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.1678,
+                                "longitude": -8.6667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T16:22:00.000+01:00",
+                            "scheduled": "2025-10-14T15:00:00.000+01:00",
+                            "latestPublished": "2025-10-14T16:22:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-14T16:22:00.000+01:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T16:15:00.000+01:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H10M",
+                    "departureDateTimeDifference": "PT1H25M",
+                    "arrivalDateTimeDifference": "PT1H22M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "FHDSJ",
+                        "typeCode": "319",
+                        "typeName": "AIRBUS A319",
+                        "ownerAirlineCode": "8R",
+                        "ownerAirlineName": "AMELIA FRANCE",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y189"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "05"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "85"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT1H25M",
+                        "delayDurationArrival": "PT1H22M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "05",
+                                "delayDuration": "85"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7606,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+TO+7606",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "OPO"
+            ],
+            "airline": {
+                "code": "TO",
+                "name": "TRANSAVIA FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+TO+4661",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "TO",
+                    "flightNumber": "4661"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    "E12"
+                                ],
+                                "parkingPosition": "D06",
+                                "pierCode": "3",
+                                "terminalCode": "3",
+                                "boardingPier": "E",
+                                "boardingTerminal": "3",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "E",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "3",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T15:25:00.000+02:00",
+                            "scheduled": "2025-10-14T15:25:00.000+02:00",
+                            "latestPublished": "2025-10-14T15:25:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T15:39:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OPO",
+                            "name": "PORTO AIRPORT",
+                            "nameLangTranl": "Francisco Sá Carneiro Airport",
+                            "city": {
+                                "code": "OPO",
+                                "name": "PORTO",
+                                "nameLangTranl": "Porto",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.1678,
+                                "longitude": -8.6667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T16:30:00.000+01:00",
+                            "scheduled": "2025-10-14T16:35:00.000+01:00",
+                            "latestPublished": "2025-10-14T16:30:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-14T16:30:00.000+01:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T16:23:00.000+01:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H10M",
+                    "departureDateTimeDifference": "PT0S",
+                    "arrivalDateTimeDifference": "PT-5M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "FHTVZ",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "TO",
+                        "ownerAirlineName": "TRANSAVIA FRANCE",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y189"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 455,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+TP+0455",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "OPO"
+            ],
+            "airline": {
+                "code": "TP",
+                "name": "TAP PORTUGAL"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 7302,
+                    "flightScheduleDate": "2025-10-14",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AD",
+                        "name": "AZUL LINHAS AEREAS BRASILEIRAS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 8009,
+                    "flightScheduleDate": "2025-10-14",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "S4",
+                        "name": "SATA INTERNATIONAL SERVICOS E TRANSPORTES AEREOS S.A."
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+TP+0454",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "TP",
+                    "flightNumber": "0454"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "B15"
+                                ],
+                                "parkingPosition": "S24",
+                                "pierCode": "1",
+                                "terminalCode": "1",
+                                "boardingPier": "B",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "B",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T16:38:00.000+02:00",
+                            "scheduled": "2025-10-14T16:50:00.000+02:00",
+                            "latestPublished": "2025-10-14T16:38:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T16:48:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OPO",
+                            "name": "PORTO AIRPORT",
+                            "nameLangTranl": "Francisco Sá Carneiro Airport",
+                            "city": {
+                                "code": "OPO",
+                                "name": "PORTO",
+                                "nameLangTranl": "Porto",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.1678,
+                                "longitude": -8.6667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T18:00:00.000+01:00",
+                            "latestPublished": "2025-10-14T17:53:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-14T17:53:00.000+01:00"
+                            },
+                            "estimatedArrival": "2025-10-14T17:53:00.000+01:00",
+                            "estimatedTouchDownTime": "2025-10-14T17:48:00.000+01:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H10M",
+                    "departureDateTimeDifference": "PT-12M",
+                    "arrivalDateTimeDifference": "PT-7M",
+                    "timeToArrival": "PT-234H-49M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "CSTTX",
+                        "typeCode": "E95",
+                        "typeName": "EMBRAER 195 AND LEGACY 1000",
+                        "ownerAirlineCode": "NI",
+                        "ownerAirlineName": "PORTUGALIA- COMPANHIA PORTUGUESE DE TRANSPORTES",
+                        "physicalPaxConfiguration": "C006Y112",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C006Y112"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7608,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+TO+7608",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "OPO"
+            ],
+            "airline": {
+                "code": "TO",
+                "name": "TRANSAVIA FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+TO+3513",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "TO",
+                    "flightNumber": "3513"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    "E09"
+                                ],
+                                "pierCode": "3",
+                                "terminalCode": "3",
+                                "boardingPier": "E",
+                                "boardingTerminal": "3",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "3",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T16:55:00.000+02:00",
+                            "latestPublished": "2025-10-14T16:55:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T17:14:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OPO",
+                            "name": "PORTO AIRPORT",
+                            "nameLangTranl": "Francisco Sá Carneiro Airport",
+                            "city": {
+                                "code": "OPO",
+                                "name": "PORTO",
+                                "nameLangTranl": "Porto",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.1678,
+                                "longitude": -8.6667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T18:18:00.000+01:00",
+                            "scheduled": "2025-10-14T18:05:00.000+01:00",
+                            "latestPublished": "2025-10-14T18:18:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-14T18:18:00.000+01:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T18:12:00.000+01:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H10M",
+                    "arrivalDateTimeDifference": "PT13M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "FHTVT",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "TO",
+                        "ownerAirlineName": "TRANSAVIA FRANCE",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y189"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT13M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7620,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+TO+7620",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "OPO"
+            ],
+            "airline": {
+                "code": "TO",
+                "name": "TRANSAVIA FRANCE"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+TO+7027",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "TO",
+                    "flightNumber": "7027"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    "E14"
+                                ],
+                                "parkingPosition": "D04",
+                                "pierCode": "3",
+                                "terminalCode": "3",
+                                "boardingPier": "E",
+                                "boardingTerminal": "3",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "E",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "3",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T21:19:00.000+02:00",
+                            "scheduled": "2025-10-14T21:15:00.000+02:00",
+                            "latestPublished": "2025-10-14T21:19:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T21:25:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OPO",
+                            "name": "PORTO AIRPORT",
+                            "nameLangTranl": "Francisco Sá Carneiro Airport",
+                            "city": {
+                                "code": "OPO",
+                                "name": "PORTO",
+                                "nameLangTranl": "Porto",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.1678,
+                                "longitude": -8.6667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T22:19:00.000+01:00",
+                            "scheduled": "2025-10-14T22:25:00.000+01:00",
+                            "latestPublished": "2025-10-14T22:19:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-14T22:19:00.000+01:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T22:12:00.000+01:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H10M",
+                    "departureDateTimeDifference": "PT4M",
+                    "arrivalDateTimeDifference": "PT-6M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "FHUYP",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "TO",
+                        "ownerAirlineName": "TRANSAVIA FRANCE",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y189"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "05"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "4"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "05",
+                                "delayDuration": "4"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7780,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+EC+7780",
+            "haul": "MEDIUM",
+            "route": [
+                "ORY",
+                "OPO"
+            ],
+            "airline": {
+                "code": "EC",
+                "name": "EASYJET EUROPE AIRLINE GMBH"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+EC+7779",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "EC",
+                    "flightNumber": "7779"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "B11"
+                                ],
+                                "parkingPosition": "R01",
+                                "pierCode": "1",
+                                "terminalCode": "1",
+                                "boardingPier": "B",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "B",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T21:48:00.000+02:00",
+                            "scheduled": "2025-10-14T21:40:00.000+02:00",
+                            "latestPublished": "2025-10-14T21:48:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T22:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OPO",
+                            "name": "PORTO AIRPORT",
+                            "nameLangTranl": "Francisco Sá Carneiro Airport",
+                            "city": {
+                                "code": "OPO",
+                                "name": "PORTO",
+                                "nameLangTranl": "Porto",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 41.1678,
+                                "longitude": -8.6667
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T22:50:00.000+01:00",
+                            "latestPublished": "2025-10-14T23:05:00.000+01:00",
+                            "estimated": {
+                                "value": "2025-10-14T23:05:00.000+01:00"
+                            },
+                            "estimatedArrival": "2025-10-14T23:05:00.000+01:00",
+                            "estimatedTouchDownTime": "2025-10-14T23:00:00.000+01:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H10M",
+                    "departureDateTimeDifference": "PT8M",
+                    "arrivalDateTimeDifference": "PT15M",
+                    "timeToArrival": "PT-229H-37M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "registration": "OEINE",
+                        "typeCode": "32A",
+                        "typeName": "AIRBUS A320 (SHARKLETS)",
+                        "ownerAirlineCode": "EC",
+                        "ownerAirlineName": "EASYJET EUROPE AIRLINE GMBH",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT15M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 23,
+        "pageNumber": 18,
+        "fullCount": 1823,
+        "pageCount": 23,
+        "totalPages": 19
+    }
+}

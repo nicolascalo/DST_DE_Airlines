@@ -1,0 +1,974 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 1495,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+DY+1495",
+            "haul": "MEDIUM",
+            "route": [
+                "CDG",
+                "OSL"
+            ],
+            "airline": {
+                "code": "DY",
+                "name": "NORWEGIAN AIR SHUTTLE A.S."
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+DY+1494",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "DY",
+                    "flightNumber": "1494"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    "D56"
+                                ],
+                                "parkingPosition": "D14",
+                                "pierCode": "",
+                                "terminalCode": "2D",
+                                "boardingPier": "",
+                                "boardingTerminal": "2D",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "2D",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T11:52:00.000+02:00",
+                            "scheduled": "2025-10-14T11:50:00.000+02:00",
+                            "latestPublished": "2025-10-14T11:52:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T12:12:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T14:05:00.000+02:00",
+                            "latestPublished": "2025-10-14T14:17:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T14:17:00.000+02:00"
+                            },
+                            "estimatedArrival": "2025-10-14T14:17:00.000+02:00",
+                            "estimatedTouchDownTime": "2025-10-14T14:12:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H15M",
+                    "departureDateTimeDifference": "PT2M",
+                    "arrivalDateTimeDifference": "PT12M",
+                    "timeToArrival": "PT-239H-15M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "LNNOD",
+                        "typeCode": "738",
+                        "typeName": "BOEING 737-800 PASSENGER",
+                        "ownerAirlineCode": "DY",
+                        "ownerAirlineName": "NORWEGIAN AIR SHUTTLE A.S.",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT12M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 834,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+SK+0834",
+            "haul": "MEDIUM",
+            "route": [
+                "CDG",
+                "OSL"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+SK+0837",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "SK",
+                    "flightNumber": "0837"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    "D66"
+                                ],
+                                "parkingPosition": "D12",
+                                "pierCode": "",
+                                "terminalCode": "2B",
+                                "boardingPier": "",
+                                "boardingTerminal": "2D",
+                                "checkInZone": [
+                                    "B02"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "2D",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T14:01:00.000+02:00",
+                            "scheduled": "2025-10-14T14:00:00.000+02:00",
+                            "latestPublished": "2025-10-14T14:01:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T14:24:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "E11"
+                                ],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T16:27:00.000+02:00",
+                            "scheduled": "2025-10-14T16:20:00.000+02:00",
+                            "latestPublished": "2025-10-14T16:27:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T16:27:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T16:23:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H20M",
+                    "departureDateTimeDifference": "PT1M",
+                    "arrivalDateTimeDifference": "PT7M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "OYKAS",
+                        "typeCode": "320",
+                        "typeName": "AIRBUS A320",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "SK",
+                        "cabinCrewEmployer": "SK"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1774,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+AF+1774",
+            "haul": "MEDIUM",
+            "route": [
+                "CDG",
+                "OSL"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5765,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2660,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AZ",
+                        "name": "ITA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 8484,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5227,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "G3",
+                        "name": "GOL LINHAS AEREAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3254,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KQ",
+                        "name": "KENYA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9652,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MK",
+                        "name": "AIR MAURITIUS LTD"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1689,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MU",
+                        "name": "CHINA EASTERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9792,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SK",
+                        "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 8774,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "UU",
+                        "name": "AIR AUSTRAL"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3686,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "VN",
+                        "name": "VIETNAM AIRLINES JSC"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5871,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "WS",
+                        "name": "WESTJET"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+AF+9405",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "AF",
+                    "flightNumber": "9405"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    "F34"
+                                ],
+                                "parkingPosition": "F32",
+                                "pierCode": "",
+                                "terminalCode": "2F",
+                                "boardingPier": "1",
+                                "boardingTerminal": "2F",
+                                "checkInZone": [
+                                    "F05",
+                                    "F06"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "1",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": [
+                                    "F34"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T14:27:00.000+02:00",
+                            "scheduled": "2025-10-14T14:20:00.000+02:00",
+                            "latestPublished": "2025-10-14T14:27:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T14:42:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T13:45:00.000+02:00",
+                            "gateCloseTime": "2025-10-14T14:00:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-14T13:36:00.000+02:00",
+                            "firstPaxBoarding": "2025-10-14T13:37:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T16:45:00.000+02:00",
+                            "scheduled": "2025-10-14T16:40:00.000+02:00",
+                            "latestPublished": "2025-10-14T16:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T16:45:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T16:40:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H20M",
+                    "departureDateTimeDifference": "PT7M",
+                    "arrivalDateTimeDifference": "PT5M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FGKXI",
+                        "typeCode": "320",
+                        "typeName": "AIRBUS A320",
+                        "subFleetCodeId": "CC",
+                        "ownerAirlineCode": "AF",
+                        "ownerAirlineName": "AIR FRANCE",
+                        "physicalPaxConfiguration": "C108Y066",
+                        "physicalFreightConfiguration": "PP003LL004",
+                        "operationalConfiguration": "C016Y150",
+                        "cockpitCrewEmployer": "AF",
+                        "cabinCrewEmployer": "AF",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "32"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0007"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "32",
+                                "delayDuration": "0007"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 836,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+SK+0836",
+            "haul": "MEDIUM",
+            "route": [
+                "CDG",
+                "OSL"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+SK+0839",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "SK",
+                    "flightNumber": "0839"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    "D56"
+                                ],
+                                "parkingPosition": "D14",
+                                "pierCode": "",
+                                "terminalCode": "2B",
+                                "boardingPier": "",
+                                "boardingTerminal": "2D",
+                                "checkInZone": [
+                                    "B02"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "2D",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T20:08:00.000+02:00",
+                            "scheduled": "2025-10-14T20:15:00.000+02:00",
+                            "latestPublished": "2025-10-14T20:08:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T20:26:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "E13"
+                                ],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T22:26:00.000+02:00",
+                            "scheduled": "2025-10-14T22:30:00.000+02:00",
+                            "latestPublished": "2025-10-14T22:26:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T22:26:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T22:21:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H15M",
+                    "departureDateTimeDifference": "PT-7M",
+                    "arrivalDateTimeDifference": "PT-4M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "EISII",
+                        "typeCode": "32S",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1274,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+AF+1274",
+            "haul": "MEDIUM",
+            "route": [
+                "CDG",
+                "OSL"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5791,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2666,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AZ",
+                        "name": "ITA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9654,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MK",
+                        "name": "AIR MAURITIUS LTD"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1687,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MU",
+                        "name": "CHINA EASTERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9791,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SK",
+                        "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+AF+7311",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "AF",
+                    "flightNumber": "7311"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    "F55"
+                                ],
+                                "parkingPosition": "F94",
+                                "pierCode": "",
+                                "terminalCode": "2F",
+                                "boardingPier": "2",
+                                "boardingTerminal": "2F",
+                                "checkInZone": [
+                                    "F05",
+                                    "F06"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "2",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": [
+                                    "F55"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T20:59:00.000+02:00",
+                            "scheduled": "2025-10-14T21:00:00.000+02:00",
+                            "latestPublished": "2025-10-14T20:59:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T21:19:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T20:25:00.000+02:00",
+                            "gateCloseTime": "2025-10-14T20:40:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-14T20:24:00.000+02:00",
+                            "firstPaxBoarding": "2025-10-14T20:25:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T23:20:00.000+02:00",
+                            "scheduled": "2025-10-14T23:20:00.000+02:00",
+                            "latestPublished": "2025-10-14T23:20:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T23:20:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T23:16:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H20M",
+                    "departureDateTimeDifference": "PT-1M",
+                    "arrivalDateTimeDifference": "PT0S",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "FGTAK",
+                        "typeCode": "321",
+                        "typeName": "AIRBUS A321",
+                        "subFleetCodeId": "CD",
+                        "ownerAirlineCode": "AF",
+                        "ownerAirlineName": "AIR FRANCE",
+                        "physicalPaxConfiguration": "C082Y130",
+                        "physicalFreightConfiguration": "PP005LL005",
+                        "operationalConfiguration": "C012Y194",
+                        "cockpitCrewEmployer": "AF",
+                        "cabinCrewEmployer": "AF",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 5,
+        "pageNumber": 10,
+        "fullCount": 1005,
+        "pageCount": 5,
+        "totalPages": 11
+    }
+}

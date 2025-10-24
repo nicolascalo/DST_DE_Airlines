@@ -1,0 +1,2435 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 6337,
+            "flightScheduleDate": "2025-10-12",
+            "id": "20251012+HV+6337",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "VLC"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2523,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251012+HV+6820",
+                    "flightScheduleDate": "2025-10-12",
+                    "airlineCode": "HV",
+                    "flightNumber": "6820"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C10"
+                                ],
+                                "parkingPosition": "C10",
+                                "pierCode": "C",
+                                "terminalCode": "01",
+                                "boardingPier": "C",
+                                "checkInZone": [
+                                    "02",
+                                    "03"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-12T17:35:00.000+02:00",
+                            "scheduled": "2025-10-12T17:10:00.000+02:00",
+                            "latestPublished": "2025-10-12T17:35:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-12T17:51:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "VLC",
+                            "name": "VALENCIA AIRPORT",
+                            "nameLangTranl": "Valencia Airport",
+                            "city": {
+                                "code": "VLC",
+                                "name": "VALENCIA",
+                                "nameLangTranl": "Valencia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 39.4903,
+                                "longitude": -0.4786
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-12T19:35:00.000+02:00",
+                            "latestPublished": "2025-10-12T19:35:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-12T19:35:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H25M",
+                    "departureDateTimeDifference": "PT25M",
+                    "timeToArrival": "PT-282H-4M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHHXM",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1535,
+            "flightScheduleDate": "2025-10-12",
+            "id": "20251012+KL+1535",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "VLC"
+            ],
+            "airline": {
+                "code": "KL",
+                "name": "KLM ROYAL DUTCH AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3230,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9427,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5561,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "G3",
+                        "name": "GOL LINHAS AEREAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1501,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KQ",
+                        "name": "KENYA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1851,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MU",
+                        "name": "CHINA EASTERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6828,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SK",
+                        "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "onwardFlightData": {
+                    "id": "20251013+KL+1530",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "KL",
+                    "flightNumber": "1530"
+                },
+                "previousFlightData": {
+                    "id": "20251012+KL+1936",
+                    "flightScheduleDate": "2025-10-12",
+                    "airlineCode": "KL",
+                    "flightNumber": "1936"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B30"
+                                ],
+                                "parkingPosition": "A33",
+                                "pierCode": "B",
+                                "terminalCode": "01",
+                                "boardingPier": "B",
+                                "checkInZone": [
+                                    "06",
+                                    "07",
+                                    "08"
+                                ],
+                                "boardingContactType": "L",
+                                "parkingPositionType": "L",
+                                "paxDepartureGate": [
+                                    "B30"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-12T20:42:00.000+02:00",
+                            "scheduled": "2025-10-12T20:35:00.000+02:00",
+                            "latestPublished": "2025-10-12T20:42:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-12T20:54:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-12T20:15:00.000+02:00",
+                            "gateCloseTime": "2025-10-12T20:30:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-12T19:59:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "VLC",
+                            "name": "VALENCIA AIRPORT",
+                            "nameLangTranl": "Valencia Airport",
+                            "city": {
+                                "code": "VLC",
+                                "name": "VALENCIA",
+                                "nameLangTranl": "Valencia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 39.4903,
+                                "longitude": -0.4786
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-12T22:55:00.000+02:00",
+                            "scheduled": "2025-10-12T23:00:00.000+02:00",
+                            "latestPublished": "2025-10-12T22:55:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-12T22:55:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-12T22:52:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H25M",
+                    "departureDateTimeDifference": "PT7M",
+                    "arrivalDateTimeDifference": "PT-5M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHNXX",
+                        "typeCode": "295",
+                        "typeName": "EMBRAER 195 E2",
+                        "subFleetCodeId": "E",
+                        "ownerAirlineCode": "WA",
+                        "ownerAirlineName": "KLM CITYHOPPER",
+                        "physicalPaxConfiguration": "C028M104",
+                        "operationalConfiguration": "C008M124",
+                        "cockpitCrewEmployer": "WA",
+                        "cabinCrewEmployer": "WA",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "65"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0007"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR02"
+                        ],
+                        "delayReasonPublicLangTransl": [
+                            "This flight was delayed due to operational issues."
+                        ],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "65",
+                                "delayDuration": "0007",
+                                "delayReasonCodePublic": "FSR02",
+                                "delayReasonPublicShort": "Operational issues",
+                                "delayReasonPublicLong": "This flight was delayed due to operational issues."
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6333,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+HV+6333",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "VLC"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2546,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251012+HV+0174",
+                    "flightScheduleDate": "2025-10-12",
+                    "airlineCode": "HV",
+                    "flightNumber": "0174"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C05"
+                                ],
+                                "parkingPosition": "C05",
+                                "pierCode": "C",
+                                "terminalCode": "01",
+                                "boardingPier": "C",
+                                "checkInZone": [
+                                    "02",
+                                    "03"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T07:18:00.000+02:00",
+                            "scheduled": "2025-10-13T07:20:00.000+02:00",
+                            "latestPublished": "2025-10-13T07:18:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T07:34:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "VLC",
+                            "name": "VALENCIA AIRPORT",
+                            "nameLangTranl": "Valencia Airport",
+                            "city": {
+                                "code": "VLC",
+                                "name": "VALENCIA",
+                                "nameLangTranl": "Valencia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 39.4903,
+                                "longitude": -0.4786
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T09:45:00.000+02:00",
+                            "latestPublished": "2025-10-13T09:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T09:45:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H25M",
+                    "departureDateTimeDifference": "PT-2M",
+                    "timeToArrival": "PT-267H-54M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHYHX",
+                        "typeCode": "32Q",
+                        "typeName": "AIRBUS A321NEO",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y232",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 8352,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+VY+8352",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "VLC"
+            ],
+            "airline": {
+                "code": "VY",
+                "name": "VUELING AIRLINES SA"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251012+VY+8311",
+                    "flightScheduleDate": "2025-10-12",
+                    "airlineCode": "VY",
+                    "flightNumber": "8311"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B31"
+                                ],
+                                "parkingPosition": "B31",
+                                "pierCode": "B",
+                                "terminalCode": "1A",
+                                "boardingPier": "B",
+                                "checkInZone": [
+                                    "01"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "L",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T07:27:00.000+02:00",
+                            "scheduled": "2025-10-13T07:25:00.000+02:00",
+                            "latestPublished": "2025-10-13T07:27:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T07:46:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "VLC",
+                            "name": "VALENCIA AIRPORT",
+                            "nameLangTranl": "Valencia Airport",
+                            "city": {
+                                "code": "VLC",
+                                "name": "VALENCIA",
+                                "nameLangTranl": "Valencia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 39.4903,
+                                "longitude": -0.4786
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T07:25:00.000+02:00",
+                            "latestPublished": "2025-10-13T07:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T07:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT2M",
+                    "timeToArrival": "PT-270H-14M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "ECMJB",
+                        "typeCode": "320",
+                        "typeName": "AIRBUS A320",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6331,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+HV+6331",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "VLC"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2659,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+HV+5312",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "HV",
+                    "flightNumber": "5312"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C10"
+                                ],
+                                "parkingPosition": "C10",
+                                "pierCode": "C",
+                                "terminalCode": "01",
+                                "boardingPier": "C",
+                                "checkInZone": [
+                                    "02",
+                                    "03"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T13:32:00.000+02:00",
+                            "scheduled": "2025-10-13T12:15:00.000+02:00",
+                            "latestPublished": "2025-10-13T13:32:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T13:48:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "VLC",
+                            "name": "VALENCIA AIRPORT",
+                            "nameLangTranl": "Valencia Airport",
+                            "city": {
+                                "code": "VLC",
+                                "name": "VALENCIA",
+                                "nameLangTranl": "Valencia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 39.4903,
+                                "longitude": -0.4786
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T14:40:00.000+02:00",
+                            "latestPublished": "2025-10-13T14:40:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T14:40:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H25M",
+                    "departureDateTimeDifference": "PT1H17M",
+                    "timeToArrival": "PT-262H-59M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHHSA",
+                        "typeCode": "73H",
+                        "typeName": "BOEING 737-800 (WINGLETS) PASSENGER/BBJ2",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y189",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "93"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0117"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT1H17M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "93",
+                                "delayDuration": "0117"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1531,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+KL+1531",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "VLC"
+            ],
+            "airline": {
+                "code": "KL",
+                "name": "KLM ROYAL DUTCH AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3231,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9483,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "CI",
+                        "name": "CHINA AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9426,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5560,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "G3",
+                        "name": "GOL LINHAS AEREAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1503,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KQ",
+                        "name": "KENYA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1849,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MU",
+                        "name": "CHINA EASTERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6826,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SK",
+                        "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "onwardFlightData": {
+                    "id": "20251013+KL+1532",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "KL",
+                    "flightNumber": "1532"
+                },
+                "previousFlightData": {
+                    "id": "20251013+KL+1830",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "KL",
+                    "flightNumber": "1830"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B26"
+                                ],
+                                "parkingPosition": "A63",
+                                "pierCode": "B",
+                                "terminalCode": "01",
+                                "boardingPier": "B",
+                                "checkInZone": [
+                                    "06",
+                                    "07",
+                                    "08"
+                                ],
+                                "boardingContactType": "L",
+                                "parkingPositionType": "L",
+                                "paxDepartureGate": [
+                                    "B26"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T14:16:00.000+02:00",
+                            "scheduled": "2025-10-13T14:10:00.000+02:00",
+                            "latestPublished": "2025-10-13T14:16:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T14:29:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-13T13:40:00.000+02:00",
+                            "gateCloseTime": "2025-10-13T13:55:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-13T13:35:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "VLC",
+                            "name": "VALENCIA AIRPORT",
+                            "nameLangTranl": "Valencia Airport",
+                            "city": {
+                                "code": "VLC",
+                                "name": "VALENCIA",
+                                "nameLangTranl": "Valencia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 39.4903,
+                                "longitude": -0.4786
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T16:34:00.000+02:00",
+                            "scheduled": "2025-10-13T16:35:00.000+02:00",
+                            "latestPublished": "2025-10-13T16:34:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T16:34:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-13T16:31:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H25M",
+                    "departureDateTimeDifference": "PT6M",
+                    "arrivalDateTimeDifference": "PT-1M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHNXO",
+                        "typeCode": "295",
+                        "typeName": "EMBRAER 195 E2",
+                        "subFleetCodeId": "E",
+                        "ownerAirlineCode": "WA",
+                        "ownerAirlineName": "KLM CITYHOPPER",
+                        "physicalPaxConfiguration": "C028M104",
+                        "operationalConfiguration": "C008M124",
+                        "cockpitCrewEmployer": "WA",
+                        "cabinCrewEmployer": "WA",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "81"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0006"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR06"
+                        ],
+                        "delayReasonPublicLangTransl": [
+                            "This flight was delayed due to restrictions from Air Traffic Control at the airport of Amsterdam (AMS)."
+                        ],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "81",
+                                "delayDuration": "0006",
+                                "delayReasonCodePublic": "FSR06",
+                                "delayReasonPublicShort": "Restrictions from Air Traffic Control",
+                                "delayReasonPublicLong": "This flight was delayed due to restrictions from Air Traffic Control at the airport of Amsterdam (AMS)."
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 8656,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+VY+8656",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "VLC"
+            ],
+            "airline": {
+                "code": "VY",
+                "name": "VUELING AIRLINES SA"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+VY+8312",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "VY",
+                    "flightNumber": "8312"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B23"
+                                ],
+                                "parkingPosition": "B23",
+                                "pierCode": "B",
+                                "terminalCode": "1A",
+                                "boardingPier": "B",
+                                "checkInZone": [
+                                    "01"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "L",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T15:19:00.000+02:00",
+                            "scheduled": "2025-10-13T14:55:00.000+02:00",
+                            "latestPublished": "2025-10-13T15:19:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T15:27:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "VLC",
+                            "name": "VALENCIA AIRPORT",
+                            "nameLangTranl": "Valencia Airport",
+                            "city": {
+                                "code": "VLC",
+                                "name": "VALENCIA",
+                                "nameLangTranl": "Valencia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 39.4903,
+                                "longitude": -0.4786
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T14:55:00.000+02:00",
+                            "latestPublished": "2025-10-13T14:55:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T14:55:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT24M",
+                    "timeToArrival": "PT-262H-44M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "ECMXG",
+                        "typeCode": "320",
+                        "typeName": "AIRBUS A320",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7879,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+EJU+7879",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "VLC"
+            ],
+            "airline": {
+                "code": "EJU"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+EJU+7834",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "EJU",
+                    "flightNumber": "7834"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "M04"
+                                ],
+                                "parkingPosition": "H04",
+                                "pierCode": "M",
+                                "terminalCode": "03",
+                                "boardingPier": "M",
+                                "checkInZone": [
+                                    "26"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T15:52:00.000+02:00",
+                            "scheduled": "2025-10-13T15:50:00.000+02:00",
+                            "latestPublished": "2025-10-13T15:52:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T15:54:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "VLC",
+                            "name": "VALENCIA AIRPORT",
+                            "nameLangTranl": "Valencia Airport",
+                            "city": {
+                                "code": "VLC",
+                                "name": "VALENCIA",
+                                "nameLangTranl": "Valencia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 39.4903,
+                                "longitude": -0.4786
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T15:50:00.000+02:00",
+                            "latestPublished": "2025-10-13T15:50:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T15:50:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT2M",
+                    "timeToArrival": "PT-261H-49M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "OELKF",
+                        "typeCode": "319",
+                        "typeName": "AIRBUS A319",
+                        "ownerAirlineCode": "A6",
+                        "physicalPaxConfiguration": "Y156",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1535,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+KL+1535",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "VLC"
+            ],
+            "airline": {
+                "code": "KL",
+                "name": "KLM ROYAL DUTCH AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3230,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9182,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5561,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "G3",
+                        "name": "GOL LINHAS AEREAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1501,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KQ",
+                        "name": "KENYA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1851,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MU",
+                        "name": "CHINA EASTERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6828,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SK",
+                        "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "onwardFlightData": {
+                    "id": "20251014+KL+1530",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "KL",
+                    "flightNumber": "1530"
+                },
+                "previousFlightData": {
+                    "id": "20251013+KL+1948",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "KL",
+                    "flightNumber": "1948"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B06"
+                                ],
+                                "parkingPosition": "A52",
+                                "pierCode": "B",
+                                "terminalCode": "01",
+                                "boardingPier": "B",
+                                "checkInZone": [
+                                    "06",
+                                    "07",
+                                    "08"
+                                ],
+                                "boardingContactType": "L",
+                                "parkingPositionType": "L",
+                                "paxDepartureGate": [
+                                    "B06"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T20:47:00.000+02:00",
+                            "scheduled": "2025-10-13T20:35:00.000+02:00",
+                            "latestPublished": "2025-10-13T20:47:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T21:03:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-13T20:05:00.000+02:00",
+                            "gateCloseTime": "2025-10-13T20:20:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-13T20:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "VLC",
+                            "name": "VALENCIA AIRPORT",
+                            "nameLangTranl": "Valencia Airport",
+                            "city": {
+                                "code": "VLC",
+                                "name": "VALENCIA",
+                                "nameLangTranl": "Valencia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 39.4903,
+                                "longitude": -0.4786
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T23:07:00.000+02:00",
+                            "scheduled": "2025-10-13T23:00:00.000+02:00",
+                            "latestPublished": "2025-10-13T23:07:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T23:07:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-13T23:02:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H25M",
+                    "departureDateTimeDifference": "PT12M",
+                    "arrivalDateTimeDifference": "PT7M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHNXK",
+                        "typeCode": "295",
+                        "typeName": "EMBRAER 195 E2",
+                        "subFleetCodeId": "E",
+                        "ownerAirlineCode": "WA",
+                        "ownerAirlineName": "KLM CITYHOPPER",
+                        "physicalPaxConfiguration": "C028M104",
+                        "operationalConfiguration": "C008M124",
+                        "cockpitCrewEmployer": "WA",
+                        "cabinCrewEmployer": "WA",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "89"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0012"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR05"
+                        ],
+                        "delayReasonPublicLangTransl": [
+                            "This flight was delayed due to restrictions from Air Traffic Control at the airport of Amsterdam (AMS)."
+                        ],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT12M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "89",
+                                "delayDuration": "0012",
+                                "delayReasonCodePublic": "FSR05",
+                                "delayReasonPublicShort": "Restrictions from Air Traffic Control",
+                                "delayReasonPublicLong": "This flight was delayed due to restrictions from Air Traffic Control at the airport of Amsterdam (AMS)."
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 8352,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+VY+8352",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "VLC"
+            ],
+            "airline": {
+                "code": "VY",
+                "name": "VUELING AIRLINES SA"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+VY+8353",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "VY",
+                    "flightNumber": "8353"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B31"
+                                ],
+                                "parkingPosition": "B31",
+                                "pierCode": "B",
+                                "terminalCode": "1A",
+                                "boardingPier": "B",
+                                "checkInZone": [
+                                    "01"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "L",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T10:45:00.000+02:00",
+                            "scheduled": "2025-10-14T10:35:00.000+02:00",
+                            "latestPublished": "2025-10-14T10:45:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T11:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "VLC",
+                            "name": "VALENCIA AIRPORT",
+                            "nameLangTranl": "Valencia Airport",
+                            "city": {
+                                "code": "VLC",
+                                "name": "VALENCIA",
+                                "nameLangTranl": "Valencia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 39.4903,
+                                "longitude": -0.4786
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T10:35:00.000+02:00",
+                            "latestPublished": "2025-10-14T10:35:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T10:35:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT10M",
+                    "timeToArrival": "PT-243H-4M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "ECNDB",
+                        "typeCode": "32N",
+                        "typeName": "AIRBUS A320NEO",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1531,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+KL+1531",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "VLC"
+            ],
+            "airline": {
+                "code": "KL",
+                "name": "KLM ROYAL DUTCH AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3231,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9483,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "CI",
+                        "name": "CHINA AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9426,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5560,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "G3",
+                        "name": "GOL LINHAS AEREAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1503,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KQ",
+                        "name": "KENYA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1849,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MU",
+                        "name": "CHINA EASTERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6826,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SK",
+                        "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "onwardFlightData": {
+                    "id": "20251014+KL+1532",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "KL",
+                    "flightNumber": "1532"
+                },
+                "previousFlightData": {
+                    "id": "20251014+KL+0914",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "KL",
+                    "flightNumber": "0914"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B18"
+                                ],
+                                "parkingPosition": "A52",
+                                "pierCode": "B",
+                                "terminalCode": "01",
+                                "boardingPier": "B",
+                                "checkInZone": [
+                                    "06",
+                                    "07",
+                                    "08"
+                                ],
+                                "boardingContactType": "L",
+                                "parkingPositionType": "L",
+                                "paxDepartureGate": [
+                                    "B18"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T14:19:00.000+02:00",
+                            "scheduled": "2025-10-14T14:10:00.000+02:00",
+                            "latestPublished": "2025-10-14T14:19:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T14:33:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T13:40:00.000+02:00",
+                            "gateCloseTime": "2025-10-14T13:55:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-14T13:34:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "VLC",
+                            "name": "VALENCIA AIRPORT",
+                            "nameLangTranl": "Valencia Airport",
+                            "city": {
+                                "code": "VLC",
+                                "name": "VALENCIA",
+                                "nameLangTranl": "Valencia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 39.4903,
+                                "longitude": -0.4786
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T16:35:00.000+02:00",
+                            "scheduled": "2025-10-14T16:35:00.000+02:00",
+                            "latestPublished": "2025-10-14T16:35:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T16:35:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T16:32:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H25M",
+                    "departureDateTimeDifference": "PT9M",
+                    "arrivalDateTimeDifference": "PT0S",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHNXT",
+                        "typeCode": "295",
+                        "typeName": "EMBRAER 195 E2",
+                        "subFleetCodeId": "E",
+                        "ownerAirlineCode": "WA",
+                        "ownerAirlineName": "KLM CITYHOPPER",
+                        "physicalPaxConfiguration": "C028M104",
+                        "operationalConfiguration": "C008M124",
+                        "cockpitCrewEmployer": "WA",
+                        "cabinCrewEmployer": "WA",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "03",
+                            "81"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0008",
+                            "0001"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR06",
+                            "FSR06"
+                        ],
+                        "delayReasonPublicLangTransl": [
+                            "This flight was delayed due to restrictions from Air Traffic Control at the airport of Amsterdam (AMS)."
+                        ],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "03",
+                                "delayDuration": "0008",
+                                "delayReasonCodePublic": "FSR06"
+                            },
+                            {
+                                "delayCode": "81",
+                                "delayDuration": "0001",
+                                "delayReasonCodePublic": "FSR06",
+                                "delayReasonPublicShort": "Restrictions from Air Traffic Control",
+                                "delayReasonPublicLong": "This flight was delayed due to restrictions from Air Traffic Control at the airport of Amsterdam (AMS)."
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 6335,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+HV+6335",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "VLC"
+            ],
+            "airline": {
+                "code": "HV",
+                "name": "TRANSAVIA AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2622,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+HV+5314",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "HV",
+                    "flightNumber": "5314"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D63"
+                                ],
+                                "parkingPosition": "D07",
+                                "pierCode": "D",
+                                "terminalCode": "01",
+                                "boardingPier": "D",
+                                "checkInZone": [
+                                    "02",
+                                    "03"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T18:12:00.000+02:00",
+                            "scheduled": "2025-10-14T18:05:00.000+02:00",
+                            "latestPublished": "2025-10-14T18:12:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T18:25:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "VLC",
+                            "name": "VALENCIA AIRPORT",
+                            "nameLangTranl": "Valencia Airport",
+                            "city": {
+                                "code": "VLC",
+                                "name": "VALENCIA",
+                                "nameLangTranl": "Valencia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 39.4903,
+                                "longitude": -0.4786
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T20:30:00.000+02:00",
+                            "latestPublished": "2025-10-14T20:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T20:30:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H25M",
+                    "departureDateTimeDifference": "PT7M",
+                    "timeToArrival": "PT-233H-9M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHYHX",
+                        "typeCode": "32Q",
+                        "typeName": "AIRBUS A321NEO",
+                        "ownerAirlineCode": "HV",
+                        "ownerAirlineName": "TRANSAVIA AIRLINES",
+                        "physicalPaxConfiguration": "Y232",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1535,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+KL+1535",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "VLC"
+            ],
+            "airline": {
+                "code": "KL",
+                "name": "KLM ROYAL DUTCH AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3230,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9182,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5561,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "G3",
+                        "name": "GOL LINHAS AEREAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1501,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KQ",
+                        "name": "KENYA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1851,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "MU",
+                        "name": "CHINA EASTERN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6828,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SK",
+                        "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "onwardFlightData": {
+                    "id": "20251015+KL+1530",
+                    "flightScheduleDate": "2025-10-15",
+                    "airlineCode": "KL",
+                    "flightNumber": "1530"
+                },
+                "previousFlightData": {
+                    "id": "20251014+KL+1656",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "KL",
+                    "flightNumber": "1656"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B36"
+                                ],
+                                "parkingPosition": "B36",
+                                "pierCode": "B",
+                                "terminalCode": "01",
+                                "boardingPier": "B",
+                                "checkInZone": [
+                                    "06",
+                                    "07",
+                                    "08"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "L",
+                                "paxDepartureGate": [
+                                    "B36"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T21:21:00.000+02:00",
+                            "scheduled": "2025-10-14T20:35:00.000+02:00",
+                            "latestPublished": "2025-10-14T21:21:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T21:39:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T20:40:00.000+02:00",
+                            "gateCloseTime": "2025-10-14T20:55:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-14T20:29:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "VLC",
+                            "name": "VALENCIA AIRPORT",
+                            "nameLangTranl": "Valencia Airport",
+                            "city": {
+                                "code": "VLC",
+                                "name": "VALENCIA",
+                                "nameLangTranl": "Valencia",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "ES",
+                                    "name": "SPAIN",
+                                    "nameLangTranl": "Spain",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 39.4903,
+                                "longitude": -0.4786
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T23:40:00.000+02:00",
+                            "scheduled": "2025-10-14T23:00:00.000+02:00",
+                            "latestPublished": "2025-10-14T23:40:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T23:40:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T23:34:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H25M",
+                    "departureDateTimeDifference": "PT46M",
+                    "arrivalDateTimeDifference": "PT40M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHNXY",
+                        "typeCode": "295",
+                        "typeName": "EMBRAER 195 E2",
+                        "subFleetCodeId": "E",
+                        "ownerAirlineCode": "WA",
+                        "ownerAirlineName": "KLM CITYHOPPER",
+                        "physicalPaxConfiguration": "C028M104",
+                        "operationalConfiguration": "C008M124",
+                        "cockpitCrewEmployer": "WA",
+                        "cabinCrewEmployer": "WA",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "93",
+                            "89"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0035",
+                            "0011"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR15",
+                            "FSR05"
+                        ],
+                        "delayReasonPublicLangTransl": [
+                            "This flight was delayed due to the late arrival of the aircraft.",
+                            "This flight was delayed due to restrictions from Air Traffic Control at the airport of Amsterdam (AMS)."
+                        ],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT46M",
+                        "delayDurationArrival": "PT40M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "93",
+                                "delayDuration": "0035",
+                                "delayReasonCodePublic": "FSR15",
+                                "delayReasonPublicShort": "Delayed incoming aircraft",
+                                "delayReasonPublicLong": "This flight was delayed due to the late arrival of the aircraft."
+                            },
+                            {
+                                "delayCode": "89",
+                                "delayDuration": "0011",
+                                "delayReasonCodePublic": "FSR05",
+                                "delayReasonPublicShort": "Restrictions from Air Traffic Control",
+                                "delayReasonPublicLong": "This flight was delayed due to restrictions from Air Traffic Control at the airport of Amsterdam (AMS)."
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 13,
+        "pageNumber": 9,
+        "fullCount": 913,
+        "pageCount": 13,
+        "totalPages": 10
+    }
+}

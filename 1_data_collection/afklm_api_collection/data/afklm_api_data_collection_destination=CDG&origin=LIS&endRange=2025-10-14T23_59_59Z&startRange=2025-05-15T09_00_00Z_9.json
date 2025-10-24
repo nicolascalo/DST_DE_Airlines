@@ -1,0 +1,2055 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 1625,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+AF+1625",
+            "haul": "MEDIUM",
+            "route": [
+                "LIS",
+                "CDG"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5127,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "G3",
+                        "name": "GOL LINHAS AEREAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6398,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KE",
+                        "name": "KOREAN AIR LINES CO. LTD."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7308,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "S4",
+                        "name": "SATA INTERNATIONAL SERVICOS E TRANSPORTES AEREOS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1891,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SQ",
+                        "name": "SINGAPORE AIRLINES LIMITED"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+AF+1624",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "AF",
+                    "flightNumber": "1624"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "LIS",
+                            "name": "LISBOA AIRPORT",
+                            "nameLangTranl": "Humberto Delgado Airport",
+                            "city": {
+                                "code": "LIS",
+                                "name": "LISBON",
+                                "nameLangTranl": "Lisbon",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.7819,
+                                "longitude": -9.1333
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "22"
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T16:05:00.000+01:00",
+                            "scheduled": "2025-10-13T15:55:00.000+01:00",
+                            "latestPublished": "2025-10-13T16:05:00.000+01:00",
+                            "actualTakeOffTime": "2025-10-13T16:21:00.000+01:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-13T15:10:00.000+01:00",
+                            "gateCloseTime": "2025-10-13T15:35:00.000+01:00",
+                            "actualBoardingOpen": "2025-10-13T15:15:00.000+01:00",
+                            "firstPaxBoarding": "2025-10-13T15:16:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "parkingPosition": "F86",
+                                "pierCode": "2",
+                                "terminalCode": "2F",
+                                "baggageBelt": [
+                                    "23"
+                                ],
+                                "arrivalPositionTerminal": "2F",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "2",
+                                "parkingPositionCustomStatus": "D",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": [],
+                                "firstBagOnBeltTime": "2025-10-13T19:54:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-13T19:56:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T19:34:00.000+02:00",
+                            "scheduled": "2025-10-13T19:25:00.000+02:00",
+                            "latestPublished": "2025-10-13T19:34:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T19:34:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-13T19:25:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H30M",
+                    "departureDateTimeDifference": "PT10M",
+                    "arrivalDateTimeDifference": "PT9M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "FGMZD",
+                        "typeCode": "321",
+                        "typeName": "AIRBUS A321",
+                        "subFleetCodeId": "DF",
+                        "ownerAirlineCode": "AF",
+                        "ownerAirlineName": "AIR FRANCE",
+                        "physicalPaxConfiguration": "Y212",
+                        "physicalFreightConfiguration": "PP000LL010",
+                        "operationalConfiguration": "C016Y188",
+                        "cockpitCrewEmployer": "AF",
+                        "cabinCrewEmployer": "AF",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "65"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0010"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR02"
+                        ],
+                        "delayReasonPublicLangTransl": [
+                            "This flight was delayed due to operational issues."
+                        ],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "65",
+                                "delayDuration": "0010",
+                                "delayReasonCodePublic": "FSR02",
+                                "delayReasonPublicShort": "Operational issues",
+                                "delayReasonPublicLong": "This flight was delayed due to operational issues."
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1195,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+AF+1195",
+            "haul": "MEDIUM",
+            "route": [
+                "LIS",
+                "CDG"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5129,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "G3",
+                        "name": "GOL LINHAS AEREAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7304,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "S4",
+                        "name": "SATA INTERNATIONAL SERVICOS E TRANSPORTES AEREOS S.A."
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+AF+1194",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "AF",
+                    "flightNumber": "1194"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "LIS",
+                            "name": "LISBOA AIRPORT",
+                            "nameLangTranl": "Humberto Delgado Airport",
+                            "city": {
+                                "code": "LIS",
+                                "name": "LISBON",
+                                "nameLangTranl": "Lisbon",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.7819,
+                                "longitude": -9.1333
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "24"
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": [
+                                    "24"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T19:33:00.000+01:00",
+                            "scheduled": "2025-10-13T18:50:00.000+01:00",
+                            "latestPublished": "2025-10-13T19:33:00.000+01:00",
+                            "actualTakeOffTime": "2025-10-13T19:44:00.000+01:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-13T18:45:00.000+01:00",
+                            "gateCloseTime": "2025-10-13T19:10:00.000+01:00",
+                            "actualBoardingOpen": "2025-10-13T19:00:00.000+01:00",
+                            "firstPaxBoarding": "2025-10-13T19:00:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "parkingPosition": "E32",
+                                "pierCode": "2",
+                                "terminalCode": "2F",
+                                "baggageBelt": [
+                                    "24"
+                                ],
+                                "arrivalPositionTerminal": "2F",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "K",
+                                "parkingPositionCustomStatus": "I",
+                                "disembarkingBusQuantity": "2",
+                                "disembarkingContactType": "F",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": [],
+                                "firstBagOnBeltTime": "2025-10-13T23:04:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-13T23:06:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T22:48:00.000+02:00",
+                            "scheduled": "2025-10-13T22:20:00.000+02:00",
+                            "latestPublished": "2025-10-13T22:48:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T22:48:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-13T22:44:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H30M",
+                    "departureDateTimeDifference": "PT43M",
+                    "arrivalDateTimeDifference": "PT28M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "FGKXO",
+                        "typeCode": "320",
+                        "typeName": "AIRBUS A320",
+                        "subFleetCodeId": "CC",
+                        "ownerAirlineCode": "AF",
+                        "ownerAirlineName": "AIR FRANCE",
+                        "physicalPaxConfiguration": "C108Y066",
+                        "physicalFreightConfiguration": "PP003LL004",
+                        "operationalConfiguration": "C012Y156",
+                        "cockpitCrewEmployer": "AF",
+                        "cabinCrewEmployer": "AF",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "93"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0043"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT43M",
+                        "delayDurationArrival": "PT28M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "93",
+                                "delayDuration": "0043"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1982,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+VY+1982",
+            "haul": "MEDIUM",
+            "route": [
+                "LIS",
+                "CDG"
+            ],
+            "airline": {
+                "code": "VY",
+                "name": "VUELING AIRLINES SA"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5031,
+                    "flightScheduleDate": "2025-10-13",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "IB",
+                        "name": "IBERIA LINEAS AEREAS DE ESPANA S.A. OPERADORA"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+VY+1981",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "VY",
+                    "flightNumber": "1981"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "LIS",
+                            "name": "LISBOA AIRPORT",
+                            "nameLangTranl": "Humberto Delgado Airport",
+                            "city": {
+                                "code": "LIS",
+                                "name": "LISBON",
+                                "nameLangTranl": "Lisbon",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.7819,
+                                "longitude": -9.1333
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T19:15:00.000+01:00",
+                            "latestPublished": "2025-10-13T19:15:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ORY",
+                            "name": "ORLY AIRPORT",
+                            "nameLangTranl": "Paris-Orly airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 48.7289,
+                                "longitude": 2.3572
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T22:35:00.000+02:00",
+                            "latestPublished": "2025-10-13T23:49:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T23:49:00.000+02:00"
+                            },
+                            "estimatedArrival": "2025-10-13T23:49:00.000+02:00",
+                            "estimatedTouchDownTime": "2025-10-13T23:44:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H20M",
+                    "arrivalDateTimeDifference": "PT1H14M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "ECKDX",
+                        "typeCode": "320",
+                        "typeName": "AIRBUS A320",
+                        "ownerAirlineCode": "VY",
+                        "ownerAirlineName": "VUELING AIRLINES SA",
+                        "physicalPaxConfiguration": "Y180",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y180"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT1H14M",
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "LIS",
+                            "name": "LISBOA AIRPORT",
+                            "nameLangTranl": "Humberto Delgado Airport",
+                            "city": {
+                                "code": "LIS",
+                                "name": "LISBON",
+                                "nameLangTranl": "Lisbon",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.7819,
+                                "longitude": -9.1333
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2",
+                                "boardingPier": "",
+                                "boardingTerminal": "2",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T19:15:00.000+01:00",
+                            "latestPublished": "2025-10-13T19:15:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "3",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "parkingPosition": "R14",
+                                "pierCode": "",
+                                "terminalCode": "3",
+                                "baggageBelt": [
+                                    "03"
+                                ],
+                                "arrivalPositionTerminal": "3",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "L",
+                                "arrivalTerminal": "R",
+                                "parkingPositionCustomStatus": "I",
+                                "disembarkingBusQuantity": "0",
+                                "disembarkingContactType": "F",
+                                "disembarkingAerogare": "3",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T00:02:00.000+02:00",
+                            "scheduled": "2025-10-13T22:35:00.000+02:00",
+                            "latestPublished": "2025-10-14T00:02:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T00:02:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-13T23:49:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H20M",
+                    "arrivalDateTimeDifference": "PT1H27M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "ECKDX",
+                        "typeCode": "320",
+                        "typeName": "AIRBUS A320",
+                        "ownerAirlineCode": "VY",
+                        "ownerAirlineName": "VUELING AIRLINES SA",
+                        "physicalPaxConfiguration": "Y180",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "Y180"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT1H27M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1125,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+AF+1125",
+            "haul": "MEDIUM",
+            "route": [
+                "LIS",
+                "CDG"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 8439,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5122,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "G3",
+                        "name": "GOL LINHAS AEREAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6476,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KE",
+                        "name": "KOREAN AIR LINES CO. LTD."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3791,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KQ",
+                        "name": "KENYA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7302,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "S4",
+                        "name": "SATA INTERNATIONAL SERVICOS E TRANSPORTES AEREOS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1877,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SQ",
+                        "name": "SINGAPORE AIRLINES LIMITED"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6411,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SV",
+                        "name": "SAUDI ARABIAN AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5044,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "WS",
+                        "name": "WESTJET"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+AF+1124",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "AF",
+                    "flightNumber": "1124"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "LIS",
+                            "name": "LISBOA AIRPORT",
+                            "nameLangTranl": "Humberto Delgado Airport",
+                            "city": {
+                                "code": "LIS",
+                                "name": "LISBON",
+                                "nameLangTranl": "Lisbon",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.7819,
+                                "longitude": -9.1333
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "11"
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": [
+                                    "11"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T06:07:00.000+01:00",
+                            "scheduled": "2025-10-14T05:40:00.000+01:00",
+                            "latestPublished": "2025-10-14T06:07:00.000+01:00",
+                            "actualTakeOffTime": "2025-10-14T06:18:00.000+01:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T04:55:00.000+01:00",
+                            "gateCloseTime": "2025-10-14T05:20:00.000+01:00",
+                            "actualBoardingOpen": "2025-10-14T04:55:00.000+01:00",
+                            "firstPaxBoarding": "2025-10-14T04:57:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "parkingPosition": "F30",
+                                "pierCode": "1",
+                                "terminalCode": "2F",
+                                "baggageBelt": [
+                                    "22"
+                                ],
+                                "arrivalPositionTerminal": "2F",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "1",
+                                "parkingPositionCustomStatus": "D",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": [],
+                                "firstBagOnBeltTime": "2025-10-14T09:54:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-14T09:55:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T09:25:00.000+02:00",
+                            "scheduled": "2025-10-14T09:10:00.000+02:00",
+                            "latestPublished": "2025-10-14T09:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T09:25:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T09:19:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H30M",
+                    "departureDateTimeDifference": "PT27M",
+                    "arrivalDateTimeDifference": "PT15M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "FGKXU",
+                        "typeCode": "320",
+                        "typeName": "AIRBUS A320",
+                        "subFleetCodeId": "CC",
+                        "ownerAirlineCode": "AF",
+                        "ownerAirlineName": "AIR FRANCE",
+                        "physicalPaxConfiguration": "C108Y066",
+                        "physicalFreightConfiguration": "PP003LL004",
+                        "operationalConfiguration": "C008Y162",
+                        "cockpitCrewEmployer": "AF",
+                        "cabinCrewEmployer": "AF",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "83"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0027"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR04"
+                        ],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT27M",
+                        "delayDurationArrival": "PT15M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "83",
+                                "delayDuration": "0027",
+                                "delayReasonCodePublic": "FSR04"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1225,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+AF+1225",
+            "haul": "MEDIUM",
+            "route": [
+                "LIS",
+                "CDG"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 8248,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7306,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "S4",
+                        "name": "SATA INTERNATIONAL SERVICOS E TRANSPORTES AEREOS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6412,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SV",
+                        "name": "SAUDI ARABIAN AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+AF+1224",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "AF",
+                    "flightNumber": "1224"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "LIS",
+                            "name": "LISBOA AIRPORT",
+                            "nameLangTranl": "Humberto Delgado Airport",
+                            "city": {
+                                "code": "LIS",
+                                "name": "LISBON",
+                                "nameLangTranl": "Lisbon",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.7819,
+                                "longitude": -9.1333
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "12"
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": [
+                                    "12"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T10:17:00.000+01:00",
+                            "scheduled": "2025-10-14T09:50:00.000+01:00",
+                            "latestPublished": "2025-10-14T10:17:00.000+01:00",
+                            "actualTakeOffTime": "2025-10-14T10:33:00.000+01:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T09:50:00.000+01:00",
+                            "gateCloseTime": "2025-10-14T10:00:00.000+01:00",
+                            "actualBoardingOpen": "2025-10-14T09:40:00.000+01:00",
+                            "firstPaxBoarding": "2025-10-14T09:09:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "parkingPosition": "F22",
+                                "pierCode": "1",
+                                "terminalCode": "2F",
+                                "baggageBelt": [
+                                    "21"
+                                ],
+                                "arrivalPositionTerminal": "2F",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "1",
+                                "parkingPositionCustomStatus": "D",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": [],
+                                "firstBagOnBeltTime": "2025-10-14T14:11:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-14T14:14:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T13:43:00.000+02:00",
+                            "scheduled": "2025-10-14T13:20:00.000+02:00",
+                            "latestPublished": "2025-10-14T13:43:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T13:43:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T13:33:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H30M",
+                    "departureDateTimeDifference": "PT27M",
+                    "arrivalDateTimeDifference": "PT23M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "FGRXF",
+                        "typeCode": "319",
+                        "typeName": "AIRBUS A319",
+                        "subFleetCodeId": "EC",
+                        "ownerAirlineCode": "AF",
+                        "ownerAirlineName": "AIR FRANCE",
+                        "physicalPaxConfiguration": "C072Y071",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C012Y125",
+                        "cockpitCrewEmployer": "AF",
+                        "cabinCrewEmployer": "AF",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "19"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0027"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT27M",
+                        "delayDurationArrival": "PT23M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "19",
+                                "delayDuration": "0027"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1025,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+AF+1025",
+            "haul": "MEDIUM",
+            "route": [
+                "LIS",
+                "CDG"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 8443,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5128,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "G3",
+                        "name": "GOL LINHAS AEREAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3793,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KQ",
+                        "name": "KENYA AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7300,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "S4",
+                        "name": "SATA INTERNATIONAL SERVICOS E TRANSPORTES AEREOS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 8025,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "UU",
+                        "name": "AIR AUSTRAL"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+AF+1024",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "AF",
+                    "flightNumber": "1024"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "LIS",
+                            "name": "LISBOA AIRPORT",
+                            "nameLangTranl": "Humberto Delgado Airport",
+                            "city": {
+                                "code": "LIS",
+                                "name": "LISBON",
+                                "nameLangTranl": "Lisbon",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.7819,
+                                "longitude": -9.1333
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "11"
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": [
+                                    "11"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T12:21:00.000+01:00",
+                            "scheduled": "2025-10-14T12:10:00.000+01:00",
+                            "latestPublished": "2025-10-14T12:21:00.000+01:00",
+                            "actualTakeOffTime": "2025-10-14T12:36:00.000+01:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T11:40:00.000+01:00",
+                            "gateCloseTime": "2025-10-14T11:50:00.000+01:00",
+                            "actualBoardingOpen": "2025-10-14T11:33:00.000+01:00",
+                            "firstPaxBoarding": "2025-10-14T11:33:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "parkingPosition": "F68",
+                                "pierCode": "2",
+                                "terminalCode": "2F",
+                                "baggageBelt": [
+                                    "25"
+                                ],
+                                "arrivalPositionTerminal": "2F",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "2",
+                                "parkingPositionCustomStatus": "D",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": [],
+                                "firstBagOnBeltTime": "2025-10-14T16:04:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-14T16:08:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T15:44:00.000+02:00",
+                            "scheduled": "2025-10-14T15:40:00.000+02:00",
+                            "latestPublished": "2025-10-14T15:44:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T15:44:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T15:36:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H30M",
+                    "departureDateTimeDifference": "PT11M",
+                    "arrivalDateTimeDifference": "PT4M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "FGTAQ",
+                        "typeCode": "321",
+                        "typeName": "AIRBUS A321",
+                        "subFleetCodeId": "DF",
+                        "ownerAirlineCode": "AF",
+                        "ownerAirlineName": "AIR FRANCE",
+                        "physicalPaxConfiguration": "Y212",
+                        "physicalFreightConfiguration": "PP000LL010",
+                        "operationalConfiguration": "C024Y176",
+                        "cockpitCrewEmployer": "AF",
+                        "cabinCrewEmployer": "AF",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "89"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0011"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT11M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "89",
+                                "delayDuration": "0011"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1625,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+AF+1625",
+            "haul": "MEDIUM",
+            "route": [
+                "LIS",
+                "CDG"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5127,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "G3",
+                        "name": "GOL LINHAS AEREAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6398,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KE",
+                        "name": "KOREAN AIR LINES CO. LTD."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7308,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "S4",
+                        "name": "SATA INTERNATIONAL SERVICOS E TRANSPORTES AEREOS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1891,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SQ",
+                        "name": "SINGAPORE AIRLINES LIMITED"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+AF+1624",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "AF",
+                    "flightNumber": "1624"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "LIS",
+                            "name": "LISBOA AIRPORT",
+                            "nameLangTranl": "Humberto Delgado Airport",
+                            "city": {
+                                "code": "LIS",
+                                "name": "LISBON",
+                                "nameLangTranl": "Lisbon",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.7819,
+                                "longitude": -9.1333
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "25"
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": [
+                                    "25"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T15:54:00.000+01:00",
+                            "scheduled": "2025-10-14T15:55:00.000+01:00",
+                            "latestPublished": "2025-10-14T15:54:00.000+01:00",
+                            "actualTakeOffTime": "2025-10-14T16:09:00.000+01:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T15:25:00.000+01:00",
+                            "gateCloseTime": "2025-10-14T15:35:00.000+01:00",
+                            "actualBoardingOpen": "2025-10-14T15:08:00.000+01:00",
+                            "firstPaxBoarding": "2025-10-14T15:12:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "parkingPosition": "F86",
+                                "pierCode": "2",
+                                "terminalCode": "2F",
+                                "baggageBelt": [
+                                    "25"
+                                ],
+                                "arrivalPositionTerminal": "2F",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "2",
+                                "parkingPositionCustomStatus": "D",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": [],
+                                "firstBagOnBeltTime": "2025-10-14T19:46:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-14T19:48:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T19:20:00.000+02:00",
+                            "scheduled": "2025-10-14T19:25:00.000+02:00",
+                            "latestPublished": "2025-10-14T19:20:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T19:20:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T19:14:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H30M",
+                    "departureDateTimeDifference": "PT-1M",
+                    "arrivalDateTimeDifference": "PT-5M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "FHEPI",
+                        "typeCode": "32A",
+                        "typeName": "AIRBUS A320 (SHARKLETS)",
+                        "subFleetCodeId": "CD",
+                        "ownerAirlineCode": "AF",
+                        "ownerAirlineName": "AIR FRANCE",
+                        "physicalPaxConfiguration": "C108Y066",
+                        "physicalFreightConfiguration": "PP003LL004",
+                        "operationalConfiguration": "C012Y156",
+                        "cockpitCrewEmployer": "AF",
+                        "cabinCrewEmployer": "AF",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1195,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+AF+1195",
+            "haul": "MEDIUM",
+            "route": [
+                "LIS",
+                "CDG"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5129,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "G3",
+                        "name": "GOL LINHAS AEREAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7304,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "S4",
+                        "name": "SATA INTERNATIONAL SERVICOS E TRANSPORTES AEREOS S.A."
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+AF+1194",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "AF",
+                    "flightNumber": "1194"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "LIS",
+                            "name": "LISBOA AIRPORT",
+                            "nameLangTranl": "Humberto Delgado Airport",
+                            "city": {
+                                "code": "LIS",
+                                "name": "LISBON",
+                                "nameLangTranl": "Lisbon",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.7819,
+                                "longitude": -9.1333
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "14"
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": [
+                                    "14"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T18:57:00.000+01:00",
+                            "scheduled": "2025-10-14T18:50:00.000+01:00",
+                            "latestPublished": "2025-10-14T18:57:00.000+01:00",
+                            "actualTakeOffTime": "2025-10-14T19:12:00.000+01:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T18:20:00.000+01:00",
+                            "gateCloseTime": "2025-10-14T18:30:00.000+01:00",
+                            "actualBoardingOpen": "2025-10-14T18:27:00.000+01:00",
+                            "firstPaxBoarding": "2025-10-14T18:28:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "parkingPosition": "E32",
+                                "pierCode": "2",
+                                "terminalCode": "2F",
+                                "baggageBelt": [
+                                    "24"
+                                ],
+                                "arrivalPositionTerminal": "2F",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "K",
+                                "parkingPositionCustomStatus": "I",
+                                "disembarkingBusQuantity": "2",
+                                "disembarkingContactType": "F",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": [],
+                                "firstBagOnBeltTime": "2025-10-14T22:47:00.000+02:00",
+                                "lastBagOnBeltTime": "2025-10-14T22:53:00.000+02:00"
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T22:22:00.000+02:00",
+                            "scheduled": "2025-10-14T22:20:00.000+02:00",
+                            "latestPublished": "2025-10-14T22:22:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T22:22:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T22:16:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H30M",
+                    "departureDateTimeDifference": "PT7M",
+                    "arrivalDateTimeDifference": "PT2M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "FGKXM",
+                        "typeCode": "320",
+                        "typeName": "AIRBUS A320",
+                        "subFleetCodeId": "CC",
+                        "ownerAirlineCode": "AF",
+                        "ownerAirlineName": "AIR FRANCE",
+                        "physicalPaxConfiguration": "C108Y066",
+                        "physicalFreightConfiguration": "PP003LL004",
+                        "operationalConfiguration": "C016Y150",
+                        "cockpitCrewEmployer": "AF",
+                        "cabinCrewEmployer": "AF",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "19"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0007"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "19",
+                                "delayDuration": "0007"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 4594,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+EC+4594",
+            "haul": "MEDIUM",
+            "route": [
+                "LIS",
+                "CDG"
+            ],
+            "airline": {
+                "code": "EC",
+                "name": "EASYJET EUROPE AIRLINE GMBH"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+EC+4593",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "EC",
+                    "flightNumber": "4593"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "LIS",
+                            "name": "LISBOA AIRPORT",
+                            "nameLangTranl": "Humberto Delgado Airport",
+                            "city": {
+                                "code": "LIS",
+                                "name": "LISBON",
+                                "nameLangTranl": "Lisbon",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PT",
+                                    "name": "PORTUGAL",
+                                    "nameLangTranl": "Portugal",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 38.7819,
+                                "longitude": -9.1333
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T19:40:00.000+01:00",
+                            "latestPublished": "2025-10-14T19:40:00.000+01:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "parkingPosition": "D02",
+                                "pierCode": "",
+                                "terminalCode": "2D",
+                                "baggageBelt": [
+                                    "03"
+                                ],
+                                "arrivalPositionTerminal": "2D",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "2D",
+                                "parkingPositionCustomStatus": "D",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "2",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T22:49:00.000+02:00",
+                            "scheduled": "2025-10-14T23:00:00.000+02:00",
+                            "latestPublished": "2025-10-14T22:49:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T22:49:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T22:38:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT2H20M",
+                    "arrivalDateTimeDifference": "PT-11M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "OEIVS",
+                        "typeCode": "32A",
+                        "typeName": "AIRBUS A320 (SHARKLETS)",
+                        "ownerAirlineCode": "EC",
+                        "ownerAirlineName": "EASYJET EUROPE AIRLINE GMBH",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 9,
+        "pageNumber": 9,
+        "fullCount": 909,
+        "pageCount": 9,
+        "totalPages": 10
+    }
+}

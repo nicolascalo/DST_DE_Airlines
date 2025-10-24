@@ -1,0 +1,4323 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 350,
+            "flightScheduleDate": "2025-10-11",
+            "id": "20251011+SK+0350",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4937,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4051,
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2886,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5562,
+                    "airline": {
+                        "code": "TP",
+                        "name": "TAP PORTUGAL"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251011+SK+2304",
+                    "flightScheduleDate": "2025-10-11",
+                    "airlineCode": "SK",
+                    "flightNumber": "2304"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A12"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-11T14:39:00.000+02:00",
+                            "scheduled": "2025-10-11T14:40:00.000+02:00",
+                            "latestPublished": "2025-10-11T14:39:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-11T14:48:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-11T15:37:00.000+02:00",
+                            "scheduled": "2025-10-11T15:35:00.000+02:00",
+                            "latestPublished": "2025-10-11T15:37:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-11T15:37:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-11T15:34:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "departureDateTimeDifference": "PT-1M",
+                    "arrivalDateTimeDifference": "PT2M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SERSK",
+                        "typeCode": "E95",
+                        "typeName": "EMBRAER 195 AND LEGACY 1000",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C010M112",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 362,
+            "flightScheduleDate": "2025-10-11",
+            "id": "20251011+SK+0362",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4046,
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2892,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251011+SK+4032",
+                    "flightScheduleDate": "2025-10-11",
+                    "airlineCode": "SK",
+                    "flightNumber": "4032"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A23"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-11T15:51:00.000+02:00",
+                            "scheduled": "2025-10-11T16:00:00.000+02:00",
+                            "latestPublished": "2025-10-11T15:51:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-11T16:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-11T16:48:00.000+02:00",
+                            "scheduled": "2025-10-11T16:55:00.000+02:00",
+                            "latestPublished": "2025-10-11T16:48:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-11T16:48:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-11T16:45:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "departureDateTimeDifference": "PT-9M",
+                    "arrivalDateTimeDifference": "PT-7M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "EIFPX",
+                        "typeCode": "CRJ",
+                        "typeName": "CANADAIR REG.JET",
+                        "ownerAirlineCode": "WX",
+                        "ownerAirlineName": "CITYJET",
+                        "physicalPaxConfiguration": "C014M076",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1455,
+            "flightScheduleDate": "2025-10-11",
+            "id": "20251011+WF+1455",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "WF",
+                "name": "WIDEROE S FLYVESELSKAP A.S."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4527,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2659,
+                    "airline": {
+                        "code": "AY",
+                        "name": "FINNAIR OYJ"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9064,
+                    "airline": {
+                        "code": "LH",
+                        "name": "DEUTSCHE LUFTHANSA AG"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-11T19:00:00.000+02:00",
+                            "latestPublished": "2025-10-11T19:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-11T20:05:00.000+02:00",
+                            "latestPublished": "2025-10-11T20:05:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-11T20:05:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H5M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "DH4",
+                        "typeName": "DE HAVILLAND DHC-8-400 DASH 8 / 8Q",
+                        "ownerAirlineCode": "WF",
+                        "ownerAirlineName": "WIDEROE S FLYVESELSKAP A.S.",
+                        "physicalPaxConfiguration": "M078",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "cockpitCrewEmployer": "WF",
+                        "cabinCrewEmployer": "WF"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 380,
+            "flightScheduleDate": "2025-10-11",
+            "id": "20251011+SK+0380",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6141,
+                    "airline": {
+                        "code": "BT",
+                        "name": "AIR BALTIC CORPORATION AS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4045,
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2882,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5471,
+                    "airline": {
+                        "code": "LO",
+                        "name": "LOT POLISH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251011+SK+4016",
+                    "flightScheduleDate": "2025-10-11",
+                    "airlineCode": "SK",
+                    "flightNumber": "4016"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C5"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-11T21:47:00.000+02:00",
+                            "scheduled": "2025-10-11T21:45:00.000+02:00",
+                            "latestPublished": "2025-10-11T21:47:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-11T21:59:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-11T22:49:00.000+02:00",
+                            "scheduled": "2025-10-11T22:40:00.000+02:00",
+                            "latestPublished": "2025-10-11T22:49:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-11T22:49:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-11T22:46:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "departureDateTimeDifference": "PT2M",
+                    "arrivalDateTimeDifference": "PT9M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SERSO",
+                        "typeCode": "E95",
+                        "typeName": "EMBRAER 195 AND LEGACY 1000",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C010M112",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 332,
+            "flightScheduleDate": "2025-10-12",
+            "id": "20251012+SK+0332",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2894,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-12T08:15:00.000+02:00",
+                            "latestPublished": "2025-10-12T08:15:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-12T09:10:00.000+02:00",
+                            "latestPublished": "2025-10-12T09:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-12T09:10:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "E95",
+                        "typeName": "EMBRAER 195 AND LEGACY 1000",
+                        "ownerAirlineCode": "99",
+                        "ownerAirlineName": "DEFAULT AIRLINE",
+                        "physicalPaxConfiguration": "C012M108",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG",
+                        "cockpitCrewEmployer": "99",
+                        "cabinCrewEmployer": "99"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 344,
+            "flightScheduleDate": "2025-10-12",
+            "id": "20251012+SK+0344",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2882,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A20"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-12T10:13:00.000+02:00",
+                            "scheduled": "2025-10-12T10:15:00.000+02:00",
+                            "latestPublished": "2025-10-12T10:13:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-12T10:21:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-12T11:10:00.000+02:00",
+                            "scheduled": "2025-10-12T11:10:00.000+02:00",
+                            "latestPublished": "2025-10-12T11:10:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-12T11:10:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-12T11:08:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "departureDateTimeDifference": "PT-2M",
+                    "arrivalDateTimeDifference": "PT0S",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SERSX",
+                        "typeCode": "EMJ",
+                        "typeName": "EMBRAER 170/195",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C014M100",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 358,
+            "flightScheduleDate": "2025-10-12",
+            "id": "20251012+SK+0358",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4935,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4055,
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2890,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5469,
+                    "airline": {
+                        "code": "LO",
+                        "name": "LOT POLISH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5562,
+                    "airline": {
+                        "code": "TP",
+                        "name": "TAP PORTUGAL"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C1"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-12T12:59:00.000+02:00",
+                            "scheduled": "2025-10-12T13:05:00.000+02:00",
+                            "latestPublished": "2025-10-12T12:59:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-12T13:12:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-12T13:59:00.000+02:00",
+                            "scheduled": "2025-10-12T14:05:00.000+02:00",
+                            "latestPublished": "2025-10-12T13:59:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-12T13:59:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-12T13:57:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H",
+                    "departureDateTimeDifference": "PT-6M",
+                    "arrivalDateTimeDifference": "PT-6M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SERUF",
+                        "typeCode": "32S",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C012M168",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG",
+                        "cockpitCrewEmployer": "SK",
+                        "cabinCrewEmployer": "SK"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 350,
+            "flightScheduleDate": "2025-10-12",
+            "id": "20251012+SK+0350",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4051,
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2886,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-12T14:35:00.000+02:00",
+                            "latestPublished": "2025-10-12T14:35:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-12T15:30:00.000+02:00",
+                            "latestPublished": "2025-10-12T15:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-12T15:30:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "32N",
+                        "typeName": "AIRBUS A320NEO",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C024M156",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG",
+                        "cockpitCrewEmployer": "SK",
+                        "cabinCrewEmployer": "SK"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 362,
+            "flightScheduleDate": "2025-10-12",
+            "id": "20251012+SK+0362",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4046,
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2892,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C7"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-12T15:49:00.000+02:00",
+                            "scheduled": "2025-10-12T15:25:00.000+02:00",
+                            "latestPublished": "2025-10-12T15:49:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-12T16:01:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-12T16:50:00.000+02:00",
+                            "scheduled": "2025-10-12T16:20:00.000+02:00",
+                            "latestPublished": "2025-10-12T16:50:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-12T16:50:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-12T16:47:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "departureDateTimeDifference": "PT24M",
+                    "arrivalDateTimeDifference": "PT30M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SERZD",
+                        "typeCode": "32S",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C012M168",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT30M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 364,
+            "flightScheduleDate": "2025-10-12",
+            "id": "20251012+SK+0364",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4934,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6163,
+                    "airline": {
+                        "code": "BT",
+                        "name": "AIR BALTIC CORPORATION AS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4044,
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2884,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251012+SK+4499",
+                    "flightScheduleDate": "2025-10-12",
+                    "airlineCode": "SK",
+                    "flightNumber": "4499"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C3"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-12T17:41:00.000+02:00",
+                            "scheduled": "2025-10-12T17:35:00.000+02:00",
+                            "latestPublished": "2025-10-12T17:41:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-12T17:50:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-12T18:35:00.000+02:00",
+                            "scheduled": "2025-10-12T18:30:00.000+02:00",
+                            "latestPublished": "2025-10-12T18:35:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-12T18:35:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-12T18:31:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "departureDateTimeDifference": "PT6M",
+                    "arrivalDateTimeDifference": "PT5M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SERZE",
+                        "typeCode": "32S",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C012M168",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG",
+                        "cockpitCrewEmployer": "SK",
+                        "cabinCrewEmployer": "SK"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 370,
+            "flightScheduleDate": "2025-10-12",
+            "id": "20251012+SK+0370",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4045,
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2896,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251012+SK+4409",
+                    "flightScheduleDate": "2025-10-12",
+                    "airlineCode": "SK",
+                    "flightNumber": "4409"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C3"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-12T19:40:00.000+02:00",
+                            "scheduled": "2025-10-12T19:40:00.000+02:00",
+                            "latestPublished": "2025-10-12T19:40:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-12T19:51:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-12T20:38:00.000+02:00",
+                            "scheduled": "2025-10-12T20:35:00.000+02:00",
+                            "latestPublished": "2025-10-12T20:38:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-12T20:38:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-12T20:34:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "departureDateTimeDifference": "PT0S",
+                    "arrivalDateTimeDifference": "PT3M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SEROY",
+                        "typeCode": "32S",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C012M168",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 382,
+            "flightScheduleDate": "2025-10-12",
+            "id": "20251012+SK+0382",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4049,
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2898,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251012+SK+0375",
+                    "flightScheduleDate": "2025-10-12",
+                    "airlineCode": "SK",
+                    "flightNumber": "0375"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A12"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-12T21:55:00.000+02:00",
+                            "scheduled": "2025-10-12T21:55:00.000+02:00",
+                            "latestPublished": "2025-10-12T21:55:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-12T22:08:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-12T22:56:00.000+02:00",
+                            "scheduled": "2025-10-12T22:50:00.000+02:00",
+                            "latestPublished": "2025-10-12T22:56:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-12T22:56:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-12T22:52:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "departureDateTimeDifference": "PT0S",
+                    "arrivalDateTimeDifference": "PT6M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SEDOZ",
+                        "typeCode": "32N",
+                        "typeName": "AIRBUS A320NEO",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C012M168",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 336,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+SK+0336",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6131,
+                    "airline": {
+                        "code": "BT",
+                        "name": "AIR BALTIC CORPORATION AS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2890,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T09:05:00.000+02:00",
+                            "latestPublished": "2025-10-13T09:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T10:00:00.000+02:00",
+                            "latestPublished": "2025-10-13T10:00:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T10:00:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "32N",
+                        "typeName": "AIRBUS A320NEO",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C024M156",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG",
+                        "cockpitCrewEmployer": "SK",
+                        "cabinCrewEmployer": "SK"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 338,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+SK+0338",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2880,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+SK+0345",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "SK",
+                    "flightNumber": "0345"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A12"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T10:41:00.000+02:00",
+                            "scheduled": "2025-10-13T10:40:00.000+02:00",
+                            "latestPublished": "2025-10-13T10:41:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T10:52:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T11:36:00.000+02:00",
+                            "scheduled": "2025-10-13T11:35:00.000+02:00",
+                            "latestPublished": "2025-10-13T11:36:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T11:36:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-13T11:33:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "departureDateTimeDifference": "PT1M",
+                    "arrivalDateTimeDifference": "PT1M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SERZZ",
+                        "typeCode": "32S",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C012M168",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 344,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+SK+0344",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4935,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4055,
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2882,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5469,
+                    "airline": {
+                        "code": "LO",
+                        "name": "LOT POLISH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5562,
+                    "airline": {
+                        "code": "TP",
+                        "name": "TAP PORTUGAL"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+SK+4083",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "SK",
+                    "flightNumber": "4083"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A8"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T13:23:00.000+02:00",
+                            "scheduled": "2025-10-13T13:10:00.000+02:00",
+                            "latestPublished": "2025-10-13T13:23:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T13:33:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T14:21:00.000+02:00",
+                            "scheduled": "2025-10-13T14:05:00.000+02:00",
+                            "latestPublished": "2025-10-13T14:21:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T14:21:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-13T14:17:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "departureDateTimeDifference": "PT13M",
+                    "arrivalDateTimeDifference": "PT16M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SERZY",
+                        "typeCode": "32S",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C012M168",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG",
+                        "cockpitCrewEmployer": "SK",
+                        "cabinCrewEmployer": "SK"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT16M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 354,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+SK+0354",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4051,
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2888,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+SK+4473",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "SK",
+                    "flightNumber": "4473"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A10"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T14:31:00.000+02:00",
+                            "scheduled": "2025-10-13T14:25:00.000+02:00",
+                            "latestPublished": "2025-10-13T14:31:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T14:41:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T15:27:00.000+02:00",
+                            "scheduled": "2025-10-13T15:20:00.000+02:00",
+                            "latestPublished": "2025-10-13T15:27:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T15:27:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-13T15:23:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "departureDateTimeDifference": "PT6M",
+                    "arrivalDateTimeDifference": "PT7M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SERUF",
+                        "typeCode": "32S",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C012M168",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 358,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+SK+0358",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4044,
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2890,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C7"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T16:50:00.000+02:00",
+                            "scheduled": "2025-10-13T16:25:00.000+02:00",
+                            "latestPublished": "2025-10-13T16:50:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T17:12:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T18:03:00.000+02:00",
+                            "scheduled": "2025-10-13T17:20:00.000+02:00",
+                            "latestPublished": "2025-10-13T18:03:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T18:03:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-13T17:58:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "departureDateTimeDifference": "PT25M",
+                    "arrivalDateTimeDifference": "PT43M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SERUR",
+                        "typeCode": "32S",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C012M168",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT43M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 364,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+SK+0364",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4934,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4044,
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T17:00:00.000+02:00",
+                            "latestPublished": "2025-10-13T17:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T17:55:00.000+02:00",
+                            "latestPublished": "2025-10-13T17:55:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T17:55:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "32N",
+                        "typeName": "AIRBUS A320NEO",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C024M156",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG",
+                        "cockpitCrewEmployer": "SK",
+                        "cabinCrewEmployer": "SK"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 366,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+SK+0366",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4936,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4050,
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2894,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+SK+4010",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "SK",
+                    "flightNumber": "4010"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C1"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T18:26:00.000+02:00",
+                            "scheduled": "2025-10-13T18:30:00.000+02:00",
+                            "latestPublished": "2025-10-13T18:26:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T18:35:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T19:25:00.000+02:00",
+                            "scheduled": "2025-10-13T19:25:00.000+02:00",
+                            "latestPublished": "2025-10-13T19:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T19:25:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-13T19:21:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "departureDateTimeDifference": "PT-4M",
+                    "arrivalDateTimeDifference": "PT0S",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "LNRGM",
+                        "typeCode": "32N",
+                        "typeName": "AIRBUS A320NEO",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C024M156",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG",
+                        "cockpitCrewEmployer": "SK",
+                        "cabinCrewEmployer": "SK"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 370,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+SK+0370",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4045,
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2896,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+SK+4423",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "SK",
+                    "flightNumber": "4423"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A14"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T19:35:00.000+02:00",
+                            "scheduled": "2025-10-13T19:35:00.000+02:00",
+                            "latestPublished": "2025-10-13T19:35:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T19:44:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T20:31:00.000+02:00",
+                            "scheduled": "2025-10-13T20:30:00.000+02:00",
+                            "latestPublished": "2025-10-13T20:31:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T20:31:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-13T20:28:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "departureDateTimeDifference": "PT0S",
+                    "arrivalDateTimeDifference": "PT1M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SERZD",
+                        "typeCode": "32S",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C012M168",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 382,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+SK+0382",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4049,
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2898,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+SK+0361",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "SK",
+                    "flightNumber": "0361"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A10"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T21:54:00.000+02:00",
+                            "scheduled": "2025-10-13T21:50:00.000+02:00",
+                            "latestPublished": "2025-10-13T21:54:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T22:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T22:54:00.000+02:00",
+                            "scheduled": "2025-10-13T22:45:00.000+02:00",
+                            "latestPublished": "2025-10-13T22:54:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T22:54:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-13T22:50:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "departureDateTimeDifference": "PT4M",
+                    "arrivalDateTimeDifference": "PT9M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SERZY",
+                        "typeCode": "32S",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C012M168",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 336,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+SK+0336",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6131,
+                    "airline": {
+                        "code": "BT",
+                        "name": "AIR BALTIC CORPORATION AS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2890,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T09:05:00.000+02:00",
+                            "latestPublished": "2025-10-14T09:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T10:00:00.000+02:00",
+                            "latestPublished": "2025-10-14T10:00:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T10:00:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "32N",
+                        "typeName": "AIRBUS A320NEO",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C024M156",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG",
+                        "cockpitCrewEmployer": "SK",
+                        "cabinCrewEmployer": "SK"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 338,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+SK+0338",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2880,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+SK+0248",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "SK",
+                    "flightNumber": "0248"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A12"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T10:36:00.000+02:00",
+                            "scheduled": "2025-10-14T10:40:00.000+02:00",
+                            "latestPublished": "2025-10-14T10:36:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T10:44:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T11:31:00.000+02:00",
+                            "scheduled": "2025-10-14T11:35:00.000+02:00",
+                            "latestPublished": "2025-10-14T11:31:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T11:31:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T11:27:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "departureDateTimeDifference": "PT-4M",
+                    "arrivalDateTimeDifference": "PT-4M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SEROI",
+                        "typeCode": "32N",
+                        "typeName": "AIRBUS A320NEO",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C024M156",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 344,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+SK+0344",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4056,
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2882,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5469,
+                    "airline": {
+                        "code": "LO",
+                        "name": "LOT POLISH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+SK+4083",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "SK",
+                    "flightNumber": "4083"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A10"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T13:08:00.000+02:00",
+                            "scheduled": "2025-10-14T13:10:00.000+02:00",
+                            "latestPublished": "2025-10-14T13:08:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T13:17:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T14:03:00.000+02:00",
+                            "scheduled": "2025-10-14T14:05:00.000+02:00",
+                            "latestPublished": "2025-10-14T14:03:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T14:03:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T14:00:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "departureDateTimeDifference": "PT-2M",
+                    "arrivalDateTimeDifference": "PT-2M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SERZA",
+                        "typeCode": "32S",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C012M168",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 354,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+SK+0354",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4051,
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2888,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+SK+4473",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "SK",
+                    "flightNumber": "4473"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A10"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T14:24:00.000+02:00",
+                            "scheduled": "2025-10-14T14:25:00.000+02:00",
+                            "latestPublished": "2025-10-14T14:24:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T14:33:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T15:19:00.000+02:00",
+                            "scheduled": "2025-10-14T15:20:00.000+02:00",
+                            "latestPublished": "2025-10-14T15:19:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T15:19:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T15:15:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "departureDateTimeDifference": "PT-1M",
+                    "arrivalDateTimeDifference": "PT-1M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SERZY",
+                        "typeCode": "32S",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C012M168",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 358,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+SK+0358",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4048,
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2890,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+SK+0272",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "SK",
+                    "flightNumber": "0272"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A12"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T16:15:00.000+02:00",
+                            "scheduled": "2025-10-14T16:20:00.000+02:00",
+                            "latestPublished": "2025-10-14T16:15:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T16:35:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T17:19:00.000+02:00",
+                            "scheduled": "2025-10-14T17:15:00.000+02:00",
+                            "latestPublished": "2025-10-14T17:19:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T17:19:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T17:15:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "departureDateTimeDifference": "PT-5M",
+                    "arrivalDateTimeDifference": "PT4M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SERUE",
+                        "typeCode": "32S",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C012M168",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 364,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+SK+0364",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4934,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4044,
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T17:00:00.000+02:00",
+                            "latestPublished": "2025-10-14T17:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T17:55:00.000+02:00",
+                            "latestPublished": "2025-10-14T17:55:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T17:55:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "32N",
+                        "typeName": "AIRBUS A320NEO",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C024M156",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG",
+                        "cockpitCrewEmployer": "SK",
+                        "cabinCrewEmployer": "SK"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 366,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+SK+0366",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4936,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4050,
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2894,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+SK+4413",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "SK",
+                    "flightNumber": "4413"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C5"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T18:26:00.000+02:00",
+                            "scheduled": "2025-10-14T18:30:00.000+02:00",
+                            "latestPublished": "2025-10-14T18:26:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T18:35:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T19:26:00.000+02:00",
+                            "scheduled": "2025-10-14T19:25:00.000+02:00",
+                            "latestPublished": "2025-10-14T19:26:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T19:26:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T19:22:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "departureDateTimeDifference": "PT-4M",
+                    "arrivalDateTimeDifference": "PT1M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SERUR",
+                        "typeCode": "32S",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C012M168",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG",
+                        "cockpitCrewEmployer": "SK",
+                        "cabinCrewEmployer": "SK"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 370,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+SK+0370",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4045,
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2896,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5564,
+                    "airline": {
+                        "code": "TP",
+                        "name": "TAP PORTUGAL"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A14"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T19:29:00.000+02:00",
+                            "scheduled": "2025-10-14T19:35:00.000+02:00",
+                            "latestPublished": "2025-10-14T19:29:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T19:39:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T20:24:00.000+02:00",
+                            "scheduled": "2025-10-14T20:30:00.000+02:00",
+                            "latestPublished": "2025-10-14T20:24:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T20:24:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T20:18:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "departureDateTimeDifference": "PT-6M",
+                    "arrivalDateTimeDifference": "PT-6M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SERZE",
+                        "typeCode": "32S",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C012M168",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 382,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+SK+0382",
+            "route": [
+                "OSL",
+                "TRD"
+            ],
+            "airline": {
+                "code": "SK",
+                "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4049,
+                    "airline": {
+                        "code": "EY",
+                        "name": "ETIHAD AIRWAYS"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 2898,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+SK+4105",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "SK",
+                    "flightNumber": "4105"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "OSL",
+                            "name": "GARDERMOEN AIRPORT",
+                            "nameLangTranl": "Oslo Gardermoen",
+                            "city": {
+                                "code": "OSL",
+                                "name": "OSLO",
+                                "nameLangTranl": "Oslo",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.2,
+                                "longitude": 11.0833
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C3"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T21:54:00.000+02:00",
+                            "scheduled": "2025-10-14T21:50:00.000+02:00",
+                            "latestPublished": "2025-10-14T21:54:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T22:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "TRD",
+                            "name": "VAERNES AIRPORT",
+                            "nameLangTranl": "Vaernes",
+                            "city": {
+                                "code": "TRD",
+                                "name": "TRONDHEIM",
+                                "nameLangTranl": "Trondheim",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "NO",
+                                    "name": "NORWAY",
+                                    "nameLangTranl": "Norway",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 63.45,
+                                "longitude": 10.9333
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T22:50:00.000+02:00",
+                            "scheduled": "2025-10-14T22:45:00.000+02:00",
+                            "latestPublished": "2025-10-14T22:50:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T22:50:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T22:46:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "departureDateTimeDifference": "PT4M",
+                    "arrivalDateTimeDifference": "PT5M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "SERZC",
+                        "typeCode": "32S",
+                        "ownerAirlineCode": "SK",
+                        "ownerAirlineName": "SCANDINAVIAN AIRLINES SYSTEM (SAS)",
+                        "physicalPaxConfiguration": "C012M168",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "CDZJYSBPAEMHQVWURKNLTOG"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 30,
+        "pageNumber": 11,
+        "fullCount": 1130,
+        "pageCount": 30,
+        "totalPages": 12
+    }
+}

@@ -1,0 +1,496 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 1572,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+AY+1572",
+            "haul": "MEDIUM",
+            "route": [
+                "CDG",
+                "HEL"
+            ],
+            "airline": {
+                "code": "AY",
+                "name": "FINNAIR OYJ"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9010,
+                    "flightScheduleDate": "2025-10-14",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AA",
+                        "name": "AMERICAN AIRLINES INC."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1441,
+                    "flightScheduleDate": "2025-10-14",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "CX",
+                        "name": "CATHAY PACIFIC AIRWAYS LTD."
+                    }
+                }
+            ],
+            "flightStatusPublic": "CANCELLED",
+            "flightStatusPublicLangTransl": "Cancelled",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2B",
+                                "boardingPier": "",
+                                "boardingTerminal": "2D",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "departureTerminal": "2D",
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T10:50:00.000+02:00",
+                            "latestPublished": "2025-10-14T10:50:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HEL",
+                            "name": "HELSINKI-VANTAA AIRPORT",
+                            "nameLangTranl": "Helsinki-Vantaa",
+                            "city": {
+                                "code": "HEL",
+                                "name": "HELSINKI",
+                                "nameLangTranl": "Helsinki",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FI",
+                                    "name": "FINLAND",
+                                    "nameLangTranl": "Finland",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.3256,
+                                "longitude": 24.9717
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T14:50:00.000+03:00",
+                            "latestPublished": "2025-10-14T14:50:00.000+03:00",
+                            "estimated": {
+                                "value": "2025-10-14T14:50:00.000+03:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "32B",
+                        "typeName": "AIRBUS A321 (SHARKLETS)",
+                        "ownerAirlineCode": "AY",
+                        "ownerAirlineName": "FINNAIR OYJ",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "Y",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1576,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+AY+1576",
+            "haul": "MEDIUM",
+            "route": [
+                "CDG",
+                "HEL"
+            ],
+            "airline": {
+                "code": "AY",
+                "name": "FINNAIR OYJ"
+            },
+            "flightStatusPublic": "CANCELLED",
+            "flightStatusPublicLangTransl": "Cancelled",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "2B",
+                                "boardingPier": "",
+                                "boardingTerminal": "2D",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T15:05:00.000+02:00",
+                            "latestPublished": "2025-10-14T15:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HEL",
+                            "name": "HELSINKI-VANTAA AIRPORT",
+                            "nameLangTranl": "Helsinki-Vantaa",
+                            "city": {
+                                "code": "HEL",
+                                "name": "HELSINKI",
+                                "nameLangTranl": "Helsinki",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FI",
+                                    "name": "FINLAND",
+                                    "nameLangTranl": "Finland",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.3256,
+                                "longitude": 24.9717
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-14T19:05:00.000+03:00",
+                            "latestPublished": "2025-10-14T19:05:00.000+03:00",
+                            "estimated": {
+                                "value": "2025-10-14T19:05:00.000+03:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "typeCode": "32B",
+                        "typeName": "AIRBUS A321 (SHARKLETS)",
+                        "ownerAirlineCode": "AY",
+                        "ownerAirlineName": "FINNAIR OYJ",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "Y",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1176,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+AF+1176",
+            "haul": "MEDIUM",
+            "route": [
+                "CDG",
+                "HEL"
+            ],
+            "airline": {
+                "code": "AF",
+                "name": "AIR FRANCE"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5140,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "WS",
+                        "name": "WESTJET"
+                    }
+                }
+            ],
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251014+AF+1235",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "AF",
+                    "flightNumber": "1235"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "2",
+                                "gateNumber": [
+                                    "F35"
+                                ],
+                                "parkingPosition": "F34",
+                                "pierCode": "",
+                                "terminalCode": "2F",
+                                "boardingPier": "1",
+                                "boardingTerminal": "2F",
+                                "checkInZone": [
+                                    "F05",
+                                    "F06"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "1",
+                                "parkingPositionCustomStatus": "D",
+                                "checkInAerogare": "2",
+                                "paxDepartureGate": [
+                                    "F35"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T19:29:00.000+02:00",
+                            "scheduled": "2025-10-14T19:20:00.000+02:00",
+                            "latestPublished": "2025-10-14T19:29:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T19:44:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T18:55:00.000+02:00",
+                            "gateCloseTime": "2025-10-14T19:10:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-14T18:47:00.000+02:00",
+                            "firstPaxBoarding": "2025-10-14T18:42:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "HEL",
+                            "name": "HELSINKI-VANTAA AIRPORT",
+                            "nameLangTranl": "Helsinki-Vantaa",
+                            "city": {
+                                "code": "HEL",
+                                "name": "HELSINKI",
+                                "nameLangTranl": "Helsinki",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FI",
+                                    "name": "FINLAND",
+                                    "nameLangTranl": "Finland",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 60.3256,
+                                "longitude": 24.9717
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T23:27:00.000+03:00",
+                            "scheduled": "2025-10-14T23:20:00.000+03:00",
+                            "latestPublished": "2025-10-14T23:27:00.000+03:00",
+                            "estimated": {
+                                "value": "2025-10-14T23:27:00.000+03:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T23:20:00.000+03:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H",
+                    "departureDateTimeDifference": "PT9M",
+                    "arrivalDateTimeDifference": "PT7M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0100",
+                    "aircraft": {
+                        "registration": "FHZUI",
+                        "typeCode": "223",
+                        "typeName": "AIRBUS A220-300 PASSENGER",
+                        "subFleetCodeId": "CA",
+                        "ownerAirlineCode": "AF",
+                        "ownerAirlineName": "AIR FRANCE",
+                        "physicalPaxConfiguration": "Y148",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C008Y135",
+                        "cockpitCrewEmployer": "AF",
+                        "cabinCrewEmployer": "AF",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "15"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0009"
+                        ],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "15",
+                                "delayDuration": "0009"
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 3,
+        "pageNumber": 9,
+        "fullCount": 903,
+        "pageCount": 3,
+        "totalPages": 10
+    }
+}
