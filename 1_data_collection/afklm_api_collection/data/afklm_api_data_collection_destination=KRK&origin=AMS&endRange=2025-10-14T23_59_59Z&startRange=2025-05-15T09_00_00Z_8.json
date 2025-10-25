@@ -1,0 +1,1548 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 1329,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+KL+1329",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "KRK"
+            ],
+            "airline": {
+                "code": "KL",
+                "name": "KLM ROYAL DUTCH AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 8255,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9217,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3747,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "UX",
+                        "name": "AIR EUROPA LINEAS AEREAS S.A."
+                    }
+                }
+            ],
+            "flightRelations": {
+                "onwardFlightData": {
+                    "id": "20251013+KL+1330",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "KL",
+                    "flightNumber": "1330"
+                },
+                "previousFlightData": {
+                    "id": "20251013+KL+1712",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "KL",
+                    "flightNumber": "1712"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B30"
+                                ],
+                                "parkingPosition": "A33",
+                                "pierCode": "B",
+                                "terminalCode": "01",
+                                "boardingPier": "B",
+                                "checkInZone": [
+                                    "06",
+                                    "07",
+                                    "08"
+                                ],
+                                "boardingContactType": "L",
+                                "parkingPositionType": "L",
+                                "paxDepartureGate": [
+                                    "B30"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T16:48:00.000+02:00",
+                            "scheduled": "2025-10-13T16:40:00.000+02:00",
+                            "latestPublished": "2025-10-13T16:48:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T17:05:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-13T16:10:00.000+02:00",
+                            "gateCloseTime": "2025-10-13T16:25:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-13T16:18:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "KRK",
+                            "name": "JOHN PAUL II - BALICE INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "John Paul II International Airport",
+                            "city": {
+                                "code": "KRK",
+                                "name": "KRAKOW",
+                                "nameLangTranl": "Krakow",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PL",
+                                    "name": "POLAND",
+                                    "nameLangTranl": "Poland",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.0833,
+                                "longitude": 19.7833
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T18:45:00.000+02:00",
+                            "scheduled": "2025-10-13T18:30:00.000+02:00",
+                            "latestPublished": "2025-10-13T18:45:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T18:45:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-13T18:41:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H50M",
+                    "departureDateTimeDifference": "PT8M",
+                    "arrivalDateTimeDifference": "PT15M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHEXI",
+                        "typeCode": "E7W",
+                        "typeName": "EMBRAER 175 (ENHANCED WINGLETS)",
+                        "subFleetCodeId": "E",
+                        "ownerAirlineCode": "WA",
+                        "ownerAirlineName": "KLM CITYHOPPER",
+                        "physicalPaxConfiguration": "C024M064",
+                        "operationalConfiguration": "C008M080",
+                        "cockpitCrewEmployer": "WA",
+                        "cabinCrewEmployer": "WA",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "37",
+                            "89"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0003",
+                            "0005"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR05",
+                            "FSR05"
+                        ],
+                        "delayReasonPublicLangTransl": [
+                            "This flight was delayed due to restrictions from Air Traffic Control at the airport of Amsterdam (AMS)."
+                        ],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT15M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "37",
+                                "delayDuration": "0003",
+                                "delayReasonCodePublic": "FSR05"
+                            },
+                            {
+                                "delayCode": "89",
+                                "delayDuration": "0005",
+                                "delayReasonCodePublic": "FSR05",
+                                "delayReasonPublicShort": "Restrictions from Air Traffic Control",
+                                "delayReasonPublicLong": "This flight was delayed due to restrictions from Air Traffic Control at the airport of Amsterdam (AMS)."
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 7961,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+EJU+7961",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "KRK"
+            ],
+            "airline": {
+                "code": "EJU"
+            },
+            "flightRelations": {
+                "previousFlightData": {
+                    "id": "20251013+EJU+7980",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "EJU",
+                    "flightNumber": "7980"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "M02"
+                                ],
+                                "parkingPosition": "H02",
+                                "pierCode": "M",
+                                "terminalCode": "03",
+                                "boardingPier": "M",
+                                "checkInZone": [
+                                    "27"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T17:36:00.000+02:00",
+                            "scheduled": "2025-10-13T17:40:00.000+02:00",
+                            "latestPublished": "2025-10-13T17:36:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T17:49:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "KRK",
+                            "name": "JOHN PAUL II - BALICE INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "John Paul II International Airport",
+                            "city": {
+                                "code": "KRK",
+                                "name": "KRAKOW",
+                                "nameLangTranl": "Krakow",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PL",
+                                    "name": "POLAND",
+                                    "nameLangTranl": "Poland",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.0833,
+                                "longitude": 19.7833
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-13T17:40:00.000+02:00",
+                            "latestPublished": "2025-10-13T17:40:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T17:40:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "departureDateTimeDifference": "PT-4M",
+                    "timeToArrival": "PT-282H-14M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "OELUF",
+                        "typeCode": "32N",
+                        "typeName": "AIRBUS A320NEO",
+                        "physicalPaxConfiguration": "Y195",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1331,
+            "flightScheduleDate": "2025-10-13",
+            "id": "20251013+KL+1331",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "KRK"
+            ],
+            "airline": {
+                "code": "KL",
+                "name": "KLM ROYAL DUTCH AIRLINES"
+            },
+            "flightRelations": {
+                "onwardFlightData": {
+                    "id": "20251014+KL+1322",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "KL",
+                    "flightNumber": "1322"
+                },
+                "previousFlightData": {
+                    "id": "20251013+KL+1478",
+                    "flightScheduleDate": "2025-10-13",
+                    "airlineCode": "KL",
+                    "flightNumber": "1478"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B05"
+                                ],
+                                "parkingPosition": "A54",
+                                "pierCode": "B",
+                                "terminalCode": "01",
+                                "boardingPier": "B",
+                                "checkInZone": [
+                                    "06",
+                                    "07",
+                                    "08"
+                                ],
+                                "boardingContactType": "L",
+                                "parkingPositionType": "L",
+                                "paxDepartureGate": [
+                                    "B05"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T20:35:00.000+02:00",
+                            "scheduled": "2025-10-13T20:35:00.000+02:00",
+                            "latestPublished": "2025-10-13T20:35:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-13T20:52:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-13T20:05:00.000+02:00",
+                            "gateCloseTime": "2025-10-13T20:20:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-13T19:59:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "KRK",
+                            "name": "JOHN PAUL II - BALICE INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "John Paul II International Airport",
+                            "city": {
+                                "code": "KRK",
+                                "name": "KRAKOW",
+                                "nameLangTranl": "Krakow",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PL",
+                                    "name": "POLAND",
+                                    "nameLangTranl": "Poland",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.0833,
+                                "longitude": 19.7833
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-13T22:34:00.000+02:00",
+                            "scheduled": "2025-10-13T22:25:00.000+02:00",
+                            "latestPublished": "2025-10-13T22:34:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-13T22:34:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-13T22:28:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H50M",
+                    "departureDateTimeDifference": "PT0S",
+                    "arrivalDateTimeDifference": "PT9M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHNXX",
+                        "typeCode": "295",
+                        "typeName": "EMBRAER 195 E2",
+                        "subFleetCodeId": "E",
+                        "ownerAirlineCode": "WA",
+                        "ownerAirlineName": "KLM CITYHOPPER",
+                        "physicalPaxConfiguration": "C028M104",
+                        "operationalConfiguration": "C008M124",
+                        "cockpitCrewEmployer": "WA",
+                        "cabinCrewEmployer": "WA",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1323,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+KL+1323",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "KRK"
+            ],
+            "airline": {
+                "code": "KL",
+                "name": "KLM ROYAL DUTCH AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3139,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9337,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                }
+            ],
+            "flightRelations": {
+                "onwardFlightData": {
+                    "id": "20251014+KL+1324",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "KL",
+                    "flightNumber": "1324"
+                },
+                "previousFlightData": {
+                    "id": "20251014+KL+1982",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "KL",
+                    "flightNumber": "1982"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B34"
+                                ],
+                                "parkingPosition": "A53",
+                                "pierCode": "B",
+                                "terminalCode": "01",
+                                "boardingPier": "B",
+                                "checkInZone": [
+                                    "06",
+                                    "07",
+                                    "08"
+                                ],
+                                "boardingContactType": "L",
+                                "parkingPositionType": "L",
+                                "paxDepartureGate": [
+                                    "B34"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T09:24:00.000+02:00",
+                            "scheduled": "2025-10-14T09:15:00.000+02:00",
+                            "latestPublished": "2025-10-14T09:24:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T09:37:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T08:50:00.000+02:00",
+                            "gateCloseTime": "2025-10-14T09:05:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-14T08:22:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "KRK",
+                            "name": "JOHN PAUL II - BALICE INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "John Paul II International Airport",
+                            "city": {
+                                "code": "KRK",
+                                "name": "KRAKOW",
+                                "nameLangTranl": "Krakow",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PL",
+                                    "name": "POLAND",
+                                    "nameLangTranl": "Poland",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.0833,
+                                "longitude": 19.7833
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T11:15:00.000+02:00",
+                            "scheduled": "2025-10-14T11:10:00.000+02:00",
+                            "latestPublished": "2025-10-14T11:15:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T11:15:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T11:10:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H55M",
+                    "departureDateTimeDifference": "PT9M",
+                    "arrivalDateTimeDifference": "PT5M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHNXJ",
+                        "typeCode": "295",
+                        "typeName": "EMBRAER 195 E2",
+                        "subFleetCodeId": "E",
+                        "ownerAirlineCode": "WA",
+                        "ownerAirlineName": "KLM CITYHOPPER",
+                        "physicalPaxConfiguration": "C028M104",
+                        "operationalConfiguration": "C008M124",
+                        "cockpitCrewEmployer": "WA",
+                        "cabinCrewEmployer": "WA",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "35",
+                            "89"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0005",
+                            "0004"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR05",
+                            "FSR05"
+                        ],
+                        "delayReasonPublicLangTransl": [
+                            "This flight was delayed due to restrictions from Air Traffic Control at the airport of Amsterdam (AMS)."
+                        ],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "35",
+                                "delayDuration": "0005",
+                                "delayReasonCodePublic": "FSR05"
+                            },
+                            {
+                                "delayCode": "89",
+                                "delayDuration": "0004",
+                                "delayReasonCodePublic": "FSR05",
+                                "delayReasonPublicShort": "Restrictions from Air Traffic Control",
+                                "delayReasonPublicLong": "This flight was delayed due to restrictions from Air Traffic Control at the airport of Amsterdam (AMS)."
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1325,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+KL+1325",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "KRK"
+            ],
+            "airline": {
+                "code": "KL",
+                "name": "KLM ROYAL DUTCH AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3137,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9165,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                }
+            ],
+            "flightRelations": {
+                "onwardFlightData": {
+                    "id": "20251014+KL+1326",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "KL",
+                    "flightNumber": "1326"
+                },
+                "previousFlightData": {
+                    "id": "20251014+KL+1930",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "KL",
+                    "flightNumber": "1930"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B24"
+                                ],
+                                "parkingPosition": "B24",
+                                "pierCode": "B",
+                                "terminalCode": "01",
+                                "boardingPier": "B",
+                                "checkInZone": [
+                                    "06",
+                                    "07",
+                                    "08"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "L",
+                                "paxDepartureGate": [
+                                    "B24"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T11:36:00.000+02:00",
+                            "scheduled": "2025-10-14T11:30:00.000+02:00",
+                            "latestPublished": "2025-10-14T11:36:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T11:50:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T11:00:00.000+02:00",
+                            "gateCloseTime": "2025-10-14T11:15:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-14T10:57:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "KRK",
+                            "name": "JOHN PAUL II - BALICE INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "John Paul II International Airport",
+                            "city": {
+                                "code": "KRK",
+                                "name": "KRAKOW",
+                                "nameLangTranl": "Krakow",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PL",
+                                    "name": "POLAND",
+                                    "nameLangTranl": "Poland",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.0833,
+                                "longitude": 19.7833
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T13:24:00.000+02:00",
+                            "scheduled": "2025-10-14T13:25:00.000+02:00",
+                            "latestPublished": "2025-10-14T13:24:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T13:24:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T13:20:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H55M",
+                    "departureDateTimeDifference": "PT6M",
+                    "arrivalDateTimeDifference": "PT-1M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHEXK",
+                        "typeCode": "E7W",
+                        "typeName": "EMBRAER 175 (ENHANCED WINGLETS)",
+                        "subFleetCodeId": "E",
+                        "ownerAirlineCode": "WA",
+                        "ownerAirlineName": "KLM CITYHOPPER",
+                        "physicalPaxConfiguration": "C024M064",
+                        "operationalConfiguration": "C008M080",
+                        "cockpitCrewEmployer": "WA",
+                        "cabinCrewEmployer": "WA",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "32"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0006"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR09"
+                        ],
+                        "delayReasonPublicLangTransl": [
+                            "This flight was delayed because it took longer than expected to load the aircraft."
+                        ],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "32",
+                                "delayDuration": "0006",
+                                "delayReasonCodePublic": "FSR09",
+                                "delayReasonPublicShort": "Delayed loading of the aircraft",
+                                "delayReasonPublicLong": "This flight was delayed because it took longer than expected to load the aircraft."
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1327,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+KL+1327",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "KRK"
+            ],
+            "airline": {
+                "code": "KL",
+                "name": "KLM ROYAL DUTCH AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 9417,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                }
+            ],
+            "flightRelations": {
+                "onwardFlightData": {
+                    "id": "20251014+KL+1328",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "KL",
+                    "flightNumber": "1328"
+                },
+                "previousFlightData": {
+                    "id": "20251014+KL+1152",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "KL",
+                    "flightNumber": "1152"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B26"
+                                ],
+                                "parkingPosition": "A42",
+                                "pierCode": "B",
+                                "terminalCode": "01",
+                                "boardingPier": "B",
+                                "checkInZone": [
+                                    "06",
+                                    "07",
+                                    "08"
+                                ],
+                                "boardingContactType": "L",
+                                "parkingPositionType": "L",
+                                "paxDepartureGate": [
+                                    "B26"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T15:33:00.000+02:00",
+                            "scheduled": "2025-10-14T15:20:00.000+02:00",
+                            "latestPublished": "2025-10-14T15:33:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T15:46:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T14:50:00.000+02:00",
+                            "gateCloseTime": "2025-10-14T15:05:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-14T14:49:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "KRK",
+                            "name": "JOHN PAUL II - BALICE INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "John Paul II International Airport",
+                            "city": {
+                                "code": "KRK",
+                                "name": "KRAKOW",
+                                "nameLangTranl": "Krakow",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PL",
+                                    "name": "POLAND",
+                                    "nameLangTranl": "Poland",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.0833,
+                                "longitude": 19.7833
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T17:26:00.000+02:00",
+                            "scheduled": "2025-10-14T17:10:00.000+02:00",
+                            "latestPublished": "2025-10-14T17:26:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T17:26:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T17:20:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H50M",
+                    "departureDateTimeDifference": "PT13M",
+                    "arrivalDateTimeDifference": "PT16M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHNXX",
+                        "typeCode": "295",
+                        "typeName": "EMBRAER 195 E2",
+                        "subFleetCodeId": "E",
+                        "ownerAirlineCode": "WA",
+                        "ownerAirlineName": "KLM CITYHOPPER",
+                        "physicalPaxConfiguration": "C028M104",
+                        "operationalConfiguration": "C012M120",
+                        "cockpitCrewEmployer": "WA",
+                        "cabinCrewEmployer": "WA",
+                        "wifiEnabled": "Y",
+                        "satelliteConnectivityOnBoard": "Y"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "03",
+                            "89"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0003",
+                            "0010"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR05",
+                            "FSR05"
+                        ],
+                        "delayReasonPublicLangTransl": [
+                            "This flight was delayed due to restrictions from Air Traffic Control at the airport of Amsterdam (AMS)."
+                        ],
+                        "delayReasonPublic": [],
+                        "delayDurationPublic": "PT13M",
+                        "delayDurationArrival": "PT16M",
+                        "delayInformation": [
+                            {
+                                "delayCode": "03",
+                                "delayDuration": "0003",
+                                "delayReasonCodePublic": "FSR05"
+                            },
+                            {
+                                "delayCode": "89",
+                                "delayDuration": "0010",
+                                "delayReasonCodePublic": "FSR05",
+                                "delayReasonPublicShort": "Restrictions from Air Traffic Control",
+                                "delayReasonPublicLong": "This flight was delayed due to restrictions from Air Traffic Control at the airport of Amsterdam (AMS)."
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1329,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+KL+1329",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "KRK"
+            ],
+            "airline": {
+                "code": "KL",
+                "name": "KLM ROYAL DUTCH AIRLINES"
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 8255,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 9314,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "DL",
+                        "name": "DELTA AIR LINES INC."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3747,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "UX",
+                        "name": "AIR EUROPA LINEAS AEREAS S.A."
+                    }
+                }
+            ],
+            "flightRelations": {
+                "onwardFlightData": {
+                    "id": "20251014+KL+1330",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "KL",
+                    "flightNumber": "1330"
+                },
+                "previousFlightData": {
+                    "id": "20251014+KL+1338",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "KL",
+                    "flightNumber": "1338"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B26"
+                                ],
+                                "parkingPosition": "A62",
+                                "pierCode": "B",
+                                "terminalCode": "01",
+                                "boardingPier": "B",
+                                "checkInZone": [
+                                    "06",
+                                    "07",
+                                    "08"
+                                ],
+                                "boardingContactType": "L",
+                                "parkingPositionType": "L",
+                                "paxDepartureGate": [
+                                    "B26"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T16:48:00.000+02:00",
+                            "scheduled": "2025-10-14T16:40:00.000+02:00",
+                            "latestPublished": "2025-10-14T16:48:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T17:00:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T16:10:00.000+02:00",
+                            "gateCloseTime": "2025-10-14T16:25:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-14T16:08:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "KRK",
+                            "name": "JOHN PAUL II - BALICE INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "John Paul II International Airport",
+                            "city": {
+                                "code": "KRK",
+                                "name": "KRAKOW",
+                                "nameLangTranl": "Krakow",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PL",
+                                    "name": "POLAND",
+                                    "nameLangTranl": "Poland",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.0833,
+                                "longitude": 19.7833
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T18:39:00.000+02:00",
+                            "scheduled": "2025-10-14T18:30:00.000+02:00",
+                            "latestPublished": "2025-10-14T18:39:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T18:39:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T18:34:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H50M",
+                    "departureDateTimeDifference": "PT8M",
+                    "arrivalDateTimeDifference": "PT9M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHEXJ",
+                        "typeCode": "E7W",
+                        "typeName": "EMBRAER 175 (ENHANCED WINGLETS)",
+                        "subFleetCodeId": "E",
+                        "ownerAirlineCode": "WA",
+                        "ownerAirlineName": "KLM CITYHOPPER",
+                        "physicalPaxConfiguration": "C024M064",
+                        "operationalConfiguration": "C008M080",
+                        "cockpitCrewEmployer": "WA",
+                        "cabinCrewEmployer": "WA",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [
+                            "89"
+                        ],
+                        "delayReason": [],
+                        "delayDuration": [
+                            "0008"
+                        ],
+                        "delayReasonCodePublic": [
+                            "FSR05"
+                        ],
+                        "delayReasonPublicLangTransl": [
+                            "This flight was delayed due to restrictions from Air Traffic Control at the airport of Amsterdam (AMS)."
+                        ],
+                        "delayReasonPublic": [],
+                        "delayInformation": [
+                            {
+                                "delayCode": "89",
+                                "delayDuration": "0008",
+                                "delayReasonCodePublic": "FSR05",
+                                "delayReasonPublicShort": "Restrictions from Air Traffic Control",
+                                "delayReasonPublicLong": "This flight was delayed due to restrictions from Air Traffic Control at the airport of Amsterdam (AMS)."
+                            }
+                        ]
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 1331,
+            "flightScheduleDate": "2025-10-14",
+            "id": "20251014+KL+1331",
+            "haul": "MEDIUM",
+            "route": [
+                "AMS",
+                "KRK"
+            ],
+            "airline": {
+                "code": "KL",
+                "name": "KLM ROYAL DUTCH AIRLINES"
+            },
+            "flightRelations": {
+                "onwardFlightData": {
+                    "id": "20251015+KL+1322",
+                    "flightScheduleDate": "2025-10-15",
+                    "airlineCode": "KL",
+                    "flightNumber": "1322"
+                },
+                "previousFlightData": {
+                    "id": "20251014+KL+1154",
+                    "flightScheduleDate": "2025-10-14",
+                    "airlineCode": "KL",
+                    "flightNumber": "1154"
+                }
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "AMS",
+                            "name": "SCHIPHOL AIRPORT",
+                            "nameLangTranl": "Amsterdam Schiphol Airport",
+                            "city": {
+                                "code": "AMS",
+                                "name": "AMSTERDAM",
+                                "nameLangTranl": "Amsterdam",
+                                "country": {
+                                    "areaCode": "N",
+                                    "code": "NL",
+                                    "name": "NETHERLANDS",
+                                    "nameLangTranl": "Netherlands",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 52.3083,
+                                "longitude": 4.7681
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B30"
+                                ],
+                                "parkingPosition": "A44",
+                                "pierCode": "B",
+                                "terminalCode": "01",
+                                "boardingPier": "B",
+                                "checkInZone": [
+                                    "06",
+                                    "07",
+                                    "08"
+                                ],
+                                "boardingContactType": "L",
+                                "parkingPositionType": "L",
+                                "paxDepartureGate": [
+                                    "B30"
+                                ]
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T20:31:00.000+02:00",
+                            "scheduled": "2025-10-14T20:35:00.000+02:00",
+                            "latestPublished": "2025-10-14T20:31:00.000+02:00",
+                            "actualTakeOffTime": "2025-10-14T20:44:00.000+02:00"
+                        },
+                        "boardingTimes": {
+                            "plannedBoardingTime": "2025-10-14T20:05:00.000+02:00",
+                            "gateCloseTime": "2025-10-14T20:20:00.000+02:00",
+                            "actualBoardingOpen": "2025-10-14T20:03:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "KRK",
+                            "name": "JOHN PAUL II - BALICE INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "John Paul II International Airport",
+                            "city": {
+                                "code": "KRK",
+                                "name": "KRAKOW",
+                                "nameLangTranl": "Krakow",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "PL",
+                                    "name": "POLAND",
+                                    "nameLangTranl": "Poland",
+                                    "euroCountry": "N",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.0833,
+                                "longitude": 19.7833
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-14T22:25:00.000+02:00",
+                            "scheduled": "2025-10-14T22:25:00.000+02:00",
+                            "latestPublished": "2025-10-14T22:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-14T22:25:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-14T22:20:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H50M",
+                    "departureDateTimeDifference": "PT-4M",
+                    "arrivalDateTimeDifference": "PT0S",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "PHNXW",
+                        "typeCode": "295",
+                        "typeName": "EMBRAER 195 E2",
+                        "subFleetCodeId": "E",
+                        "ownerAirlineCode": "WA",
+                        "ownerAirlineName": "KLM CITYHOPPER",
+                        "physicalPaxConfiguration": "C028M104",
+                        "operationalConfiguration": "C008M124",
+                        "cockpitCrewEmployer": "WA",
+                        "cabinCrewEmployer": "WA",
+                        "wifiEnabled": "N",
+                        "satelliteConnectivityOnBoard": "N"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    },
+                    "otherFlightLegStatuses": {
+                        "acceptanceStatus": "Finalised",
+                        "boardingStatus": "Closed"
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 8,
+        "pageNumber": 8,
+        "fullCount": 808,
+        "pageCount": 8,
+        "totalPages": 9
+    }
+}

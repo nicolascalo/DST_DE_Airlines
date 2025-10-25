@@ -1,0 +1,3192 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 885,
+            "flightScheduleDate": "2025-05-15",
+            "id": "20250515+DL+0885",
+            "route": [
+                "SLC",
+                "ATL"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 7401,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6283,
+                    "airline": {
+                        "code": "LA",
+                        "name": "LATAM AIRLINES GROUP S.A. DBA LATAM AIRLINES GROUP"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7688,
+                    "airline": {
+                        "code": "WS",
+                        "name": "WESTJET"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ON_TIME",
+            "flightStatusPublicLangTransl": "On time",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "LAX",
+                            "name": "LOS ANGELES INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Los Angeles International Airport",
+                            "city": {
+                                "code": "LAX",
+                                "name": "LOS ANGELES",
+                                "nameLangTranl": "Los Angeles",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 33.9422,
+                                "longitude": -118.4072
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "terminalCode": "3",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-15T00:59:00.000-07:00",
+                            "latestPublished": "2025-05-15T00:59:00.000-07:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ATL",
+                            "name": "HARTSFIELD-JACKSON INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Hartsfield-Jackson Atlanta International Airport",
+                            "city": {
+                                "code": "ATL",
+                                "name": "ATLANTA",
+                                "nameLangTranl": "Atlanta",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 33.6408,
+                                "longitude": -84.4272
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "S",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-15T08:28:00.000-04:00",
+                            "latestPublished": "2025-05-15T08:28:00.000-04:00",
+                            "estimated": {
+                                "value": "2025-05-15T08:28:00.000-04:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT4H29M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0300",
+                    "aircraft": {
+                        "typeCode": "753",
+                        "typeName": "BOEING 757-300 PASSENGER",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C024W032Y178",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "SLC",
+                            "name": "SALT LAKE CITY INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Salt Lake City International Airport",
+                            "city": {
+                                "code": "SLC",
+                                "name": "SALT LAKE CITY",
+                                "nameLangTranl": "Salt Lake City",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.7842,
+                                "longitude": -111.9669
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-15T11:15:00.000-06:00",
+                            "latestPublished": "2025-05-15T11:15:00.000-06:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ATL",
+                            "name": "HARTSFIELD-JACKSON INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Hartsfield-Jackson Atlanta International Airport",
+                            "city": {
+                                "code": "ATL",
+                                "name": "ATLANTA",
+                                "nameLangTranl": "Atlanta",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 33.6408,
+                                "longitude": -84.4272
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "S",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-15T17:02:00.000-04:00",
+                            "latestPublished": "2025-05-15T17:02:00.000-04:00",
+                            "estimated": {
+                                "value": "2025-05-15T17:02:00.000-04:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H47M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0200",
+                    "aircraft": {
+                        "typeCode": "321",
+                        "typeName": "AIRBUS A321",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W029Y142",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 907,
+            "flightScheduleDate": "2025-05-15",
+            "id": "20250515+DL+0907",
+            "haul": "MEDIUM",
+            "route": [
+                "SLC",
+                "ATL"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3726,
+                    "flightScheduleDate": "2025-05-15",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4226,
+                    "flightScheduleDate": "2025-05-15",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "SLC",
+                            "name": "SALT LAKE CITY INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Salt Lake City International Airport",
+                            "city": {
+                                "code": "SLC",
+                                "name": "SALT LAKE CITY",
+                                "nameLangTranl": "Salt Lake City",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.7842,
+                                "longitude": -111.9669
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A31"
+                                ],
+                                "pierCode": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-15T06:59:00.000-06:00",
+                            "scheduled": "2025-05-15T07:00:00.000-06:00",
+                            "latestPublished": "2025-05-15T06:59:00.000-06:00",
+                            "actualTakeOffTime": "2025-05-15T07:12:00.000-06:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ATL",
+                            "name": "HARTSFIELD-JACKSON INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Hartsfield-Jackson Atlanta International Airport",
+                            "city": {
+                                "code": "ATL",
+                                "name": "ATLANTA",
+                                "nameLangTranl": "Atlanta",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 33.6408,
+                                "longitude": -84.4272
+                            },
+                            "places": {
+                                "aerogareCode": "S",
+                                "gateNumber": [
+                                    "A04"
+                                ],
+                                "terminalCode": "S",
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "S",
+                                "arrivalPositionPier": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-15T12:23:00.000-04:00",
+                            "scheduled": "2025-05-15T12:49:00.000-04:00",
+                            "latestPublished": "2025-05-15T12:23:00.000-04:00",
+                            "estimated": {
+                                "value": "2025-05-15T12:23:00.000-04:00"
+                            },
+                            "actualTouchDownTime": "2025-05-15T12:17:00.000-04:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H49M",
+                    "departureDateTimeDifference": "PT-1M",
+                    "arrivalDateTimeDifference": "PT-26M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0200",
+                    "aircraft": {
+                        "registration": "N104DN",
+                        "typeCode": "321",
+                        "typeName": "AIRBUS A321",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C001W001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C020W029Y142",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 897,
+            "flightScheduleDate": "2025-05-15",
+            "id": "20250515+DL+0897",
+            "haul": "MEDIUM",
+            "route": [
+                "SLC",
+                "ATL"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2978,
+                    "flightScheduleDate": "2025-05-15",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4303,
+                    "flightScheduleDate": "2025-05-15",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 8621,
+                    "flightScheduleDate": "2025-05-15",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "LA",
+                        "name": "LATAM AIRLINES GROUP S.A. DBA LATAM AIRLINES GROUP"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4505,
+                    "flightScheduleDate": "2025-05-15",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "VS",
+                        "name": "VIRGIN ATLANTIC AIRWAYS LIMITED"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5583,
+                    "flightScheduleDate": "2025-05-15",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "WS",
+                        "name": "WESTJET"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "SLC",
+                            "name": "SALT LAKE CITY INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Salt Lake City International Airport",
+                            "city": {
+                                "code": "SLC",
+                                "name": "SALT LAKE CITY",
+                                "nameLangTranl": "Salt Lake City",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.7842,
+                                "longitude": -111.9669
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A29"
+                                ],
+                                "pierCode": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-15T07:58:00.000-06:00",
+                            "scheduled": "2025-05-15T08:00:00.000-06:00",
+                            "latestPublished": "2025-05-15T07:58:00.000-06:00",
+                            "actualTakeOffTime": "2025-05-15T08:19:00.000-06:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ATL",
+                            "name": "HARTSFIELD-JACKSON INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Hartsfield-Jackson Atlanta International Airport",
+                            "city": {
+                                "code": "ATL",
+                                "name": "ATLANTA",
+                                "nameLangTranl": "Atlanta",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 33.6408,
+                                "longitude": -84.4272
+                            },
+                            "places": {
+                                "aerogareCode": "S",
+                                "gateNumber": [
+                                    "A28"
+                                ],
+                                "terminalCode": "S",
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "S",
+                                "arrivalPositionPier": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-15T13:24:00.000-04:00",
+                            "scheduled": "2025-05-15T13:45:00.000-04:00",
+                            "latestPublished": "2025-05-15T13:24:00.000-04:00",
+                            "estimated": {
+                                "value": "2025-05-15T13:24:00.000-04:00"
+                            },
+                            "actualTouchDownTime": "2025-05-15T13:19:00.000-04:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H45M",
+                    "departureDateTimeDifference": "PT-2M",
+                    "arrivalDateTimeDifference": "PT-21M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0200",
+                    "aircraft": {
+                        "registration": "N585NW",
+                        "typeCode": "753",
+                        "typeName": "BOEING 757-300 PASSENGER",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C001W001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C024W032Y178",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 835,
+            "flightScheduleDate": "2025-05-15",
+            "id": "20250515+DL+0835",
+            "route": [
+                "SLC",
+                "ATL"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 4220,
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5073,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1811,
+                    "airline": {
+                        "code": "VS",
+                        "name": "VIRGIN ATLANTIC AIRWAYS LIMITED"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 8286,
+                    "airline": {
+                        "code": "WS",
+                        "name": "WESTJET"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "SLC",
+                            "name": "SALT LAKE CITY INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Salt Lake City International Airport",
+                            "city": {
+                                "code": "SLC",
+                                "name": "SALT LAKE CITY",
+                                "nameLangTranl": "Salt Lake City",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.7842,
+                                "longitude": -111.9669
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A29"
+                                ],
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-15T10:28:00.000-06:00",
+                            "scheduled": "2025-05-15T10:20:00.000-06:00",
+                            "latestPublished": "2025-05-15T10:28:00.000-06:00",
+                            "actualTakeOffTime": "2025-05-15T10:40:00.000-06:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ATL",
+                            "name": "HARTSFIELD-JACKSON INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Hartsfield-Jackson Atlanta International Airport",
+                            "city": {
+                                "code": "ATL",
+                                "name": "ATLANTA",
+                                "nameLangTranl": "Atlanta",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 33.6408,
+                                "longitude": -84.4272
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B21"
+                                ],
+                                "terminalCode": "S",
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "S",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-15T15:55:00.000-04:00",
+                            "scheduled": "2025-05-15T16:05:00.000-04:00",
+                            "latestPublished": "2025-05-15T15:55:00.000-04:00",
+                            "estimated": {
+                                "value": "2025-05-15T15:55:00.000-04:00"
+                            },
+                            "actualTouchDownTime": "2025-05-15T15:47:00.000-04:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H45M",
+                    "departureDateTimeDifference": "PT8M",
+                    "arrivalDateTimeDifference": "PT-10M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0200",
+                    "aircraft": {
+                        "registration": "N123DW",
+                        "typeCode": "321",
+                        "typeName": "AIRBUS A321",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W029Y142",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 906,
+            "flightScheduleDate": "2025-05-15",
+            "id": "20250515+DL+0906",
+            "haul": "MEDIUM",
+            "route": [
+                "SLC",
+                "ATL"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2459,
+                    "flightScheduleDate": "2025-05-15",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4517,
+                    "flightScheduleDate": "2025-05-15",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "VS",
+                        "name": "VIRGIN ATLANTIC AIRWAYS LIMITED"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5559,
+                    "flightScheduleDate": "2025-05-15",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "WS",
+                        "name": "WESTJET"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "SLC",
+                            "name": "SALT LAKE CITY INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Salt Lake City International Airport",
+                            "city": {
+                                "code": "SLC",
+                                "name": "SALT LAKE CITY",
+                                "nameLangTranl": "Salt Lake City",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.7842,
+                                "longitude": -111.9669
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-15T13:23:00.000-06:00",
+                            "scheduled": "2025-05-15T13:25:00.000-06:00",
+                            "latestPublished": "2025-05-15T13:23:00.000-06:00",
+                            "actualTakeOffTime": "2025-05-15T13:32:00.000-06:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ATL",
+                            "name": "HARTSFIELD-JACKSON INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Hartsfield-Jackson Atlanta International Airport",
+                            "city": {
+                                "code": "ATL",
+                                "name": "ATLANTA",
+                                "nameLangTranl": "Atlanta",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 33.6408,
+                                "longitude": -84.4272
+                            },
+                            "places": {
+                                "aerogareCode": "S",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "S",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "S",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "S",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-15T18:43:00.000-04:00",
+                            "scheduled": "2025-05-15T19:11:00.000-04:00",
+                            "latestPublished": "2025-05-15T18:43:00.000-04:00",
+                            "estimated": {
+                                "value": "2025-05-15T18:43:00.000-04:00"
+                            },
+                            "actualTouchDownTime": "2025-05-15T18:38:00.000-04:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H46M",
+                    "departureDateTimeDifference": "PT-2M",
+                    "arrivalDateTimeDifference": "PT-28M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0200",
+                    "aircraft": {
+                        "registration": "N309DN",
+                        "typeCode": "321",
+                        "typeName": "AIRBUS A321",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C001W001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C020W029Y142"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 875,
+            "flightScheduleDate": "2025-05-15",
+            "id": "20250515+DL+0875",
+            "haul": "MEDIUM",
+            "route": [
+                "SLC",
+                "ATL"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2462,
+                    "flightScheduleDate": "2025-05-15",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6539,
+                    "flightScheduleDate": "2025-05-15",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "LA",
+                        "name": "LATAM AIRLINES GROUP S.A. DBA LATAM AIRLINES GROUP"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3759,
+                    "flightScheduleDate": "2025-05-15",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "VS",
+                        "name": "VIRGIN ATLANTIC AIRWAYS LIMITED"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7179,
+                    "flightScheduleDate": "2025-05-15",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "WS",
+                        "name": "WESTJET"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "SLC",
+                            "name": "SALT LAKE CITY INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Salt Lake City International Airport",
+                            "city": {
+                                "code": "SLC",
+                                "name": "SALT LAKE CITY",
+                                "nameLangTranl": "Salt Lake City",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.7842,
+                                "longitude": -111.9669
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-15T15:00:00.000-06:00",
+                            "scheduled": "2025-05-15T15:00:00.000-06:00",
+                            "latestPublished": "2025-05-15T15:00:00.000-06:00",
+                            "actualTakeOffTime": "2025-05-15T15:11:00.000-06:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ATL",
+                            "name": "HARTSFIELD-JACKSON INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Hartsfield-Jackson Atlanta International Airport",
+                            "city": {
+                                "code": "ATL",
+                                "name": "ATLANTA",
+                                "nameLangTranl": "Atlanta",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 33.6408,
+                                "longitude": -84.4272
+                            },
+                            "places": {
+                                "aerogareCode": "S",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "S",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "S",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "S",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-15T20:43:00.000-04:00",
+                            "scheduled": "2025-05-15T20:55:00.000-04:00",
+                            "latestPublished": "2025-05-15T20:43:00.000-04:00",
+                            "estimated": {
+                                "value": "2025-05-15T20:43:00.000-04:00"
+                            },
+                            "actualTouchDownTime": "2025-05-15T20:30:00.000-04:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H55M",
+                    "departureDateTimeDifference": "PT0S",
+                    "arrivalDateTimeDifference": "PT-12M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0200",
+                    "aircraft": {
+                        "registration": "N375DN",
+                        "typeCode": "321",
+                        "typeName": "AIRBUS A321",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C001W001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C020W029Y142"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 905,
+            "flightScheduleDate": "2025-05-15",
+            "id": "20250515+DL+0905",
+            "route": [
+                "SLC",
+                "ATL"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6268,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ON_TIME",
+            "flightStatusPublicLangTransl": "On time",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "SLC",
+                            "name": "SALT LAKE CITY INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Salt Lake City International Airport",
+                            "city": {
+                                "code": "SLC",
+                                "name": "SALT LAKE CITY",
+                                "nameLangTranl": "Salt Lake City",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.7842,
+                                "longitude": -111.9669
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-15T17:30:00.000-06:00",
+                            "latestPublished": "2025-05-15T17:30:00.000-06:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "PHX",
+                            "name": "SKY HARBOR INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Sky Harbor International Airport",
+                            "city": {
+                                "code": "PHX",
+                                "name": "PHOENIX",
+                                "nameLangTranl": "Phoenix",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 33.4353,
+                                "longitude": -112.0119
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "3",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-15T18:12:00.000-07:00",
+                            "latestPublished": "2025-05-15T18:12:00.000-07:00",
+                            "estimated": {
+                                "value": "2025-05-15T18:12:00.000-07:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H42M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "typeCode": "321",
+                        "typeName": "AIRBUS A321",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W029Y142",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "SLC",
+                            "name": "SALT LAKE CITY INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Salt Lake City International Airport",
+                            "city": {
+                                "code": "SLC",
+                                "name": "SALT LAKE CITY",
+                                "nameLangTranl": "Salt Lake City",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.7842,
+                                "longitude": -111.9669
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-15T17:50:00.000-06:00",
+                            "latestPublished": "2025-05-15T17:50:00.000-06:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ATL",
+                            "name": "HARTSFIELD-JACKSON INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Hartsfield-Jackson Atlanta International Airport",
+                            "city": {
+                                "code": "ATL",
+                                "name": "ATLANTA",
+                                "nameLangTranl": "Atlanta",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 33.6408,
+                                "longitude": -84.4272
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "S",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-15T23:36:00.000-04:00",
+                            "latestPublished": "2025-05-15T23:36:00.000-04:00",
+                            "estimated": {
+                                "value": "2025-05-15T23:36:00.000-04:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H46M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0200",
+                    "aircraft": {
+                        "typeCode": "32Q",
+                        "typeName": "AIRBUS A321NEO",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W042Y132",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 453,
+            "flightScheduleDate": "2025-05-16",
+            "id": "20250516+DL+0453",
+            "haul": "MEDIUM",
+            "route": [
+                "ATL",
+                "SLC"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2588,
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4142,
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5587,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6273,
+                    "airline": {
+                        "code": "LA",
+                        "name": "LATAM AIRLINES GROUP S.A. DBA LATAM AIRLINES GROUP"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4816,
+                    "airline": {
+                        "code": "VS",
+                        "name": "VIRGIN ATLANTIC AIRWAYS LIMITED"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ON_TIME",
+            "flightStatusPublicLangTransl": "On time",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "SLC",
+                            "name": "SALT LAKE CITY INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Salt Lake City International Airport",
+                            "city": {
+                                "code": "SLC",
+                                "name": "SALT LAKE CITY",
+                                "nameLangTranl": "Salt Lake City",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.7842,
+                                "longitude": -111.9669
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-16T09:45:00.000-06:00",
+                            "latestPublished": "2025-05-16T09:45:00.000-06:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "JFK",
+                            "name": "JOHN F. KENNEDY INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "John F. Kennedy International Airport",
+                            "city": {
+                                "code": "NYC",
+                                "name": "NEW YORK",
+                                "nameLangTranl": "New York",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.6386,
+                                "longitude": -73.7769
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "4",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-16T16:28:00.000-04:00",
+                            "latestPublished": "2025-05-16T16:28:00.000-04:00",
+                            "estimated": {
+                                "value": "2025-05-16T16:28:00.000-04:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT4H43M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0200",
+                    "aircraft": {
+                        "typeCode": "32Q",
+                        "typeName": "AIRBUS A321NEO",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W042Y132",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "SNA",
+                            "name": "JOHN WAYNE AIRPORT",
+                            "nameLangTranl": "John Wayne",
+                            "city": {
+                                "code": "SNA",
+                                "name": "SANTA ANA",
+                                "nameLangTranl": "Santa Ana",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 33.6756,
+                                "longitude": -117.8669
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-15T21:30:00.000-07:00",
+                            "latestPublished": "2025-05-15T21:30:00.000-07:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ATL",
+                            "name": "HARTSFIELD-JACKSON INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Hartsfield-Jackson Atlanta International Airport",
+                            "city": {
+                                "code": "ATL",
+                                "name": "ATLANTA",
+                                "nameLangTranl": "Atlanta",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 33.6408,
+                                "longitude": -84.4272
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "S",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-16T04:40:00.000-04:00",
+                            "latestPublished": "2025-05-16T04:40:00.000-04:00",
+                            "estimated": {
+                                "value": "2025-05-16T04:40:00.000-04:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT4H10M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0300",
+                    "aircraft": {
+                        "typeCode": "75W",
+                        "typeName": "BOEING 757-200 WINGLETS PASSENGER",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C016W044Y108",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "ATL",
+                            "name": "HARTSFIELD-JACKSON INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Hartsfield-Jackson Atlanta International Airport",
+                            "city": {
+                                "code": "ATL",
+                                "name": "ATLANTA",
+                                "nameLangTranl": "Atlanta",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 33.6408,
+                                "longitude": -84.4272
+                            },
+                            "places": {
+                                "aerogareCode": "S",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "S",
+                                "boardingPier": "",
+                                "boardingTerminal": "S",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "S",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-15T23:13:00.000-04:00",
+                            "scheduled": "2025-05-15T23:00:00.000-04:00",
+                            "latestPublished": "2025-05-15T23:13:00.000-04:00",
+                            "actualTakeOffTime": "2025-05-15T23:25:00.000-04:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "SLC",
+                            "name": "SALT LAKE CITY INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Salt Lake City International Airport",
+                            "city": {
+                                "code": "SLC",
+                                "name": "SALT LAKE CITY",
+                                "nameLangTranl": "Salt Lake City",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.7842,
+                                "longitude": -111.9669
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-16T01:14:00.000-06:00",
+                            "scheduled": "2025-05-16T01:09:00.000-06:00",
+                            "latestPublished": "2025-05-16T01:14:00.000-06:00",
+                            "estimated": {
+                                "value": "2025-05-16T01:14:00.000-06:00"
+                            },
+                            "actualTouchDownTime": "2025-05-16T01:08:00.000-06:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT4H9M",
+                    "departureDateTimeDifference": "PT13M",
+                    "arrivalDateTimeDifference": "PT5M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0200",
+                    "aircraft": {
+                        "registration": "N108DN",
+                        "typeCode": "321",
+                        "typeName": "AIRBUS A321",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C001W001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C020W029Y142"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 897,
+            "flightScheduleDate": "2025-05-16",
+            "id": "20250516+DL+0897",
+            "route": [
+                "SLC",
+                "ATL"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 5371,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1728,
+                    "airline": {
+                        "code": "VS",
+                        "name": "VIRGIN ATLANTIC AIRWAYS LIMITED"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ON_TIME",
+            "flightStatusPublicLangTransl": "On time",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "LAS",
+                            "name": "HARRY REID INTL",
+                            "nameLangTranl": "Harry Reid International Airport",
+                            "city": {
+                                "code": "LAS",
+                                "name": "LAS VEGAS",
+                                "nameLangTranl": "Las Vegas",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 36.08,
+                                "longitude": -115.1522
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "terminalCode": "1",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-16T06:00:00.000-07:00",
+                            "latestPublished": "2025-05-16T06:00:00.000-07:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "DTW",
+                            "name": "METROPOLITAN WAYNE COUNTY AIRPORT",
+                            "nameLangTranl": "Detroit Metro Wayne County Airport",
+                            "city": {
+                                "code": "DTT",
+                                "name": "DETROIT",
+                                "nameLangTranl": "Detroit",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 42.2186,
+                                "longitude": -83.3486
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "EM",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-16T12:52:00.000-04:00",
+                            "latestPublished": "2025-05-16T12:52:00.000-04:00",
+                            "estimated": {
+                                "value": "2025-05-16T12:52:00.000-04:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H52M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0300",
+                    "aircraft": {
+                        "typeCode": "321",
+                        "typeName": "AIRBUS A321",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W029Y142",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "SAN",
+                            "name": "SAN DIEGO INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "San Diego International Airport",
+                            "city": {
+                                "code": "SAN",
+                                "name": "SAN DIEGO",
+                                "nameLangTranl": "San Diego",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 32.7328,
+                                "longitude": -117.1872
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "terminalCode": "2",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-16T12:25:00.000-07:00",
+                            "latestPublished": "2025-05-16T12:25:00.000-07:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "DTW",
+                            "name": "METROPOLITAN WAYNE COUNTY AIRPORT",
+                            "nameLangTranl": "Detroit Metro Wayne County Airport",
+                            "city": {
+                                "code": "DTT",
+                                "name": "DETROIT",
+                                "nameLangTranl": "Detroit",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 42.2186,
+                                "longitude": -83.3486
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "EM",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-16T19:45:00.000-04:00",
+                            "latestPublished": "2025-05-16T19:45:00.000-04:00",
+                            "estimated": {
+                                "value": "2025-05-16T19:45:00.000-04:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT4H20M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0300",
+                    "aircraft": {
+                        "typeCode": "321",
+                        "typeName": "AIRBUS A321",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W029Y142",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "SLC",
+                            "name": "SALT LAKE CITY INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Salt Lake City International Airport",
+                            "city": {
+                                "code": "SLC",
+                                "name": "SALT LAKE CITY",
+                                "nameLangTranl": "Salt Lake City",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.7842,
+                                "longitude": -111.9669
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-16T08:25:00.000-06:00",
+                            "latestPublished": "2025-05-16T08:25:00.000-06:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ATL",
+                            "name": "HARTSFIELD-JACKSON INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Hartsfield-Jackson Atlanta International Airport",
+                            "city": {
+                                "code": "ATL",
+                                "name": "ATLANTA",
+                                "nameLangTranl": "Atlanta",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 33.6408,
+                                "longitude": -84.4272
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "S",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-16T14:14:00.000-04:00",
+                            "latestPublished": "2025-05-16T14:14:00.000-04:00",
+                            "estimated": {
+                                "value": "2025-05-16T14:14:00.000-04:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H49M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0200",
+                    "aircraft": {
+                        "typeCode": "321",
+                        "typeName": "AIRBUS A321",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W029Y142",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 907,
+            "flightScheduleDate": "2025-05-16",
+            "id": "20250516+DL+0907",
+            "haul": "MEDIUM",
+            "route": [
+                "SLC",
+                "ATL"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3726,
+                    "flightScheduleDate": "2025-05-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4226,
+                    "flightScheduleDate": "2025-05-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "SLC",
+                            "name": "SALT LAKE CITY INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Salt Lake City International Airport",
+                            "city": {
+                                "code": "SLC",
+                                "name": "SALT LAKE CITY",
+                                "nameLangTranl": "Salt Lake City",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.7842,
+                                "longitude": -111.9669
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A31"
+                                ],
+                                "pierCode": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-16T06:57:00.000-06:00",
+                            "scheduled": "2025-05-16T07:00:00.000-06:00",
+                            "latestPublished": "2025-05-16T06:57:00.000-06:00",
+                            "actualTakeOffTime": "2025-05-16T07:11:00.000-06:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ATL",
+                            "name": "HARTSFIELD-JACKSON INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Hartsfield-Jackson Atlanta International Airport",
+                            "city": {
+                                "code": "ATL",
+                                "name": "ATLANTA",
+                                "nameLangTranl": "Atlanta",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 33.6408,
+                                "longitude": -84.4272
+                            },
+                            "places": {
+                                "aerogareCode": "S",
+                                "gateNumber": [
+                                    "B19"
+                                ],
+                                "terminalCode": "S",
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "S",
+                                "arrivalPositionPier": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-16T12:16:00.000-04:00",
+                            "scheduled": "2025-05-16T12:49:00.000-04:00",
+                            "latestPublished": "2025-05-16T12:16:00.000-04:00",
+                            "estimated": {
+                                "value": "2025-05-16T12:16:00.000-04:00"
+                            },
+                            "actualTouchDownTime": "2025-05-16T12:09:00.000-04:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H49M",
+                    "departureDateTimeDifference": "PT-3M",
+                    "arrivalDateTimeDifference": "PT-33M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0200",
+                    "aircraft": {
+                        "registration": "N326DN",
+                        "typeCode": "321",
+                        "typeName": "AIRBUS A321",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C001W001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C020W029Y142",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 835,
+            "flightScheduleDate": "2025-05-16",
+            "id": "20250516+DL+0835",
+            "route": [
+                "SLC",
+                "ATL"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2979,
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4220,
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3938,
+                    "airline": {
+                        "code": "SK",
+                        "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1811,
+                    "airline": {
+                        "code": "VS",
+                        "name": "VIRGIN ATLANTIC AIRWAYS LIMITED"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "SLC",
+                            "name": "SALT LAKE CITY INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Salt Lake City International Airport",
+                            "city": {
+                                "code": "SLC",
+                                "name": "SALT LAKE CITY",
+                                "nameLangTranl": "Salt Lake City",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.7842,
+                                "longitude": -111.9669
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-16T09:55:00.000-06:00",
+                            "latestPublished": "2025-05-16T09:55:00.000-06:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ATL",
+                            "name": "HARTSFIELD-JACKSON INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Hartsfield-Jackson Atlanta International Airport",
+                            "city": {
+                                "code": "ATL",
+                                "name": "ATLANTA",
+                                "nameLangTranl": "Atlanta",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 33.6408,
+                                "longitude": -84.4272
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "S",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-16T15:44:00.000-04:00",
+                            "latestPublished": "2025-05-16T15:44:00.000-04:00",
+                            "estimated": {
+                                "value": "2025-05-16T15:44:00.000-04:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H49M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0200",
+                    "aircraft": {
+                        "typeCode": "321",
+                        "typeName": "AIRBUS A321",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W029Y142",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 885,
+            "flightScheduleDate": "2025-05-16",
+            "id": "20250516+DL+0885",
+            "haul": "MEDIUM",
+            "route": [
+                "SLC",
+                "ATL"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3722,
+                    "flightScheduleDate": "2025-05-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4312,
+                    "flightScheduleDate": "2025-05-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 8624,
+                    "flightScheduleDate": "2025-05-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "LA",
+                        "name": "LATAM AIRLINES GROUP S.A. DBA LATAM AIRLINES GROUP"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3290,
+                    "flightScheduleDate": "2025-05-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SK",
+                        "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4506,
+                    "flightScheduleDate": "2025-05-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "VS",
+                        "name": "VIRGIN ATLANTIC AIRWAYS LIMITED"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5557,
+                    "flightScheduleDate": "2025-05-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "WS",
+                        "name": "WESTJET"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "SLC",
+                            "name": "SALT LAKE CITY INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Salt Lake City International Airport",
+                            "city": {
+                                "code": "SLC",
+                                "name": "SALT LAKE CITY",
+                                "nameLangTranl": "Salt Lake City",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.7842,
+                                "longitude": -111.9669
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A31"
+                                ],
+                                "pierCode": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-16T11:24:00.000-06:00",
+                            "scheduled": "2025-05-16T11:24:00.000-06:00",
+                            "latestPublished": "2025-05-16T11:24:00.000-06:00",
+                            "actualTakeOffTime": "2025-05-16T11:34:00.000-06:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ATL",
+                            "name": "HARTSFIELD-JACKSON INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Hartsfield-Jackson Atlanta International Airport",
+                            "city": {
+                                "code": "ATL",
+                                "name": "ATLANTA",
+                                "nameLangTranl": "Atlanta",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 33.6408,
+                                "longitude": -84.4272
+                            },
+                            "places": {
+                                "aerogareCode": "S",
+                                "gateNumber": [
+                                    "B05"
+                                ],
+                                "terminalCode": "S",
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "S",
+                                "arrivalPositionPier": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-16T16:38:00.000-04:00",
+                            "scheduled": "2025-05-16T17:05:00.000-04:00",
+                            "latestPublished": "2025-05-16T16:38:00.000-04:00",
+                            "estimated": {
+                                "value": "2025-05-16T16:38:00.000-04:00"
+                            },
+                            "actualTouchDownTime": "2025-05-16T16:33:00.000-04:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H41M",
+                    "departureDateTimeDifference": "PT0S",
+                    "arrivalDateTimeDifference": "PT-27M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0200",
+                    "aircraft": {
+                        "registration": "N340DN",
+                        "typeCode": "321",
+                        "typeName": "AIRBUS A321",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C001W001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C020W029Y142",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 906,
+            "flightScheduleDate": "2025-05-16",
+            "id": "20250516+DL+0906",
+            "haul": "MEDIUM",
+            "route": [
+                "SLC",
+                "ATL"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2459,
+                    "flightScheduleDate": "2025-05-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3938,
+                    "flightScheduleDate": "2025-05-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "SK",
+                        "name": "SCANDINAVIAN AIRLINES SYSTEM (SAS)"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4517,
+                    "flightScheduleDate": "2025-05-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "VS",
+                        "name": "VIRGIN ATLANTIC AIRWAYS LIMITED"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 5559,
+                    "flightScheduleDate": "2025-05-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "WS",
+                        "name": "WESTJET"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "SLC",
+                            "name": "SALT LAKE CITY INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Salt Lake City International Airport",
+                            "city": {
+                                "code": "SLC",
+                                "name": "SALT LAKE CITY",
+                                "nameLangTranl": "Salt Lake City",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.7842,
+                                "longitude": -111.9669
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-16T13:26:00.000-06:00",
+                            "scheduled": "2025-05-16T13:25:00.000-06:00",
+                            "latestPublished": "2025-05-16T13:26:00.000-06:00",
+                            "actualTakeOffTime": "2025-05-16T13:38:00.000-06:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ATL",
+                            "name": "HARTSFIELD-JACKSON INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Hartsfield-Jackson Atlanta International Airport",
+                            "city": {
+                                "code": "ATL",
+                                "name": "ATLANTA",
+                                "nameLangTranl": "Atlanta",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 33.6408,
+                                "longitude": -84.4272
+                            },
+                            "places": {
+                                "aerogareCode": "S",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "S",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "S",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "S",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-16T18:51:00.000-04:00",
+                            "scheduled": "2025-05-16T19:10:00.000-04:00",
+                            "latestPublished": "2025-05-16T18:51:00.000-04:00",
+                            "estimated": {
+                                "value": "2025-05-16T18:51:00.000-04:00"
+                            },
+                            "actualTouchDownTime": "2025-05-16T18:38:00.000-04:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H45M",
+                    "departureDateTimeDifference": "PT1M",
+                    "arrivalDateTimeDifference": "PT-19M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0200",
+                    "aircraft": {
+                        "registration": "N332DN",
+                        "typeCode": "321",
+                        "typeName": "AIRBUS A321",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C001W001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C020W029Y142"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 875,
+            "flightScheduleDate": "2025-05-16",
+            "id": "20250516+DL+0875",
+            "haul": "MEDIUM",
+            "route": [
+                "SLC",
+                "ATL"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2462,
+                    "flightScheduleDate": "2025-05-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6567,
+                    "flightScheduleDate": "2025-05-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "LA",
+                        "name": "LATAM AIRLINES GROUP S.A. DBA LATAM AIRLINES GROUP"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3759,
+                    "flightScheduleDate": "2025-05-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "VS",
+                        "name": "VIRGIN ATLANTIC AIRWAYS LIMITED"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7179,
+                    "flightScheduleDate": "2025-05-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "WS",
+                        "name": "WESTJET"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "SLC",
+                            "name": "SALT LAKE CITY INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Salt Lake City International Airport",
+                            "city": {
+                                "code": "SLC",
+                                "name": "SALT LAKE CITY",
+                                "nameLangTranl": "Salt Lake City",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.7842,
+                                "longitude": -111.9669
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-16T15:20:00.000-06:00",
+                            "scheduled": "2025-05-16T15:00:00.000-06:00",
+                            "latestPublished": "2025-05-16T15:20:00.000-06:00",
+                            "actualTakeOffTime": "2025-05-16T15:34:00.000-06:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ATL",
+                            "name": "HARTSFIELD-JACKSON INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Hartsfield-Jackson Atlanta International Airport",
+                            "city": {
+                                "code": "ATL",
+                                "name": "ATLANTA",
+                                "nameLangTranl": "Atlanta",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 33.6408,
+                                "longitude": -84.4272
+                            },
+                            "places": {
+                                "aerogareCode": "S",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "S",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "S",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "S",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-16T20:53:00.000-04:00",
+                            "scheduled": "2025-05-16T20:55:00.000-04:00",
+                            "latestPublished": "2025-05-16T20:53:00.000-04:00",
+                            "estimated": {
+                                "value": "2025-05-16T20:53:00.000-04:00"
+                            },
+                            "actualTouchDownTime": "2025-05-16T20:38:00.000-04:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H55M",
+                    "departureDateTimeDifference": "PT20M",
+                    "arrivalDateTimeDifference": "PT-2M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0200",
+                    "aircraft": {
+                        "registration": "N368DN",
+                        "typeCode": "321",
+                        "typeName": "AIRBUS A321",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C001W001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C020W029Y142"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 905,
+            "flightScheduleDate": "2025-05-16",
+            "id": "20250516+DL+0905",
+            "route": [
+                "SLC",
+                "ATL"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6268,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ON_TIME",
+            "flightStatusPublicLangTransl": "On time",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "SLC",
+                            "name": "SALT LAKE CITY INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Salt Lake City International Airport",
+                            "city": {
+                                "code": "SLC",
+                                "name": "SALT LAKE CITY",
+                                "nameLangTranl": "Salt Lake City",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.7842,
+                                "longitude": -111.9669
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-16T17:30:00.000-06:00",
+                            "latestPublished": "2025-05-16T17:30:00.000-06:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "PHX",
+                            "name": "SKY HARBOR INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Sky Harbor International Airport",
+                            "city": {
+                                "code": "PHX",
+                                "name": "PHOENIX",
+                                "nameLangTranl": "Phoenix",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 33.4353,
+                                "longitude": -112.0119
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "3",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-16T18:12:00.000-07:00",
+                            "latestPublished": "2025-05-16T18:12:00.000-07:00",
+                            "estimated": {
+                                "value": "2025-05-16T18:12:00.000-07:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H42M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0100",
+                    "aircraft": {
+                        "typeCode": "321",
+                        "typeName": "AIRBUS A321",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W029Y142",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "SLC",
+                            "name": "SALT LAKE CITY INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Salt Lake City International Airport",
+                            "city": {
+                                "code": "SLC",
+                                "name": "SALT LAKE CITY",
+                                "nameLangTranl": "Salt Lake City",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.7842,
+                                "longitude": -111.9669
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-16T17:50:00.000-06:00",
+                            "latestPublished": "2025-05-16T17:50:00.000-06:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "ATL",
+                            "name": "HARTSFIELD-JACKSON INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Hartsfield-Jackson Atlanta International Airport",
+                            "city": {
+                                "code": "ATL",
+                                "name": "ATLANTA",
+                                "nameLangTranl": "Atlanta",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 33.6408,
+                                "longitude": -84.4272
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "S",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-16T23:36:00.000-04:00",
+                            "latestPublished": "2025-05-16T23:36:00.000-04:00",
+                            "estimated": {
+                                "value": "2025-05-16T23:36:00.000-04:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H46M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0200",
+                    "aircraft": {
+                        "typeCode": "32Q",
+                        "typeName": "AIRBUS A321NEO",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W042Y132",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 15,
+        "pageNumber": 0,
+        "fullCount": 5866,
+        "pageCount": 15,
+        "totalPages": 59
+    }
+}

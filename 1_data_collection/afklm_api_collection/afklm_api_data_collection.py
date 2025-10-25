@@ -36,6 +36,7 @@ import gzip
 ### Script parameters
 
 path_data_storage = "data"
+path_call_parameter_file_folder = "call_parameter_lists"
 path_call_parameter_csv_root = "df_call_parameters"
 output_format = ["json","gzip"] # ["json","gzip"]
 skip_previously_failed = False
@@ -75,7 +76,7 @@ if not os.path.isdir(path_data_storage):
 json_list = os.listdir(path_data_storage)
 
 
-path_call_parameter_csv_list = os.listdir('.')
+path_call_parameter_csv_list = os.listdir('./call_parameter_lists')
 
 call_parameter_csv_list = [val for val in path_call_parameter_csv_list if 'df_call_parameters'  in val]
 
@@ -87,7 +88,7 @@ for call_parameter_csv in call_parameter_csv_list :
 
     ### Import query parameters
     
-    df_call_parameters = pd.read_csv(call_parameter_csv).fillna('')
+    df_call_parameters = pd.read_csv(path_call_parameter_file_folder +"/"+call_parameter_csv).fillna('')
     
     dict_call_parameters_test = df_call_parameters.drop(non_parameters,axis=1)
     
@@ -105,79 +106,6 @@ for call_parameter_csv in call_parameter_csv_list :
         call_parameters_list.append(call_parameters_url)
         
     df_call_parameters['call_parameters'] = call_parameters_list
-
-    
-
-    ### Refresh stats completion
-
-    if refresh_stats:
-        
-        json_list_no_gzip = [val for val in json_list if 'gzip' not in val]
-        
-        df_json_list_no_gzip = pd.DataFrame({"index":range(0,len(json_list_no_gzip)), 'json_file':json_list_no_gzip})
-        
-        
-        json_param_list = [re.sub("afklm_api_data_collection_","",json) for json in json_list_no_gzip]
-        json_param_list = [re.sub("Z_.*","Z",json) for json in json_param_list]
-        json_param_list = [re.sub("_",":",json) for json in json_param_list]
-        
-        df_json_list_no_gzip['call_parameters'] = json_param_list
-        
-        
-        json_pages = [re.sub(".*_","",json) for json in json_list_no_gzip]
-        json_pages = [re.sub("\\..*","",json) for json in json_pages]
-        df_json_list_no_gzip['page'] = json_pages
-        
-        df_retrived_nb = df_json_list_no_gzip['call_parameters'].value_counts().rename_axis('call_parameters').reset_index(name='nb_of_pages_already_retrieved')
-        df_retrived_nb['nb_of_pages_already_retrieved'] = df_retrived_nb['nb_of_pages_already_retrieved'].astype('int')
-        
-        max_page_list = []
-        totalFlights_list = []
-        
-        df_single_file_list = df_json_list_no_gzip.groupby('call_parameters').head(1).copy(deep= True)
-        
-        
-        
-        
-        for json_file in df_single_file_list['json_file'].values:
-            
-            
-            with open(f"{path_data_storage}/" + json_file) as json_file:
-                data = json.load(json_file)
-                page_max =  data['page']['totalPages']
-                max_page_list.append(page_max)
-                totalFlights =  data['page']['fullCount']
-                totalFlights_list.append(totalFlights)
-                
-                
-
-
-        df_single_file_list['totalPages'] = max_page_list
-        df_single_file_list['totalPages'] = df_single_file_list['totalPages'].astype('int')
-        df_single_file_list['totalFlights'] = totalFlights_list
-        df_single_file_list['totalFlights'] = df_single_file_list['totalFlights'].astype('int')
-        
-        
-        
-        
-        df_call_parameters_updated = df_call_parameters.drop(['nb_of_pages_already_retrieved','totalPages','totalFlights','completion','response','message'],axis = 1,errors='ignore').merge(df_single_file_list.drop(['page','json_file','index'], axis = 1), how= 'inner').merge(df_retrived_nb, how= 'inner')
-        
-        df_call_parameters_updated['completion'] = (100 * df_call_parameters_updated['nb_of_pages_already_retrieved'].values  / df_call_parameters_updated['totalPages'].values ).round(0)
-        df_call_parameters_updated['completion'] = df_call_parameters_updated['completion'].astype('int').astype('str').replace(".0","")+"%"
-        
-        
-        df_call_parameters_updated['response'] = '<Response [200]>'
-        
-
-        
-        parameter_list = df_call_parameters.drop(non_parameters,axis=1).columns.to_list()
-        
-        
-        pd.concat([df_call_parameters, df_call_parameters_updated]).drop_duplicates(keep='last',subset=parameter_list).fillna('').to_csv(call_parameter_csv, index = 0)
-        df_call_parameters = pd.read_csv(call_parameter_csv).fillna('')
-
-
-
 
 
     ### Loading API keys to use
@@ -248,8 +176,8 @@ for call_parameter_csv in call_parameter_csv_list :
 
 
 
-    if os.path.isfile(call_parameter_csv):
-        df_call_parameters = pd.read_csv(call_parameter_csv).fillna('')
+    if os.path.isfile(path_call_parameter_file_folder+"/"+call_parameter_csv):
+        df_call_parameters = pd.read_csv(path_call_parameter_file_folder+"/"+call_parameter_csv).fillna('')
 
     i = 0
     API_key_counter = 0 # To use the first API key from the list
@@ -257,14 +185,6 @@ for call_parameter_csv in call_parameter_csv_list :
     no_more_api_key = False
 
     df_call_parameters_new = df_call_parameters.copy(deep=True) # to update the df_call_parameters csv after each querry
-
-
-
-
-
-
-
-
 
 
 
@@ -297,9 +217,9 @@ for call_parameter_csv in call_parameter_csv_list :
         ### Cleaning of empty parameter calls
         
 
-        parameter_list = df_subset.drop(non_parameters,axis=1).columns.to_list()
+        parameter_list = df_subset.drop(non_parameters,axis=1,errors='ignore').columns.to_list()
         
-        dict_call_parameters = df_subset.drop(non_parameters,axis=1).to_dict(orient="list")
+        dict_call_parameters = df_subset.drop(non_parameters,axis=1,errors='ignore').to_dict(orient="list")
 
         call_parameters_url = "&".join([key + "=" + str(val[0]) for key, val in dict_call_parameters.items()
                         if val[0] != '' and val[0] != '[nan]'])
@@ -419,7 +339,7 @@ for call_parameter_csv in call_parameter_csv_list :
                 
                 df_call_parameters_new = pd.concat([df_call_parameters_new,df_subset],ignore_index=True)
                 df_call_parameters_new = df_call_parameters_new.drop_duplicates(subset=parameter_list, keep='last')
-                df_call_parameters_new.fillna('').to_csv(call_parameter_csv, index=0)
+                df_call_parameters_new.fillna('').to_csv(path_call_parameter_file_folder+"/"+call_parameter_csv, index=0)
 
                 
                 pageNumber = pageNumber + 1
@@ -446,7 +366,7 @@ for call_parameter_csv in call_parameter_csv_list :
                 df_call_parameters_new =pd.concat([df_call_parameters_new,df_subset],ignore_index=True)
                 df_call_parameters_new = df_call_parameters_new.drop_duplicates(subset=['call_parameters'], keep='last')
                 
-                df_call_parameters_new.fillna('').to_csv(call_parameter_csv, index=0)
+                df_call_parameters_new.fillna('').to_csv(path_call_parameter_file_folder+"/"+call_parameter_csv, index=0)
 
                 break
             
@@ -471,7 +391,7 @@ for call_parameter_csv in call_parameter_csv_list :
         df_call_parameters_date_update = df_call_parameters_date_update.drop(non_parameters, axis=1)
 
         df_call_parameters_new = pd.concat([df_call_parameters, df_call_parameters_date_update],ignore_index=True).fillna('').sort_values(['startRange','endRange','response'])
-        df_call_parameters_new.fillna('').to_csv(call_parameter_csv, index=0)
+        df_call_parameters_new.fillna('').to_csv(path_call_parameter_file_folder+"/"+call_parameter_csv, index=0)
 
 
 '''

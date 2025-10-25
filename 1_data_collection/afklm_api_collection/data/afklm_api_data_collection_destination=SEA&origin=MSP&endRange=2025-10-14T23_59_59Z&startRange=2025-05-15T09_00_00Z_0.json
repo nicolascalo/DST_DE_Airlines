@@ -1,0 +1,3833 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 877,
+            "flightScheduleDate": "2025-05-15",
+            "id": "20250515+DL+0877",
+            "haul": "MEDIUM",
+            "route": [
+                "MSP",
+                "SEA"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2408,
+                    "flightScheduleDate": "2025-05-15",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7060,
+                    "flightScheduleDate": "2025-05-15",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MSP",
+                            "name": "MINNEAPOLIS INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Saint Paul International Airport",
+                            "city": {
+                                "code": "MSP",
+                                "name": "MINNEAPOLIS/ST PAUL",
+                                "nameLangTranl": "Minneapolis",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8861,
+                                "longitude": -93.2178
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D3"
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-15T15:16:00.000-05:00",
+                            "scheduled": "2025-05-15T14:55:00.000-05:00",
+                            "latestPublished": "2025-05-15T15:16:00.000-05:00",
+                            "actualTakeOffTime": "2025-05-15T15:31:00.000-05:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "SEA",
+                            "name": "SEATTLE-TACOMA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Seattle-Tacoma International Airport",
+                            "city": {
+                                "code": "SEA",
+                                "name": "SEATTLE",
+                                "nameLangTranl": "Seattle",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4472,
+                                "longitude": -122.3056
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B1"
+                                ],
+                                "baggageBelt": [
+                                    "3"
+                                ],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-15T16:45:00.000-07:00",
+                            "scheduled": "2025-05-15T16:44:00.000-07:00",
+                            "latestPublished": "2025-05-15T16:45:00.000-07:00",
+                            "estimated": {
+                                "value": "2025-05-15T16:45:00.000-07:00"
+                            },
+                            "actualTouchDownTime": "2025-05-15T16:35:00.000-07:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H49M",
+                    "departureDateTimeDifference": "PT21M",
+                    "arrivalDateTimeDifference": "PT1M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0200",
+                    "aircraft": {
+                        "registration": "N363DN",
+                        "typeCode": "321",
+                        "typeName": "AIRBUS A321",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C001W001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C020W029Y142",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 881,
+            "flightScheduleDate": "2025-05-15",
+            "id": "20250515+DL+0881",
+            "route": [
+                "MSP",
+                "SEA"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3038,
+                    "airline": {
+                        "code": "KE",
+                        "name": "KOREAN AIR LINES CO. LTD."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6672,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1567,
+                    "airline": {
+                        "code": "VS",
+                        "name": "VIRGIN ATLANTIC AIRWAYS LIMITED"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MSP",
+                            "name": "MINNEAPOLIS INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Saint Paul International Airport",
+                            "city": {
+                                "code": "MSP",
+                                "name": "MINNEAPOLIS/ST PAUL",
+                                "nameLangTranl": "Minneapolis",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8861,
+                                "longitude": -93.2178
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "F3"
+                                ],
+                                "terminalCode": "1",
+                                "boardingTerminal": "1",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-15T19:39:00.000-05:00",
+                            "scheduled": "2025-05-15T18:30:00.000-05:00",
+                            "latestPublished": "2025-05-15T19:39:00.000-05:00",
+                            "actualTakeOffTime": "2025-05-15T19:50:00.000-05:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "SEA",
+                            "name": "SEATTLE-TACOMA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Seattle-Tacoma International Airport",
+                            "city": {
+                                "code": "SEA",
+                                "name": "SEATTLE",
+                                "nameLangTranl": "Seattle",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4472,
+                                "longitude": -122.3056
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A2"
+                                ],
+                                "baggageBelt": [
+                                    "3"
+                                ],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-15T21:04:00.000-07:00",
+                            "scheduled": "2025-05-15T20:19:00.000-07:00",
+                            "latestPublished": "2025-05-15T21:04:00.000-07:00",
+                            "estimated": {
+                                "value": "2025-05-15T21:04:00.000-07:00"
+                            },
+                            "actualTouchDownTime": "2025-05-15T20:49:00.000-07:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H49M",
+                    "departureDateTimeDifference": "PT1H9M",
+                    "arrivalDateTimeDifference": "PT45M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0200",
+                    "aircraft": {
+                        "registration": "N901DN",
+                        "typeCode": "739",
+                        "typeName": "BOEING 737-900 PASSENGER",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W027Y133",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT45M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 876,
+            "flightScheduleDate": "2025-05-16",
+            "id": "20250516+DL+0876",
+            "route": [
+                "MSP",
+                "SEA"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6761,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6480,
+                    "airline": {
+                        "code": "LA",
+                        "name": "LATAM AIRLINES GROUP S.A. DBA LATAM AIRLINES GROUP"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3413,
+                    "airline": {
+                        "code": "UX",
+                        "name": "AIR EUROPA LINEAS AEREAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4812,
+                    "airline": {
+                        "code": "VS",
+                        "name": "VIRGIN ATLANTIC AIRWAYS LIMITED"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ON_TIME",
+            "flightStatusPublicLangTransl": "On time",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "DEN",
+                            "name": "DENVER INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Denver International",
+                            "city": {
+                                "code": "DEN",
+                                "name": "DENVER",
+                                "nameLangTranl": "Denver",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 39.8547,
+                                "longitude": -104.7181
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-16T07:00:00.000-06:00",
+                            "latestPublished": "2025-05-16T07:00:00.000-06:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "JFK",
+                            "name": "JOHN F. KENNEDY INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "John F. Kennedy International Airport",
+                            "city": {
+                                "code": "NYC",
+                                "name": "NEW YORK",
+                                "nameLangTranl": "New York",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.6386,
+                                "longitude": -73.7769
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "4",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-16T13:02:00.000-04:00",
+                            "latestPublished": "2025-05-16T13:02:00.000-04:00",
+                            "estimated": {
+                                "value": "2025-05-16T13:02:00.000-04:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT4H2M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0200",
+                    "aircraft": {
+                        "typeCode": "32Q",
+                        "typeName": "AIRBUS A321NEO",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W042Y132",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MSP",
+                            "name": "MINNEAPOLIS INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Saint Paul International Airport",
+                            "city": {
+                                "code": "MSP",
+                                "name": "MINNEAPOLIS/ST PAUL",
+                                "nameLangTranl": "Minneapolis",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8861,
+                                "longitude": -93.2178
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "terminalCode": "1",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-15T21:35:00.000-05:00",
+                            "latestPublished": "2025-05-15T21:35:00.000-05:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "SEA",
+                            "name": "SEATTLE-TACOMA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Seattle-Tacoma International Airport",
+                            "city": {
+                                "code": "SEA",
+                                "name": "SEATTLE",
+                                "nameLangTranl": "Seattle",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4472,
+                                "longitude": -122.3056
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-15T23:31:00.000-07:00",
+                            "latestPublished": "2025-05-15T23:31:00.000-07:00",
+                            "estimated": {
+                                "value": "2025-05-15T23:31:00.000-07:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H56M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0200",
+                    "aircraft": {
+                        "typeCode": "739",
+                        "typeName": "BOEING 737-900 PASSENGER",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W021Y139",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 505,
+            "flightScheduleDate": "2025-05-16",
+            "id": "20250516+DL+0505",
+            "haul": "MEDIUM",
+            "route": [
+                "MSP",
+                "SEA"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2328,
+                    "flightScheduleDate": "2025-05-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4242,
+                    "flightScheduleDate": "2025-05-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1563,
+                    "flightScheduleDate": "2025-05-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "VS",
+                        "name": "VIRGIN ATLANTIC AIRWAYS LIMITED"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MSP",
+                            "name": "MINNEAPOLIS INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Saint Paul International Airport",
+                            "city": {
+                                "code": "MSP",
+                                "name": "MINNEAPOLIS/ST PAUL",
+                                "nameLangTranl": "Minneapolis",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8861,
+                                "longitude": -93.2178
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "F10"
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-15T22:42:00.000-05:00",
+                            "scheduled": "2025-05-15T21:59:00.000-05:00",
+                            "latestPublished": "2025-05-15T22:42:00.000-05:00",
+                            "actualTakeOffTime": "2025-05-15T22:59:00.000-05:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "SEA",
+                            "name": "SEATTLE-TACOMA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Seattle-Tacoma International Airport",
+                            "city": {
+                                "code": "SEA",
+                                "name": "SEATTLE",
+                                "nameLangTranl": "Seattle",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4472,
+                                "longitude": -122.3056
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A14"
+                                ],
+                                "baggageBelt": [
+                                    "3"
+                                ],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-16T00:04:00.000-07:00",
+                            "scheduled": "2025-05-15T23:47:00.000-07:00",
+                            "latestPublished": "2025-05-16T00:04:00.000-07:00",
+                            "estimated": {
+                                "value": "2025-05-16T00:04:00.000-07:00"
+                            },
+                            "actualTouchDownTime": "2025-05-15T23:53:00.000-07:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H48M",
+                    "departureDateTimeDifference": "PT43M",
+                    "arrivalDateTimeDifference": "PT17M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0200",
+                    "aircraft": {
+                        "registration": "N807DN",
+                        "typeCode": "739",
+                        "typeName": "BOEING 737-900 PASSENGER",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C001W001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C020W027Y133",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT17M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 877,
+            "flightScheduleDate": "2025-05-16",
+            "id": "20250516+DL+0877",
+            "haul": "MEDIUM",
+            "route": [
+                "MSP",
+                "SEA"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2906,
+                    "flightScheduleDate": "2025-05-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7060,
+                    "flightScheduleDate": "2025-05-16",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MSP",
+                            "name": "MINNEAPOLIS INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Saint Paul International Airport",
+                            "city": {
+                                "code": "MSP",
+                                "name": "MINNEAPOLIS/ST PAUL",
+                                "nameLangTranl": "Minneapolis",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8861,
+                                "longitude": -93.2178
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C5"
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-16T16:06:00.000-05:00",
+                            "scheduled": "2025-05-16T14:55:00.000-05:00",
+                            "latestPublished": "2025-05-16T16:06:00.000-05:00",
+                            "actualTakeOffTime": "2025-05-16T16:52:00.000-05:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "SEA",
+                            "name": "SEATTLE-TACOMA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Seattle-Tacoma International Airport",
+                            "city": {
+                                "code": "SEA",
+                                "name": "SEATTLE",
+                                "nameLangTranl": "Seattle",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4472,
+                                "longitude": -122.3056
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B11"
+                                ],
+                                "baggageBelt": [
+                                    "3"
+                                ],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-16T18:08:00.000-07:00",
+                            "scheduled": "2025-05-16T16:44:00.000-07:00",
+                            "latestPublished": "2025-05-16T18:08:00.000-07:00",
+                            "estimated": {
+                                "value": "2025-05-16T18:08:00.000-07:00"
+                            },
+                            "actualTouchDownTime": "2025-05-16T17:56:00.000-07:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H49M",
+                    "departureDateTimeDifference": "PT1H11M",
+                    "arrivalDateTimeDifference": "PT1H24M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0200",
+                    "aircraft": {
+                        "registration": "N384DN",
+                        "typeCode": "321",
+                        "typeName": "AIRBUS A321",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C001W001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C020W029Y142",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT1H24M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 881,
+            "flightScheduleDate": "2025-05-16",
+            "id": "20250516+DL+0881",
+            "route": [
+                "MSP",
+                "SEA"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3038,
+                    "airline": {
+                        "code": "KE",
+                        "name": "KOREAN AIR LINES CO. LTD."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6672,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1567,
+                    "airline": {
+                        "code": "VS",
+                        "name": "VIRGIN ATLANTIC AIRWAYS LIMITED"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MSP",
+                            "name": "MINNEAPOLIS INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Saint Paul International Airport",
+                            "city": {
+                                "code": "MSP",
+                                "name": "MINNEAPOLIS/ST PAUL",
+                                "nameLangTranl": "Minneapolis",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8861,
+                                "longitude": -93.2178
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C11"
+                                ],
+                                "terminalCode": "1",
+                                "boardingTerminal": "1",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-16T20:39:00.000-05:00",
+                            "scheduled": "2025-05-16T18:30:00.000-05:00",
+                            "latestPublished": "2025-05-16T20:39:00.000-05:00",
+                            "actualTakeOffTime": "2025-05-16T21:08:00.000-05:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "SEA",
+                            "name": "SEATTLE-TACOMA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Seattle-Tacoma International Airport",
+                            "city": {
+                                "code": "SEA",
+                                "name": "SEATTLE",
+                                "nameLangTranl": "Seattle",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4472,
+                                "longitude": -122.3056
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A1"
+                                ],
+                                "baggageBelt": [
+                                    "3"
+                                ],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-16T22:31:00.000-07:00",
+                            "scheduled": "2025-05-16T20:19:00.000-07:00",
+                            "latestPublished": "2025-05-16T22:31:00.000-07:00",
+                            "estimated": {
+                                "value": "2025-05-16T22:31:00.000-07:00"
+                            },
+                            "actualTouchDownTime": "2025-05-16T22:16:00.000-07:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H49M",
+                    "departureDateTimeDifference": "PT2H9M",
+                    "arrivalDateTimeDifference": "PT2H12M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0200",
+                    "aircraft": {
+                        "registration": "N803DN",
+                        "typeCode": "739",
+                        "typeName": "BOEING 737-900 PASSENGER",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W027Y133",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT2H12M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 876,
+            "flightScheduleDate": "2025-05-17",
+            "id": "20250517+DL+0876",
+            "route": [
+                "MSP",
+                "SEA"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6761,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6480,
+                    "airline": {
+                        "code": "LA",
+                        "name": "LATAM AIRLINES GROUP S.A. DBA LATAM AIRLINES GROUP"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3413,
+                    "airline": {
+                        "code": "UX",
+                        "name": "AIR EUROPA LINEAS AEREAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4812,
+                    "airline": {
+                        "code": "VS",
+                        "name": "VIRGIN ATLANTIC AIRWAYS LIMITED"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ON_TIME",
+            "flightStatusPublicLangTransl": "On time",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "DEN",
+                            "name": "DENVER INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Denver International",
+                            "city": {
+                                "code": "DEN",
+                                "name": "DENVER",
+                                "nameLangTranl": "Denver",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 39.8547,
+                                "longitude": -104.7181
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-17T07:00:00.000-06:00",
+                            "latestPublished": "2025-05-17T07:00:00.000-06:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "JFK",
+                            "name": "JOHN F. KENNEDY INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "John F. Kennedy International Airport",
+                            "city": {
+                                "code": "NYC",
+                                "name": "NEW YORK",
+                                "nameLangTranl": "New York",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.6386,
+                                "longitude": -73.7769
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "4",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-17T13:02:00.000-04:00",
+                            "latestPublished": "2025-05-17T13:02:00.000-04:00",
+                            "estimated": {
+                                "value": "2025-05-17T13:02:00.000-04:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT4H2M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0200",
+                    "aircraft": {
+                        "typeCode": "32Q",
+                        "typeName": "AIRBUS A321NEO",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W042Y132",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MSP",
+                            "name": "MINNEAPOLIS INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Saint Paul International Airport",
+                            "city": {
+                                "code": "MSP",
+                                "name": "MINNEAPOLIS/ST PAUL",
+                                "nameLangTranl": "Minneapolis",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8861,
+                                "longitude": -93.2178
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "terminalCode": "1",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-16T21:35:00.000-05:00",
+                            "latestPublished": "2025-05-16T21:35:00.000-05:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "SEA",
+                            "name": "SEATTLE-TACOMA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Seattle-Tacoma International Airport",
+                            "city": {
+                                "code": "SEA",
+                                "name": "SEATTLE",
+                                "nameLangTranl": "Seattle",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4472,
+                                "longitude": -122.3056
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-16T23:31:00.000-07:00",
+                            "latestPublished": "2025-05-16T23:31:00.000-07:00",
+                            "estimated": {
+                                "value": "2025-05-16T23:31:00.000-07:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H56M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0200",
+                    "aircraft": {
+                        "typeCode": "739",
+                        "typeName": "BOEING 737-900 PASSENGER",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W021Y139",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 505,
+            "flightScheduleDate": "2025-05-17",
+            "id": "20250517+DL+0505",
+            "haul": "MEDIUM",
+            "route": [
+                "MSP",
+                "SEA"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2328,
+                    "flightScheduleDate": "2025-05-17",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4242,
+                    "flightScheduleDate": "2025-05-17",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1563,
+                    "flightScheduleDate": "2025-05-17",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "VS",
+                        "name": "VIRGIN ATLANTIC AIRWAYS LIMITED"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MSP",
+                            "name": "MINNEAPOLIS INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Saint Paul International Airport",
+                            "city": {
+                                "code": "MSP",
+                                "name": "MINNEAPOLIS/ST PAUL",
+                                "nameLangTranl": "Minneapolis",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8861,
+                                "longitude": -93.2178
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C14"
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-16T22:27:00.000-05:00",
+                            "scheduled": "2025-05-16T21:59:00.000-05:00",
+                            "latestPublished": "2025-05-16T22:27:00.000-05:00",
+                            "actualTakeOffTime": "2025-05-16T22:54:00.000-05:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "SEA",
+                            "name": "SEATTLE-TACOMA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Seattle-Tacoma International Airport",
+                            "city": {
+                                "code": "SEA",
+                                "name": "SEATTLE",
+                                "nameLangTranl": "Seattle",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4472,
+                                "longitude": -122.3056
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A2"
+                                ],
+                                "baggageBelt": [
+                                    "3"
+                                ],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-17T00:09:00.000-07:00",
+                            "scheduled": "2025-05-16T23:49:00.000-07:00",
+                            "latestPublished": "2025-05-17T00:09:00.000-07:00",
+                            "estimated": {
+                                "value": "2025-05-17T00:09:00.000-07:00"
+                            },
+                            "actualTouchDownTime": "2025-05-16T23:58:00.000-07:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H50M",
+                    "departureDateTimeDifference": "PT28M",
+                    "arrivalDateTimeDifference": "PT20M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0200",
+                    "aircraft": {
+                        "registration": "N102DN",
+                        "typeCode": "321",
+                        "typeName": "AIRBUS A321",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C001W001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C020W029Y142",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT20M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 877,
+            "flightScheduleDate": "2025-05-17",
+            "id": "20250517+DL+0877",
+            "haul": "MEDIUM",
+            "route": [
+                "MSP",
+                "SEA"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2408,
+                    "flightScheduleDate": "2025-05-17",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MSP",
+                            "name": "MINNEAPOLIS INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Saint Paul International Airport",
+                            "city": {
+                                "code": "MSP",
+                                "name": "MINNEAPOLIS/ST PAUL",
+                                "nameLangTranl": "Minneapolis",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8861,
+                                "longitude": -93.2178
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-17T14:52:00.000-05:00",
+                            "scheduled": "2025-05-17T14:55:00.000-05:00",
+                            "latestPublished": "2025-05-17T14:52:00.000-05:00",
+                            "actualTakeOffTime": "2025-05-17T15:02:00.000-05:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "SEA",
+                            "name": "SEATTLE-TACOMA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Seattle-Tacoma International Airport",
+                            "city": {
+                                "code": "SEA",
+                                "name": "SEATTLE",
+                                "nameLangTranl": "Seattle",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4472,
+                                "longitude": -122.3056
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-17T16:26:00.000-07:00",
+                            "scheduled": "2025-05-17T16:42:00.000-07:00",
+                            "latestPublished": "2025-05-17T16:26:00.000-07:00",
+                            "estimated": {
+                                "value": "2025-05-17T16:26:00.000-07:00"
+                            },
+                            "actualTouchDownTime": "2025-05-17T16:10:00.000-07:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H47M",
+                    "departureDateTimeDifference": "PT-3M",
+                    "arrivalDateTimeDifference": "PT-16M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0200",
+                    "aircraft": {
+                        "registration": "N811DZ",
+                        "typeCode": "739",
+                        "typeName": "BOEING 737-900 PASSENGER",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C001W001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C020W027Y133"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 881,
+            "flightScheduleDate": "2025-05-17",
+            "id": "20250517+DL+0881",
+            "route": [
+                "MSP",
+                "SEA"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3038,
+                    "airline": {
+                        "code": "KE",
+                        "name": "KOREAN AIR LINES CO. LTD."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6672,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1567,
+                    "airline": {
+                        "code": "VS",
+                        "name": "VIRGIN ATLANTIC AIRWAYS LIMITED"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MSP",
+                            "name": "MINNEAPOLIS INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Saint Paul International Airport",
+                            "city": {
+                                "code": "MSP",
+                                "name": "MINNEAPOLIS/ST PAUL",
+                                "nameLangTranl": "Minneapolis",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8861,
+                                "longitude": -93.2178
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C11"
+                                ],
+                                "terminalCode": "1",
+                                "boardingTerminal": "1",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-17T18:31:00.000-05:00",
+                            "scheduled": "2025-05-17T18:30:00.000-05:00",
+                            "latestPublished": "2025-05-17T18:31:00.000-05:00",
+                            "actualTakeOffTime": "2025-05-17T18:43:00.000-05:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "SEA",
+                            "name": "SEATTLE-TACOMA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Seattle-Tacoma International Airport",
+                            "city": {
+                                "code": "SEA",
+                                "name": "SEATTLE",
+                                "nameLangTranl": "Seattle",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4472,
+                                "longitude": -122.3056
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A13"
+                                ],
+                                "baggageBelt": [
+                                    "3"
+                                ],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-17T20:19:00.000-07:00",
+                            "latestPublished": "2025-05-17T20:08:00.000-07:00",
+                            "estimated": {
+                                "value": "2025-05-17T20:08:00.000-07:00"
+                            },
+                            "estimatedArrival": "2025-05-17T20:08:00.000-07:00",
+                            "estimatedTouchDownTime": "2025-05-17T19:57:00.000-07:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H49M",
+                    "departureDateTimeDifference": "PT1M",
+                    "arrivalDateTimeDifference": "PT-11M",
+                    "timeToArrival": "PT-3850H-49M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0200",
+                    "aircraft": {
+                        "registration": "N801DZ",
+                        "typeCode": "739",
+                        "typeName": "BOEING 737-900 PASSENGER",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W027Y133",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 876,
+            "flightScheduleDate": "2025-05-18",
+            "id": "20250518+DL+0876",
+            "route": [
+                "MSP",
+                "SEA"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6761,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6480,
+                    "airline": {
+                        "code": "LA",
+                        "name": "LATAM AIRLINES GROUP S.A. DBA LATAM AIRLINES GROUP"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3413,
+                    "airline": {
+                        "code": "UX",
+                        "name": "AIR EUROPA LINEAS AEREAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4812,
+                    "airline": {
+                        "code": "VS",
+                        "name": "VIRGIN ATLANTIC AIRWAYS LIMITED"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ON_TIME",
+            "flightStatusPublicLangTransl": "On time",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "DEN",
+                            "name": "DENVER INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Denver International",
+                            "city": {
+                                "code": "DEN",
+                                "name": "DENVER",
+                                "nameLangTranl": "Denver",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 39.8547,
+                                "longitude": -104.7181
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-18T07:00:00.000-06:00",
+                            "latestPublished": "2025-05-18T07:00:00.000-06:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "JFK",
+                            "name": "JOHN F. KENNEDY INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "John F. Kennedy International Airport",
+                            "city": {
+                                "code": "NYC",
+                                "name": "NEW YORK",
+                                "nameLangTranl": "New York",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.6386,
+                                "longitude": -73.7769
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "4",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-18T13:02:00.000-04:00",
+                            "latestPublished": "2025-05-18T13:02:00.000-04:00",
+                            "estimated": {
+                                "value": "2025-05-18T13:02:00.000-04:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT4H2M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0200",
+                    "aircraft": {
+                        "typeCode": "32Q",
+                        "typeName": "AIRBUS A321NEO",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W042Y132",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MSP",
+                            "name": "MINNEAPOLIS INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Saint Paul International Airport",
+                            "city": {
+                                "code": "MSP",
+                                "name": "MINNEAPOLIS/ST PAUL",
+                                "nameLangTranl": "Minneapolis",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8861,
+                                "longitude": -93.2178
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "terminalCode": "1",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-17T21:35:00.000-05:00",
+                            "latestPublished": "2025-05-17T21:35:00.000-05:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "SEA",
+                            "name": "SEATTLE-TACOMA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Seattle-Tacoma International Airport",
+                            "city": {
+                                "code": "SEA",
+                                "name": "SEATTLE",
+                                "nameLangTranl": "Seattle",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4472,
+                                "longitude": -122.3056
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-17T23:31:00.000-07:00",
+                            "latestPublished": "2025-05-17T23:31:00.000-07:00",
+                            "estimated": {
+                                "value": "2025-05-17T23:31:00.000-07:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H56M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0200",
+                    "aircraft": {
+                        "typeCode": "739",
+                        "typeName": "BOEING 737-900 PASSENGER",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W021Y139",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 877,
+            "flightScheduleDate": "2025-05-18",
+            "id": "20250518+DL+0877",
+            "haul": "MEDIUM",
+            "route": [
+                "MSP",
+                "SEA"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2408,
+                    "flightScheduleDate": "2025-05-18",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7060,
+                    "flightScheduleDate": "2025-05-18",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MSP",
+                            "name": "MINNEAPOLIS INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Saint Paul International Airport",
+                            "city": {
+                                "code": "MSP",
+                                "name": "MINNEAPOLIS/ST PAUL",
+                                "nameLangTranl": "Minneapolis",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8861,
+                                "longitude": -93.2178
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D3"
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-18T14:55:00.000-05:00",
+                            "scheduled": "2025-05-18T14:55:00.000-05:00",
+                            "latestPublished": "2025-05-18T14:55:00.000-05:00",
+                            "actualTakeOffTime": "2025-05-18T15:04:00.000-05:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "SEA",
+                            "name": "SEATTLE-TACOMA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Seattle-Tacoma International Airport",
+                            "city": {
+                                "code": "SEA",
+                                "name": "SEATTLE",
+                                "nameLangTranl": "Seattle",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4472,
+                                "longitude": -122.3056
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B1"
+                                ],
+                                "baggageBelt": [
+                                    "3"
+                                ],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-18T16:17:00.000-07:00",
+                            "scheduled": "2025-05-18T16:44:00.000-07:00",
+                            "latestPublished": "2025-05-18T16:17:00.000-07:00",
+                            "estimated": {
+                                "value": "2025-05-18T16:17:00.000-07:00"
+                            },
+                            "actualTouchDownTime": "2025-05-18T16:08:00.000-07:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H49M",
+                    "departureDateTimeDifference": "PT0S",
+                    "arrivalDateTimeDifference": "PT-27M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0200",
+                    "aircraft": {
+                        "registration": "N377DN",
+                        "typeCode": "321",
+                        "typeName": "AIRBUS A321",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C001W001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C020W029Y142",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 881,
+            "flightScheduleDate": "2025-05-18",
+            "id": "20250518+DL+0881",
+            "route": [
+                "MSP",
+                "SEA"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3038,
+                    "airline": {
+                        "code": "KE",
+                        "name": "KOREAN AIR LINES CO. LTD."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6672,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1567,
+                    "airline": {
+                        "code": "VS",
+                        "name": "VIRGIN ATLANTIC AIRWAYS LIMITED"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MSP",
+                            "name": "MINNEAPOLIS INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Saint Paul International Airport",
+                            "city": {
+                                "code": "MSP",
+                                "name": "MINNEAPOLIS/ST PAUL",
+                                "nameLangTranl": "Minneapolis",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8861,
+                                "longitude": -93.2178
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C1"
+                                ],
+                                "terminalCode": "1",
+                                "boardingTerminal": "1",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-18T19:00:00.000-05:00",
+                            "scheduled": "2025-05-18T18:30:00.000-05:00",
+                            "latestPublished": "2025-05-18T19:00:00.000-05:00",
+                            "actualTakeOffTime": "2025-05-18T19:11:00.000-05:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "SEA",
+                            "name": "SEATTLE-TACOMA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Seattle-Tacoma International Airport",
+                            "city": {
+                                "code": "SEA",
+                                "name": "SEATTLE",
+                                "nameLangTranl": "Seattle",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4472,
+                                "longitude": -122.3056
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A12"
+                                ],
+                                "baggageBelt": [
+                                    "3"
+                                ],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-18T20:19:00.000-07:00",
+                            "latestPublished": "2025-05-18T20:39:00.000-07:00",
+                            "estimated": {
+                                "value": "2025-05-18T20:39:00.000-07:00"
+                            },
+                            "estimatedArrival": "2025-05-18T20:39:00.000-07:00",
+                            "actualTouchDownTime": "2025-05-18T20:16:00.000-07:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H49M",
+                    "departureDateTimeDifference": "PT30M",
+                    "arrivalDateTimeDifference": "PT20M",
+                    "timeToArrival": "PT-3826H-18M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0200",
+                    "aircraft": {
+                        "registration": "N859DN",
+                        "typeCode": "739",
+                        "typeName": "BOEING 737-900 PASSENGER",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W027Y133",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT20M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 876,
+            "flightScheduleDate": "2025-05-19",
+            "id": "20250519+DL+0876",
+            "route": [
+                "MSP",
+                "SEA"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6761,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6480,
+                    "airline": {
+                        "code": "LA",
+                        "name": "LATAM AIRLINES GROUP S.A. DBA LATAM AIRLINES GROUP"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3413,
+                    "airline": {
+                        "code": "UX",
+                        "name": "AIR EUROPA LINEAS AEREAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4812,
+                    "airline": {
+                        "code": "VS",
+                        "name": "VIRGIN ATLANTIC AIRWAYS LIMITED"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ON_TIME",
+            "flightStatusPublicLangTransl": "On time",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "DEN",
+                            "name": "DENVER INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Denver International",
+                            "city": {
+                                "code": "DEN",
+                                "name": "DENVER",
+                                "nameLangTranl": "Denver",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 39.8547,
+                                "longitude": -104.7181
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-19T07:00:00.000-06:00",
+                            "latestPublished": "2025-05-19T07:00:00.000-06:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "JFK",
+                            "name": "JOHN F. KENNEDY INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "John F. Kennedy International Airport",
+                            "city": {
+                                "code": "NYC",
+                                "name": "NEW YORK",
+                                "nameLangTranl": "New York",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.6386,
+                                "longitude": -73.7769
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "4",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-19T13:02:00.000-04:00",
+                            "latestPublished": "2025-05-19T13:02:00.000-04:00",
+                            "estimated": {
+                                "value": "2025-05-19T13:02:00.000-04:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT4H2M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0200",
+                    "aircraft": {
+                        "typeCode": "32Q",
+                        "typeName": "AIRBUS A321NEO",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W042Y132",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MSP",
+                            "name": "MINNEAPOLIS INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Saint Paul International Airport",
+                            "city": {
+                                "code": "MSP",
+                                "name": "MINNEAPOLIS/ST PAUL",
+                                "nameLangTranl": "Minneapolis",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8861,
+                                "longitude": -93.2178
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "terminalCode": "1",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-18T21:35:00.000-05:00",
+                            "latestPublished": "2025-05-18T21:35:00.000-05:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "SEA",
+                            "name": "SEATTLE-TACOMA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Seattle-Tacoma International Airport",
+                            "city": {
+                                "code": "SEA",
+                                "name": "SEATTLE",
+                                "nameLangTranl": "Seattle",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4472,
+                                "longitude": -122.3056
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-18T23:31:00.000-07:00",
+                            "latestPublished": "2025-05-18T23:31:00.000-07:00",
+                            "estimated": {
+                                "value": "2025-05-18T23:31:00.000-07:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H56M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0200",
+                    "aircraft": {
+                        "typeCode": "739",
+                        "typeName": "BOEING 737-900 PASSENGER",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W021Y139",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 505,
+            "flightScheduleDate": "2025-05-19",
+            "id": "20250519+DL+0505",
+            "haul": "MEDIUM",
+            "route": [
+                "MSP",
+                "SEA"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2328,
+                    "flightScheduleDate": "2025-05-19",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4242,
+                    "flightScheduleDate": "2025-05-19",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1563,
+                    "flightScheduleDate": "2025-05-19",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "VS",
+                        "name": "VIRGIN ATLANTIC AIRWAYS LIMITED"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MSP",
+                            "name": "MINNEAPOLIS INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Saint Paul International Airport",
+                            "city": {
+                                "code": "MSP",
+                                "name": "MINNEAPOLIS/ST PAUL",
+                                "nameLangTranl": "Minneapolis",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8861,
+                                "longitude": -93.2178
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "F11"
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-18T22:07:00.000-05:00",
+                            "scheduled": "2025-05-18T21:59:00.000-05:00",
+                            "latestPublished": "2025-05-18T22:07:00.000-05:00",
+                            "actualTakeOffTime": "2025-05-18T22:18:00.000-05:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "SEA",
+                            "name": "SEATTLE-TACOMA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Seattle-Tacoma International Airport",
+                            "city": {
+                                "code": "SEA",
+                                "name": "SEATTLE",
+                                "nameLangTranl": "Seattle",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4472,
+                                "longitude": -122.3056
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B1"
+                                ],
+                                "baggageBelt": [
+                                    "3"
+                                ],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-18T23:37:00.000-07:00",
+                            "scheduled": "2025-05-18T23:47:00.000-07:00",
+                            "latestPublished": "2025-05-18T23:37:00.000-07:00",
+                            "estimated": {
+                                "value": "2025-05-18T23:37:00.000-07:00"
+                            },
+                            "actualTouchDownTime": "2025-05-18T23:28:00.000-07:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H48M",
+                    "departureDateTimeDifference": "PT8M",
+                    "arrivalDateTimeDifference": "PT-10M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0200",
+                    "aircraft": {
+                        "registration": "N830DN",
+                        "typeCode": "739",
+                        "typeName": "BOEING 737-900 PASSENGER",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C001W001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C020W027Y133",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 877,
+            "flightScheduleDate": "2025-05-19",
+            "id": "20250519+DL+0877",
+            "haul": "MEDIUM",
+            "route": [
+                "MSP",
+                "SEA"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2906,
+                    "flightScheduleDate": "2025-05-19",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MSP",
+                            "name": "MINNEAPOLIS INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Saint Paul International Airport",
+                            "city": {
+                                "code": "MSP",
+                                "name": "MINNEAPOLIS/ST PAUL",
+                                "nameLangTranl": "Minneapolis",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8861,
+                                "longitude": -93.2178
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D3"
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-19T15:23:00.000-05:00",
+                            "scheduled": "2025-05-19T14:55:00.000-05:00",
+                            "latestPublished": "2025-05-19T15:23:00.000-05:00",
+                            "actualTakeOffTime": "2025-05-19T15:41:00.000-05:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "SEA",
+                            "name": "SEATTLE-TACOMA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Seattle-Tacoma International Airport",
+                            "city": {
+                                "code": "SEA",
+                                "name": "SEATTLE",
+                                "nameLangTranl": "Seattle",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4472,
+                                "longitude": -122.3056
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "B1"
+                                ],
+                                "baggageBelt": [
+                                    "3"
+                                ],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-19T16:54:00.000-07:00",
+                            "scheduled": "2025-05-19T16:44:00.000-07:00",
+                            "latestPublished": "2025-05-19T16:54:00.000-07:00",
+                            "estimated": {
+                                "value": "2025-05-19T16:54:00.000-07:00"
+                            },
+                            "actualTouchDownTime": "2025-05-19T16:46:00.000-07:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H49M",
+                    "departureDateTimeDifference": "PT28M",
+                    "arrivalDateTimeDifference": "PT10M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0200",
+                    "aircraft": {
+                        "registration": "N128DN",
+                        "typeCode": "321",
+                        "typeName": "AIRBUS A321",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C001W001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C020W029Y142",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 881,
+            "flightScheduleDate": "2025-05-19",
+            "id": "20250519+DL+0881",
+            "route": [
+                "MSP",
+                "SEA"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3038,
+                    "airline": {
+                        "code": "KE",
+                        "name": "KOREAN AIR LINES CO. LTD."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6672,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1567,
+                    "airline": {
+                        "code": "VS",
+                        "name": "VIRGIN ATLANTIC AIRWAYS LIMITED"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MSP",
+                            "name": "MINNEAPOLIS INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Saint Paul International Airport",
+                            "city": {
+                                "code": "MSP",
+                                "name": "MINNEAPOLIS/ST PAUL",
+                                "nameLangTranl": "Minneapolis",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8861,
+                                "longitude": -93.2178
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C1"
+                                ],
+                                "terminalCode": "1",
+                                "boardingTerminal": "1",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-19T18:44:00.000-05:00",
+                            "scheduled": "2025-05-19T18:30:00.000-05:00",
+                            "latestPublished": "2025-05-19T18:44:00.000-05:00",
+                            "actualTakeOffTime": "2025-05-19T19:06:00.000-05:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "SEA",
+                            "name": "SEATTLE-TACOMA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Seattle-Tacoma International Airport",
+                            "city": {
+                                "code": "SEA",
+                                "name": "SEATTLE",
+                                "nameLangTranl": "Seattle",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4472,
+                                "longitude": -122.3056
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A2"
+                                ],
+                                "baggageBelt": [
+                                    "3"
+                                ],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-19T20:19:00.000-07:00",
+                            "latestPublished": "2025-05-19T20:26:00.000-07:00",
+                            "estimated": {
+                                "value": "2025-05-19T20:26:00.000-07:00"
+                            },
+                            "estimatedArrival": "2025-05-19T20:26:00.000-07:00",
+                            "actualTouchDownTime": "2025-05-19T20:14:00.000-07:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H49M",
+                    "departureDateTimeDifference": "PT14M",
+                    "arrivalDateTimeDifference": "PT7M",
+                    "timeToArrival": "PT-3802H-31M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0200",
+                    "aircraft": {
+                        "registration": "N930DZ",
+                        "typeCode": "739",
+                        "typeName": "BOEING 737-900 PASSENGER",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W027Y133",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 505,
+            "flightScheduleDate": "2025-05-20",
+            "id": "20250520+DL+0505",
+            "haul": "MEDIUM",
+            "route": [
+                "MSP",
+                "SEA"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2328,
+                    "flightScheduleDate": "2025-05-20",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4242,
+                    "flightScheduleDate": "2025-05-20",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AM",
+                        "name": "AEROMEXICO AEROVIAS DE MEXICO S.A. DE C.V."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1563,
+                    "flightScheduleDate": "2025-05-20",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "VS",
+                        "name": "VIRGIN ATLANTIC AIRWAYS LIMITED"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MSP",
+                            "name": "MINNEAPOLIS INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Saint Paul International Airport",
+                            "city": {
+                                "code": "MSP",
+                                "name": "MINNEAPOLIS/ST PAUL",
+                                "nameLangTranl": "Minneapolis",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8861,
+                                "longitude": -93.2178
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "D4"
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-19T22:49:00.000-05:00",
+                            "scheduled": "2025-05-19T21:59:00.000-05:00",
+                            "latestPublished": "2025-05-19T22:49:00.000-05:00",
+                            "actualTakeOffTime": "2025-05-19T23:03:00.000-05:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "SEA",
+                            "name": "SEATTLE-TACOMA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Seattle-Tacoma International Airport",
+                            "city": {
+                                "code": "SEA",
+                                "name": "SEATTLE",
+                                "nameLangTranl": "Seattle",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4472,
+                                "longitude": -122.3056
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A12"
+                                ],
+                                "baggageBelt": [
+                                    "3"
+                                ],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-20T00:12:00.000-07:00",
+                            "scheduled": "2025-05-19T23:47:00.000-07:00",
+                            "latestPublished": "2025-05-20T00:12:00.000-07:00",
+                            "estimated": {
+                                "value": "2025-05-20T00:12:00.000-07:00"
+                            },
+                            "actualTouchDownTime": "2025-05-20T00:01:00.000-07:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H48M",
+                    "departureDateTimeDifference": "PT50M",
+                    "arrivalDateTimeDifference": "PT25M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0200",
+                    "aircraft": {
+                        "registration": "N921DU",
+                        "typeCode": "739",
+                        "typeName": "BOEING 737-900 PASSENGER",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C001W001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C020W027Y133",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT25M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 877,
+            "flightScheduleDate": "2025-05-20",
+            "id": "20250520+DL+0877",
+            "haul": "MEDIUM",
+            "route": [
+                "MSP",
+                "SEA"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 2906,
+                    "flightScheduleDate": "2025-05-20",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "AF",
+                        "name": "AIR FRANCE"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 7060,
+                    "flightScheduleDate": "2025-05-20",
+                    "code": "F",
+                    "type": "PASSENGER",
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MSP",
+                            "name": "MINNEAPOLIS INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Saint Paul International Airport",
+                            "city": {
+                                "code": "MSP",
+                                "name": "MINNEAPOLIS/ST PAUL",
+                                "nameLangTranl": "Minneapolis",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8861,
+                                "longitude": -93.2178
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C11"
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-20T17:21:00.000-05:00",
+                            "scheduled": "2025-05-20T15:15:00.000-05:00",
+                            "latestPublished": "2025-05-20T17:21:00.000-05:00",
+                            "actualTakeOffTime": "2025-05-20T17:34:00.000-05:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "SEA",
+                            "name": "SEATTLE-TACOMA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Seattle-Tacoma International Airport",
+                            "city": {
+                                "code": "SEA",
+                                "name": "SEATTLE",
+                                "nameLangTranl": "Seattle",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4472,
+                                "longitude": -122.3056
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A14"
+                                ],
+                                "baggageBelt": [
+                                    "3"
+                                ],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-20T18:44:00.000-07:00",
+                            "scheduled": "2025-05-20T17:00:00.000-07:00",
+                            "latestPublished": "2025-05-20T18:44:00.000-07:00",
+                            "estimated": {
+                                "value": "2025-05-20T18:44:00.000-07:00"
+                            },
+                            "actualTouchDownTime": "2025-05-20T18:33:00.000-07:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H45M",
+                    "departureDateTimeDifference": "PT2H6M",
+                    "arrivalDateTimeDifference": "PT1H44M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0200",
+                    "aircraft": {
+                        "registration": "N885DN",
+                        "typeCode": "739",
+                        "typeName": "BOEING 737-900 PASSENGER",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C001W001Y001",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "C020W027Y133",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT1H44M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 881,
+            "flightScheduleDate": "2025-05-20",
+            "id": "20250520+DL+0881",
+            "route": [
+                "MSP",
+                "SEA"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 3038,
+                    "airline": {
+                        "code": "KE",
+                        "name": "KOREAN AIR LINES CO. LTD."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6672,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 1567,
+                    "airline": {
+                        "code": "VS",
+                        "name": "VIRGIN ATLANTIC AIRWAYS LIMITED"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MSP",
+                            "name": "MINNEAPOLIS INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Saint Paul International Airport",
+                            "city": {
+                                "code": "MSP",
+                                "name": "MINNEAPOLIS/ST PAUL",
+                                "nameLangTranl": "Minneapolis",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8861,
+                                "longitude": -93.2178
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "C1"
+                                ],
+                                "terminalCode": "1",
+                                "boardingTerminal": "1",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-20T18:39:00.000-05:00",
+                            "scheduled": "2025-05-20T18:30:00.000-05:00",
+                            "latestPublished": "2025-05-20T18:39:00.000-05:00",
+                            "actualTakeOffTime": "2025-05-20T18:54:00.000-05:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "SEA",
+                            "name": "SEATTLE-TACOMA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Seattle-Tacoma International Airport",
+                            "city": {
+                                "code": "SEA",
+                                "name": "SEATTLE",
+                                "nameLangTranl": "Seattle",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4472,
+                                "longitude": -122.3056
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    "A12"
+                                ],
+                                "baggageBelt": [
+                                    "3"
+                                ],
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-20T20:19:00.000-07:00",
+                            "latestPublished": "2025-05-20T19:59:00.000-07:00",
+                            "estimated": {
+                                "value": "2025-05-20T19:59:00.000-07:00"
+                            },
+                            "estimatedArrival": "2025-05-20T19:59:00.000-07:00",
+                            "actualTouchDownTime": "2025-05-20T19:52:00.000-07:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H49M",
+                    "departureDateTimeDifference": "PT9M",
+                    "arrivalDateTimeDifference": "PT-20M",
+                    "timeToArrival": "PT-3778H-58M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "-0200",
+                    "aircraft": {
+                        "registration": "N922DZ",
+                        "typeCode": "739",
+                        "typeName": "BOEING 737-900 PASSENGER",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W027Y133",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 876,
+            "flightScheduleDate": "2025-05-21",
+            "id": "20250521+DL+0876",
+            "route": [
+                "MSP",
+                "SEA"
+            ],
+            "airline": {
+                "code": "DL",
+                "name": "DELTA AIR LINES INC."
+            },
+            "codeShareRelations": [
+                {
+                    "marketingFlightNumber": 6761,
+                    "airline": {
+                        "code": "KL",
+                        "name": "KLM ROYAL DUTCH AIRLINES"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 6480,
+                    "airline": {
+                        "code": "LA",
+                        "name": "LATAM AIRLINES GROUP S.A. DBA LATAM AIRLINES GROUP"
+                    }
+                },
+                {
+                    "marketingFlightNumber": 3413,
+                    "airline": {
+                        "code": "UX",
+                        "name": "AIR EUROPA LINEAS AEREAS S.A."
+                    }
+                },
+                {
+                    "marketingFlightNumber": 4812,
+                    "airline": {
+                        "code": "VS",
+                        "name": "VIRGIN ATLANTIC AIRWAYS LIMITED"
+                    }
+                }
+            ],
+            "flightStatusPublic": "ON_TIME",
+            "flightStatusPublicLangTransl": "On time",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "DEN",
+                            "name": "DENVER INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Denver International",
+                            "city": {
+                                "code": "DEN",
+                                "name": "DENVER",
+                                "nameLangTranl": "Denver",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 39.8547,
+                                "longitude": -104.7181
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-21T07:00:00.000-06:00",
+                            "latestPublished": "2025-05-21T07:00:00.000-06:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "JFK",
+                            "name": "JOHN F. KENNEDY INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "John F. Kennedy International Airport",
+                            "city": {
+                                "code": "NYC",
+                                "name": "NEW YORK",
+                                "nameLangTranl": "New York",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 40.6386,
+                                "longitude": -73.7769
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "baggageBelt": [],
+                                "arrivalPositionTerminal": "4",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-21T13:02:00.000-04:00",
+                            "latestPublished": "2025-05-21T13:02:00.000-04:00",
+                            "estimated": {
+                                "value": "2025-05-21T13:02:00.000-04:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT4H2M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0200",
+                    "aircraft": {
+                        "typeCode": "32Q",
+                        "typeName": "AIRBUS A321NEO",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W042Y132",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "MSP",
+                            "name": "MINNEAPOLIS INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Saint Paul International Airport",
+                            "city": {
+                                "code": "MSP",
+                                "name": "MINNEAPOLIS/ST PAUL",
+                                "nameLangTranl": "Minneapolis",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 44.8861,
+                                "longitude": -93.2178
+                            },
+                            "places": {
+                                "gateNumber": [],
+                                "terminalCode": "1",
+                                "checkInZone": [],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-20T21:35:00.000-05:00",
+                            "latestPublished": "2025-05-20T21:35:00.000-05:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "SEA",
+                            "name": "SEATTLE-TACOMA INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Seattle-Tacoma International Airport",
+                            "city": {
+                                "code": "SEA",
+                                "name": "SEATTLE",
+                                "nameLangTranl": "Seattle",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "US",
+                                    "name": "UNITED STATES",
+                                    "nameLangTranl": "United States",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": 47.4472,
+                                "longitude": -122.3056
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-20T23:31:00.000-07:00",
+                            "latestPublished": "2025-05-20T23:31:00.000-07:00",
+                            "estimated": {
+                                "value": "2025-05-20T23:31:00.000-07:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT3H56M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "-0200",
+                    "aircraft": {
+                        "typeCode": "739",
+                        "typeName": "BOEING 737-900 PASSENGER",
+                        "ownerAirlineCode": "DL",
+                        "ownerAirlineName": "DELTA AIR LINES INC.",
+                        "physicalPaxConfiguration": "C020W021Y139",
+                        "physicalFreightConfiguration": "PP000LL000",
+                        "operationalConfiguration": "JCDIZWSYBMHQKLUTXVE",
+                        "cockpitCrewEmployer": "DL",
+                        "cabinCrewEmployer": "DL"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 21,
+        "pageNumber": 0,
+        "fullCount": 1821,
+        "pageCount": 21,
+        "totalPages": 19
+    }
+}
