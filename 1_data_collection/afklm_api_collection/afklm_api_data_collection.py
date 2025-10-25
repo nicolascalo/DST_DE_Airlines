@@ -21,6 +21,7 @@ For each querry, a .json file named according to the parameters of the querry an
 '''
 ### Library import
 
+
 import pandas as pd
 import requests
 import re
