@@ -39,6 +39,7 @@ path_data_storage = "data"
 path_call_parameter_csv_root = "df_call_parameters"
 output_format = ["json","gzip"] # ["json","gzip"]
 skip_previously_failed = False
+api_key_list_file = "./afklm_api_keys.txt"
 
 
 
@@ -181,7 +182,7 @@ for call_parameter_csv in call_parameter_csv_list :
 
     ### Loading API keys to use
 
-    with open(f"./afklm_api_keys.txt", "r") as f:
+    with open(api_key_list_file, "r") as f:
         API_key_list =  f.read().split("\n")
         
     API_key_list_cleaned = []
