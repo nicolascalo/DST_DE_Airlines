@@ -18,7 +18,7 @@ if  bool(re.search("1_data_collection$",os.getcwd())) == True:
 
 
 def make_plot_chord(df,
-                    by_country:bool = False,
+                    group_by:str = None, # continent, subcontinent, country or None 
                     treshold:float = None,
                     gather_all_but_n_higher:int = None,
                     remove_all_but_n_higher:bool = False,
@@ -34,8 +34,12 @@ def make_plot_chord(df,
 
 
     
-    if by_country:
+    if group_by = 'country':
         fromto_table_df = df[['origin_country','destination_country','totalFlights']]       
+       
+    elif group_by = 'subcontinent':    
+        
+    elif group_by = 'continent':    
         
     else:
         
