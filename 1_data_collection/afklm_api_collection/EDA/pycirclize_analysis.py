@@ -62,7 +62,7 @@ def make_plot_chord(df,
         
     else:
         
-        fromto_table_df = df_call_parameters[['origin_country',"origin",'destination_country',"destination",'totalFlights']].copy(deep=True)
+        fromto_table_df = df[['origin_country',"origin",'destination_country',"destination",'totalFlights']].copy(deep=True)
         
         
         fromto_table_df['origin_country_airport']  = fromto_table_df['origin_country'] + " - "+ fromto_table_df['origin'] 
@@ -189,26 +189,18 @@ df_call_parameters_to_france = df_call_parameters.query('destination_country == 
 
 
 
+df_call_parameters_europe = df_call_parameters.query('destination_continent == "Europe" & origin_continent == "Europe"')
 
 
-make_plot_chord(df_call_parameters,
-                group_by = False,
+make_plot_chord(df_call_parameters_europe,
+                group_by = None,
                     treshold = None,
-                    gather_all_but_n_higher = None,
+                    gather_all_but_n_higher = 20,
                     flight_type=None,
                     order='asc',
-                    space = 0.5)
+                    space = 0.5).savefig("circos_europe_airport_int_top20.png")
 
 
-
-make_plot_chord(df_call_parameters,
-                group_by = True,
-                    treshold = None,
-                    gather_all_but_n_higher = 15,
-                    remove_all_but_n_higher = True,
-                    flight_type=None,
-                    order=None,
-                    space = 0.5)
 
 
 make_plot_chord(df_call_parameters,
@@ -219,21 +211,28 @@ make_plot_chord(df_call_parameters,
                     remove_all_but_n_higher = False,
                     flight_type=None,
                     order=None,
-                    space = 0.5)
+                    space = 0.5).savefig("circos_world_country_int_top20.png")
 
 
 
-make_plot_chord(df_call_parameters,
-                group_by = True,
+make_plot_chord(df_call_parameters_europe,
+                append_parent_group= True,
+                 group_by = 'country',
                     treshold = None,
-                    gather_all_but_n_higher = 7,
-                    flight_type='int',
+                    gather_all_but_n_higher = 20,
+                    remove_all_but_n_higher = False,
+                    flight_type=None,
                     order=None,
-                    space = 0.5)
+                    space = 0.5).savefig("circos_europe_country_int_top20.png")
+
+
+
+
+
 
 
 make_plot_chord(df_call_parameters_from_france,
-                group_by = True,
+                group_by = None,
                     treshold = None,
                     gather_all_but_n_higher = 7,
                     flight_type='int',
@@ -246,7 +245,7 @@ make_plot_chord(df_call_parameters_to_france,
                     gather_all_but_n_higher = 15,
                     flight_type='int',
                     order='asc',
-                    space = 0.5)
+                    space = 0.5).savefig("circos_tofrance_country_int.png")
 
 
 
