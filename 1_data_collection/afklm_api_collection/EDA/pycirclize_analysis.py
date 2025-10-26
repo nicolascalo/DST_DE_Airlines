@@ -16,9 +16,15 @@ if  bool(re.search("1_data_collection$",os.getcwd())) == True:
     os.chdir("afklm_api_collection") 
 
 
+path_call_parameter_file_folder = "call_parameter_lists"
+path_call_parameter_csv_root = "df_call_parameters"
+remove_loop_from_to = True
+
+
 
 def make_plot_chord(df,
-                    group_by:str = None, # continent, subcontinent, country or None 
+                    append_parent_group = False,
+                    group_by:str = None, 
                     treshold:float = None,
                     gather_all_but_n_higher:int = None,
                     remove_all_but_n_higher:bool = False,
@@ -34,18 +40,35 @@ def make_plot_chord(df,
 
 
     
-    if group_by = 'country':
-        fromto_table_df = df[['origin_country','destination_country','totalFlights']]       
-       
-    elif group_by = 'subcontinent':    
+    if group_by == 'country':
         
-    elif group_by = 'continent':    
+        
+        if append_parent_group:
+        
+            fromto_table_df = df[['origin_continent','origin_country','destination_continent','destination_country','totalFlights']].copy(deep=True)  
+            
+            fromto_table_df['origin_country']  = fromto_table_df['origin_continent'] + " - "+ fromto_table_df['origin_country'] 
+            fromto_table_df['destination_country']  = fromto_table_df['destination_continent'] + " - "+ fromto_table_df['destination_country'] 
+            fromto_table_df = fromto_table_df[['origin_country','destination_country','totalFlights']]     
+        else:
+            fromto_table_df = df[['origin_country','destination_country','totalFlights']]     
+            
+        
+    elif group_by == 'subcontinent':    
+        fromto_table_df = df[['origin_subcontinent','destination_subcontinent','totalFlights']]       
+    elif group_by == 'continent':    
+        fromto_table_df = df[['origin_continent','destination_continent','totalFlights']]       
+        
         
     else:
         
         fromto_table_df = df_call_parameters[['origin_country',"origin",'destination_country',"destination",'totalFlights']].copy(deep=True)
+        
+        
         fromto_table_df['origin_country_airport']  = fromto_table_df['origin_country'] + " - "+ fromto_table_df['origin'] 
         fromto_table_df['destination_country_airport']  =fromto_table_df['destination_country'] + " - "+ fromto_table_df['destination'] 
+        
+        
         fromto_table_df = fromto_table_df[['origin_country_airport','destination_country_airport','totalFlights']]
         
 
@@ -54,15 +77,15 @@ def make_plot_chord(df,
 
     fromto_table_df.columns = ["from", "to", "value"]
     
-    if (flight_type == 'local') & by_country:
+    if (flight_type == 'local') & (group_by is not None):
         fromto_table_df = fromto_table_df[fromto_table_df['to'] == fromto_table_df['from']]
 
     if flight_type == 'int':
         fromto_table_df = fromto_table_df[fromto_table_df['to'] != fromto_table_df['from']]
 
+    fromto_table_df = fromto_table_df[fromto_table_df['value']!='']
         
-        
-    total_flights =    fromto_table_df['value'].sum() 
+    total_flights =    fromto_table_df['value'].astype('float').sum() 
     fromto_table_df['value'] =     fromto_table_df['value'] / total_flights
     
     
@@ -125,16 +148,34 @@ def make_plot_chord(df,
 
 
 
-df_airports = pd.read_csv("../df_iata_icao_wiki_final_eu.csv").fillna('')
-df_call_parameters = pd.read_csv("df_call_parameters.csv").fillna('').query('totalFlights != ""')
+df_airports = pd.read_csv("../df_iata_icao_wiki_final_world.csv").fillna('')
+
+
+path_call_parameter_csv_list = os.listdir(path_call_parameter_file_folder)
+
+call_parameter_csv_list = [val for val in path_call_parameter_csv_list if 'df_call_parameters'  in val]
+
+df_call_parameters = pd.DataFrame()
+
+
+
+for call_parameter_csv in call_parameter_csv_list :
+    
+    df_call_parameters_to_add = pd.read_csv(path_call_parameter_file_folder +"/"+call_parameter_csv).fillna('')
+
+    df_call_parameters = pd.concat([call_parameter_csv_merged, df_call_parameters],ignore_index=True).fillna('').sort_values(['startRange','endRange'])
+
+
+
+
 
 if remove_loop_from_to:
     df_call_parameters = df_call_parameters[df_call_parameters['origin'] != df_call_parameters['destination']]    
 
-df_airports_country_origin = df_airports[['country','iata']] 
-df_airports_country_origin.columns = ["origin_country", "origin"]
-df_airports_country_destination = df_airports[['country','iata']] 
-df_airports_country_destination.columns = ["destination_country", "destination"]
+df_airports_country_origin = df_airports[['continent','subcontinent','country','iata']] 
+df_airports_country_origin.columns = ['origin_continent','origin_subcontinent',"origin_country", "origin"]
+df_airports_country_destination = df_airports[['continent','subcontinent','country','iata']] 
+df_airports_country_destination.columns = ['destination_continent','destination_subcontinent',"destination_country", "destination"]
 
 
 df_call_parameters = df_call_parameters.merge(df_airports_country_origin).merge(df_airports_country_destination)
@@ -151,7 +192,7 @@ df_call_parameters_to_france = df_call_parameters.query('destination_country == 
 
 
 make_plot_chord(df_call_parameters,
-                by_country = False,
+                group_by = False,
                     treshold = None,
                     gather_all_but_n_higher = None,
                     flight_type=None,
@@ -161,10 +202,21 @@ make_plot_chord(df_call_parameters,
 
 
 make_plot_chord(df_call_parameters,
-                by_country = True,
+                group_by = True,
                     treshold = None,
-                    gather_all_but_n_higher = 5,
+                    gather_all_but_n_higher = 15,
                     remove_all_but_n_higher = True,
+                    flight_type=None,
+                    order=None,
+                    space = 0.5)
+
+
+make_plot_chord(df_call_parameters,
+                append_parent_group= True,
+                 group_by = 'country',
+                    treshold = None,
+                    gather_all_but_n_higher = 20,
+                    remove_all_but_n_higher = False,
                     flight_type=None,
                     order=None,
                     space = 0.5)
@@ -172,7 +224,7 @@ make_plot_chord(df_call_parameters,
 
 
 make_plot_chord(df_call_parameters,
-                by_country = True,
+                group_by = True,
                     treshold = None,
                     gather_all_but_n_higher = 7,
                     flight_type='int',
@@ -181,7 +233,7 @@ make_plot_chord(df_call_parameters,
 
 
 make_plot_chord(df_call_parameters_from_france,
-                by_country = True,
+                group_by = True,
                     treshold = None,
                     gather_all_but_n_higher = 7,
                     flight_type='int',
@@ -189,9 +241,9 @@ make_plot_chord(df_call_parameters_from_france,
                     space = 0.5)
 
 make_plot_chord(df_call_parameters_to_france,
-                by_country = True,
+                group_by,
                     treshold = None,
-                    gather_all_but_n_higher = 7,
+                    gather_all_but_n_higher = 15,
                     flight_type='int',
                     order='asc',
                     space = 0.5)
