@@ -76,7 +76,7 @@ if not os.path.isdir(path_data_storage):
 json_list = os.listdir(path_data_storage)
 
 
-path_call_parameter_csv_list = os.listdir('./call_parameter_lists')
+path_call_parameter_csv_list = os.listdir(path_call_parameter_file_folder)
 
 call_parameter_csv_list = [val for val in path_call_parameter_csv_list if 'df_call_parameters'  in val]
 
@@ -90,8 +90,7 @@ for call_parameter_csv in call_parameter_csv_list :
     
     df_call_parameters = pd.read_csv(path_call_parameter_file_folder +"/"+call_parameter_csv).fillna('')
     
-    dict_call_parameters_test = df_call_parameters.drop(non_parameters,axis=1)
-    
+   
     
     call_parameters_list = []
 
