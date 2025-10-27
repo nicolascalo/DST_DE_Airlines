@@ -27,15 +27,15 @@ wait_for_mongodb()
 
     while [ $attempt -lt $max_attempts ]; do
         if docker exec "$CONTAINER_NAME" mongosh --quiet --username "$USER_NAME" --password "$PASSWORD" --authenticationDatabase admin --eval "db.adminCommand('ping')" &>/dev/null; then
-            echo "MongoDB est prêt !"
+            echo "MongoDB is ready !"
             return 0
         fi
-        sleep 5
+        sleep 7
         attempt=$((attempt + 1))
-        echo "Tentative $attempt/$max_attempts..."
+        echo "Attempt $attempt/$max_attempts to connect mongodb"
     done
 
-    echo "Échec après $max_attempts tentatives de connection à mongoDb." >&2
+    echo "Faild after $max_attempts attemps to mongoDb." >&2
     return 1
 }
 
