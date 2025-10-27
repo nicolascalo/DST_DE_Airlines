@@ -1,23 +1,33 @@
 # MongoDB Database
 
-## Build Data Base using dump
-1. Fill in the `docker-compose.yml` file
+## Setup
+
+1. Activate the virtual environment:
+```bash
+source venv/bin/activate
+```
+2. Fill in the `docker-compose.yml` file
 
 Required parameters are documented in the `docker-composestruct` file.
 
-2. Navigate to the MongoDb folder:
+3. Navigate to the MongoDb folder:
 ```bash
 cd bdd/MongoDb
 ```
 
-3. Put your dump in data_dump folder
+
+
+
+## Build Data Base using dump
+
+1. Put your dump in data_dump folder
     - Dump must be named : dump-yyyymmdd-hh-mm-ss.archive
 
     - Example : dump-20251020-06-17-06.archive
 
 Possibility to put several dump files, the most recent dump will be imported in the database. The most recent is this one so the date in the name is the latest date. 
 
-4. Execute:
+2. Execute:
 
 
 ```bash
@@ -27,28 +37,19 @@ Possibility to put several dump files, the most recent dump will be imported in 
 ## Build Data Base using .json files
 ### Docker Container
 
-#### Setup
 
-1. Fill in the `docker-compose.yml` file
 
-Required parameters are documented in the `docker-composestruct` file.
-
-2. Navigate to the MongoDb folder:
-```bash
-cd bdd/MongoDb
-```
-
-3. Start the Docker container:
+1. Start the Docker container:
 ```bash
 docker-compose up -d
 ```
 
-4. Access the container:
+2. Access the container:
 ```bash
 docker exec -it <container_name> bash
 ```
 
-## Environment Variables
+### Environment Variables
 
 Fill in the `.env` file at the project root.
 
@@ -56,7 +57,7 @@ Required environment variables are documented in the `envstruct` file.
 
 !!! Il faudrait définir le "DATABASE_NAME"pour qu'il soit fixe car il doit correspondre au dump ?   
 
-## Data Loading
+### Data Loading
 
 1. Activate the virtual environment:
 ```bash

@@ -15,6 +15,6 @@ def is_file_name_exist(file_name):
     if file_name_collection == None:
         return False
     else :
-        print(file_name+ "already in database")
+        print(file_name+ " already in database")
         return True
 
