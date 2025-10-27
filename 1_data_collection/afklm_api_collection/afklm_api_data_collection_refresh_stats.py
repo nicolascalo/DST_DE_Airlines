@@ -17,7 +17,7 @@ import gzip
 path_data_storage = "data"
 path_call_parameter_files = "call_parameter_lists"
 path_call_parameter_csv_root = "df_call_parameters"
-output_format = ["json","gzip"] # ["json","gzip"]
+output_format = ["gzip"] # ["json","gzip"]
 skip_previously_failed = False
 api_key_list_file = "./afklm_api_keys.txt"
 
@@ -150,11 +150,3 @@ for call_parameter_csv in call_parameter_csv_list :
         
 
         
-        parameter_list = df_call_parameters.drop(non_parameters,axis=1).columns.to_list()
-        
-        
-        pd.concat([df_call_parameters, df_call_parameters_updated]).drop_duplicates(keep='last',subset=parameter_list).fillna('').to_csv(call_parameter_csv, index = 0)
-        df_call_parameters = pd.read_csv(call_parameter_csv).fillna('')
-
-
-
