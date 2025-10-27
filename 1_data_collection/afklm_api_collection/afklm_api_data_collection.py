@@ -37,10 +37,10 @@ import gzip
 
 path_data_storage = "data"
 path_call_parameter_file_folder = "call_parameter_lists"
-path_call_parameter_csv_root = "df_call_parameters"
 output_format = ["json","gzip"] # ["json","gzip"]
 skip_previously_failed = False
 api_key_list_file = "./afklm_api_keys.txt"
+api_key_list_folder = "api_keys"
 
 
 
@@ -76,9 +76,8 @@ if not os.path.isdir(path_data_storage):
 json_list = os.listdir(path_data_storage)
 
 
-path_call_parameter_csv_list = os.listdir(path_call_parameter_file_folder)
+call_parameter_csv_list = os.listdir(path_call_parameter_file_folder)
 
-call_parameter_csv_list = [val for val in path_call_parameter_csv_list if 'df_call_parameters'  in val]
 
 for call_parameter_csv in call_parameter_csv_list :
     
@@ -109,16 +108,18 @@ for call_parameter_csv in call_parameter_csv_list :
 
     ### Loading API keys to use
 
-    with open(api_key_list_file, "r") as f:
-        API_key_list =  f.read().split("\n")
-        
     API_key_list_cleaned = []
 
-    for api in API_key_list:
-        
-        api_cleaned = re.sub(" #.*","",api)
-        API_key_list_cleaned.append(api_cleaned)
-        
+    for file in os.listdir(api_key_list_folder) :
+
+        with open(api_key_list_folder+"/"+file, "r") as f:
+            API_key_list =  f.read().split("\n")
+            
+            for api in API_key_list:
+                
+                api_cleaned = re.sub(" #.*","",api)
+                API_key_list_cleaned.append(api_cleaned)
+                
         
 
 

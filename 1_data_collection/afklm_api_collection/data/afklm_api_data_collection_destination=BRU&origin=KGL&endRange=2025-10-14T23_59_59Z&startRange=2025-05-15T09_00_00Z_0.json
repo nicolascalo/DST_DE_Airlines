@@ -1,0 +1,2657 @@
+{
+    "operationalFlights": [
+        {
+            "flightNumber": 701,
+            "flightScheduleDate": "2025-05-17",
+            "id": "20250517+WB+0701",
+            "haul": "LONG",
+            "route": [
+                "BRU",
+                "CDG",
+                "KGL",
+                "BRU",
+                "KGL"
+            ],
+            "airline": {
+                "code": "WB",
+                "name": "RWANDAIR LIMTED"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "KGL",
+                            "name": "KIGALI INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Kigali International Airport",
+                            "city": {
+                                "code": "KGL",
+                                "name": "KIGALI",
+                                "nameLangTranl": "Kigali",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "RW",
+                                    "name": "RWANDA",
+                                    "nameLangTranl": "Rwanda",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": -1.9678,
+                                "longitude": 30.14
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-17T11:55:00.000+02:00",
+                            "latestPublished": "2025-05-17T11:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-17T20:25:00.000+02:00",
+                            "latestPublished": "2025-05-17T20:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-05-17T20:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT8H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "9XRWP",
+                        "typeCode": "333",
+                        "typeName": "AIRBUS A330-300",
+                        "ownerAirlineCode": "WB",
+                        "ownerAirlineName": "RWANDAIR LIMTED",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BRU",
+                            "name": "BRUSSELS AIRPORT",
+                            "nameLangTranl": "Brussels Airport",
+                            "city": {
+                                "code": "BRU",
+                                "name": "BRUSSELS",
+                                "nameLangTranl": "Brussels",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "BE",
+                                    "name": "BELGIUM",
+                                    "nameLangTranl": "Belgium",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.9014,
+                                "longitude": 4.4844
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-17T18:55:00.000+02:00",
+                            "latestPublished": "2025-05-17T18:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "parkingPosition": "U12",
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    "06"
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "U",
+                                "parkingPositionCustomStatus": "I",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-17T21:01:00.000+02:00",
+                            "scheduled": "2025-05-17T20:25:00.000+02:00",
+                            "latestPublished": "2025-05-17T21:01:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-05-17T21:01:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-05-17T20:54:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "arrivalDateTimeDifference": "PT36M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "9XRWP",
+                        "typeCode": "333",
+                        "typeName": "AIRBUS A330-300",
+                        "ownerAirlineCode": "WB",
+                        "ownerAirlineName": "RWANDAIR LIMTED",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT36M",
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "N",
+                    "statusName": "New",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BRU",
+                            "name": "BRUSSELS AIRPORT",
+                            "nameLangTranl": "Brussels Airport",
+                            "city": {
+                                "code": "BRU",
+                                "name": "BRUSSELS",
+                                "nameLangTranl": "Brussels",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "BE",
+                                    "name": "BELGIUM",
+                                    "nameLangTranl": "Belgium",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.9014,
+                                "longitude": 4.4844
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-17T18:55:00.000+02:00",
+                            "latestPublished": "2025-05-17T18:55:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "parkingPosition": "U12",
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    "06"
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "U",
+                                "parkingPositionCustomStatus": "I",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-17T21:01:00.000+02:00",
+                            "scheduled": "2025-05-17T20:25:00.000+02:00",
+                            "estimated": {},
+                            "actualTouchDownTime": "2025-05-17T20:54:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "arrivalDateTimeDifference": "PT36M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "9XRWP",
+                        "typeCode": "333",
+                        "typeName": "AIRBUS A330-300",
+                        "ownerAirlineCode": "WB",
+                        "ownerAirlineName": "RWANDAIR LIMTED",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT36M",
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BRU",
+                            "name": "BRUSSELS AIRPORT",
+                            "nameLangTranl": "Brussels Airport",
+                            "city": {
+                                "code": "BRU",
+                                "name": "BRUSSELS",
+                                "nameLangTranl": "Brussels",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "BE",
+                                    "name": "BELGIUM",
+                                    "nameLangTranl": "Belgium",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.9014,
+                                "longitude": 4.4844
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-17T19:35:00.000+02:00",
+                            "latestPublished": "2025-05-17T19:35:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "KGL",
+                            "name": "KIGALI INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Kigali International Airport",
+                            "city": {
+                                "code": "KGL",
+                                "name": "KIGALI",
+                                "nameLangTranl": "Kigali",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "RW",
+                                    "name": "RWANDA",
+                                    "nameLangTranl": "Rwanda",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": -1.9678,
+                                "longitude": 30.14
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-18T04:05:00.000+02:00",
+                            "latestPublished": "2025-05-18T04:05:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-05-18T04:05:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT8H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "9XRWP",
+                        "typeCode": "333",
+                        "typeName": "AIRBUS A330-300",
+                        "ownerAirlineCode": "WB",
+                        "ownerAirlineName": "RWANDAIR LIMTED",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "KGL",
+                            "name": "KIGALI INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Kigali International Airport",
+                            "city": {
+                                "code": "KGL",
+                                "name": "KIGALI",
+                                "nameLangTranl": "Kigali",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "RW",
+                                    "name": "RWANDA",
+                                    "nameLangTranl": "Rwanda",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": -1.9678,
+                                "longitude": 30.14
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-17T19:35:00.000+02:00",
+                            "latestPublished": "2025-05-17T19:35:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BRU",
+                            "name": "BRUSSELS AIRPORT",
+                            "nameLangTranl": "Brussels Airport",
+                            "city": {
+                                "code": "BRU",
+                                "name": "BRUSSELS",
+                                "nameLangTranl": "Brussels",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "BE",
+                                    "name": "BELGIUM",
+                                    "nameLangTranl": "Belgium",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.9014,
+                                "longitude": 4.4844
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-18T04:05:00.000+02:00",
+                            "latestPublished": "2025-05-18T04:05:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-05-18T04:05:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT8H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "9XRWP",
+                        "typeCode": "333",
+                        "typeName": "AIRBUS A330-300",
+                        "ownerAirlineCode": "WB",
+                        "ownerAirlineName": "RWANDAIR LIMTED",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "18"
+                                ],
+                                "parkingPosition": "U12",
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    "03"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "U",
+                                "parkingPositionCustomStatus": "I",
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-05-17T22:18:00.000+02:00",
+                            "scheduled": "2025-05-17T21:30:00.000+02:00",
+                            "latestPublished": "2025-05-17T22:18:00.000+02:00",
+                            "actualTakeOffTime": "2025-05-17T22:38:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "KGL",
+                            "name": "KIGALI INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Kigali International Airport",
+                            "city": {
+                                "code": "KGL",
+                                "name": "KIGALI",
+                                "nameLangTranl": "Kigali",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "RW",
+                                    "name": "RWANDA",
+                                    "nameLangTranl": "Rwanda",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": -1.9678,
+                                "longitude": 30.14
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-05-18T07:35:00.000+02:00",
+                            "latestPublished": "2025-05-18T08:24:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-05-18T08:24:00.000+02:00"
+                            },
+                            "estimatedArrival": "2025-05-18T08:24:00.000+02:00",
+                            "estimatedTouchDownTime": "2025-05-18T08:20:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT10H5M",
+                    "departureDateTimeDifference": "PT48M",
+                    "arrivalDateTimeDifference": "PT49M",
+                    "timeToArrival": "PT-3891H-10M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "9XRWP",
+                        "typeCode": "333",
+                        "typeName": "AIRBUS A330-300",
+                        "ownerAirlineCode": "WB",
+                        "ownerAirlineName": "RWANDAIR LIMTED",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT49M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 700,
+            "flightScheduleDate": "2025-06-24",
+            "id": "20250624+WB+0700",
+            "haul": "LONG",
+            "route": [
+                "KGL",
+                "BRU",
+                "CDG",
+                "KGL"
+            ],
+            "airline": {
+                "code": "WB",
+                "name": "RWANDAIR LIMTED"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "KGL",
+                            "name": "KIGALI INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Kigali International Airport",
+                            "city": {
+                                "code": "KGL",
+                                "name": "KIGALI",
+                                "nameLangTranl": "Kigali",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "RW",
+                                    "name": "RWANDA",
+                                    "nameLangTranl": "Rwanda",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": -1.9678,
+                                "longitude": 30.14
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-24T09:20:00.000+02:00",
+                            "latestPublished": "2025-06-24T09:20:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BRU",
+                            "name": "BRUSSELS AIRPORT",
+                            "nameLangTranl": "Brussels Airport",
+                            "city": {
+                                "code": "BRU",
+                                "name": "BRUSSELS",
+                                "nameLangTranl": "Brussels",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "BE",
+                                    "name": "BELGIUM",
+                                    "nameLangTranl": "Belgium",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.9014,
+                                "longitude": 4.4844
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-24T18:35:00.000+02:00",
+                            "latestPublished": "2025-06-24T18:35:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-06-24T18:35:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT9H15M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "332",
+                        "typeName": "AIRBUS A330-200",
+                        "ownerAirlineCode": "WB",
+                        "ownerAirlineName": "RWANDAIR LIMTED",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BRU",
+                            "name": "BRUSSELS AIRPORT",
+                            "nameLangTranl": "Brussels Airport",
+                            "city": {
+                                "code": "BRU",
+                                "name": "BRUSSELS",
+                                "nameLangTranl": "Brussels",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "BE",
+                                    "name": "BELGIUM",
+                                    "nameLangTranl": "Belgium",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.9014,
+                                "longitude": 4.4844
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-24T19:35:00.000+02:00",
+                            "latestPublished": "2025-06-24T19:35:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "parkingPosition": "U14",
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "U",
+                                "parkingPositionCustomStatus": "I",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-24T20:25:00.000+02:00",
+                            "latestPublished": "2025-06-24T20:25:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-06-24T20:25:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT50M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "332",
+                        "typeName": "AIRBUS A330-200",
+                        "ownerAirlineCode": "WB",
+                        "ownerAirlineName": "RWANDAIR LIMTED",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "26"
+                                ],
+                                "parkingPosition": "U14",
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    "03"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "U",
+                                "parkingPositionCustomStatus": "I",
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-06-24T22:10:00.000+02:00",
+                            "scheduled": "2025-06-24T21:30:00.000+02:00",
+                            "latestPublished": "2025-06-24T22:10:00.000+02:00",
+                            "actualTakeOffTime": "2025-06-24T22:36:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "KGL",
+                            "name": "KIGALI INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Kigali International Airport",
+                            "city": {
+                                "code": "KGL",
+                                "name": "KIGALI",
+                                "nameLangTranl": "Kigali",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "RW",
+                                    "name": "RWANDA",
+                                    "nameLangTranl": "Rwanda",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": -1.9678,
+                                "longitude": 30.14
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-25T07:35:00.000+02:00",
+                            "latestPublished": "2025-06-25T08:27:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-06-25T08:27:00.000+02:00"
+                            },
+                            "estimatedArrival": "2025-06-25T08:27:00.000+02:00",
+                            "estimatedTouchDownTime": "2025-06-25T08:22:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT10H5M",
+                    "departureDateTimeDifference": "PT40M",
+                    "arrivalDateTimeDifference": "PT52M",
+                    "timeToArrival": "PT-2979H-7M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "9XRWP",
+                        "typeCode": "333",
+                        "typeName": "AIRBUS A330-300",
+                        "ownerAirlineCode": "WB",
+                        "ownerAirlineName": "RWANDAIR LIMTED",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT52M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 701,
+            "flightScheduleDate": "2025-06-24",
+            "id": "20250624+WB+0701",
+            "haul": "LONG",
+            "route": [
+                "KGL",
+                "BRU",
+                "CDG",
+                "KGL"
+            ],
+            "airline": {
+                "code": "WB",
+                "name": "RWANDAIR LIMTED"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "KGL",
+                            "name": "KIGALI INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Kigali International Airport",
+                            "city": {
+                                "code": "KGL",
+                                "name": "KIGALI",
+                                "nameLangTranl": "Kigali",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "RW",
+                                    "name": "RWANDA",
+                                    "nameLangTranl": "Rwanda",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": -1.9678,
+                                "longitude": 30.14
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-24T09:20:00.000+02:00",
+                            "latestPublished": "2025-06-24T09:20:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BRU",
+                            "name": "BRUSSELS AIRPORT",
+                            "nameLangTranl": "Brussels Airport",
+                            "city": {
+                                "code": "BRU",
+                                "name": "BRUSSELS",
+                                "nameLangTranl": "Brussels",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "BE",
+                                    "name": "BELGIUM",
+                                    "nameLangTranl": "Belgium",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.9014,
+                                "longitude": 4.4844
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-24T18:35:00.000+02:00",
+                            "latestPublished": "2025-06-24T18:35:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-06-24T18:35:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT9H15M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "9XRWP",
+                        "typeCode": "333",
+                        "typeName": "AIRBUS A330-300",
+                        "ownerAirlineCode": "WB",
+                        "ownerAirlineName": "RWANDAIR LIMTED",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BRU",
+                            "name": "BRUSSELS AIRPORT",
+                            "nameLangTranl": "Brussels Airport",
+                            "city": {
+                                "code": "BRU",
+                                "name": "BRUSSELS",
+                                "nameLangTranl": "Brussels",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "BE",
+                                    "name": "BELGIUM",
+                                    "nameLangTranl": "Belgium",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.9014,
+                                "longitude": 4.4844
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-24T19:35:00.000+02:00",
+                            "latestPublished": "2025-06-24T19:35:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "parkingPosition": "U14",
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    "03"
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "U",
+                                "parkingPositionCustomStatus": "I",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-06-24T20:48:00.000+02:00",
+                            "scheduled": "2025-06-24T20:25:00.000+02:00",
+                            "latestPublished": "2025-06-24T20:48:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-06-24T20:48:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-06-24T20:41:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT50M",
+                    "arrivalDateTimeDifference": "PT23M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "9XRWP",
+                        "typeCode": "333",
+                        "typeName": "AIRBUS A330-300",
+                        "ownerAirlineCode": "WB",
+                        "ownerAirlineName": "RWANDAIR LIMTED",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT23M",
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "26"
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    "03"
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-24T21:30:00.000+02:00",
+                            "latestPublished": "2025-06-24T21:30:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "KGL",
+                            "name": "KIGALI INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Kigali International Airport",
+                            "city": {
+                                "code": "KGL",
+                                "name": "KIGALI",
+                                "nameLangTranl": "Kigali",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "RW",
+                                    "name": "RWANDA",
+                                    "nameLangTranl": "Rwanda",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": -1.9678,
+                                "longitude": 30.14
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-06-25T07:35:00.000+02:00",
+                            "latestPublished": "2025-06-25T07:35:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-06-25T07:35:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT10H5M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "9XRWP",
+                        "typeCode": "333",
+                        "typeName": "AIRBUS A330-300",
+                        "ownerAirlineCode": "WB",
+                        "ownerAirlineName": "RWANDAIR LIMTED",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 701,
+            "flightScheduleDate": "2025-08-16",
+            "id": "20250816+WB+0701",
+            "haul": "LONG",
+            "route": [
+                "BRU",
+                "CDG",
+                "KGL"
+            ],
+            "airline": {
+                "code": "WB",
+                "name": "RWANDAIR LIMTED"
+            },
+            "flightStatusPublic": "ON_TIME",
+            "flightStatusPublicLangTransl": "On time",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "KGL",
+                            "name": "KIGALI INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Kigali International Airport",
+                            "city": {
+                                "code": "KGL",
+                                "name": "KIGALI",
+                                "nameLangTranl": "Kigali",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "RW",
+                                    "name": "RWANDA",
+                                    "nameLangTranl": "Rwanda",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": -1.9678,
+                                "longitude": 30.14
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-16T09:35:00.000+02:00",
+                            "latestPublished": "2025-08-16T09:35:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BRU",
+                            "name": "BRUSSELS AIRPORT",
+                            "nameLangTranl": "Brussels Airport",
+                            "city": {
+                                "code": "BRU",
+                                "name": "BRUSSELS",
+                                "nameLangTranl": "Brussels",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "BE",
+                                    "name": "BELGIUM",
+                                    "nameLangTranl": "Belgium",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.9014,
+                                "longitude": 4.4844
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-16T18:50:00.000+02:00",
+                            "latestPublished": "2025-08-16T18:50:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-16T18:50:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT9H15M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "332",
+                        "typeName": "AIRBUS A330-200",
+                        "ownerAirlineCode": "WB",
+                        "ownerAirlineName": "RWANDAIR LIMTED",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BRU",
+                            "name": "BRUSSELS AIRPORT",
+                            "nameLangTranl": "Brussels Airport",
+                            "city": {
+                                "code": "BRU",
+                                "name": "BRUSSELS",
+                                "nameLangTranl": "Brussels",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "BE",
+                                    "name": "BELGIUM",
+                                    "nameLangTranl": "Belgium",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.9014,
+                                "longitude": 4.4844
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-16T19:35:00.000+02:00",
+                            "latestPublished": "2025-08-16T19:35:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "parkingPosition": "U11",
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    "03"
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "U",
+                                "parkingPositionCustomStatus": "I",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-16T20:34:00.000+02:00",
+                            "scheduled": "2025-08-16T20:25:00.000+02:00",
+                            "latestPublished": "2025-08-16T20:34:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-16T20:34:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-08-16T20:20:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT50M",
+                    "arrivalDateTimeDifference": "PT9M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "9XRWX",
+                        "typeCode": "332",
+                        "typeName": "AIRBUS A330-200",
+                        "ownerAirlineCode": "WB",
+                        "ownerAirlineName": "RWANDAIR LIMTED",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "ARRIVED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    "16"
+                                ],
+                                "parkingPosition": "U11",
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    "03"
+                                ],
+                                "boardingContactType": "C",
+                                "parkingPositionType": "C",
+                                "departureTerminal": "U",
+                                "parkingPositionCustomStatus": "I",
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-08-16T21:45:00.000+02:00",
+                            "scheduled": "2025-08-16T21:30:00.000+02:00",
+                            "latestPublished": "2025-08-16T21:45:00.000+02:00",
+                            "actualTakeOffTime": "2025-08-16T22:05:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "KGL",
+                            "name": "KIGALI INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Kigali International Airport",
+                            "city": {
+                                "code": "KGL",
+                                "name": "KIGALI",
+                                "nameLangTranl": "Kigali",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "RW",
+                                    "name": "RWANDA",
+                                    "nameLangTranl": "Rwanda",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": -1.9678,
+                                "longitude": 30.14
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-08-17T07:35:00.000+02:00",
+                            "latestPublished": "2025-08-17T07:48:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-08-17T07:48:00.000+02:00"
+                            },
+                            "estimatedArrival": "2025-08-17T07:48:00.000+02:00",
+                            "estimatedTouchDownTime": "2025-08-17T07:43:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT10H5M",
+                    "departureDateTimeDifference": "PT15M",
+                    "arrivalDateTimeDifference": "PT13M",
+                    "timeToArrival": "PT-1707H-46M",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "9XRWX",
+                        "typeCode": "332",
+                        "typeName": "AIRBUS A330-200",
+                        "ownerAirlineCode": "WB",
+                        "ownerAirlineName": "RWANDAIR LIMTED",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT13M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 700,
+            "flightScheduleDate": "2025-10-10",
+            "id": "20251010+WB+0700",
+            "haul": "LONG",
+            "route": [
+                "KGL",
+                "BRU",
+                "CDG"
+            ],
+            "airline": {
+                "code": "WB",
+                "name": "RWANDAIR LIMTED"
+            },
+            "flightStatusPublic": "ARRIVED",
+            "flightStatusPublicLangTransl": "Arrived",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "KGL",
+                            "name": "KIGALI INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Kigali International Airport",
+                            "city": {
+                                "code": "KGL",
+                                "name": "KIGALI",
+                                "nameLangTranl": "Kigali",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "RW",
+                                    "name": "RWANDA",
+                                    "nameLangTranl": "Rwanda",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": -1.9678,
+                                "longitude": 30.14
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-10T23:45:00.000+02:00",
+                            "modified": "2025-10-10T23:45:00.000+02:00",
+                            "latestPublished": "2025-10-10T23:45:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-11T09:50:00.000+02:00",
+                            "modified": "2025-10-11T20:30:00.000+02:00",
+                            "latestPublished": "2025-10-11T20:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-11T20:30:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT10H5M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "9XRWP",
+                        "typeCode": "333",
+                        "typeName": "AIRBUS A330-300",
+                        "ownerAirlineCode": "WB",
+                        "ownerAirlineName": "RWANDAIR LIMTED",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "KGL",
+                            "name": "KIGALI INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Kigali International Airport",
+                            "city": {
+                                "code": "KGL",
+                                "name": "KIGALI",
+                                "nameLangTranl": "Kigali",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "RW",
+                                    "name": "RWANDA",
+                                    "nameLangTranl": "Rwanda",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": -1.9678,
+                                "longitude": 30.14
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-10T23:45:00.000+02:00",
+                            "latestPublished": "2025-10-10T23:45:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BRU",
+                            "name": "BRUSSELS AIRPORT",
+                            "nameLangTranl": "Brussels Airport",
+                            "city": {
+                                "code": "BRU",
+                                "name": "BRUSSELS",
+                                "nameLangTranl": "Brussels",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "BE",
+                                    "name": "BELGIUM",
+                                    "nameLangTranl": "Belgium",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.9014,
+                                "longitude": 4.4844
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-11T08:15:00.000+02:00",
+                            "latestPublished": "2025-10-11T08:15:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-11T08:15:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT8H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "9XRWP",
+                        "typeCode": "333",
+                        "typeName": "AIRBUS A330-300",
+                        "ownerAirlineCode": "WB",
+                        "ownerAirlineName": "RWANDAIR LIMTED",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "S",
+                    "statusName": "Scheduled",
+                    "publishedStatus": "DELAYED_DEPARTURE",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BRU",
+                            "name": "BRUSSELS AIRPORT",
+                            "nameLangTranl": "Brussels Airport",
+                            "city": {
+                                "code": "BRU",
+                                "name": "BRUSSELS",
+                                "nameLangTranl": "Brussels",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "BE",
+                                    "name": "BELGIUM",
+                                    "nameLangTranl": "Belgium",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.9014,
+                                "longitude": 4.4844
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-11T19:00:00.000+02:00",
+                            "latestPublished": "2025-10-11T19:00:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "parkingPosition": "U13",
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    "02"
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "parkingPositionType": "C",
+                                "arrivalTerminal": "U",
+                                "parkingPositionCustomStatus": "I",
+                                "disembarkingContactType": "C",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "actual": "2025-10-11T22:00:00.000+02:00",
+                            "scheduled": "2025-10-11T20:30:00.000+02:00",
+                            "latestPublished": "2025-10-11T22:00:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-11T22:00:00.000+02:00"
+                            },
+                            "actualTouchDownTime": "2025-10-11T21:51:00.000+02:00"
+                        }
+                    },
+                    "legStatusPublic": "ARRIVED",
+                    "legStatusPublicLangTransl": "Arrived",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT1H30M",
+                    "arrivalDateTimeDifference": "PT1H30M",
+                    "timeToArrival": "PT0S",
+                    "completionPercentage": "100",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "registration": "9XRWP",
+                        "typeCode": "333",
+                        "typeName": "AIRBUS A330-300",
+                        "ownerAirlineCode": "WB",
+                        "ownerAirlineName": "RWANDAIR LIMTED",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "N",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayDurationArrival": "PT1H30M",
+                        "delayInformation": []
+                    }
+                }
+            ]
+        },
+        {
+            "flightNumber": 701,
+            "flightScheduleDate": "2025-10-11",
+            "id": "20251011+WB+0701",
+            "haul": "LONG",
+            "route": [
+                "KGL",
+                "BRU",
+                "CDG",
+                "KGL"
+            ],
+            "airline": {
+                "code": "WB",
+                "name": "RWANDAIR LIMTED"
+            },
+            "flightStatusPublic": "CANCELLED",
+            "flightStatusPublicLangTransl": "Cancelled",
+            "flightLegs": [
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "KGL",
+                            "name": "KIGALI INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Kigali International Airport",
+                            "city": {
+                                "code": "KGL",
+                                "name": "KIGALI",
+                                "nameLangTranl": "Kigali",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "RW",
+                                    "name": "RWANDA",
+                                    "nameLangTranl": "Rwanda",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": -1.9678,
+                                "longitude": 30.14
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-11T19:35:00.000+02:00",
+                            "latestPublished": "2025-10-11T19:35:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "BRU",
+                            "name": "BRUSSELS AIRPORT",
+                            "nameLangTranl": "Brussels Airport",
+                            "city": {
+                                "code": "BRU",
+                                "name": "BRUSSELS",
+                                "nameLangTranl": "Brussels",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "BE",
+                                    "name": "BELGIUM",
+                                    "nameLangTranl": "Belgium",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.9014,
+                                "longitude": 4.4844
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-12T04:05:00.000+02:00",
+                            "latestPublished": "2025-10-12T04:05:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-12T04:05:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT8H30M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "332",
+                        "typeName": "AIRBUS A330-200",
+                        "ownerAirlineCode": "WB",
+                        "ownerAirlineName": "RWANDAIR LIMTED",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "Y",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "BRU",
+                            "name": "BRUSSELS AIRPORT",
+                            "nameLangTranl": "Brussels Airport",
+                            "city": {
+                                "code": "BRU",
+                                "name": "BRUSSELS",
+                                "nameLangTranl": "Brussels",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "BE",
+                                    "name": "BELGIUM",
+                                    "nameLangTranl": "Belgium",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 50.9014,
+                                "longitude": 4.4844
+                            },
+                            "places": {
+                                "aerogareCode": "",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "boardingPier": "",
+                                "boardingTerminal": "",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-11T19:35:00.000+02:00",
+                            "modified": "2025-10-11T19:35:00.000+02:00",
+                            "latestPublished": "2025-10-11T19:35:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "arrivalPositionTerminal": "1",
+                                "arrivalPositionPier": "",
+                                "disembarkingAerogare": "1",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-11T20:30:00.000+02:00",
+                            "modified": "2025-10-11T20:30:00.000+02:00",
+                            "latestPublished": "2025-10-11T20:30:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-11T20:30:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT55M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "332",
+                        "typeName": "AIRBUS A330-200",
+                        "ownerAirlineCode": "WB",
+                        "ownerAirlineName": "RWANDAIR LIMTED",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "Y",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                },
+                {
+                    "status": "C",
+                    "statusName": "Cancelled",
+                    "publishedStatus": "CANCELLED",
+                    "departureInformation": {
+                        "airport": {
+                            "code": "CDG",
+                            "name": "CHARLES DE GAULLE AIRPORT",
+                            "nameLangTranl": "Paris-Charles de Gaulle airport",
+                            "city": {
+                                "code": "PAR",
+                                "name": "PARIS",
+                                "nameLangTranl": "Paris",
+                                "country": {
+                                    "areaCode": "E",
+                                    "code": "FR",
+                                    "name": "FRANCE",
+                                    "nameLangTranl": "France",
+                                    "euroCountry": "Y",
+                                    "euCountry": "Y"
+                                }
+                            },
+                            "location": {
+                                "latitude": 49.0097,
+                                "longitude": 2.5486
+                            },
+                            "places": {
+                                "aerogareCode": "1",
+                                "gateNumber": [],
+                                "pierCode": "",
+                                "terminalCode": "1",
+                                "boardingPier": "",
+                                "boardingTerminal": "1",
+                                "checkInZone": [
+                                    ""
+                                ],
+                                "checkInAerogare": "1",
+                                "paxDepartureGate": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-11T21:30:00.000+02:00",
+                            "latestPublished": "2025-10-11T21:30:00.000+02:00"
+                        }
+                    },
+                    "arrivalInformation": {
+                        "airport": {
+                            "code": "KGL",
+                            "name": "KIGALI INTERNATIONAL AIRPORT",
+                            "nameLangTranl": "Kigali International Airport",
+                            "city": {
+                                "code": "KGL",
+                                "name": "KIGALI",
+                                "nameLangTranl": "Kigali",
+                                "country": {
+                                    "areaCode": "I",
+                                    "code": "RW",
+                                    "name": "RWANDA",
+                                    "nameLangTranl": "Rwanda",
+                                    "euroCountry": "N",
+                                    "euCountry": "N"
+                                }
+                            },
+                            "location": {
+                                "latitude": -1.9678,
+                                "longitude": 30.14
+                            },
+                            "places": {
+                                "gateNumber": [
+                                    ""
+                                ],
+                                "pierCode": "",
+                                "terminalCode": "",
+                                "baggageBelt": [
+                                    ""
+                                ],
+                                "disembarkingAerogare": "",
+                                "arrivalHall": []
+                            }
+                        },
+                        "times": {
+                            "scheduled": "2025-10-12T07:35:00.000+02:00",
+                            "latestPublished": "2025-10-12T07:35:00.000+02:00",
+                            "estimated": {
+                                "value": "2025-10-12T07:35:00.000+02:00"
+                            }
+                        }
+                    },
+                    "legStatusPublic": "CANCELLED",
+                    "legStatusPublicLangTransl": "Cancelled",
+                    "passengerCustomsStatus": "NOT SCHENGEN",
+                    "serviceType": "J",
+                    "serviceTypeName": "Normal Service",
+                    "restricted": false,
+                    "scheduledFlightDuration": "PT10H5M",
+                    "completionPercentage": "0",
+                    "timeZoneDifference": "+0000",
+                    "aircraft": {
+                        "typeCode": "332",
+                        "typeName": "AIRBUS A330-200",
+                        "ownerAirlineCode": "WB",
+                        "ownerAirlineName": "RWANDAIR LIMTED",
+                        "physicalFreightConfiguration": "PP000LL000"
+                    },
+                    "irregularity": {
+                        "cancelled": "Y",
+                        "delayCode": [],
+                        "delayReason": [],
+                        "delayDuration": [],
+                        "delayReasonCodePublic": [],
+                        "delayReasonPublicLangTransl": [],
+                        "delayReasonPublic": [],
+                        "delayInformation": []
+                    }
+                }
+            ]
+        }
+    ],
+    "page": {
+        "pageSize": 6,
+        "pageNumber": 0,
+        "fullCount": 6,
+        "pageCount": 6,
+        "totalPages": 1
+    }
+}
