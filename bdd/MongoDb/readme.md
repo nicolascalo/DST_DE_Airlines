@@ -1,8 +1,33 @@
 # MongoDB Database
 
-## Docker Container
+## Build Data Base using dump
+1. Fill in the `docker-compose.yml` file
 
-### Setup
+Required parameters are documented in the `docker-composestruct` file.
+
+2. Navigate to the MongoDb folder:
+```bash
+cd bdd/MongoDb
+```
+
+3. Put your dump in data_dump folder
+    - Dump must be named : dump-yyyymmdd-hh-mm-ss.archive
+
+    - Example : dump-20251020-06-17-06.archive
+
+Possibility to put several dump files, the most recent dump will be imported in the database. The most recent is this one so the date in the name is the latest date. 
+
+4. Execute:
+
+
+```bash
+./run.sh
+```
+
+## Build Data Base using .json files
+### Docker Container
+
+#### Setup
 
 1. Fill in the `docker-compose.yml` file
 
@@ -72,6 +97,7 @@ bdd/MongoDb/
 │   ├── services/
 │   ├── repositories/
 │   └── db_context/
+├── data_dump
 ├── docker-compose.yml
 ├── .env
 └── envstruct
