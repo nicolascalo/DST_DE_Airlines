@@ -1,6 +1,5 @@
 PATTERN='^dump-[0-9]{8}-[0-9]{2}-[0-9]{2}-[0-9]{2}\.archive$'
 FOLDER="./data_dump"
-DOSSIER="./data_dump"
 CONTAINER_NAME=$(python3 -c "
 import yaml
 with open('docker-compose.yml', 'r') as f:
