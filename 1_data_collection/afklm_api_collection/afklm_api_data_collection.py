@@ -37,10 +37,10 @@ import gzip
 
 path_data_storage = "data"
 path_call_parameter_file_folder = "call_parameter_lists"
-path_call_parameter_csv_root = "df_call_parameters"
 output_format = ["json","gzip"] # ["json","gzip"]
 skip_previously_failed = False
 api_key_list_file = "./afklm_api_keys.txt"
+api_key_list_folder = "api_keys"
 
 
 
@@ -76,9 +76,8 @@ if not os.path.isdir(path_data_storage):
 json_list = os.listdir(path_data_storage)
 
 
-path_call_parameter_csv_list = os.listdir('./call_parameter_lists')
+call_parameter_csv_list = os.listdir(path_call_parameter_file_folder)
 
-call_parameter_csv_list = [val for val in path_call_parameter_csv_list if 'df_call_parameters'  in val]
 
 for call_parameter_csv in call_parameter_csv_list :
     
@@ -90,8 +89,7 @@ for call_parameter_csv in call_parameter_csv_list :
     
     df_call_parameters = pd.read_csv(path_call_parameter_file_folder +"/"+call_parameter_csv).fillna('')
     
-    dict_call_parameters_test = df_call_parameters.drop(non_parameters,axis=1)
-    
+   
     
     call_parameters_list = []
 
@@ -110,16 +108,18 @@ for call_parameter_csv in call_parameter_csv_list :
 
     ### Loading API keys to use
 
-    with open(api_key_list_file, "r") as f:
-        API_key_list =  f.read().split("\n")
-        
     API_key_list_cleaned = []
 
-    for api in API_key_list:
-        
-        api_cleaned = re.sub(" #.*","",api)
-        API_key_list_cleaned.append(api_cleaned)
-        
+    for file in os.listdir(api_key_list_folder) :
+
+        with open(api_key_list_folder+"/"+file, "r") as f:
+            API_key_list =  f.read().split("\n")
+            
+            for api in API_key_list:
+                
+                api_cleaned = re.sub(" #.*","",api)
+                API_key_list_cleaned.append(api_cleaned)
+                
         
 
 
@@ -260,7 +260,7 @@ for call_parameter_csv in call_parameter_csv_list :
             
             
             
-            if (json_to_make in json_list)| (json_to_make in [file + ".gzip" for file in json_list] ) : # skip current query if corresponding json already present
+            if (json_to_make in json_list)| (json_to_make in [file + ".gz" for file in json_list] ) : # skip current query if corresponding json already present
                 print(Fore.BLUE +f"Page {pageNumber} : skipped because already retrieved")
                 
                 
@@ -310,7 +310,7 @@ for call_parameter_csv in call_parameter_csv_list :
                         json.dump(data, f, ensure_ascii=False, indent=4)
                     
                 if "json" in output_format:    
-                    with gzip.open(f"{path_data_storage}/afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json.gzip", 'wt', encoding='utf-8') as f:
+                    with gzip.open(f"{path_data_storage}/afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json.gz", 'wt', encoding='utf-8') as f:
                         json.dump(data, f, ensure_ascii=False, indent=4)
                     
 
@@ -393,95 +393,3 @@ for call_parameter_csv in call_parameter_csv_list :
         df_call_parameters_new = pd.concat([df_call_parameters, df_call_parameters_date_update],ignore_index=True).fillna('').sort_values(['startRange','endRange','response'])
         df_call_parameters_new.fillna('').to_csv(path_call_parameter_file_folder+"/"+call_parameter_csv, index=0)
 
-
-'''
-
-### json to json.gzip
-
-import shutil
-for file in json_list:
-
-    with open('data/'+file, 'rb') as f_in:
-        with gzip.open("{path_data_storage}/"+file+".gzip", 'wb') as f_out:
-            shutil.copyfileobj(f_in, f_out)
-
-
-
-'''    
-    
-'''
-
-        
-### Stats pages to retrieve
-
-### Setup 
-
-df_json_pages_all = pd.DataFrame() # Initialize empty dataframe to store final values
-
-### json file import
-
-json_list = os.listdir(path_data_storage) # Listing of json files to process
-
-print("Starting json import")
-for json_file_name in json_list:
-
-
-    with open("{path_data_storage}/" + json_file_name) as json_file:
-        json_file = json.load(json_file)
-        
-    
-    df = pd.json_normalize(json_file)
-    df['request'] = re.sub("_\\d+\\.json","",json_file_name)
-    df = df.drop('operationalFlights',axis = 1)
-    
-    df_json_pages_all = pd.concat([df_json_pages_all, df],ignore_index=True)
-        
-
-print("json import over")
-
-df_json_pages_all_filtered = pd.merge(df_json_pages_all.groupby(['request']).agg({'page.pageNumber':'max'}).reset_index(), 
-               df_json_pages_all, 
-               on=['request']).drop(['page.pageNumber_y','page.pageCount','page.pageSize'], axis=1).drop_duplicates()
-
-
-df_json_pages_all_filtered = df_json_pages_all_filtered.rename(columns={'page.pageNumber_x':'nb_of_pages_already_retrieved',
-                                                                        'page.fullCount':'total_flights'})
-
-df_json_pages_all_filtered.to_csv("afklm_api_data_collection_retrieval_count.csv")
-
-
-
-
-
-
-'''
-'''
-            
-df_call_parameters.info()
-
-airport_pairs_done = df_call_parameters[['destination','origin']]
-
-airport_pairs_done.columns = ['flightLegs-arrivalInformation-airport-code','flightLegs-departureInformation-airport-code']
-
-            
-df_afklm_flight_from_mongo_filtered = pd.read_csv("../../bdd/MongoDb/mongo_db_interaction/afklm_flight_from_mongo_filtered.csv")
-
-
-
-df_afklm_flight_from_mongo_filtered.info()
-
-outer_join = df_afklm_flight_from_mongo_filtered.merge(airport_pairs_done, how = 'outer', indicator = True)
-
-anti_join = outer_join[~(outer_join._merge == 'both')].drop('_merge', axis = 1)
-
-anti_join.info()
-
-anti_join_COUNT = anti_join[['flightLegs-arrivalInformation-airport-code','flightLegs-departureInformation-airport-code','_id']].groupby(['flightLegs-arrivalInformation-airport-code','flightLegs-departureInformation-airport-code']).count().reset_index().sort_values('_id',ascending=False)
-
-
-wiki = pd.read_csv("../../1_data_collection/df_iata_icao_wiki_final_world.csv")['iata'].to_list()
-
-
-anti_join_COUNT[(anti_join_COUNT['flightLegs-arrivalInformation-airport-code'].isin(wiki)) &(anti_join_COUNT['flightLegs-departureInformation-airport-code'].isin(wiki))].to_csv("afklm_int_flights_route.csv")
-
-'''
