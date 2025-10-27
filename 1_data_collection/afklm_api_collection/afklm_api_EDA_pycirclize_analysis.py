@@ -19,6 +19,7 @@ if  bool(re.search("1_data_collection$",os.getcwd())) == True:
 path_call_parameter_file_folder = "call_parameter_lists"
 path_call_parameter_csv_root = "df_call_parameters"
 remove_loop_from_to = True
+plot_folder = 'EDA_plots'
 
 
 
@@ -198,7 +199,7 @@ make_plot_chord(df_call_parameters_europe,
                     gather_all_but_n_higher = 20,
                     flight_type=None,
                     order='asc',
-                    space = 0.5).savefig("circos_europe_airport_int_top20.png")
+                    space = 0.5).savefig(plot_folder+"/circos_europe_airport_int_top20.png")
 
 
 
@@ -211,7 +212,7 @@ make_plot_chord(df_call_parameters,
                     remove_all_but_n_higher = False,
                     flight_type=None,
                     order=None,
-                    space = 0.5).savefig("circos_world_country_int_top20.png")
+                    space = 0.5).savefig(plot_folder+"/circos_world_country_int_top20.png")
 
 
 
@@ -223,7 +224,7 @@ make_plot_chord(df_call_parameters_europe,
                     remove_all_but_n_higher = False,
                     flight_type=None,
                     order=None,
-                    space = 0.5).savefig("circos_europe_country_int_top20.png")
+                    space = 0.5).savefig(plot_folder+"/circos_europe_country_int_top20.png")
 
 
 
@@ -245,14 +246,9 @@ make_plot_chord(df_call_parameters_to_france,
                     gather_all_but_n_higher = 15,
                     flight_type='int',
                     order='asc',
-                    space = 0.5).savefig("circos_tofrance_country_int.png")
+                    space = 0.5).savefig(plot_folder+"/circos_tofrance_country_int.png")
 
 
 
 plot.show()
-
-
-
-circos_country_int.savefig("circos_country_int.png")
-
 
