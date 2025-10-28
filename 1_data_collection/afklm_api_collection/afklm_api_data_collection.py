@@ -37,7 +37,7 @@ import gzip
 
 path_data_storage = "data"
 path_call_parameter_file_folder = "call_parameter_lists"
-output_format = ["json","gzip"] # ["json","gzip"]
+output_format = ["gzip"] # ["json","gzip"]
 skip_previously_failed = False
 api_key_list_file = "./afklm_api_keys.txt"
 api_key_list_folder = "api_keys"
@@ -260,7 +260,7 @@ for call_parameter_csv in call_parameter_csv_list :
             
             
             
-            if (json_to_make in json_list)| (json_to_make in [file + ".gz" for file in json_list] ) : # skip current query if corresponding json already present
+            if (json_to_make in json_list)|(json_to_make+'.gz' in json_list)  : # skip current query if corresponding json already present
                 print(Fore.BLUE +f"Page {pageNumber} : skipped because already retrieved")
                 
                 
@@ -309,7 +309,7 @@ for call_parameter_csv in call_parameter_csv_list :
                     with open(f"{path_data_storage}/afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json", 'w', encoding='utf-8') as f:
                         json.dump(data, f, ensure_ascii=False, indent=4)
                     
-                if "json" in output_format:    
+                if "gzip" in output_format:    
                     with gzip.open(f"{path_data_storage}/afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json.gz", 'wt', encoding='utf-8') as f:
                         json.dump(data, f, ensure_ascii=False, indent=4)
                     
@@ -377,19 +377,19 @@ for call_parameter_csv in call_parameter_csv_list :
             break
         
         
-    ### Update with new dates when all pages of current file retrived or failed
-        
-    df_call_parameters = pd.read_csv(call_parameter_csv).fillna('')
+        ### Update with new dates when all pages of current parameter file retrived or failed
+            
+        df_call_parameters = pd.read_csv(path_call_parameter_file_folder+"/"+call_parameter_csv).fillna('')
 
-    df_call_parameters_date_update = df_call_parameters.query('response == "<Response [200]>"').sort_values(['endRange'],ascending=False).groupby('call_parameters').head(1)
-        
-    if len(df_call_parameters_date_update.query('completion != "100%"')) == 0:
+        df_call_parameters_date_update = df_call_parameters.query('response == "<Response [200]>"').sort_values(['endRange'],ascending=False).groupby('call_parameters').head(1)
+            
+        if len(df_call_parameters_date_update.query('completion != "100%"')) == 0:
 
-        df_call_parameters_date_update['startRange']= df_call_parameters_date_update['endRange'].map(lambda x: ((datetime.datetime.fromisoformat(x) +datetime.timedelta(0,1)).isoformat(timespec='seconds') + "Z").replace("+00:00","") )
-        df_call_parameters_date_update['endRange']= datetime.datetime.now().isoformat(timespec='seconds') + "Z"
+            df_call_parameters_date_update['startRange']= df_call_parameters_date_update['endRange'].map(lambda x: ((datetime.datetime.fromisoformat(x) +datetime.timedelta(0,1)).isoformat(timespec='seconds') + "Z").replace("+00:00","") )
+            df_call_parameters_date_update['endRange']= datetime.datetime.now().isoformat(timespec='seconds') + "Z"
 
-        df_call_parameters_date_update = df_call_parameters_date_update.drop(non_parameters, axis=1)
+            df_call_parameters_date_update = df_call_parameters_date_update.drop(non_parameters, axis=1)
 
-        df_call_parameters_new = pd.concat([df_call_parameters, df_call_parameters_date_update],ignore_index=True).fillna('').sort_values(['startRange','endRange','response'])
-        df_call_parameters_new.fillna('').to_csv(path_call_parameter_file_folder+"/"+call_parameter_csv, index=0)
+            df_call_parameters_new = pd.concat([df_call_parameters, df_call_parameters_date_update],ignore_index=True).fillna('').sort_values(['startRange','endRange','response'])
+            df_call_parameters_new.fillna('').to_csv(path_call_parameter_file_folder+"/"+call_parameter_csv, index=0)
 
