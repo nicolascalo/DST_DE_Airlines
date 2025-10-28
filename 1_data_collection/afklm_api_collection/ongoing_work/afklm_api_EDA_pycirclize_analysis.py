@@ -164,7 +164,7 @@ for call_parameter_csv in call_parameter_csv_list :
     
     df_call_parameters_to_add = pd.read_csv(path_call_parameter_file_folder +"/"+call_parameter_csv).fillna('')
 
-    df_call_parameters = pd.concat([call_parameter_csv_merged, df_call_parameters],ignore_index=True).fillna('').sort_values(['startRange','endRange'])
+    df_call_parameters = pd.concat([df_call_parameters, df_call_parameters_to_add],ignore_index=True).fillna('').sort_values(['startRange','endRange'])
 
 
 
