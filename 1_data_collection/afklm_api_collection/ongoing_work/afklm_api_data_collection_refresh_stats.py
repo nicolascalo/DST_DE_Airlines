@@ -2,14 +2,9 @@
 
 
 import pandas as pd
-import requests
 import re
-import time
-import json
 import os
-import datetime
 from colorama import Fore, Style
-import gzip
 
 
 ### Script parameters
@@ -17,18 +12,8 @@ import gzip
 path_data_storage = "data"
 path_call_parameter_files = "call_parameter_lists"
 path_call_parameter_csv_root = "df_call_parameters"
-output_format = ["gzip"] # ["json","gzip"]
-skip_previously_failed = False
-api_key_list_file = "./afklm_api_keys.txt"
 
 
-
-max_page_to_fetch = 1
-pageNumberStart = 0
-page_max = 100000 # Will automatically be adjusted after having retrived the fist page 
-refresh_stats = False
-time_delay_query = 1.5 # API limited to 1 call / s, 100 / day
-non_parameters = ["call_parameters",'response', 'message', 'timestamp', 'nb_of_pages_already_retrieved', 'totalPages', 'completion','totalFlights']
 
 
 
