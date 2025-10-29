@@ -1,143 +1,147 @@
-# MongoDB 
+# 🛫 MongoDB - Flight Data Management
 
-## AirlinesAPI
+This project provides tools to manage a MongoDB database for storing, importing, exporting, and querying flight data.
 
-Requirements: 
-1. Install mongodb-database-tools
+---
+
+## 📋 Requirements
+
+- **Docker Compose** 
+- **mongodb-database-tools** (required for the `/dump/all` API route)
+
+### 1. Initial Setup
+Fill in the following configuration files:
+- `docker-compose.yml`: Required parameters are documented in [`docker-composestruct`](docker-composestruct).
+- `.env` (in `MongoDb/mongo_db_interaction/`): Required parameters are documented in [`envstruct`](envstruct).
+
+### 2. Install `mongodb-database-tools`
+To use the API route `http://<api_address>:<port>/dump/all`, install the MongoDB tools:
 
 ```bash
-#download
+# Download
 wget https://fastdl.mongodb.org/tools/db/mongodb-database-tools-debian10-x86_64-100.9.4.deb
 
-#install
+# Install
 sudo dpkg -i mongodb-database-tools-*.deb
 
-#check installation
+# Verify installation
 mongodump --version
 ```
 
-2. Navigate to the MongoDb folder:
-```bash
-cd bdd/MongoDb
-```
+---
 
-3. Start api:
+## 🚀 Start the API
+To start the API server, run:
 ```bash
 ./start_api.sh
 ```
 
+---
 
-## Database
+## 🏗️ Build Database from Dump
 
-1. Activate the virtual environment:
+1. **Place your dump** in the `data_dump/` folder:
+   - Dump files must be named as: `dump-yyyymmdd-hh-mm-ss.archive`
+   - Example: `dump-20251020-06-17-06.archive`
+   - *You can place multiple dump files. The most recent one (based on the date in the filename) will be imported.*
+
+2. **Run the import script**:
+   ```bash
+   ./build_db_with_dump.sh
+   ```
+
+---
+
+## 🔄 Import Missing Data from `.gz` Files
+
+1. **Start the Docker container**:
+   ```bash
+   docker-compose up -d
+   ```
+
+2. **Execute the import script**:
+   ```bash
+   ./insert_missing_data.sh
+   ```
+
+---
+
+## 📤 Export Flights to CSV
+
+### Using Script
+Run the script and provide the number of flights as a parameter:
 ```bash
-source venv/bin/activate
+./get_flight_to_csv.sh 
 ```
-2. Fill in the `docker-compose.yml` file
-
-Required parameters are documented in the `docker-composestruct` file.
-
-3. Navigate to the MongoDb folder:
+*Example:*
 ```bash
-cd bdd/MongoDb
+./get_flight_to_csv.sh 
 ```
+And give the nb_flights in parameter
 
-
-
-
-## Build Data Base using dump
-
-1. Put your dump in data_dump folder
-    - Dump must be named : dump-yyyymmdd-hh-mm-ss.archive
-
-    - Example : dump-20251020-06-17-06.archive
-
-Possibility to put several dump files, the most recent dump will be imported in the database. The most recent is this one so the date in the name is the latest date. 
-
-2. Execute:
-
-
+### Using API
+Fetch flights directly via the API:
 ```bash
-./run.sh
+http://<api_address>:<port>/all/flights/?nb_flights=<nb_flights>
 ```
-
-##  Import missing data using .gz files
-
-
-1. Start the Docker container:
+*Example:*
 ```bash
-docker-compose up -d
-```
-
-2. Execute:
-```bash
-./insert_missing_data.sh
-```
-
-## Get flights in .csv format
-
-1. Execute
-```bash
-get_flight_to_csv.sh up -d
+http://localhost:8080/all/flights/?nb_flights=100
 ```
 
-And give the number of flights you want in parameter. 
+---
 
-You can also to get them with api calling: 
-
-http://127.0.0.1:8000/all/flights/?nb_flights=<nb_flights>
-
-### Environment Variables
+## 🌍 Environment Variables
 
 Fill in the `.env` file at the project root.
+Required environment variables are documented in [`envstruct`](envstruct).
 
-Required environment variables are documented in the `envstruct` file.
 
-!!! Il faudrait définir le "DATABASE_NAME"pour qu'il soit fixe car il doit correspondre au dump ?   
 
-### Data Loading
 
-1. Activate the virtual environment:
+
+## 🗃️ Dump Management
+
+### Export Dump
 ```bash
-source venv/bin/activate
+docker exec <container_name> mongodump \
+  --username=<username> \
+  --password=<password> \
+  --db=<data_base_name> \
+  --authenticationDatabase=admin \
+  --archive | cat > <path_export_dump>/dump-\$(date +%Y%m%d-%H-%M-%S).archive
 ```
 
-2. Navigate to the MongoDb folder:
+### Import Dump
 ```bash
-cd bdd/MongoDb
+cat <path_file_to_import> | docker exec -i <docker_container_name> mongorestore \
+  --username=<username> \
+  --password=<password> \
+  --authenticationDatabase=admin \
+  --archive
 ```
 
-3. Execute the import script:
-```bash
-python3 -m mongo_db_interaction.main
-```
+---
 
-## Data Dump
+## 📂 Project Structure
 
-Export Dump :
-
-```bash
-docker exec <container_name> mongodump --username=<username> --password=<password> --db=<data_base_name> --authenticationDatabase=admin --archive | cat > <path_export_dump>/dump-$(date +%Y%m%d-%H-%M-%S).archive
-```
-
-
-Import Dump :
-```bash
-cat <path_file_toimport> | docker exec -i <docker_container_name> mongorestore --username=<username> --password=<password> --authenticationDatabase=admin --archive
-```
-
-
-## Project Structure
 ```
 bdd/MongoDb/
 ├── mongo_db_interaction/
 │   ├── main.py
-│   ├── use_cases/
-│   ├── services/
-│   ├── repositories/
-│   └── db_context/
-├── data_dump
+│   ├── SERIALIZER/
+│   ├── USE_CASES/
+│   ├── SERVICES/
+│   ├── REPOSITOIRES/
+│   └── DB_CONTEXT/
+├── data_dump/
 ├── docker-compose.yml
 ├── .env
 └── envstruct
 ```
+
+---
+
+## ❓ Need Help?
+- Ensure `DATABASE_NAME` in `.env` matches the database name in your dump.
+- Refer to `docker-composestruct` and `envstruct` for required parameters.
