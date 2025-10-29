@@ -3,7 +3,7 @@
 ## AirlinesAPI
 
 Requirements: 
-- Install mongodb-database-tools
+1. Install mongodb-database-tools
 
 ```bash
 #download
@@ -15,6 +15,17 @@ sudo dpkg -i mongodb-database-tools-*.deb
 #check installation
 mongodump --version
 ```
+
+2. Navigate to the MongoDb folder:
+```bash
+cd bdd/MongoDb
+```
+
+3. Start api:
+```bash
+./start_api.sh
+```
+
 
 ## Database
 
