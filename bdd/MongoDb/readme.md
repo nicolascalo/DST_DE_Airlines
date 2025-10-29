@@ -61,9 +61,7 @@ Possibility to put several dump files, the most recent dump will be imported in 
 ./run.sh
 ```
 
-## Build Data Base using .json files
-### Docker Container
-
+##  Import missing data using .gz files
 
 
 1. Start the Docker container:
@@ -71,10 +69,23 @@ Possibility to put several dump files, the most recent dump will be imported in 
 docker-compose up -d
 ```
 
-2. Access the container:
+2. Execute:
 ```bash
-docker exec -it <container_name> bash
+./insert_missing_data.sh
 ```
+
+## Get flights in .csv format
+
+1. Execute
+```bash
+get_flight_to_csv.sh up -d
+```
+
+And give the number of flights you want in parameter. 
+
+You can also to get them with api calling: 
+
+http://127.0.0.1:8000/all/flights/?nb_flights=<nb_flights>
 
 ### Environment Variables
 
