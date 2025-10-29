@@ -1,6 +1,22 @@
-# MongoDB Database
+# MongoDB 
 
-## Setup
+## AirlinesAPI
+
+Requirements: 
+- Install mongodb-database-tools
+
+```bash
+#download
+wget https://fastdl.mongodb.org/tools/db/mongodb-database-tools-debian10-x86_64-100.9.4.deb
+
+#install
+sudo dpkg -i mongodb-database-tools-*.deb
+
+#check installation
+mongodump --version
+```
+
+## Database
 
 1. Activate the virtual environment:
 ```bash
