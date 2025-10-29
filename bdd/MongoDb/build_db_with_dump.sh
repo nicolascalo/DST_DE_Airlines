@@ -51,7 +51,7 @@ docker_up()
 
 is_valid_file()
  {  
-    not_valid_file=$(find "$FOLDER" -maxdepth 1 -type f -exec basename {} \; | grep -vE "$PATTERN")
+    not_valid_file=$(find "$FOLDER" -maxdepth 1 -type f ! -name '.gitkeep' -exec basename {} \; | grep -vE "$PATTERN")
     if [ -n "$not_valid_file" ]; then
         echo "false" 
     else
