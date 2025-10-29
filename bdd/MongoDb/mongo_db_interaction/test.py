@@ -1,0 +1,4 @@
+from USE_CASES.format_for_tabular_data import format_for_tabular_data
+
+
+format_for_tabular_data(40)

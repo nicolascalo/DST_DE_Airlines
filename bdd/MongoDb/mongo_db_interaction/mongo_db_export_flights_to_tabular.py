@@ -15,7 +15,7 @@ client = MongoClient(
 )
 
 
-database_name = "jojo"
+database_name = "airlines"
 collection_name = "flights"
 
 ### query setting
