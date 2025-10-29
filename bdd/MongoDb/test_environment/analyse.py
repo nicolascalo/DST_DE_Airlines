@@ -25,3 +25,12 @@ missing.sort_values(ascending=False).to_csv("valeurs_manquantes.csv", header=['C
 
 # Valeurs extrêmes (rares)
 pprint(df['flightStatusPublic'].value_counts(normalize=True))
+pprint(df['flightLegs-status'].value_counts(normalize=True))
+pprint(df['flightLegs-serviceType'].value_counts(normalize=True))
+
+# Exploration du jeu de données avec la méthode describe
+# Variables numériques
+pprint(df.describe(include=[float,int]).T.round(2))
+# Variables catégorielles (texte)
+pprint(df.describe(include=[object]).T)
+~                                           
