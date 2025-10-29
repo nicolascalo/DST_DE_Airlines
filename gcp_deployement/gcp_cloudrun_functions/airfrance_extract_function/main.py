@@ -1,0 +1,384 @@
+import base64
+import functions_framework
+import pandas as pd
+import requests
+import re
+import time
+import json
+import os
+from io import BytesIO
+import datetime
+from colorama import Fore, Style
+import gzip
+from google.cloud import storage
+from dotenv import load_dotenv
+import logging
+import google.cloud.logging
+from google.cloud.logging.handlers import CloudLoggingHandler
+
+
+
+
+
+# Triggered from a message on a Cloud Pub/Sub topic.
+@functions_framework.cloud_event
+def hello_pubsub(cloud_event):
+    # local variables
+    ### Script parameters
+    PROJECT_ID = "trusty-anchor-473006-u9"
+    bucket_name = "airfrance-bucket"
+    path_data_storage = "data"
+    path_call_parameter_file_folder = "call_parameter_lists"
+    path_call_parameter_csv_root = "df_call_parameters"
+    output_format = ["json","gzip"] # ["json","gzip"]
+    skip_previously_failed = False
+    api_key_list_file = "./afklm_api_keys.txt"
+    max_page_to_fetch = 1
+    pageNumberStart = 0
+    page_max = 100000 # Will automatically be adjusted after having retrived the fist page 
+    refresh_stats = False
+    time_delay_query = 1.5 # API limited to 1 call / s, 100 / day
+    non_parameters = ["call_parameters",'response', 'message', 'timestamp', 'nb_of_pages_already_retrieved', 'totalPages', 'completion','totalFlights']
+
+
+    # configure logger
+    client = google.cloud.logging.Client(project=PROJECT_ID)
+    cloud_handler = CloudLoggingHandler(client)
+    console_handler = logging.StreamHandler()
+    formatter = logging.Formatter(
+        fmt='[%(levelname)s] %(asctime)s - %(message)s',
+        datefmt='%Y-%m-%d %H:%M:%S'
+    )
+    console_handler.setFormatter(formatter)
+    logger = logging.getLogger("extraction_app_logger")
+    logger.setLevel(logging.INFO)
+    logger.addHandler(cloud_handler)
+    logger.addHandler(console_handler)
+    logger.propagate = False
+
+    # loading envirement variables
+    load_dotenv()
+
+    # Initialisation GCS client
+    client_storage = storage.Client()
+    bucuket_airfrance = client_storage.bucket(bucket_name)
+
+
+    ### List of already retrieved data in blob
+    json_list_blobs = client_storage.list_blobs(bucket_name, prefix=path_data_storage)
+    json_list = [val.name for val in json_list_blobs if 'json' in val.name]
+    path_call_parameter_csv_list = client_storage.list_blobs(bucket_name,prefix=path_call_parameter_file_folder)
+
+
+    call_parameter_csv_list = [val.name for val in path_call_parameter_csv_list if 'df_call_parameters'  in val.name]
+
+    for call_parameter_csv in call_parameter_csv_list :
+        
+        logger.info(call_parameter_csv)
+        
+        
+
+        ### Import query parameters
+
+        call_parameter_csv_blob = bucuket_airfrance.blob(call_parameter_csv)
+        call_parameter_csv_data = call_parameter_csv_blob.download_as_bytes() 
+
+        df_call_parameters = pd.read_csv(BytesIO(call_parameter_csv_data),encoding="utf-8").fillna('')
+        
+        dict_call_parameters_test = df_call_parameters.drop(non_parameters,axis=1)
+        
+        
+        call_parameters_list = []
+
+        
+        for i in range(len(df_call_parameters)):
+        
+            df_subset_parameter = df_call_parameters.iloc[[i]].to_dict(orient="list")
+
+            call_parameters_url = "&".join([key + "=" + str(val[0]) for key, val in df_subset_parameter.items()
+                                if val[0] != '' and val[0] != '[nan]'])
+            
+            call_parameters_list.append(call_parameters_url)
+            
+        df_call_parameters['call_parameters'] = call_parameters_list
+
+
+        ### Loading API keys to use
+
+        API_key_list = os.getenv("API_KEYS").split(",")
+
+        API_key_list_length = len(API_key_list)
+
+        ### Definition of base urls for API call
+
+        base_url ="https://api.airfranceklm.com/opendata/flightstatus/?"
+        headers = {'Content-Type': 'application/x-www-form-urlencoded'}
+
+
+        ### Definition of default parameters for API call
+
+
+        dict_call_parameters = {
+        "aircraftRegistration": ''	, #	string	Registration code of the aircraft		PHBEF	
+        "aircraftType": ''	, #	string	Filter by a type of aircraft		737	
+        "arrivalCity": ''	, #	string	Filter by airport code of arrival city		DXB	
+        "carrierCode": []	, #	array[string]	Airline code (2-pos IATA and 3-pos ICAO)		KL, AF	
+        "consumerHost": ''	, #	string	The information about the system from which the request is launched		KL	
+        "departureCity": ''	, #	string	IATA departure city code		DXB	
+        "destination": '' , #	string	Destination airport		AMS	
+        "flightNumber": ''	, #	string	Filter by flight number		202	
+        "movementType": ''	, #	string	Focus (Departure or Arrival) for the flights to be found; used for selection of departure or arrival time within range **Sorting is based on movementType A": Arrival, D": Departure If D- flights will be sorted by scheduleDeparture time If A- flights will be sorted by scheduleArrivaltime	AD		
+        "operatingAirlineCode": []	, #	array[string]	Operating airline code (2-pos IATA and 3-pos ICAO)		KL	
+        "operationalSuffix": ''	, #	string	Operational suffix, indicates if a flight has been advanced or delayed to the previous or next day	AD	D,A,R,S,T,U,V,W	
+        "origin": ''	, #	string	Departure airport		AMS	
+
+        "serviceType": []	, #	array[string]	IATA service type code		J	
+        "timeOriginType": ''	, #	string	S": Scheduled, M": Modified, I": Internal, P": Public	SMIP	S	
+        "timeType": ''	, #	string	Type of time used in startRange and endRange U": UTC time, L": Local Time	UL	U	
+        "endRange": '2025-07-23T23:59:59Z'	, #	string<date-time>	End on this date time		2023-12-31T23":59":59.000Z	required
+        "startRange": '2025-07-21T09:00:00Z', #	string<date-time>	Start from this date time		2023-12-31T09":00":00.000Z	required
+
+        "call_parameters": '', # repopulated after request
+        'response': '', # repopulated after request
+        'message': '', # repopulated after request
+        'timestamp': '', # repopulated after request
+        'nb_of_pages_already_retrieved': '', # repopulated after request
+        'totalPages': '', # repopulated after request
+        'completion': '' # repopulated after request
+
+        }
+
+
+
+        dict_call_parameters["carrierCode"] =",".join(dict_call_parameters['carrierCode'])
+        dict_call_parameters["operatingAirlineCode"] =",".join(dict_call_parameters['operatingAirlineCode'])
+        dict_call_parameters["serviceType"] =",".join(dict_call_parameters['serviceType'])
+
+
+
+        df_call_parameters = pd.DataFrame(dict_call_parameters, index = [0]) # from defaults
+
+        try:
+            df_call_parameters = pd.read_csv(BytesIO(call_parameter_csv_data),encoding="utf-8").fillna('')
+        except Exception as e:
+            logger.error(f"Execption was occured while loading parameters file: {e}")
+            pass
+
+        i = 0
+        API_key_counter = 0 # To use the first API key from the list
+
+        no_more_api_key = False
+
+        df_call_parameters_new = df_call_parameters.copy(deep=True) # to update the df_call_parameters csv after each querry
+
+
+
+
+        ### loop over the csv file containing the parameter list to send to the API
+
+        for i in range(0, len(df_call_parameters)): 
+            
+            # print("")
+            
+            
+            
+            df_subset = df_call_parameters.iloc[[i]].copy(deep = True).reset_index().drop(['index'], axis = 1) # parameters for the current querry
+
+            
+            pageNumber = pageNumberStart	 #	integer<int32>	Indicates the page number you are requesting, the first real page is page 1. Page 0 gets the same results than page 1. If it's not provided first page will be returned		1	
+
+
+            ### Check if query parameter already tested and skip previous failed if chosen in the script options
+            
+            text_response = str(df_subset['response'])
+            match_error  = re.search("\\d\\d\\d",text_response)
+            if match_error is None:
+                match_error = "000"
+            else:
+                match_error = match_error[0]
+                
+
+
+            ### Cleaning of empty parameter calls
+            
+
+            parameter_list = df_subset.drop(non_parameters,axis=1,errors='ignore').columns.to_list()
+            
+            dict_call_parameters = df_subset.drop(non_parameters,axis=1,errors='ignore').to_dict(orient="list")
+
+            call_parameters_url = "&".join([key + "=" + str(val[0]) for key, val in dict_call_parameters.items()
+                            if val[0] != '' and val[0] != '[nan]'])
+
+
+            logger.info(f"call parameters for this request are {call_parameters_url}")
+            
+            if skip_previously_failed & ( int(match_error)> 200):
+                
+                
+                logger.error(f"skipped because previously failed")
+                continue
+
+            
+            url = base_url + call_parameters_url
+            url = url.replace(" ","")
+
+
+            ### Check date query coherence
+
+            if df_subset['endRange'].item() < df_subset['startRange'].item():
+                logger.error("ERROR: endRange < startRange")
+                break
+
+
+            
+
+
+            ### Loop until reached desired number of pages or max nb of pages to fetch for the query
+            
+            while (pageNumber + 1 <= page_max) & (pageNumber + 1 <= max_page_to_fetch): 
+                
+                
+
+                
+                json_to_make = f"afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json"
+
+                
+                
+                
+                if (json_to_make in json_list)| (json_to_make in [file + ".gzip" for file in json_list] ) : # skip current query if corresponding json already present
+                    logger.warning(f"Page {pageNumber} : skipped because already retrieved")
+                    
+                    
+                    
+
+                    pageNumber = pageNumber + 1
+                    continue
+
+                    
+
+                API_key = API_key_list[API_key_counter]
+                
+
+                headers['API-Key'] = API_key # API key is send in the request header
+                
+
+            
+
+                url_page = (url + f"&{pageNumber=}").replace("?&","?") # Cleaning url from empty fileds
+
+                response = requests.get(url_page, headers=headers)
+                
+                time.sleep(time_delay_query) # API limited to 1 call / s, 100 / day
+                    
+                
+                
+                
+                
+                # print(f"Page found: {response.__bool__()}")
+                
+                no_more_api_key = ("Developer" in response.text) & (API_key_list_length == API_key_counter + 1)
+                
+                time_analysis = datetime.datetime.now().isoformat()
+                df_subset.loc[0,['timestamp']] = time_analysis
+                df_subset.loc[0,['call_parameters']] = call_parameters_url
+                
+
+                if  response.__bool__() : # True if response < 400
+                    
+                    data = response.json()
+                    
+                    page_max =  data['page']['totalPages'] # Update total number of pages
+                    fullCount =  data['page']['fullCount'] 
+                    
+                    # if "json" in output_format:
+                    #     with open(f"{path_data_storage}/afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json", 'w', encoding='utf-8') as f:
+                    #         json.dump(data, f, ensure_ascii=False, indent=4)
+                        
+                    if "json" in output_format:
+                        gzip_blob_name = f"{path_data_storage}/afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json.gzip"    
+                        gzip_blob = bucuket_airfrance.blob(gzip_blob_name)
+                        buffer=BytesIO()
+                        with gzip.GzipFile(fileobj=buffer, mode='wb') as gzip_file:
+                            gzip_file.write(json.dumps(data,ensure_ascii=False,indent=4).encode("utf-8"))
+                        
+                        gzip_blob.upload_from_file(BytesIO(buffer.getvalue()))
+                        logger.info(f"blob:'{gzip_blob_name}' uploaded")
+                    
+                    logger.info(f"Page {pageNumber} : retrieval OK"+ Fore.RESET +f"    Total: {page_max} , Max: {max_page_to_fetch} ")
+
+                    if  df_subset['nb_of_pages_already_retrieved'].item() == '': # Check info already present in df_call_parameters.csv  
+
+                        df_subset.loc[0,['nb_of_pages_already_retrieved']] = 0
+                        
+                    if int(pageNumber +1) > int(df_subset['nb_of_pages_already_retrieved'].item()) : # Check info already present in df_call_parameters.csv  
+
+                        
+                        df_subset.loc[0,['nb_of_pages_already_retrieved']] = f"{(pageNumber+1):.0f}"
+                        
+                        
+                        
+                    df_subset.loc[0,['response']] = str(response)
+                    df_subset.loc[0,['totalPages']] = f"{(page_max):.0f}" 
+                    df_subset.loc[0,['totalFlights']] = f"{(fullCount):.0f}" 
+                    
+                    df_subset.loc[0,['completion']] = f"{100*(pageNumber+1)/page_max:.0f}%"
+                    df_subset.loc[0,['message']] = ""
+                    
+                    
+                    
+                    df_call_parameters_new = pd.concat([df_call_parameters_new,df_subset],ignore_index=True)
+                    df_call_parameters_new = df_call_parameters_new.drop_duplicates(subset=parameter_list, keep='last')
+                    csv_buffer = BytesIO()
+                    df_call_parameters_new.fillna('').to_csv(csv_buffer,encoding="utf-8", index=0)
+
+                    
+                    pageNumber = pageNumber + 1
+                
+            
+                elif ("Developer" in response.text)  & (API_key_list_length > API_key_counter + 1) : # Iterate of API key list to test the next one
+                    
+                    
+                    logger.info(f"Trying next API key previous: {API_key}, next: {API_key_list[API_key_counter+1]}")
+                    API_key_counter = API_key_counter + 1
+                    
+                    
+                elif ("Developer" in response.text) :
+                    break
+                    
+                else:
+                    
+                    logger.warning(f"Issues with the call: {response} {response.text}")
+                
+                    df_subset.loc[0,['response']] = str(response)
+                    df_subset.loc[0,['message']] = str(response.text)            
+                    
+                
+                    df_call_parameters_new =pd.concat([df_call_parameters_new,df_subset],ignore_index=True)
+                    df_call_parameters_new = df_call_parameters_new.drop_duplicates(subset=['call_parameters'], keep='last')
+                    
+                    csv_buffer = BytesIO()
+                    df_call_parameters_new.fillna('').to_csv(csv_buffer,encoding="utf-8", index=0)
+
+                    break
+                
+                
+            if no_more_api_key:
+                logger.info("API keys all consumed")
+                break
+            
+            
+        ### Update with new dates when all pages of current file retrived or failed
+        df_call_parameters = pd.read_csv(BytesIO(call_parameter_csv_data),encoding="utf-8").fillna('')
+
+        df_call_parameters_date_update = df_call_parameters.query('response == "<Response [200]>"').sort_values(['endRange'],ascending=False).groupby('call_parameters').head(1)
+            
+        if len(df_call_parameters_date_update.query('completion != "100%"')) == 0:
+
+            df_call_parameters_date_update['startRange']= df_call_parameters_date_update['endRange'].map(lambda x: ((datetime.datetime.fromisoformat(x) +datetime.timedelta(0,1)).isoformat(timespec='seconds') + "Z").replace("+00:00","") )
+            df_call_parameters_date_update['endRange']= datetime.datetime.now().isoformat(timespec='seconds') + "Z"
+
+            df_call_parameters_date_update = df_call_parameters_date_update.drop(non_parameters, axis=1)
+
+            df_call_parameters_new = pd.concat([df_call_parameters, df_call_parameters_date_update],ignore_index=True).fillna('').sort_values(['startRange','endRange','response'])
+            csv_buffer = BytesIO()
+            df_call_parameters_new.fillna('').to_csv(csv_buffer,encoding="utf-8", index=0)
