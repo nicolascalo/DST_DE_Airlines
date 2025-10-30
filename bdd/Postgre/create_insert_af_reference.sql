@@ -20,10 +20,10 @@ Country_Code varchar(100) NOT NULL,
 Subcontinent_ID int DEFAULT NULL
 );
 
-DROP TABLE IF EXISTS Region;
-CREATE TABLE Region (
-Region_ID serial PRIMARY KEY,
-Region_name varchar(100) NOT NULL,
+DROP TABLE IF EXISTS Location;
+CREATE TABLE Location (
+Location_ID serial PRIMARY KEY,
+Location_name varchar(100) NOT NULL,
 Country_ID int DEFAULT NULL
 );
 
@@ -33,7 +33,7 @@ Airport_ID serial PRIMARY KEY,
 Airport_name varchar(100) NOT NULL,
 Latitude float NOT NULL,
 Longitude float NOT NULL,
-Region_ID int DEFAULT NULL,
+Location_ID int DEFAULT NULL,
 Iata_ID int DEFAULT NULL,
 Icao_ID int DEFAULT NULL
 );
@@ -104,7 +104,7 @@ INSERT INTO Subcontinent (Subcontinent_Name, Continent_ID) VALUES
 ('Vanuatu', 5),
 ('Wallis and Futuna', 5);
 
-INSERT INTO Country (Country_Code, Country_Name, Subcontinent_ID) VALUES
+INSERT INTO Country (Country_Name, Country_Code, Subcontinent_ID) VALUES
 ('Algeria','DZ', 1),
 ('Egypt','EG', 1),
 ('Libya','LY', 1),
@@ -334,7 +334,7 @@ INSERT INTO Country (Country_Code, Country_Name, Subcontinent_ID) VALUES
 ('Vanuatu','VU', 44),
 ('Wallis and Futuna','WF', 45);
 
-INSERT INTO Region (Region_name, Country_ID) VALUES
+INSERT INTO Location (Location_name, Country_ID) VALUES
 ('Alger', 1),
 ('Annaba', 1),
 ('Batna', 1),
@@ -4390,7 +4390,7 @@ INSERT INTO Icao (Icao_Code) VALUES
 ('NLWF'),
 ('NLWW');
 
-INSERT INTO Airport (Airport_name, Latitude, Longitude, Region_ID, Iata_ID, Icao_ID) VALUES
+INSERT INTO Airport (Airport_name, Latitude, Longitude, Location_ID, Iata_ID, Icao_ID) VALUES
 ('Houari Boumediene Airport', 36.691, 3.21541, 1, 1, 1),
 ('Rabah Bitat Airport (Les Salines Airport)', 36.8222, 7.80917, 2, 2, 2),
 ('Mostepha Ben Boulaid Airport', 35.7521, 6.30859, 3, 3, 3),
