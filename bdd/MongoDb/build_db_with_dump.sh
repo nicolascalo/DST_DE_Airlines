@@ -72,7 +72,8 @@ get_lastest_dump()
 }
 
 main()
- {  
+ {  echo "Start container: $CONTAINER_NAME"
+    echo "User: $USER_NAME"
     is_valid_file_result=$(is_valid_file)  
     if [ "$is_valid_file_result" = "false" ]; then  
         echo "INVALID FILE :"
@@ -83,6 +84,8 @@ main()
  
     else
         docker-compose up -d
+        echo "Start container: $CONTAINER_NAME"
+        echo "User: $USER_NAME"
         if ! wait_for_mongodb; then
             exit 1
         fi
