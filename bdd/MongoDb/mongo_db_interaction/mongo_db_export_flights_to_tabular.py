@@ -2,6 +2,7 @@ from pprint import pprint
 from pymongo import MongoClient
 import re
 import pandas as pd
+import numpy as np
 
 
 
@@ -20,19 +21,16 @@ collection_name = "flights"
 
 ### query setting
 
-flight_nb_limit = 50
+flight_nb_limit = 5000
 
 
 
 ### DB check
 
-print(client.list_database_names())
+'''print(client.list_database_names())
 
-db = client[database_name]
 
-db.list_collection_names()
 
-flights = db[collection_name]
 
 pprint(flights.find_one())
 
@@ -41,15 +39,18 @@ pprint(flights.count_documents({}))
 pprint(flights.find_one())
 
 query_results =     list(
-   flights.find({"id":'20250821+DL+5644'})
+   flights.find({"id":'20250821+AF+7313'})
 )
 
 pprint(
     query_results
-)
+)'''
 
 
+db = client[database_name]
 
+'''db.list_collection_names()'''
+flights = db[collection_name]
 
 ### Formating for tabular data
 
@@ -57,9 +58,9 @@ pprint(
 query_results =     list(
     flights.aggregate([
 #     {
-#         "$match": {"id":'20250821+DL+5644'} 
-#
-#       } ,
+#         "$match": {"id":'20250821+AF+7467'} 
+
+#       },
                 {
            "$unwind":"$flightLegs"
         },
@@ -112,9 +113,10 @@ query_results =     list(
     )
 )
 
-pprint(
+'''pprint(
     query_results
-)
+)'''
+
 
 
 
@@ -122,4 +124,43 @@ pprint(
 ### Formating for tabular data
 
 
-pd.json_normalize(query_results).to_csv("afklm_flight_from_mongo_filtered.csv")
+df = pd.json_normalize(query_results)
+df = df.map(lambda x: ', '.join(x) if isinstance(x, list) and x
+                 else (np.nan if isinstance(x, list) else x))
+
+delayDuration_total_sum = []
+print(df[['flightLegs-irregularity-delayDuration']].to_numpy())
+for item in  df[['flightLegs-irregularity-delayDuration']].to_numpy():
+    sum_values = 0
+    print(item)
+    item = item[0]
+    print(item)
+
+
+    if type(item) is str:
+
+        if "," not in item:
+            print("not in virgul")
+            sum_values = float(item)
+    
+    
+        else:
+            print("split")
+            list = item.split(", ")
+            print(list)
+            for value in list:
+                value = float(value)
+                sum_values = sum_values + value
+    
+    else:
+        print("item is None")
+        sum_values = None
+
+
+
+    delayDuration_total_sum.append(sum_values)
+
+
+
+df['flightLegs-irregularity-delayDuration-total']  = delayDuration_total_sum
+df.to_csv("afklm_flight_from_mongo_filtered.csv.gz", index = 0,na_rep = "",compression='gzip')
