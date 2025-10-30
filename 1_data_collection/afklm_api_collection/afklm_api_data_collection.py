@@ -5,7 +5,7 @@ Script for data mining on the AIr France KLM ""https://api.airfranceklm.com/open
 
 This script requires an afklm_api_keys.txt file containing the personal API keys (one on each line) to use to querry the API.
 
-An additional df_call_parameters.csv file can be provided to set up the parameters to querry. This csv should contain a dataframe precising all the combinations of values needed to be retrived (one querry for each row of the datafrane)
+An additional df_call_parameters.csv file can be provided to set up the parameters to query. This csv should contain a dataframe precising all the combinations of values needed to be retrived (one querry for each row of the datafrane)
 
 The script will iterate over:
 - each row of the dataframe for the parameters (or use a single set of default values if no csv provided)
@@ -44,7 +44,7 @@ api_key_list_folder = "api_keys"
 
 
 
-max_page_to_fetch = 1
+max_page_to_fetch = 100000
 pageNumberStart = 0
 page_max = 100000 # Will automatically be adjusted after having retrived the fist page 
 refresh_stats = False
@@ -194,7 +194,7 @@ for call_parameter_csv in call_parameter_csv_list :
     for i in range(0, len(df_call_parameters)): 
         
         print("")
-        
+
         
         
         df_subset = df_call_parameters.iloc[[i]].copy(deep = True).reset_index().drop(['index'], axis = 1) # parameters for the current querry
@@ -245,31 +245,30 @@ for call_parameter_csv in call_parameter_csv_list :
             break
 
 
-        
-
-
         ### Loop until reached desired number of pages or max nb of pages to fetch for the query
         
         while (pageNumber + 1 <= page_max) & (pageNumber + 1 <= max_page_to_fetch): 
             
-            
-
-            
             json_to_make = f"afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json"
 
-            
-            
-            
             if (json_to_make in json_list)|(json_to_make+'.gz' in json_list)  : # skip current query if corresponding json already present
                 print(Fore.BLUE +f"Page {pageNumber} : skipped because already retrieved")
                 
-                
-                
-
                 pageNumber = pageNumber + 1
                 continue
-
+            
+            if (df_subset['totalPages'].values != '' )& (float(df_subset['totalPages'].item()) > 0 ) & (float(df_subset['totalPages'].item()) < pageNumber +1) :
                 
+                print(Fore.BLUE +f"All pages already retrieved")
+                
+                df_subset.loc[0,['nb_of_pages_already_retrieved']] = df_subset.loc[0,['totalPages']].item()
+                df_subset.loc[0,['completion']] = 100
+                df_call_parameters_new = pd.concat([df_call_parameters_new,df_subset],ignore_index=True)
+                df_call_parameters_new = df_call_parameters_new.drop_duplicates(subset=parameter_list, keep='last')
+                df_call_parameters_new.fillna('').to_csv(path_call_parameter_file_folder+"/"+call_parameter_csv, index=0)
+                
+                break
+
 
             API_key = API_key_list_cleaned[API_key_counter]
             
@@ -316,6 +315,7 @@ for call_parameter_csv in call_parameter_csv_list :
 
                 
                 print(Fore.GREEN +f"Page {pageNumber} : retrieval OK"+ Fore.RESET +f"    Total: {page_max} , Max: {max_page_to_fetch} ")
+                
 
                 if  df_subset['nb_of_pages_already_retrieved'].item() == '': # Check info already present in df_call_parameters.csv  
 
@@ -332,7 +332,7 @@ for call_parameter_csv in call_parameter_csv_list :
                 df_subset.loc[0,['totalPages']] = f"{(page_max):.0f}" 
                 df_subset.loc[0,['totalFlights']] = f"{(fullCount):.0f}" 
                 
-                df_subset.loc[0,['completion']] = f"{100*(pageNumber+1)/page_max:.0f}%"
+                df_subset.loc[0,['completion']] = f"{100*(pageNumber+1)/page_max:.0f}"
                 df_subset.loc[0,['message']] = ""
                 
                 
@@ -377,13 +377,18 @@ for call_parameter_csv in call_parameter_csv_list :
             break
         
         
+'''
+
+
+
+        
         ### Update with new dates when all pages of current parameter file retrived or failed
             
         df_call_parameters = pd.read_csv(path_call_parameter_file_folder+"/"+call_parameter_csv).fillna('')
 
         df_call_parameters_date_update = df_call_parameters.query('response == "<Response [200]>"').sort_values(['endRange'],ascending=False).groupby('call_parameters').head(1)
             
-        if len(df_call_parameters_date_update.query('completion != "100%"')) == 0:
+        if len(df_call_parameters_date_update.query('completion != "100"')) == 0:
 
             df_call_parameters_date_update['startRange']= df_call_parameters_date_update['endRange'].map(lambda x: ((datetime.datetime.fromisoformat(x) +datetime.timedelta(0,1)).isoformat(timespec='seconds') + "Z").replace("+00:00","") )
             df_call_parameters_date_update['endRange']= datetime.datetime.now().isoformat(timespec='seconds') + "Z"
@@ -393,3 +398,4 @@ for call_parameter_csv in call_parameter_csv_list :
             df_call_parameters_new = pd.concat([df_call_parameters, df_call_parameters_date_update],ignore_index=True).fillna('').sort_values(['startRange','endRange','response'])
             df_call_parameters_new.fillna('').to_csv(path_call_parameter_file_folder+"/"+call_parameter_csv, index=0)
 
+'''
