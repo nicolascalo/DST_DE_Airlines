@@ -5,7 +5,8 @@ import pandas as pd
 import re
 import os
 from colorama import Fore, Style
-
+import gzip
+import json
 
 ### Script parameters
 
@@ -15,6 +16,7 @@ path_call_parameter_csv_root = "df_call_parameters"
 
 
 
+non_parameters = ["call_parameters",'response', 'message', 'timestamp', 'nb_of_pages_already_retrieved', 'totalPages', 'completion','totalFlights']
 
 
 
@@ -52,9 +54,9 @@ for call_parameter_csv in call_parameter_csv_list :
 
     ### Import query parameters
     
-    df_call_parameters = pd.read_csv(call_parameter_lists+"/"+call_parameter_csv").fillna('')
+    df_call_parameters = pd.read_csv(path_call_parameter_files + "/" + call_parameter_csv).fillna('')
     
-    dict_call_parameters_test = df_call_parameters.drop(non_parameters,axis=1)
+    df_call_parameters = df_call_parameters.drop(non_parameters,axis=1)
     
     
     call_parameters_list = []
@@ -75,63 +77,70 @@ for call_parameter_csv in call_parameter_csv_list :
 
     ### Refresh stats completion
 
-    if refresh_stats:
+
         
-        json_list_no_gzip = [val for val in json_list if 'gzip' not in val]
+    json_list = [val for val in json_list if '.json.gz' in val]
+    
+    df_json_list = pd.DataFrame({"index":range(0,len(json_list)), 'json_file':json_list})
+    
+    
+    json_param_list = [re.sub("afklm_api_data_collection_","",json) for json in json_list]
+    json_param_list = [re.sub("Z_.*","Z",json) for json in json_param_list]
+    json_param_list = [re.sub("_",":",json) for json in json_param_list]
+    
+    df_json_list['call_parameters'] = json_param_list
+    
+    
+    json_pages = [re.sub(".*_","",json) for json in json_list]
+    json_pages = [re.sub("\\..*","",json) for json in json_pages]
+    df_json_list['page'] = json_pages
+    
+    df_retrived_nb = df_json_list['call_parameters'].value_counts().rename_axis('call_parameters').reset_index(name='nb_of_pages_already_retrieved')
+    df_retrived_nb['nb_of_pages_already_retrieved'] = df_retrived_nb['nb_of_pages_already_retrieved'].astype('int')
+    
+    max_page_list = []
+    totalFlights_list = []
+    
+    df_single_file_list = df_json_list.groupby('call_parameters').head(1).copy(deep= True)
+    
+    
+    
+    
+    for json_file in df_single_file_list['json_file'].values:
         
-        df_json_list_no_gzip = pd.DataFrame({"index":range(0,len(json_list_no_gzip)), 'json_file':json_list_no_gzip})
         
-        
-        json_param_list = [re.sub("afklm_api_data_collection_","",json) for json in json_list_no_gzip]
-        json_param_list = [re.sub("Z_.*","Z",json) for json in json_param_list]
-        json_param_list = [re.sub("_",":",json) for json in json_param_list]
-        
-        df_json_list_no_gzip['call_parameters'] = json_param_list
-        
-        
-        json_pages = [re.sub(".*_","",json) for json in json_list_no_gzip]
-        json_pages = [re.sub("\\..*","",json) for json in json_pages]
-        df_json_list_no_gzip['page'] = json_pages
-        
-        df_retrived_nb = df_json_list_no_gzip['call_parameters'].value_counts().rename_axis('call_parameters').reset_index(name='nb_of_pages_already_retrieved')
-        df_retrived_nb['nb_of_pages_already_retrieved'] = df_retrived_nb['nb_of_pages_already_retrieved'].astype('int')
-        
-        max_page_list = []
-        totalFlights_list = []
-        
-        df_single_file_list = df_json_list_no_gzip.groupby('call_parameters').head(1).copy(deep= True)
-        
-        
-        
-        
-        for json_file in df_single_file_list['json_file'].values:
+        with  gzip.open(f"{path_data_storage}/" + json_file) as json_file:
+            
+            data = json.load(json_file)
+            page_max =  data['page']['totalPages']
+            max_page_list.append(page_max)
+            totalFlights =  data['page']['fullCount']
+            totalFlights_list.append(totalFlights)
             
             
-            with open(f"{path_data_storage}/" + json_file) as json_file:
-                data = json.load(json_file)
-                page_max =  data['page']['totalPages']
-                max_page_list.append(page_max)
-                totalFlights =  data['page']['fullCount']
-                totalFlights_list.append(totalFlights)
-                
-                
 
 
-        df_single_file_list['totalPages'] = max_page_list
-        df_single_file_list['totalPages'] = df_single_file_list['totalPages'].astype('int')
-        df_single_file_list['totalFlights'] = totalFlights_list
-        df_single_file_list['totalFlights'] = df_single_file_list['totalFlights'].astype('int')
-        
-        
-        
-        
-        df_call_parameters_updated = df_call_parameters.drop(['nb_of_pages_already_retrieved','totalPages','totalFlights','completion','response','message'],axis = 1,errors='ignore').merge(df_single_file_list.drop(['page','json_file','index'], axis = 1), how= 'inner').merge(df_retrived_nb, how= 'inner')
-        
-        df_call_parameters_updated['completion'] = (100 * df_call_parameters_updated['nb_of_pages_already_retrieved'].values  / df_call_parameters_updated['totalPages'].values ).round(0)
-        df_call_parameters_updated['completion'] = df_call_parameters_updated['completion'].astype('int').astype('str').replace(".0","")+"%"
-        
-        
-        df_call_parameters_updated['response'] = '<Response [200]>'
+    df_single_file_list['totalPages'] = max_page_list
+    df_single_file_list['totalPages'] = df_single_file_list['totalPages'].astype('int')
+    df_single_file_list['totalFlights'] = totalFlights_list
+    df_single_file_list['totalFlights'] = df_single_file_list['totalFlights'].astype('int')
+    
+    
+    
+    
+    df_call_parameters_updated = df_call_parameters.drop(['nb_of_pages_already_retrieved','totalPages','totalFlights','completion','response','message'],axis = 1,errors='ignore').merge(df_single_file_list.drop(['page','json_file','index'], axis = 1), how= 'inner').merge(df_retrived_nb, how= 'inner')
+    
+    df_call_parameters_updated['completion'] = (100 * float(df_call_parameters_updated['nb_of_pages_already_retrieved'].values)  / df_call_parameters_updated['totalPages'].values ).round(0)
+    df_call_parameters_updated['completion'] = df_call_parameters_updated['completion'].astype('float')
+    
+    
+    df_call_parameters_updated['response'] = '<Response [200]>'
+    
+    
+    
+    df_call_parameters_final = pd.concat([df_call_parameters,df_call_parameters_updated]).drop_duplicates(subset='call_parameters', keep='last').sort_values(['completion'], na_position='first')
+    
+    df_call_parameters_final.to_csv(path_call_parameter_files + "/" + call_parameter_csv, index=0)
         
 
         
