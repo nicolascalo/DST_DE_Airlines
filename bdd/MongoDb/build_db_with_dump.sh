@@ -40,14 +40,6 @@ wait_for_mongodb()
 }
 
 
-docker_up()
- {  
-    if [ -z "$(docker ps -a --filter "name=^${CONTAINER_NAME}$" --format "{{.Names}}")" ]; then  
-        docker-compose up -d
-    else
-        echo "Container docker $CONTAINER_NAME is already up"
-    fi
-}
 
 is_valid_file()
  {  
@@ -90,7 +82,7 @@ main()
        
  
     else
-        docker_up "$CONTAINER_NAME"
+        docker-compose up -d
         if ! wait_for_mongodb; then
             exit 1
         fi
