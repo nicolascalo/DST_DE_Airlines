@@ -1,3 +1,12 @@
+#!/bin/bash
+
+cd "$(dirname "$0")"
+
+source venv/bin/activate
 
 
-./venv/bin/uvicorn mongo_db_interaction.api:app --reload
+
+export PYTHONPATH="$PWD:$PYTHONPATH"
+
+
+uvicorn mongo_db_interaction.api:app --reload
