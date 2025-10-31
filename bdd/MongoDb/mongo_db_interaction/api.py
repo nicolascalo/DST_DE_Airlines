@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException, Response
 from fastapi.responses import StreamingResponse
 from datetime import datetime
 import subprocess
-from SERIALIZER.utils import mongo_to_json
+from .SERIALIZER.utils import mongo_to_json
 from USE_CASES.get_by_id_flight import get_by_id_flight
 from USE_CASES.count_documents_by_collection import count_documents_by_collection
 from USE_CASES.format_for_tabular_data import format_for_tabular_data
@@ -26,18 +26,14 @@ def read_flight(id: str):
 
 @app.get("/all/flights/")
 def read_flight(nb_flights: int):
-    flights, filename = format_for_tabular_data(nb_flights)
-    if flights is None:
+    csv_content, filename = format_for_tabular_data(nb_flights)
+    if csv_content is None:
         raise HTTPException(status_code=404, detail="flight not found")
-    
-    stream = io.StringIO()
-    flights.to_csv(stream, index=False)
-    stream.seek(0)
 
 
     return StreamingResponse(
-        iter([stream.getvalue()]),
-        media_type="text/csv",
+        iter([csv_content]),
+        media_type="application/gzip",
         headers={
             "Content-Disposition": f"attachment; filename={filename}"
         }
