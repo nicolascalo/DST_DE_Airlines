@@ -47,6 +47,7 @@ api_key_list_folder = "api_keys"
 max_page_to_fetch = 100000
 pageNumberStart = 0
 page_max = 100000 # Will automatically be adjusted after having retrived the fist page 
+
 refresh_stats = False
 time_delay_query = 1.5 # API limited to 1 call / s, 100 / day
 non_parameters = ["call_parameters",'response', 'message', 'timestamp', 'nb_of_pages_already_retrieved', 'totalPages', 'completion','totalFlights']
@@ -249,25 +250,69 @@ for call_parameter_csv in call_parameter_csv_list :
         
         while (pageNumber + 1 <= page_max) & (pageNumber + 1 <= max_page_to_fetch): 
             
-            json_to_make = f"afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}_{pageNumber}.json"
-
+            json_to_make_root = f"afklm_api_data_collection_{re.sub(":","_",call_parameters_url)}"
+            json_to_make = json_to_make_root + f"_{pageNumber}.json"
+            
+            
+            
+            df_totalPages = df_subset['totalPages']
+            df_item = df_subset['totalPages'].item()
+            df_values = df_subset['totalPages'].values
+            
+            
             if (json_to_make in json_list)|(json_to_make+'.gz' in json_list)  : # skip current query if corresponding json already present
-                print(Fore.BLUE +f"Page {pageNumber} : skipped because already retrieved")
+                if(df_item == ''):
+                    file_to_open = [file for file in json_list if json_to_make in file][0]
+                    
+                    if '.gz' in file_to_open:
+                        with  gzip.open(f"{path_data_storage}/" + file_to_open) as json_file:
+                            data = json.load(json_file)
+                        
+                    else:
+                        with  open(f"{path_data_storage}/" + file_to_open) as json_file:
+                            data = json.load(json_file)
+                    page_max =  data['page']['totalPages']
+                    df_subset.loc[0,['totalPages']] = page_max
+                    
+
+                    
+            
+            if (json_to_make in json_list)|(json_to_make+'.gz' in json_list)  : # skip current query if corresponding json already present
                 
+                
+                print(Fore.BLUE +f"Page {pageNumber} : skipped because already retrieved")
+                print(page_max)
+                print(pageNumber)
+                
+                
+                if (page_max == pageNumber + 1) :
+                
+                
+                    print(Fore.BLUE +f"All pages already retrieved")
+                    
+                    df_subset.loc[0,['nb_of_pages_already_retrieved']] = df_subset.loc[0,['totalPages']].item()
+                    df_subset.loc[0,['completion']] = 100
+                    df_call_parameters_new = pd.concat([df_call_parameters_new,df_subset],ignore_index=True)
+                    df_call_parameters_new = df_call_parameters_new.drop_duplicates(subset=parameter_list, keep='last')
+                    df_call_parameters_new.fillna('').to_csv(path_call_parameter_file_folder+"/"+call_parameter_csv, index=0)
                 pageNumber = pageNumber + 1
+                
+           
+                
                 continue
             
-            if (df_subset['totalPages'].values != '' )& (float(df_subset['totalPages'].item()) > 0 ) & (float(df_subset['totalPages'].item()) < pageNumber +1) :
+            df_totalPages = df_subset['totalPages']
+            df_item = df_subset['totalPages'].item()
+            df_values = df_subset['totalPages'].values
+            
+            current_total_pages = df_item
+
+            
+
+            
+
                 
-                print(Fore.BLUE +f"All pages already retrieved")
                 
-                df_subset.loc[0,['nb_of_pages_already_retrieved']] = df_subset.loc[0,['totalPages']].item()
-                df_subset.loc[0,['completion']] = 100
-                df_call_parameters_new = pd.concat([df_call_parameters_new,df_subset],ignore_index=True)
-                df_call_parameters_new = df_call_parameters_new.drop_duplicates(subset=parameter_list, keep='last')
-                df_call_parameters_new.fillna('').to_csv(path_call_parameter_file_folder+"/"+call_parameter_csv, index=0)
-                
-                break
 
 
             API_key = API_key_list_cleaned[API_key_counter]
@@ -398,4 +443,5 @@ for call_parameter_csv in call_parameter_csv_list :
             df_call_parameters_new = pd.concat([df_call_parameters, df_call_parameters_date_update],ignore_index=True).fillna('').sort_values(['startRange','endRange','response'])
             df_call_parameters_new.fillna('').to_csv(path_call_parameter_file_folder+"/"+call_parameter_csv, index=0)
 
-'''
+'''                    
+            
