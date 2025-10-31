@@ -2,10 +2,10 @@ from fastapi import FastAPI, HTTPException, Response
 from fastapi.responses import StreamingResponse
 from datetime import datetime
 import subprocess
-from SERIALIZER.utils import mongo_to_json
-from USE_CASES.get_by_id_flight import get_by_id_flight
-from USE_CASES.count_documents_by_collection import count_documents_by_collection
-from USE_CASES.format_for_tabular_data import format_for_tabular_data
+from mongo_db_interaction.SERIALIZER.utils import mongo_to_json
+from mongo_db_interaction.USE_CASES.get_by_id_flight import get_by_id_flight
+from mongo_db_interaction.USE_CASES.count_documents_by_collection import count_documents_by_collection
+from mongo_db_interaction.USE_CASES.format_for_tabular_data import format_for_tabular_data
 from dotenv import load_dotenv
 import os
 

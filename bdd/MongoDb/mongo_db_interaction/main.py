@@ -1,9 +1,9 @@
-from .USE_CASES.insert_operational_flights_uc import insert_operation_fly
-from .USE_CASES.insert_file_names import insert_file_name, is_file_name_exist
-from .USE_CASES.insert_compressed_file_name_uc import is_compressed_file_name_exist, insert_compressed_file_name
-from .SERVICES.exploitation_json import open_json, delete_page_object_in_json, is_json
-from .SERVICES.exploration_compressed_file import open_compressed_file
-from .SERVICES.folder_exploration import get_file_names_by_folder, get_folder_path_in_env, is_compressed_file
+from mongo_db_interaction.USE_CASES.insert_operational_flights_uc import insert_operation_fly
+from mongo_db_interaction.USE_CASES.insert_file_names import insert_file_name, is_file_name_exist
+from mongo_db_interaction.USE_CASES.insert_compressed_file_name_uc import is_compressed_file_name_exist, insert_compressed_file_name
+from mongo_db_interaction.SERVICES.exploitation_json import open_json, delete_page_object_in_json, is_json
+from mongo_db_interaction.SERVICES.exploration_compressed_file import open_compressed_file
+from mongo_db_interaction.SERVICES.folder_exploration import get_file_names_by_folder, get_folder_path_in_env, is_compressed_file
 import os
 from pathlib import Path
 

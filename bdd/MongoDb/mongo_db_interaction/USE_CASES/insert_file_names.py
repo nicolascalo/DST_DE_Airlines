@@ -1,4 +1,4 @@
-from ..REPOSITORIES.file_names import insert_one, get_by_name
+from mongo_db_interaction.REPOSITORIES.file_names import insert_one, get_by_name
 
 def insert_file_name(file_name):
     if is_file_name_exist(file_name) == False:
