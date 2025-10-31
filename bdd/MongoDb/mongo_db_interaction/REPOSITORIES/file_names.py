@@ -1,4 +1,4 @@
-from DB_CONTEXT.db_context import mongo_db_connect
+from mongo_db_interaction.DB_CONTEXT.db_context import mongo_db_connect
 
 
 collection = 'file_names'

@@ -1,5 +1,5 @@
 from queue import Full
-from ..REPOSITORIES.compressed_file_name import insert_one, get_by_compressed_file_name
+from mongo_db_interaction.REPOSITORIES.compressed_file_name import insert_one, get_by_compressed_file_name
 
 def insert_compressed_file_name(compressed_file_name):
     if is_compressed_file_name_exist(compressed_file_name) == False:

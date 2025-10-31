@@ -1,5 +1,5 @@
-from REPOSITORIES.flights import count_flight
-from REPOSITORIES.compressed_file_name import count_compressed_file_name
+from mongo_db_interaction.REPOSITORIES.flights import count_flight
+from mongo_db_interaction.REPOSITORIES.compressed_file_name import count_compressed_file_name
 
 def count_documents_by_collection():
     flights = count_flight()
