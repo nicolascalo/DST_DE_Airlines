@@ -37,6 +37,7 @@ def get_all(nb_flight_limit):
     {
     "$project": {
               
+              
 "id":"$id",
 "airline_code":"$airline.code",
 "airline_name":"$airline.name",
