@@ -281,9 +281,7 @@ for call_parameter_csv in call_parameter_csv_list :
                 
                 
                 print(Fore.BLUE +f"Page {pageNumber} : skipped because already retrieved")
-                print(page_max)
-                print(pageNumber)
-                
+
                 
                 if (page_max == pageNumber + 1) :
                 
