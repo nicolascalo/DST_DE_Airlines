@@ -130,7 +130,7 @@ for call_parameter_csv in call_parameter_csv_list :
     
     df_call_parameters_updated = df_call_parameters.drop(['nb_of_pages_already_retrieved','totalPages','totalFlights','completion','response','message'],axis = 1,errors='ignore').merge(df_single_file_list.drop(['page','json_file','index'], axis = 1), how= 'inner').merge(df_retrived_nb, how= 'inner')
     
-    df_call_parameters_updated['completion'] = (100 * float(df_call_parameters_updated['nb_of_pages_already_retrieved'].values)  / df_call_parameters_updated['totalPages'].values ).round(0)
+    df_call_parameters_updated['completion'] = (100 * (df_call_parameters_updated['nb_of_pages_already_retrieved'].astype(float).values)  / df_call_parameters_updated['totalPages'].astype(float).values ).round(0)
     df_call_parameters_updated['completion'] = df_call_parameters_updated['completion'].astype('float')
     
     
