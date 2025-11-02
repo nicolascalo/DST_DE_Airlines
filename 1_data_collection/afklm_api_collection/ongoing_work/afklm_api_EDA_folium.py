@@ -291,7 +291,7 @@ for origin_subcontinent, destination_subcontinent, startlat,startlong, endlat,  
     
 
 
-    # calculate line string along path with segments <= 1 km
+    # calculate line string along path with segments <= 1 kmf
     lonlats = g.npts(lon1 = startlong,
                     lat1 = startlat,
                     lon2 = endlong,
@@ -351,8 +351,7 @@ for key in location_airports_inter:
 # Add layers to the map
 
 
-folium.LayerControl().add_to(m)           
-
+folium.LayerControl(collapsed=False).add_to(m)    
 
 
 formatter = "function(num) {return L.Util.formatNum(num, 5);};"
