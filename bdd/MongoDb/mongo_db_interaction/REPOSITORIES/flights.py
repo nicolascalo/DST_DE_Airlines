@@ -74,7 +74,9 @@ def get_all(nb_flight_limit):
 "flightLegs_irregularity_delayReason":"$flightLegs.irregularity.delayReason",
 "flightLegs_scheduledFlightDuration":"$flightLegs.scheduledFlightDuration",
 "flightLegs_serviceType":"$flightLegs.serviceType",
+"flightLegs_serviceTypeName":"$flightLegs.serviceTypeName",
 "flightLegs_status":"$flightLegs.status",
+"flightLegs_statusName":"$flightLegs.statusName",
 "flightNumber":"$flightNumber",
 "flightStatusPublic":"$flightStatusPublic"
               }
