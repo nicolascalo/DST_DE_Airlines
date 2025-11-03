@@ -28,6 +28,9 @@ def get_file_names_by_folder(folder_path):
     file_names = os.listdir(folder_path)
     return file_names
 
+def remove_file(folder_path, file_name):
+
+    os.remove(folder_path+file_name)
 
 
 

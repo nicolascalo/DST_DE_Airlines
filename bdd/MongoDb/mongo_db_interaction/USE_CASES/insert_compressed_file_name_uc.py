@@ -10,6 +10,7 @@ def insert_compressed_file_name(compressed_file_name):
 def is_compressed_file_name_exist(compressed_file_name):
     file_name_collection = get_by_compressed_file_name(compressed_file_name)
     if file_name_collection == None:
+        print(compressed_file_name)
         return False
         
     else :
