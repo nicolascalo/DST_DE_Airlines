@@ -69,6 +69,7 @@ def get_all(nb_flight_limit):
 "flightLegs_departureInformation_times_scheduled":"$flightLegs.departureInformation.times.scheduled",
 "flightLegs_irregularity_delayDuration":"$flightLegs.irregularity.delayDuration",
 "flightLegs_irregularity_delayInformation_delayReasonPublicLong":"$flightLegs.irregularity.delayInformation.delayReasonPublicLong",
+"flightLegs_irregularity_delayInformation_delayCode":"$flightLegs.irregularity.delayInformation.delayCode",
 "flightLegs_irregularity_delayInformation_delayReasonPublicShort":"$flightLegs.irregularity.delayInformation.delayReasonPublicShort",
 "flightLegs_irregularity_delayReason":"$flightLegs.irregularity.delayReason",
 "flightLegs_scheduledFlightDuration":"$flightLegs.scheduledFlightDuration",
