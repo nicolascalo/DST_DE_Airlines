@@ -39,7 +39,9 @@ skip_previously_failed_flightNotFound = True
 skip_previously_failed_otherErrors = True
 api_key_list_folder = "api_keys"
 skip_complete = True
-add_new_dates_csv_parameters = False
+add_new_dates_csv_parameters = True
+
+future_days_to_retrive = 30
 
 max_daily_api_call = 100 # API limited to 1 call / s, 100 / day
 max_page_to_fetch = 100000
@@ -68,6 +70,55 @@ os.makedirs(path_data_storage, exist_ok=True)
 ### List of already retrieved data and parameter CSV files
 json_list = os.listdir(path_data_storage)
 call_parameter_csv_list = os.listdir(path_call_parameter_file_folder)
+
+if add_new_dates_csv_parameters:
+    for call_parameter_csv in call_parameter_csv_list:
+    
+    ### Update with new dates when all pages of current parameter file retrieved or failed
+    
+
+        df_call_parameters = pd.read_csv(path_call_parameter_file_folder + "/" + call_parameter_csv).fillna('').sort_values(['endRange','completion'])
+        df_call_parameters_root = df_call_parameters.drop(non_parameters,axis =1 ,errors='ignore').drop_duplicates()
+        
+        params = list(df_call_parameters_root.columns)
+        params.remove('startRange')
+        params.remove('endRange')
+        
+        df_call_parameters_root = df_call_parameters_root.drop('startRange',axis=1).groupby(params).max().reset_index()
+        
+        print(f"adding missing dates to {call_parameter_csv}")
+        for index, row in df_call_parameters_root.iterrows():
+            
+            endRange = str(row.endRange)
+            endRange = endRange.replace('Z','')
+
+            
+            while ((datetime.datetime.fromisoformat(endRange).date() - datetime.datetime.now().date() ).days) < future_days_to_retrive :
+            
+                row_new =  df_call_parameters_root.iloc[[index]].copy()
+                row_new['startRange'] = (datetime.datetime.fromisoformat(endRange) + datetime.timedelta(seconds=1)).isoformat() + "Z"
+                endRange = (datetime.datetime.fromisoformat(endRange) + datetime.timedelta(days=1)).isoformat()
+                row_new['endRange'] = endRange + "Z"
+                
+                with open(f"{path_call_parameter_file_folder + "/" + call_parameter_csv}","a") as f:
+                    row_new.to_csv(f, header=False,index = 0, lineterminator='\n')
+
+
+                endRange = row_new['endRange'].item().replace('Z','')
+                
+        
+        print(f"adding missing dates to {call_parameter_csv} over")
+        
+
+
+
+
+
+
+
+
+
+
 
 ### Load API keys
 API_key_list_cleaned = pd.DataFrame()
@@ -193,10 +244,7 @@ for index, record in API_key_list_cleaned.iterrows():
 
         print( f"Max number of pages to retrieve: {max_page_to_fetch} ")
 
-        if skip_complete:
-            df_call_parameters = df_call_parameters[df_call_parameters['completion'] != 100]
-            print( f"Skipping already completely retrieved API calls ")
-        
+
         print( f"Number of API call parameters to process = {len(df_call_parameters)}")
 
             
@@ -208,9 +256,12 @@ for index, record in API_key_list_cleaned.iterrows():
 
         ### Loop over the CSV file containing the parameter list to send to the API
         for i in range(0, len(df_call_parameters)):
+            to_test = float(df_call_parameters.iloc[[i]]['completion'].replace('','0').item())
             
+            if skip_complete & (to_test == 100):
+                continue
+                # print( f"Skipping already completely retrieved API calls ")
             print("")
-
             df_subset = df_call_parameters.iloc[[i]].copy(deep=True).reset_index().drop(['index'], axis=1)
             pageNumber = pageNumberStart  # first page is 1; page 0 returns same results
 
@@ -231,7 +282,7 @@ for index, record in API_key_list_cleaned.iterrows():
 
             print(Fore.RESET + f"{call_parameters_url}")
 
-
+            
 
 
             if skip_previously_failed_serverError & (int(match_error) >= 500):
@@ -299,6 +350,8 @@ for index, record in API_key_list_cleaned.iterrows():
                         df_subset.loc[0, ['nb_of_pages_already_retrieved']] = df_subset.loc[0, ['totalPages']].item()
                         df_subset.loc[0, ['completion']] = 100
                         df_subset.loc[0, ['timestamp']] = time_analysis
+
+                        df_subset.loc[0, ['call_parameters']] = call_parameters_url
                         df_call_parameters_new = pd.concat([df_call_parameters_new, df_subset], ignore_index=True)
                         df_call_parameters_new = df_call_parameters_new.drop_duplicates(subset=parameter_list, keep='last')
                         df_call_parameters_new.fillna('').sort_values(['endRange','completion']).to_csv(path_call_parameter_file_folder + "/" + call_parameter_csv, index=0)
@@ -393,44 +446,6 @@ for index, record in API_key_list_cleaned.iterrows():
                 break
 
         
-            ### Update with new dates when all pages of current parameter file retrieved or failed
-            
-            if add_new_dates_csv_parameters:
-                df_call_parameters = pd.read_csv(path_call_parameter_file_folder + "/" + call_parameter_csv).fillna('').sort_values(['endRange','completion'])
-                df_call_parameters_root = df_call_parameters.drop(non_parameters,axis =1 ,errors='ignore').drop_duplicates()
-                
-                params = list(df_call_parameters_root.columns)
-                params.remove('startRange')
-                params.remove('endRange')
-                
-                df_call_parameters_root = df_call_parameters_root.drop('startRange',axis=1).groupby(params).max().reset_index()
-                
-                df_call_parameters_new = pd.DataFrame()
-                
-                for index, row in df_call_parameters_root.iterrows():
-                    print(index)
-                    
-                    endRange = str(row.endRange)
-                    endRange = endRange.replace('Z','')
-
-                    
-                    while (datetime.datetime.fromisoformat(endRange).date() - datetime.datetime.now().date() ).days < 120 :
-                    
-                        row_new =  df_call_parameters_root.iloc[[index]].copy()
-                        row_new['startRange'] = (datetime.datetime.fromisoformat(endRange) + datetime.timedelta(seconds=1)).isoformat() + "Z"
-                        endRange = (datetime.datetime.fromisoformat(endRange) + datetime.timedelta(days=1)).isoformat()
-                        row_new['endRange'] = endRange + "Z"
-                        df_call_parameters_new = pd.concat([df_call_parameters_new, row_new], ignore_index=True)
-                        endRange = row_new['endRange'].item().replace('Z','')
-                
-                
-                
-                df_call_parameters_final = pd.concat([df_call_parameters,df_call_parameters_new]).sort_values(['startRange'])
-                
-                df_call_parameters_final.fillna('').sort_values(['endRange','completion']).to_csv(path_call_parameter_file_folder + "/" + call_parameter_csv, index=0)
-                    
-                
-            
             
 
 print(Style.RESET_ALL)
