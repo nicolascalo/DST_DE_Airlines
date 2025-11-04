@@ -6,7 +6,9 @@ This project provides tools to manage a MongoDB database for storing, importing,
 
 ## 📋 Requirements
 
-- **Docker Compose** 
+- **Python3.12**
+- **Docker version 28.5.1**
+- **Docker Compose 2.39.1** 
 - **mongodb-database-tools** (required for the `/dump/all` API route)
 
 ### 1. Initial Setup
@@ -14,6 +16,10 @@ Fill in the following configuration files:
 - `docker-compose.yml`: Required parameters are documented in [`docker-composestruct`](docker-composestruct).
 - `.env` (in `MongoDb/mongo_db_interaction/`): Required parameters are documented in [`envstruct`](envstruct).
 
+- Install the project
+```bash
+./setup.sh
+```
 ### 2. Install `mongodb-database-tools`
 To use the API route `http://<api_address>:<port>/dump/all`, install the MongoDB tools:
 
