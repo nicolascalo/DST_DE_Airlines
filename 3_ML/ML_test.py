@@ -8,6 +8,63 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, confusion_matrix, ConfusionMatrixDisplay
 import seaborn as sns
+import datetime
+
+
+cwd = os.getcwd()
+if cwd.endswith("DST_DE_Airlines"):
+    os.chdir("3_ML")
+elif cwd.endswith("1_data_collection"):
+    os.chdir("../3_ML")
+elif cwd.endswith("afklm_api_collection"):
+    os.chdir("../../3_ML")
+else:
+    script_path = os.path.dirname(os.path.realpath(__file__))
+    os.chdir(script_path)
+    
+
+
+df = pd.read_csv('afklm_flight_from_mongo_filtered_20251104-22-25-13_878683.csv')
+
+df.columns
+df.info()
+df.isnull().sum().sort_values()
+
+
+keywordsToDrop_all = ['id','airline_code','flightLegs_aircraft_ownerAirlineCode','actual','PositionTerminal','latestPublished']
+
+df_cleaned = df.dropna(subset=['flightStatusPublic']).drop(list(df.filter(regex = '|'.join(keywordsToDrop_all))), axis = 1)
+
+
+df_cleaned["flightLegs_scheduledFlightDuration"] = df_cleaned.apply(
+lambda row: ((datetime.datetime.fromisoformat(row.flightLegs_arrivalInformation_times_scheduled) - datetime.datetime.fromisoformat(row.flightLegs_departureInformation_times_scheduled)).seconds)/60,
+    axis=1
+)
+
+df_cleaned.columns
+df_cleaned.info()
+df_cleaned.isnull().sum()
+df_cleaned.isnull().sum().sort_values()
+
+
+keywordsToDrop_status = ['delayDuration',]
+
+
+df_status = df_cleaned.dropna(subset=['flightStatusPublic']).drop(list(df.filter(regex = '|'.join(keywordsToDrop_status))), axis = 1)
+
+
+keywordsToDrop_delay = ['']
+
+
+df_delay = df_cleaned.dropna(subset=['flightLegs_irregularity_delayDuration_total']).drop(list(df.filter(regex = '|'.join(keywordsToDrop_delay))), axis = 1)
+df_delay = df_delay[df_delay['flightLegs_irregularity_delayDuration_total'] > 0]
+df_delay.info()
+df_delay.isnull().sum()
+df_delay = df_delay.dropna()
+df_delay.info()
+df_delay.isnull().sum()
+
+
 
 df.count()
 
@@ -68,3 +125,15 @@ grid_search.fit(X_train, y_train)
 
 print("\nBest parameters found: ", grid_search.best_params_)
 print("Best cross-validation score: {:.2f}".format(grid_search.best_score_))
+
+
+
+
+
+
+
+
+
+
+
+

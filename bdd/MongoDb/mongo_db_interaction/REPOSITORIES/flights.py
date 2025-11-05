@@ -76,8 +76,8 @@ def get_all(nb_flight_limit):
 "flightLegs_serviceType":"$flightLegs.serviceType",
 "flightLegs_serviceTypeName":"$flightLegs.serviceTypeName",
 "flightLegs_status":"$flightLegs.status",
-"published_status":"$flightLegs.publishedStatus",
-"leg_status_public":"$flightLegs.legStatusPublic",
+"flightLegs_publishedStatus":"$flightLegs.publishedStatus",
+"flightLegs_legStatusPublic":"$flightLegs.legStatusPublic",
 "flightLegs_statusName":"$flightLegs.statusName",
 "flightNumber":"$flightNumber",
 "flightStatusPublic":"$flightStatusPublic"
