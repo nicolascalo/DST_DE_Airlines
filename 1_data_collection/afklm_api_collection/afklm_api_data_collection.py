@@ -41,10 +41,10 @@ api_key_list_folder = "api_keys"
 skip_complete = True
 add_new_dates_csv_parameters = True
 
-future_days_to_retrive = 30
+future_days_to_retrieve = 30
 
 max_daily_api_call = 100 # API limited to 1 call / s, 100 / day
-max_page_to_fetch = 100000
+max_page_to_fetch = 10000000000
 pageNumberStart = 0
 page_max = 100000  # Will auto-adjust after first page retrieved
 refresh_stats = False
@@ -59,11 +59,16 @@ pd.options.mode.chained_assignment = None  # suppress warnings
 
 ### Working directory adjustments
 cwd = os.getcwd()
+
+
 if cwd.endswith("DST_DE_Airlines"):
     os.chdir("1_data_collection/afklm_api_collection")
 elif cwd.endswith("1_data_collection"):
     os.chdir("afklm_api_collection")
-
+else:
+    script_path = os.path.dirname(os.path.realpath(__file__))
+    os.chdir(script_path)
+    
 ### Create folder for retrieved data
 os.makedirs(path_data_storage, exist_ok=True)
 
@@ -75,9 +80,10 @@ if add_new_dates_csv_parameters:
     for call_parameter_csv in call_parameter_csv_list:
     
     ### Update with new dates when all pages of current parameter file retrieved or failed
-    
+        print(f"adding missing dates to {call_parameter_csv}")
 
-        df_call_parameters = pd.read_csv(path_call_parameter_file_folder + "/" + call_parameter_csv).fillna('').sort_values(['endRange','completion'])
+        df_call_parameters = pd.read_csv(path_call_parameter_file_folder + "/" + call_parameter_csv,low_memory=False).fillna('').sort_values(['endRange','completion'])
+        
         df_call_parameters_root = df_call_parameters.drop(non_parameters,axis =1 ,errors='ignore').drop_duplicates()
         
         params = list(df_call_parameters_root.columns)
@@ -86,14 +92,13 @@ if add_new_dates_csv_parameters:
         
         df_call_parameters_root = df_call_parameters_root.drop('startRange',axis=1).groupby(params).max().reset_index()
         
-        print(f"adding missing dates to {call_parameter_csv}")
         for index, row in df_call_parameters_root.iterrows():
             
             endRange = str(row.endRange)
             endRange = endRange.replace('Z','')
 
             
-            while ((datetime.datetime.fromisoformat(endRange).date() - datetime.datetime.now().date() ).days) < future_days_to_retrive :
+            while ((datetime.datetime.fromisoformat(endRange).date() - datetime.datetime.now().date() ).days) < future_days_to_retrieve :
             
                 row_new =  df_call_parameters_root.iloc[[index]].copy()
                 row_new['startRange'] = (datetime.datetime.fromisoformat(endRange) + datetime.timedelta(seconds=1)).isoformat() + "Z"
@@ -124,7 +129,7 @@ if add_new_dates_csv_parameters:
 API_key_list_cleaned = pd.DataFrame()
 for file in os.listdir(api_key_list_folder):
     if file.endswith(".tsv"):
-        API_key_list = pd.read_csv(os.path.join(api_key_list_folder, file), delimiter="\t")
+        API_key_list = pd.read_csv(os.path.join(api_key_list_folder, file), delimiter="\t",low_memory=False)
         API_key_list_cleaned = pd.concat([API_key_list_cleaned, API_key_list], ignore_index=True)
 
 API_key_list_cleaned = (
@@ -132,7 +137,8 @@ API_key_list_cleaned = (
     .drop_duplicates(subset="api_key", keep="last")
 )
 
-API_key_list_cleaned["timestamp"].fillna(datetime.datetime.now().isoformat(), inplace=True)
+API_key_list_cleaned["timestamp"] = API_key_list_cleaned["timestamp"].fillna(datetime.datetime.now().isoformat())
+
 API_key_list_cleaned["nb_calls_today"] = API_key_list_cleaned.apply(
     lambda row: 0
     if (datetime.datetime.now().date() - datetime.datetime.fromisoformat(row["timestamp"]).date()).days > 0
@@ -180,7 +186,7 @@ for index, record in API_key_list_cleaned.iterrows():
         
         ### Import query parameters
         df_call_parameters = pd.read_csv(
-            path_call_parameter_file_folder + "/" + call_parameter_csv
+            path_call_parameter_file_folder + "/" + call_parameter_csv,low_memory=False
         ).fillna('')
 
         call_parameters_list = []
@@ -239,7 +245,7 @@ for index, record in API_key_list_cleaned.iterrows():
         df_call_parameters = pd.DataFrame(dict_call_parameters, index=[0])  # from defaults
 
         if os.path.isfile(path_call_parameter_file_folder + "/" + call_parameter_csv):
-            df_call_parameters = pd.read_csv(path_call_parameter_file_folder + "/" + call_parameter_csv).fillna('')
+            df_call_parameters = pd.read_csv(path_call_parameter_file_folder + "/" + call_parameter_csv,low_memory=False).fillna('')
 
 
         print( f"Max number of pages to retrieve: {max_page_to_fetch} ")
@@ -392,10 +398,10 @@ for index, record in API_key_list_cleaned.iterrows():
                     fullCount = data['page']['fullCount']
 
                     if "json" in output_format:
-                        with open(f"{path_data_storage}/afklm_api_data_collection_{re.sub(':','_',call_parameters_url)}_{pageNumber}.json", 'w', encoding='utf-8') as f:
+                        with open(f"{path_data_storage}/{json_to_make}", 'w', encoding='utf-8') as f:
                             json.dump(data, f, ensure_ascii=False, indent=4)
                     if "gzip" in output_format:
-                        with gzip.open(f"{path_data_storage}/afklm_api_data_collection_{re.sub(':','_',call_parameters_url)}_{pageNumber}.json.gz", 'wt', encoding='utf-8') as f:
+                        with gzip.open(f"{path_data_storage}/{json_to_make}.gz", 'wt', encoding='utf-8') as f:
                             json.dump(data, f, ensure_ascii=False, indent=4)
 
                     print(Fore.GREEN + f"Page {pageNumber} : retrieval OK" + Fore.RESET + f"    Total: {page_max}")
