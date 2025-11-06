@@ -74,7 +74,10 @@ os.makedirs(path_data_storage, exist_ok=True)
 
 ### List of already retrieved data and parameter CSV files
 json_list = os.listdir(path_data_storage)
+json_list.sort( )
+
 call_parameter_csv_list = os.listdir(path_call_parameter_file_folder)
+call_parameter_csv_list.sort()
 
 if add_new_dates_csv_parameters:
     for call_parameter_csv in call_parameter_csv_list:
