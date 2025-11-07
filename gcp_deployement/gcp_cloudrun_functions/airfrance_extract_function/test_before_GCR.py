@@ -328,6 +328,8 @@ for call_parameter_csv in call_parameter_csv_list :
                 df_call_parameters_new = df_call_parameters_new.drop_duplicates(subset=parameter_list, keep='last')
                 csv_buffer = BytesIO()
                 df_call_parameters_new.fillna('').to_csv(csv_buffer,encoding="utf-8", index=0)
+                call_parameter_csv_blob.upload_from_string(csv_buffer.getvalue(), content_type="text/csv")
+                logger.info("df_call_parameters.csv updated")
 
                 
                 pageNumber = pageNumber + 1
@@ -356,6 +358,8 @@ for call_parameter_csv in call_parameter_csv_list :
                 
                 csv_buffer = BytesIO()
                 df_call_parameters_new.fillna('').to_csv(csv_buffer,encoding="utf-8", index=0)
+                call_parameter_csv_blob.upload_from_string(csv_buffer.getvalue(), content_type="text/csv")
+                logger.info("df_call_parameters.csv updated")
 
                 break
             
@@ -380,3 +384,5 @@ for call_parameter_csv in call_parameter_csv_list :
         df_call_parameters_new = pd.concat([df_call_parameters, df_call_parameters_date_update],ignore_index=True).fillna('').sort_values(['startRange','endRange','response'])
         csv_buffer = BytesIO()
         df_call_parameters_new.fillna('').to_csv(csv_buffer,encoding="utf-8", index=0)
+        call_parameter_csv_blob.upload_from_string(csv_buffer.getvalue(), content_type="text/csv")
+        logger.info("df_call_parameters.csv updated")
