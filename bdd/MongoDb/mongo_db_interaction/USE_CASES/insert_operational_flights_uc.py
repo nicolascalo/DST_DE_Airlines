@@ -1,4 +1,4 @@
-from mongo_db_interaction.insert_flight_uc import insert_flight
+from insert_flight_uc import insert_flight
 
 
 def insert_operation_fly(json_file):

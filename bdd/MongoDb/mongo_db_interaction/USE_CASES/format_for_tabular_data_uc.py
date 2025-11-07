@@ -1,4 +1,4 @@
-from mongo_db_interaction.REPOSITORIES.flights import get_all
+from REPOSITORIES.flights import get_all
 import pandas as pd
 from datetime import datetime
 import gzip
