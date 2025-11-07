@@ -3,10 +3,9 @@ import os
 from dotenv import load_dotenv
 
 
-def is_compressed_file(file_name):
-    compression_extension = {'.zip', '.tar', '.gz', '.bz2', '.rar', '.7z', '.xz'}
-    extension = get_extension(file_name)
-    if extension in compression_extension :
+def is_gz_file(file_name):
+ 
+    if file_name.endswith(".gz"):
         return True
     else :
         print("Not compressed file")
