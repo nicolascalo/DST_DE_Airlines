@@ -11,7 +11,7 @@ from .folder_exploration import get_extension
 
 
 
-def open_gz_file_by_its_name(gz_file_name):
+def get_json_in_gz_file_by_its_name(gz_file_name):
 
  
     folder_path = get_folder_path_in_env()
@@ -32,4 +32,18 @@ def open_gz_file_by_its_name(gz_file_name):
         except json.JSONDecodeError as e:
             print("Json invalide : "+gz_file_name)
             return "invalid json"
+
+
+def get_collection_name_by_end_gz_file_name(gz_name):
+     
+    collection_name = ''
+    if gz_name.endswith("_sched.json.gz"):
+        collection_name = 'scheduled_flights'
+    elif gz_name.endswith("_updSchedD1.json.gz") :
+        collection_name = 'update_scheduled_d1_flights'
+    else:
+        collection_name = 'historic_flights'
+    return collection_name
+        
+
 

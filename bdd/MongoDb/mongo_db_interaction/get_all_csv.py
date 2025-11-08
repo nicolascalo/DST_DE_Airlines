@@ -1,4 +1,4 @@
-from mongo_db_interaction.USE_CASES.format_for_tabular_data import format_for_tabular_data
+from USE_CASES.format_for_tabular_data_uc import format_for_tabular_data
 import sys
 
 if len(sys.argv) < 2:
