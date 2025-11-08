@@ -239,6 +239,16 @@ def save_and_compress_json(path_data_storage:str,json_to_make:str, bucket = buck
     
     return None
 
+def delete_json(path_data_storage:str,json_to_make:str, bucket = bucket) -> None:      
+
+    if not in_cloud:
+        try:
+            os.remove(f"{path_data_storage}/{json_to_make}.gz")
+        except:
+            pass
+    
+    return None
+
 
 def open_json(path_data_storage:str,file_to_open:str, bucket = bucket) -> None:
 
@@ -350,15 +360,30 @@ if add_new_dates_csv_parameters :
                 endRange = (datetime.datetime.fromisoformat(endRange) + datetime.timedelta(days=1)).isoformat()
                 row_new['endRange'] = endRange + "Z"
                 
+                if in_cloud:
 
-                df_call_parameters = pd.concat([df_call_parameters, row_new], ignore_index=True)
+                    df_call_parameters = pd.concat([df_call_parameters, row_new], ignore_index=True)
+
+                    try:
+                        df_call_parameters = df_call_parameters.sort_values(['endRange','completion'])
+                    except:
+                        print("Columns endRange or completion not found in the dataframe")
+                        
+                    save_csv(df_call_parameters,
+                        path_folder = path_call_parameter_file_folder,
+                        path_file = call_parameter_csv)
+                    
+                    
+                            
+                else :      
+                    with open(f"{path_call_parameter_file_folder + "/" + call_parameter_csv}","a") as f:
+                        row_new.to_csv(f, header=False,index = 0, lineterminator='\n')
+
+
 
                 endRange = row_new['endRange'].item().replace('Z','')
                 
         
-        save_csv(df_call_parameters,
-            path_folder = path_call_parameter_file_folder,
-            path_file = call_parameter_csv)
 
 
         info_message(f"adding missing dates to {call_parameter_csv} over")
@@ -463,6 +488,12 @@ for index, record in API_key_list_cleaned.iterrows():
         df_call_parameters = import_csv(
             path_call_parameter_file_folder ,call_parameter_csv
         ).fillna('')
+        
+        try:
+            df_call_parameters = df_call_parameters.sort_values(['endRange','completion'])
+        except:
+            print("Columns endRange or completion not found in the dataframe")
+
 
         call_parameters_list = []
 
@@ -552,11 +583,16 @@ for index, record in API_key_list_cleaned.iterrows():
         ### Loop over the CSV file containing the parameter list to send to the API
         for i in range(0, len(df_call_parameters)):
             to_test = float(df_call_parameters.iloc[[i]]['completion'].replace('','0').item())
-            
-            if skip_complete & (to_test == 100):
-                continue
-            print("")
+
             df_subset = df_call_parameters.iloc[[i]].copy(deep=True).reset_index().drop(['index'], axis=1)
+            
+            date_diff = (datetime.datetime.fromisoformat(df_subset['startRange'].item()).date() - datetime.datetime.date(datetime.datetime.now())).days
+
+            if skip_complete & (((to_test == 100) & (date_diff <0)) | ((to_test == 66) & (date_diff  == 0)) | (((to_test == 33) & (date_diff >0)))):
+                continue 
+            
+            
+            print("")
             pageNumber = pageNumberStart  # first page is 1; page 0 returns same results
 
             ### Check if query parameter already tested and skip previously failed if chosen
@@ -606,7 +642,6 @@ for index, record in API_key_list_cleaned.iterrows():
                 json_to_make_root = f"afklm_api_data_collection_{re.sub(':', '_', call_parameters_url)}"
                 
                 
-                date_diff = (datetime.datetime.fromisoformat(df_subset['startRange'].item()).date() - datetime.datetime.date(datetime.datetime.now())).days
                 
                 if date_diff > 0:
                     json_to_make = json_to_make_root + f"_{pageNumber}_sched.json"
@@ -636,19 +671,36 @@ for index, record in API_key_list_cleaned.iterrows():
                     if (page_max == pageNumber + 1):
                         info_message(f"All pages already retrieved",'blue','info')
                         df_subset.loc[0, ['nb_of_pages_already_retrieved']] = df_subset.loc[0, ['totalPages']].item()
-                        df_subset.loc[0, ['completion']] = 100
+                        
+                        if date_diff < 0 :
+                            df_subset.loc[0, ['completion']] = 100
+                            delete_json(path_data_storage, json_to_make_root + f"_{pageNumber}_sched.json", bucket)
+                            delete_json(path_data_storage, json_to_make_root + f"_{pageNumber}_updSchedD1.json", bucket)
+                            
+                        elif date_diff == 0:
+                            df_subset.loc[0, ['completion']] = 66
+                            delete_json(path_data_storage, json_to_make_root + f"_{pageNumber}_sched.json", bucket)
+                        else:
+                            df_subset.loc[0, ['completion']] = 33
+                            
+                        
+                        
+                        
                         df_subset.loc[0, ['timestamp']] = time_analysis
 
                         df_subset.loc[0, ['call_parameters']] = call_parameters_url
                         df_call_parameters_new = pd.concat([df_call_parameters_new, df_subset], ignore_index=True)
                         df_call_parameters_new = df_call_parameters_new.drop_duplicates(subset=parameter_list, keep='last')
                         df_call_parameters_new = df_call_parameters_new.fillna('').sort_values(['endRange','completion'])
+                        
+                        
                         save_csv(
 
                             
                             df_call_parameters_new, path_folder=path_call_parameter_file_folder,path_file=call_parameter_csv, bucket = bucket
                              
                             )
+                        
                     pageNumber += 1
                     continue
 
@@ -703,7 +755,21 @@ for index, record in API_key_list_cleaned.iterrows():
                     df_subset.loc[0, ['response']] = str(response)
                     df_subset.loc[0, ['totalPages']] = float(f"{(page_max):.0f}")
                     df_subset.loc[0, ['totalFlights']] = float(f"{(fullCount):.0f}")
-                    df_subset.loc[0, ['completion']] = float(f"{100*(pageNumber+1)/page_max:.0f}")
+                    
+                    
+                    if date_diff < 0 :
+                        df_subset.loc[0, ['completion']] = float(f"{100*(pageNumber+1)/page_max:.0f}")
+                        
+                        delete_json(path_data_storage, json_to_make_root + f"_{pageNumber}_sched.json", bucket)
+                        delete_json(path_data_storage, json_to_make_root + f"_{pageNumber}_updSchedD1.json", bucket)
+       
+                    elif date_diff == 0:
+                        df_subset.loc[0, ['completion']] = float(f"{66*(pageNumber+1)/page_max:.0f}")
+                        delete_json(path_data_storage, json_to_make_root + f"_{pageNumber}_sched.json", bucket)
+                        
+                    else:
+                        df_subset.loc[0, ['completion']] = float(f"{33*(pageNumber+1)/page_max:.0f}")
+                        
                     df_subset.loc[0, ['message']] = ""
 
                     df_call_parameters_new = pd.concat([df_call_parameters_new, df_subset], ignore_index=True)
@@ -750,6 +816,11 @@ for index, record in API_key_list_cleaned.iterrows():
             
             if nb_calls_today == 100:
                 break
+        if nb_calls_today == 100:
+            break
+
+info_message("\nNo more API keys to test. All API key quotas consumed.",'red','warning')
+    
 
         
             
