@@ -2,7 +2,7 @@ from .SERVICES.folder_exploration import get_file_names_by_folder, get_folder_pa
 from .SERVICES.exploration_gz_file import get_json_in_gz_file_by_its_name, get_collection_name_by_end_gz_file_name
 from .SERVICES.exploitation_json import delete_page_object_in_json
 from .USE_CASES.insert_compressed_file_name_uc import insert_compressed_file_name
-from .REPOSITORIES.operational_flights import insert_one, delete_duplicates, move_to_flight_collection, delete_all_opreation_flights_collection
+from .REPOSITORIES.operational_flights import insert_one, delete_duplicates, move_to_dst_collection, delete_all_opreation_flights_collection, remove_past_flights_on_d1_collection, remove_duplicate_flights_from_scheduled
 import os
 from pathlib import Path
 def import_operationalflights_in_mongodb():
@@ -26,18 +26,27 @@ def import_operationalflights_in_mongodb():
                 insert_compressed_file_name(gz_file_name)
 
     
-        
-    dst_collections = ['historic_flights', 'update_scheduled_d1_flights','scheduled_flights']
-    for dst_collection in dst_collections:
-        org_collection = 'operation_flights'
-        move_to_flight_collection(org_collection, dst_collection)
+
+def clean():
+            
+    org_collections = ['historic_operational_flights', 'update_scheduled_d1_operational_flights','scheduled_operational_flights']
+    for org_collection in org_collections:
+        dst_collection = org_collection.replace("_operational_","_")
+        move_to_dst_collection(org_collection, dst_collection)
         delete_duplicates(dst_collection)
         delete_all_opreation_flights_collection(org_collection)
+    remove_duplicate_flights_from_scheduled()
+    remove_past_flights_on_d1_collection()
+    
+    
     
 
 
     
 import_operationalflights_in_mongodb()
+clean()
+
+
 
 
 

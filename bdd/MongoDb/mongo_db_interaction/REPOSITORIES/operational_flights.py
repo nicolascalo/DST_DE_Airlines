@@ -1,5 +1,5 @@
-from DB_CONTEXT.db_context import mongo_db_connect
-
+from mongo_db_interaction.DB_CONTEXT.db_context import mongo_db_connect
+from datetime import datetime
 
 collection = "operation_flights"
 flight_colleciton = "flights"
@@ -29,24 +29,55 @@ def delete_duplicates(collection_name):
         
 
 
-def move_to_flight_collection(org_collection, dst_collection):
-
- print("move to flights collection")
- mongo_db_connect[org_collection].aggregate([
-        {"$unwind": "$operationalFlights"},  
-        {"$replaceRoot": {"newRoot": "$operationalFlights"}},
-        {
-            "$merge": {
-                "into": dst_collection,
-                "whenMatched": "replace", 
-                "whenNotMatched": "insert"  
+def move_to_dst_collection(org_collection, dst_collection):
+    print("move to collection "+dst_collection)
+    mongo_db_connect[org_collection].aggregate([
+            {"$unwind": "$operationalFlights"},  
+            {"$replaceRoot": {"newRoot": "$operationalFlights"}},
+            {
+                "$merge": {
+                    "into": dst_collection,
+                    "whenMatched": "replace", 
+                    "whenNotMatched": "insert"  
+                }
             }
-        }
-    ])
+        ])
     
 def delete_all_opreation_flights_collection(collection_name):
-   print("drop")
-   mongo_db_connect[collection_name].drop()
+    print("drop")
+    mongo_db_connect[collection_name].drop()
+
+
+
+def remove_past_flights_on_d1_collection():
+    result = mongo_db_connect['update_scheduled_d1_flights'].delete_many({
+        "$expr": {
+            "$lt": [
+                {
+                    "$toDate": {
+                        "$arrayElemAt": ["$flightLegs.arrivalInformation.times.latestPublished", 0]
+                    }
+                },
+                datetime.now()
+            ]
+        }
+    })
+    print(f"nb d1 flights deleted : {result.deleted_count}")
+    return result.deleted_count
+    
+def remove_duplicate_flights_from_scheduled():
+    
+ 
+    ids_to_remove = mongo_db_connect['update_scheduled_d1_flights'].distinct("id")
+    
+
+    result = mongo_db_connect['scheduled_flights'].delete_many({
+        "id": {"$in": ids_to_remove}
+    })
+    print(f"nb scheduled_flights deleted : {result.deleted_count}")
+    return result.deleted_count
+
+
    
 
 
