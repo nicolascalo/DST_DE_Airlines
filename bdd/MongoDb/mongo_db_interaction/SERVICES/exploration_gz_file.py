@@ -38,11 +38,11 @@ def get_collection_name_by_end_gz_file_name(gz_name):
      
     collection_name = ''
     if gz_name.endswith("_sched.json.gz"):
-        collection_name = 'scheduled_flights'
+        collection_name = 'scheduled_operational_flights'
     elif gz_name.endswith("_updSchedD1.json.gz") :
-        collection_name = 'update_scheduled_d1_flights'
+        collection_name = 'update_scheduled_d1_operational_flights'
     else:
-        collection_name = 'historic_flights'
+        collection_name = 'historic_operational_flights'
     return collection_name
         
 

@@ -1,4 +1,4 @@
-from REPOSITORIES.flights import insert_one, get_by_id
+from mongo_db_interaction.REPOSITORIES.flights import insert_one, get_by_id
 
 def insert_flight(flight):
     id = flight['id']

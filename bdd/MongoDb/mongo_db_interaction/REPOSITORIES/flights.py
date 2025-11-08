@@ -1,6 +1,6 @@
-from DB_CONTEXT.db_context import mongo_db_connect
+from mongo_db_interaction.DB_CONTEXT.db_context import mongo_db_connect
 
-collection = "flights"
+collection = "historic_flights"
 
 def insert_one(flight):
     mongo_db_connect[collection].insert_one(flight)
@@ -25,8 +25,8 @@ def create_index():
     mongo_db_connect[collection].create_index([("id", 1)], unique=True)
 
 
-def count_flight():
-    return mongo_db_connect[collection].count_documents({})
+def count_flight(collection_name):
+    return mongo_db_connect[collection_name].count_documents({})
 
 
 def get_all(nb_flight_limit):
