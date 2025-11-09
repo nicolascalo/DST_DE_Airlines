@@ -481,7 +481,7 @@ for index, record in API_key_list_cleaned.iterrows():
 
         
         
-        info_message("#"*90+ "\n"+call_parameter_csv+ "\n"+"#"*90+ "\n")
+        info_message("\n".join(["#"*90,call_parameter_csv,"#"*90,""]))
 
         
         ### Import query parameters
@@ -500,8 +500,8 @@ for index, record in API_key_list_cleaned.iterrows():
         for i in range(len(df_call_parameters)):
             df_subset_parameter = df_call_parameters.iloc[[i]].to_dict(orient="list")
             call_parameters_url = "&".join(
-                [key + "=" + str(val[0]) for key, val in df_subset_parameter.items()
-                if val[0] != '' and val[0] != '[nan]']
+                ["=".join([key,str(val[0])]) for key, val in df_subset_parameter.items()
+                if val[0] and val[0] != '[nan]']
             )
             call_parameters_list.append(call_parameters_url)
 
@@ -644,11 +644,11 @@ for index, record in API_key_list_cleaned.iterrows():
                 
                 
                 if date_diff > 0:
-                    json_to_make = json_to_make_root + f"_{pageNumber}_sched.json"
+                    json_to_make = "".join([json_to_make_root, f"_{pageNumber}_sched.json"])
                 elif date_diff == 0:
-                    json_to_make = json_to_make_root + f"_{pageNumber}_updSchedD1.json"
+                    json_to_make = "".join([json_to_make_root , f"_{pageNumber}_updSchedD1.json"])
                 else:
-                    json_to_make = json_to_make_root + f"_{pageNumber}.json"
+                    json_to_make = "".join([json_to_make_root, f"_{pageNumber}.json"])
                     
 
                 df_totalPages = df_subset['totalPages']
@@ -658,7 +658,7 @@ for index, record in API_key_list_cleaned.iterrows():
 
                 # Skip current query if file already exists
                 if (json_to_make in json_list) | (json_to_make + '.gz' in json_list):
-                    if df_item == '':
+                    if not df_item :
                         info_message("loading page info from already retrieved files",'blue')
                         file_to_open = [file for file in json_list if json_to_make in file][0]
                         data = open_json(path_data_storage,file_to_open,bucket)
@@ -746,7 +746,7 @@ for index, record in API_key_list_cleaned.iterrows():
                     
                     info_message(f"Page {pageNumber} : retrieval OK    Total: {page_max}",'green','info')
 
-                    if df_subset['nb_of_pages_already_retrieved'].item() == '':
+                    if not df_subset['nb_of_pages_already_retrieved'].item() :
                         df_subset.loc[0, ['nb_of_pages_already_retrieved']] = 0
 
                     if int(pageNumber + 1) > int(df_subset['nb_of_pages_already_retrieved'].item()):
