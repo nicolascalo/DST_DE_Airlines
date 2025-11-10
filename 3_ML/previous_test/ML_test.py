@@ -138,6 +138,13 @@ df_cleaned_past.isnull().sum().sort_values()
 
 
 
+df_cleaned_past_euFromTo_single_airport_top30eu_euonly_euFromTo_single_airport_top30eu = df_cleaned_past_euFromTo_single_airport_top30eu_euonly[(df_cleaned_past_euFromTo_single_airport_top30eu_euonly['flightLegs_arrivalInformation_airport_code'].isin(top30euAirports))|(df_cleaned_past_euFromTo_single_airport_top30eu_euonly['flightLegs_departureInformation_airport_code'].isin(top30euAirports))]
+
+df_cleaned_past_euFromTo_single_airport_top30eu_euonly_euFromTo_single_airport_top30eu_euonly = df_cleaned_past_euFromTo_single_airport_top30eu_euonly[(df_cleaned_past_euFromTo_single_airport_top30eu_euonly['flightLegs_arrivalInformation_airport_code'].isin(euAirports)) & (df_cleaned_past_euFromTo_single_airport_top30eu_euonly['flightLegs_departureInformation_airport_code'].isin(euAirports))]
+
+
+
+
 
 keywordsToDrop_status = ['delay','country_code','flightNumber','flightLegs_legStatusPublic','airline_name','flightLegs_serviceType','status','Status','estimated']
 df_status = df_cleaned_past.drop(list(df.filter(regex = '|'.join(keywordsToDrop_status))), axis = 1,errors='ignore')
@@ -152,13 +159,6 @@ df_status = df_status.dropna()
 df_status.info()
 df_status.isnull().sum()
 df_status.isnull().sum().sort_values()
-
-
-df_status_euFromTo_single_airport_top30eu = df_status[(df_status['flightLegs_arrivalInformation_airport_code'].isin(top30euAirports))|(df_status['flightLegs_departureInformation_airport_code'].isin(top30euAirports))]
-
-df_status_euFromTo_single_airport_top30eu_euonly = df_status[(df_status['flightLegs_arrivalInformation_airport_code'].isin(euAirports)) & (df_status['flightLegs_departureInformation_airport_code'].isin(euAirports))]
-
-
 
 
 
@@ -217,8 +217,7 @@ def test_pipeline_classification(pipeline_descriptor:str,pipeline,  test_type:st
         param_grid = dict(pipeline[1])    
         pipeline_settings = pipeline[0]
         pipeline = GridSearchCV(pipeline_settings, param_grid, cv=cv, scoring='accuracy', verbose=2) 
-        test = GridSearchCV(pipeline_settings, param_grid, cv=cv, scoring='accuracy', verbose=2) 
-        test.fit(X_train, y_train)
+
     else:
         pipeline = pipeline[0]
     
@@ -290,8 +289,7 @@ def output_metrics_classification(pipeline_descriptor,pipeline):
 
     except Exception as e: 
         print(e)
-        logger.exception(e)
-        return {pipeline_descriptor:'FAILED'}
+
 
     
     logger.info(f"Saving confusion matrix of {pipeline_descriptor}_grid")
@@ -322,7 +320,7 @@ def output_metrics_classification(pipeline_descriptor,pipeline):
         plt.savefig(f'{pipeline_descriptor}_decisionTree.png')
     except Exception as e: 
         print(e)
-        logger.exception(e)
+        logger.info('Skipping tree')
 
         
         
@@ -425,7 +423,7 @@ pipeline_list_status_grid = {
         {
             'classifier__criterion': ['gini', 'entropy', 'log_loss'],
             'classifier__splitter': ['best', 'random'],
-            'classifier__max_depth': [2*n for n in range(1,10)],
+            'classifier__max_depth': [2*n for n in range(2,10)],
             'classifier__max_features': ['log2', 'sqrt', None],
             'classifier__min_samples_leaf': [1, 2, 4],
             'classifier__min_samples_split': [2, 5, 10]
@@ -512,12 +510,6 @@ df_delay = df_delay.dropna()
 df_delay.info()
 df_delay.isnull().sum()
 df_delay.isnull().sum().sort_values()
-
-
-
-df_delay_euFromTo_single_airport_top30eu = df_delay[(df_delay['flightLegs_arrivalInformation_airport_code'].isin(top30euAirports))|(df_delay['flightLegs_departureInformation_airport_code'].isin(top30euAirports))]
-
-df_delay_euFromTo_single_airport_top30eu_euonly = df_delay[(df_delay['flightLegs_arrivalInformation_airport_code'].isin(euAirports)) & (df_delay['flightLegs_departureInformation_airport_code'].isin(euAirports))]
 
 
 
@@ -673,15 +665,13 @@ pipeline_list_delay_rfc = {
 
 
 
-for pipeline_descriptor, pipeline in pipeline_list_delay_rfc = {
-.items():
+for pipeline_descriptor, pipeline in pipeline_list_delay_rfc.items():
     print(pipeline_descriptor)
     test_pipeline_classification(pipeline,pipeline_descriptor)
 
 
 
-for pipeline_descriptor, pipeline in pipeline_list_delay_rfc = {
-.items():
+for pipeline_descriptor, pipeline in pipeline_list_delay_rfc.items():
     print(pipeline_descriptor)
     test_pipeline_classification_grid(pipeline,pipeline_descriptor)
 

@@ -1,0 +1,33 @@
+2025-11-10 09:58:34,526 - __main__ - INFO - Starting ML script
+2025-11-10 10:00:06,534 - __main__ - INFO - Index(['airline_code', 'flightLegs_aircraft_typeCode',
+       'flightLegs_arrivalInformation_airport_city_country_areaCode',
+       'flightLegs_arrivalInformation_airport_city_country_code',
+       'flightLegs_arrivalInformation_airport_city_country_name',
+       'flightLegs_arrivalInformation_airport_code',
+       'flightLegs_arrivalInformation_airport_location_latitude',
+       'flightLegs_arrivalInformation_airport_location_longitude',
+       'flightLegs_arrivalInformation_times_scheduled',
+       'flightLegs_departureInformation_airport_city_country_areaCode',
+       'flightLegs_departureInformation_airport_city_country_code',
+       'flightLegs_departureInformation_airport_city_country_name',
+       'flightLegs_departureInformation_airport_code',
+       'flightLegs_departureInformation_airport_location_latitude',
+       'flightLegs_departureInformation_airport_location_longitude',
+       'flightLegs_departureInformation_times_scheduled',
+       'flightLegs_irregularity_delayDuration',
+       'flightLegs_irregularity_delayInformation_delayReasonPublicLong',
+       'flightLegs_irregularity_delayInformation_delayCode',
+       'flightLegs_irregularity_delayInformation_delayReasonPublicShort',
+       'flightLegs_irregularity_delayReason',
+       'flightLegs_scheduledFlightDuration', 'flightLegs_serviceType',
+       'flightLegs_serviceTypeName', 'flightLegs_status',
+       'flightLegs_publishedStatus', 'flightLegs_legStatusPublic',
+       'flightLegs_statusName', 'flightNumber', 'flightStatusPublic',
+       'flightLegs_arrivalInformation_times_estimated_value',
+       'flightLegs_irregularity_delayDuration_total', 'company_flight',
+       'flightLegs_Category'],
+      dtype='object')
+2025-11-10 10:00:52,088 - __main__ - INFO - None
+2025-11-10 10:01:08,232 - __main__ - INFO - None
+2025-11-10 12:42:35,439 - __main__ - INFO - Starting ML script with RUN_MODE=both, FILTER_EU=True, TOP30_EU=True, GRID_LEVEL=quick
+2025-11-10 12:42:48,134 - __main__ - INFO - Loaded dataset: afklm_flight_from_mongo_filtered_20251106-13-52-40_983317.csv, shape=(983317, 45)
