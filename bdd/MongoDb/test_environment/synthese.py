@@ -43,7 +43,7 @@ def analyse_irregularities_by(col_name):
     summary["% d'irrégularités"] = (
         summary["Vols avec irrégularité"] / summary["Total vols"] * 100
     ).round(2)
-# Affichage du top 10 pour le champ ownerAirLineCode
+# Affichage du top 10 pour le champ aircraft_ownerAirlineCode et aircraft_typeCode
     if col_name in ['flightLegs_aircraft_ownerAirlineCode','flightLegs_aircraft_typeCode']:
         summary = summary.sort_values(by="% d'irrégularités", ascending=False).head(10)
     print(f"\n=== Synthèse des irrégularités par {col_name} ===")
