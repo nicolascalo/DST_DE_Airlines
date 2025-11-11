@@ -46,7 +46,6 @@ import logging
 import google.cloud.logging
 from google.cloud.logging.handlers import CloudLoggingHandler
 import google
-import logging
 import google.cloud
 
 
