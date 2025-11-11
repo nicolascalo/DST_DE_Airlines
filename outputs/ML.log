@@ -1,0 +1,250 @@
+2025-11-10 13:59:38,882 - __main__ - INFO - Starting ML script
+2025-11-10 14:02:05,714 - __main__ - INFO - Loaded dataset: afklm_flight_from_mongo_filtered_20251106-13-52-40_983317.csv, shape=(983317, 45)
+2025-11-10 14:16:40,261 - __main__ - INFO - Starting ML script
+2025-11-10 14:16:53,030 - __main__ - INFO - Loaded dataset: afklm_flight_from_mongo_filtered_20251106-13-52-40_983317.csv, shape=(983317, 45)
+2025-11-10 14:41:08,228 - __main__ - INFO - Starting ML script
+2025-11-10 14:41:20,894 - __main__ - INFO - Loaded dataset: afklm_flight_from_mongo_filtered_20251106-13-52-40_983317.csv, shape=(983317, 45)
+2025-11-10 15:14:53,031 - __main__ - INFO - Starting ML script
+2025-11-10 15:15:04,399 - __main__ - INFO - Loaded dataset: afklm_flight_from_mongo_filtered_20251106-13-52-40_983317.csv, shape=(983317, 45)
+2025-11-10 15:15:06,598 - __main__ - INFO - Step: raw_data | shape: (983317, 45) | null values: 8933246
+2025-11-10 15:15:08,684 - __main__ - INFO - Extracting 'company_flight' from 'id' column
+2025-11-10 15:15:10,697 - __main__ - INFO - Dropping columns: ['id', 'airline_name', 'flightLegs_aircraft_ownerAirlineCode', 'actual', 'PositionTerminal', 'latestPublished'] and rows with missing 'flightStatusPublic'
+2025-11-10 15:15:14,172 - __main__ - INFO - Step: drop_na_and_unused_cols | shape: (983317, 33) | null values: 5427179
+2025-11-10 15:15:15,390 - __main__ - INFO - Computing 'scheduled' flag for flights
+2025-11-10 15:15:16,882 - __main__ - INFO - Computing 'flightLegs_scheduledFlightDuration' in minutes
+2025-11-10 15:15:37,857 - __main__ - INFO - Filtered past flights only, resulting shape: (946817, 34)
+2025-11-10 15:15:37,867 - __main__ - INFO - Filled missing 'flightLegs_irregularity_delayDuration_total' with 0
+2025-11-10 15:15:37,868 - __main__ - INFO - Categorizing flights into 'cancelled', 'late', 'on_time'
+2025-11-10 15:15:49,360 - __main__ - INFO - Step: categorize_flights | shape: (946817, 35) | null values: 4418830
+2025-11-10 15:15:50,677 - __main__ - INFO - Filtering flights to EU airports
+2025-11-10 15:15:51,019 - __main__ - INFO - Applying top 30 EU airports filter
+2025-11-10 15:15:51,893 - __main__ - INFO - Step: eu_filtering | shape: (487129, 35) | null values: 2028516
+2025-11-10 15:15:52,569 - __main__ - INFO - Saved dataset cleaning summary to 'outputs/dataset_summary/dataset_cleaning_summary.csv'
+2025-11-10 15:16:37,034 - __main__ - INFO - Preparing classification dataset
+2025-11-10 15:16:37,779 - __main__ - INFO - Classification dataset shape: X=(487129, 17), y=(487129,)
+2025-11-10 15:16:38,598 - __main__ - INFO - Classification train/test split: X_train=(389703, 17), X_test=(97426, 17), y_train=(389703,), y_test=(97426,)
+2025-11-10 15:16:38,599 - __main__ - INFO - Extracting features from dataset, target column: flightLegs_Category
+2025-11-10 15:16:38,674 - __main__ - INFO - Identified 5 numeric and 11 categorical features
+2025-11-10 15:20:12,218 - __main__ - INFO - Preparing classification dataset
+2025-11-10 15:20:12,788 - __main__ - INFO - Classification dataset shape: X=(487129, 17), y=(487129,)
+2025-11-10 15:20:13,569 - __main__ - INFO - Classification train/test split: X_train=(389703, 17), X_test=(97426, 17), y_train=(389703,), y_test=(97426,)
+2025-11-10 15:20:13,570 - __main__ - INFO - Extracting features from dataset, target column: flightLegs_Category
+2025-11-10 15:20:13,635 - __main__ - INFO - Identified 5 numeric and 11 categorical features
+2025-11-10 15:20:13,635 - __main__ - INFO - Numeric features: ['flightLegs_arrivalInformation_airport_location_latitude', 'flightLegs_arrivalInformation_airport_location_longitude', 'flightLegs_departureInformation_airport_location_latitude', 'flightLegs_departureInformation_airport_location_longitude', 'flightLegs_scheduledFlightDuration']
+2025-11-10 15:20:13,635 - __main__ - INFO - Categorical features: ['airline_code', 'flightLegs_aircraft_typeCode', 'flightLegs_arrivalInformation_airport_city_country_areaCode', 'flightLegs_arrivalInformation_airport_city_country_name', 'flightLegs_arrivalInformation_airport_code', 'flightLegs_arrivalInformation_times_scheduled', 'flightLegs_departureInformation_airport_city_country_areaCode', 'flightLegs_departureInformation_airport_city_country_name', 'flightLegs_departureInformation_airport_code', 'flightLegs_departureInformation_times_scheduled', 'company_flight']
+2025-11-10 15:20:18,404 - __main__ - INFO - Preparing classification dataset
+2025-11-10 15:20:18,966 - __main__ - INFO - Classification dataset shape: X=(487129, 17), y=(487129,)
+2025-11-10 15:20:19,758 - __main__ - INFO - Classification train/test split: X_train=(389703, 17), X_test=(97426, 17), y_train=(389703,), y_test=(97426,)
+2025-11-10 15:20:19,759 - __main__ - INFO - Extracting features from dataset, target column: flightLegs_Category
+2025-11-10 15:20:19,824 - __main__ - INFO - Identified 5 numeric and 11 categorical features
+2025-11-10 15:20:19,824 - __main__ - INFO - Numeric features: ['flightLegs_arrivalInformation_airport_location_latitude', 'flightLegs_arrivalInformation_airport_location_longitude', 'flightLegs_departureInformation_airport_location_latitude', 'flightLegs_departureInformation_airport_location_longitude', 'flightLegs_scheduledFlightDuration']
+2025-11-10 15:20:19,824 - __main__ - INFO - Categorical features: ['airline_code', 'flightLegs_aircraft_typeCode', 'flightLegs_arrivalInformation_airport_city_country_areaCode', 'flightLegs_arrivalInformation_airport_city_country_name', 'flightLegs_arrivalInformation_airport_code', 'flightLegs_arrivalInformation_times_scheduled', 'flightLegs_departureInformation_airport_city_country_areaCode', 'flightLegs_departureInformation_airport_city_country_name', 'flightLegs_departureInformation_airport_code', 'flightLegs_departureInformation_times_scheduled', 'company_flight']
+2025-11-10 15:23:06,618 - __main__ - INFO - Preparing classification dataset
+2025-11-10 15:23:07,184 - __main__ - INFO - Classification dataset shape: X=(487129, 17), y=(487129,)
+2025-11-10 15:23:07,957 - __main__ - INFO - Classification train/test split: X_train=(389703, 17), X_test=(97426, 17), y_train=(389703,), y_test=(97426,)
+2025-11-10 15:23:07,959 - __main__ - INFO - Extracting features from dataset, target column: flightLegs_Category
+2025-11-10 15:23:08,019 - __main__ - INFO - Identified 5 numeric and 11 categorical features
+2025-11-10 15:23:08,019 - __main__ - INFO - Numeric features: ['flightLegs_arrivalInformation_airport_location_latitude', 'flightLegs_arrivalInformation_airport_location_longitude', 'flightLegs_departureInformation_airport_location_latitude', 'flightLegs_departureInformation_airport_location_longitude', 'flightLegs_scheduledFlightDuration']
+2025-11-10 15:23:08,019 - __main__ - INFO - Categorical features: ['airline_code', 'flightLegs_aircraft_typeCode', 'flightLegs_arrivalInformation_airport_city_country_areaCode', 'flightLegs_arrivalInformation_airport_city_country_name', 'flightLegs_arrivalInformation_airport_code', 'flightLegs_arrivalInformation_times_scheduled', 'flightLegs_departureInformation_airport_city_country_areaCode', 'flightLegs_departureInformation_airport_city_country_name', 'flightLegs_departureInformation_airport_code', 'flightLegs_departureInformation_times_scheduled', 'company_flight']
+2025-11-10 15:23:08,024 - __main__ - INFO - Preparing regression dataset
+2025-11-10 15:23:08,562 - __main__ - INFO - Regression dataset shape: X=(175221, 19), y=(175221,)
+2025-11-10 15:23:08,692 - __main__ - INFO - Regression train/test split: X_train=(140176, 19), X_test=(35045, 19), y_train=(140176,), y_test=(35045,)
+2025-11-10 15:23:08,694 - __main__ - INFO - Extracting features from dataset, target column: flightLegs_irregularity_delayDuration_total
+2025-11-10 15:23:08,723 - __main__ - INFO - Identified 5 numeric and 13 categorical features
+2025-11-10 15:23:08,723 - __main__ - INFO - Numeric features: ['flightLegs_arrivalInformation_airport_location_latitude', 'flightLegs_arrivalInformation_airport_location_longitude', 'flightLegs_departureInformation_airport_location_latitude', 'flightLegs_departureInformation_airport_location_longitude', 'flightLegs_scheduledFlightDuration']
+2025-11-10 15:23:08,723 - __main__ - INFO - Categorical features: ['airline_code', 'flightLegs_aircraft_typeCode', 'flightLegs_arrivalInformation_airport_city_country_areaCode', 'flightLegs_arrivalInformation_airport_city_country_name', 'flightLegs_arrivalInformation_airport_code', 'flightLegs_arrivalInformation_times_scheduled', 'flightLegs_departureInformation_airport_city_country_areaCode', 'flightLegs_departureInformation_airport_city_country_name', 'flightLegs_departureInformation_airport_code', 'flightLegs_departureInformation_times_scheduled', 'flightLegs_irregularity_delayDuration', 'company_flight', 'flightLegs_Category']
+2025-11-10 15:23:32,446 - __main__ - INFO - ==== Starting classification pipeline: DecisionTree ====
+2025-11-10 15:23:32,447 - __main__ - INFO - Running simple mode for DecisionTree
+2025-11-10 15:23:32,447 - __main__ - INFO - Starting classification pipeline: DecisionTree | mode: simple
+2025-11-10 15:28:35,044 - __main__ - INFO - Starting ML script
+2025-11-10 15:28:45,735 - __main__ - INFO - Loaded dataset: afklm_flight_from_mongo_filtered_20251106-13-52-40_983317.csv, shape=(983317, 45)
+2025-11-10 15:28:47,451 - __main__ - INFO - Step: raw_data | shape: (983317, 45) | null values: 8933246
+2025-11-10 15:28:49,106 - __main__ - INFO - Extracting 'company_flight' from 'id' column
+2025-11-10 15:28:50,606 - __main__ - INFO - Dropping columns: ['id', 'airline_name', 'flightLegs_aircraft_ownerAirlineCode', 'actual', 'PositionTerminal', 'latestPublished'] and rows with missing 'flightStatusPublic'
+2025-11-10 15:28:53,292 - __main__ - INFO - Step: drop_na_and_unused_cols | shape: (983317, 33) | null values: 5427179
+2025-11-10 15:28:54,487 - __main__ - INFO - Computing 'scheduled' flag for flights
+2025-11-10 15:28:55,755 - __main__ - INFO - Computing 'flightLegs_scheduledFlightDuration' in minutes
+2025-11-10 15:29:12,140 - __main__ - INFO - Filtered past flights only, resulting shape: (946817, 34)
+2025-11-10 15:29:12,153 - __main__ - INFO - Filled missing 'flightLegs_irregularity_delayDuration_total' with 0
+2025-11-10 15:29:12,153 - __main__ - INFO - Categorizing flights into 'cancelled', 'late', 'on_time'
+2025-11-10 15:29:20,751 - __main__ - INFO - Step: categorize_flights | shape: (946817, 35) | null values: 4418830
+2025-11-10 15:29:21,740 - __main__ - INFO - Filtering flights to EU airports
+2025-11-10 15:29:22,019 - __main__ - INFO - Applying top 30 EU airports filter
+2025-11-10 15:29:22,773 - __main__ - INFO - Step: eu_filtering | shape: (487129, 35) | null values: 2028516
+2025-11-10 15:29:23,291 - __main__ - INFO - Saved dataset cleaning summary to 'outputs/dataset_summary/dataset_cleaning_summary.csv'
+2025-11-10 15:29:23,354 - __main__ - INFO - Preparing classification dataset
+2025-11-10 15:29:23,747 - __main__ - INFO - Classification dataset shape: X=(487129, 17), y=(487129,)
+2025-11-10 15:29:24,379 - __main__ - INFO - Classification train/test split: X_train=(389703, 17), X_test=(97426, 17), y_train=(389703,), y_test=(97426,)
+2025-11-10 15:29:24,380 - __main__ - INFO - Extracting features from dataset, target column: flightLegs_Category
+2025-11-10 15:29:24,430 - __main__ - INFO - Identified 5 numeric and 11 categorical features
+2025-11-10 15:29:24,430 - __main__ - INFO - Numeric features: ['flightLegs_arrivalInformation_airport_location_latitude', 'flightLegs_arrivalInformation_airport_location_longitude', 'flightLegs_departureInformation_airport_location_latitude', 'flightLegs_departureInformation_airport_location_longitude', 'flightLegs_scheduledFlightDuration']
+2025-11-10 15:29:24,430 - __main__ - INFO - Categorical features: ['airline_code', 'flightLegs_aircraft_typeCode', 'flightLegs_arrivalInformation_airport_city_country_areaCode', 'flightLegs_arrivalInformation_airport_city_country_name', 'flightLegs_arrivalInformation_airport_code', 'flightLegs_arrivalInformation_times_scheduled', 'flightLegs_departureInformation_airport_city_country_areaCode', 'flightLegs_departureInformation_airport_city_country_name', 'flightLegs_departureInformation_airport_code', 'flightLegs_departureInformation_times_scheduled', 'company_flight']
+2025-11-10 15:29:24,434 - __main__ - INFO - Preparing regression dataset
+2025-11-10 15:29:24,877 - __main__ - INFO - Regression dataset shape: X=(175221, 19), y=(175221,)
+2025-11-10 15:29:24,949 - __main__ - INFO - Regression train/test split: X_train=(140176, 19), X_test=(35045, 19), y_train=(140176,), y_test=(35045,)
+2025-11-10 15:29:24,950 - __main__ - INFO - Extracting features from dataset, target column: flightLegs_irregularity_delayDuration_total
+2025-11-10 15:29:24,975 - __main__ - INFO - Identified 5 numeric and 13 categorical features
+2025-11-10 15:29:24,975 - __main__ - INFO - Numeric features: ['flightLegs_arrivalInformation_airport_location_latitude', 'flightLegs_arrivalInformation_airport_location_longitude', 'flightLegs_departureInformation_airport_location_latitude', 'flightLegs_departureInformation_airport_location_longitude', 'flightLegs_scheduledFlightDuration']
+2025-11-10 15:29:24,975 - __main__ - INFO - Categorical features: ['airline_code', 'flightLegs_aircraft_typeCode', 'flightLegs_arrivalInformation_airport_city_country_areaCode', 'flightLegs_arrivalInformation_airport_city_country_name', 'flightLegs_arrivalInformation_airport_code', 'flightLegs_arrivalInformation_times_scheduled', 'flightLegs_departureInformation_airport_city_country_areaCode', 'flightLegs_departureInformation_airport_city_country_name', 'flightLegs_departureInformation_airport_code', 'flightLegs_departureInformation_times_scheduled', 'flightLegs_irregularity_delayDuration', 'company_flight', 'flightLegs_Category']
+2025-11-10 15:36:07,534 - __main__ - INFO - Starting ML script
+2025-11-10 15:36:17,606 - __main__ - INFO - Loaded dataset: afklm_flight_from_mongo_filtered_20251106-13-52-40_983317.csv, shape=(983317, 45)
+2025-11-10 15:36:19,417 - __main__ - INFO - Step: raw_data | shape: (983317, 45) | null values: 8933246
+2025-11-10 15:36:21,056 - __main__ - INFO - Extracting 'company_flight' from 'id' column
+2025-11-10 15:36:22,665 - __main__ - INFO - Dropping columns: ['id', 'airline_name', 'flightLegs_aircraft_ownerAirlineCode', 'actual', 'PositionTerminal', 'latestPublished'] and rows with missing 'flightStatusPublic'
+2025-11-10 15:36:25,699 - __main__ - INFO - Step: drop_na_and_unused_cols | shape: (983317, 33) | null values: 5427179
+2025-11-10 15:36:26,946 - __main__ - INFO - Computing 'scheduled' flag for flights
+2025-11-10 15:36:28,336 - __main__ - INFO - Computing 'flightLegs_scheduledFlightDuration' in minutes
+2025-11-10 15:36:44,435 - __main__ - INFO - Filtered past flights only, resulting shape: (946817, 34)
+2025-11-10 15:36:44,444 - __main__ - INFO - Filled missing 'flightLegs_irregularity_delayDuration_total' with 0
+2025-11-10 15:36:44,445 - __main__ - INFO - Categorizing flights into 'cancelled', 'late', 'on_time'
+2025-11-10 15:36:53,726 - __main__ - INFO - Step: categorize_flights | shape: (946817, 35) | null values: 4418830
+2025-11-10 15:36:54,820 - __main__ - INFO - Filtering flights to EU airports
+2025-11-10 15:36:55,143 - __main__ - INFO - Applying top 30 EU airports filter
+2025-11-10 15:36:55,921 - __main__ - INFO - Step: eu_filtering | shape: (487129, 35) | null values: 2028516
+2025-11-10 15:36:56,507 - __main__ - INFO - Saved dataset cleaning summary to 'outputs/dataset_summary/dataset_cleaning_summary.csv'
+2025-11-10 15:36:56,646 - __main__ - INFO - Preparing classification dataset
+2025-11-10 15:36:57,094 - __main__ - INFO - Classification dataset shape: X=(487129, 17), y=(487129,)
+2025-11-10 15:36:57,795 - __main__ - INFO - Classification train/test split: X_train=(389703, 17), X_test=(97426, 17), y_train=(389703,), y_test=(97426,)
+2025-11-10 15:36:57,796 - __main__ - INFO - Extracting features from dataset, target column: flightLegs_Category
+2025-11-10 15:36:57,852 - __main__ - INFO - Identified 5 numeric and 11 categorical features
+2025-11-10 15:36:57,852 - __main__ - INFO - Numeric features: ['flightLegs_arrivalInformation_airport_location_latitude', 'flightLegs_arrivalInformation_airport_location_longitude', 'flightLegs_departureInformation_airport_location_latitude', 'flightLegs_departureInformation_airport_location_longitude', 'flightLegs_scheduledFlightDuration']
+2025-11-10 15:36:57,852 - __main__ - INFO - Categorical features: ['airline_code', 'flightLegs_aircraft_typeCode', 'flightLegs_arrivalInformation_airport_city_country_areaCode', 'flightLegs_arrivalInformation_airport_city_country_name', 'flightLegs_arrivalInformation_airport_code', 'flightLegs_arrivalInformation_times_scheduled', 'flightLegs_departureInformation_airport_city_country_areaCode', 'flightLegs_departureInformation_airport_city_country_name', 'flightLegs_departureInformation_airport_code', 'flightLegs_departureInformation_times_scheduled', 'company_flight']
+2025-11-10 15:36:57,872 - __main__ - INFO - Preparing regression dataset
+2025-11-10 15:36:58,323 - __main__ - INFO - Regression dataset shape: X=(175221, 19), y=(175221,)
+2025-11-10 15:36:58,393 - __main__ - INFO - Regression train/test split: X_train=(140176, 19), X_test=(35045, 19), y_train=(140176,), y_test=(35045,)
+2025-11-10 15:36:58,394 - __main__ - INFO - Extracting features from dataset, target column: flightLegs_irregularity_delayDuration_total
+2025-11-10 15:36:58,419 - __main__ - INFO - Identified 5 numeric and 13 categorical features
+2025-11-10 15:36:58,419 - __main__ - INFO - Numeric features: ['flightLegs_arrivalInformation_airport_location_latitude', 'flightLegs_arrivalInformation_airport_location_longitude', 'flightLegs_departureInformation_airport_location_latitude', 'flightLegs_departureInformation_airport_location_longitude', 'flightLegs_scheduledFlightDuration']
+2025-11-10 15:36:58,419 - __main__ - INFO - Categorical features: ['airline_code', 'flightLegs_aircraft_typeCode', 'flightLegs_arrivalInformation_airport_city_country_areaCode', 'flightLegs_arrivalInformation_airport_city_country_name', 'flightLegs_arrivalInformation_airport_code', 'flightLegs_arrivalInformation_times_scheduled', 'flightLegs_departureInformation_airport_city_country_areaCode', 'flightLegs_departureInformation_airport_city_country_name', 'flightLegs_departureInformation_airport_code', 'flightLegs_departureInformation_times_scheduled', 'flightLegs_irregularity_delayDuration', 'company_flight', 'flightLegs_Category']
+2025-11-10 16:06:40,620 - __main__ - INFO - Starting ML script
+2025-11-10 16:06:40,653 - __main__ - INFO - Extracting 'company_flight' from 'id' column
+2025-11-10 16:06:40,656 - __main__ - INFO - Dropping columns: ['id', 'airline_name', 'flightLegs_aircraft_ownerAirlineCode', 'actual', 'PositionTerminal', 'latestPublished'] and rows with missing 'flightStatusPublic'
+2025-11-10 16:06:40,661 - __main__ - INFO - Computing 'scheduled' flag for flights
+2025-11-10 16:06:40,664 - __main__ - INFO - Computing 'flightLegs_scheduledFlightDuration' in minutes
+2025-11-10 16:06:40,673 - __main__ - INFO - Filled missing 'flightLegs_irregularity_delayDuration_total' with 0
+2025-11-10 16:06:40,675 - __main__ - INFO - Categorizing flights into 'cancelled', 'late', 'on_time'
+2025-11-10 16:06:40,690 - __main__ - INFO - Saved dataset cleaning summary to 'outputs/dataset_summary/dataset_cleaning_summary.csv'
+2025-11-10 16:06:43,894 - __main__ - INFO - Preparing classification dataset
+2025-11-10 16:06:44,247 - __main__ - INFO - Preparing regression dataset
+2025-11-10 16:07:14,913 - __main__ - INFO - Starting ML script
+2025-11-10 16:07:14,913 - __main__ - INFO - Starting ML script
+2025-11-10 16:07:27,716 - __main__ - INFO - Loaded dataset: afklm_flight_from_mongo_filtered_20251106-13-52-40_983317.csv, shape=(983317, 45)
+2025-11-10 16:07:27,716 - __main__ - INFO - Loaded dataset: afklm_flight_from_mongo_filtered_20251106-13-52-40_983317.csv, shape=(983317, 45)
+2025-11-10 16:07:29,479 - __main__ - INFO - Step: raw_data | shape: (983317, 45) | null values: 8933246
+2025-11-10 16:07:29,479 - __main__ - INFO - Step: raw_data | shape: (983317, 45) | null values: 8933246
+2025-11-10 16:07:31,253 - __main__ - INFO - Extracting 'company_flight' from 'id' column
+2025-11-10 16:07:31,253 - __main__ - INFO - Extracting 'company_flight' from 'id' column
+2025-11-10 16:07:32,700 - __main__ - INFO - Dropping columns: ['id', 'airline_name', 'flightLegs_aircraft_ownerAirlineCode', 'actual', 'PositionTerminal', 'latestPublished'] and rows with missing 'flightStatusPublic'
+2025-11-10 16:07:32,700 - __main__ - INFO - Dropping columns: ['id', 'airline_name', 'flightLegs_aircraft_ownerAirlineCode', 'actual', 'PositionTerminal', 'latestPublished'] and rows with missing 'flightStatusPublic'
+2025-11-10 16:07:35,442 - __main__ - INFO - Step: drop_na_and_unused_cols | shape: (983317, 33) | null values: 5427179
+2025-11-10 16:07:35,442 - __main__ - INFO - Step: drop_na_and_unused_cols | shape: (983317, 33) | null values: 5427179
+2025-11-10 16:07:36,625 - __main__ - INFO - Computing 'scheduled' flag for flights
+2025-11-10 16:07:36,625 - __main__ - INFO - Computing 'scheduled' flag for flights
+2025-11-10 16:07:37,873 - __main__ - INFO - Computing 'flightLegs_scheduledFlightDuration' in minutes
+2025-11-10 16:07:37,873 - __main__ - INFO - Computing 'flightLegs_scheduledFlightDuration' in minutes
+2025-11-10 16:07:55,534 - __main__ - INFO - Filtered past flights only, resulting shape: (946817, 34)
+2025-11-10 16:07:55,534 - __main__ - INFO - Filtered past flights only, resulting shape: (946817, 34)
+2025-11-10 16:07:55,543 - __main__ - INFO - Filled missing 'flightLegs_irregularity_delayDuration_total' with 0
+2025-11-10 16:07:55,543 - __main__ - INFO - Filled missing 'flightLegs_irregularity_delayDuration_total' with 0
+2025-11-10 16:07:55,544 - __main__ - INFO - Categorizing flights into 'cancelled', 'late', 'on_time'
+2025-11-10 16:07:55,544 - __main__ - INFO - Categorizing flights into 'cancelled', 'late', 'on_time'
+2025-11-10 16:08:05,101 - __main__ - INFO - Step: categorize_flights | shape: (946817, 35) | null values: 4418830
+2025-11-10 16:08:05,101 - __main__ - INFO - Step: categorize_flights | shape: (946817, 35) | null values: 4418830
+2025-11-10 16:08:06,194 - __main__ - INFO - Filtering flights to EU airports
+2025-11-10 16:08:06,194 - __main__ - INFO - Filtering flights to EU airports
+2025-11-10 16:08:06,527 - __main__ - INFO - Applying top 30 EU airports filter
+2025-11-10 16:08:06,527 - __main__ - INFO - Applying top 30 EU airports filter
+2025-11-10 16:08:07,333 - __main__ - INFO - Step: eu_filtering | shape: (487129, 35) | null values: 2028516
+2025-11-10 16:08:07,333 - __main__ - INFO - Step: eu_filtering | shape: (487129, 35) | null values: 2028516
+2025-11-10 16:08:07,928 - __main__ - INFO - Saved dataset cleaning summary to 'outputs/dataset_summary/dataset_cleaning_summary.csv'
+2025-11-10 16:08:07,928 - __main__ - INFO - Saved dataset cleaning summary to 'outputs/dataset_summary/dataset_cleaning_summary.csv'
+2025-11-10 16:08:40,547 - __main__ - INFO - Preparing classification dataset
+2025-11-10 16:08:40,547 - __main__ - INFO - Preparing classification dataset
+2025-11-10 16:08:41,040 - __main__ - INFO - Classification dataset shape: X=(487129, 17), y=(487129,)
+2025-11-10 16:08:41,040 - __main__ - INFO - Classification dataset shape: X=(487129, 17), y=(487129,)
+2025-11-10 16:08:41,887 - __main__ - INFO - Classification train/test split: X_train=(389703, 17), X_test=(97426, 17), y_train=(389703,), y_test=(97426,)
+2025-11-10 16:08:41,887 - __main__ - INFO - Classification train/test split: X_train=(389703, 17), X_test=(97426, 17), y_train=(389703,), y_test=(97426,)
+2025-11-10 16:08:41,889 - __main__ - INFO - Extracting features from dataset, target column: flightLegs_Category
+2025-11-10 16:08:41,889 - __main__ - INFO - Extracting features from dataset, target column: flightLegs_Category
+2025-11-10 16:08:41,945 - __main__ - INFO - Identified 5 numeric and 11 categorical features
+2025-11-10 16:08:41,945 - __main__ - INFO - Identified 5 numeric and 11 categorical features
+2025-11-10 16:08:41,945 - __main__ - INFO - Numeric features: ['flightLegs_arrivalInformation_airport_location_latitude', 'flightLegs_arrivalInformation_airport_location_longitude', 'flightLegs_departureInformation_airport_location_latitude', 'flightLegs_departureInformation_airport_location_longitude', 'flightLegs_scheduledFlightDuration']
+2025-11-10 16:08:41,945 - __main__ - INFO - Numeric features: ['flightLegs_arrivalInformation_airport_location_latitude', 'flightLegs_arrivalInformation_airport_location_longitude', 'flightLegs_departureInformation_airport_location_latitude', 'flightLegs_departureInformation_airport_location_longitude', 'flightLegs_scheduledFlightDuration']
+2025-11-10 16:08:41,946 - __main__ - INFO - Categorical features: ['airline_code', 'flightLegs_aircraft_typeCode', 'flightLegs_arrivalInformation_airport_city_country_areaCode', 'flightLegs_arrivalInformation_airport_city_country_name', 'flightLegs_arrivalInformation_airport_code', 'flightLegs_arrivalInformation_times_scheduled', 'flightLegs_departureInformation_airport_city_country_areaCode', 'flightLegs_departureInformation_airport_city_country_name', 'flightLegs_departureInformation_airport_code', 'flightLegs_departureInformation_times_scheduled', 'company_flight']
+2025-11-10 16:08:41,946 - __main__ - INFO - Categorical features: ['airline_code', 'flightLegs_aircraft_typeCode', 'flightLegs_arrivalInformation_airport_city_country_areaCode', 'flightLegs_arrivalInformation_airport_city_country_name', 'flightLegs_arrivalInformation_airport_code', 'flightLegs_arrivalInformation_times_scheduled', 'flightLegs_departureInformation_airport_city_country_areaCode', 'flightLegs_departureInformation_airport_city_country_name', 'flightLegs_departureInformation_airport_code', 'flightLegs_departureInformation_times_scheduled', 'company_flight']
+2025-11-10 16:08:41,950 - __main__ - INFO - Preparing regression dataset
+2025-11-10 16:08:41,950 - __main__ - INFO - Preparing regression dataset
+2025-11-10 16:08:42,425 - __main__ - INFO - Regression dataset shape: X=(175221, 19), y=(175221,)
+2025-11-10 16:08:42,425 - __main__ - INFO - Regression dataset shape: X=(175221, 19), y=(175221,)
+2025-11-10 16:08:42,499 - __main__ - INFO - Regression train/test split: X_train=(140176, 19), X_test=(35045, 19), y_train=(140176,), y_test=(35045,)
+2025-11-10 16:08:42,499 - __main__ - INFO - Regression train/test split: X_train=(140176, 19), X_test=(35045, 19), y_train=(140176,), y_test=(35045,)
+2025-11-10 16:08:42,500 - __main__ - INFO - Extracting features from dataset, target column: flightLegs_irregularity_delayDuration_total
+2025-11-10 16:08:42,500 - __main__ - INFO - Extracting features from dataset, target column: flightLegs_irregularity_delayDuration_total
+2025-11-10 16:08:42,525 - __main__ - INFO - Identified 5 numeric and 13 categorical features
+2025-11-10 16:08:42,525 - __main__ - INFO - Identified 5 numeric and 13 categorical features
+2025-11-10 16:08:42,525 - __main__ - INFO - Numeric features: ['flightLegs_arrivalInformation_airport_location_latitude', 'flightLegs_arrivalInformation_airport_location_longitude', 'flightLegs_departureInformation_airport_location_latitude', 'flightLegs_departureInformation_airport_location_longitude', 'flightLegs_scheduledFlightDuration']
+2025-11-10 16:08:42,525 - __main__ - INFO - Numeric features: ['flightLegs_arrivalInformation_airport_location_latitude', 'flightLegs_arrivalInformation_airport_location_longitude', 'flightLegs_departureInformation_airport_location_latitude', 'flightLegs_departureInformation_airport_location_longitude', 'flightLegs_scheduledFlightDuration']
+2025-11-10 16:08:42,525 - __main__ - INFO - Categorical features: ['airline_code', 'flightLegs_aircraft_typeCode', 'flightLegs_arrivalInformation_airport_city_country_areaCode', 'flightLegs_arrivalInformation_airport_city_country_name', 'flightLegs_arrivalInformation_airport_code', 'flightLegs_arrivalInformation_times_scheduled', 'flightLegs_departureInformation_airport_city_country_areaCode', 'flightLegs_departureInformation_airport_city_country_name', 'flightLegs_departureInformation_airport_code', 'flightLegs_departureInformation_times_scheduled', 'flightLegs_irregularity_delayDuration', 'company_flight', 'flightLegs_Category']
+2025-11-10 16:08:42,525 - __main__ - INFO - Categorical features: ['airline_code', 'flightLegs_aircraft_typeCode', 'flightLegs_arrivalInformation_airport_city_country_areaCode', 'flightLegs_arrivalInformation_airport_city_country_name', 'flightLegs_arrivalInformation_airport_code', 'flightLegs_arrivalInformation_times_scheduled', 'flightLegs_departureInformation_airport_city_country_areaCode', 'flightLegs_departureInformation_airport_city_country_name', 'flightLegs_departureInformation_airport_code', 'flightLegs_departureInformation_times_scheduled', 'flightLegs_irregularity_delayDuration', 'company_flight', 'flightLegs_Category']
+2025-11-10 16:09:26,883 - __main__ - INFO - Preparing classification dataset
+2025-11-10 16:09:26,883 - __main__ - INFO - Preparing classification dataset
+2025-11-10 16:09:27,372 - __main__ - INFO - Classification dataset shape: X=(487129, 17), y=(487129,)
+2025-11-10 16:09:27,372 - __main__ - INFO - Classification dataset shape: X=(487129, 17), y=(487129,)
+2025-11-10 16:09:28,107 - __main__ - INFO - Classification train/test split: X_train=(389703, 17), X_test=(97426, 17), y_train=(389703,), y_test=(97426,)
+2025-11-10 16:09:28,107 - __main__ - INFO - Classification train/test split: X_train=(389703, 17), X_test=(97426, 17), y_train=(389703,), y_test=(97426,)
+2025-11-10 16:09:28,109 - __main__ - INFO - Extracting features from dataset, target column: flightLegs_Category
+2025-11-10 16:09:28,109 - __main__ - INFO - Extracting features from dataset, target column: flightLegs_Category
+2025-11-10 16:09:28,172 - __main__ - INFO - Identified 5 numeric and 11 categorical features
+2025-11-10 16:09:28,172 - __main__ - INFO - Identified 5 numeric and 11 categorical features
+2025-11-10 16:09:28,172 - __main__ - INFO - Numeric features: ['flightLegs_arrivalInformation_airport_location_latitude', 'flightLegs_arrivalInformation_airport_location_longitude', 'flightLegs_departureInformation_airport_location_latitude', 'flightLegs_departureInformation_airport_location_longitude', 'flightLegs_scheduledFlightDuration']
+2025-11-10 16:09:28,172 - __main__ - INFO - Numeric features: ['flightLegs_arrivalInformation_airport_location_latitude', 'flightLegs_arrivalInformation_airport_location_longitude', 'flightLegs_departureInformation_airport_location_latitude', 'flightLegs_departureInformation_airport_location_longitude', 'flightLegs_scheduledFlightDuration']
+2025-11-10 16:09:28,172 - __main__ - INFO - Categorical features: ['airline_code', 'flightLegs_aircraft_typeCode', 'flightLegs_arrivalInformation_airport_city_country_areaCode', 'flightLegs_arrivalInformation_airport_city_country_name', 'flightLegs_arrivalInformation_airport_code', 'flightLegs_arrivalInformation_times_scheduled', 'flightLegs_departureInformation_airport_city_country_areaCode', 'flightLegs_departureInformation_airport_city_country_name', 'flightLegs_departureInformation_airport_code', 'flightLegs_departureInformation_times_scheduled', 'company_flight']
+2025-11-10 16:09:28,172 - __main__ - INFO - Categorical features: ['airline_code', 'flightLegs_aircraft_typeCode', 'flightLegs_arrivalInformation_airport_city_country_areaCode', 'flightLegs_arrivalInformation_airport_city_country_name', 'flightLegs_arrivalInformation_airport_code', 'flightLegs_arrivalInformation_times_scheduled', 'flightLegs_departureInformation_airport_city_country_areaCode', 'flightLegs_departureInformation_airport_city_country_name', 'flightLegs_departureInformation_airport_code', 'flightLegs_departureInformation_times_scheduled', 'company_flight']
+2025-11-10 16:09:28,176 - __main__ - INFO - Preparing regression dataset
+2025-11-10 16:09:28,176 - __main__ - INFO - Preparing regression dataset
+2025-11-10 16:09:28,681 - __main__ - INFO - Regression dataset shape: X=(175221, 19), y=(175221,)
+2025-11-10 16:09:28,681 - __main__ - INFO - Regression dataset shape: X=(175221, 19), y=(175221,)
+2025-11-10 16:09:28,781 - __main__ - INFO - Regression train/test split: X_train=(140176, 19), X_test=(35045, 19), y_train=(140176,), y_test=(35045,)
+2025-11-10 16:09:28,781 - __main__ - INFO - Regression train/test split: X_train=(140176, 19), X_test=(35045, 19), y_train=(140176,), y_test=(35045,)
+2025-11-10 16:09:28,782 - __main__ - INFO - Extracting features from dataset, target column: flightLegs_irregularity_delayDuration_total
+2025-11-10 16:09:28,782 - __main__ - INFO - Extracting features from dataset, target column: flightLegs_irregularity_delayDuration_total
+2025-11-10 16:09:28,808 - __main__ - INFO - Identified 5 numeric and 13 categorical features
+2025-11-10 16:09:28,808 - __main__ - INFO - Identified 5 numeric and 13 categorical features
+2025-11-10 16:09:28,808 - __main__ - INFO - Numeric features: ['flightLegs_arrivalInformation_airport_location_latitude', 'flightLegs_arrivalInformation_airport_location_longitude', 'flightLegs_departureInformation_airport_location_latitude', 'flightLegs_departureInformation_airport_location_longitude', 'flightLegs_scheduledFlightDuration']
+2025-11-10 16:09:28,808 - __main__ - INFO - Numeric features: ['flightLegs_arrivalInformation_airport_location_latitude', 'flightLegs_arrivalInformation_airport_location_longitude', 'flightLegs_departureInformation_airport_location_latitude', 'flightLegs_departureInformation_airport_location_longitude', 'flightLegs_scheduledFlightDuration']
+2025-11-10 16:09:28,808 - __main__ - INFO - Categorical features: ['airline_code', 'flightLegs_aircraft_typeCode', 'flightLegs_arrivalInformation_airport_city_country_areaCode', 'flightLegs_arrivalInformation_airport_city_country_name', 'flightLegs_arrivalInformation_airport_code', 'flightLegs_arrivalInformation_times_scheduled', 'flightLegs_departureInformation_airport_city_country_areaCode', 'flightLegs_departureInformation_airport_city_country_name', 'flightLegs_departureInformation_airport_code', 'flightLegs_departureInformation_times_scheduled', 'flightLegs_irregularity_delayDuration', 'company_flight', 'flightLegs_Category']
+2025-11-10 16:09:28,808 - __main__ - INFO - Categorical features: ['airline_code', 'flightLegs_aircraft_typeCode', 'flightLegs_arrivalInformation_airport_city_country_areaCode', 'flightLegs_arrivalInformation_airport_city_country_name', 'flightLegs_arrivalInformation_airport_code', 'flightLegs_arrivalInformation_times_scheduled', 'flightLegs_departureInformation_airport_city_country_areaCode', 'flightLegs_departureInformation_airport_city_country_name', 'flightLegs_departureInformation_airport_code', 'flightLegs_departureInformation_times_scheduled', 'flightLegs_irregularity_delayDuration', 'company_flight', 'flightLegs_Category']
+2025-11-11 10:02:01,945 - __main__ - INFO - ==== Starting ML script====
+2025-11-11 10:02:01,945 - __main__ - INFO - ==== Starting ML script====
+2025-11-11 10:02:01,951 - __main__ - INFO - Nb of cores: 6
+
+2025-11-11 10:02:01,951 - __main__ - INFO - Nb of cores: 6
+
+2025-11-11 10:02:17,480 - __main__ - INFO - Loaded dataset: afklm_flight_from_mongo_filtered_20251106-13-52-40_983317.csv, shape=(983317, 45)
+2025-11-11 10:02:17,480 - __main__ - INFO - Loaded dataset: afklm_flight_from_mongo_filtered_20251106-13-52-40_983317.csv, shape=(983317, 45)
+2025-11-11 10:02:19,396 - __main__ - INFO - Step: raw_data | shape: (983317, 45) | null values: 8933246
+2025-11-11 10:02:19,396 - __main__ - INFO - Step: raw_data | shape: (983317, 45) | null values: 8933246
+2025-11-11 10:02:21,133 - __main__ - INFO - Extracting 'company_flight' from 'id' column
+2025-11-11 10:02:21,133 - __main__ - INFO - Extracting 'company_flight' from 'id' column
+2025-11-11 10:02:22,632 - __main__ - INFO - Dropping columns: ['id', 'airline_name', 'flightLegs_aircraft_ownerAirlineCode', 'actual', 'PositionTerminal', 'latestPublished'] and rows with missing 'flightStatusPublic'
+2025-11-11 10:02:22,632 - __main__ - INFO - Dropping columns: ['id', 'airline_name', 'flightLegs_aircraft_ownerAirlineCode', 'actual', 'PositionTerminal', 'latestPublished'] and rows with missing 'flightStatusPublic'
+2025-11-11 10:02:25,827 - __main__ - INFO - Step: drop_na_and_unused_cols | shape: (983317, 33) | null values: 5427179
+2025-11-11 10:02:25,827 - __main__ - INFO - Step: drop_na_and_unused_cols | shape: (983317, 33) | null values: 5427179
+2025-11-11 10:02:26,967 - __main__ - INFO - Computing 'scheduled' flag for flights
+2025-11-11 10:02:26,967 - __main__ - INFO - Computing 'scheduled' flag for flights
+2025-11-11 10:02:28,224 - __main__ - INFO - Computing 'flightLegs_scheduledFlightDuration' in minutes
+2025-11-11 10:02:28,224 - __main__ - INFO - Computing 'flightLegs_scheduledFlightDuration' in minutes
+2025-11-11 10:02:46,839 - __main__ - INFO - Filtered past flights only, resulting shape: (949231, 34)
+2025-11-11 10:02:46,839 - __main__ - INFO - Filtered past flights only, resulting shape: (949231, 34)
+2025-11-11 10:02:46,852 - __main__ - INFO - Filled missing 'flightLegs_irregularity_delayDuration_total' with 0
+2025-11-11 10:02:46,852 - __main__ - INFO - Filled missing 'flightLegs_irregularity_delayDuration_total' with 0
+2025-11-11 10:02:46,853 - __main__ - INFO - Categorizing flights into 'cancelled', 'late', 'on_time'
+2025-11-11 10:02:46,853 - __main__ - INFO - Categorizing flights into 'cancelled', 'late', 'on_time'
+2025-11-11 10:02:57,025 - __main__ - INFO - Step: categorize_flights | shape: (949231, 35) | null values: 4430900
+2025-11-11 10:02:57,025 - __main__ - INFO - Step: categorize_flights | shape: (949231, 35) | null values: 4430900
+2025-11-11 10:02:58,115 - __main__ - INFO - Filtering flights to EU airports
+2025-11-11 10:02:58,115 - __main__ - INFO - Filtering flights to EU airports
+2025-11-11 10:02:58,427 - __main__ - INFO - Applying top 30 EU airports filter
+2025-11-11 10:02:58,427 - __main__ - INFO - Applying top 30 EU airports filter
+2025-11-11 10:02:59,242 - __main__ - INFO - Step: eu_filtering | shape: (488712, 35) | null values: 2036431
+2025-11-11 10:02:59,242 - __main__ - INFO - Step: eu_filtering | shape: (488712, 35) | null values: 2036431
