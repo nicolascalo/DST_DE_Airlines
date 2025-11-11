@@ -14,62 +14,88 @@ from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
 from sklearn.multiclass import OneVsOneClassifier, OneVsRestClassifier
 from sklearn.metrics import classification_report, ConfusionMatrixDisplay, mean_absolute_error, mean_squared_error, r2_score
 from sklearn.feature_selection import SelectKBest, f_classif
-from sklearn.feature_selection import f_classif, f_regression, mutual_info_classif, mutual_info_regression
 from sklearn.tree import plot_tree
 from xgboost import XGBRegressor
 import pickle
 import json
 import re
+from copy import deepcopy
 
 # ----------------------
 # CONFIG
 # ----------------------
-RUN_MODE = 'grid'          # 'simple','grid','both' -> hyperparameter tuning
+RUN_MODE = 'simple'          # 'simple','grid','both' -> hyperparameter tuning
 FILTER_EU = True
 TOP30_EU = True
-USE_FEATURE_SELECTION = False
-TOP_K_FEATURES = 50
-FEATURE_SELECTION_METHOD = "mutual_info"  # options: "f_test", "mutual_info"
-GRID_LEVEL = 'heavy'    # 'quick','moderate','heavy' -> increasing amount of parameters to test
+TOP_K_FEATURES = 20
+GRID_LEVEL = 'moderate'    # 'quick','moderate','heavy' -> increasing amount of parameters to test
 PARALLEL_JOBS = 6 # nb of cores, -1 for all
 TEST_SIZE = 0.2
 RANDOM_STATE = 42
 RECORD_LIMIT = None # for testing purposes. Put None for all records
 MODEL_LIST_TO_TEST = [
     'LinearRegression',
-    #'DecisionTreeRegressor',
-    #'RandomForestRegressor',
+    'DecisionTreeRegressor',
+    'RandomForestRegressor',
     'XGBRegressor',
-    #'DecisionTree',
-    #'RandomForest',
+    'DecisionTree',
+    'RandomForest',
     'Logistic_OVO',
     'Logistic_OVR'
     ] # ['LinearRegression','DecisionTreeRegressor','RandomForestRegressor','XGBRegressor','Logistic_OVO','Logistic_OVR','DecisionTree','RandomForest']
 
 
-
-
-
-
 script_start_time =  re.sub("\\..*","",datetime.datetime.now().isoformat().replace(":","-").replace('-',"_"))
 
 
+columnKeywordsToDrop_all = ['id',
+                            'airline_name',
+                            'flightLegs_aircraft_ownerAirlineCode',
+                            'actual',
+                            'PositionTerminal',
+                            'latestPublished',
+                            'airline_code',
+                            'company_flight',
+                            'city_country_areaCode',
+                            'airport_location',
+                            'airport_city_country_name']
 
+columnKeywordsToDrop_classification = ['delay',
+                                       'country_code',
+                                       'flightNumber',
+                                       'flightLegs_legStatusPublic',                                                                       'airline_name',
+                                       'flightLegs_serviceType',
+                                       'status',
+                                       'Status',
+                                       'estimated']
 
-columnKeywordsToDrop_all = ['id','airline_name','flightLegs_aircraft_ownerAirlineCode','actual','PositionTerminal','latestPublished']
+columnKeywordsToDrop_regression = ['country_code',
+                                   'flightNumber',
+                                   'flightLegs_legdelayPublic',
+                                   'airline_name',
+                                   'flightLegs_serviceType',
+                                   'estimated',
+                                   'irregularity_delayInformation',     
+                                   'flightLegs_Category',
+                                   'flightStatusPublic',
+                                   'status',
+                                   'Status',
+                                   'flightLegs_irregularity_delayReason']
 
-columnKeywordsToDrop_classification = ['delay','country_code','flightNumber','flightLegs_legStatusPublic',
-                                 'airline_name','flightLegs_serviceType','status','Status','estimated']
+columnsToDrop_classification = ['flightLegs_arrivalInformation_times_scheduled',
+                                'flightLegs_departureInformation_times_scheduled']
 
-columnKeywordsToDrop_regression = ['country_code','flightNumber','flightLegs_legdelayPublic','airline_name',
-                             'flightLegs_serviceType','estimated','irregularity_delayInformation',
-                             'flightLegs_Category','flightStatusPublic','status','Status',
-                             'flightLegs_irregularity_delayReason']
+columnsToDrop_regression = ['flightLegs_arrivalInformation_times_scheduled',
+                            'flightLegs_departureInformation_times_scheduled',
+                            'flightLegs_irregularity_delayDuration']
+
 
 
 # ----------------------
 # OUTPUT DIRS
 # ----------------------
+
+DATA_DIR = f'data'
 OUTPUT_DIR = f'outputs/{script_start_time}'
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(f'{OUTPUT_DIR}/classification/confusion_matrix', exist_ok=True)
@@ -91,7 +117,8 @@ formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(messag
 handler.setFormatter(formatter)
 logger.addHandler(handler)
 logger.setLevel(logging.INFO)
-logger.info("==== Starting ML script====\n")
+logger.info("==== Starting ML script====")
+logger.info(f"Nb of cores: {PARALLEL_JOBS}\n")
 
 # ----------------------
 # DATA LOAD
@@ -111,9 +138,9 @@ else:
         pass
 cwd = os.getcwd()
 
-csv_files = sorted([f for f in os.walk(cwd) if 'afklm_flight_from_mongo_filtered' in f])
+csv_files = sorted([f for f in list(os.listdir(DATA_DIR)) if 'afklm_flight_from_mongo_filtered' in f])
 csv_to_import = csv_files[-1]
-df = pd.read_csv(csv_to_import)
+df = pd.read_csv(f'{DATA_DIR}/{csv_to_import}')
 logger.info(f"Loaded dataset: {csv_to_import}, shape={df.shape}")
 
 # ----------------------
@@ -122,9 +149,13 @@ logger.info(f"Loaded dataset: {csv_to_import}, shape={df.shape}")
 top30euAirports = ['CDG','AMS','ORY','FCO','LHR','CPH','MAD','ARN','OSL','LIN','NCE','BCN','LYS','BGO','LIS','DUB','HEL','TLS','OTP','FRA','MRS','ATH','PMI','MUC','TRD','MAN','BER','AGP','OPO']
 euAirports = ['BHX','BOH','BRS','EXT','HUY','LBA','LPL','LGW','LHR','LCY','SEN','STN','LTN','MAN','MME','NCL','NQY','NWI','EMA','SOU','BFS','BHD','LDY','ABZ','EDI','GLA','PIK','INV','CWL','ANR','BRU','CRL','LGG','OST','AJA','BIA','BVA','EGC','BZR','BIQ','BOD','BES','CCF','XCR','CMF','DNR','FSC','GNB','LRH','LIL','LIG','LYS','MRS','BSL','NTE','NCE','FNI','CDG','ORY','PUF','PGF','PIS','RDZ','EBU','SXB','TLN','TLS','TUF','GIB','ORK','DUB','KIR','NOC','SNN','IOM','JER','LUX','AMS','EIN','GRQ','MST','RTM','GRZ','KLU','INN','LNZ','SZG','VIE','BRQ','JCL','KLV','OSR','PED','PRG','FKB','BER','BRE','CGN','DTM','DUS','FRA','HHN','FDH','HAM','HAJ','LEJ','LBC','FMM','MUC','NUE','STR','NRN','BUD','DEB','SOB','BZG','GDN','KTW','KRK','LUZ','LCJ','SZY','POZ','RZE','SZZ','WAW','WMI','RDO','WRO','BTS','KSC','PZY','TAT','ILZ','BSL','BRN','GVA','LUG','ACH','ZRH','BWK','DBV','LSZ','OSI','PUY','RJK','SPU','ZAD','ZAG','ATH','EFL','CHQ','JKH','CFU','HER','KLX','AOK','KVA','KGS','JMK','MJT','PVK','RHO','SMI','JTR','JSI','SKU','SKG','VOL','ZTH','AHO','AOI','BRI','BGY','BLQ','VBS','BDS','CAG','CTA','CUF','FLR','GOA','SUF','LIN','MXP','NAP','OLB','PMO','PMF','PEG','PSR','PSA','RMI','FCO','CIA','QSR','TPS','TRS','TRN','VCE','VRN','MLA','BYJ','FAO','FNC','LIS','PDL','OPO','PXO','TER','LJU','MBX','POW','LCG','ALC','LEI','OVD','BCN','BIO','CDT','FUE','GRO','LPA','GRX','HSK','IBZ','XRY','SPC','ACE','ILD','MAD','AGP','MAH','RMU','PMI','PNA','REU','SDR','SCQ','SVQ','TFN','TFS','VLC','VLL','VGO','VIT','ZAZ','TIA','GNA','GME','MSQ','BNX','OMO','SJJ','TZL','BOJ','PDV','SOF','VAR','PRN','RMO','ARW','BCM','BAY','GHV','OTP','BBU','CLJ','CND','CRA','IAS','OMR','SUJ','SBZ','SCV','TGM','TSR','TGD','TIV','OHD','SKP','ABA','DYR','AAQ','ARH','ASF','BAX','EGO','BQS','BTK','BZK','CSY','CEK','CEE','HTA','ESL','GRV','IKT','KGD','KZN','KHV','KXK','KRR','KJA','URS','GDX','MQF','MCX','MRV','DME','ZIA','SVO','VKO','MMK','NAL','NBC','NJC','GOJ','NOZ','OVB','OMS','REN','OSW','PEE','PES','PVS','PKC','PKV','ROV','LED','KUF','GSV','AER','STW','SGC','SCW','TOF','TJM','UUD','ULV','UFA','VVO','OGZ','VOG','VOZ','YKS','IAR','SVX','UUS','BEG','KVO','INI','CWC','IFO','HRK','KWG','KBP','IEV','LWO','NLV','ODS','PLV','SIP','UDJ','OZH','AAL','AAR','BLL','CPH','EPU','TLL','TAY','FAE','MHQ','HEL','KTT','KUO','KAO','LPP','OUL','RVN','SVL','TMP','TKU','VAA','AEY','EGS','KEF','RKV','RIX','VNT','KUN','PLQ','SQQ','VNO','AES','BGO','BOO','HAU','KRS','KSU','OSL','TRF','SVG','TOS','TRD','GOT','LLA','MMX','NRK','OSD','ARN','BMA','NYO','VST','SDL','UME','VXO','VBY']
 
+
+
+
 # ----------------------
 # DATA CLEANING
 # ----------------------
+
 summary_steps = []
 
 def log_step(name, df):
@@ -152,6 +183,14 @@ df_cleaned["flightLegs_scheduledFlightDuration"] = df_cleaned.apply(
     axis=1
 )
 
+
+
+
+
+
+
+
+
 df_past = df_cleaned[~df_cleaned["scheduled"]].copy()
 logger.info(f"Filtered past flights only, resulting shape: {df_past.shape}")
 
@@ -178,8 +217,57 @@ if FILTER_EU:
 log_step('eu_filtering', df_past)
 
 
-pd.DataFrame(summary_steps).to_csv(f'{OUTPUT_DIR}/dataset_summary/dataset_cleaning_summary.csv', index=False)
-logger.info(f"Saved dataset cleaning summary to '{OUTPUT_DIR}/dataset_summary/dataset_cleaning_summary.csv'\n")
+
+# ----------------------
+# FEATURE ENGINEERING
+# ----------------------
+
+logger.info("Adding seasonality, isWeekend and dayPeriod")
+
+
+season_dictionary = {1:'winter',2:'winter',3:'spring',4:'spring',5:'spring',6:'summer',7:'summer',8:'summer',9:'fall',10:'fall',11:'fall',12:'winter'}
+
+def get_dayPeriod(x):
+    if (x >= 6) & (x < 12):
+        return "morning"
+    elif (x >= 12) & (x < 18):
+        return "afternoon"
+    elif (x >= 18) & (x < 24):
+        return "evening"
+    else:
+        return 'night'
+
+
+df_past['flightLegs_season'] = df_past.apply(
+    lambda row: season_dictionary[(datetime.datetime.fromisoformat(row.flightLegs_departureInformation_times_scheduled).month)]
+                ,
+    axis=1
+)
+
+df_past['flightLegs_arrivalInformation_times_scheduled_isWeekend'] = df_past.apply(
+    lambda row: True if datetime.datetime.fromisoformat(row.flightLegs_arrivalInformation_times_scheduled).isoweekday() in [6,7] else False
+                ,
+    axis=1
+)
+
+df_past['flightLegs_arrivalInformation_times_scheduled_dayPeriod'] = df_past.apply(
+    lambda row: get_dayPeriod(datetime.datetime.fromisoformat(row.flightLegs_arrivalInformation_times_scheduled).hour + datetime.datetime.fromisoformat(row.flightLegs_arrivalInformation_times_scheduled).minute/60)
+                ,
+    axis=1
+)
+
+
+df_past['flightLegs_departureInformation_times_scheduled_isWeekend'] = df_past.apply(
+    lambda row: True if datetime.datetime.fromisoformat(row.flightLegs_departureInformation_times_scheduled).isoweekday() in [6,7] else False
+                ,
+    axis=1
+)
+
+df_past['flightLegs_departureInformation_times_scheduled_dayPeriod'] = df_past.apply(
+    lambda row: get_dayPeriod(datetime.datetime.fromisoformat(row.flightLegs_departureInformation_times_scheduled).hour + datetime.datetime.fromisoformat(row.flightLegs_departureInformation_times_scheduled).minute/60)
+                ,
+    axis=1
+)
 
 
 
@@ -199,113 +287,15 @@ def get_features(df, target_col):
     logger.info(f"Categorical features: {categorical_features}\n") 
     return numeric_features, categorical_features
 
-def log_selected_features(preprocessor_pipeline, X, logger=logger):
-    """
-    Log the final feature names after preprocessing and (optional) feature selection.
-
-    Parameters:
-        preprocessor_pipeline (Pipeline): The fitted preprocessing pipeline, possibly with feature_selection.
-        X (pd.DataFrame): The original input dataframe (without target).
-        logger (logging.Logger): Logger instance (defaults to global `logger`).
-
-    Returns:
-        list[str]: Names of the selected (final) features.
-    """
-    # Access the ColumnTransformer inside the pipeline
-    try:
-        preprocessor = preprocessor_pipeline.named_steps['preprocessor']
-    except KeyError:
-        logger.warning("Pipeline has no 'preprocessor' step — returning input columns only.")
-        return list(X.columns)
-
-    # Extract encoded feature names
-    numeric_features = preprocessor.transformers_[0][2]
-    categorical_features = preprocessor.transformers_[1][2]
-
-    # Get one-hot encoded feature names for categorical vars
-    cat_encoder = preprocessor.named_transformers_['cat'].named_steps['onehot']
-    cat_feature_names = cat_encoder.get_feature_names_out(categorical_features)
-
-    all_features = np.concatenate([numeric_features, cat_feature_names])
-
-    # If feature selection was applied, filter by mask
-    if 'feature_selection' in preprocessor_pipeline.named_steps:
-        selector = preprocessor_pipeline.named_steps['feature_selection']
-        mask = selector.get_support()
-        selected_features = all_features[mask]
-        logger.info(f"Feature selection retained {len(selected_features)}/{len(all_features)} features.")
-    else:
-        selected_features = all_features
-        logger.info(f"No feature selection applied — using all {len(all_features)} preprocessed features.")
-
-    logger.info("Top selected features:")
-    for feat in selected_features[:min(20, len(selected_features))]:
-        logger.info(f"  • {feat}")
-
-    return selected_features.tolist()
-
-
-def build_preprocessor(
-    X, target_col, 
-    use_feature_selection=USE_FEATURE_SELECTION, 
-    problem_type=None,
-    selection_method=FEATURE_SELECTION_METHOD
-):
-    """
-    Build preprocessing and optional feature selection pipeline.
-
-    Automatically:
-    - Chooses f_classif or f_regression for linear (f-test)
-    - Chooses mutual_info_classif or mutual_info_regression for nonlinear (mutual info)
-    """
+def build_preprocessor(X, target_col):
     numeric_features, categorical_features = get_features(X, target_col)
-
-    numerical_transformer = Pipeline([
-        ('imputer', SimpleImputer(strategy='median')),
-        ('scaler', StandardScaler())
-    ])
-
-    categorical_transformer = Pipeline([
-        ('imputer', SimpleImputer(strategy='most_frequent')),
-        ('onehot', OneHotEncoder(handle_unknown='ignore', drop='first', sparse_output=True))
-    ])
-
-    preprocessor = ColumnTransformer(transformers=[
-        ('num', numerical_transformer, numeric_features),
-        ('cat', categorical_transformer, categorical_features)
-    ])
-
-    # --- Optional feature selection ---
-    if use_feature_selection:
-        # Choose appropriate score function
-        if selection_method == "f_test":
-            if problem_type == 'classification':
-                score_func = f_classif
-            elif problem_type == 'regression':
-                score_func = f_regression
-            else:
-                raise ValueError("problem_type must be 'classification' or 'regression' when using feature selection.")
-        elif selection_method == "mutual_info":
-            if problem_type == 'classification':
-                score_func = mutual_info_classif
-            elif problem_type == 'regression':
-                score_func = mutual_info_regression
-            else:
-                raise ValueError("problem_type must be 'classification' or 'regression' when using feature selection.")
-        else:
-            raise ValueError(f"Invalid selection_method: {selection_method}. Choose 'f_test' or 'mutual_info'.")
-
-        selector = SelectKBest(score_func=score_func, k=min(TOP_K_FEATURES, X.shape[1]))
-        logger.info(f"Using SelectKBest ({score_func.__name__}) with top {TOP_K_FEATURES} features "
-                    f"for {problem_type} ({selection_method})")
-
-        return Pipeline([
-            ('preprocessor', preprocessor),
-            ('feature_selection', selector)
-        ])
-
-    # No feature selection
+    numerical_transformer = Pipeline([('imputer', SimpleImputer(strategy='median')),('scaler', StandardScaler())])
+    categorical_transformer = Pipeline([('imputer', SimpleImputer(strategy='most_frequent')),
+                                       ('onehot', OneHotEncoder(handle_unknown='ignore', drop='first', sparse_output=True))])
+    preprocessor = ColumnTransformer(transformers=[('num', numerical_transformer, numeric_features),
+                                                   ('cat', categorical_transformer, categorical_features)])
     return preprocessor
+
 
 # ----------------------
 # GRID PARAMETERS
@@ -416,7 +406,6 @@ def test_pipeline_classification(name, pipeline_tuple, mode='simple'):
         logger.info(f"Performing GridSearchCV for {name} with parameters: {params}")
         gs = GridSearchCV(pipe, params, cv=5, scoring='accuracy', n_jobs=PARALLEL_JOBS)
         gs.fit(X_train_cls, y_train_cls)
-        selected_cls_features  = log_selected_features(gs.named_steps['preprocessor'], X_train_cls)
         end_time = datetime.datetime.now()
         time_elapsed = (end_time- start_time).seconds        
         logger.info(f"GridSearchCV completed for {name} | best score: {gs.best_score_} | Total duration: {time_elapsed} seconds")
@@ -425,7 +414,6 @@ def test_pipeline_classification(name, pipeline_tuple, mode='simple'):
         return gs, time_elapsed
     else:
         pipe.fit(X_train_cls, y_train_cls)
-        selected_cls_features  = log_selected_features(pipe.named_steps['preprocessor'], X_train_cls)
         end_time = datetime.datetime.now()
         time_elapsed = (end_time- start_time).seconds        
         with open(f'{OUTPUT_DIR}/classification/models/{name}_{mode}.pkl','wb') as f:
@@ -484,7 +472,6 @@ def test_pipeline_regression(name, pipeline_tuple, mode='simple'):
         logger.info(f"Performing GridSearchCV for {name} with parameters: {params}")
         gs = GridSearchCV(pipe, params, cv=5, scoring='r2', n_jobs=PARALLEL_JOBS, verbose=2)
         gs.fit(X_train_reg, y_train_reg)
-        selected_reg_features  = log_selected_features(gs.named_steps['preprocessor'], X_train_reg)
         end_time = datetime.datetime.now()
         time_elapsed = (end_time- start_time).seconds        
         logger.info(f"GridSearchCV completed for {name} | best score: {gs.best_score_} | Total duration: {time_elapsed} seconds")
@@ -495,8 +482,6 @@ def test_pipeline_regression(name, pipeline_tuple, mode='simple'):
         return gs, time_elapsed
     else:
         pipe.fit(X_train_reg, y_train_reg)
-        selected_reg_features  = log_selected_features(pipe.named_steps['preprocessor'], X_train_reg)
-
         end_time = datetime.datetime.now()
         time_elapsed = (end_time- start_time).seconds        
         with open(f'{OUTPUT_DIR}/regression/models/{name}_{mode}.pkl','wb') as f:
@@ -544,10 +529,13 @@ def output_metrics_regression(name, pipe, mode='simple', processing_time=None):
         'processing_time': processing_time
     })
 
+
 def save_decision_tree_plot(pipeline, pipeline_name, problem_type, feature_names=None):
-    """Save a visualization of a fitted DecisionTree model."""
+    """Save a DecisionTree plot showing thresholds in original (non-standardized) feature units,
+    even when using a ColumnTransformer with multiple numeric/categorical branches.
+    """
     try:
-        # Handle gridsearch or simple pipeline
+        # --- Extract trained estimator ---
         clf = pipeline.best_estimator_ if hasattr(pipeline, 'best_estimator_') else pipeline
         model = clf.named_steps.get('classifier', clf)
 
@@ -555,7 +543,7 @@ def save_decision_tree_plot(pipeline, pipeline_name, problem_type, feature_names
             logger.info(f"Skipping tree plot for {pipeline_name} (not a DecisionTree model)")
             return
 
-        # Derive feature names if not provided
+        # --- Feature names ---
         if feature_names is None and 'preprocessor' in clf.named_steps:
             preproc = clf.named_steps['preprocessor']
             try:
@@ -563,30 +551,84 @@ def save_decision_tree_plot(pipeline, pipeline_name, problem_type, feature_names
                 feature_names = [f.replace("num__", "").replace("cat__", "") for f in feature_names]
             except Exception:
                 feature_names = [f"f{i}" for i in range(model.n_features_in_)]
-
-            
-            
-            
         if feature_names is None:
             feature_names = [f"f{i}" for i in range(model.n_features_in_)]
 
+        # --- Identify scalers & feature subsets ---
+        scaler_map = {}  # {column_index: scaler}
+        original_feature_indices = np.arange(model.n_features_in_)
+
+        if 'preprocessor' in clf.named_steps:
+            preproc = clf.named_steps['preprocessor']
+            if hasattr(preproc, 'transformers_'):
+                start_idx = 0
+                for name, trans, cols in preproc.transformers_:
+                    if name == 'remainder' and trans == 'drop':
+                        continue
+                    # get number of features this transformer outputs
+                    if hasattr(trans, 'get_feature_names_out'):
+                        n_out = len(trans.get_feature_names_out())
+                    elif hasattr(cols, '__len__'):
+                        n_out = len(cols)
+                    else:
+                        n_out = 1
+
+                    # search for scaler in this branch
+                    scaler = None
+                    if isinstance(trans, (StandardScaler, MinMaxScaler)):
+                        scaler = trans
+                    elif hasattr(trans, 'named_steps'):
+                        for step in trans.named_steps.values():
+                            if isinstance(step, (StandardScaler, MinMaxScaler)):
+                                scaler = step
+                                break
+
+                    if scaler is not None:
+                        # Assign this scaler to corresponding feature indices
+                        for j in range(n_out):
+                            scaler_map[start_idx + j] = scaler
+                    start_idx += n_out
+
+        # --- Copy model and adjust thresholds ---
+        model_for_plot = deepcopy(model)
+        tree = model_for_plot.tree_
+        n_features = model_for_plot.n_features_in_
+        sample_scaled = np.zeros((1, n_features), dtype=float)
+
+        for node in range(tree.node_count):
+            f = tree.feature[node]
+            thr = tree.threshold[node]
+            if f >= 0 and thr != -2.0:
+                scaler = scaler_map.get(f, None)
+                if scaler is not None:
+                    sample_scaled[:] = 0.0
+                    sample_scaled[0, f] = thr
+                    orig_thr = scaler.inverse_transform(sample_scaled)[0, f]
+                    tree.threshold[node] = orig_thr
+
+        logger.info(f"Adjusted thresholds to original units for {len(scaler_map)} scaled features")
+
+        # --- Plot and save ---
         plt.figure(figsize=(25, 15))
         plot_tree(
-            model,
+            model_for_plot,
             filled=True,
             feature_names=feature_names,
             class_names=getattr(model, 'classes_', None),
-            max_depth=3,  # limit for readability
+            max_depth=3,
             fontsize=10
         )
         plt.title(f"Decision Tree - {pipeline_name}")
         plt.tight_layout()
-        plt.savefig(f"{OUTPUT_DIR}/{problem_type}/tree_plots/{pipeline_name}_tree.png", dpi=200)
+
+        out_dir = os.path.join(OUTPUT_DIR, problem_type, "tree_plots")
+        os.makedirs(out_dir, exist_ok=True)
+        plt.savefig(os.path.join(out_dir, f"{pipeline_name}_tree.png"), dpi=200)
         plt.close()
         logger.info(f"Decision tree plot saved for {pipeline_name}")
+
     except Exception as e:
         logger.warning(f"Failed to save decision tree plot for {pipeline_name}: {e}")
-
 
 # ----------------------
 # DATA SPLIT LOGGING
@@ -601,7 +643,7 @@ logger.info(f"limiting number of records to {RECORD_LIMIT}")
 
 
 
-X_cls = df_status.drop(columns=['flightLegs_Category']).drop(list(df.filter(regex='|'.join(columnKeywordsToDrop_classification))), axis=1, errors='ignore')
+X_cls = df_status.drop(columns=['flightLegs_Category']).drop(list(df.filter(regex='|'.join(columnKeywordsToDrop_classification))), axis=1, errors='ignore').drop(columnsToDrop_classification, axis=1, errors='ignore')
 y_cls = df_status['flightLegs_Category']
 logger.info(f"Classification dataset shape: X={X_cls.shape}, y={y_cls.shape}")
 
@@ -611,7 +653,7 @@ X_train_cls, X_test_cls, y_train_cls, y_test_cls = train_test_split(
 logger.info(f"Classification train/test split: X_train={X_train_cls.shape}, X_test={X_test_cls.shape}, "
             f"y_train={y_train_cls.shape}, y_test={y_test_cls.shape}")
 
-preprocessor_cls = build_preprocessor(X_cls, 'flightLegs_Category', problem_type='classification')
+preprocessor_cls = build_preprocessor(X_cls, 'flightLegs_Category')
 
 def sklearn_params_to_dict(params):
     """
@@ -678,10 +720,18 @@ else:
 classification_pipelines = {key: value for key, value in classification_pipelines.items() if key in MODEL_LIST_TO_TEST}
 
 # Regression split
+
+
+
 logger.info("==== Preparing regression dataset ====")
 df_delay = df_past[df_past['flightLegs_Category']=='late'].dropna(subset=['flightLegs_irregularity_delayDuration_total']).drop(
     list(df.filter(regex='|'.join(columnKeywordsToDrop_regression))), axis=1, errors='ignore'
-)
+).drop(columnsToDrop_regression, axis=1, errors='ignore')
+
+log_step('lateFlights_filtering', df_delay)
+
+pd.DataFrame(summary_steps).to_csv(f'{OUTPUT_DIR}/dataset_summary/dataset_cleaning_summary.csv', index=False)
+logger.info(f"Saved dataset cleaning summary to '{OUTPUT_DIR}/dataset_summary/dataset_cleaning_summary.csv'\n")
 
 df_delay = df_delay.head(RECORD_LIMIT)
 logger.info(f"limiting number of records to {RECORD_LIMIT}")
@@ -698,7 +748,8 @@ X_train_reg, X_test_reg, y_train_reg, y_test_reg = train_test_split(
 logger.info(f"Regression train/test split: X_train={X_train_reg.shape}, X_test={X_test_reg.shape}, "
             f"y_train={y_train_reg.shape}, y_test={y_test_reg.shape}")
 
-preprocessor_reg = build_preprocessor(X_reg, 'flightLegs_irregularity_delayDuration_total', problem_type='regression')
+preprocessor_reg = build_preprocessor(X_reg, 'flightLegs_irregularity_delayDuration_total')
+
 
 # ----------------------
 # REGRESSION PIPELINES
@@ -860,7 +911,6 @@ if global_summary:
     df_global_expanded.to_csv(f"{OUTPUT_DIR}/global_ml_summary_expanded.csv", index=False)
     logger.info("Saved enhanced global ML summary with expanded hyperparameters")
 
-pd.Series(selected_cls_features).to_csv(f"{OUTPUT_DIR}/selected_features_classification.csv", index=False)
-pd.Series(selected_reg_features).to_csv(f"{OUTPUT_DIR}/selected_features_regression.csv", index=False)
+
 
 logger.info("End of ML script\n")
