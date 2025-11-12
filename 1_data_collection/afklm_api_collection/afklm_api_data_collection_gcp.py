@@ -106,11 +106,11 @@ try:
     # loading envirement variables
     load_dotenv()
 
-    in_cloud = True
+    on_cloud = True
 
 
 except:
-    in_cloud = False
+    on_cloud = False
     bucket = None
 
 
@@ -126,7 +126,7 @@ logger.propagate = False
 ### general functions for GCP/local handling
 
 def import_csv(path_folder:str,path_file:str, bucket = bucket):
-    if in_cloud:
+    if on_cloud:
         csv_blob = bucket.blob(path_file)
         csv_data = csv_blob.download_as_bytes()         
 
@@ -139,7 +139,7 @@ def import_csv(path_folder:str,path_file:str, bucket = bucket):
 
 
 def save_csv(df, path_folder:str,path_file:str, bucket = bucket) -> None:
-    if in_cloud:
+    if on_cloud:
 
         csv_blob = bucket.blob(path_file)
         csv_buffer = BytesIO(bytes(df.to_csv(index=False), encoding='utf-8'))
@@ -154,7 +154,7 @@ def save_csv(df, path_folder:str,path_file:str, bucket = bucket) -> None:
 
 def append_to_csv(row, path_folder:str,path_file:str, bucket = bucket) -> None:
 
-    if in_cloud:
+    if on_cloud:
         
         csv_blob = bucket.blob(path_file)
         csv_data = csv_blob.download_as_bytes()         
@@ -186,7 +186,7 @@ def info_message(text:str, color:str=None, level_info:str=None) -> None:
     else:
         print(eval(f'Fore.{color.upper()}') + text)
     '''
-    if in_cloud:
+    if on_cloud:
 
         match level_info:
             case 'info':
@@ -204,7 +204,7 @@ def info_message(text:str, color:str=None, level_info:str=None) -> None:
 
 
 def list_json_files(path_data_storage:str, bucket = bucket) -> list:
-    if in_cloud:
+    if on_cloud:
         json_list_blobs = client_storage.list_blobs(bucket, prefix=path_data_storage)
         json_list = [val.name for val in json_list_blobs if 'json' in val.name]
     
@@ -221,7 +221,7 @@ def list_json_files(path_data_storage:str, bucket = bucket) -> list:
 
 def save_and_compress_json(path_data_storage:str,json_to_make:str, bucket = bucket) -> None:
 
-    if in_cloud:
+    if on_cloud:
 
         gzip_blob_name = f"{path_data_storage}/{json_to_make}.gz"    
         gzip_blob = bucket.blob(gzip_blob_name)
@@ -240,7 +240,7 @@ def save_and_compress_json(path_data_storage:str,json_to_make:str, bucket = buck
 
 def delete_json(path_data_storage:str,json_to_make:str, bucket = bucket) -> None:      
 
-    if not in_cloud:
+    if not on_cloud:
         try:
             os.remove(f"{path_data_storage}/{json_to_make}.gz")
         except:
@@ -251,7 +251,7 @@ def delete_json(path_data_storage:str,json_to_make:str, bucket = bucket) -> None
 
 def open_json(path_data_storage:str,file_to_open:str, bucket = bucket) -> None:
 
-    if in_cloud:
+    if on_cloud:
 
         gzip_blob_name = f"{path_data_storage}/{json_to_make}.gz"    
         gzip_blob = bucket.blob(gzip_blob_name)
@@ -270,7 +270,7 @@ def open_json(path_data_storage:str,file_to_open:str, bucket = bucket) -> None:
 
 def list_api_files(api_key_list_folder:str, bucket = bucket) -> list:
 
-    if in_cloud:
+    if on_cloud:
         api_file_list = client_storage.list_blobs(bucket,prefix=api_key_list_folder)
         api_file_list = [val.name for val in api_file_list if (len(re.findall("csv$",val.name)) > 0)]
     
@@ -284,7 +284,7 @@ def list_api_files(api_key_list_folder:str, bucket = bucket) -> list:
 
 def list_call_parameters(path_call_parameter_file_folder:str, bucket = bucket) -> list:
 
-    if in_cloud:
+    if on_cloud:
         path_call_parameter_csv_list = client_storage.list_blobs(bucket,prefix=path_call_parameter_file_folder)
         call_parameter_csv_list = [val.name for val in path_call_parameter_csv_list if ('df_call_parameters'  in val.name) & (len(re.findall("csv$",val.name)) > 0)]
     
@@ -304,7 +304,7 @@ def list_call_parameters(path_call_parameter_file_folder:str, bucket = bucket) -
 
 ### Working directory adjustments
 
-if not in_cloud:
+if not on_cloud:
 
     cwd = os.getcwd()
     if cwd.endswith("DST_DE_Airlines"):
@@ -359,7 +359,7 @@ if add_new_dates_csv_parameters :
                 endRange = (datetime.datetime.fromisoformat(endRange) + datetime.timedelta(days=1)).isoformat()
                 row_new['endRange'] = endRange + "Z"
                 
-                if in_cloud:
+                if on_cloud:
 
                     df_call_parameters = pd.concat([df_call_parameters, row_new], ignore_index=True)
 
@@ -396,7 +396,7 @@ if add_new_dates_csv_parameters :
 
 
 
-if in_cloud:
+if on_cloud:
 
     API_key_file_list = list_api_files(api_key_list_folder=api_key_list_folder,bucket=bucket)[0]
     API_key_list_cleaned = import_csv(path_folder = api_key_list_folder,path_file = API_key_file_list)
@@ -723,7 +723,7 @@ for index, record in API_key_list_cleaned.iterrows():
                 
                 API_key_list_cleaned['nb_calls_today'] = API_key_list_cleaned.apply(lambda row: nb_calls_today if row['key_desc'] == key_desc else row['nb_calls_today'] , axis=1)
 
-                if in_cloud:
+                if on_cloud:
                     API_key_list_cleaned['api_key'] = API_key_list_cleaned.apply(lambda row: 'SECRET' , axis=1)
 
                 save_csv(API_key_list_cleaned,
@@ -792,7 +792,7 @@ for index, record in API_key_list_cleaned.iterrows():
 
                     API_key_list_cleaned = API_key_list_cleaned.drop_duplicates(subset='api_key',keep='last')
 
-                    if in_cloud:
+                    if on_cloud:
                         API_key_list_cleaned['api_key'] = API_key_list_cleaned.apply(lambda row: 'SECRET' , axis=1)
 
                     save_csv(API_key_list_cleaned, api_key_list_folder, "afklm_api_keys.csv")
