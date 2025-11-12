@@ -3,9 +3,14 @@ from fastapi.responses import StreamingResponse
 from datetime import datetime
 import subprocess
 from SERIALIZER.utils import mongo_to_json
-from mongo_db_interaction.USE_CASES.get_by_id_flight_uc import get_by_id_flight
+import gzip
+import io
+from mongo_db_interaction.USE_CASES.get_by_id_historic_flights_uc import get_by_id_historic_flight
 from mongo_db_interaction.USE_CASES.count_documents_by_collection_uc import count_documents_by_collection
-from mongo_db_interaction.USE_CASES.format_for_tabular_data_uc import format_for_tabular_data
+from mongo_db_interaction.USE_CASES.get_all_flights_csv_uc import get_all_flights_to_csv
+from mongo_db_interaction.USE_CASES.get_historic_flights_csv_uc import get_historic_flights_to_csv
+from mongo_db_interaction.USE_CASES.get_schedulled_flights_csv_uc import get_schedulled_flights_to_csv
+from mongo_db_interaction.USE_CASES.get_update_d1_flights_csv_uc import get_update_d1_csv
 from dotenv import load_dotenv
 import os
 
@@ -16,17 +21,23 @@ app = FastAPI(
 )
 
 
-@app.get("/flights/{id}")
+@app.get("/historic_flights/{id}")
 def read_flight(id: str):
-    flight = get_by_id_flight(id)
+    flight = get_by_id_historic_flight(id)
 
     if flight is None:
         raise HTTPException(status_code=404, detail="flight not found")
     return mongo_to_json(flight)
 
-@app.get("/all/flights/")
-def read_flight(nb_flights: int):
-    csv_content, filename = format_for_tabular_data(nb_flights)
+@app.get("/all_csv_flights/")
+def read_flight():
+    df, filename = get_all_flights_to_csv()
+
+    buffer = io.BytesIO()
+    with gzip.GzipFile(fileobj=buffer, mode='wb') as f:
+        df.to_csv(f, index=False, na_rep="")
+    csv_content = buffer.getvalue()
+
     if csv_content is None:
         raise HTTPException(status_code=404, detail="flight not found")
 
@@ -38,6 +49,69 @@ def read_flight(nb_flights: int):
             "Content-Disposition": f"attachment; filename={filename}"
         }
     )
+
+
+@app.get("/csv_historic_flights/{nb_limit_flights}")
+def read_flight(nb_limit_flights:int):
+    df, filename = get_historic_flights_to_csv(nb_limit_flights)
+
+    buffer = io.BytesIO()
+    with gzip.GzipFile(fileobj=buffer, mode='wb') as f:
+        df.to_csv(f, index=False, na_rep="")
+    csv_content = buffer.getvalue()
+    if csv_content is None:
+        raise HTTPException(status_code=404, detail="flight not found")
+
+
+    return StreamingResponse(
+        iter([csv_content]),
+        media_type="application/gzip",
+        headers={
+            "Content-Disposition": f"attachment; filename={filename}"
+        }
+    )
+
+@app.get("/scheduled_flights/{nb_limit_flights}")
+def read_flight(nb_limit_flights:int):
+    df, filename = get_schedulled_flights_to_csv(nb_limit_flights)
+
+    buffer = io.BytesIO()
+    with gzip.GzipFile(fileobj=buffer, mode='wb') as f:
+        df.to_csv(f, index=False, na_rep="")
+    csv_content = buffer.getvalue()
+    if csv_content is None:
+        raise HTTPException(status_code=404, detail="flight not found")
+
+
+    return StreamingResponse(
+        iter([csv_content]),
+        media_type="application/gzip",
+        headers={
+            "Content-Disposition": f"attachment; filename={filename}"
+        }
+    )
+
+
+@app.get("/update_schedulae_d1_flights/{nb_limit_flights}")
+def read_flight(nb_limit_flights:int):
+    df, filename = get_update_d1_csv(nb_limit_flights)
+
+    buffer = io.BytesIO()
+    with gzip.GzipFile(fileobj=buffer, mode='wb') as f:
+        df.to_csv(f, index=False, na_rep="")
+    csv_content = buffer.getvalue()
+    if csv_content is None:
+        raise HTTPException(status_code=404, detail="flight not found")
+
+
+    return StreamingResponse(
+        iter([csv_content]),
+        media_type="application/gzip",
+        headers={
+            "Content-Disposition": f"attachment; filename={filename}"
+        }
+    )
+
 
 @app.get("/count_documents_by_collection/")
 def count_doc():
