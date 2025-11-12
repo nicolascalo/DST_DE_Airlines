@@ -645,7 +645,10 @@ logger.info(f"limiting number of records to {RECORD_LIMIT}")
 
 X_cls = df_status.drop(columns=['flightLegs_Category']).drop(list(df.filter(regex='|'.join(columnKeywordsToDrop_classification))), axis=1, errors='ignore').drop(columnsToDrop_classification, axis=1, errors='ignore')
 y_cls = df_status['flightLegs_Category']
+
+
 logger.info(f"Classification dataset shape: X={X_cls.shape}, y={y_cls.shape}")
+logger.info(f"Classification dataset class repartition: {y_cls.value_counts(normalize = True)}")
 
 X_train_cls, X_test_cls, y_train_cls, y_test_cls = train_test_split(
     X_cls, y_cls, test_size=TEST_SIZE, stratify=y_cls, random_state=RANDOM_STATE
