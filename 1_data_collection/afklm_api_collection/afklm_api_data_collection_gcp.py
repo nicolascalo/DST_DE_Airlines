@@ -61,12 +61,13 @@ path_data_storage = "data"
 path_call_parameter_file_folder = "call_parameter_lists"
 skip_previously_failed_serverError = True
 skip_previously_failed_flightNotFound = True
+skip_previously_failed_invalidDateRange = True # The API allows to retrieve 180 days in the past and 1 year in the future
 skip_previously_failed_otherErrors = True
 api_key_list_folder = "api_keys"
 skip_complete = True
 add_new_dates_csv_parameters = True
 
-future_days_to_retrieve = 30
+future_days_to_retrieve = 365
 
 max_daily_api_call = 100 # API limited to 1 call / s, 100 / day
 max_page_to_fetch = 10000000000
@@ -348,8 +349,10 @@ if add_new_dates_csv_parameters :
         
         for index, row in df_call_parameters_root.iterrows():
             
+
             endRange = str(row.endRange)
             endRange = endRange.replace('Z','')
+
 
             
             while ((datetime.datetime.fromisoformat(endRange).date() - datetime.datetime.now().date() ).days) < future_days_to_retrieve :
@@ -564,7 +567,7 @@ for index, record in API_key_list_cleaned.iterrows():
             except:
                 df_call_parameters = df_call_parameters_defaults
         
-
+        df_call_parameters = df_call_parameters.sort_values(['startRange','endRange','origin','destination','completion'])
 
 
         info_message( f"Max number of pages to retrieve: {max_page_to_fetch} ")
@@ -584,10 +587,16 @@ for index, record in API_key_list_cleaned.iterrows():
             to_test = float(df_call_parameters.iloc[[i]]['completion'].replace('','0').item())
 
             df_subset = df_call_parameters.iloc[[i]].copy(deep=True).reset_index().drop(['index'], axis=1)
+                    
             
-            date_diff = (datetime.datetime.fromisoformat(df_subset['startRange'].item()).date() - datetime.datetime.date(datetime.datetime.now())).days
+            startRange = str(df_subset['startRange'].values.item()).replace('Z','')
+            endRange = str(df_subset['endRange'].values.item()).replace('Z','')
+            
+            day_diff_now_startRange = (datetime.datetime.fromisoformat(startRange).date() - datetime.datetime.now().date() ).days
+            day_diff_now_endRange = (datetime.datetime.fromisoformat(endRange).date() - datetime.datetime.now().date() ).days
 
-            if skip_complete & (((to_test == 100) & (date_diff <0)) | ((to_test == 66) & (date_diff  == 0)) | (((to_test == 33) & (date_diff >0)))):
+
+            if skip_complete & (((to_test == 100) & (day_diff_now_startRange <0)) | ((to_test == 66) & (day_diff_now_startRange  == 0)) | (((to_test == 33) & (day_diff_now_startRange >0)))):
                 continue 
             
             
@@ -610,17 +619,25 @@ for index, record in API_key_list_cleaned.iterrows():
                                             if val[0] != '' and val[0] != '[nan]'])
 
             info_message(f"{call_parameters_url}")
+            
+            if (day_diff_now_startRange < -180) | (day_diff_now_endRange < -180) | (day_diff_now_startRange > 365) | (day_diff_now_endRange > 365)  :
 
+                info_message(f"Invalid date range",'red','warning')
+                continue
             
 
-            if skip_previously_failed_serverError & int(match_error) > 200:
-                if int(match_error) >= 500:
+            if int(match_error) > 200:
+                if skip_previously_failed_serverError & int(match_error) >= 500:
                     message = f"skipped because previously failed due to server error"
 
-                if int(match_error) == 404:
+                if skip_previously_failed_flightNotFound & int(match_error) == 404:
                     message = f"skipped because previously obtained 'FLIGHT NOT FOUND'"
                 
-                if int(match_error) > 200:
+                if skip_previously_failed_invalidDateRange & int(match_error) == 416:
+                    message = f"skipped because requested date not within a valid range"
+                
+                
+                if skip_previously_failed_otherErrors & int(match_error) > 200:
                     message = f"skipped because previously obtained another error"
 
                 info_message(f"skipped because previously failed due to server error",'magenta','warning')
@@ -642,9 +659,9 @@ for index, record in API_key_list_cleaned.iterrows():
                 
                 
                 
-                if date_diff > 0:
+                if day_diff_now_startRange > 0:
                     json_to_make = "".join([json_to_make_root, f"_{pageNumber}_sched.json"])
-                elif date_diff == 0:
+                elif day_diff_now_startRange == 0:
                     json_to_make = "".join([json_to_make_root , f"_{pageNumber}_updSchedD1.json"])
                 else:
                     json_to_make = "".join([json_to_make_root, f"_{pageNumber}.json"])
@@ -654,6 +671,9 @@ for index, record in API_key_list_cleaned.iterrows():
                 df_item = df_subset['totalPages'].item()
                 df_values = df_subset['totalPages'].values
                 time_analysis = datetime.datetime.now().isoformat()
+
+
+
 
                 # Skip current query if file already exists
                 if (json_to_make in json_list) | (json_to_make + '.gz' in json_list):
@@ -671,12 +691,12 @@ for index, record in API_key_list_cleaned.iterrows():
                         info_message(f"All pages already retrieved",'blue','info')
                         df_subset.loc[0, ['nb_of_pages_already_retrieved']] = df_subset.loc[0, ['totalPages']].item()
                         
-                        if date_diff < 0 :
+                        if day_diff_now_startRange < 0 :
                             df_subset.loc[0, ['completion']] = 100
                             delete_json(path_data_storage, json_to_make_root + f"_{pageNumber}_sched.json", bucket)
                             delete_json(path_data_storage, json_to_make_root + f"_{pageNumber}_updSchedD1.json", bucket)
                             
-                        elif date_diff == 0:
+                        elif day_diff_now_startRange == 0:
                             df_subset.loc[0, ['completion']] = 66
                             delete_json(path_data_storage, json_to_make_root + f"_{pageNumber}_sched.json", bucket)
                         else:
@@ -756,13 +776,13 @@ for index, record in API_key_list_cleaned.iterrows():
                     df_subset.loc[0, ['totalFlights']] = float(f"{(fullCount):.0f}")
                     
                     
-                    if date_diff < 0 :
+                    if day_diff_now_startRange < 0 :
                         df_subset.loc[0, ['completion']] = float(f"{100*(pageNumber+1)/page_max:.0f}")
                         
                         delete_json(path_data_storage, json_to_make_root + f"_{pageNumber}_sched.json", bucket)
                         delete_json(path_data_storage, json_to_make_root + f"_{pageNumber}_updSchedD1.json", bucket)
        
-                    elif date_diff == 0:
+                    elif day_diff_now_startRange == 0:
                         df_subset.loc[0, ['completion']] = float(f"{66*(pageNumber+1)/page_max:.0f}")
                         delete_json(path_data_storage, json_to_make_root + f"_{pageNumber}_sched.json", bucket)
                         
@@ -801,11 +821,15 @@ for index, record in API_key_list_cleaned.iterrows():
                     break
 
                 else:
+                    
+
+                    
                     info_message(f"Issues with the call: {response} {response.text}",'red','warning')
                     df_subset.loc[0, ['response']] = str(response)
                     df_subset.loc[0, ['message']] = str(response.text)
                     df_call_parameters_new = pd.concat([df_call_parameters_new, df_subset], ignore_index=True)
-                    df_call_parameters_new = df_call_parameters_new.drop_duplicates(subset=['call_parameters'], keep='last')
+                    df_call_parameters_new = df_call_parameters_new.drop_duplicates(subset=parameter_list, keep='last')
+                    
                     df_call_parameters_new = df_call_parameters_new.fillna('').sort_values(['endRange','completion'])
                     
                     save_csv(
