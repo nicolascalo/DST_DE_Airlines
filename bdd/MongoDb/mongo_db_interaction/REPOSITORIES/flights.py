@@ -1,4 +1,5 @@
 from mongo_db_interaction.DB_CONTEXT.db_context import mongo_db_connect
+from datetime import datetime
 
 collection = "historic_flights"
 
@@ -27,6 +28,18 @@ def create_index():
 
 def count_flight(collection_name):
     return mongo_db_connect[collection_name].count_documents({})
+
+def add_date_insertion(collection_name):
+    date_now = datetime.now().strftime("%Y%m%d-%H-%M-%S")
+
+    creation_date = mongo_db_connect[collection_name].update_many(
+    {"date_insertion": {"$exists": False}}, 
+    {"$set": {"date_insertion": {"date": date_now}}}
+)
+    
+    print(f"Nb docs updated: {creation_date.modified_count}")
+
+
 
 
 def get_all(nb_flight_limit, collection_name):
@@ -69,16 +82,33 @@ def get_all(nb_flight_limit, collection_name):
                 "hasReturnFlight": False
             }
         },
-        {
-            "$unwind": "$flightLegs"
-        },
+   
         {
             "$match": {
-                "flightLegs.statusName": {
-                    "$nin": ["New", "Cancelled"]
+                "flightLegs": {
+                    "$not": {
+                        "$elemMatch": {
+                            "statusName": {"$in": ["New", "Cancelled"]}
+                        }
+                    }
                 }
             }
-        },
+        }
+    ]
+    
+    if collection_name == "historic_flights":
+        pipeline.append({
+        "$addFields": {
+            "debug_status": "$flightStatusPublic",
+            "debug_length": {"$strLenCP": "$flightStatusPublic"}
+        }
+    })
+        pipeline.append({
+            "$match": {
+                "flightStatusPublic": {"$nin": ["SCHEDULED", "Scheduled"]}
+            }
+        })
+    pipeline.extend([{"$unwind": "$flightLegs"},
         {
             "$project": {
                 "id": "$id",
@@ -121,12 +151,12 @@ def get_all(nb_flight_limit, collection_name):
                 "flightLegs_status": "$flightLegs.status",
                 "flightLegs_publishedStatus": "$flightLegs.publishedStatus",
                 "flightLegs_legStatusPublic": "$flightLegs.legStatusPublic",
-                "flightLegs_statusName": "$flightLegs.statusName",
+                "flightLegs_statusName": { "$ifNull": ["$flightLegs.statusName", ""] },
                 "flightNumber": "$flightNumber",
                 "flightStatusPublic": "$flightStatusPublic"
             }
         }
-    ]
+    ])
 
     if nb_flight_limit is not None:
         pipeline.append({"$limit": nb_flight_limit})
