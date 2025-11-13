@@ -4,7 +4,6 @@ import numpy as np
 
 
 def format_json_flight_to_csv(flights):
-
     
     df = pd.json_normalize(flights)
     df = df.map(lambda x: ', '.join(x) if isinstance(x, list) and x

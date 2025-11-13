@@ -50,7 +50,7 @@ def delete_all_opreation_flights_collection(collection_name):
 
 
 def remove_past_flights_on_d1_collection():
-    result = mongo_db_connect['update_scheduled_d1_flights'].delete_many({
+    query = {
         "$expr": {
             "$lt": [
                 {
@@ -61,9 +61,39 @@ def remove_past_flights_on_d1_collection():
                 datetime.now()
             ]
         }
-    })
-    print(f"nb d1 flights deleted : {result.deleted_count}")
-    return result.deleted_count
+    }
+        
+    flights_to_remove = list(mongo_db_connect['update_scheduled_d1_flights'].find(query))
+
+    if flights_to_remove:
+        mongo_db_connect['removed_update_scheduled_d1_flights'].insert_many(flights_to_remove)
+        print("collection removed_update_scheduled_d1_flights created")
+    deleting = mongo_db_connect['update_scheduled_d1_flights'].delete_many(query)
+
+    print(f"nb d1 flights deleted : {deleting.deleted_count}")
+    return deleting.deleted_count
+
+def remove_past_flights_on_scheduled_collection():
+    query = {
+   
+          "$expr": {
+            "$lt": [
+                {
+                    "$toDate": {
+                        "$arrayElemAt": ["$flightLegs.arrivalInformation.times.latestPublished", 0]
+                    }
+                },
+                datetime.now()
+            ]
+        }
+    }
+    flights_to_remove = list(mongo_db_connect['scheduled_flights'].find(query))
+    if flights_to_remove:
+        mongo_db_connect['removed_scheduled_flights'].insert_many(flights_to_remove)
+        print("collection removed_scheduled_flights created")
+    deleting = mongo_db_connect['scheduled_flights'].delete_many(query)
+    print(f"nb scheduled flights deleted : {deleting.deleted_count}")
+    return deleting.deleted_count
     
 def remove_duplicate_flights_from_scheduled():
     
@@ -74,7 +104,7 @@ def remove_duplicate_flights_from_scheduled():
     result = mongo_db_connect['scheduled_flights'].delete_many({
         "id": {"$in": ids_to_remove}
     })
-    print(f"nb scheduled_flights deleted : {result.deleted_count}")
+    print(f"nb duplicate scheduled_flights deleted : {result.deleted_count}")
     return result.deleted_count
 
 
