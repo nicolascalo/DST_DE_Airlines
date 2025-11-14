@@ -3,7 +3,7 @@ from fastapi.responses import StreamingResponse
 from datetime import datetime
 from zoneinfo import ZoneInfo
 import subprocess
-from SERIALIZER.utils import mongo_to_json
+from mongo_db_interaction.SERIALIZER.utils import mongo_to_json
 import gzip
 import io
 from mongo_db_interaction.USE_CASES.get_by_id_historic_uc import get_by_id_historic_flight
