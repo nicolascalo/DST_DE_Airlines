@@ -1,5 +1,7 @@
 from mongo_db_interaction.DB_CONTEXT.db_context import mongo_db_connect
+from fastapi import HTTPException
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 collection = "historic_flights"
 
@@ -30,7 +32,7 @@ def count_flight(collection_name):
     return mongo_db_connect[collection_name].count_documents({})
 
 def add_date_insertion(collection_name):
-    date_now = datetime.now().strftime("%Y%m%d-%H-%M-%S")
+    date_now = datetime.now(ZoneInfo("Europe/Paris")).strftime("%Y%m%d-%H-%M-%S")
 
     creation_date = mongo_db_connect[collection_name].update_many(
     {"date_insertion": {"$exists": False}}, 
@@ -42,7 +44,7 @@ def add_date_insertion(collection_name):
 
 
 
-def get_all(nb_flight_limit, collection_name):
+def get_all(nb_flight_limit, collection_name, date=None):
     
     pipeline = [
         {
@@ -95,6 +97,12 @@ def get_all(nb_flight_limit, collection_name):
             }
         }
     ]
+    if date is not None:
+        pipeline.append({
+            "$match": {
+                "date_insertion.date": {"$gt": date}
+            }
+        })
     
     if collection_name == "historic_flights":
         pipeline.append({
@@ -160,5 +168,26 @@ def get_all(nb_flight_limit, collection_name):
 
     if nb_flight_limit is not None:
         pipeline.append({"$limit": nb_flight_limit})
-
-    return list(mongo_db_connect[collection_name].aggregate(pipeline))
+    try:
+        result = list(mongo_db_connect[collection_name].aggregate(pipeline))
+        
+        if not result:
+            raise HTTPException(
+                status_code=404,
+                detail="Not found"
+                
+            )
+        
+        return result
+        
+    except HTTPException:
+        raise
+        
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail={
+                "error": "Erreur base de données",
+                "message": str(e)
+            }
+        )

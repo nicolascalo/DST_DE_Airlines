@@ -3,10 +3,11 @@ from mongo_db_interaction.USE_CASES.get_scheduled_flights_uc import get_schedule
 from mongo_db_interaction.USE_CASES.get_update_d1_flights_uc import get_update_scheduled_d1_flights
 
 
-def get_all_flights():
-    historic_flights = get_historic_flights(None)
-    scheduled_flights = get_scheduled_flights(None)
-    update_scheduled_d1_flights = get_update_scheduled_d1_flights(None)
+
+def get_flights(date = None):
+    historic_flights = get_historic_flights(None, date)
+    scheduled_flights = get_scheduled_flights(None, date)
+    update_scheduled_d1_flights = get_update_scheduled_d1_flights(None, date)
 
     flights = historic_flights + scheduled_flights + update_scheduled_d1_flights
     return flights
