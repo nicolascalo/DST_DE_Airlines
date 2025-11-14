@@ -339,6 +339,9 @@ if add_new_dates_csv_parameters :
 
         df_call_parameters = import_csv(path_folder = path_call_parameter_file_folder, path_file = call_parameter_csv).fillna('').sort_values(['endRange','completion'])
         
+        df_call_parameters_cols = df_call_parameters.columns
+        df_call_parameters_template = pd.DataFrame(columns=df_call_parameters_cols) 
+
         df_call_parameters_root = df_call_parameters.drop(non_parameters,axis =1 ,errors='ignore').drop_duplicates()
         
         params = list(df_call_parameters_root.columns)
@@ -378,6 +381,8 @@ if add_new_dates_csv_parameters :
                     
                             
                 else :      
+
+                    row_new = pd.concat([df_call_parameters_template,row_new])
                     with open(f"{path_call_parameter_file_folder + "/" + call_parameter_csv}","a") as f:
                         row_new.to_csv(f, header=False,index = 0, lineterminator='\n')
 
