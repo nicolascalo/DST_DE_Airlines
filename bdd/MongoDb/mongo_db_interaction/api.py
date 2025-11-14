@@ -21,8 +21,28 @@ app = FastAPI(
     title ="AirlinesApi"
 )
 
+api = FastAPI(openapi_tags=[
+    {
+        'name': 'historic',
+        'description': 'request on the historic flights'
+    },
+    {
+        'name': 'scheduled',
+        'description': 'request on the scheduled flights'
+    },
+        {
+        'name': 'scheduled d1',
+        'description': 'request on the scheduled d1 flights'
+    },
+            {
+        'name': 'all',
+        'description': 'request all the flights and all documents'
+    },
+    
+])
 
-@app.get("/historic_flight/json/with_id{id}")
+
+@app.get("/historic_flight/json/with_id{id}", tags=['historic'])
 def read_flight(id: str):
     flight = get_by_id_historic_flight(id)
 
@@ -34,36 +54,37 @@ def read_flight(id: str):
     "/flights/csv/with_date",
     summary="Télécharger les vols en CSV filtrés par date",
     description="""
-    Récupère les vols insérés après une date donnée et les exporte en CSV compressé (gzip).
+    Get inserted flights afer a given date and export them in compressed CSV (gzip).
     
-    **Format de date attendu:** `YYYYMMDD-HH-MM-SS` (heure française - Europe/Paris)
+    **Required format:** `YYYYMMDD-HH-MM-SS` (French time - Europe/Paris)
     
-    **Exemples valides:**
-    - `20251114-15-30-45` (14 novembre 2025 à 15h30:45)
-    - `20250101-00-00-00` (1er janvier 2025 à minuit)
+    **Valid example :**
+    - `20251114-15-30-45` 
+    - `20250101-00-00-00` 
     
-    **Note:** La date est en heure française et gère automatiquement l'heure d'été/hiver.
+    **Note:** Date in French time and automatic gesture for summer/winter 
     """,
     responses={
         200: {
-            "description": "Fichier CSV compressé contenant les vols",
+            "description": "Compressed CSV containing the fliths",
             "content": {"application/gzip": {}},
         },
-        400: {"description": "Format de date invalide"},
-        404: {"description": "Aucun vol trouvé pour cette date"},
-        500: {"description": "Erreur serveur"},
+        400: {"description": "Invalid format date"},
+        404: {"description": "Not found flights for this date"},
+        500: {"description": "Internal error"},
     },
+    tags = ['all']
 )
 def read_flight(
     date: str = Query(
         ...,
-        description="Date au format YYYYMMDD-HH-MM-SS (heure française)",
+        description="Format Date YYYYMMDD-HH-MM-SS (french time)",
         example="20251114-15-30-45",
         regex="^[0-9]{8}-[0-9]{2}-[0-9]{2}-[0-9]{2}$"
     )
 ):
     """
-    Endpoint pour télécharger les vols filtrés par date d'insertion.
+    Endpoint to download the flights filtered with date.
     """
     
 
@@ -76,10 +97,10 @@ def read_flight(
             raise HTTPException(
                 status_code=400,
                 detail={
-                    "error": "Date invalide",
-                    "message": "La date ne peut pas être dans le futur",
-                    "format_attendu": "YYYYMMDD-HH-MM-SS",
-                    "exemple": "20251114-15-30-45",
+                    "error": "Invalid Date",
+                    "message": "The date can't be from the futur",
+                    "required format": "YYYYMMDD-HH-MM-SS",
+                    "example": "20251114-15-30-45",
                 }
             )
             
@@ -106,8 +127,8 @@ def read_flight(
                 status_code=404,
                 detail={
                     "error": "Aucun vol trouvé",
-                    "message": f"Aucun vol n'a été inséré après la date {date}",
-                    "date_filtree": date,
+                    "message": f"Not inserted flight after  {date}",
+                    "filter_date": date,
                 }
             )
         
@@ -119,9 +140,9 @@ def read_flight(
         raise HTTPException(
             status_code=500,
             detail={
-                "error": "Erreur serveur",
-                "message": "Une erreur est survenue lors de la récupération des vols",
-                "erreur_technique": str(e),
+                "error": "Internal error",
+                "message": "An error occurred while retrieving the flights",
+                "technical_error": str(e),
             }
         )
     
@@ -136,8 +157,8 @@ def read_flight(
             raise HTTPException(
                 status_code=500,
                 detail={
-                    "error": "Erreur de compression",
-                    "message": "Le fichier CSV n'a pas pu être généré correctement",
+                    "error": "Compressed Error",
+                    "message": "The CSV file could not be generated correctly.",
                 }
             )
         
@@ -156,14 +177,14 @@ def read_flight(
         raise HTTPException(
             status_code=500,
             detail={
-                "error": "Erreur de compression",
-                "message": "Une erreur est survenue lors de la compression du CSV",
+                "error": "Compressed error",
+                "message": "The CSV file could not be generated correctly.",
                 "erreur_technique": str(e),
             }
         )
 
 
-@app.get("/historic_flights/csv/with_nb_limit_flights{nb_limit_flights}")
+@app.get("/historic_flights/csv/with_nb_limit_flights{nb_limit_flights}", tags = ['historic'])
 def read_flight(nb_limit_flights:int):
     df, filename = get_historic_flights_to_csv(nb_limit_flights)
 
@@ -183,7 +204,7 @@ def read_flight(nb_limit_flights:int):
         }
     )
 
-@app.get("/scheduled_flights/csv/with_nb_limit_flights{nb_limit_flights}")
+@app.get("/scheduled_flights/csv/with_nb_limit_flights{nb_limit_flights}", tags = ['scheduled'])
 def read_flight(nb_limit_flights:int):
     df, filename = get_schedulled_flights_to_csv(nb_limit_flights)
 
@@ -204,7 +225,7 @@ def read_flight(nb_limit_flights:int):
     )
 
 
-@app.get("/update_schedulae_d1_flights/csv/with_nb_limit_flights{nb_limit_flights}")
+@app.get("/update_schedulae_d1_flights/csv/with_nb_limit_flights{nb_limit_flights}", tags = ['scheduled d1'])
 def read_flight(nb_limit_flights:int):
     df, filename = get_update_d1_csv(nb_limit_flights)
 
@@ -225,13 +246,13 @@ def read_flight(nb_limit_flights:int):
     )
 
 
-@app.get("/collections/count_documents")
+@app.get("/collections/count_documents", tags = ['all'])
 def count_doc():
     count_doucments_by_collection = count_documents_by_collection()
     return count_doucments_by_collection
 
 
-@app.get("/dump/all")
+@app.get("/dump/all",   tags = ['all'])
 def get_full_dump():
     load_dotenv()
     date_time = datetime.now().strftime("%Y%m%d-%H-%M-%S")
