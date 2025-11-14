@@ -6,12 +6,14 @@ import subprocess
 from SERIALIZER.utils import mongo_to_json
 import gzip
 import io
-from mongo_db_interaction.USE_CASES.get_by_id_historic_flights_uc import get_by_id_historic_flight
+from mongo_db_interaction.USE_CASES.get_by_id_historic_uc import get_by_id_historic_flight
 from mongo_db_interaction.USE_CASES.count_documents_by_collection_uc import count_documents_by_collection
-from mongo_db_interaction.USE_CASES.get_all_flights_csv_uc import get_flights_to_csv
-from mongo_db_interaction.USE_CASES.get_historic_flights_csv_uc import get_historic_flights_to_csv
-from mongo_db_interaction.USE_CASES.get_schedulled_flights_csv_uc import get_schedulled_flights_to_csv
-from mongo_db_interaction.USE_CASES.get_update_d1_flights_csv_uc import get_update_d1_csv
+from mongo_db_interaction.USE_CASES.get_all_csv_uc import get_flights_to_csv
+from mongo_db_interaction.USE_CASES.get_historic_csv_uc import get_historic_flights_to_csv
+from mongo_db_interaction.USE_CASES.get_schedulled_csv_uc import get_schedulled_flights_to_csv
+from mongo_db_interaction.USE_CASES.get_update_d1_csv_uc import get_update_d1_csv
+from mongo_db_interaction.USE_CASES.get_sch_removed_csv_uc import get_removed_sch_flights_to_csv
+from mongo_db_interaction.USE_CASES.get_d1_removed_csv_uc import get_d1_removed_to_csv
 from dotenv import load_dotenv
 import os
 
@@ -108,8 +110,8 @@ def read_flight(
         raise HTTPException(
             status_code=400,
             detail={
-                "error": "Format de date invalide",
-                "message": "Le format de date attendu est YYYYMMDD-HH-MM-SS",
+                "error": "Invalid format date",
+                "message": "Required format date YYYYMMDD-HH-MM-SS",
                 "format_attendu": "YYYYMMDD-HH-MM-SS",
                 "exemple": "20251114-15-30-45",
                 "valeur_recue": date,
@@ -126,7 +128,7 @@ def read_flight(
             raise HTTPException(
                 status_code=404,
                 detail={
-                    "error": "Aucun vol trouvé",
+                    "error": "Data not found",
                     "message": f"Not inserted flight after  {date}",
                     "filter_date": date,
                 }
@@ -182,6 +184,276 @@ def read_flight(
                 "erreur_technique": str(e),
             }
         )
+    
+
+@app.get(
+    "/removed/scheduled/flights/csv/with_date",
+    summary="Download the removed scheduled flights in CSV filtered by inserted date",
+    description="""
+    Get inserted removed scheduled flights afer a given date and export them in compressed CSV (gzip).
+    
+    **Required format:** `YYYYMMDD-HH-MM-SS` (French time - Europe/Paris)
+    
+    **Valid example :**
+    - `20251114-15-30-45` 
+    - `20250101-00-00-00` 
+    
+    **Note:** Date in French time and automatic gesture for summer/winter 
+    """,
+    responses={
+        200: {
+            "description": "Compressed CSV containing the fliths",
+            "content": {"application/gzip": {}},
+        },
+        400: {"description": "Invalid format date"},
+        404: {"description": "Data not found"},
+        500: {"description": "Internal error"},
+    },
+    tags = ['scheduled']
+)
+def read_flight(
+    date: str = Query(
+        ...,
+        description="Format Date YYYYMMDD-HH-MM-SS (french time)",
+        example="20251114-15-30-45",
+        regex="^[0-9]{8}-[0-9]{2}-[0-9]{2}-[0-9]{2}$"
+    )
+):
+    """
+    Endpoint to download the flights filtered with date.
+    """
+    
+
+    try:
+        parsed_date = datetime.strptime(date, "%Y%m%d-%H-%M-%S")
+        
+
+        now_paris = datetime.now(ZoneInfo("Europe/Paris"))
+        if parsed_date.replace(tzinfo=ZoneInfo("Europe/Paris")) > now_paris:
+            raise HTTPException(
+                status_code=400,
+                detail={
+                    "error": "Invalid Date",
+                    "message": "The date can't be from the futur",
+                    "required format": "YYYYMMDD-HH-MM-SS",
+                    "example": "20251114-15-30-45",
+                }
+            )
+            
+    except ValueError as e:
+        raise HTTPException(
+            status_code=400,
+            detail={
+                "error": "Invalid format date",
+                "message": "Required format: YYYYMMDD-HH-MM-SS",
+                "format_attendu": "YYYYMMDD-HH-MM-SS",
+                "exemple": "20251114-15-30-45",
+                "valeur_recue": date,
+                "erreur_technique": str(e),
+            }
+        )
+    
+
+    try:
+        df, filename = get_removed_sch_flights_to_csv(date)
+        
+
+        if df is None or df.empty:
+            raise HTTPException(
+                status_code=404,
+                detail={
+                    "error": "Not found flights",
+                    "message": f"Not inserted flight after  {date}",
+                    "filter_date": date,
+                }
+            )
+        
+    except HTTPException:
+   
+        raise
+    except Exception as e:
+   
+        raise HTTPException(
+            status_code=500,
+            detail={
+                "error": "Internal error",
+                "message": "An error occurred while retrieving the flights",
+                "technical_error": str(e),
+            }
+        )
+    
+
+    try:
+        buffer = io.BytesIO()
+        with gzip.GzipFile(fileobj=buffer, mode='wb') as f:
+            df.to_csv(f, index=False, na_rep="")
+        csv_content = buffer.getvalue()
+        
+        if not csv_content:
+            raise HTTPException(
+                status_code=500,
+                detail={
+                    "error": "Compressed Error",
+                    "message": "The CSV file could not be generated correctly.",
+                }
+            )
+        
+        return StreamingResponse(
+            iter([csv_content]),
+            media_type="application/gzip",
+            headers={
+                "Content-Disposition": f"attachment; filename={filename}",
+                "Content-Length": str(len(csv_content)),
+            }
+        )
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail={
+                "error": "Compressed error",
+                "message": "The CSV file could not be generated correctly.",
+                "erreur_technique": str(e),
+            }
+        )
+    
+    
+
+@app.get(
+    "/removed/update/d1/flights/csv/with_date",
+    summary="Download the removed scheduled flights in CSV filtered by inserted date",
+    description="""
+    Get inserted removed scheduled flights afer a given date and export them in compressed CSV (gzip).
+    
+    **Required format:** `YYYYMMDD-HH-MM-SS` (French time - Europe/Paris)
+    
+    **Valid example :**
+    - `20251114-15-30-45` 
+    - `20250101-00-00-00` 
+    
+    **Note:** Date in French time and automatic gesture for summer/winter 
+    """,
+    responses={
+        200: {
+            "description": "Compressed CSV containing the fliths",
+            "content": {"application/gzip": {}},
+        },
+        400: {"description": "Invalid format date"},
+        404: {"description": "Data not found"},
+        500: {"description": "Internal error"},
+    },
+    tags = ['scheduled d1']
+)
+def read_flight(
+    date: str = Query(
+        ...,
+        description="Format Date YYYYMMDD-HH-MM-SS (french time)",
+        example="20251114-15-30-45",
+        regex="^[0-9]{8}-[0-9]{2}-[0-9]{2}-[0-9]{2}$"
+    )
+):
+    """
+    Endpoint to download the flights filtered with date.
+    """
+    
+
+    try:
+        parsed_date = datetime.strptime(date, "%Y%m%d-%H-%M-%S")
+        
+
+        now_paris = datetime.now(ZoneInfo("Europe/Paris"))
+        if parsed_date.replace(tzinfo=ZoneInfo("Europe/Paris")) > now_paris:
+            raise HTTPException(
+                status_code=400,
+                detail={
+                    "error": "Invalid Date",
+                    "message": "The date can't be from the futur",
+                    "required format": "YYYYMMDD-HH-MM-SS",
+                    "example": "20251114-15-30-45",
+                }
+            )
+            
+    except ValueError as e:
+        raise HTTPException(
+            status_code=400,
+            detail={
+                "error": "Invalid format date",
+                "message": "Required format: YYYYMMDD-HH-MM-SS",
+                "format_attendu": "YYYYMMDD-HH-MM-SS",
+                "exemple": "20251114-15-30-45",
+                "valeur_recue": date,
+                "erreur_technique": str(e),
+            }
+        )
+    
+
+    try:
+        df, filename = get_d1_removed_to_csv(date)
+        
+
+        if df is None or df.empty:
+            raise HTTPException(
+                status_code=404,
+                detail={
+                    "error": "Not found flights",
+                    "message": f"Not inserted flight after  {date}",
+                    "filter_date": date,
+                }
+            )
+        
+    except HTTPException:
+   
+        raise
+    except Exception as e:
+   
+        raise HTTPException(
+            status_code=500,
+            detail={
+                "error": "Internal error",
+                "message": "An error occurred while retrieving the flights",
+                "technical_error": str(e),
+            }
+        )
+    
+
+    try:
+        buffer = io.BytesIO()
+        with gzip.GzipFile(fileobj=buffer, mode='wb') as f:
+            df.to_csv(f, index=False, na_rep="")
+        csv_content = buffer.getvalue()
+        
+        if not csv_content:
+            raise HTTPException(
+                status_code=500,
+                detail={
+                    "error": "Compressed Error",
+                    "message": "The CSV file could not be generated correctly.",
+                }
+            )
+        
+        return StreamingResponse(
+            iter([csv_content]),
+            media_type="application/gzip",
+            headers={
+                "Content-Disposition": f"attachment; filename={filename}",
+                "Content-Length": str(len(csv_content)),
+            }
+        )
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail={
+                "error": "Compressed error",
+                "message": "The CSV file could not be generated correctly.",
+                "erreur_technique": str(e),
+            }
+        )
+
 
 
 @app.get("/historic_flights/csv/with_nb_limit_flights{nb_limit_flights}", tags = ['historic'])

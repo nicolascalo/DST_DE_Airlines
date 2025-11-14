@@ -1,5 +1,5 @@
 from datetime import datetime
-from mongo_db_interaction.USE_CASES.get_historic_flights_uc import get_historic_flights
+from mongo_db_interaction.USE_CASES.get_historic_uc import get_historic_flights
 from mongo_db_interaction.SERVICES.formater_service import format_json_flight_to_csv
 
 
