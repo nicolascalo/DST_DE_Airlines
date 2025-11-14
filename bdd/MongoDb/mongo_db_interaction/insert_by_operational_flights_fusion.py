@@ -11,22 +11,43 @@ from mongo_db_interaction.REPOSITORIES.collections import get_all_collection_nam
 def import_operationalflights_in_mongodb():
     folder_path = get_folder_path_in_env()
     file_names = get_file_names_by_folder(folder_path)
+    historic_operational_flights_json = {"operationalFlights": []}
+    update_scheduled_d1_operational_flights_json = {"operationalFlights": []}
+    scheduled_operational_flights_json = {"operationalFlights": []}
+    gz_file_name_json = []
+
+    i = 0
    
     for file_name in file_names:
         
         if is_gz_file(file_name) == True:
             gz_file_name = file_name
             collection_name = get_collection_name_by_end_gz_file_name(gz_file_name)
-            print(collection_name)
+          
             json_file = get_json_in_gz_file_by_its_name(gz_file_name)
             if json_file == "corrupted file" or json_file == "invalid json":
                 remove_file(folder_path, file_name)
                 # Ajouter une fonction permetant d'ajouter le nom du fichier corompu dans un .txt
             else:
                 json_file = delete_page_object_in_json(json_file)
+
+            if collection_name == 'historic_operational_flights':
+                historic_operational_flights_json["operationalFlights"].append(json_file)
+
+            if collection_name == 'scheduled_operational_flights':
+                scheduled_operational_flights_json["operationalFlights"].append(json_file)
+
+            if collection_name == 'update_scheduled_d1_operational_flights':
+                update_scheduled_d1_operational_flights_json["operationalFlights"].append(json_file)
+            gz_file_name_json.append(gz_file_name)
+
+
+
                  
-                insert_one(json_file, collection_name)
-                insert_compressed_file_name(gz_file_name)
+    insert_one(json_file, 'historic_operational_flights')
+    insert_one(json_file, 'scheduled_operational_flights')
+    insert_one(json_file, 'update_scheduled_d1_operational_flights')
+    insert_compressed_file_name(gz_file_name_json)
 
     
 
@@ -62,4 +83,6 @@ add_date_insertion_in_flights()
 
 
     
+
+
 
