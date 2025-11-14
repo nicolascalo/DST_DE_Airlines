@@ -1,0 +1,169 @@
+2025-11-14 13:11:12,219 - __main__ - INFO - ==== Starting ML script====
+2025-11-14 13:11:12,219 - __main__ - INFO - Nb of cores: 6
+
+2025-11-14 13:11:12,219 - __main__ - INFO - ML pipeline settings loaded from afklm_ml_training_settings.json
+2025-11-14 13:11:18,004 - __main__ - INFO - Loaded dataset: afklm_flight_from_mongo_filtered_20251106-13-52-40_983317.csv, shape=(983317, 45)
+2025-11-14 13:11:18,008 - __main__ - INFO - Airport list loaded from airport_list.json
+2025-11-14 13:11:18,868 - __main__ - INFO - Step: raw_data | shape: (983317, 45) | null values: 8933246
+2025-11-14 13:11:19,713 - __main__ - INFO - Extracting 'company_flight' from 'id' column
+2025-11-14 13:11:20,487 - __main__ - INFO - Dropping columns: ['id', 'airline_name', 'flightLegs_aircraft_ownerAirlineCode', 'actual', 'PositionTerminal', 'latestPublished', 'airline_code', 'company_flight', 'city_country_areaCode', 'airport_location', 'airport_city_country_name'] and rows with missing 'flightStatusPublic'
+2025-11-14 13:11:21,776 - __main__ - INFO - Step: drop_na_and_unused_cols | shape: (983317, 23) | null values: 5427175
+2025-11-14 13:11:22,220 - __main__ - INFO - Computing 'scheduled' flag for flights
+2025-11-14 13:11:22,905 - __main__ - INFO - Computing 'flightLegs_scheduledFlightDuration' in minutes
+2025-11-14 13:11:31,323 - __main__ - INFO - Filtered past flights only, resulting shape: (957733, 24)
+2025-11-14 13:11:31,327 - __main__ - INFO - Filled missing 'flightLegs_irregularity_delayDuration_total' with 0
+2025-11-14 13:11:31,327 - __main__ - INFO - Categorizing flights into 'cancelled', 'late', 'on_time'
+2025-11-14 13:11:36,014 - __main__ - INFO - Step: categorize_flights | shape: (957733, 25) | null values: 4473406
+2025-11-14 13:11:36,452 - __main__ - INFO - Filtering flights in optional list
+2025-11-14 13:11:36,602 - __main__ - INFO - AFiltering flights in mandatory list
+2025-11-14 13:11:36,938 - __main__ - INFO - Step: airport_filtering | shape: (494357, 25) | null values: 2064656
+2025-11-14 13:11:37,170 - __main__ - INFO - Adding seasonality, isWeekend and dayPeriod
+2025-11-14 13:11:52,333 - __main__ - INFO - ==== Preparing classification dataset ====
+2025-11-14 13:11:52,333 - __main__ - INFO - Using the full dataset
+2025-11-14 13:11:52,584 - __main__ - INFO - Classification dataset shape: X=(494357, 10), y=(494357,)
+2025-11-14 13:11:52,598 - __main__ - INFO - Classification dataset class repartition: flightLegs_Category
+on_time      0.610065
+late         0.354442
+cancelled    0.035493
+Name: proportion, dtype: float64
+2025-11-14 13:11:52,902 - __main__ - INFO - Classification train/test split: X_train=(395485, 10), X_test=(98872, 10), y_train=(395485,), y_test=(98872,)
+2025-11-14 13:11:52,902 - __main__ - INFO - Extracting features from dataset, target column: flightLegs_Category
+2025-11-14 13:11:52,928 - __main__ - INFO - Identified 1 numeric and 6 categorical features
+2025-11-14 13:11:52,928 - __main__ - INFO - Numeric features: ['flightLegs_scheduledFlightDuration']
+2025-11-14 13:11:52,928 - __main__ - INFO - Categorical features: ['flightLegs_aircraft_typeCode', 'flightLegs_arrivalInformation_airport_code', 'flightLegs_departureInformation_airport_code', 'flightLegs_season', 'flightLegs_arrivalInformation_times_scheduled_dayPeriod', 'flightLegs_departureInformation_times_scheduled_dayPeriod']
+
+2025-11-14 13:11:52,928 - __main__ - INFO - ==== Preparing regression dataset ====
+2025-11-14 13:11:53,198 - __main__ - INFO - Step: lateFlights_filtering | shape: (175221, 12) | null values: 0
+2025-11-14 13:11:53,230 - __main__ - INFO - Saved dataset cleaning summary to 'outputs/2025_11_14T13_11_12/dataset_summary/dataset_cleaning_summary.csv'
+
+2025-11-14 13:11:53,230 - __main__ - INFO - Using the full dataset
+2025-11-14 13:11:53,238 - __main__ - INFO - Regression dataset shape: X=(175221, 11), y=(175221,)
+2025-11-14 13:11:53,256 - __main__ - INFO - Regression train/test split: X_train=(140176, 11), X_test=(35045, 11), y_train=(140176,), y_test=(35045,)
+2025-11-14 13:11:53,256 - __main__ - INFO - Extracting features from dataset, target column: flightLegs_irregularity_delayDuration_total
+2025-11-14 13:11:53,261 - __main__ - INFO - Identified 1 numeric and 7 categorical features
+2025-11-14 13:11:53,261 - __main__ - INFO - Numeric features: ['flightLegs_scheduledFlightDuration']
+2025-11-14 13:11:53,261 - __main__ - INFO - Categorical features: ['flightLegs_aircraft_typeCode', 'flightLegs_arrivalInformation_airport_code', 'flightLegs_departureInformation_airport_code', 'flightLegs_Category', 'flightLegs_season', 'flightLegs_arrivalInformation_times_scheduled_dayPeriod', 'flightLegs_departureInformation_times_scheduled_dayPeriod']
+
+2025-11-14 13:11:53,261 - __main__ - INFO - ==== Starting classification pipeline: Logistic_OVO ====
+
+2025-11-14 13:11:53,261 - __main__ - INFO - Running simple mode for Logistic_OVO
+2025-11-14 13:11:53,261 - __main__ - INFO - Starting classification pipeline: Logistic_OVO | mode: simple
+2025-11-14 13:11:58,501 - __main__ - INFO - Fitted simple pipeline for Logistic_OVO | Score: 0.783 | Total duration: 5 seconds
+2025-11-14 13:11:58,501 - __main__ - INFO - Saving feature importance for Logistic_OVO (classification)
+2025-11-14 13:11:58,502 - __main__ - WARNING - No feature importances available for Logistic_OVO
+2025-11-14 13:11:58,502 - __main__ - INFO - Skipping tree plot for Logistic_OVO (not a DecisionTree model)
+2025-11-14 13:11:58,503 - __main__ - INFO - Generating classification metrics for Logistic_OVO | mode=simple
+2025-11-14 13:11:59,528 - __main__ - ERROR - Error in simple mode pipeline Logistic_OVO: name 'target_variable' is not defined
+
+2025-11-14 13:11:59,528 - __main__ - INFO - ==== Finished classification pipeline: Logistic_OVO ====
+
+
+2025-11-14 13:11:59,528 - __main__ - INFO - ==== Starting classification pipeline: DecisionTree ====
+
+2025-11-14 13:11:59,528 - __main__ - INFO - Running simple mode for DecisionTree
+2025-11-14 13:11:59,528 - __main__ - INFO - Starting classification pipeline: DecisionTree | mode: simple
+2025-11-14 13:12:11,122 - __main__ - INFO - Fitted simple pipeline for DecisionTree | Score: 0.844 | Total duration: 11 seconds
+2025-11-14 13:12:11,122 - __main__ - INFO - Saving feature importance for DecisionTree (classification)
+2025-11-14 13:12:11,125 - __main__ - INFO - Feature importance CSV saved for DecisionTree
+2025-11-14 13:12:11,305 - __main__ - INFO - Feature importance plot saved for DecisionTree
+2025-11-14 13:12:11,513 - __main__ - INFO - Adjusted thresholds to original units for 1 scaled features
+2025-11-14 13:12:12,581 - __main__ - INFO - Decision tree plot saved for DecisionTree
+2025-11-14 13:12:12,581 - __main__ - INFO - Generating classification metrics for DecisionTree | mode=simple
+2025-11-14 13:12:13,588 - __main__ - ERROR - Error in simple mode pipeline DecisionTree: name 'target_variable' is not defined
+
+2025-11-14 13:12:13,588 - __main__ - INFO - ==== Finished classification pipeline: DecisionTree ====
+
+
+2025-11-14 13:12:13,588 - __main__ - INFO - ==== Starting classification pipeline: RandomForest ====
+
+2025-11-14 13:12:13,588 - __main__ - INFO - Running simple mode for RandomForest
+2025-11-14 13:12:13,588 - __main__ - INFO - Starting classification pipeline: RandomForest | mode: simple
+2025-11-14 13:15:27,949 - __main__ - INFO - Fitted simple pipeline for RandomForest | Score: 0.845 | Total duration: 193 seconds
+2025-11-14 13:15:27,949 - __main__ - INFO - Saving feature importance for RandomForest (classification)
+2025-11-14 13:15:27,978 - __main__ - INFO - Feature importance CSV saved for RandomForest
+2025-11-14 13:15:28,191 - __main__ - INFO - Feature importance plot saved for RandomForest
+2025-11-14 13:15:28,192 - __main__ - INFO - Skipping tree plot for RandomForest (not a DecisionTree model)
+2025-11-14 13:15:28,192 - __main__ - INFO - Generating classification metrics for RandomForest | mode=simple
+2025-11-14 13:15:29,953 - __main__ - ERROR - Error in simple mode pipeline RandomForest: name 'target_variable' is not defined
+
+2025-11-14 13:15:29,953 - __main__ - INFO - ==== Finished classification pipeline: RandomForest ====
+
+
+2025-11-14 13:15:29,953 - __main__ - INFO - ==== Starting classification pipeline: Logistic_OVR ====
+
+2025-11-14 13:15:29,953 - __main__ - INFO - Running simple mode for Logistic_OVR
+2025-11-14 13:15:29,953 - __main__ - INFO - Starting classification pipeline: Logistic_OVR | mode: simple
+2025-11-14 13:15:37,043 - __main__ - INFO - Fitted simple pipeline for Logistic_OVR | Score: 0.781 | Total duration: 6 seconds
+2025-11-14 13:15:37,044 - __main__ - INFO - Saving feature importance for Logistic_OVR (classification)
+2025-11-14 13:15:37,045 - __main__ - WARNING - No feature importances available for Logistic_OVR
+2025-11-14 13:15:37,045 - __main__ - INFO - Skipping tree plot for Logistic_OVR (not a DecisionTree model)
+2025-11-14 13:15:37,045 - __main__ - INFO - Generating classification metrics for Logistic_OVR | mode=simple
+2025-11-14 13:15:38,230 - __main__ - ERROR - Error in simple mode pipeline Logistic_OVR: name 'target_variable' is not defined
+
+2025-11-14 13:15:38,230 - __main__ - INFO - ==== Finished classification pipeline: Logistic_OVR ====
+
+
+2025-11-14 13:15:38,230 - __main__ - INFO - ==== Starting regression pipeline: LinearRegression ====
+
+2025-11-14 13:15:38,230 - __main__ - INFO - Running simple mode for LinearRegression
+2025-11-14 13:15:38,230 - __main__ - INFO - Starting regression pipeline: LinearRegression | mode: simple
+2025-11-14 13:15:41,834 - __main__ - INFO - Fitted simple pipeline for LinearRegression | r2: 0.026 | Total duration: 3 seconds
+2025-11-14 13:15:41,834 - __main__ - INFO - Saving feature importance for LinearRegression (regression)
+2025-11-14 13:15:41,837 - __main__ - INFO - Feature importance CSV saved for LinearRegression
+2025-11-14 13:15:42,059 - __main__ - INFO - Feature importance plot saved for LinearRegression
+2025-11-14 13:15:42,059 - __main__ - INFO - Skipping tree plot for LinearRegression (not a DecisionTree model)
+2025-11-14 13:15:42,059 - __main__ - INFO - Generating regression metrics for LinearRegression | mode=simple
+2025-11-14 13:15:42,372 - __main__ - ERROR - Error in simple mode regression pipeline LinearRegression: name 'target_variable' is not defined
+
+2025-11-14 13:15:42,372 - __main__ - INFO - ==== Finished regression pipeline: LinearRegression ====
+
+
+2025-11-14 13:15:42,372 - __main__ - INFO - ==== Starting regression pipeline: DecisionTreeRegressor ====
+
+2025-11-14 13:15:42,373 - __main__ - INFO - Running simple mode for DecisionTreeRegressor
+2025-11-14 13:15:42,373 - __main__ - INFO - Starting regression pipeline: DecisionTreeRegressor | mode: simple
+2025-11-14 13:15:47,561 - __main__ - INFO - Fitted simple pipeline for DecisionTreeRegressor | r2: -0.098 | Total duration: 5 seconds
+2025-11-14 13:15:47,561 - __main__ - INFO - Saving feature importance for DecisionTreeRegressor (regression)
+2025-11-14 13:15:47,564 - __main__ - INFO - Feature importance CSV saved for DecisionTreeRegressor
+2025-11-14 13:15:47,787 - __main__ - INFO - Feature importance plot saved for DecisionTreeRegressor
+2025-11-14 13:15:48,020 - __main__ - INFO - Adjusted thresholds to original units for 1 scaled features
+2025-11-14 13:15:49,274 - __main__ - INFO - Decision tree plot saved for DecisionTreeRegressor
+2025-11-14 13:15:49,274 - __main__ - INFO - Generating regression metrics for DecisionTreeRegressor | mode=simple
+2025-11-14 13:15:49,571 - __main__ - ERROR - Error in simple mode regression pipeline DecisionTreeRegressor: name 'target_variable' is not defined
+
+2025-11-14 13:15:49,571 - __main__ - INFO - ==== Finished regression pipeline: DecisionTreeRegressor ====
+
+
+2025-11-14 13:15:49,571 - __main__ - INFO - ==== Starting regression pipeline: RandomForestRegressor ====
+
+2025-11-14 13:15:49,571 - __main__ - INFO - Running simple mode for RandomForestRegressor
+2025-11-14 13:15:49,571 - __main__ - INFO - Starting regression pipeline: RandomForestRegressor | mode: simple
+2025-11-14 13:17:23,469 - __main__ - INFO - Fitted simple pipeline for RandomForestRegressor | r2: -0.030 | Total duration: 93 seconds
+2025-11-14 13:17:23,470 - __main__ - INFO - Saving feature importance for RandomForestRegressor (regression)
+2025-11-14 13:17:23,485 - __main__ - INFO - Feature importance CSV saved for RandomForestRegressor
+2025-11-14 13:17:23,721 - __main__ - INFO - Feature importance plot saved for RandomForestRegressor
+2025-11-14 13:17:23,721 - __main__ - INFO - Skipping tree plot for RandomForestRegressor (not a DecisionTree model)
+2025-11-14 13:17:23,721 - __main__ - INFO - Generating regression metrics for RandomForestRegressor | mode=simple
+2025-11-14 13:17:24,202 - __main__ - ERROR - Error in simple mode regression pipeline RandomForestRegressor: name 'target_variable' is not defined
+
+2025-11-14 13:17:24,202 - __main__ - INFO - ==== Finished regression pipeline: RandomForestRegressor ====
+
+
+2025-11-14 13:17:24,202 - __main__ - INFO - ==== Starting regression pipeline: XGBRegressor ====
+
+2025-11-14 13:17:24,202 - __main__ - INFO - Running simple mode for XGBRegressor
+2025-11-14 13:17:24,202 - __main__ - INFO - Starting regression pipeline: XGBRegressor | mode: simple
+2025-11-14 13:17:24,935 - __main__ - INFO - Fitted simple pipeline for XGBRegressor | r2: 0.044 | Total duration: 0 seconds
+2025-11-14 13:17:24,935 - __main__ - INFO - Saving feature importance for XGBRegressor (regression)
+2025-11-14 13:17:24,938 - __main__ - INFO - Feature importance CSV saved for XGBRegressor
+2025-11-14 13:17:25,160 - __main__ - INFO - Feature importance plot saved for XGBRegressor
+2025-11-14 13:17:25,161 - __main__ - INFO - Skipping tree plot for XGBRegressor (not a DecisionTree model)
+2025-11-14 13:17:25,161 - __main__ - INFO - Generating regression metrics for XGBRegressor | mode=simple
+2025-11-14 13:17:25,474 - __main__ - ERROR - Error in simple mode regression pipeline XGBRegressor: name 'target_variable' is not defined
+
+2025-11-14 13:17:25,474 - __main__ - INFO - ==== Finished regression pipeline: XGBRegressor ====
+
+
+2025-11-14 13:17:25,476 - __main__ - INFO - Saved top 20 features summary for all pipelines
+2025-11-14 13:17:25,476 - __main__ - INFO - End of ML script
+

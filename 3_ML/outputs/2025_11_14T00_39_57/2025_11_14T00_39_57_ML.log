@@ -1,0 +1,67 @@
+2025-11-14 00:39:57,140 - __main__ - INFO - ==== Starting ML script====
+2025-11-14 00:39:57,140 - __main__ - INFO - Nb of cores: 6
+
+2025-11-14 00:39:57,140 - __main__ - INFO - ML pipeline settings loaded from afklm_ml_training_settings.json
+2025-11-14 00:40:02,605 - __main__ - INFO - Loaded dataset: afklm_flight_from_mongo_filtered_20251106-13-52-40_983317.csv, shape=(983317, 45)
+2025-11-14 00:40:03,534 - __main__ - INFO - Step: raw_data | shape: (983317, 45) | null values: 8933246
+2025-11-14 00:40:04,464 - __main__ - INFO - Extracting 'company_flight' from 'id' column
+2025-11-14 00:40:05,295 - __main__ - INFO - Dropping columns: ['id', 'airline_name', 'flightLegs_aircraft_ownerAirlineCode', 'actual', 'PositionTerminal', 'latestPublished', 'airline_code', 'company_flight', 'city_country_areaCode', 'airport_location', 'airport_city_country_name'] and rows with missing 'flightStatusPublic'
+2025-11-14 00:40:06,670 - __main__ - INFO - Step: drop_na_and_unused_cols | shape: (983317, 23) | null values: 5427175
+2025-11-14 00:40:07,160 - __main__ - INFO - Computing 'scheduled' flag for flights
+2025-11-14 00:40:07,880 - __main__ - INFO - Computing 'flightLegs_scheduledFlightDuration' in minutes
+2025-11-14 00:40:16,923 - __main__ - INFO - Filtered past flights only, resulting shape: (957733, 24)
+2025-11-14 00:40:16,927 - __main__ - INFO - Filled missing 'flightLegs_irregularity_delayDuration_total' with 0
+2025-11-14 00:40:16,927 - __main__ - INFO - Categorizing flights into 'cancelled', 'late', 'on_time'
+2025-11-14 00:40:22,055 - __main__ - INFO - Step: categorize_flights | shape: (957733, 25) | null values: 4473406
+2025-11-14 00:40:22,530 - __main__ - INFO - Filtering flights to EU airports
+2025-11-14 00:40:22,689 - __main__ - INFO - Applying top 30 EU airports filter
+2025-11-14 00:40:23,059 - __main__ - INFO - Step: eu_filtering | shape: (494357, 25) | null values: 2064656
+2025-11-14 00:40:23,312 - __main__ - INFO - Adding seasonality, isWeekend and dayPeriod
+2025-11-14 00:40:39,961 - __main__ - INFO - ==== Preparing classification dataset ====
+2025-11-14 00:40:39,961 - __main__ - INFO - Using the full dataset
+2025-11-14 00:40:40,237 - __main__ - INFO - Classification dataset shape: X=(494357, 10), y=(494357,)
+2025-11-14 00:40:40,252 - __main__ - INFO - Classification dataset class repartition: flightLegs_Category
+on_time      0.610065
+late         0.354442
+cancelled    0.035493
+Name: proportion, dtype: float64
+2025-11-14 00:40:40,584 - __main__ - INFO - Classification train/test split: X_train=(395485, 10), X_test=(98872, 10), y_train=(395485,), y_test=(98872,)
+2025-11-14 00:40:40,584 - __main__ - INFO - Extracting features from dataset, target column: flightLegs_Category
+2025-11-14 00:40:40,611 - __main__ - INFO - Identified 1 numeric and 6 categorical features
+2025-11-14 00:40:40,611 - __main__ - INFO - Numeric features: ['flightLegs_scheduledFlightDuration']
+2025-11-14 00:40:40,611 - __main__ - INFO - Categorical features: ['flightLegs_aircraft_typeCode', 'flightLegs_arrivalInformation_airport_code', 'flightLegs_departureInformation_airport_code', 'flightLegs_season', 'flightLegs_arrivalInformation_times_scheduled_dayPeriod', 'flightLegs_departureInformation_times_scheduled_dayPeriod']
+
+2025-11-14 00:40:40,611 - __main__ - INFO - ==== Preparing regression dataset ====
+2025-11-14 00:40:40,893 - __main__ - INFO - Step: lateFlights_filtering | shape: (175221, 12) | null values: 0
+2025-11-14 00:40:40,926 - __main__ - INFO - Saved dataset cleaning summary to 'outputs/2025_11_14T00_39_57/dataset_summary/dataset_cleaning_summary.csv'
+
+2025-11-14 00:40:40,926 - __main__ - INFO - Using the full dataset
+2025-11-14 00:40:40,934 - __main__ - INFO - Regression dataset shape: X=(175221, 11), y=(175221,)
+2025-11-14 00:40:40,953 - __main__ - INFO - Regression train/test split: X_train=(140176, 11), X_test=(35045, 11), y_train=(140176,), y_test=(35045,)
+2025-11-14 00:40:40,953 - __main__ - INFO - Extracting features from dataset, target column: flightLegs_irregularity_delayDuration_total
+2025-11-14 00:40:40,958 - __main__ - INFO - Identified 1 numeric and 7 categorical features
+2025-11-14 00:40:40,958 - __main__ - INFO - Numeric features: ['flightLegs_scheduledFlightDuration']
+2025-11-14 00:40:40,958 - __main__ - INFO - Categorical features: ['flightLegs_aircraft_typeCode', 'flightLegs_arrivalInformation_airport_code', 'flightLegs_departureInformation_airport_code', 'flightLegs_Category', 'flightLegs_season', 'flightLegs_arrivalInformation_times_scheduled_dayPeriod', 'flightLegs_departureInformation_times_scheduled_dayPeriod']
+
+2025-11-14 00:40:40,958 - __main__ - INFO - ==== Starting classification pipeline: Logistic_OVO ====
+
+2025-11-14 00:40:40,958 - __main__ - INFO - Running simple mode for Logistic_OVO
+2025-11-14 00:40:40,958 - __main__ - INFO - Starting classification pipeline: Logistic_OVO | mode: simple
+2025-11-14 00:40:46,763 - __main__ - ERROR - Error in simple mode pipeline Logistic_OVO: unsupported operand type(s) for |: 'bool' and 'str'
+
+2025-11-14 00:40:46,764 - __main__ - INFO - ==== Finished classification pipeline: Logistic_OVO ====
+
+
+2025-11-14 00:40:46,764 - __main__ - INFO - ==== Starting classification pipeline: DecisionTree ====
+
+2025-11-14 00:40:46,764 - __main__ - INFO - Running simple mode for DecisionTree
+2025-11-14 00:40:46,764 - __main__ - INFO - Starting classification pipeline: DecisionTree | mode: simple
+2025-11-14 00:40:59,950 - __main__ - ERROR - Error in simple mode pipeline DecisionTree: unsupported operand type(s) for |: 'bool' and 'str'
+
+2025-11-14 00:40:59,950 - __main__ - INFO - ==== Finished classification pipeline: DecisionTree ====
+
+
+2025-11-14 00:40:59,950 - __main__ - INFO - ==== Starting classification pipeline: RandomForest ====
+
+2025-11-14 00:40:59,950 - __main__ - INFO - Running simple mode for RandomForest
+2025-11-14 00:40:59,950 - __main__ - INFO - Starting classification pipeline: RandomForest | mode: simple
