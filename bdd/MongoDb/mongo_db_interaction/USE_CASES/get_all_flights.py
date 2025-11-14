@@ -1,6 +1,6 @@
-from mongo_db_interaction.USE_CASES.get_historic_flights_uc import get_historic_flights
-from mongo_db_interaction.USE_CASES.get_scheduled_flights_uc import get_scheduled_flights
-from mongo_db_interaction.USE_CASES.get_update_d1_flights_uc import get_update_scheduled_d1_flights
+from mongo_db_interaction.USE_CASES.get_historic_uc import get_historic_flights
+from mongo_db_interaction.USE_CASES.get_scheduled_uc import get_scheduled_flights
+from mongo_db_interaction.USE_CASES.get_update_d1_uc import get_update_scheduled_d1_flights
 
 
 
