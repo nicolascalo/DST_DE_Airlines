@@ -5,6 +5,8 @@ from .USE_CASES.insert_compressed_file_name_uc import insert_compressed_file_nam
 from .REPOSITORIES.operational_flights import insert_one, delete_duplicates, move_to_dst_collection, delete_all_opreation_flights_collection, remove_past_flights_on_d1_collection, remove_duplicate_flights_from_scheduled,remove_past_flights_on_scheduled_collection
 from .REPOSITORIES.flights import add_date_insertion
 from mongo_db_interaction.REPOSITORIES.collections import get_all_collection_name
+from mongo_db_interaction.REPOSITORIES.operational_flights import insert_one
+from mongo_db_interaction.USE_CASES.insert_compressed_file_name_uc import  is_compressed_file_name_exist
 
 
 
@@ -16,17 +18,18 @@ def import_operationalflights_in_mongodb():
         
         if is_gz_file(file_name) == True:
             gz_file_name = file_name
+            
             collection_name = get_collection_name_by_end_gz_file_name(gz_file_name)
-            print(collection_name)
+
             json_file = get_json_in_gz_file_by_its_name(gz_file_name)
             if json_file == "corrupted file" or json_file == "invalid json":
                 remove_file(folder_path, file_name)
                 # Ajouter une fonction permetant d'ajouter le nom du fichier corompu dans un .txt
             else:
                 json_file = delete_page_object_in_json(json_file)
-                 
-                insert_one(json_file, collection_name)
-                insert_compressed_file_name(gz_file_name)
+                if is_compressed_file_name_exist(gz_file_name) == False:
+                    insert_one(json_file, collection_name)
+                    insert_compressed_file_name(gz_file_name)
 
     
 

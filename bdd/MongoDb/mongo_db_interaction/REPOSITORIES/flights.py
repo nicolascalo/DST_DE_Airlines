@@ -39,7 +39,7 @@ def add_date_insertion(collection_name):
     {"$set": {"date_insertion": {"date": date_now}}}
 )
     
-    print(f"Nb docs updated: {creation_date.modified_count}")
+    print(f"Nb docs on {collection_name} updated to add date: {creation_date.modified_count}")
 
 
 

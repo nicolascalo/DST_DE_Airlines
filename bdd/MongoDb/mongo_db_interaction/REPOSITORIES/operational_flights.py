@@ -66,8 +66,13 @@ def remove_past_flights_on_d1_collection():
     flights_to_remove = list(mongo_db_connect['update_scheduled_d1_flights'].find(query))
 
     if flights_to_remove:
-        mongo_db_connect['removed_update_scheduled_d1_flights'].insert_many(flights_to_remove)
-        print("collection removed_update_scheduled_d1_flights created")
+         for flight in flights_to_remove:
+                mongo_db_connect['removed_update_scheduled_d1_flights'].update_one(
+                {"id": flight["id"]},
+                {"$setOnInsert": flight},
+                upsert=True
+            )
+   
     deleting = mongo_db_connect['update_scheduled_d1_flights'].delete_many(query)
 
     print(f"nb d1 flights deleted : {deleting.deleted_count}")
@@ -89,8 +94,14 @@ def remove_past_flights_on_scheduled_collection():
     }
     flights_to_remove = list(mongo_db_connect['scheduled_flights'].find(query))
     if flights_to_remove:
-        mongo_db_connect['removed_scheduled_flights'].insert_many(flights_to_remove)
-        print("collection removed_scheduled_flights created")
+        for flight in flights_to_remove:
+
+            mongo_db_connect['removed_scheduled_flights'].update_one(
+                {"id": flight["id"]},
+                {"$setOnInsert": flight},
+                upsert=True
+            )
+      
     deleting = mongo_db_connect['scheduled_flights'].delete_many(query)
     print(f"nb scheduled flights deleted : {deleting.deleted_count}")
     return deleting.deleted_count
