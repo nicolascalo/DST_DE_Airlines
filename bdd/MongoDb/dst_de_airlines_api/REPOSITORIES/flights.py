@@ -1,4 +1,5 @@
 from DB_CONTEXT.db_context import mongo_db_connect
+from DB_CONTEXT.check_database_connection import check_db_connection
 from fastapi import HTTPException
 from datetime import datetime
 from zoneinfo import ZoneInfo
@@ -6,11 +7,13 @@ from zoneinfo import ZoneInfo
 collection = "historic_flights"
 
 def insert_one(flight):
+    check_db_connection() 
     mongo_db_connect[collection].insert_one(flight)
 
 
 
 def get_by_id(id, colleciton_name):
+    check_db_connection() 
     try:
         return mongo_db_connect[colleciton_name].find_one(
             {"id": id}
@@ -25,13 +28,24 @@ def get_by_id(id, colleciton_name):
   
 
 def create_index():
+    check_db_connection() 
     mongo_db_connect[collection].create_index([("id", 1)], unique=True)
 
 
 def count_flight(collection_name):
-    return mongo_db_connect[collection_name].count_documents({})
+    check_db_connection() 
+    try:
+        return mongo_db_connect[collection_name].count_documents({})
+    except (TypeError, KeyError):
+        return None
+    except HTTPException: 
+        raise
+    except Exception as e:
+        print(f"critical error : {e}")
+        raise
 
 def add_date_insertion(collection_name):
+    check_db_connection() 
     date_now = datetime.now(ZoneInfo("Europe/Paris")).strftime("%Y%m%d-%H-%M-%S")
 
     creation_date = mongo_db_connect[collection_name].update_many(
@@ -45,6 +59,7 @@ def add_date_insertion(collection_name):
 
 
 def get_all(nb_flight_limit, collection_name, date=None):
+    check_db_connection() 
     
     pipeline = [
         {

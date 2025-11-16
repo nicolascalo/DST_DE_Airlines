@@ -1,1 +1,0 @@
-from mongo_db_interaction.DB_CONTEXT.db_context import mongo_db_connect
