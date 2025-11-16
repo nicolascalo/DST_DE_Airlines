@@ -1,16 +1,20 @@
 from DB_CONTEXT.db_context import mongo_db_connect
+from DB_CONTEXT.check_database_connection import check_db_connection
 from datetime import datetime
 
 collection = "operation_flights"
 flight_colleciton = "flights"
 
 def insert_one(operation_flights, collection_name):
+    check_db_connection() 
     
     mongo_db_connect[collection_name].insert_one(operation_flights)
 
 
 
 def delete_duplicates(collection_name):
+    check_db_connection() 
+    
     print("deleting duplicates")
     pipeline = [
         {"$group": {"_id": "$id", "count": {"$sum": 1}, "docs": {"$push": "$_id"}}},
@@ -30,6 +34,7 @@ def delete_duplicates(collection_name):
 
 
 def move_to_dst_collection(org_collection, dst_collection):
+    check_db_connection() 
     print("move to collection "+dst_collection)
     mongo_db_connect[org_collection].aggregate([
             {"$unwind": "$operationalFlights"},  
@@ -44,12 +49,14 @@ def move_to_dst_collection(org_collection, dst_collection):
         ])
     
 def delete_all_opreation_flights_collection(collection_name):
+    check_db_connection() 
     print("drop")
     mongo_db_connect[collection_name].drop()
 
 
 
 def remove_past_flights_on_d1_collection():
+    check_db_connection() 
     query = {
         "$expr": {
             "$lt": [
@@ -79,6 +86,7 @@ def remove_past_flights_on_d1_collection():
     return deleting.deleted_count
 
 def remove_past_flights_on_scheduled_collection():
+    check_db_connection() 
     query = {
    
           "$expr": {
@@ -107,6 +115,7 @@ def remove_past_flights_on_scheduled_collection():
     return deleting.deleted_count
     
 def remove_duplicate_flights_from_scheduled():
+    check_db_connection() 
     
  
     ids_to_remove = mongo_db_connect['update_scheduled_d1_flights'].distinct("id")

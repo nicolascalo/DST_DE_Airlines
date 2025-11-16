@@ -14,11 +14,11 @@ This project provides tools to manage a MongoDB database for storing, importing,
 ### 1. Initial Setup
 Fill in the following configuration files:
 - `docker-compose.yml`: Required parameters are documented in [`docker-composestruct`](docker-composestruct).
-- `.env` (in `MongoDb/mongo_db_interaction/`): Required parameters are documented in [`envstruct`](envstruct).
+- `.env` (in `MongoDb/dst_de_airlines_api/`): Required parameters are documented in [`envstruct`](envstruct).
 
 - Install the project
 ```bash
-./setup.sh
+./dst_de_airlines_api/setup.sh
 ```
 ### 2. Install `mongodb-database-tools`
 To use the API route `http://<api_address>:<port>/dump/all`, install the MongoDB tools:
@@ -133,8 +133,8 @@ cat <path_file_to_import> | docker exec -i <docker_container_name> mongorestore 
 
 ```
 bdd/MongoDb/
-├── mongo_db_interaction/
-│   ├── main.py
+├── dst_de_airlines_api/
+│   ├── API/
 │   ├── SERIALIZER/
 │   ├── USE_CASES/
 │   ├── SERVICES/
