@@ -7,8 +7,10 @@ csv_to_import = csv_files[-1]
 df = pd.read_csv(f'{'data'}/{csv_to_import}')
 
 df.columns
-df_test = df.head(1).reset_index().to_json(orient='records')
 
+df_test = df[(df['flightLegs_arrivalInformation_airport_code'] == 'CDG') & (df['flightLegs_departureInformation_airport_code'] == 'AMS')]
+df_test = df.head(1).reset_index().to_json(orient='records')
+df_test = df_test[0]
 
 r = requests.get(
     url='http://127.0.0.1:8000//verify'
@@ -36,5 +38,6 @@ response_header = r.headers
 status_code = r.status_code
 response_content = r.content
 
-(response_dict)
+response_content
+
 
