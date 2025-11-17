@@ -48,7 +48,7 @@ print(cwd)
 
 
 try:
-    with open('./afklm_ml_training_settings.json') as json_file:
+    with open('./config/afklm_ml_training_settings.json') as json_file:
         ml_training_settings = json.load(json_file)
     params_from_json = True
     
@@ -189,7 +189,7 @@ except:
 # ----------------------
 
 try:
-    with open('./airport_list.json') as json_file:
+    with open('./config/airport_list.json') as json_file:
         airport_list = json.load(json_file)
         airports_mandatory = airport_list['mandatory']
         airports_optional = airport_list['optional']
