@@ -38,7 +38,6 @@ import json
 import os
 from io import BytesIO
 import datetime
-from colorama import Fore, Style
 import gzip
 from google.cloud import storage
 from dotenv import load_dotenv
@@ -105,7 +104,7 @@ try:
     bucket = client_storage.bucket(bucket_name)
 
     # loading envirement variables
-    load_dotenv()
+    load_dotenv(verbose=True)
 
     on_cloud = True
 
@@ -352,43 +351,45 @@ if add_new_dates_csv_parameters :
         
         for index, row in df_call_parameters_root.iterrows():
             
-
             endRange = str(row.endRange)
             endRange = endRange.replace('Z','')
-
-
-            
-            while ((datetime.datetime.fromisoformat(endRange).date() - datetime.datetime.now().date() ).days) < future_days_to_retrieve :
-            
-                row_new =  df_call_parameters_root.iloc[[index]].copy()
-                row_new['startRange'] = (datetime.datetime.fromisoformat(endRange) + datetime.timedelta(seconds=1)).isoformat() + "Z"
-                endRange = (datetime.datetime.fromisoformat(endRange) + datetime.timedelta(days=1)).isoformat()
-                row_new['endRange'] = endRange + "Z"
+            if on_cloud:
+                while ((datetime.datetime.fromisoformat(endRange).date() - datetime.datetime.now().date() ).days) < future_days_to_retrieve :
                 
-                if on_cloud:
-
+                    row_new =  df_call_parameters_root.iloc[[index]].copy()
+                    row_new['startRange'] = (datetime.datetime.fromisoformat(endRange) + datetime.timedelta(seconds=1)).isoformat() + "Z"
+                    endRange = (datetime.datetime.fromisoformat(endRange) + datetime.timedelta(days=1)).isoformat()
+                    row_new['endRange'] = endRange + "Z"
                     df_call_parameters = pd.concat([df_call_parameters, row_new], ignore_index=True)
+                    endRange = row_new['endRange'].item().replace('Z','')
 
-                    try:
-                        df_call_parameters = df_call_parameters.sort_values(['endRange','completion'])
-                    except:
-                        print("Columns endRange or completion not found in the dataframe")
+                try:
+                    df_call_parameters = df_call_parameters.sort_values(['endRange','completion'])
+
+                except:
+                    print("Columns endRange or completion not found in the dataframe")
+
+                save_csv(df_call_parameters,
+                    path_folder = path_call_parameter_file_folder,
+                    path_file = call_parameter_csv)
                         
-                    save_csv(df_call_parameters,
-                        path_folder = path_call_parameter_file_folder,
-                        path_file = call_parameter_csv)
+
+
                     
+            else :      
+                while ((datetime.datetime.fromisoformat(endRange).date() - datetime.datetime.now().date() ).days) < future_days_to_retrieve :
+                
+                    row_new =  df_call_parameters_root.iloc[[index]].copy()
+                    row_new['startRange'] = (datetime.datetime.fromisoformat(endRange) + datetime.timedelta(seconds=1)).isoformat() + "Z"
+                    endRange = (datetime.datetime.fromisoformat(endRange) + datetime.timedelta(days=1)).isoformat()
+                    row_new['endRange'] = endRange + "Z"
                     
-                            
-                else :      
 
                     row_new = pd.concat([df_call_parameters_template,row_new])
                     with open(f"{path_call_parameter_file_folder + "/" + call_parameter_csv}","a") as f:
                         row_new.to_csv(f, header=False,index = 0, lineterminator='\n')
 
-
-
-                endRange = row_new['endRange'].item().replace('Z','')
+                    endRange = row_new['endRange'].item().replace('Z','')
                 
         
 
@@ -413,9 +414,9 @@ if on_cloud:
 
     api_key_list = os.getenv("API_KEYS")
 
-    api_key_list = api_key_list_test.split(',')
+    api_key_list = api_key_list.split(',')
 
-    for key in api_key_list_test:
+    for key in api_key_list:
         key_desc = key.split(":")[0]
         key_value = key.split(":")[1]
 
@@ -425,6 +426,8 @@ if on_cloud:
             else row["api_key"],
             axis=1,
         )
+
+
 else:
 
 
@@ -469,6 +472,10 @@ for index, record in API_key_list_cleaned.iterrows():
     
         
     API_key = record['api_key']
+    if API_key == 'SECRET':
+        continue
+    
+
     nb_calls_today = record['nb_calls_today']
     key_desc = record['key_desc']
 
@@ -625,9 +632,24 @@ for index, record in API_key_list_cleaned.iterrows():
 
             info_message(f"{call_parameters_url}")
             
-            if (day_diff_now_startRange < -180) | (day_diff_now_endRange < -180) | (day_diff_now_startRange > 365) | (day_diff_now_endRange > 365)  :
+            if (day_diff_now_startRange < -180) | (day_diff_now_endRange < -180)   :
+
+                info_message(f"endRange earlier than startRange",'red','warning')
+                continue
+            
+            if  (day_diff_now_startRange > 365) | (day_diff_now_endRange > 365)  :
 
                 info_message(f"Invalid date range",'red','warning')
+                continue
+            
+            
+            if  (day_diff_now_startRange > 365)   :
+
+                info_message(f"startRange too far in the past",'red','warning')
+                continue
+            if   (day_diff_now_endRange > 365)  :
+
+                info_message(f"endRange too far in the future",'red','warning')
                 continue
             
 
