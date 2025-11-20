@@ -155,6 +155,22 @@ class Payload_flight(BaseModel):
     flightlegs_arrinfo_times_actualtouchdowntime : Optional[str]
     flightlegs_depinfo_airport_places_depposterm_boardingterminal : Optional[str]
     flightlegs_irregularity_delayduration_total : str
+    arrinfo_continent_name : Optional[str]
+    arrinfo_subcontinent_name : Optional[str]
+    arrinfo_country_name : Optional[str]
+    arrinfo_country_code : Optional[str]
+    arrinfo_location_name : Optional[str]
+    arrinfo_airport_name : Optional[str]
+    depinfo_continent_name : Optional[str]
+    depinfo_subcontinent_name : Optional[str]
+    depinfo_country_name : Optional[str]
+    depinfo_country_code : Optional[str]
+    depinfo_location_name : Optional[str]
+    depinfo_airport_name : Optional[str]
+
+    
+    
+    
 
     
     
