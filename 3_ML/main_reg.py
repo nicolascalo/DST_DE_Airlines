@@ -55,15 +55,15 @@ def get_dayPeriod(x):
     else:
         return 'night'
 
-best_model_regression_file =[model for model in list(os.listdir(BEST_MODEL_DIR)) if ('.pkl' in model) & ("regression" in model) ][0]
+best_model_classification_delay_file =[model for model in list(os.listdir(BEST_MODEL_DIR)) if ('.pkl' in model) & ("regression" in model) ][0]
 
-with open(f'{OUTPUT_DIR}/best_models/{best_model_regression_file}', 'rb') as f:
-    best_model_regression = pickle.load(f)
+with open(f'{OUTPUT_DIR}/best_models/{best_model_classification_delay_file}', 'rb') as f:
+    best_model_classification_delay = pickle.load(f)
 
-best_model_classification_file =[model for model in list(os.listdir(BEST_MODEL_DIR)) if ('.pkl' in model) & ("classification" in model) ][0]
+best_model_classification_status_file =[model for model in list(os.listdir(BEST_MODEL_DIR)) if ('.pkl' in model) & ("classification" in model) ][0]
 
-with open(f'{OUTPUT_DIR}/best_models/{best_model_classification_file}', 'rb') as f:
-    best_model_classification = pickle.load(f)
+with open(f'{OUTPUT_DIR}/best_models/{best_model_classification_status_file}', 'rb') as f:
+    best_model_classification_status = pickle.load(f)
 
 best_models_metrics = pd.read_csv(f'{OUTPUT_DIR}/best_models/best_models.csv')
 best_models_metrics_json = ([row.dropna().to_dict() for index,row in best_models_metrics.iterrows()])
@@ -187,61 +187,65 @@ def post_users(parameters: Payload_flight):
 
     entry["company_flight"] = entry["id"].apply(lambda x: re.sub("^.*?\\+","", x))
 
-    entry["scheduled"] = entry["flightLegs_arrivalInformation_times_scheduled"].apply(
+    entry["scheduled"] = entry["flightlegs_arrinfo_times_scheduled"].apply(
         lambda x: datetime.datetime.fromisoformat(x).date() > datetime.datetime.now().date()
     ) # To change for filtering on flightleg_publicstatus
 
 
     entry["flightLegs_scheduledFlightDuration"] = entry.apply(
-        lambda row: (datetime.datetime.fromisoformat(row.flightLegs_arrivalInformation_times_scheduled)
-                    - datetime.datetime.fromisoformat(row.flightLegs_departureInformation_times_scheduled)).seconds / 60,
+        lambda row: (datetime.datetime.fromisoformat(row.flightlegs_arrinfo_times_scheduled
+)
+                    - datetime.datetime.fromisoformat(row.flightlegs_depinfo_times_scheduled)).seconds / 60,
         axis=1
     )
 
     entry = entry[~entry["scheduled"]].copy()
 
     entry['flightLegs_season'] = entry.apply(
-        lambda row: season_dictionary[(datetime.datetime.fromisoformat(row.flightLegs_departureInformation_times_scheduled).month)]
+        lambda row: season_dictionary[(datetime.datetime.fromisoformat(row.flightlegs_depinfo_times_scheduled).month)]
                     ,
         axis=1
     )
 
-    entry['flightLegs_arrivalInformation_times_scheduled_isWeekend'] = entry.apply(
-        lambda row: True if datetime.datetime.fromisoformat(row.flightLegs_arrivalInformation_times_scheduled).isoweekday() in [6,7] else False
+    entry['flightlegs_arrinfo_times_scheduled_isWeekend'] = entry.apply(
+        lambda row: True if datetime.datetime.fromisoformat(row.flightlegs_arrinfo_times_scheduled
+).isoweekday() in [6,7] else False
                     ,
         axis=1
     )
 
-    entry['flightLegs_arrivalInformation_times_scheduled_dayPeriod'] = entry.apply(
-        lambda row: get_dayPeriod(datetime.datetime.fromisoformat(row.flightLegs_arrivalInformation_times_scheduled).hour + datetime.datetime.fromisoformat(row.flightLegs_arrivalInformation_times_scheduled).minute/60)
+    entry['flightlegs_arrinfo_times_scheduled_dayPeriod'] = entry.apply(
+        lambda row: get_dayPeriod(datetime.datetime.fromisoformat(row.flightlegs_arrinfo_times_scheduled
+).hour + datetime.datetime.fromisoformat(row.flightlegs_arrinfo_times_scheduled
+).minute/60)
                     ,
         axis=1
     )
-    entry['flightLegs_departureInformation_times_scheduled_dayPeriod'] = entry.apply(
-        lambda row: get_dayPeriod(datetime.datetime.fromisoformat(row.flightLegs_departureInformation_times_scheduled).hour + datetime.datetime.fromisoformat(row.flightLegs_departureInformation_times_scheduled).minute/60)
-                    ,
-        axis=1
-    )
-
-
-    entry['flightLegs_departureInformation_times_scheduled_isWeekend'] = entry.apply(
-        lambda row: True if datetime.datetime.fromisoformat(row.flightLegs_departureInformation_times_scheduled).isoweekday() in [6,7] else False
+    entry['flightlegs_depinfo_times_scheduled_dayPeriod'] = entry.apply(
+        lambda row: get_dayPeriod(datetime.datetime.fromisoformat(row.flightlegs_depinfo_times_scheduled).hour + datetime.datetime.fromisoformat(row.flightlegs_depinfo_times_scheduled).minute/60)
                     ,
         axis=1
     )
 
-    prediction_classification = best_model_classification.predict(entry)
-    prediction_classification = prediction_classification[0]
+
+    entry['flightlegs_depinfo_times_scheduled_isWeekend'] = entry.apply(
+        lambda row: True if datetime.datetime.fromisoformat(row.flightlegs_depinfo_times_scheduled).isoweekday() in [6,7] else False
+                    ,
+        axis=1
+    )
+
+    prediction_classification_status = best_model_classification_status.predict(entry)
+    prediction_classification_status = prediction_classification_status[0]
     
 
-    if prediction_classification == "late":
-        prediction_regression = best_model_regression.predict(entry)
-        prediction_regression = prediction_regression[0]
+    if prediction_classification_status == "late":
+        prediction_classification_delay = best_model_classification_delay.predict(entry)
+        prediction_classification_delay = prediction_classification_delay[0]
     else:
-        prediction_regression = "NA"
+        prediction_classification_delay = "NA"
     
-    return JSONResponse(content={"predicted_flightLeg_status": prediction_classification,
-                                 "predicted_delay_min": prediction_regression,
+    return JSONResponse(content={"predicted_flightLeg_status": prediction_classification_status,
+                                 "predicted_delay_min": prediction_classification_delay,
     })
 
 
