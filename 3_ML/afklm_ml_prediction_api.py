@@ -184,7 +184,7 @@ Payload_flight.model_config["json_schema_extra"]["examples"] = [json_example]
 @api.get('/health', name="Check if the API is running")
 def get_index():
     """Check if the API is running"""
-    return {"status": "healthy"}
+    return 1
 
 
 @api.get('/model_parameters_and_metrics', name="Retrieve the prediction model training parameters and validation metrics")
