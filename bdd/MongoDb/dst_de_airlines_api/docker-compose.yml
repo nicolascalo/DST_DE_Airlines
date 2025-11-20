@@ -1,0 +1,15 @@
+version: "3.3"
+
+services:
+ api:               
+    build: .
+    container_name: dst_de_airlines_api
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGODB_URI=mongodb://airlines:airlines@host.docker.internal:27017/airlines?authSource=admin
+      - DATABASE_NAME=airlines
+      - FOLDER_PATH=/app/data
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
