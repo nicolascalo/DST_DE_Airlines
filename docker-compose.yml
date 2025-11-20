@@ -1,6 +1,21 @@
 version: '3.8'
 
 services:
+    
+  ml_prediction_api:
+    build:
+      dockerfile: ./3_ML/afklm_ml_prediction_api_Dockerfile
+    container_name: dst_de_airlines_ml_prediction_api
+    ports:
+      - "8001:8001"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8001/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+
   mongodb:
     image: mongo:7.0
     container_name: dst_de_airlines_mongodb
@@ -19,9 +34,9 @@ services:
       start_period: 10s
     restart: unless-stopped
 
-  api:
+  mongodb_api:
     build: ./bdd/MongoDb/dst_de_airlines_api/
-    container_name: dst_de_airlines_api
+    container_name: dst_de_airlines_mongodb_api
     ports:
       - "8000:8000"
     environment:
@@ -34,3 +49,4 @@ services:
       mongodb:
         condition: service_healthy
     restart: unless-stopped
+

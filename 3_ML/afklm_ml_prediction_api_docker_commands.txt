@@ -1,0 +1,5 @@
+docker rm -f $(docker ps -aq)
+docker image build . -t afklm_ml_prediction:latest -f afklm_ml_prediction_api_Dockerfile
+docker-compose -f afklm_ml_prediction_api_docker-compose.yml up
+
+docker compose up --no-log-prefix
