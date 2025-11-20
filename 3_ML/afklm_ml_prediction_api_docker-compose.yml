@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  afklm_ml_prediction_api:
+    image: afklm_ml_prediction:latest
+    container_name: ml_prediction
+    ports:
+      - "8001:8001"
+    restart: unless-stopped
+
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8001/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
