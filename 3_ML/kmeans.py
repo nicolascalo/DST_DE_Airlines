@@ -7,7 +7,7 @@ col_delay = "flightLegs_irregularity_delayDuration_total"
 col_arr = "flightLegs_arrivalInformation_airport_code"
 col_dep = "flightLegs_departureInformation_airport_code"
 
-df = pd.read_csv("csv_exploration.csv", usecols=[col_delay, col_arr, col_dep]) # mets le nom de ton fichier
+df = pd.read_csv("csv_exploration.csv", usecols=[col_delay, col_arr, col_dep]) # indiquer le nom du fichier csv
 
 top30 = ['CDG','AMS','ORY','FCO','LHR','CPH','MAD','ARN','OSL','LIN','NCE','BCN','LYS','BGO','LIS','DUB','HEL','TLS','OTP','FRA','MRS','ATH','PMI','MUC','TRD','MAN','BER','AGP','OPO']
 
