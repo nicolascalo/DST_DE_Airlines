@@ -5,6 +5,7 @@ from USE_CASES.insert_compressed_file_name_uc import insert_compressed_file_name
 from REPOSITORIES.operational_flights import insert_one, delete_duplicates, move_to_dst_collection, delete_all_opreation_flights_collection, remove_past_flights_on_d1_collection, remove_duplicate_flights_from_scheduled,remove_past_flights_on_scheduled_collection
 from REPOSITORIES.flights import add_date_insertion
 from REPOSITORIES.collections import get_all_collection_name
+from USE_CASES.insert_compressed_file_name_uc import  is_compressed_file_name_exist
 
 
 
@@ -30,16 +31,17 @@ def import_operationalflights_in_mongodb():
                 # Ajouter une fonction permetant d'ajouter le nom du fichier corompu dans un .txt
             else:
                 json_file = delete_page_object_in_json(json_file)
+            if is_compressed_file_name_exist(gz_file_name) == False:
 
-            if collection_name == 'historic_operational_flights':
-                historic_operational_flights_json["operationalFlights"].append(json_file)
+                if collection_name == 'historic_operational_flights':
+                    historic_operational_flights_json["operationalFlights"].append(json_file)
 
-            if collection_name == 'scheduled_operational_flights':
-                scheduled_operational_flights_json["operationalFlights"].append(json_file)
+                if collection_name == 'scheduled_operational_flights':
+                    scheduled_operational_flights_json["operationalFlights"].append(json_file)
 
-            if collection_name == 'update_scheduled_d1_operational_flights':
-                update_scheduled_d1_operational_flights_json["operationalFlights"].append(json_file)
-            gz_file_name_json.append(gz_file_name)
+                if collection_name == 'update_scheduled_d1_operational_flights':
+                    update_scheduled_d1_operational_flights_json["operationalFlights"].append(json_file)
+                gz_file_name_json.append(gz_file_name)
 
 
 
