@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  afklm_ml_prediction_api:
+    image: afklm_dash:latest
+    container_name: dash
+    ports:
+      - "8001:8001"
+    restart: unless-stopped

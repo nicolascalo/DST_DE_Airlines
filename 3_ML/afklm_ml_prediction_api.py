@@ -105,63 +105,44 @@ class Payload_flight(BaseModel):
     }
 
     """"Parameters of the flight for which to predict delay"""
-    id : Optional[str] = None
-    airline_code : Optional[str] = None
-    airline_name : Optional[str] = None
-    flightlegs_aircraft_ownerairlinecode : Optional[str] = None
-    flightlegs_aircraft_typecode : Optional[str] = None
-    flightlegs_servicetype : Optional[str] = None
-    flightlegs_servicetypename : Optional[str] = None
-    flightnumber : Optional[int]
-    _id : Optional[str] = None
-    flightlegs_arrinfo_airport_city_country_areacode : Optional[str] = None
-    flightlegs_arrinfo_airport_city_country_code : Optional[str] = None
-    flightlegs_arrinfo_airport_city_country_name : Optional[str] = None
-    flightlegs_arrinfo_airport_code : str
-    flightlegs_arrinfo_airport_location_latitude : Optional[float] = None
-    flightlegs_arrinfo_airport_location_longitude : Optional[float] = None
-    flightlegs_arrinfo_times_scheduled : str
-    flightlegs_depinfo_airport_city_country_areacode : Optional[str] = None
-    flightlegs_depinfo_airport_city_country_code : Optional[str] = None
-    flightlegs_depinfo_airport_city_country_name : Optional[str] = None
-    flightlegs_depinfo_airport_code : str
-    flightlegs_depinfo_airport_location_latitude : Optional[float] = None
-    flightlegs_depinfo_airport_location_longitude : Optional[float] = None
-    flightlegs_depinfo_airport_places_depposterm_gatenumber : Optional[str] = None
-    flightlegs_depinfo_times_scheduled : str
-    flightlegs_irregularity_delayduration : Optional[str] = None
-    flightlegs_irregularity_delayinfo_delayreasonpubliclong : Optional[str] = None
-    flightlegs_irregularity_delayinformation_delaycode : Optional[str] = None
-    flightlegs_irregularity_delayinfo_delayreasonpublicshort : Optional[str] = None
-    flightlegs_irregularity_delayreason : Optional[str] = None
-    flightlegs_scheduledflightduration : Optional[str] = None
-    flightlegs_status : Optional[str] = None
-    flightlegs_publishedstatus : Optional[str] = None
-    flightlegs_legstatuspublic : Optional[str] = None
-    flightlegs_statusname : Optional[str] = None
-    flightstatuspublic : Optional[str] = None
-    flightlegs_arrinfo_times_estimated_value : Optional[str] = None
-    flightlegs_arrinfo_times_latestpublished : Optional[str] = None
-    flightlegs_depinfo_times_actual : Optional[str] = None
-    flightlegs_depinfo_times_actualtakeofftime : Optional[str] = None
-    flightlegs_depinfo_times_latestpublished : Optional[str] = None
-    flightlegs_arrinfo_airport_places_arrivalpositionterminal : Optional[str] = None
-    flightlegs_arrinfo_times_actual : Optional[str] = None
-    flightlegs_arrinfo_times_actualtouchdowntime : Optional[str] = None
-    flightlegs_depinfo_airport_places_depposterm_boardingterminal : Optional[str] = None
-    flightlegs_irregularity_delayduration_total : Optional[str] = None
-    arrinfo_continent_name : Optional[str] = None
-    arrinfo_subcontinent_name : Optional[str] = None
-    arrinfo_country_name : Optional[str] = None
-    arrinfo_country_code : Optional[str] = None
-    arrinfo_location_name : Optional[str] = None
-    arrinfo_airport_name : Optional[str] = None
-    depinfo_continent_name : Optional[str] = None
-    depinfo_subcontinent_name : Optional[str] = None
-    depinfo_country_name : Optional[str] = None
-    depinfo_country_code : Optional[str] = None
-    depinfo_location_name : Optional[str] = None
-    depinfo_airport_name : Optional[str] = None
+    _id: Optional[str] = None
+    id: Optional[str] = None
+    airline_code: Optional[str] = None
+    airline_name: Optional[str] = None
+    flightlegs_aircraft_ownerairlinecode: Optional[str] = None
+    flightlegs_aircraft_typecode: Optional[str] = None
+    arrival_continent: Optional[str] = None
+    arrival_subcontinent: Optional[str] = None
+    arrival_country: Optional[str] = None
+    arrival_location: Optional[str] = None
+    arrival_airport: Optional[str] = None
+    flightlegs_arrinfo_airport_code: str
+    flightlegs_arrinfo_airport_location_latitude: Optional[str] = None
+    flightlegs_arrinfo_airport_location_longitude: Optional[str] = None
+    flightlegs_arrinfo_times_scheduled: str
+    departure_continent: Optional[str] = None
+    departure_subcontinent: Optional[str] = None
+    departure_country: Optional[str] = None
+    departure_location: Optional[str] = None
+    departure_airport: Optional[str] = None
+    flightlegs_depinfo_airport_code: str
+    flightlegs_depinfo_airport_location_latitude: Optional[str] = None
+    flightlegs_depinfo_airport_location_longitude: Optional[str] = None
+    flightlegs_depinfo_airport_places_depposterm_gatenumber: Optional[str] = None
+    flightlegs_depinfo_times_scheduled: str
+    flightlegs_scheduledflightduration: Optional[str] = None
+    flightlegs_servicetype: Optional[str] = None
+    flightlegs_servicetypename: Optional[str] = None
+    flightlegs_status: Optional[str] = None
+    flightlegs_statusname: Optional[str] = None
+    flightnumber: Optional[str] = None
+    flightstatuspublic: Optional[str] = None
+    flightlegs_arrinfo_times_estimated_value: Optional[str] = None
+    flightlegs_arrinfo_times_latestpublished: Optional[str] = None
+    flightlegs_depinfo_times_actual: Optional[str] = None
+    flightlegs_depinfo_times_latestpublished: Optional[str] = None
+    flightlegs_arrinfo_airport_places_arrivalpositionterminal: Optional[str] = None
+    flightlegs_depinfo_airport_places_depposterm_boardingterminal: Optional[str] = None
 
 with open('./config/api_test_payload.json') as json_file:
     json_example = json.load(json_file)
