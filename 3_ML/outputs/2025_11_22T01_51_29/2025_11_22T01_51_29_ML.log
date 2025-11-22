@@ -1,0 +1,250 @@
+2025-11-22 01:51:29,393 - __main__ - INFO - ==== Starting ML script====
+2025-11-22 01:51:29,393 - __main__ - INFO - Nb of cores: 6
+
+2025-11-22 01:51:29,394 - __main__ - INFO - ML pipeline settings loaded from afklm_ml_training_settings.json
+2025-11-22 01:51:29,394 - __main__ - INFO - Airport list loaded from airport_list.json
+2025-11-22 01:51:40,783 - __main__ - INFO - Loaded dataset: afklm_flight_from_mongo_filtered_20251121.csv, shape=(954515, 55)
+2025-11-22 01:51:42,146 - __main__ - INFO - Step: raw_data | shape: (954515, 55) | null values: 8366778
+2025-11-22 01:51:43,539 - __main__ - INFO - Extracting 'company_flight' from 'id' column
+2025-11-22 01:51:44,471 - __main__ - INFO - Dropping columns: ['id', 'airline_name', 'flightlegs_aircraft_ownerairlineCode', 'actual', 'posterm', 'latestpublished', 'airline_code', 'company_flight', 'iata', 'icao', 'city_country_areaCode', 'airport_location', 'airport_city_country_name', 'delayreason'] and rows with missing flightlegs_irregularity_delayduration_total_bracket
+2025-11-22 01:51:46,230 - __main__ - INFO - Step: drop_na_and_unused_cols | shape: (954072, 34) | null values: 3037502
+2025-11-22 01:51:47,135 - __main__ - INFO - Computing 'flightlegs_scheduledFlightDuration' in minutes
+2025-11-22 01:51:57,149 - __main__ - INFO - Filtered past flights only, resulting shape: (953984, 35)
+2025-11-22 01:51:57,153 - __main__ - INFO - Filled missing flightlegs_irregularity_delayduration_total with 0
+2025-11-22 01:51:57,153 - __main__ - INFO - Categorizing flights into 'CANCELLED', 'LATE', 'ONTIME'
+2025-11-22 01:52:04,946 - __main__ - INFO - Step: categorize_flights | shape: (953984, 35) | null values: 2331960
+2025-11-22 01:52:05,810 - __main__ - INFO - Categorizing flights into 'cancelled', 'late', 'on_time'
+2025-11-22 01:52:10,573 - __main__ - INFO - Step: categorize_delay_brackets | shape: (953984, 36) | null values: 2331960
+2025-11-22 01:52:11,417 - __main__ - INFO - Filtering flights in optional list
+2025-11-22 01:52:11,651 - __main__ - INFO - AFiltering flights in mandatory list
+2025-11-22 01:52:12,359 - __main__ - INFO - Step: airport_filtering | shape: (580214, 36) | null values: 1312404
+2025-11-22 01:52:12,875 - __main__ - INFO - Adding seasonality, isWeekend and dayPeriod
+2025-11-22 01:52:34,098 - __main__ - INFO - ==== Preparing classification_status dataset ====
+2025-11-22 01:52:34,098 - __main__ - INFO - Using the full dataset
+2025-11-22 01:52:34,355 - __main__ - INFO - Classification status dataset shape: X=(580214, 10), y=(580214,)
+2025-11-22 01:52:34,373 - __main__ - INFO - Classification status dataset class repartition: flightlegs_publishedstatus
+ONTIME       0.657108
+LATE         0.342381
+CANCELLED    0.000512
+Name: proportion, dtype: float64
+2025-11-22 01:52:34,777 - __main__ - INFO - Classification status train/test split: X_train=(464171, 10), X_test=(116043, 10), y_train=(464171,), y_test=(116043,)
+2025-11-22 01:52:34,777 - __main__ - INFO - Extracting features from dataset, target column: flightlegs_publishedstatus
+2025-11-22 01:52:34,826 - __main__ - INFO - Identified 0 numeric and 10 categorical features
+2025-11-22 01:52:34,826 - __main__ - INFO - Numeric features: []
+2025-11-22 01:52:34,826 - __main__ - INFO - Categorical features: ['flightlegs_aircraft_ownerairlinecode', 'flightlegs_aircraft_typecode', 'flightlegs_arrinfo_airport_city_country_areacode', 'flightlegs_arrinfo_airport_code', 'flightlegs_depinfo_airport_city_country_areacode', 'flightlegs_depinfo_airport_code', 'flightlegs_scheduledflightduration', 'flightlegs_season', 'flightlegs_arrinfo_times_scheduled_dayPeriod', 'flightlegs_depinfo_times_scheduled_dayPeriod']
+
+2025-11-22 01:52:34,826 - __main__ - INFO - ==== Preparing classification_delay dataset ====
+2025-11-22 01:52:35,102 - __main__ - INFO - Step: lateFlights_filtering | shape: (198654, 11) | null values: 10765
+2025-11-22 01:52:35,160 - __main__ - INFO - Using the full dataset
+2025-11-22 01:52:35,171 - __main__ - INFO - Classification delay dataset shape: X=(198654, 10), y=(198654,)
+2025-11-22 01:52:35,194 - __main__ - INFO - Classification delay train/test split: X_train=(158923, 10), X_test=(39731, 10), y_train=(158923,), y_test=(39731,)
+2025-11-22 01:52:35,195 - __main__ - INFO - Extracting features from dataset, target column: flightlegs_irregularity_delayduration_total_bracket
+2025-11-22 01:52:35,202 - __main__ - INFO - Identified 0 numeric and 10 categorical features
+2025-11-22 01:52:35,202 - __main__ - INFO - Numeric features: []
+2025-11-22 01:52:35,202 - __main__ - INFO - Categorical features: ['flightlegs_aircraft_ownerairlinecode', 'flightlegs_aircraft_typecode', 'flightlegs_arrinfo_airport_city_country_areacode', 'flightlegs_arrinfo_airport_code', 'flightlegs_depinfo_airport_city_country_areacode', 'flightlegs_depinfo_airport_code', 'flightlegs_scheduledflightduration', 'flightlegs_season', 'flightlegs_arrinfo_times_scheduled_dayPeriod', 'flightlegs_depinfo_times_scheduled_dayPeriod']
+
+2025-11-22 01:52:35,202 - __main__ - INFO - ==== Preparing regression dataset ====
+2025-11-22 01:52:35,460 - __main__ - INFO - Step: lateFlights_filtering | shape: (198654, 11) | null values: 10765
+2025-11-22 01:52:35,514 - __main__ - INFO - Saved dataset cleaning summary to 'outputs/2025_11_22T01_51_29/dataset_summary/dataset_cleaning_summary.csv'
+
+2025-11-22 01:52:35,515 - __main__ - INFO - Using the full dataset
+2025-11-22 01:52:35,526 - __main__ - INFO - Regression dataset shape: X=(198654, 10), y=(198654,)
+2025-11-22 01:52:35,549 - __main__ - INFO - Regression train/test split: X_train=(158923, 10), X_test=(39731, 10), y_train=(158923,), y_test=(39731,)
+2025-11-22 01:52:35,549 - __main__ - INFO - Extracting features from dataset, target column: flightlegs_irregularity_delayduration_total
+2025-11-22 01:52:35,556 - __main__ - INFO - Identified 0 numeric and 10 categorical features
+2025-11-22 01:52:35,556 - __main__ - INFO - Numeric features: []
+2025-11-22 01:52:35,556 - __main__ - INFO - Categorical features: ['flightlegs_aircraft_ownerairlinecode', 'flightlegs_aircraft_typecode', 'flightlegs_arrinfo_airport_city_country_areacode', 'flightlegs_arrinfo_airport_code', 'flightlegs_depinfo_airport_city_country_areacode', 'flightlegs_depinfo_airport_code', 'flightlegs_scheduledflightduration', 'flightlegs_season', 'flightlegs_arrinfo_times_scheduled_dayPeriod', 'flightlegs_depinfo_times_scheduled_dayPeriod']
+
+2025-11-22 01:52:35,556 - __main__ - INFO - ==== Starting classification_status pipeline: Logistic_OVO ====
+
+2025-11-22 01:52:35,556 - __main__ - INFO - Running grid mode for Logistic_OVO
+2025-11-22 01:52:35,556 - __main__ - INFO - Starting classification_status pipeline: Logistic_OVO | mode: grid
+2025-11-22 01:52:35,556 - __main__ - INFO - Performing GridSearchCV (cv = 5, scoring='accuracy') for Logistic_OVO with parameters: {'classifier__estimator__C': [0.01, 0.1, 1], 'classifier__estimator__penalty': ['l2'], 'classifier__estimator__solver': ['liblinear', 'lbfgs']}
+2025-11-22 01:53:28,888 - __main__ - INFO - GridSearchCV completed for Logistic_OVO | best score: 0.849 | Total duration: 53 seconds
+2025-11-22 01:53:28,889 - __main__ - INFO - Saving feature importance for Logistic_OVO (classification_status)
+2025-11-22 01:53:28,891 - __main__ - WARNING - No feature importances available for Logistic_OVO
+2025-11-22 01:53:28,891 - __main__ - INFO - Skipping tree plot for Logistic_OVO (not a DecisionTree model)
+2025-11-22 01:53:28,892 - __main__ - INFO - Generating classification_status metrics for Logistic_OVO | mode=grid
+2025-11-22 01:53:30,515 - __main__ - INFO - Grid mode completed for Logistic_OVO
+
+2025-11-22 01:53:30,515 - __main__ - INFO - ==== Finished classification_status pipeline: Logistic_OVO ====
+
+
+2025-11-22 01:53:30,515 - __main__ - INFO - ==== Starting classification_status pipeline: DecisionTree ====
+
+2025-11-22 01:53:30,515 - __main__ - INFO - Running grid mode for DecisionTree
+2025-11-22 01:53:30,515 - __main__ - INFO - Starting classification_status pipeline: DecisionTree | mode: grid
+2025-11-22 01:53:30,515 - __main__ - INFO - Performing GridSearchCV (cv = 5, scoring='accuracy') for DecisionTree with parameters: {'classifier__max_depth': [2, 3, 4, 5], 'classifier__criterion': ['gini', 'entropy'], 'classifier__min_samples_split': [2, 5]}
+2025-11-22 01:54:13,931 - __main__ - INFO - GridSearchCV completed for DecisionTree | best score: 0.804 | Total duration: 43 seconds
+2025-11-22 01:54:13,931 - __main__ - INFO - Saving feature importance for DecisionTree (classification_status)
+2025-11-22 01:54:13,934 - __main__ - INFO - Feature importance CSV saved for DecisionTree
+2025-11-22 01:54:14,138 - __main__ - INFO - Feature importance plot saved for DecisionTree
+2025-11-22 01:54:14,140 - __main__ - WARNING - Failed to save decision tree plot for DecisionTree: This SimpleImputer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-11-22 01:54:14,140 - __main__ - INFO - Generating classification_status metrics for DecisionTree | mode=grid
+2025-11-22 01:54:15,631 - __main__ - INFO - Grid mode completed for DecisionTree
+
+2025-11-22 01:54:15,631 - __main__ - INFO - ==== Finished classification_status pipeline: DecisionTree ====
+
+
+2025-11-22 01:54:15,631 - __main__ - INFO - ==== Starting classification_status pipeline: RandomForest ====
+
+2025-11-22 01:54:15,631 - __main__ - INFO - Running grid mode for RandomForest
+2025-11-22 01:54:15,631 - __main__ - INFO - Starting classification_status pipeline: RandomForest | mode: grid
+2025-11-22 01:54:15,631 - __main__ - INFO - Performing GridSearchCV (cv = 5, scoring='accuracy') for RandomForest with parameters: {'classifier__n_estimators': [50, 100], 'classifier__max_depth': [None, 10, 20]}
+2025-11-22 02:36:07,483 - __main__ - INFO - GridSearchCV completed for RandomForest | best score: 0.868 | Total duration: 2511 seconds
+2025-11-22 02:36:07,483 - __main__ - INFO - Saving feature importance for RandomForest (classification_status)
+2025-11-22 02:36:07,515 - __main__ - INFO - Feature importance CSV saved for RandomForest
+2025-11-22 02:36:07,698 - __main__ - INFO - Feature importance plot saved for RandomForest
+2025-11-22 02:36:07,699 - __main__ - INFO - Skipping tree plot for RandomForest (not a DecisionTree model)
+2025-11-22 02:36:07,699 - __main__ - INFO - Generating classification_status metrics for RandomForest | mode=grid
+2025-11-22 02:36:10,817 - __main__ - INFO - Grid mode completed for RandomForest
+
+2025-11-22 02:36:10,818 - __main__ - INFO - ==== Finished classification_status pipeline: RandomForest ====
+
+
+2025-11-22 02:36:10,818 - __main__ - INFO - ==== Starting classification_status pipeline: Logistic_OVR ====
+
+2025-11-22 02:36:10,818 - __main__ - INFO - Running grid mode for Logistic_OVR
+2025-11-22 02:36:10,818 - __main__ - INFO - Starting classification_status pipeline: Logistic_OVR | mode: grid
+2025-11-22 02:36:10,818 - __main__ - INFO - Performing GridSearchCV (cv = 5, scoring='accuracy') for Logistic_OVR with parameters: {'classifier__estimator__C': [0.01, 0.1, 1], 'classifier__estimator__penalty': ['l2'], 'classifier__estimator__solver': ['liblinear', 'lbfgs']}
+2025-11-22 02:37:39,236 - __main__ - INFO - GridSearchCV completed for Logistic_OVR | best score: 0.849 | Total duration: 88 seconds
+2025-11-22 02:37:39,237 - __main__ - INFO - Saving feature importance for Logistic_OVR (classification_status)
+2025-11-22 02:37:39,238 - __main__ - WARNING - No feature importances available for Logistic_OVR
+2025-11-22 02:37:39,238 - __main__ - INFO - Skipping tree plot for Logistic_OVR (not a DecisionTree model)
+2025-11-22 02:37:39,240 - __main__ - INFO - Generating classification_status metrics for Logistic_OVR | mode=grid
+2025-11-22 02:37:40,562 - __main__ - INFO - Grid mode completed for Logistic_OVR
+
+2025-11-22 02:37:40,562 - __main__ - INFO - ==== Finished classification_status pipeline: Logistic_OVR ====
+
+
+2025-11-22 02:37:40,562 - __main__ - INFO - ==== Starting classification_delay pipeline: Logistic_OVO ====
+
+2025-11-22 02:37:40,562 - __main__ - INFO - Running grid mode for Logistic_OVO
+2025-11-22 02:37:40,562 - __main__ - INFO - Starting classification_delay pipeline: Logistic_OVO | mode: grid
+2025-11-22 02:37:40,562 - __main__ - INFO - Performing GridSearchCV (cv = 5, scoring='accuracy') for Logistic_OVO with parameters: {'classifier__estimator__C': [0.01, 0.1, 1], 'classifier__estimator__penalty': ['l2'], 'classifier__estimator__solver': ['liblinear', 'lbfgs']}
+2025-11-22 02:38:10,096 - __main__ - INFO - GridSearchCV completed for Logistic_OVO | best score: 0.338 | Total duration: 29 seconds
+2025-11-22 02:38:10,097 - __main__ - INFO - Saving feature importance for Logistic_OVO (classification_delay)
+2025-11-22 02:38:10,097 - __main__ - WARNING - No feature importances available for Logistic_OVO
+2025-11-22 02:38:10,097 - __main__ - INFO - Skipping tree plot for Logistic_OVO (not a DecisionTree model)
+2025-11-22 02:38:10,098 - __main__ - INFO - Generating classification_delay metrics for Logistic_OVO | mode=grid
+2025-11-22 02:38:10,734 - __main__ - INFO - Grid mode completed for Logistic_OVO
+
+2025-11-22 02:38:10,734 - __main__ - INFO - ==== Finished classification_delay pipeline: Logistic_OVO ====
+
+
+2025-11-22 02:38:10,734 - __main__ - INFO - ==== Starting classification_delay pipeline: DecisionTree ====
+
+2025-11-22 02:38:10,734 - __main__ - INFO - Running grid mode for DecisionTree
+2025-11-22 02:38:10,734 - __main__ - INFO - Starting classification_delay pipeline: DecisionTree | mode: grid
+2025-11-22 02:38:10,734 - __main__ - INFO - Performing GridSearchCV (cv = 5, scoring='accuracy') for DecisionTree with parameters: {'classifier__max_depth': [2, 3, 4, 5], 'classifier__criterion': ['gini', 'entropy'], 'classifier__min_samples_split': [2, 5]}
+2025-11-22 02:38:23,729 - __main__ - INFO - GridSearchCV completed for DecisionTree | best score: 0.330 | Total duration: 12 seconds
+2025-11-22 02:38:23,729 - __main__ - INFO - Saving feature importance for DecisionTree (classification_delay)
+2025-11-22 02:38:23,732 - __main__ - INFO - Feature importance CSV saved for DecisionTree
+2025-11-22 02:38:23,936 - __main__ - INFO - Feature importance plot saved for DecisionTree
+2025-11-22 02:38:23,937 - __main__ - WARNING - Failed to save decision tree plot for DecisionTree: This SimpleImputer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-11-22 02:38:23,938 - __main__ - INFO - Generating classification_delay metrics for DecisionTree | mode=grid
+2025-11-22 02:38:24,579 - __main__ - INFO - Grid mode completed for DecisionTree
+
+2025-11-22 02:38:24,579 - __main__ - INFO - ==== Finished classification_delay pipeline: DecisionTree ====
+
+
+2025-11-22 02:38:24,579 - __main__ - INFO - ==== Starting classification_delay pipeline: RandomForest ====
+
+2025-11-22 02:38:24,579 - __main__ - INFO - Running grid mode for RandomForest
+2025-11-22 02:38:24,579 - __main__ - INFO - Starting classification_delay pipeline: RandomForest | mode: grid
+2025-11-22 02:38:24,579 - __main__ - INFO - Performing GridSearchCV (cv = 5, scoring='accuracy') for RandomForest with parameters: {'classifier__n_estimators': [50, 100], 'classifier__max_depth': [None, 10, 20]}
+2025-11-22 02:50:02,004 - __main__ - INFO - GridSearchCV completed for RandomForest | best score: 0.340 | Total duration: 697 seconds
+2025-11-22 02:50:02,004 - __main__ - INFO - Saving feature importance for RandomForest (classification_delay)
+2025-11-22 02:50:02,015 - __main__ - INFO - Feature importance CSV saved for RandomForest
+2025-11-22 02:50:02,200 - __main__ - INFO - Feature importance plot saved for RandomForest
+2025-11-22 02:50:02,201 - __main__ - INFO - Skipping tree plot for RandomForest (not a DecisionTree model)
+2025-11-22 02:50:02,201 - __main__ - INFO - Generating classification_delay metrics for RandomForest | mode=grid
+2025-11-22 02:50:03,100 - __main__ - INFO - Grid mode completed for RandomForest
+
+2025-11-22 02:50:03,100 - __main__ - INFO - ==== Finished classification_delay pipeline: RandomForest ====
+
+
+2025-11-22 02:50:03,100 - __main__ - INFO - ==== Starting classification_delay pipeline: Logistic_OVR ====
+
+2025-11-22 02:50:03,100 - __main__ - INFO - Running grid mode for Logistic_OVR
+2025-11-22 02:50:03,100 - __main__ - INFO - Starting classification_delay pipeline: Logistic_OVR | mode: grid
+2025-11-22 02:50:03,100 - __main__ - INFO - Performing GridSearchCV (cv = 5, scoring='accuracy') for Logistic_OVR with parameters: {'classifier__estimator__C': [0.01, 0.1, 1], 'classifier__estimator__penalty': ['l2'], 'classifier__estimator__solver': ['liblinear', 'lbfgs']}
+2025-11-22 02:50:38,691 - __main__ - INFO - GridSearchCV completed for Logistic_OVR | best score: 0.338 | Total duration: 35 seconds
+2025-11-22 02:50:38,691 - __main__ - INFO - Saving feature importance for Logistic_OVR (classification_delay)
+2025-11-22 02:50:38,692 - __main__ - WARNING - No feature importances available for Logistic_OVR
+2025-11-22 02:50:38,692 - __main__ - INFO - Skipping tree plot for Logistic_OVR (not a DecisionTree model)
+2025-11-22 02:50:38,692 - __main__ - INFO - Generating classification_delay metrics for Logistic_OVR | mode=grid
+2025-11-22 02:50:39,300 - __main__ - INFO - Grid mode completed for Logistic_OVR
+
+2025-11-22 02:50:39,300 - __main__ - INFO - ==== Finished classification_delay pipeline: Logistic_OVR ====
+
+
+2025-11-22 02:50:39,300 - __main__ - INFO - ==== Starting regression pipeline: LinearRegression ====
+
+2025-11-22 02:50:39,301 - __main__ - INFO - Running grid mode for LinearRegression
+2025-11-22 02:50:39,301 - __main__ - INFO - Starting regression pipeline: LinearRegression | mode: grid
+2025-11-22 02:50:44,696 - __main__ - INFO - Fitted simple pipeline for LinearRegression | r2: 0.051 | Total duration: 5 seconds
+2025-11-22 02:50:44,696 - __main__ - INFO - Saving feature importance for LinearRegression (regression)
+2025-11-22 02:50:44,699 - __main__ - INFO - Feature importance CSV saved for LinearRegression
+2025-11-22 02:50:44,913 - __main__ - INFO - Feature importance plot saved for LinearRegression
+2025-11-22 02:50:44,914 - __main__ - INFO - Skipping tree plot for LinearRegression (not a DecisionTree model)
+2025-11-22 02:50:44,914 - __main__ - INFO - Generating regression metrics for LinearRegression | mode=grid
+2025-11-22 02:50:45,264 - __main__ - INFO - Grid mode completed for LinearRegression
+
+2025-11-22 02:50:45,264 - __main__ - INFO - ==== Finished regression pipeline: LinearRegression ====
+
+
+2025-11-22 02:50:45,264 - __main__ - INFO - ==== Starting regression pipeline: DecisionTreeRegressor ====
+
+2025-11-22 02:50:45,264 - __main__ - INFO - Running grid mode for DecisionTreeRegressor
+2025-11-22 02:50:45,264 - __main__ - INFO - Starting regression pipeline: DecisionTreeRegressor | mode: grid
+2025-11-22 02:50:45,264 - __main__ - INFO - Performing GridSearchCV (cv = 5, scoring='r2') for DecisionTreeRegressor with parameters: {'classifier__max_depth': [2, 3, 4, 5, 6, 7, 8]}
+2025-11-22 02:50:51,648 - __main__ - INFO - GridSearchCV completed for DecisionTreeRegressor | best score: 0.052 | Total duration: 6 seconds
+2025-11-22 02:50:51,649 - __main__ - INFO - Saving feature importance for DecisionTreeRegressor (regression)
+2025-11-22 02:50:51,651 - __main__ - INFO - Feature importance CSV saved for DecisionTreeRegressor
+2025-11-22 02:50:51,866 - __main__ - INFO - Feature importance plot saved for DecisionTreeRegressor
+2025-11-22 02:50:51,867 - __main__ - WARNING - Failed to save decision tree plot for DecisionTreeRegressor: This SimpleImputer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-11-22 02:50:51,868 - __main__ - INFO - Generating regression metrics for DecisionTreeRegressor | mode=grid
+2025-11-22 02:50:52,236 - __main__ - INFO - Grid mode completed for DecisionTreeRegressor
+
+2025-11-22 02:50:52,236 - __main__ - INFO - ==== Finished regression pipeline: DecisionTreeRegressor ====
+
+
+2025-11-22 02:50:52,236 - __main__ - INFO - ==== Starting regression pipeline: RandomForestRegressor ====
+
+2025-11-22 02:50:52,236 - __main__ - INFO - Running grid mode for RandomForestRegressor
+2025-11-22 02:50:52,236 - __main__ - INFO - Starting regression pipeline: RandomForestRegressor | mode: grid
+2025-11-22 02:50:52,236 - __main__ - INFO - Performing GridSearchCV (cv = 5, scoring='r2') for RandomForestRegressor with parameters: {'classifier__n_estimators': [50, 100], 'classifier__max_depth': [None, 10, 20]}
+2025-11-22 03:13:03,980 - __main__ - INFO - GridSearchCV completed for RandomForestRegressor | best score: 0.060 | Total duration: 1331 seconds
+2025-11-22 03:13:03,980 - __main__ - INFO - Saving feature importance for RandomForestRegressor (regression)
+2025-11-22 03:13:03,987 - __main__ - INFO - Feature importance CSV saved for RandomForestRegressor
+2025-11-22 03:13:04,175 - __main__ - INFO - Feature importance plot saved for RandomForestRegressor
+2025-11-22 03:13:04,176 - __main__ - INFO - Skipping tree plot for RandomForestRegressor (not a DecisionTree model)
+2025-11-22 03:13:04,176 - __main__ - INFO - Generating regression metrics for RandomForestRegressor | mode=grid
+2025-11-22 03:13:04,679 - __main__ - INFO - Grid mode completed for RandomForestRegressor
+
+2025-11-22 03:13:04,679 - __main__ - INFO - ==== Finished regression pipeline: RandomForestRegressor ====
+
+
+2025-11-22 03:13:04,679 - __main__ - INFO - ==== Starting regression pipeline: XGBRegressor ====
+
+2025-11-22 03:13:04,679 - __main__ - INFO - Running grid mode for XGBRegressor
+2025-11-22 03:13:04,679 - __main__ - INFO - Starting regression pipeline: XGBRegressor | mode: grid
+2025-11-22 03:13:04,679 - __main__ - INFO - Performing GridSearchCV (cv = 5, scoring='r2') for XGBRegressor with parameters: {'classifier__n_estimators': [50, 100, 200], 'classifier__max_depth': [3, 5, 7], 'classifier__learning_rate': [0.01, 0.1]}
+2025-11-22 03:13:34,154 - __main__ - INFO - GridSearchCV completed for XGBRegressor | best score: 0.070 | Total duration: 29 seconds
+2025-11-22 03:13:34,154 - __main__ - INFO - Saving feature importance for XGBRegressor (regression)
+2025-11-22 03:13:34,168 - __main__ - INFO - Feature importance CSV saved for XGBRegressor
+2025-11-22 03:13:34,380 - __main__ - INFO - Feature importance plot saved for XGBRegressor
+2025-11-22 03:13:34,381 - __main__ - INFO - Skipping tree plot for XGBRegressor (not a DecisionTree model)
+2025-11-22 03:13:34,381 - __main__ - INFO - Generating regression metrics for XGBRegressor | mode=grid
+2025-11-22 03:13:34,753 - __main__ - INFO - Grid mode completed for XGBRegressor
+
+2025-11-22 03:13:34,753 - __main__ - INFO - ==== Finished regression pipeline: XGBRegressor ====
+
+
+2025-11-22 03:13:34,755 - __main__ - INFO - Saved top 20 features summary for all pipelines
+2025-11-22 03:13:34,756 - __main__ - INFO - Saved combined global ML summary for all pipelines and modes
+2025-11-22 03:13:34,763 - __main__ - INFO - Saved enhanced global ML summary with expanded hyperparameters
+2025-11-22 03:13:34,770 - __main__ - INFO - Created enhanced global ML summary with expanded hyperparameters to historical summaries
+2025-11-22 03:13:34,776 - __main__ - INFO - End of ML script
+

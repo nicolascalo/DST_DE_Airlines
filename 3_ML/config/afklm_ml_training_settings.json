@@ -1,5 +1,5 @@
 {
-"RUN_MODE" : "simple",     
+"RUN_MODE" : "grid",     
 "FILTER_AIRPORTS_OPTIONAL" : "True",
 "FILTER_AIRPORTS_MANDATORY" : "True",
 "TOP_K_FEATURES" : 20,
@@ -14,6 +14,12 @@
 "TARGET_CLASSIFICATION_DELAY" : "flightlegs_irregularity_delayduration_total_bracket",
 "MODEL_LIST_TO_TEST" : [
     "LinearRegression",
+    "RandomForest",
+    "DecisionTreeRegressor",
+    "RandomForestRegressor",
+    "XGBRegressor",
+    "DecisionTree",
+    "Logistic_OVO",
     "Logistic_OVR"
     ], 
 "CV_NB" : 5,

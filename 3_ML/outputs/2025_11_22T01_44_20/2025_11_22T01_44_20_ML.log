@@ -1,0 +1,57 @@
+2025-11-22 01:44:20,763 - __main__ - INFO - ==== Starting ML script====
+2025-11-22 01:44:20,763 - __main__ - INFO - Nb of cores: 6
+
+2025-11-22 01:44:20,763 - __main__ - INFO - ML pipeline settings loaded from afklm_ml_training_settings.json
+2025-11-22 01:44:20,763 - __main__ - INFO - Airport list loaded from airport_list.json
+2025-11-22 01:44:32,064 - __main__ - INFO - Loaded dataset: afklm_flight_from_mongo_filtered_20251121.csv, shape=(954515, 55)
+2025-11-22 01:44:33,447 - __main__ - INFO - Step: raw_data | shape: (954515, 55) | null values: 8366778
+2025-11-22 01:44:34,775 - __main__ - INFO - Extracting 'company_flight' from 'id' column
+2025-11-22 01:44:35,677 - __main__ - INFO - Dropping columns: ['id', 'airline_name', 'flightlegs_aircraft_ownerairlineCode', 'actual', 'posterm', 'latestpublished', 'airline_code', 'company_flight', 'iata', 'icao', 'city_country_areaCode', 'airport_location', 'airport_city_country_name', 'delayreason'] and rows with missing flightlegs_irregularity_delayduration_total_bracket
+2025-11-22 01:44:37,403 - __main__ - INFO - Step: drop_na_and_unused_cols | shape: (954072, 34) | null values: 3037502
+2025-11-22 01:44:38,278 - __main__ - INFO - Computing 'flightlegs_scheduledFlightDuration' in minutes
+2025-11-22 01:44:48,461 - __main__ - INFO - Filtered past flights only, resulting shape: (953984, 35)
+2025-11-22 01:44:48,465 - __main__ - INFO - Filled missing flightlegs_irregularity_delayduration_total with 0
+2025-11-22 01:44:48,466 - __main__ - INFO - Categorizing flights into 'CANCELLED', 'LATE', 'ONTIME'
+2025-11-22 01:44:55,746 - __main__ - INFO - Step: categorize_flights | shape: (953984, 35) | null values: 2331960
+2025-11-22 01:44:56,578 - __main__ - INFO - Categorizing flights into 'cancelled', 'late', 'on_time'
+2025-11-22 01:45:01,216 - __main__ - INFO - Step: categorize_delay_brackets | shape: (953984, 36) | null values: 2331960
+2025-11-22 01:45:02,078 - __main__ - INFO - Filtering flights in optional list
+2025-11-22 01:45:02,321 - __main__ - INFO - AFiltering flights in mandatory list
+2025-11-22 01:45:03,053 - __main__ - INFO - Step: airport_filtering | shape: (580214, 36) | null values: 1312404
+2025-11-22 01:45:03,583 - __main__ - INFO - Adding seasonality, isWeekend and dayPeriod
+2025-11-22 01:45:24,970 - __main__ - INFO - ==== Preparing classification_status dataset ====
+2025-11-22 01:45:24,970 - __main__ - INFO - Using the full dataset
+2025-11-22 01:45:25,231 - __main__ - INFO - Classification status dataset shape: X=(580214, 10), y=(580214,)
+2025-11-22 01:45:25,261 - __main__ - INFO - Classification status dataset class repartition: flightlegs_publishedstatus
+ONTIME       0.657108
+LATE         0.342381
+CANCELLED    0.000512
+Name: proportion, dtype: float64
+2025-11-22 01:45:25,685 - __main__ - INFO - Classification status train/test split: X_train=(464171, 10), X_test=(116043, 10), y_train=(464171,), y_test=(116043,)
+2025-11-22 01:45:25,685 - __main__ - INFO - Extracting features from dataset, target column: flightlegs_publishedstatus
+2025-11-22 01:45:25,736 - __main__ - INFO - Identified 0 numeric and 10 categorical features
+2025-11-22 01:45:25,736 - __main__ - INFO - Numeric features: []
+2025-11-22 01:45:25,736 - __main__ - INFO - Categorical features: ['flightlegs_aircraft_ownerairlinecode', 'flightlegs_aircraft_typecode', 'flightlegs_arrinfo_airport_city_country_areacode', 'flightlegs_arrinfo_airport_code', 'flightlegs_depinfo_airport_city_country_areacode', 'flightlegs_depinfo_airport_code', 'flightlegs_scheduledflightduration', 'flightlegs_season', 'flightlegs_arrinfo_times_scheduled_dayPeriod', 'flightlegs_depinfo_times_scheduled_dayPeriod']
+
+2025-11-22 01:45:25,736 - __main__ - INFO - ==== Preparing classification_delay dataset ====
+2025-11-22 01:45:26,021 - __main__ - INFO - Step: lateFlights_filtering | shape: (198654, 11) | null values: 10765
+2025-11-22 01:45:26,081 - __main__ - INFO - Using the full dataset
+2025-11-22 01:45:26,093 - __main__ - INFO - Classification delay dataset shape: X=(198654, 10), y=(198654,)
+2025-11-22 01:45:26,117 - __main__ - INFO - Classification delay train/test split: X_train=(158923, 10), X_test=(39731, 10), y_train=(158923,), y_test=(39731,)
+2025-11-22 01:45:26,117 - __main__ - INFO - Extracting features from dataset, target column: flightlegs_irregularity_delayduration_total_bracket
+2025-11-22 01:45:26,125 - __main__ - INFO - Identified 0 numeric and 10 categorical features
+2025-11-22 01:45:26,125 - __main__ - INFO - Numeric features: []
+2025-11-22 01:45:26,125 - __main__ - INFO - Categorical features: ['flightlegs_aircraft_ownerairlinecode', 'flightlegs_aircraft_typecode', 'flightlegs_arrinfo_airport_city_country_areacode', 'flightlegs_arrinfo_airport_code', 'flightlegs_depinfo_airport_city_country_areacode', 'flightlegs_depinfo_airport_code', 'flightlegs_scheduledflightduration', 'flightlegs_season', 'flightlegs_arrinfo_times_scheduled_dayPeriod', 'flightlegs_depinfo_times_scheduled_dayPeriod']
+
+2025-11-22 01:45:26,125 - __main__ - INFO - ==== Preparing regression dataset ====
+2025-11-22 01:45:26,394 - __main__ - INFO - Step: lateFlights_filtering | shape: (198654, 11) | null values: 10765
+2025-11-22 01:45:26,459 - __main__ - INFO - Saved dataset cleaning summary to 'outputs/2025_11_22T01_44_20/dataset_summary/dataset_cleaning_summary.csv'
+
+2025-11-22 01:45:26,459 - __main__ - INFO - Using the full dataset
+2025-11-22 01:45:26,470 - __main__ - INFO - Regression dataset shape: X=(198654, 10), y=(198654,)
+2025-11-22 01:45:26,492 - __main__ - INFO - Regression train/test split: X_train=(158923, 10), X_test=(39731, 10), y_train=(158923,), y_test=(39731,)
+2025-11-22 01:45:26,493 - __main__ - INFO - Extracting features from dataset, target column: flightlegs_irregularity_delayduration_total
+2025-11-22 01:45:26,499 - __main__ - INFO - Identified 0 numeric and 10 categorical features
+2025-11-22 01:45:26,500 - __main__ - INFO - Numeric features: []
+2025-11-22 01:45:26,500 - __main__ - INFO - Categorical features: ['flightlegs_aircraft_ownerairlinecode', 'flightlegs_aircraft_typecode', 'flightlegs_arrinfo_airport_city_country_areacode', 'flightlegs_arrinfo_airport_code', 'flightlegs_depinfo_airport_city_country_areacode', 'flightlegs_depinfo_airport_code', 'flightlegs_scheduledflightduration', 'flightlegs_season', 'flightlegs_arrinfo_times_scheduled_dayPeriod', 'flightlegs_depinfo_times_scheduled_dayPeriod']
+
