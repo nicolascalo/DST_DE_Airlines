@@ -9,7 +9,7 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder, MinMaxScaler
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.impute import SimpleImputer
 from sklearn.tree import DecisionTreeClassifier, DecisionTreeRegressor
-from sklearn.linear_model import LogisticRegression
+from sklearn.linear_model import LogisticRegression, LinearRegression
 from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
 from sklearn.multiclass import OneVsOneClassifier, OneVsRestClassifier
 from sklearn.metrics import classification_report, ConfusionMatrixDisplay, mean_absolute_error, mean_squared_error, r2_score, accuracy_score
@@ -715,7 +715,7 @@ def save_decision_tree_plot(pipeline, pipeline_name, problem_type, feature_names
 
 csv_files = sorted([f for f in list(os.listdir(ml_training_settings['DATA_DIR'])) if 'afklm_flight_from_mongo_filtered' in f])
 csv_to_import = csv_files[-1]
-df = pd.read_csv(f'{ml_training_settings['DATA_DIR']}/{csv_to_import}')
+df = pd.read_csv(f'{ml_training_settings['DATA_DIR']}/{csv_to_import}', low_memory=False)
 logger.info(f"Loaded dataset: {csv_to_import}, shape={df.shape}")
 
 try:
