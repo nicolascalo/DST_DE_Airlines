@@ -7,14 +7,43 @@ from REPOSITORIES.flights import add_date_insertion
 from REPOSITORIES.collections import get_all_collection_name
 from USE_CASES.insert_compressed_file_name_uc import  is_compressed_file_name_exist
 
-
+import json
 
 def import_operationalflights_in_mongodb():
+    historic_operational_flights_json = {"operationalFlights": []}
+    update_scheduled_d1_operational_flights_json = {"operationalFlights": []}
+    scheduled_operational_flights_json = {"operationalFlights": []}
+    gz_file_name_json = []
 
     folder_path = get_folder_path_in_env()
     
     file_names = get_file_names_by_folder(folder_path)
     create_historic_op_json()
+
+    for file_name in file_names:
+        if is_gz_file(file_name) == True:
+            gz_file_name = file_name
+
+            json_file = get_json_in_gz_file_by_its_name(gz_file_name)
+            if json_file == "corrupted file" or json_file == "invalid json":
+                remove_file(folder_path, file_name)
+            else:
+                json_file = delete_page_object_in_json(json_file)
+                historic_operational_flights_json["operationalFlights"].append(json_file)
+    print(historic_operational_flights_json)
+
+
+
+
+
+    
+    
+
+
+
+
+def toto():
+
     create_scheduled_op_json()
     create_scheduled_d1_op_json()
     historic_operational_flights_json = {"operationalFlights": []}
@@ -31,14 +60,17 @@ def import_operationalflights_in_mongodb():
             collection_name = get_collection_name_by_end_gz_file_name(gz_file_name)
           
             json_file = get_json_in_gz_file_by_its_name(gz_file_name)
+            print(json_file)
             if json_file == "corrupted file" or json_file == "invalid json":
                 remove_file(folder_path, file_name)
             else:
                 json_file = delete_page_object_in_json(json_file)
-            if is_compressed_file_name_exist(gz_file_name) == False:
+            #if is_compressed_file_name_exist(gz_file_name) == False:
 
                 if collection_name == 'historic_operational_flights':
                     historic_operational_flights_json["operationalFlights"].append(json_file)
+                    with open('../TEMP/historic_op_flights.json', 'w') as f:
+                        json.dump(json_file, f, indent=2)
 
                 if collection_name == 'scheduled_operational_flights':
                     scheduled_operational_flights_json["operationalFlights"].append(json_file)
@@ -50,10 +82,10 @@ def import_operationalflights_in_mongodb():
 
 
                  
-    insert_one(json_file, 'historic_operational_flights')
+    '''insert_one(json_file, 'historic_operational_flights')
     insert_one(json_file, 'scheduled_operational_flights')
     insert_one(json_file, 'update_scheduled_d1_operational_flights')
-    insert_compressed_file_name(gz_file_name_json)
+    insert_compressed_file_name(gz_file_name_json)'''
 
     
 
@@ -80,8 +112,8 @@ def add_date_insertion_in_flights():
 
     
 import_operationalflights_in_mongodb()
-clean()
-add_date_insertion_in_flights()
+#clean()
+#add_date_insertion_in_flights()
 
 
 

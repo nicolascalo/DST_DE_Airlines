@@ -1,1 +1,4 @@
-./venv/bin/python -m insert_operation_flights_by_collection.py
+./venv/bin/python -m API.insert_operation_flights_fusion
+
+
+
