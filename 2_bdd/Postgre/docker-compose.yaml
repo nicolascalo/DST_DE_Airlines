@@ -1,0 +1,36 @@
+version: '3.8'
+services:
+  db:
+    container_name: dst_de_airlines_postgres
+    build:
+      context: .
+      dockerfile: postgres_Dockerfile
+    image: postgres:16-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: daniel
+      POSTGRES_PASSWORD: datascientest
+      POSTGRES_DB: afklm
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s      
+    volumes:
+      - ./postgres_volume:/var/lib/postgresql/data
+
+
+
+  pgadmin:
+    container_name: pgadmin4_container
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: daniel@datascientest.com
+      PGADMIN_DEFAULT_PASSWORD: data_engineer
+    ports:
+      - "5050:80"
+

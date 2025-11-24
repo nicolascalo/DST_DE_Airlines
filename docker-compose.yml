@@ -2,10 +2,11 @@ version: '3.8'
 
 services:
     
-  ml_prediction_api:
+  ml_api:
     build:
-      dockerfile: ./3_ML/afklm_ml_prediction_api_Dockerfile
-    container_name: dst_de_airlines_ml_prediction_api
+      dockerfile: ./3_ML
+      context: afklm_ml_api_Dockerfile
+    container_name: dst_de_airlines_ml_api
     ports:
       - "8001:8001"
     restart: unless-stopped
@@ -35,7 +36,9 @@ services:
     restart: unless-stopped
 
   mongodb_api:
-    build: ./2_bdd/MongoDb/dst_de_airlines_api/
+    build:
+      context: ./2_bdd/MongoDb/dst_de_airlines_api/
+      dockerfile: Dockerfile
     container_name: dst_de_airlines_mongodb_api
     ports:
       - "8000:8000"
@@ -49,4 +52,51 @@ services:
       mongodb:
         condition: service_healthy
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://127.0.0.1:8000/docs"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+    
 
+  postgres:
+    container_name: dst_de_airlines_postgres
+    build:
+      context: ./2_bdd/Postgre/
+      dockerfile: postgres_Dockerfile
+    
+    image: postgres:16-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: daniel
+      POSTGRES_PASSWORD: datascientest
+      POSTGRES_DB: dst_db
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s      
+    volumes:
+      - ./2_bdd/Postgre/postgres_volume:/var/lib/postgresql/data
+      - ./2_bdd/Postgre/mongodb_dump:/var/lib/postgresql/data/mongodb_dump
+
+
+  pgadmin:
+    container_name: dst_de_airlines_pgadmin4
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: daniel@datascientest.com
+      PGADMIN_DEFAULT_PASSWORD: data_engineer
+    ports:
+      - "5050:80"
+    healthcheck:
+      test: ["CMD", "wget", "-O", "-", "http://localhost:80/misc/ping"]
+      interval: 10s
+      timeout: 10s
+      start_period: 160s
+      retries: 3

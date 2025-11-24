@@ -21,7 +21,11 @@ import json
 import re
 from pydantic import BaseModel, create_model
 from typing import Any
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, PlainTextResponse
+
+import shutil
+import glob
+import subprocess
 
 OUTPUT_DIR = "outputs"
 BEST_MODEL_DIR =  f'{OUTPUT_DIR}/best_models'
@@ -30,7 +34,7 @@ BEST_MODEL_DIR =  f'{OUTPUT_DIR}/best_models'
 
 
 try:
-    with open('./config/afklm_ml_training_settings_class.json') as json_file:
+    with open('./config/afklm_ml_training_settings.json') as json_file:
         ml_training_settings = json.load(json_file)
     params_from_json = True
     print("afklm_ml_training_settings_class.json loaded")
@@ -40,7 +44,7 @@ except:
     "DATA_DIR" : 'data',
     "OUTPUT_DIR": "outputs"
     }
-    print("afklm_ml_training_settings_class.json defaults loaded")
+    print("afklm_ml_training_settings.json defaults loaded")
 
 try :
     best_model_classification_delay_file =[model for model in list(os.listdir(BEST_MODEL_DIR)) if ('.pkl' in model) & ("classification_delay" in model) ][0]
@@ -85,10 +89,20 @@ def get_dayPeriod(x):
     else:
         return 'night'
 
-
-api = FastAPI()
-
-
+api = FastAPI(openapi_tags=[
+    {
+        'name': 'tests',
+        'description': 'Utility functions'
+    },
+    {
+        'name': 'training',
+        'description': 'functions regarding model training'
+    },
+    {
+        'name': 'predictions',
+        'description': 'functions regarding model training'
+    }
+])
 
 class Payload_flight(BaseModel):
     model_config = {
@@ -144,8 +158,11 @@ class Payload_flight(BaseModel):
     flightlegs_arrinfo_airport_places_arrivalpositionterminal: Optional[str] = None
     flightlegs_depinfo_airport_places_depposterm_boardingterminal: Optional[str] = None
 
+
+
+
 with open('./config/api_test_payload.json') as json_file:
-    json_example = json.load(json_file)
+    json_example_payload = json.load(json_file)
 '''
 try:
     with open('./config/api_test_payload.json') as json_file:
@@ -160,21 +177,124 @@ except:
 
 '''
 
-Payload_flight.model_config["json_schema_extra"]["examples"] = [json_example]
 
-@api.get('/health', name="Check if the API is running")
+Payload_flight.model_config["json_schema_extra"]["examples"] = [json_example_payload]
+
+
+
+class PayloadTrainingParameters(BaseModel):
+    model_config = {
+    "extra": "allow",
+    "json_schema_extra": 
+    
+    
+    {
+            "examples": []
+               
+            
+        }
+    
+    }
+
+    """"Parameters for ML training"""
+
+
+    DATA_FILE_ROOT_NAME : str
+    RUN_MODE : str
+    FILTER_AIRPORTS_OPTIONAL : str
+    FILTER_AIRPORTS_MANDATORY : str
+    TOP_K_FEATURES : int
+    GRID_LEVEL : str
+    PARALLEL_JOBS : int
+    TEST_SIZE : float
+    RANDOM_STATE : int
+    RECORD_LIMIT : str
+    MODEL_TO_KEEP : str
+    TARGET_REGRESSION : str
+    TARGET_CLASSIFICATION_STATUS : str
+    TARGET_CLASSIFICATION_DELAY : str
+    MODEL_LIST_TO_TEST : str
+    CV_NB : int
+    columnKeywordsToDrop_all : str
+    columnKeywordsToKeep_classification_status : str
+    columnKeywordsToDrop_classification_status : str
+    columnKeywordsToDrop_classification_delay : str
+    columnKeywordsToDrop_regression : str
+    columnsToDrop_classification_status : str
+    columnsToDrop_classification_delay : str
+    columnsToDrop_regression : str
+
+
+try:
+    with open('./config/afklm_ml_training_settings_default.json') as json_file:
+        json_example_training_params = json.load(json_file)
+except:
+    json_example_training_params = {"training parameters not found":""}
+
+
+Payload_flight.model_config["json_schema_extra"]["examples"] = [json_example_training_params]
+
+
+
+
+
+@api.get('/health', name="Check if the API is running", tags=['tests'])
 def get_index():
     """Check if the API is running"""
     return 1
 
 
-@api.get('/model_parameters_and_metrics', name="Retrieve the prediction model training parameters and validation metrics")
+@api.get('/model_parameters_and_metrics', name="Retrieve the prediction model training parameters and validation metrics", tags=['predictions'])
 def get_model_parameters():
     """Retrieve the prediction model training parameters and test metrics of the current best models for status and delay"""
     return JSONResponse(content=best_models_metrics_json) 
 
 
-@api.post('/get_delay_predictions', name = "Get flight delay predictions")
+@api.get('/retrain_models', name="Retrain the machine learning models with the current dataset", tags=['training'],response_class=PlainTextResponse)
+def retrain_models():
+    """Retrain the machine learning models with the current dataset"""
+    subprocess.run(["python", "afklm_ml_training.py"])
+    return "Model training over"
+
+@api.get('/training_parameters_show', name="", tags=['training'])
+def get_training_parameters():
+    """Get current parameters for model training"""
+    return JSONResponse(ml_training_settings)
+
+
+@api.post('/training_parameters_upload', name="", tags=['training'],response_class=PlainTextResponse)
+def set_training_parameters(parameters: PayloadTrainingParameters):
+    """Set current parameters for model training"""
+    new_params = parameters.model_dump()
+    
+    with open(f"./config/afklm_ml_training_settings.json", 'w', encoding='utf-8') as f:
+        params =json.dump(new_params, f, ensure_ascii=False, indent=4)
+
+    return("Training parameters updated")
+
+@api.get('/training_parameters_defaults', name="", tags=['training'],response_class=PlainTextResponse)
+def set_training_parameters_to_default():
+    """Reset model parameters to default"""
+    shutil.copyfile("./config/afklm_ml_training_settings_default.json","./config/afklm_ml_training_settings.json")
+    return "Training paramters reset to defaults"
+
+
+@api.get('/display_training_log', name="", tags=['training'],response_class=PlainTextResponse)
+def display_training_log():
+    """Display the log of the last training"""
+    try :
+        log_list = glob.glob('./*/*/*.log', recursive=True)
+        log_list.sort(reverse=True)
+        last_log_file = log_list[0]
+        with open(last_log_file, 'r') as f:
+            last_log = f.read()
+        return last_log
+    except:
+
+        print("No log found")
+
+
+@api.post('/get_delay_predictions', name = "Get flight delay predictions", tags=['predictions'])
 def post_users(parameters: Payload_flight):
     """"Interrogates the best status (ONTIME, LATE, CANCELLED) and delay models (delay duration in minutes) based on the flight parameters parameters. Will only perform delay duration prediction if the flight is predicted to be late, and will otherwise output NA"""
     
