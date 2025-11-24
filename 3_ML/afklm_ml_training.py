@@ -50,6 +50,7 @@ cwd = os.getcwd()
 print(cwd)
 
 
+
 try:
     with open('./config/afklm_ml_training_settings.json') as json_file:
         ml_training_settings = json.load(json_file)
@@ -57,6 +58,7 @@ try:
     
 except:
     ml_training_settings = {
+        "DATA_FILE_ROOT_NAME" : "afklm_flight_from_mongo_filtered",
 "RUN_MODE" : "simple",     
 "FILTER_AIRPORTS_OPTIONAL" : "True",
 "FILTER_AIRPORTS_MANDATORY" : "True",
@@ -713,7 +715,7 @@ def save_decision_tree_plot(pipeline, pipeline_name, problem_type, feature_names
 # DATA LOAD
 # --------------------------------------
 
-csv_files = sorted([f for f in list(os.listdir(ml_training_settings['DATA_DIR'])) if 'afklm_flight_from_mongo_filtered' in f])
+csv_files = sorted([f for f in list(os.listdir(ml_training_settings['DATA_DIR'])) if ml_training_settings['DATA_FILE_ROOT_NAME'] in f])
 csv_to_import = csv_files[-1]
 df = pd.read_csv(f'{ml_training_settings['DATA_DIR']}/{csv_to_import}', low_memory=False)
 logger.info(f"Loaded dataset: {csv_to_import}, shape={df.shape}")
