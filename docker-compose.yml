@@ -23,7 +23,7 @@ services:
       MONGO_INITDB_ROOT_USERNAME: airlines
       MONGO_INITDB_ROOT_PASSWORD: airlines
     volumes:
-      - ./bdd_afklm_volumes:/data/db
+      - ./2_bdd_afklm_volumes:/data/db
     ports:
       - "27017:27017"
     healthcheck:
@@ -35,7 +35,7 @@ services:
     restart: unless-stopped
 
   mongodb_api:
-    build: ./bdd/MongoDb/dst_de_airlines_api/
+    build: ./2_bdd/MongoDb/dst_de_airlines_api/
     container_name: dst_de_airlines_mongodb_api
     ports:
       - "8000:8000"
