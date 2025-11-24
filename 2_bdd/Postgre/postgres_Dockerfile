@@ -1,0 +1,6 @@
+FROM postgres:16-alpine
+
+RUN rm -rf postgres_volume
+COPY mongodb_dump.csv /tmp/mongodb_dump.csv
+COPY seed.sql /docker-entrypoint-initdb.d/
+EXPOSE 5432
