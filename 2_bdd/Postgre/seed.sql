@@ -1,51 +1,52 @@
 
 DROP TABLE IF EXISTS mongodb;
 CREATE TABLE mongodb (
-_id varchar(100) NULL,
-id varchar(100) NULL,
-airline_code varchar(100) NULL,
-airline_name varchar(100) NULL,
-flightLegs_aircraft_ownerAirlineCode varchar(100) NULL,
-flightLegs_aircraft_typeCode varchar(100) NULL,
-flightLegs_arrInfo_airport_city_country_areaCode varchar(100) NULL,
-flightLegs_arrInfo_airport_city_country_code varchar(100) NULL,
-flightLegs_arrInfo_airport_city_country_name varchar(100) NULL,
-flightLegs_arrInfo_airport_code varchar(100) NULL,
-flightLegs_arrInfo_airport_location_latitude varchar(100) NULL,
-flightLegs_arrInfo_airport_location_longitude varchar(100) NULL,
-flightLegs_arrInfo_times_scheduled varchar(100) NULL,
-flightLegs_depInfo_airport_city_country_areaCode varchar(100) NULL,
-flightLegs_depInfo_airport_city_country_code varchar(100) NULL,
-flightLegs_depInfo_airport_city_country_name varchar(100) NULL,
-flightLegs_depInfo_airport_code varchar(100) NULL,
-flightLegs_depInfo_airport_location_latitude varchar(100) NULL,
-flightLegs_depInfo_airport_location_longitude varchar(100) NULL,
-flightLegs_depInfo_airport_places_depPosTerm_gateNumber varchar(100) NULL,
-flightLegs_depInfo_times_scheduled varchar(100) NULL,
-flightLegs_irregularity_delayDuration varchar(250) NULL,
-flightLegs_irregularity_delayInfo_delayReasonPublicLong varchar(250) NULL,
-flightLegs_irregularity_delayInformation_delayCode varchar(250) NULL,
-flightLegs_irregularity_delayInfo_delayReasonPublicShort varchar(250) NULL,
-flightLegs_irregularity_delayReason varchar(250) NULL,
-flightLegs_scheduledFlightDuration varchar(100) NULL,
-flightLegs_serviceType varchar(100) NULL,
-flightLegs_serviceTypeName varchar(100) NULL,
-flightLegs_status varchar(100) NULL,
-flightLegs_publishedStatus varchar(100) NULL,
-flightLegs_legStatusPublic varchar(100) NULL,
-flightLegs_statusName varchar(100) NULL,
-flightNumber varchar(100) NULL,
-flightStatusPublic varchar(100) NULL,
-flightLegs_arrInfo_times_estimated_value varchar(100) NULL,
-flightLegs_arrInfo_times_latestPublished varchar(100) NULL,
-flightLegs_depInfo_times_actual varchar(100) NULL,
-flightLegs_depInfo_times_actualTakeOffTime varchar(100) NULL,
-flightLegs_depInfo_times_latestPublished varchar(100) NULL,
-flightLegs_arrInfo_airport_places_arrivalPositionTerminal varchar(100) NULL,
-flightLegs_arrInfo_times_actual varchar(100) NULL,
-flightLegs_arrInfo_times_actualTouchDownTime varchar(100) NULL,
-flightLegs_depInfo_airport_places_depPosTerm_boardingTerminal varchar(100) NULL,
-flightLegs_irregularity_delayDuration_total varchar(250) NULL);
+_id	varchar(100)	NULL,
+id	varchar(100)	NULL,
+airline_code	varchar(100)	NULL,
+airline_name	varchar(100)	NULL,
+flightLegs_aircraft_ownerAirlineCode	varchar(100)	NULL,
+flightLegs_aircraft_typeCode	varchar(100)	NULL,
+flightLegs_arrInfo_airport_city_country_areaCode	varchar(100)	NULL,
+flightLegs_arrInfo_airport_city_country_code	varchar(100)	NULL,
+flightLegs_arrInfo_airport_city_country_name	varchar(100)	NULL,
+flightLegs_arrInfo_airport_code	varchar(100)	NULL,
+flightLegs_arrInfo_airport_location_latitude	varchar(100)	NULL,
+flightLegs_arrInfo_airport_location_longitude	varchar(100)	NULL,
+flightLegs_arrInfo_times_scheduled	varchar(100)	NULL,
+flightLegs_depInfo_airport_city_country_areaCode	varchar(100)	NULL,
+flightLegs_depInfo_airport_city_country_code	varchar(100)	NULL,
+flightLegs_depInfo_airport_city_country_name	varchar(100)	NULL,
+flightLegs_depInfo_airport_code	varchar(100)	NULL,
+flightLegs_depInfo_airport_location_latitude	varchar(100)	NULL,
+flightLegs_depInfo_airport_location_longitude	varchar(100)	NULL,
+flightLegs_depInfo_airport_places_depPosTerm_gateNumber	varchar(100)	NULL,
+flightLegs_depInfo_times_scheduled	varchar(100)	NULL,
+flightLegs_irregularity_delayDuration	varchar(250)	NULL,
+flightLegs_irregularity_delayInfo_delayReasonPublicLong	varchar(250)	NULL,
+flightLegs_irregularity_delayInformation_delayCode	varchar(250)	NULL,
+flightLegs_irregularity_delayInfo_delayReasonPublicShort	varchar(250)	NULL,
+flightLegs_irregularity_delayReason	varchar(250)	NULL,
+flightLegs_scheduledFlightDuration	varchar(100)	NULL,
+flightLegs_serviceType	varchar(100)	NULL,
+flightLegs_serviceTypeName	varchar(100)	NULL,
+flightLegs_status	varchar(100)	NULL,
+flightLegs_publishedStatus	varchar(100)	NULL,
+flightLegs_legStatusPublic	varchar(100)	NULL,
+flightLegs_statusName	varchar(100)	NULL,
+flightNumber	varchar(100)	NULL,
+flightStatusPublic	varchar(100)	NULL,
+flightLegs_arrInfo_times_estimated_value	varchar(100)	NULL,
+flightLegs_arrInfo_times_latestPublished	varchar(100)	NULL,
+flightLegs_arrInfo_times_actual	varchar(100)	NULL,
+flightLegs_depInfo_times_actualTakeOffTime	varchar(100)	NULL,
+flightLegs_depInfo_times_latestPublished	varchar(100)	NULL,
+flightLegs_arrInfo_airport_places_arrivalPositionTerminal	varchar(100)	NULL,
+flightLegs_depInfo_times_actual	varchar(100)	NULL,
+flightLegs_arrInfo_times_actualTouchDownTime	varchar(100)	NULL,
+flightLegs_depInfo_airport_places_depPosTerm_boardingTerminal	varchar(100)	NULL,
+flightLegs_irregularity_delayDuration_total	varchar(250)	NULL);
+
 
 DROP TABLE IF EXISTS delay;
 CREATE TABLE delay (
@@ -60,6 +61,8 @@ CREATE TABLE arrival_airport (
 flight_id varchar(50) PRIMARY KEY,
 flightLegs_arrInfo_airport_code varchar(3) NOT NULL,
 flightLegs_arrInfo_airport_places_arrivalPositionTerminal varchar(50) NULL,
+flightLegs_arrInfo_times_scheduled_date date NULL,
+flightLegs_arrInfo_times_scheduled_time time NULL,
 flightLegs_arrInfo_times_scheduled_year int NULL,
 flightLegs_arrInfo_times_scheduled_month int NULL,
 flightLegs_arrInfo_times_scheduled_day int NULL,
@@ -75,6 +78,8 @@ flight_id varchar(50) PRIMARY KEY,
 flightLegs_depInfo_airport_code varchar(3) NOT NULL,
 flightLegs_depInfo_airport_places_depPosTerm_boardingTerminal varchar(50) NULL,
 flightLegs_depInfo_airport_places_depPosTerm_gateNumber varchar(50) NULL,
+flightLegs_depInfo_times_scheduled_date date NULL,
+flightLegs_depInfo_times_scheduled_time time NULL,
 flightLegs_depInfo_times_scheduled_year int NULL,
 flightLegs_depInfo_times_scheduled_month int NULL,
 flightLegs_depInfo_times_scheduled_day int NULL,
@@ -98,8 +103,6 @@ flightLegs_aircraft_ownerAirlineCode varchar(50) NULL,
 flightLegs_status varchar(50) NULL,
 delay_status boolean NULL
 );
-
-
 
 
 DROP TABLE IF EXISTS Continent;
@@ -2982,24 +2985,14 @@ INSERT INTO Airport (Airport_name, Iata_Code, Icao_Code, Latitude, Longitude, Lo
 
 COPY mongodb FROM '/tmp/mongodb_dump.csv' CSV HEADER;
 
-COPY (select '') TO '/tmp/mongodb_dump.csv'
 
 
-INSERT INTO delay (flight_id, flightLegs_irregularity_delayDuration, flightLegs_irregularity_delayInfo_delayReasonPublicLong, flightLegs_irregularity_delayInfo_delayReasonPublicShort)
-SELECT distinct CONCAT (id, flightLegs_depInfo_airport_code,flightLegs_arrInfo_airport_code), flightLegs_irregularity_delayDuration, flightLegs_irregularity_delayInfo_delayReasonPublicLong, flightLegs_irregularity_delayInfo_delayReasonPublicShort
-FROM mongodb;
 
-INSERT INTO arrival_airport (flight_id, flightLegs_arrInfo_airport_code, flightLegs_arrInfo_airport_places_arrivalPositionTerminal, flightLegs_arrInfo_times_scheduled_year, flightLegs_arrInfo_times_scheduled_month, flightLegs_arrInfo_times_scheduled_day, flightLegs_arrInfo_times_scheduled_hour, flightLegs_arrInfo_times_scheduled_minute, flightLegs_arrInfo_times_scheduled_timezone, flightLegs_arrInfo_times_number_week)
-SELECT distinct CONCAT (id, flightLegs_depInfo_airport_code,flightLegs_arrInfo_airport_code), flightLegs_arrInfo_airport_code, flightLegs_arrInfo_airport_places_arrivalPositionTerminal, CAST (SUBSTRING (flightLegs_arrInfo_times_scheduled, 1, 4) AS INTEGER), CAST (SUBSTRING (flightLegs_arrInfo_times_scheduled, 6, 2) AS INTEGER), CAST (SUBSTRING (flightLegs_arrInfo_times_scheduled, 9, 2) AS INTEGER), CAST (SUBSTRING (flightLegs_arrInfo_times_scheduled, 12, 2) AS INTEGER), CAST (SUBSTRING (flightLegs_arrInfo_times_scheduled, 15, 2) AS INTEGER), SUBSTRING (flightLegs_arrInfo_times_scheduled, 24, 6), EXTRACT(WEEK FROM TO_TIMESTAMP(SUBSTRING (flightLegs_arrInfo_times_scheduled, 1, 10), 'YYYY/MM/DD/HH24:MI:ss'))
-FROM mongodb;
+INSERT INTO delay (flight_id, flightLegs_irregularity_delayDuration, flightLegs_irregularity_delayInfo_delayReasonPublicLong, flightLegs_irregularity_delayInfo_delayReasonPublicShort) SELECT distinct CONCAT (id, flightLegs_depInfo_airport_code,flightLegs_arrInfo_airport_code), flightLegs_irregularity_delayDuration, flightLegs_irregularity_delayInfo_delayReasonPublicLong, flightLegs_irregularity_delayInfo_delayReasonPublicShort FROM mongodb;
 
-INSERT INTO departure_airport (flight_id, flightLegs_depInfo_airport_code, flightLegs_depInfo_airport_places_depPosTerm_boardingTerminal, flightLegs_depInfo_airport_places_depPosTerm_gateNumber, flightLegs_depInfo_times_scheduled_year, flightLegs_depInfo_times_scheduled_month, flightLegs_depInfo_times_scheduled_day, flightLegs_depInfo_times_scheduled_hour, flightLegs_depInfo_times_scheduled_minute, flightLegs_depInfo_times_scheduled_timezone, flightLegs_depInfo_times_number_week)
-SELECT distinct CONCAT (id, flightLegs_depInfo_airport_code,flightLegs_arrInfo_airport_code), flightLegs_depInfo_airport_code, flightLegs_depInfo_airport_places_depPosTerm_boardingTerminal, flightLegs_depInfo_airport_places_depPosTerm_gateNumber, CAST (SUBSTRING (flightLegs_depInfo_times_scheduled, 1, 4) AS INTEGER), CAST (SUBSTRING (flightLegs_depInfo_times_scheduled, 6, 2) AS INTEGER), CAST (SUBSTRING (flightLegs_depInfo_times_scheduled, 9, 2) AS INTEGER), CAST (SUBSTRING (flightLegs_depInfo_times_scheduled, 12, 2) AS INTEGER), CAST (SUBSTRING (flightLegs_depInfo_times_scheduled, 15, 2) AS INTEGER), SUBSTRING (flightLegs_depInfo_times_scheduled, 24, 6), EXTRACT(WEEK FROM TO_TIMESTAMP(SUBSTRING (flightLegs_depInfo_times_scheduled, 1, 10), 'YYYY/MM/DD/HH24:MI:ss')) 
-FROM mongodb;
+INSERT INTO arrival_airport (flight_id, flightLegs_arrInfo_airport_code, flightLegs_arrInfo_airport_places_arrivalPositionTerminal, flightLegs_arrInfo_times_scheduled_date, flightLegs_arrInfo_times_scheduled_time, flightLegs_arrInfo_times_scheduled_year, flightLegs_arrInfo_times_scheduled_month, flightLegs_arrInfo_times_scheduled_day, flightLegs_arrInfo_times_scheduled_hour, flightLegs_arrInfo_times_scheduled_minute, flightLegs_arrInfo_times_scheduled_timezone, flightLegs_arrInfo_times_number_week) SELECT distinct CONCAT (id, flightLegs_depInfo_airport_code,flightLegs_arrInfo_airport_code), flightLegs_arrInfo_airport_code, flightLegs_arrInfo_airport_places_arrivalPositionTerminal, CAST (SUBSTRING (flightLegs_arrInfo_times_scheduled, 0, 11) AS DATE) date, CAST (SUBSTRING (flightLegs_arrInfo_times_scheduled, 12, 5) AS time) time, CAST (SUBSTRING (flightLegs_arrInfo_times_scheduled, 1, 4) AS INTEGER), CAST (SUBSTRING (flightLegs_arrInfo_times_scheduled, 6, 2) AS INTEGER), CAST (SUBSTRING (flightLegs_arrInfo_times_scheduled, 9, 2) AS INTEGER), CAST (SUBSTRING (flightLegs_arrInfo_times_scheduled, 12, 2) AS INTEGER), CAST (SUBSTRING (flightLegs_arrInfo_times_scheduled, 15, 2) AS INTEGER), SUBSTRING (flightLegs_arrInfo_times_scheduled, 24, 6), EXTRACT(WEEK FROM TO_TIMESTAMP(SUBSTRING (flightLegs_arrInfo_times_scheduled, 1, 10), 'YYYY/MM/DD/HH24:MI:ss')) FROM mongodb;
 
-INSERT INTO flight (flight_id, flightNumber, airline_code, airline_name, flightStatusPublic, flightLegs_aircraft_typeCode, flightLegs_scheduledFlightDuration, flightLegs_serviceType, flightLegs_aircraft_ownerAirlineCode, flightLegs_status, delay_status)
-SELECT distinct CONCAT (id, flightLegs_depInfo_airport_code,flightLegs_arrInfo_airport_code), CAST (flightNumber AS INTEGER)flightNumber, airline_code, airline_name, flightStatusPublic, flightLegs_aircraft_typeCode, flightLegs_scheduledFlightDuration, flightLegs_serviceType, flightLegs_aircraft_ownerAirlineCode, flightLegs_status, 
-CASE
-	WHEN flightLegs_irregularity_delayDuration isnull THEN false
-	ELSE true END 
-FROM mongodb;
+INSERT INTO departure_airport (flight_id, flightLegs_depInfo_airport_code, flightLegs_depInfo_airport_places_depPosTerm_boardingTerminal, flightLegs_depInfo_airport_places_depPosTerm_gateNumber, flightLegs_depInfo_times_scheduled_date, flightLegs_depInfo_times_scheduled_time, flightLegs_depInfo_times_scheduled_year, flightLegs_depInfo_times_scheduled_month, flightLegs_depInfo_times_scheduled_day, flightLegs_depInfo_times_scheduled_hour, flightLegs_depInfo_times_scheduled_minute, flightLegs_depInfo_times_scheduled_timezone, flightLegs_depInfo_times_number_week) SELECT distinct CONCAT (id, flightLegs_depInfo_airport_code,flightLegs_arrInfo_airport_code), flightLegs_depInfo_airport_code, flightLegs_depInfo_airport_places_depPosTerm_boardingTerminal, flightLegs_depInfo_airport_places_depPosTerm_gateNumber, CAST (SUBSTRING (flightLegs_depInfo_times_scheduled, 0, 11) AS DATE) date, CAST (SUBSTRING (flightLegs_depInfo_times_scheduled, 12, 5) AS time) time, CAST (SUBSTRING (flightLegs_depInfo_times_scheduled, 1, 4) AS INTEGER), CAST (SUBSTRING (flightLegs_depInfo_times_scheduled, 6, 2) AS INTEGER), CAST (SUBSTRING (flightLegs_depInfo_times_scheduled, 9, 2) AS INTEGER), CAST (SUBSTRING (flightLegs_depInfo_times_scheduled, 12, 2) AS INTEGER), CAST (SUBSTRING (flightLegs_depInfo_times_scheduled, 15, 2) AS INTEGER), SUBSTRING (flightLegs_depInfo_times_scheduled, 24, 6), EXTRACT(WEEK FROM TO_TIMESTAMP(SUBSTRING (flightLegs_depInfo_times_scheduled, 1, 10), 'YYYY/MM/DD/HH24:MI:ss'))  FROM mongodb;
+
+INSERT INTO flight (flight_id, flightNumber, airline_code, airline_name, flightStatusPublic, flightLegs_aircraft_typeCode, flightLegs_scheduledFlightDuration, flightLegs_serviceType, flightLegs_aircraft_ownerAirlineCode, flightLegs_status, delay_status) SELECT distinct CONCAT (id, flightLegs_depInfo_airport_code,flightLegs_arrInfo_airport_code), CAST (flightNumber AS INTEGER)flightNumber, airline_code, airline_name, flightStatusPublic, flightLegs_aircraft_typeCode, flightLegs_scheduledFlightDuration, flightLegs_serviceType, flightLegs_aircraft_ownerAirlineCode, flightLegs_status,  CASE 	WHEN flightLegs_irregularity_delayDuration isnull THEN false 	ELSE true END  FROM mongodb;
+

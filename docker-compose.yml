@@ -1,11 +1,9 @@
-version: '3.8'
-
 services:
     
   ml_api:
     build:
-      dockerfile: ./3_ML
-      context: afklm_ml_api_Dockerfile
+      context: ./3_ML
+      dockerfile: afklm_ml_api_Dockerfile
     container_name: dst_de_airlines_ml_api
     ports:
       - "8001:8001"
@@ -60,18 +58,16 @@ services:
       start_period: 15s
     
 
-  postgres:
+  dst_de_airlines_postgres:
     container_name: dst_de_airlines_postgres
     build:
       context: ./2_bdd/Postgre/
       dockerfile: postgres_Dockerfile
-    
-    image: postgres:16-alpine
     restart: always
     environment:
-      POSTGRES_USER: daniel
-      POSTGRES_PASSWORD: datascientest
-      POSTGRES_DB: dst_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: afklm
     ports:
       - "5432:5432"
     healthcheck:
@@ -85,13 +81,13 @@ services:
       - ./2_bdd/Postgre/mongodb_dump:/var/lib/postgresql/data/mongodb_dump
 
 
-  pgadmin:
+  dst_de_airlines_postgres_pgadmin:
     container_name: dst_de_airlines_pgadmin4
     image: dpage/pgadmin4
     restart: always
     environment:
-      PGADMIN_DEFAULT_EMAIL: daniel@datascientest.com
-      PGADMIN_DEFAULT_PASSWORD: data_engineer
+      PGADMIN_DEFAULT_EMAIL: postgres@datascientest.com
+      PGADMIN_DEFAULT_PASSWORD: password
     ports:
       - "5050:80"
     healthcheck:
@@ -100,3 +96,14 @@ services:
       timeout: 10s
       start_period: 160s
       retries: 3
+
+
+  afklm_dashboard_api:
+    build: 
+      context: ./4_dash_docker/
+      dockerfile: Dockerfile
+    container_name: afklm_dashboard_api
+    hostname: afklm_dashboard_api
+    restart: always
+    ports:
+      - 8002:80

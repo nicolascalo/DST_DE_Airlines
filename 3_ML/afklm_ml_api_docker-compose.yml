@@ -2,7 +2,9 @@ version: '3.8'
 
 services:
   afklm_ml_api:
-    image: afklm_ml_prediction:latest
+    build:
+      context: .
+      dockerfile: afklm_ml_api_Dockerfile
     container_name: ml_prediction
     ports:
       - "8001:8001"

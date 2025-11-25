@@ -1,9 +1,10 @@
-version: '3.8'
-
 services:
-  afklm_ml_prediction_api:
-    image: afklm_dash:latest
-    container_name: dash
+  afklm_dashboard_api:
+    build:
+      context: .
+      dockerfile: Dash_Dockerfile
+    container_name: afklm_dashboard_api
     ports:
-      - "8001:8001"
+      - "8002:8002
     restart: unless-stopped
+    
