@@ -7,11 +7,11 @@ from typing import List, Optional
 from pydantic import BaseModel
 from sqlalchemy import create_engine
 
-username = 'daniel'
-password = 'datascientest'
+username = 'postgres'
+password = 'postgres'
 host = '54.75.58.98'
 port = '5432'
-database_name = 'airline'
+database_name = 'afklm'
 
 DATABASE_URL = f"postgresql://{username}:{password}@{host}:{port}/{database_name}"
 engine = create_engine(DATABASE_URL)
@@ -217,5 +217,26 @@ def prediction(n_clicks, continent_name, subcontinent_name, country_name, locati
     except IndexError:
         raise HTTPException(status_code=500, detail='Server error')
 
+def prediction(n_clicks, continent_name, subcontinent_name, country_name, location_name, flightlegs_depinfo_airport_code, airline_code, flight_id):
+    if not all([continent_name, subcontinent_name, country_name, location_name, flightlegs_depinfo_airport_code, airline_code, flight_id]):
+        return "Missing item"
+
+    result = {
+                'continent_name': continent_name,
+                'subcontinent_name': subcontinent_name,
+                'country_name': country_name,
+                'location_name': location_name,
+                'flightlegs_depinfo_airport_code': flightlegs_depinfo_airport_code,
+                'airline_code': airline_code,
+                'flight_id': flight_id
+            }
+    try:
+        #response = requests.post("http://127.0.0.1:8000/flight -H 'accept: application/json' -H Content-Type: application/json -d", json=result)
+        print(f"{continent_name}, {subcontinent_name}, {country_name}, {location_name}, {flightlegs_depinfo_airport_code}, {airline_code}, {flight_id}")
+        response = requests.post("http://127.0.0.1:8000/flight", json=result)
+        print(response)
+    except IndexError:
+        raise HTTPException(status_code=500, detail='Server error')
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host= "0.0.0.0", port = 8002)

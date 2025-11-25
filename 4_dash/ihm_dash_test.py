@@ -28,7 +28,7 @@ df = pd.DataFrame({"index" : 0,
 
 json_tosend = df.to_dict(orient="records")
 json_tosend = json_tosend[0]
-response = requests.post("http://0.0.0.0:8002/flight", json=json_tosend)
-print(response.content)
+#response = requests.post("http://0.0.0.0:8002/flight", json=json_tosend)
+#print(response.content)
 
 

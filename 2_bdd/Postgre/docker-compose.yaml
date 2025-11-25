@@ -1,15 +1,13 @@
-version: '3.8'
 services:
-  db:
+  dst_de_airlines_postgres:
     container_name: dst_de_airlines_postgres
     build:
       context: .
       dockerfile: postgres_Dockerfile
-    image: postgres:16-alpine
     restart: always
     environment:
-      POSTGRES_USER: daniel
-      POSTGRES_PASSWORD: datascientest
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
       POSTGRES_DB: afklm
     ports:
       - "5432:5432"
@@ -24,7 +22,7 @@ services:
 
 
 
-  pgadmin:
+  dst_de_airlines_postgres_pgadmin:
     container_name: pgadmin4_container
     image: dpage/pgadmin4
     restart: always
