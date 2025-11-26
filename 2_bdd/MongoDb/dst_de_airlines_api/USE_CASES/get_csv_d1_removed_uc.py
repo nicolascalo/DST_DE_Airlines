@@ -4,7 +4,7 @@ from SERVICES.formater_service import format_json_flight_to_csv
 
 
 
-def get_d1_removed_to_csv(date = None):
+def get_csv_d1_removed(date = None):
     print("grosse pute")
     date_time = datetime.now().strftime("%Y%m%d-%H-%M-%S")
 

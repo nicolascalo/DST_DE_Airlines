@@ -1,14 +1,16 @@
-from DB_CONTEXT.db_context import mongo_db_connect
+from DB_CONTEXT.db_context import mongo_db_connect, client
 from DB_CONTEXT.check_database_connection import check_db_connection
 from datetime import datetime
+import gc
 
 collection = "operation_flights"
 flight_colleciton = "flights"
 
-def insert_one(operation_flights, collection_name):
+def insert_many(operation_flights, collection_name):
     check_db_connection() 
     
-    mongo_db_connect[collection_name].insert_one(operation_flights)
+    mongo_db_connect[collection_name].insert_many(operation_flights, ordered=False)
+    gc.collect()
 
 
 
@@ -30,6 +32,7 @@ def delete_duplicates(collection_name):
             {"_id": {"$in": docs_to_delete}}
         )
         total_deleted += result.deleted_count
+    gc.collect()
         
 
 
@@ -47,11 +50,13 @@ def move_to_dst_collection(org_collection, dst_collection):
                 }
             }
         ])
+    gc.collect()
     
 def delete_all_opreation_flights_collection(collection_name):
     check_db_connection() 
     print("drop")
     mongo_db_connect[collection_name].drop()
+    gc.collect()
 
 
 
@@ -83,6 +88,7 @@ def remove_past_flights_on_d1_collection():
     deleting = mongo_db_connect['update_scheduled_d1_flights'].delete_many(query)
 
     print(f"nb d1 flights deleted : {deleting.deleted_count}")
+    gc.collect()
     return deleting.deleted_count
 
 def remove_past_flights_on_scheduled_collection():
@@ -112,6 +118,7 @@ def remove_past_flights_on_scheduled_collection():
       
     deleting = mongo_db_connect['scheduled_flights'].delete_many(query)
     print(f"nb scheduled flights deleted : {deleting.deleted_count}")
+    gc.collect()
     return deleting.deleted_count
     
 def remove_duplicate_flights_from_scheduled():
@@ -125,6 +132,7 @@ def remove_duplicate_flights_from_scheduled():
         "id": {"$in": ids_to_remove}
     })
     print(f"nb duplicate scheduled_flights deleted : {result.deleted_count}")
+    gc.collect()
     return result.deleted_count
 
 

@@ -36,9 +36,6 @@ def import_operationalflights_in_mongodb():
 
 
 
-    
-    
-
 
 
 

@@ -1,4 +1,4 @@
-from USE_CASES.get_update_d1_csv_uc import get_update_d1_csv
+from USE_CASES.get_csv_update_d1_uc import get_update_d1_csv
 import sys
 
 if len(sys.argv) < 2:
