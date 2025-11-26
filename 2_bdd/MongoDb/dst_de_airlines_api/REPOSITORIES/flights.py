@@ -58,8 +58,16 @@ def add_date_insertion(collection_name):
 
 
 
-def get_all(nb_flight_limit, collection_name, date=None):
+def get_flights_by_id(nb_flight, collection_name, id=None, date=None):
     check_db_connection() 
+
+
+
+    GREATEST_EUROPEAN_AIRPORT = [
+        "CDG", "AMS", "ORY", "FCO", "LHR", "CPH", "MAD", "ARN", "OSL", "LIN",
+        "NCE", "BCN", "LYS", "BGO", "LIS", "DUB", "HEL", "TLS", "OTP", "FRA",
+        "MRS", "ATH", "PMI", "MUC", "TRD", "MAN", "BER", "AGP", "OPO"
+    ]
     
     pipeline = [
         {
@@ -99,7 +107,6 @@ def get_all(nb_flight_limit, collection_name, date=None):
                 "hasReturnFlight": False
             }
         },
-   
         {
             "$match": {
                 "flightLegs": {
@@ -112,6 +119,7 @@ def get_all(nb_flight_limit, collection_name, date=None):
             }
         }
     ]
+    
     if date is not None:
         pipeline.append({
             "$match": {
@@ -121,68 +129,94 @@ def get_all(nb_flight_limit, collection_name, date=None):
     
     if collection_name == "historic_flights":
         pipeline.append({
-        "$addFields": {
-            "debug_status": "$flightStatusPublic",
-            "debug_length": {"$strLenCP": "$flightStatusPublic"}
-        }
-    })
+            "$addFields": {
+                "debug_status": "$flightStatusPublic",
+                "debug_length": {"$strLenCP": "$flightStatusPublic"}
+            }
+        })
         pipeline.append({
             "$match": {
                 "flightStatusPublic": {"$nin": ["SCHEDULED", "Scheduled"]}
             }
         })
-    pipeline.extend([{"$unwind": "$flightLegs"},
-        {
-            "$project": {
-                "id": "$id",
-                "airline_code": "$airline.code",
-                "airline_name": "$airline.name",
-                "flightLegs_aircraft_ownerAirlineCode": "$flightLegs.aircraft.ownerAirlineCode",
-                "flightLegs_aircraft_typeCode": "$flightLegs.aircraft.typeCode",
-                "flightLegs_arrivalInformation_airport_city_country_areaCode": "$flightLegs.arrivalInformation.airport.city.country.areaCode",
-                "flightLegs_arrivalInformation_airport_city_country_code": "$flightLegs.arrivalInformation.airport.city.country.code",
-                "flightLegs_arrivalInformation_airport_city_country_name": "$flightLegs.arrivalInformation.airport.city.country.name",
-                "flightLegs_arrivalInformation_airport_code": "$flightLegs.arrivalInformation.airport.code",
-                "flightLegs_arrivalInformation_airport_location_latitude": "$flightLegs.arrivalInformation.airport.location.latitude",
-                "flightLegs_arrivalInformation_airport_location_longitude": "$flightLegs.arrivalInformation.airport.location.longitude",
-                "flightLegs_arrivalInformation_airport_places_arrivalPositionTerminal": "$flightLegs.arrivalInformation.airport.places.arrivalPositionTerminal",
-                "flightLegs_arrivalInformation_times_actual": "$flightLegs.arrivalInformation.times.actual",
-                "flightLegs_arrivalInformation_times_actualTouchDownTime": "$flightLegs.arrivalInformation.times.actualTouchDownTime",
-                "flightLegs_arrivalInformation_times_estimated_value": "$flightLegs.arrivalInformation.times.estimated.value",
-                "flightLegs_arrivalInformation_times_latestPublished": "$flightLegs.arrivalInformation.times.latestPublished",
-                "flightLegs_arrivalInformation_times_scheduled": "$flightLegs.arrivalInformation.times.scheduled",
-                "flightLegs_departureInformation_airport_city_country_areaCode": "$flightLegs.departureInformation.airport.city.country.areaCode",
-                "flightLegs_departureInformation_airport_city_country_code": "$flightLegs.departureInformation.airport.city.country.code",
-                "flightLegs_departureInformation_airport_city_country_name": "$flightLegs.departureInformation.airport.city.country.name",
-                "flightLegs_departureInformation_airport_code": "$flightLegs.departureInformation.airport.code",
-                "flightLegs_departureInformation_airport_location_latitude": "$flightLegs.departureInformation.airport.location.latitude",
-                "flightLegs_departureInformation_airport_location_longitude": "$flightLegs.departureInformation.airport.location.longitude",
-                "flightLegs_departureInformation_airport_places_departurePositionTerminal_boardingTerminal": "$flightLegs.departureInformation.airport.places.boardingTerminal",
-                "flightLegs_departureInformation_airport_places_departurePositionTerminal_gateNumber": "$flightLegs.departureInformation.airport.places.gateNumber",
-                "flightLegs_departureInformation_times_actual": "$flightLegs.departureInformation.times.actual",
-                "flightLegs_departureInformation_times_actualTakeOffTime": "$flightLegs.departureInformation.times.actualTakeOffTime",
-                "flightLegs_departureInformation_times_latestPublished": "$flightLegs.departureInformation.times.latestPublished",
-                "flightLegs_departureInformation_times_scheduled": "$flightLegs.departureInformation.times.scheduled",
-                "flightLegs_irregularity_delayDuration": "$flightLegs.irregularity.delayDuration",
-                "flightLegs_irregularity_delayInformation_delayReasonPublicLong": "$flightLegs.irregularity.delayInformation.delayReasonPublicLong",
-                "flightLegs_irregularity_delayInformation_delayCode": "$flightLegs.irregularity.delayInformation.delayCode",
-                "flightLegs_irregularity_delayInformation_delayReasonPublicShort": "$flightLegs.irregularity.delayInformation.delayReasonPublicShort",
-                "flightLegs_irregularity_delayReason": "$flightLegs.irregularity.delayReason",
-                "flightLegs_scheduledFlightDuration": "$flightLegs.scheduledFlightDuration",
-                "flightLegs_serviceType": "$flightLegs.serviceType",
-                "flightLegs_serviceTypeName": "$flightLegs.serviceTypeName",
-                "flightLegs_status": "$flightLegs.status",
-                "flightLegs_publishedStatus": "$flightLegs.publishedStatus",
-                "flightLegs_legStatusPublic": "$flightLegs.legStatusPublic",
-                "flightLegs_statusName": { "$ifNull": ["$flightLegs.statusName", ""] },
-                "flightNumber": "$flightNumber",
-                "flightStatusPublic": "$flightStatusPublic"
-            }
-        }
-    ])
+    
 
-    if nb_flight_limit is not None:
-        pipeline.append({"$limit": nb_flight_limit})
+    pipeline.append({"$unwind": "$flightLegs"})
+    
+
+    pipeline.append({
+        "$match": {
+            "$or": [
+                {"flightLegs.departureInformation.airport.code": {"$in": GREATEST_EUROPEAN_AIRPORT}},
+                {"flightLegs.arrivalInformation.airport.code": {"$in": GREATEST_EUROPEAN_AIRPORT}}
+            ]
+        }
+    })
+    
+    pipeline.append({
+        "$project": {
+            "id": "$id",
+            "airline_code": "$airline.code",
+            "airline_name": "$airline.name",
+            "flightLegs_aircraft_ownerAirlineCode": "$flightLegs.aircraft.ownerAirlineCode",
+            "flightLegs_aircraft_typeCode": "$flightLegs.aircraft.typeCode",
+            "flightLegs_arrivalInformation_airport_city_country_areaCode": "$flightLegs.arrivalInformation.airport.city.country.areaCode",
+            "flightLegs_arrivalInformation_airport_city_country_code": "$flightLegs.arrivalInformation.airport.city.country.code",
+            "flightLegs_arrivalInformation_airport_city_country_name": "$flightLegs.arrivalInformation.airport.city.country.name",
+            "flightLegs_arrivalInformation_airport_code": "$flightLegs.arrivalInformation.airport.code",
+            "flightLegs_arrivalInformation_airport_location_latitude": "$flightLegs.arrivalInformation.airport.location.latitude",
+            "flightLegs_arrivalInformation_airport_location_longitude": "$flightLegs.arrivalInformation.airport.location.longitude",
+            "flightLegs_arrivalInformation_airport_places_arrivalPositionTerminal": "$flightLegs.arrivalInformation.airport.places.arrivalPositionTerminal",
+            "flightLegs_arrivalInformation_times_actual": "$flightLegs.arrivalInformation.times.actual",
+            "flightLegs_arrivalInformation_times_actualTouchDownTime": "$flightLegs.arrivalInformation.times.actualTouchDownTime",
+            "flightLegs_arrivalInformation_times_estimated_value": "$flightLegs.arrivalInformation.times.estimated.value",
+            "flightLegs_arrivalInformation_times_latestPublished": "$flightLegs.arrivalInformation.times.latestPublished",
+            "flightLegs_arrivalInformation_times_scheduled": "$flightLegs.arrivalInformation.times.scheduled",
+            "flightLegs_departureInformation_airport_city_country_areaCode": "$flightLegs.departureInformation.airport.city.country.areaCode",
+            "flightLegs_departureInformation_airport_city_country_code": "$flightLegs.departureInformation.airport.city.country.code",
+            "flightLegs_departureInformation_airport_city_country_name": "$flightLegs.departureInformation.airport.city.country.name",
+            "flightLegs_departureInformation_airport_code": "$flightLegs.departureInformation.airport.code",
+            "flightLegs_departureInformation_airport_location_latitude": "$flightLegs.departureInformation.airport.location.latitude",
+            "flightLegs_departureInformation_airport_location_longitude": "$flightLegs.departureInformation.airport.location.longitude",
+            "flightLegs_departureInformation_airport_places_departurePositionTerminal_boardingTerminal": "$flightLegs.departureInformation.airport.places.boardingTerminal",
+            "flightLegs_departureInformation_airport_places_departurePositionTerminal_gateNumber": "$flightLegs.departureInformation.airport.places.gateNumber",
+            "flightLegs_departureInformation_times_actual": "$flightLegs.departureInformation.times.actual",
+            "flightLegs_departureInformation_times_actualTakeOffTime": "$flightLegs.departureInformation.times.actualTakeOffTime",
+            "flightLegs_departureInformation_times_latestPublished": "$flightLegs.departureInformation.times.latestPublished",
+            "flightLegs_departureInformation_times_scheduled": "$flightLegs.departureInformation.times.scheduled",
+            "flightLegs_irregularity_delayDuration": "$flightLegs.irregularity.delayDuration",
+            "flightLegs_irregularity_delayInformation_delayReasonPublicLong": "$flightLegs.irregularity.delayInformation.delayReasonPublicLong",
+            "flightLegs_irregularity_delayInformation_delayCode": "$flightLegs.irregularity.delayInformation.delayCode",
+            "flightLegs_irregularity_delayInformation_delayReasonPublicShort": "$flightLegs.irregularity.delayInformation.delayReasonPublicShort",
+            "flightLegs_irregularity_delayReason": "$flightLegs.irregularity.delayReason",
+            "flightLegs_scheduledFlightDuration": "$flightLegs.scheduledFlightDuration",
+            "flightLegs_serviceType": "$flightLegs.serviceType",
+            "flightLegs_serviceTypeName": "$flightLegs.serviceTypeName",
+            "flightLegs_status": "$flightLegs.status",
+            "flightLegs_publishedStatus": "$flightLegs.publishedStatus",
+            "flightLegs_legStatusPublic": "$flightLegs.legStatusPublic",
+            "flightLegs_statusName": {"$ifNull": ["$flightLegs.statusName", ""]},
+            "flightNumber": "$flightNumber",
+            "flightStatusPublic": "$flightStatusPublic"
+        }
+    })
+
+    pipeline.append({
+        "$sort": {"id": 1}  
+    })
+
+
+    if id is not None:
+        pipeline.append({
+            "$match": {
+                "id": {"$gte": id}  
+            }
+        })
+
+
+    if nb_flight is not None:
+        pipeline.append({"$limit": nb_flight})
+        
     try:
         result = list(mongo_db_connect[collection_name].aggregate(pipeline))
         
@@ -190,7 +224,6 @@ def get_all(nb_flight_limit, collection_name, date=None):
             raise HTTPException(
                 status_code=404,
                 detail="Not found"
-                
             )
         
         return result

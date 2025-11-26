@@ -22,16 +22,18 @@ def get_json_in_gz_file_by_its_name(gz_file_name):
         try:
             
             decompressed_file = json.load(gz_file)
- 
-            return decompressed_file
         except gzip.BadGzipFile as e:
 
-            print("corrompu: "+gz_file_name)
-            return "corrupted file"
-    
+                print("corrompu: "+gz_file_name)
+                decompressed_file =  "corrupted file"
+        
         except json.JSONDecodeError as e:
-            print("Json invalide : "+gz_file_name)
-            return "invalid json"
+                print("Json invalide : "+gz_file_name)
+                decompressed_file = "invalid json"
+                
+
+ 
+    return decompressed_file
 
 
 def get_collection_name_by_end_gz_file_name(gz_name):
