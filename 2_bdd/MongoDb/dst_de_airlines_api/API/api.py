@@ -48,7 +48,7 @@ app = FastAPI(
 )
 
 
-@app.get("/historic/json/with_id{id}", tags=['historic'])
+@app.get("/historic/with_id{id}", tags=['historic'])
 def get_by_id(id: str):
     flight = get_historic_by_id(id)
 
@@ -401,6 +401,3 @@ def create_database_dump():
 
 
     
-
-
-

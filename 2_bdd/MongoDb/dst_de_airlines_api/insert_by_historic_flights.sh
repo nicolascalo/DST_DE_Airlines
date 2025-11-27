@@ -1,1 +1,1 @@
-./venv/bin/python -m API.insert_by_historic_flights
+./venv/bin/python -m SCRIPTS.insert_by_historic_flights
