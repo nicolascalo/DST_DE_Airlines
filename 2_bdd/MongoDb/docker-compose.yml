@@ -1,0 +1,11 @@
+services:
+  mongodb:
+    image : mongo:7.0
+    container_name: dst_de_airlines_mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: airlines
+      MONGO_INITDB_ROOT_PASSWORD: airlines
+    volumes:
+      - ./bdd_afklm_volumes:/data/db
+    ports:
+      - 27017:27017
