@@ -1,4 +1,4 @@
-from USE_CASES.get_historic_csv_uc import get_historic_flights_to_csv
+from USE_CASES.get_csv_historic_uc import get_historic_flights_to_csv
 import sys
 
 if len(sys.argv) < 2:

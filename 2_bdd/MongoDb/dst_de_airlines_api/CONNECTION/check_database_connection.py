@@ -1,4 +1,4 @@
-from DB_CONTEXT.db_context import mongo_db_connect
+from CONNECTION.db_context import mongo_db_connect
 from fastapi import HTTPException
 
 def check_db_connection():

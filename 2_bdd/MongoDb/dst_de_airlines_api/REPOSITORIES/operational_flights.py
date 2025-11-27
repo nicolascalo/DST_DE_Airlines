@@ -1,5 +1,5 @@
-from DB_CONTEXT.db_context import mongo_db_connect, client
-from DB_CONTEXT.check_database_connection import check_db_connection
+from CONNECTION.db_context import mongo_db_connect, client
+from CONNECTION.check_database_connection import check_db_connection
 from datetime import datetime
 import gc
 
