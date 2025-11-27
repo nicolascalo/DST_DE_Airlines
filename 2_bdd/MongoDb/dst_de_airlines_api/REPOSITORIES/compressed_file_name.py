@@ -1,14 +1,16 @@
-from DB_CONTEXT.db_context import mongo_db_connect
+from CONNECTION.db_context import mongo_db_connect
 from fastapi import HTTPException 
-from DB_CONTEXT.check_database_connection import check_db_connection
+from CONNECTION.check_database_connection import check_db_connection
+import gc
 
 
 collection = 'compressed_file_names'
 
-def insert_one(compressed_file_name):
+def insert_many(compressed_file_name):
     check_db_connection() 
 
-    mongo_db_connect[collection].insert_one({"compressed_file_name":compressed_file_name})
+    mongo_db_connect[collection].insert_many(compressed_file_name)
+    gc.collect()
 
 def get_by_compressed_file_name(compressed_file_name):
     check_db_connection() 
@@ -23,6 +25,21 @@ def get_by_compressed_file_name(compressed_file_name):
         print(f"critical error : {e}")
         raise 
 
+
+def get_all_compressed_file_names():
+    check_db_connection()
+    try:
+
+        return mongo_db_connect[collection].find()
+    
+    except (TypeError, KeyError):
+        return None
+    except Exception as e: 
+        print(f"critical error : {e}")
+        raise 
+
+
+        
 
 
 

@@ -1,10 +1,4 @@
-from SERVICES.folder_exploration import get_file_names_by_folder, get_folder_path_in_env, remove_file, is_gz_file
-from SERVICES.exploration_gz_file import get_json_in_gz_file_by_its_name, get_collection_name_by_end_gz_file_name
-from SERVICES.exploitation_json import delete_page_object_in_json
-from USE_CASES.insert_compressed_file_name_uc import insert_compressed_file_name
-from REPOSITORIES.operational_flights import insert_one, delete_duplicates, move_to_dst_collection, delete_all_opreation_flights_collection, remove_past_flights_on_d1_collection, remove_duplicate_flights_from_scheduled,remove_past_flights_on_scheduled_collection
-from REPOSITORIES.flights import add_date_insertion
-from REPOSITORIES.collections import get_all_collection_name
+
 from google.cloud import storage
 from io import BytesIO
 import gzip
@@ -29,7 +23,7 @@ def test():
 
 
 test()
-
+'''
 def import_operationalflights_in_mongodb():
 
 
@@ -61,7 +55,7 @@ def add_date_insertion_in_flights():
     for collection_name in collection_names:
         if collection_name != 'compressed_file_names':
             add_date_insertion(collection_name)
-
+'''
 
     
 #import_operationalflights_in_mongodb()
