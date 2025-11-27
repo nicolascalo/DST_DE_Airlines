@@ -5,7 +5,6 @@ from SERVICES.formater_service import format_json_flight_to_csv
 
 
 def get_csv_d1_removed(date = None):
-    print("grosse pute")
     date_time = datetime.now().strftime("%Y%m%d-%H-%M-%S")
 
     filename = f"afklm_removed_sch_flight_from_mongo_filtered_{date_time}.csv.gz"
