@@ -36,7 +36,7 @@ def get_file_names_on_gcp():
     blobs = bucket.list_blobs(prefix=prefix)
     file_names = []
     for blob in blobs:
-        print(blob.name)
+        print("file on gcp: " + blob.name)
         file_names.append(blob.name)
     return file_names
 

@@ -33,7 +33,7 @@ def import_operationalflights_in_mongodb():
 
 
 
-    batch_size = 200
+    batch_size = 100
 
     compressed_file_names = get_all_compressed_file_names()
     existing_files = [doc['compressed_file_name'] for doc in compressed_file_names]
@@ -52,8 +52,10 @@ def import_operationalflights_in_mongodb():
             if bucket == None:
 
                 json_file = get_json_in_gz_file_by_its_name_local(gz_file_name)
+                
             else: 
                 json_file = get_json_in_gz_file_by_its_name_gcp(gz_file_name)
+                gz_file_name = gz_file_name.replace("data/", "")
 
             if json_file == "corrupted file" or json_file == "invalid json":
                 remove_file(folder_path, file_name)
@@ -67,6 +69,7 @@ def import_operationalflights_in_mongodb():
                 
                     print(gz_file_name + " add to list for insert")
                     
+                    
 
                     #AJOUT------------------------------------------------------
                     documents_by_collection[collection_name].append(json_file)
@@ -77,7 +80,7 @@ def import_operationalflights_in_mongodb():
             
 
                     #FIN AJOUT---------------------------------------------
-
+                    
                     if len(documents_by_collection[collection_name])>= batch_size:
                         insert_many(documents_by_collection[collection_name], collection_name)
                         documents_by_collection[collection_name] = []
