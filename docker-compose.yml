@@ -78,8 +78,7 @@ services:
       start_period: 15s      
     volumes:
       - ./2_bdd/Postgre/postgres_volume:/var/lib/postgresql/data
-      - ./2_bdd/Postgre/mongodb_dump:/var/lib/postgresql/data/mongodb_dump
-
+      - ./2_bdd/Postgre/data_output:/data_output
 
   dst_de_airlines_postgres_pgadmin:
     container_name: dst_de_airlines_pgadmin4
@@ -106,4 +105,7 @@ services:
     hostname: afklm_dashboard_api
     restart: always
     ports:
-      - 8002:80
+      - 8050:8050
+    depends_on:
+      ml_api:
+        condition: service_healthy

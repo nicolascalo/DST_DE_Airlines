@@ -6,9 +6,9 @@ RUN apt-get update && apt-get -y install curl && pip install --upgrade pip && pi
 RUN rm afklm_ml_api_requirements.txt
 COPY ./outputs ./outputs
 COPY ./config ./config
-COPY ./afklm_ml_api.py ./afklm_ml_api.py
+COPY ./afklm_ml_api_local.py ./afklm_ml_api_local.py
 
 
 EXPOSE 8001
 
-CMD ["uvicorn", "afklm_ml_api:api", "--host", "0.0.0.0", "--port", "8001"]
+CMD ["uvicorn", "afklm_ml_api_local:api", "--host", "0.0.0.0", "--port", "8001"]

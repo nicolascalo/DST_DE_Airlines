@@ -19,6 +19,7 @@ services:
       start_period: 15s      
     volumes:
       - ./postgres_volume:/var/lib/postgresql/data
+      - ./data_output:/data_output
 
 
 

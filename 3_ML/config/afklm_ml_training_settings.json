@@ -1,7 +1,6 @@
 {
-"DATA_FILE_ROOT_NAME" : "afklm_flight_from_mongo_filtered",
-"RUN_MODE" : "grid",     
-"FILTER_AIRPORTS_OPTIONAL" : "True",
+"RUN_MODE" : "simple",     
+"FILTER_AIRPORTS_OPTIONAL" : "False",
 "FILTER_AIRPORTS_MANDATORY" : "True",
 "TOP_K_FEATURES" : 20,
 "GRID_LEVEL" : "moderate",  
@@ -44,9 +43,9 @@
 "columnKeywordsToKeep_classification_status" : [
       "flightlegs_aircraft_ownerairlinecode", 
 "flightlegs_aircraft_typecode",
- "flightlegs_arrinfo_airport_city_country_areacode", 
+ "flightlegs_depinfo_airport_country_name", 
  "flightlegs_arrinfo_airport_code", 
- "flightlegs_depinfo_airport_city_country_areacode",
+ "flightlegs_arrinfo_airport_country_name",
   "flightlegs_depinfo_airport_code",
    "flightlegs_scheduledflightduration",
       "flightlegs_season", 
