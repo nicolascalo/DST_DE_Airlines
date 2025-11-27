@@ -18,24 +18,27 @@ def import_operationalflights_in_mongodb():
 
     bucket = check_gcp_connection()
 
+
     documents_by_collection = {}
     gz_file_name_json = []
-    folder_path = get_folder_path_in_env()
+    folder_path = None
+
 
     if bucket != None:
         file_names = get_file_names_on_gcp()
     else:
+        folder_path = get_folder_path_in_env()
         file_names = get_file_names_by_folder(folder_path)
 
 
 
 
-    batch_size = 100
+    batch_size = 200
 
     compressed_file_names = get_all_compressed_file_names()
     existing_files = [doc['compressed_file_name'] for doc in compressed_file_names]
 
-    print("nb_existing"+str(len(existing_files)))
+    print("nb compressed file names already in data base"+str(len(existing_files)))
 
   
     i = batch_size
