@@ -9,7 +9,7 @@ def is_gz_file(file_name):
     if file_name.endswith(".gz"):
         return True
     else :
-        print("Not compressed file")
+        print("Not .gz file")
         return False
     
 
