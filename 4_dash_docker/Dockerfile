@@ -1,11 +1,14 @@
+FROM python:3.10-slim
 
- FROM python:3.8-slim-buster
+WORKDIR /app
 
- RUN mkdir wd
- WORKDIR wd
- COPY app/requirements.txt .
- RUN pip3 install -r requirements.txt
-  
- COPY app/ ./
-  
- CMD [ "gunicorn", "--workers=5", "--threads=1", "-b 0.0.0.0:80", "app:server"]
+COPY requirements.txt /app/
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . /app/
+
+# Expose the Dash default port
+EXPOSE 8050
+
+# Use gunicorn to serve the app inside Docker
+CMD ["gunicorn", "-b", "0.0.0.0:8050", "app:server"]

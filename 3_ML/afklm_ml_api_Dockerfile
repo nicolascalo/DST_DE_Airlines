@@ -4,7 +4,7 @@ COPY ./afklm_ml_api_requirements.txt ./afklm_ml_api_requirements.txt
 
 RUN apt-get update && apt-get -y install curl && pip install --upgrade pip && pip install -r afklm_ml_api_requirements.txt  && pip install uvicorn fastapi
 RUN rm afklm_ml_api_requirements.txt
-COPY ./outputs/best_models ./outputs/best_models
+COPY ./outputs ./outputs
 COPY ./config ./config
 COPY ./afklm_ml_api.py ./afklm_ml_api.py
 

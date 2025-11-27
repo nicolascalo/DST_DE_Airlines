@@ -58,9 +58,8 @@ try:
     
 except:
     ml_training_settings = {
-        "DATA_FILE_ROOT_NAME" : "afklm_flight_from_mongo_filtered",
 "RUN_MODE" : "simple",     
-"FILTER_AIRPORTS_OPTIONAL" : "True",
+"FILTER_AIRPORTS_OPTIONAL" : "False",
 "FILTER_AIRPORTS_MANDATORY" : "True",
 "TOP_K_FEATURES" : 20,
 "GRID_LEVEL" : "quick",  
@@ -100,9 +99,9 @@ except:
 "columnKeywordsToKeep_classification_status" : [
       "flightlegs_aircraft_ownerairlinecode", 
 "flightlegs_aircraft_typecode",
- "flightlegs_arrinfo_airport_city_country_areacode", 
+ "flightLegs_arrInfo_airport_country_name", 
  "flightlegs_arrinfo_airport_code", 
- "flightlegs_depinfo_airport_city_country_areacode",
+ "flightlegs_depinfo_airport_country_name",
   "flightlegs_depinfo_airport_code",
    "flightlegs_scheduledflightduration",
       "flightlegs_season", 
@@ -337,17 +336,25 @@ def save_feature_importance(pipeline, pipeline_name, problem_type):
         model = clf.named_steps.get(step_name, clf)
         feature_names = []
         
+
         if 'preprocessor' in clf.named_steps:
             preproc = clf.named_steps['preprocessor']
-            try:
-                feature_names = preproc.get_feature_names_out()
-                feature_names = [f.replace("num__", "").replace("cat__", "") for f in feature_names]  # optional cleanup
-            except Exception:
+
+            if hasattr(preproc, "transformers_") and hasattr(preproc, "get_feature_names_out"):
+                try:
+                    feature_names = preproc.get_feature_names_out()
+                    feature_names = [f.replace("num__", "").replace("cat__", "") for f in feature_names]
+                except Exception:
+                    feature_names = [f"f{i}" for i in range(model.n_features_in_)]
+            else:
                 feature_names = [f"f{i}" for i in range(model.n_features_in_)]
         else:
             feature_names = [f"f{i}" for i in range(model.n_features_in_)]
-            
-            
+
+
+
+
+
             
         importances = getattr(model,'feature_importances_',None)
         if importances is None and hasattr(model,'coef_'):
@@ -409,7 +416,6 @@ def test_pipeline_classification(name, pipeline_tuple, mode='simple', target = "
         time_elapsed = (end_time- start_time).seconds        
         logger.info(f"GridSearchCV completed for {name} | best score: {gs.best_score_:.3f} | Total duration: {time_elapsed} seconds")
         save_feature_importance(gs, name, problem)
-        save_decision_tree_plot(gs, name, problem)
         if (gs.best_score_> best_model_classification_status_score) | (ml_training_settings['MODEL_TO_KEEP'] == "LATEST"):
             with open(f'{best_model_folder}/{problem}_{script_start_time}_{name}_{mode}.pkl','wb') as f:
                 pickle.dump(pipe,f)
@@ -429,7 +435,6 @@ def test_pipeline_classification(name, pipeline_tuple, mode='simple', target = "
 
         logger.info(f"Fitted simple pipeline for {problem} {name} | Score: {score:.3f} | Total duration: {time_elapsed} seconds")
         save_feature_importance(pipe, name, problem)
-        save_decision_tree_plot(pipe, name, problem)
         return pipe, time_elapsed
 
 
@@ -506,7 +511,6 @@ def test_pipeline_regression(name, pipeline_tuple, mode='simple'):
         time_elapsed = (end_time- start_time).seconds        
         logger.info(f"GridSearchCV completed for {name} | best score: {gs.best_score_:.3f} | Total duration: {time_elapsed} seconds")
         save_feature_importance(gs, name, 'regression')
-        save_decision_tree_plot(gs, name, 'regression')
 
         if (gs.best_score_> best_model_regression_score) | (ml_training_settings['MODEL_TO_KEEP'] == "LATEST"):
             with open(f'{best_model_folder}/regression_{script_start_time}_{name}_{mode}.pkl','wb') as f:
@@ -528,7 +532,6 @@ def test_pipeline_regression(name, pipeline_tuple, mode='simple'):
 
         logger.info(f"Fitted simple pipeline for {name} | r2: {score:.3f} | Total duration: {time_elapsed} seconds")
         save_feature_importance(pipe, name, 'regression')
-        save_decision_tree_plot(pipe, name, 'regression')
         return pipe, time_elapsed
 
 def output_metrics_regression(name, pipe, mode='simple', processing_time=None):
@@ -618,37 +621,47 @@ def save_decision_tree_plot(pipeline, pipeline_name, problem_type, feature_names
             logger.info(f"Skipping tree plot for {pipeline_name} (not a DecisionTree model)")
             return
 
-        # --- Feature names ---
+        # ------------------------------------------------------------------
+        #  SAFE FEATURE NAMES (never touches unfitted SimpleImputer)
+        # ------------------------------------------------------------------
         if feature_names is None and 'preprocessor' in clf.named_steps:
             preproc = clf.named_steps['preprocessor']
-            try:
-                feature_names = preproc.get_feature_names_out()
-                feature_names = [f.replace("num__", "").replace("cat__", "") for f in feature_names]
-            except Exception:
-                feature_names = [f"f{i}" for i in range(model.n_features_in_)]
-        if feature_names is None:
-            feature_names = [f"f{i}" for i in range(model.n_features_in_)]
 
-        # --- Identify scalers & feature subsets ---
+            if hasattr(preproc, "transformers_") and hasattr(preproc, "get_feature_names_out"):
+                try:
+                    feature_names = preproc.get_feature_names_out()
+                    feature_names = [f.replace("num__", "").replace("cat__", "") for f in feature_names]
+                except Exception:
+                    feature_names = [f"f{i}" for i in range(model.n_features_in_)]
+            else:
+                feature_names = [f"f{i}" for i in range(model.n_features_in_)]
+
+        # ------------------------------------------------------------------
+        #  SAFE SCALER MAP (never calls get_feature_names_out on pipelines)
+        # ------------------------------------------------------------------
         scaler_map = {}  # {column_index: scaler}
-        original_feature_indices = np.arange(model.n_features_in_)
 
         if 'preprocessor' in clf.named_steps:
             preproc = clf.named_steps['preprocessor']
+
             if hasattr(preproc, 'transformers_'):
                 start_idx = 0
+
                 for name, trans, cols in preproc.transformers_:
                     if name == 'remainder' and trans == 'drop':
                         continue
-                    # get number of features this transformer outputs
-                    if hasattr(trans, 'get_feature_names_out'):
-                        n_out = len(trans.get_feature_names_out())
+
+                    #  SAFE feature count (no unfitted calls)
+                    if hasattr(trans, 'named_steps'):
+                        n_out = len(cols)
+                    elif hasattr(trans, 'n_features_in_'):
+                        n_out = trans.n_features_in_
                     elif hasattr(cols, '__len__'):
                         n_out = len(cols)
                     else:
                         n_out = 1
 
-                    # search for scaler in this branch
+                    #  Find scaler safely
                     scaler = None
                     if isinstance(trans, (StandardScaler, MinMaxScaler)):
                         scaler = trans
@@ -658,13 +671,16 @@ def save_decision_tree_plot(pipeline, pipeline_name, problem_type, feature_names
                                 scaler = step
                                 break
 
-                    if scaler is not None:
-                        # Assign this scaler to corresponding feature indices
+                    #  Assign scaler ONLY if fitted
+                    if scaler is not None and hasattr(scaler, "scale_"):
                         for j in range(n_out):
                             scaler_map[start_idx + j] = scaler
+
                     start_idx += n_out
 
-        # --- Copy model and adjust thresholds ---
+        # ------------------------------------------------------------------
+        #  SAFE THRESHOLD INVERSE TRANSFORM
+        # ------------------------------------------------------------------
         model_for_plot = deepcopy(model)
         tree = model_for_plot.tree_
         n_features = model_for_plot.n_features_in_
@@ -673,9 +689,11 @@ def save_decision_tree_plot(pipeline, pipeline_name, problem_type, feature_names
         for node in range(tree.node_count):
             f = tree.feature[node]
             thr = tree.threshold[node]
+
             if f >= 0 and thr != -2.0:
                 scaler = scaler_map.get(f, None)
-                if scaler is not None:
+
+                if scaler is not None and hasattr(scaler, "scale_"):
                     sample_scaled[:] = 0.0
                     sample_scaled[0, f] = thr
                     orig_thr = scaler.inverse_transform(sample_scaled)[0, f]
@@ -683,7 +701,9 @@ def save_decision_tree_plot(pipeline, pipeline_name, problem_type, feature_names
 
         logger.info(f"Adjusted thresholds to original units for {len(scaler_map)} scaled features")
 
-        # --- Plot and save ---
+        # ------------------------------------------------------------------
+        #  PLOT & SAVE
+        # ------------------------------------------------------------------
         plt.figure(figsize=(25, 15))
         plot_tree(
             model_for_plot,
@@ -693,18 +713,18 @@ def save_decision_tree_plot(pipeline, pipeline_name, problem_type, feature_names
             max_depth=3,
             fontsize=10
         )
-        plt.title(f"Decision Tree - {pipeline_name}")
+        plt.title(f"Decision Tree - {problem_type} - {pipeline_name}")
         plt.tight_layout()
 
         out_dir = os.path.join(output_folder, problem_type, "tree_plots")
         os.makedirs(out_dir, exist_ok=True)
-        plt.savefig(os.path.join(out_dir, f"{script_start_time}_{pipeline_name}_tree.png"), dpi=200)
+        plt.savefig(os.path.join(out_dir, f"{script_start_time}_{problem_type}_{pipeline_name}_tree.png"), dpi=200)
         plt.close()
-        logger.info(f"Decision tree plot saved for {pipeline_name}")
+
+        logger.info(f"Decision tree plot saved for {problem_type} - {pipeline_name}")
 
     except Exception as e:
-        logger.warning(f"Failed to save decision tree plot for {pipeline_name}: {e}")
-
+        logger.warning(f"Failed to save decision tree plot for {problem_type} {pipeline_name}: {e}")
 
 # --------------------------------------------------------------------------------------------------------------------------------------------------------
 # PIPELINE EXECUTION
@@ -715,8 +735,14 @@ def save_decision_tree_plot(pipeline, pipeline_name, problem_type, feature_names
 # DATA LOAD
 # --------------------------------------
 
-csv_files = sorted([f for f in list(os.listdir(ml_training_settings['DATA_DIR'])) if ml_training_settings['DATA_FILE_ROOT_NAME'] in f])
-csv_to_import = csv_files[-1]
+csv_files = sorted([f for f in list(os.listdir(ml_training_settings['DATA_DIR'])) if '.csv' in f])
+
+try:
+    csv_to_import = csv_files[-1]
+except:
+    Exception("No .csv file found in the data folder")
+
+
 df = pd.read_csv(f'{ml_training_settings['DATA_DIR']}/{csv_to_import}', low_memory=False)
 logger.info(f"Loaded dataset: {csv_to_import}, shape={df.shape}")
 
@@ -744,14 +770,30 @@ def log_step(name, df):
 
 log_step('raw_data', df)
 
-logger.info("Extracting 'company_flight' from 'id' column")
-df["company_flight"] = df["id"].apply(lambda x: re.sub("^.*?\\+","", x))
+logger.info("Extracting 'company_flight' from 'flight_id' column")
+df["company_flight"] = df["flight_id"].apply(lambda x: re.sub("^.*?\\+","", x))
 
-logger.info(f"Dropping columns: {ml_training_settings['columnKeywordsToDrop_all']} and rows with missing {ml_training_settings['TARGET_CLASSIFICATION_DELAY']}")
+
+
+
+logger.info(f"Dropping columns: {df.filter(regex='|'.join(ml_training_settings['columnKeywordsToDrop_all'])).columns} and rows with missing {ml_training_settings['TARGET_CLASSIFICATION_DELAY']}")
 
 df_cleaned = df.dropna(subset=ml_training_settings['TARGET_CLASSIFICATION_STATUS']).drop(columns=df.filter(regex='|'.join(ml_training_settings['columnKeywordsToDrop_all'])), errors='ignore')
 
 log_step('drop_na_and_unused_cols', df_cleaned)
+
+
+df_cleaned['flightlegs_arrinfo_times_scheduled'] = df_cleaned.apply(
+    lambda row:row.flightlegs_arrinfo_times_scheduled_date+"T"+row.flightlegs_depinfo_times_scheduled_time+".000"+row.flightlegs_arrinfo_times_scheduled_timezone
+                ,
+    axis=1
+)
+
+df_cleaned['flightlegs_depinfo_times_scheduled'] = df_cleaned.apply(
+    lambda row: row.flightlegs_depinfo_times_scheduled_date+"T"+row.flightlegs_depinfo_times_scheduled_time+".000"+row.flightlegs_depinfo_times_scheduled_timezone
+                ,
+    axis=1
+)
 
 
 
@@ -1123,6 +1165,7 @@ for name, pipeline_tuple in classification_pipelines.items():
         try:
             pipe, time_elapsed = test_pipeline_classification(name, pipeline_tuple, mode='simple', target = "status")
             output_metrics_classification(name, pipe, mode='simple', target = "status", processing_time=time_elapsed)
+            save_decision_tree_plot(pipe, name + "_simple", problem_type="classification_status")
             logger.info(f"Simple mode completed for {name}\n")
         except Exception as e:
             logger.error(f"Error in simple mode pipeline {name}: {e}\n")
@@ -1145,6 +1188,7 @@ for name, pipeline_tuple in classification_pipelines.items():
         try:
             pipe, time_elapsed = test_pipeline_classification(name, pipeline_tuple, mode='simple', target = "delay")
             output_metrics_classification(name, pipe, mode='simple', target = "delay", processing_time=time_elapsed)
+            save_decision_tree_plot(pipe, name + "_simple", problem_type="classification_delay")
             logger.info(f"Simple mode completed for {name}\n")
         except Exception as e:
             logger.error(f"Error in simple mode pipeline {name}: {e}\n")
@@ -1166,6 +1210,7 @@ for name, pipeline_tuple in regression_pipelines.items():
         try:
             pipe, time_elapsed = test_pipeline_regression(name, pipeline_tuple, mode='simple')
             output_metrics_regression(name, pipe, mode='simple', processing_time=time_elapsed)
+            save_decision_tree_plot(pipe, name + "_simple", problem_type="regression")
             logger.info(f"Simple mode completed for {name}\n")
         except Exception as e:
             logger.error(f"Error in simple mode regression pipeline {name}: {e}\n")

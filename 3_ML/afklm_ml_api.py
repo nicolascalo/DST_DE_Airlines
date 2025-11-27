@@ -131,8 +131,8 @@ class Payload_flight(BaseModel):
     arrival_location: Optional[str] = None
     arrival_airport: Optional[str] = None
     flightlegs_arrinfo_airport_code: str
-    flightlegs_arrinfo_airport_location_latitude: Optional[str] = None
-    flightlegs_arrinfo_airport_location_longitude: Optional[str] = None
+    flightlegs_arrinfo_airport_location_latitude: Optional[float] = None
+    flightlegs_arrinfo_airport_location_longitude: Optional[float] = None
     flightlegs_arrinfo_times_scheduled: str
     departure_continent: Optional[str] = None
     departure_subcontinent: Optional[str] = None
@@ -140,8 +140,8 @@ class Payload_flight(BaseModel):
     departure_location: Optional[str] = None
     departure_airport: Optional[str] = None
     flightlegs_depinfo_airport_code: str
-    flightlegs_depinfo_airport_location_latitude: Optional[str] = None
-    flightlegs_depinfo_airport_location_longitude: Optional[str] = None
+    flightlegs_depinfo_airport_location_latitude: Optional[float] = None
+    flightlegs_depinfo_airport_location_longitude: Optional[float] = None
     flightlegs_depinfo_airport_places_depposterm_gatenumber: Optional[str] = None
     flightlegs_depinfo_times_scheduled: str
     flightlegs_scheduledflightduration: Optional[str] = None
@@ -149,7 +149,7 @@ class Payload_flight(BaseModel):
     flightlegs_servicetypename: Optional[str] = None
     flightlegs_status: Optional[str] = None
     flightlegs_statusname: Optional[str] = None
-    flightnumber: Optional[str] = None
+    flightnumber: Optional[int] = None
     flightstatuspublic: Optional[str] = None
     flightlegs_arrinfo_times_estimated_value: Optional[str] = None
     flightlegs_arrinfo_times_latestpublished: Optional[str] = None
@@ -161,21 +161,17 @@ class Payload_flight(BaseModel):
 
 
 
-with open('./config/api_test_payload.json') as json_file:
-    json_example_payload = json.load(json_file)
-'''
 try:
     with open('./config/api_test_payload.json') as json_file:
-        json_example = json.load(json_file)
+        json_example_payload = json.load(json_file)
 
     
 except:
-    json_example =  {"_id":"690c974f228ea0580c98a8be","id":"20250517+G3+7612","airline_code":"G3","airline_name":"GOL LINHAS AEREAS S.A.","flightLegs_aircraft_ownerAirlineCode":"G3","flightLegs_aircraft_typeCode":"7M8","flightLegs_arrivalInformation_airport_city_country_areaCode":"I","flightLegs_arrivalInformation_airport_city_country_code":"AR","flightLegs_arrivalInformation_airport_city_country_name":"ARGENTINA","flightLegs_arrivalInformation_airport_code":"COR","flightLegs_arrivalInformation_airport_location_latitude":-31.3131,"flightLegs_arrivalInformation_airport_location_longitude":-64.1994,"flightLegs_arrivalInformation_times_scheduled":"2025-05-17T02:20:00.000-03:00","flightLegs_departureInformation_airport_city_country_areaCode":"I","flightLegs_departureInformation_airport_city_country_code":"BR","flightLegs_departureInformation_airport_city_country_name":"BRAZIL","flightLegs_departureInformation_airport_code":"GIG","flightLegs_departureInformation_airport_location_latitude":-22.8214,"flightLegs_departureInformation_airport_location_longitude":-43.2494,"flightLegs_departureInformation_airport_places_departurePositionTerminal_gateNumber":"","flightLegs_departureInformation_times_scheduled":"2025-05-16T22:30:00.000-03:00",
+    json_example_payload =  {"_id":"690c974f228ea0580c98a8be","id":"20250517+G3+7612","airline_code":"G3","airline_name":"GOL LINHAS AEREAS S.A.","flightLegs_aircraft_ownerAirlineCode":"G3","flightLegs_aircraft_typeCode":"7M8","flightLegs_arrivalInformation_airport_city_country_areaCode":"I","flightLegs_arrivalInformation_airport_city_country_code":"AR","flightLegs_arrivalInformation_airport_city_country_name":"ARGENTINA","flightLegs_arrivalInformation_airport_code":"COR","flightLegs_arrivalInformation_airport_location_latitude":-31.3131,"flightLegs_arrivalInformation_airport_location_longitude":-64.1994,"flightLegs_arrivalInformation_times_scheduled":"2025-05-17T02:20:00.000-03:00","flightLegs_departureInformation_airport_city_country_areaCode":"I","flightLegs_departureInformation_airport_city_country_code":"BR","flightLegs_departureInformation_airport_city_country_name":"BRAZIL","flightLegs_departureInformation_airport_code":"GIG","flightLegs_departureInformation_airport_location_latitude":-22.8214,"flightLegs_departureInformation_airport_location_longitude":-43.2494,"flightLegs_departureInformation_airport_places_departurePositionTerminal_gateNumber":"","flightLegs_departureInformation_times_scheduled":"2025-05-16T22:30:00.000-03:00",
                 "flightLegs_scheduledFlightDuration":"PT3H50M",
                  "flightLegs_serviceType":"J","flightLegs_serviceTypeName":"Normal Service","flightNumber":7612,"flightLegs_departureInformation_airport_places_departurePositionTerminal_boardingTerminal":"",
                  "flightLegs_arrivalInformation_airport_places_arrivalPositionTerminal":""}
 
-'''
 
 
 Payload_flight.model_config["json_schema_extra"]["examples"] = [json_example_payload]
@@ -232,7 +228,7 @@ except:
     json_example_training_params = {"training parameters not found":""}
 
 
-Payload_flight.model_config["json_schema_extra"]["examples"] = [json_example_training_params]
+PayloadTrainingParameters.model_config["json_schema_extra"]["examples"] = [json_example_training_params]
 
 
 
@@ -250,33 +246,11 @@ def get_model_parameters():
     return JSONResponse(content=best_models_metrics_json) 
 
 
-@api.get('/retrain_models', name="Retrain the machine learning models with the current dataset", tags=['training'],response_class=PlainTextResponse)
-def retrain_models():
-    """Retrain the machine learning models with the current dataset"""
-    subprocess.run(["python", "afklm_ml_training.py"])
-    return "Model training over"
 
 @api.get('/training_parameters_show', name="", tags=['training'])
 def get_training_parameters():
     """Get current parameters for model training"""
     return JSONResponse(ml_training_settings)
-
-
-@api.post('/training_parameters_upload', name="", tags=['training'],response_class=PlainTextResponse)
-def set_training_parameters(parameters: PayloadTrainingParameters):
-    """Set current parameters for model training"""
-    new_params = parameters.model_dump()
-    
-    with open(f"./config/afklm_ml_training_settings.json", 'w', encoding='utf-8') as f:
-        params =json.dump(new_params, f, ensure_ascii=False, indent=4)
-
-    return("Training parameters updated")
-
-@api.get('/training_parameters_defaults', name="", tags=['training'],response_class=PlainTextResponse)
-def set_training_parameters_to_default():
-    """Reset model parameters to default"""
-    shutil.copyfile("./config/afklm_ml_training_settings_default.json","./config/afklm_ml_training_settings.json")
-    return "Training paramters reset to defaults"
 
 
 @api.get('/display_training_log', name="", tags=['training'],response_class=PlainTextResponse)
