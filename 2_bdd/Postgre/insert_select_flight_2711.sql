@@ -11,9 +11,11 @@ INSERT INTO departure_airport (flight_id, flightLegs_depInfo_airport_code, fligh
 SELECT distinct CONCAT (id, flightLegs_depInfo_airport_code,flightLegs_arrInfo_airport_code), flightLegs_depInfo_airport_code, flightLegs_depInfo_airport_places_depPosTerm_boardingTerminal, flightLegs_depInfo_airport_places_depPosTerm_gateNumber, CAST (SUBSTRING (flightLegs_depInfo_times_scheduled, 0, 11) AS DATE) date, CAST (SUBSTRING (flightLegs_depInfo_times_scheduled, 12, 5) AS time) time, CAST (SUBSTRING (flightLegs_depInfo_times_scheduled, 1, 4) AS INTEGER), CAST (SUBSTRING (flightLegs_depInfo_times_scheduled, 6, 2) AS INTEGER), CAST (SUBSTRING (flightLegs_depInfo_times_scheduled, 9, 2) AS INTEGER), CAST (SUBSTRING (flightLegs_depInfo_times_scheduled, 12, 2) AS INTEGER), CAST (SUBSTRING (flightLegs_depInfo_times_scheduled, 15, 2) AS INTEGER), SUBSTRING (flightLegs_depInfo_times_scheduled, 24, 6), EXTRACT(WEEK FROM TO_TIMESTAMP(SUBSTRING (flightLegs_depInfo_times_scheduled, 1, 10), 'YYYY/MM/DD/HH24:MI:ss')) 
 FROM mongodb;
 
-INSERT INTO flight (flight_id, flightNumber, airline_code, airline_name, flightStatusPublic, flightLegs_aircraft_typeCode, flightLegs_scheduledFlightDuration, flightLegs_serviceType, flightLegs_aircraft_ownerAirlineCode, flightLegs_status, delay_status)
-SELECT distinct CONCAT (id, flightLegs_depInfo_airport_code,flightLegs_arrInfo_airport_code), CAST (flightNumber AS INTEGER)flightNumber, airline_code, airline_name, flightStatusPublic, flightLegs_aircraft_typeCode, flightLegs_scheduledFlightDuration, flightLegs_serviceType, flightLegs_aircraft_ownerAirlineCode, flightLegs_status, 
+INSERT INTO flight (flight_id, flightNumber, airline_code, airline_name, flightStatusPublic, flightLegs_aircraft_typeCode, flightLegs_scheduledFlightDuration, flightLegs_serviceType, flightLegs_aircraft_ownerAirlineCode, flightLegs_status, flightLegs_serviceTypeName, flightLegs_publishedStatus, flightLegs_legStatusPublic, flightLegs_statusName, delay_status)
+SELECT distinct CONCAT (id, flightLegs_depInfo_airport_code,flightLegs_arrInfo_airport_code), CAST (flightNumber AS INTEGER)flightNumber, airline_code, airline_name, flightStatusPublic, flightLegs_aircraft_typeCode, flightLegs_scheduledFlightDuration, flightLegs_serviceType, flightLegs_aircraft_ownerAirlineCode, flightLegs_status, flightLegs_serviceTypeName, flightLegs_publishedStatus, flightLegs_legStatusPublic, flightLegs_statusName,
 CASE
 	WHEN flightLegs_irregularity_delayDuration isnull THEN false
 	ELSE true END 
 FROM mongodb;
+
+

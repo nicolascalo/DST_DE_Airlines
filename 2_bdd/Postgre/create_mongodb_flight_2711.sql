@@ -99,6 +99,10 @@ flightLegs_aircraft_typeCode varchar(50) NULL,
 flightLegs_scheduledFlightDuration varchar(50) NULL,
 flightLegs_serviceType varchar(50) NULL,
 flightLegs_aircraft_ownerAirlineCode varchar(50) NULL,
-flightLegs_status varchar(50) NULL,
+flightLegs_status varchar(100) NULL,
+flightLegs_serviceTypeName varchar(100) NULL,
+flightLegs_publishedStatus varchar(100) NULL,
+flightLegs_legStatusPublic varchar(100) NULL,
+flightLegs_statusName varchar(100) NULL,
 delay_status boolean NULL
 );
