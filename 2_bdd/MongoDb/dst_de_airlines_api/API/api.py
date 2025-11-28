@@ -203,7 +203,7 @@ def export_removed_d1_flights(
 
 @app.get("/historic/export", tags=['historic'])
 def export_historic_flights(
-    limit: int,
+    limit: int = None,
     date: Optional[str] = None,
     start_id: Optional[str] = None
 ):
@@ -254,7 +254,7 @@ def export_historic_flights(
 
 @app.get("/scheduled/export", tags=['scheduled'])
 def export_scheduled_flights(
-    limit: int,
+    limit: int = None,
     date: Optional[str] = None,
     start_id: Optional[str] = None
 ):
@@ -309,7 +309,7 @@ def export_scheduled_flights(
 
 @app.get("/update_scheduled_d1/export", tags=['scheduled d1'])
 def export_scheduled_d1_flights(
-    limit: int,
+    limit: int = None,
     date: Optional[str] = None,
     start_id: Optional[str] = None
 ):
