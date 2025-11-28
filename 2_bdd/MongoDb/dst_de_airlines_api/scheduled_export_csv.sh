@@ -26,7 +26,7 @@ if [ -n "$start_id" ]; then
 fi
 
 
-./venv/bin/python3 -m SCRIPTS.scheudled_export_csv "${args[@]}"
+./venv/bin/python3 -m SCRIPTS.scheduled_export_csv "${args[@]}"
 
 
 

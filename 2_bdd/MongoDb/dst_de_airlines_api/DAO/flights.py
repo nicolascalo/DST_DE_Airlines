@@ -12,12 +12,11 @@ def insert_one(flight):
 
 
 
-def get_by_id(id, colleciton_name):
+def get_by_id(colleciton_name, id):
     check_db_connection() 
     try:
-        return mongo_db_connect[colleciton_name].find_one(
-            {"id": id}
-        )
+        flight = mongo_db_connect[colleciton_name].find_one({"id": id})
+        return flight
     except (TypeError, KeyError):
         return None
     except Exception as e: 
@@ -58,7 +57,7 @@ def add_date_insertion(collection_name):
 
 
 
-def get_flights_by_id(nb_flight, collection_name, id=None, date=None):
+def get_flights_by_id( collection_name,  date=None, id=None, nb_flight=None):
     check_db_connection() 
 
 
@@ -218,15 +217,15 @@ def get_flights_by_id(nb_flight, collection_name, id=None, date=None):
         pipeline.append({"$limit": nb_flight})
         
     try:
-        result = list(mongo_db_connect[collection_name].aggregate(pipeline))
+        flights = list(mongo_db_connect[collection_name].aggregate(pipeline))
         
-        if not result:
+        if not flights:
             raise HTTPException(
                 status_code=404,
                 detail="Not found"
             )
         
-        return result
+        return flights
         
     except HTTPException:
         raise

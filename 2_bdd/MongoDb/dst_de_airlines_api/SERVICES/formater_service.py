@@ -3,7 +3,7 @@ import numpy as np
 
 
 
-def format_json_flight_to_csv(flights):
+def format_json_flight_to_df(flights):
     
     df = pd.json_normalize(flights)
     df = df.map(lambda x: ', '.join(x) if isinstance(x, list) and x
@@ -41,9 +41,7 @@ def format_json_flight_to_csv(flights):
 
 
     df['flightLegs_irregularity_delayDuration_total']  = delayDuration_total_sum
-    # for the api calling------------------------------------------
 
-    #--------------------------------------------------------------
    
 
     return df

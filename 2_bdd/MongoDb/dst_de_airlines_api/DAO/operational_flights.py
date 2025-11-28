@@ -14,6 +14,14 @@ def insert_many(operation_flights, collection_name):
 
 
 
+def insert_one(operation_flights, collection_name):
+    check_db_connection() 
+    
+    mongo_db_connect[collection_name].insert_one(operation_flights)
+    gc.collect
+
+
+
 def delete_duplicates(collection_name):
     check_db_connection() 
     
