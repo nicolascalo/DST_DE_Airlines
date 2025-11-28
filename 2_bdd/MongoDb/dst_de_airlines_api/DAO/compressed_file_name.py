@@ -12,6 +12,12 @@ def insert_many(compressed_file_name):
     mongo_db_connect[collection].insert_many(compressed_file_name)
     gc.collect()
 
+def insert_one(compressed_file_name):
+    check_db_connection() 
+
+    mongo_db_connect[collection].insert_one({"compressed_file_name":compressed_file_name})
+    gc.collect
+
 def get_by_compressed_file_name(compressed_file_name):
     check_db_connection() 
     try:

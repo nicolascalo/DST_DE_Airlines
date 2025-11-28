@@ -6,13 +6,9 @@ import subprocess
 from SERIALIZER.utils import mongo_to_json
 import gzip
 import io
-from USE_CASES.get_historic_by_id_uc import get_historic_by_id
+from USE_CASES.get_by_id_uc import get_flight_by_id
 from USE_CASES.count_documents_by_collection_uc import count_documents_by_collection
-from USE_CASES.get_csv_historic_uc import get_csv_historic_by_id
-from USE_CASES.get_schedulled_csv_uc import get_csv_schedulled_by_id
-from USE_CASES.get_csv_update_d1_uc import get_csv_update_d1_by_id
-from USE_CASES.get_csv_sch_removed_uc import get_csv_removed_sch
-from USE_CASES.get_csv_d1_removed_uc import get_csv_d1_removed
+from USE_CASES.get_csv_flights_uc import get_csv_flights
 from dotenv import load_dotenv
 from typing import Optional
 import os
@@ -49,8 +45,30 @@ app = FastAPI(
 
 
 @app.get("/historic/with_id{id}", tags=['historic'])
-def get_by_id(id: str):
-    flight = get_historic_by_id(id)
+def get_historic_by_id(id: str):
+    collection_name = "historic_flights"
+    flight = get_flight_by_id(collection_name, id)
+
+    if flight is None:
+        raise HTTPException(status_code=404, detail="flight not found")
+    return mongo_to_json(flight)
+
+
+@app.get("/scheduled/with_id{id}", tags=['scheduled'])
+def get_historic_by_id(id: str):
+    collection_name = "scheduled_flights"
+    flight = get_flight_by_id(collection_name, id)
+
+    if flight is None:
+        raise HTTPException(status_code=404, detail="flight not found")
+    return mongo_to_json(flight)
+
+
+
+@app.get("/update_scheduled_d1/with_id{id}", tags=['scheduled d1'])
+def get_historic_by_id(id: str):
+    collection_name = "update_scheduled_d1_flights"
+    flight = get_flight_by_id(collection_name, id)
 
     if flight is None:
         raise HTTPException(status_code=404, detail="flight not found")
@@ -93,8 +111,11 @@ def export_removed_scheduled(
             detail="Invalid date format. Use YYYYMMDD-HH-MM-SS"
         )
 
+    collection_name = "removed_scheduled_flights"
+    id = None
+    nb_flights = None
 
-    df, filename = get_csv_removed_sch(date)
+    df, filename = get_csv_flights(collection_name, date, id, nb_flights)
     
     if df is None or df.empty:
         raise HTTPException(
@@ -150,9 +171,12 @@ def export_removed_d1_flights(
             status_code=400,
             detail="Invalid date format. Use YYYYMMDD-HH-MM-SS"
         )
+    
+    collection_name = "removed_scheduled_flights"
+    id = None
+    nb_flights = None
 
-
-    df, filename = get_csv_d1_removed(date)
+    df, filename = get_csv_flights(collection_name, id, date, nb_flights)
     
     if df is None or df.empty:
         raise HTTPException(
@@ -209,8 +233,8 @@ def export_historic_flights(
                 status_code=400,
                 detail="Invalid date format. Use YYYYMMDD-HH-MM-SS (French time - Europe/Paris)"
             )
-    
-    df, filename = get_csv_historic_by_id(limit, start_id, date)
+    collection_name = "historic_flights"
+    df, filename = get_csv_flights(collection_name, date, start_id,limit)
 
     buffer = io.BytesIO()
     with gzip.GzipFile(fileobj=buffer, mode='wb') as f:
@@ -260,8 +284,8 @@ def export_scheduled_flights(
                 status_code=400,
                 detail="Invalid date format. Use YYYYMMDD-HH-MM-SS (French time - Europe/Paris)"
             )
-    
-    df, filename = get_csv_schedulled_by_id(limit, start_id, date)
+    collection_name = "scheduled_flights"
+    df, filename = get_csv_flights(collection_name, date, start_id, limit)
 
     buffer = io.BytesIO()
     with gzip.GzipFile(fileobj=buffer, mode='wb') as f:
@@ -315,8 +339,10 @@ def export_scheduled_d1_flights(
                 status_code=400,
                 detail="Invalid date format. Use YYYYMMDD-HH-MM-SS (French time - Europe/Paris)"
             )
+        
+    collection_name = "update_scheduled_d1_flights"
     
-    df, filename = get_csv_update_d1_by_id(limit, start_id, date)
+    df, filename = get_csv_flights(collection_name, date, start_id, limit )
 
     buffer = io.BytesIO()
     with gzip.GzipFile(fileobj=buffer, mode='wb') as f:

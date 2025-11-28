@@ -1,10 +1,17 @@
 from queue import Full
-from REPOSITORIES.compressed_file_name import insert_many, get_by_compressed_file_name
+from DAO.compressed_file_name import insert_many, insert_one, get_by_compressed_file_name
 
-def insert_compressed_file_name(compressed_file_name):
+def insert_many_compressed_file_names(compressed_file_name):
    
     insert_many(compressed_file_name)
     print(str(compressed_file_name) + " inserted")
+
+
+
+def insert_one_compressed_file_name(compressed_file_name):
+    if is_compressed_file_name_exist(compressed_file_name) == False:
+        insert_one(compressed_file_name)
+
 
 
 
