@@ -7,7 +7,7 @@ import datetime
 
 
 try:
-    response = requests.get("http://dst_de_airlines_ml_api:8001/model_parameters_and_metrics")
+    response = requests.get("http://afklm_ml_api:8001/model_parameters_and_metrics")
     model_metrics_dict = response.json()
     model_metrics = pd.DataFrame(model_metrics_dict).drop(['mode','best_pipeline'],axis=1)
     print("Model metrics loaded")
@@ -19,7 +19,7 @@ except:
 
 username = 'postgres'
 password = 'postgres'
-host = 'dst_de_airlines_postgres'
+host = 'afklm_postgres'
 port = '5432'
 database_name = 'afklm'
 
@@ -167,8 +167,7 @@ def update_graphs(row_ids, selected_row_ids, active_cell):
 
 
     try:
-        response = requests.post(
-            "http://dst_de_airlines_ml_api:8001/get_delay_predictions",
+        response = requests.get("http://afklm_ml_api:8001/get_delay_predictions",
             json=json_tosend  
         )
 

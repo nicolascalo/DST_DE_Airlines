@@ -2,11 +2,11 @@ services:
 
 #------------------------------------------------------------------------------------API MACHINE LEARNING--------------------------------------
 
-  airlines_ml_api:
+  afklm_ml_api:
     build:
       context: ./3_ML
       dockerfile: afklm_ml_api_Dockerfile
-    container_name: airlines_ml_api
+    container_name: afklm_ml_api
     ports:
       - "8001:8001"
     healthcheck:
@@ -23,9 +23,9 @@ services:
 
   #------------------------------ MONGO DB BDD-------------------------------------------------------------------------------------------
     
-  mongodb:
+  afklm_mongodb:
     image: mongo:7.0
-    container_name: airlines_mongodb
+    container_name: afklm_mongodb
     environment:
       MONGO_INITDB_ROOT_USERNAME: airlines
       MONGO_INITDB_ROOT_PASSWORD: airlines
@@ -42,11 +42,11 @@ services:
     restart: unless-stopped
 
 #--------------------------------------------------------------------------------------------------MONGO_DB_API--------------------------------------------------------
-  mongodb_api:
+  afklm_mongodb_api:
     build:
-      context: ./2_bdd/MongoDb/airlines_api/
+      context: ./2_bdd/MongoDb/dst_de_airlines_api/
       dockerfile: Dockerfile
-    container_name: airlines_mongodb_api
+    container_name: afklm_mongodb_api
     ports:
       - "8000:8000"
     environment:
@@ -56,7 +56,7 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
     depends_on:
-      mongodb:
+      afklm_mongodb:
         condition: service_healthy
     restart: unless-stopped
     healthcheck:
@@ -68,8 +68,8 @@ services:
     
 #-------------------------------------------------------------BDD POSTGRES--------------------------------------------------------------
 
-  airlines_postgres:
-    container_name: airlines_postgres
+  afklm_postgres:
+    container_name: afklm_postgres
     build:
       context: ./2_bdd/Postgre/
       dockerfile: postgres_Dockerfile
@@ -92,8 +92,8 @@ services:
 
 #------------------------------------------------------------------------------PG ADMIN-------------------------------------------------------------------
 
-  airlines_postgres_pgadmin:
-    container_name: airlines_pgadmin4
+  afklm_postgres_pgadmin:
+    container_name: afklm_pgadmin4
     image: dpage/pgadmin4
     restart: always
     environment:
@@ -110,7 +110,7 @@ services:
 
 #-------------------------------------------------------------------------DASH--------------------------------------------------------------------------------
 
-  airlines_dashboard_api:
+  afklm_dashboard_api:
     build: 
       context: ./4_dashboard/
       dockerfile: Dockerfile
@@ -120,7 +120,7 @@ services:
     ports:
       - 8050:8050
     depends_on:
-      airlines_ml_api:
+      afklm_ml_api:
         condition: service_healthy
-      airlines_postgres:
+      afklm_postgres:
         condition: service_healthy
