@@ -1,5 +1,7 @@
 services:
-    
+
+#------------------------------------------------------------------------------------API MACHINE LEARNING--------------------------------------
+
   dst_de_airlines_ml_api:
     build:
       context: ./3_ML
@@ -18,6 +20,8 @@ services:
       - ./3_ML/outputs:/outputs
       - ./3_ML/config:/config
       - ./3_ML/data:/data
+
+  #------------------------------ MONGO DB BDD-------------------------------------------------------------------------------------------
     
   mongodb:
     image: mongo:7.0
@@ -26,7 +30,7 @@ services:
       MONGO_INITDB_ROOT_USERNAME: airlines
       MONGO_INITDB_ROOT_PASSWORD: airlines
     volumes:
-      - ./2_bdd_afklm_volumes:/data/db
+      - ./2_bdd/MongoDb/mongodb_volume:/data/db
     ports:
       - "27017:27017"
     healthcheck:
@@ -37,6 +41,7 @@ services:
       start_period: 10s
     restart: unless-stopped
 
+#--------------------------------------------------------------------------------------------------MONGO_DB_API--------------------------------------------------------
   mongodb_api:
     build:
       context: ./2_bdd/MongoDb/dst_de_airlines_api/
@@ -61,6 +66,7 @@ services:
       retries: 5
       start_period: 15s
     
+#-------------------------------------------------------------BDD POSTGRES--------------------------------------------------------------
 
   dst_de_airlines_postgres:
     container_name: dst_de_airlines_postgres
@@ -84,6 +90,8 @@ services:
       - ./2_bdd/Postgre/postgres_volume:/var/lib/postgresql/data
       
 
+#------------------------------------------------------------------------------PG ADMIN-------------------------------------------------------------------
+
   dst_de_airlines_postgres_pgadmin:
     container_name: dst_de_airlines_pgadmin4
     image: dpage/pgadmin4
@@ -100,6 +108,7 @@ services:
       start_period: 160s
       retries: 3
 
+#-------------------------------------------------------------------------DASH--------------------------------------------------------------------------------
 
   dst_de_airlines_dashboard_api:
     build: 
