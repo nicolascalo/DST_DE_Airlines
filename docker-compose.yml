@@ -2,11 +2,11 @@ services:
 
 #------------------------------------------------------------------------------------API MACHINE LEARNING--------------------------------------
 
-  dst_de_airlines_ml_api:
+  airlines_ml_api:
     build:
       context: ./3_ML
       dockerfile: afklm_ml_api_Dockerfile
-    container_name: dst_de_airlines_ml_api
+    container_name: airlines_ml_api
     ports:
       - "8001:8001"
     healthcheck:
@@ -25,7 +25,7 @@ services:
     
   mongodb:
     image: mongo:7.0
-    container_name: dst_de_airlines_mongodb
+    container_name: airlines_mongodb
     environment:
       MONGO_INITDB_ROOT_USERNAME: airlines
       MONGO_INITDB_ROOT_PASSWORD: airlines
@@ -44,9 +44,9 @@ services:
 #--------------------------------------------------------------------------------------------------MONGO_DB_API--------------------------------------------------------
   mongodb_api:
     build:
-      context: ./2_bdd/MongoDb/dst_de_airlines_api/
+      context: ./2_bdd/MongoDb/airlines_api/
       dockerfile: Dockerfile
-    container_name: dst_de_airlines_mongodb_api
+    container_name: airlines_mongodb_api
     ports:
       - "8000:8000"
     environment:
@@ -68,8 +68,8 @@ services:
     
 #-------------------------------------------------------------BDD POSTGRES--------------------------------------------------------------
 
-  dst_de_airlines_postgres:
-    container_name: dst_de_airlines_postgres
+  airlines_postgres:
+    container_name: airlines_postgres
     build:
       context: ./2_bdd/Postgre/
       dockerfile: postgres_Dockerfile
@@ -92,8 +92,8 @@ services:
 
 #------------------------------------------------------------------------------PG ADMIN-------------------------------------------------------------------
 
-  dst_de_airlines_postgres_pgadmin:
-    container_name: dst_de_airlines_pgadmin4
+  airlines_postgres_pgadmin:
+    container_name: airlines_pgadmin4
     image: dpage/pgadmin4
     restart: always
     environment:
@@ -110,7 +110,7 @@ services:
 
 #-------------------------------------------------------------------------DASH--------------------------------------------------------------------------------
 
-  dst_de_airlines_dashboard_api:
+  airlines_dashboard_api:
     build: 
       context: ./4_dashboard/
       dockerfile: Dockerfile
@@ -120,13 +120,7 @@ services:
     ports:
       - 8050:8050
     depends_on:
-      dst_de_airlines_ml_api:
+      airlines_ml_api:
         condition: service_healthy
-      dst_de_airlines_postgres:
+      airlines_postgres:
         condition: service_healthy
-    healthcheck:
-      test: ["CMD", "curl", "--fail", "http://localhost:8050"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-      start_period: 15s
