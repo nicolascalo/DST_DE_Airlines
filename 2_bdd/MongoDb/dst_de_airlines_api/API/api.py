@@ -55,7 +55,7 @@ def get_historic_by_id(id: str):
 
 
 @app.get("/scheduled/with_id{id}", tags=['scheduled'])
-def get_historic_by_id(id: str):
+def get_scheduled_by_id(id: str):
     collection_name = "scheduled_flights"
     flight = get_flight_by_id(collection_name, id)
 
@@ -66,7 +66,7 @@ def get_historic_by_id(id: str):
 
 
 @app.get("/update_scheduled_d1/with_id{id}", tags=['scheduled d1'])
-def get_historic_by_id(id: str):
+def get_scheduled_d1_by_id(id: str):
     collection_name = "update_scheduled_d1_flights"
     flight = get_flight_by_id(collection_name, id)
 
