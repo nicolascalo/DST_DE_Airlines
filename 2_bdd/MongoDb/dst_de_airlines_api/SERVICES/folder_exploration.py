@@ -36,7 +36,6 @@ def get_file_names_on_gcp():
     blobs = bucket.list_blobs(prefix=prefix)
     file_names = []
     for blob in blobs:
-        print(blob.name)
         file_names.append(blob.name)
     return file_names
 
@@ -45,6 +44,10 @@ def get_file_names_on_gcp():
 def remove_file(folder_path, file_name):
 
     os.remove(folder_path+file_name)
+
+
+    
+
 
 
 

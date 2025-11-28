@@ -23,19 +23,19 @@ def get_json_in_gz_file_by_its_name_local(gz_file_name):
     with  gzip.open(compressed_file_path, 'rt', encoding='utf-8') as gz_file:
         try:
             
-            decompressed_file = json.load(gz_file)
+            json_file = json.load(gz_file)
         except gzip.BadGzipFile as e:
 
                 print("corrompu: "+gz_file_name)
-                decompressed_file =  "corrupted file"
+                json_file =  "corrupted file"
         
         except json.JSONDecodeError as e:
                 print("Json invalide : "+gz_file_name)
-                decompressed_file = "invalid json"
+                json_file = "invalid json"
                 
 
  
-    return decompressed_file
+    return json_file
 
 
 def get_json_in_gz_file_by_its_name_gcp(gz_file_name):
@@ -62,7 +62,14 @@ def get_json_in_gz_file_by_its_name_gcp(gz_file_name):
         return None
 
     
+def download_gz_file_on_gcp(folder_path, gz_file_name):
 
+    local_path = os.path.join(folder_path, gz_file_name.replace("data/", ""))
+    bucket = check_gcp_connection()
+    blob = bucket.blob(gz_file_name)
+    blob.download_to_filename(local_path)
+    
+     
      
 
 

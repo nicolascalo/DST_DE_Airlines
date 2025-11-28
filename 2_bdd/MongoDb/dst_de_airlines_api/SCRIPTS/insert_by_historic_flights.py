@@ -9,16 +9,16 @@ from pathlib import Path
 
 
 
-def import_operationalflights_in_mongodb():
+def insert_by_historic_flight():
     folder_path = get_folder_path_in_env()
     file_names = get_file_names_by_folder(folder_path)
     for file_name in file_names:
         if is_gz_file(file_name) == True:
             gz_file_name = file_name
             if is_compressed_file_name_exist(gz_file_name) == False:
-                decompressed_file = get_json_in_gz_file_by_its_name_local(gz_file_name)
-                decompressed_file = delete_page_object_in_json(decompressed_file)
-                insert_operation_fly(decompressed_file)
+                json_file = get_json_in_gz_file_by_its_name_local(gz_file_name)
+                json_file = delete_page_object_in_json(json_file)
+                insert_operation_fly(json_file)
                 insert_one_compressed_file_name(gz_file_name)
             
             
@@ -37,5 +37,5 @@ def import_operationalflights_in_mongodb():
       
 
 
-import_operationalflights_in_mongodb()
+insert_by_historic_flight()
     

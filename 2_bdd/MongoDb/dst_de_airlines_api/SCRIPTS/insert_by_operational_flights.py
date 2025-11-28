@@ -9,7 +9,7 @@ from USE_CASES.insert_compressed_file_name_uc import  is_compressed_file_name_ex
 
 
 
-def import_operationalflights_in_mongodb():
+def insert_by_operational_flights():
     folder_path = get_folder_path_in_env()
     file_names = get_file_names_by_folder(folder_path)
    
@@ -54,6 +54,6 @@ def add_date_insertion_in_flights():
 
 
     
-import_operationalflights_in_mongodb()
+insert_by_operational_flights()
 clean()
 add_date_insertion_in_flights()

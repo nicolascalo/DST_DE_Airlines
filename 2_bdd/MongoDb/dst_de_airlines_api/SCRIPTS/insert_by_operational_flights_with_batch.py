@@ -33,7 +33,7 @@ def import_operationalflights_in_mongodb():
 
 
 
-    batch_size = 1000
+    batch_size = 200
 
     compressed_file_names = get_all_compressed_file_names()
     existing_files = [doc['compressed_file_name'] for doc in compressed_file_names]
