@@ -30,13 +30,13 @@ def get_file_names_by_folder(folder_path):
 
 
 def is_file_already_in_folder(folder_path, file_name):
-    print(folder_path)
+   
     file_name = file_name.replace("data/", "")
    
     path = folder_path + file_name
-    print(path)
+  
     if os.path.isfile(path):
-        print("file already in folder")
+        print(file_name + " already in folder")
         return True
     else:
         return False

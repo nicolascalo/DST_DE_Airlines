@@ -16,7 +16,7 @@ def import_gz_files_from_gcp():
     for file_name in file_names:
        
         if is_gz_file(file_name) == True:
-            print(file_name)
+           
             if is_file_already_in_folder(folder_path, file_name) == False:
                 download_gz_file_on_gcp(folder_path, file_name)
 
