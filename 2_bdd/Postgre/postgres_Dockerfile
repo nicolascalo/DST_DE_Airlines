@@ -1,6 +1,8 @@
 FROM postgres:16-alpine
 
 RUN rm -rf postgres_volume
-COPY /data_input /tmp/data_input
+ADD /data_input/afklm_historic_flight_from_mongo_filtered.csv.tar.gz /data_input/afklm_sched_flight_from_mongo_filtered.csv.tar.gz /tmp/data_input/
+
+
 COPY /docker-entrypoint-initdb.d /docker-entrypoint-initdb.d/
 EXPOSE 5432

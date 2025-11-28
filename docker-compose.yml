@@ -82,6 +82,7 @@ services:
       start_period: 15s      
     volumes:
       - ./2_bdd/Postgre/postgres_volume:/var/lib/postgresql/data
+      
 
   dst_de_airlines_postgres_pgadmin:
     container_name: dst_de_airlines_pgadmin4
