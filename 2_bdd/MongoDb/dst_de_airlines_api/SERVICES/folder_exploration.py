@@ -29,6 +29,16 @@ def get_file_names_by_folder(folder_path):
     return file_names
 
 
+def is_file_already_in_folder(folder_path, file_name):
+    file_name = file_name.replace("data/", "")
+   
+    path = folder_path + file_name
+    print(path)
+    if os.path.isfile(path):
+        print("file already in folder")
+        return True
+    else:
+        return False
 
 def get_file_names_on_gcp():
     bucket = check_gcp_connection()
