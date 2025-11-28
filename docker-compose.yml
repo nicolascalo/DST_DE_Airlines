@@ -1,20 +1,24 @@
 services:
     
-  ml_api:
+  dst_de_airlines_ml_api:
     build:
       context: ./3_ML
       dockerfile: afklm_ml_api_Dockerfile
     container_name: dst_de_airlines_ml_api
     ports:
       - "8001:8001"
-    restart: unless-stopped
     healthcheck:
-      test: ["CMD", "curl", "--fail", "http://127.0.0.1:8001/health"]
+      test: ["CMD", "curl", "--fail", "http://localhost:8001/health"]
       interval: 10s
       timeout: 5s
       retries: 5
       start_period: 15s
-
+    restart: unless-stopped
+    volumes:
+      - ./3_ML/outputs:/outputs
+      - ./3_ML/config:/config
+      - ./3_ML/data:/data
+    
   mongodb:
     image: mongo:7.0
     container_name: dst_de_airlines_mongodb
@@ -51,7 +55,7 @@ services:
         condition: service_healthy
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "curl", "--fail", "http://127.0.0.1:8000/docs"]
+      test: ["CMD", "curl", "--fail", "http://localhost:8000/docs"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -78,7 +82,6 @@ services:
       start_period: 15s      
     volumes:
       - ./2_bdd/Postgre/postgres_volume:/var/lib/postgresql/data
-      - ./2_bdd/Postgre/data_output:/data_output
 
   dst_de_airlines_postgres_pgadmin:
     container_name: dst_de_airlines_pgadmin4
@@ -97,9 +100,9 @@ services:
       retries: 3
 
 
-  afklm_dashboard_api:
+  dst_de_airlines_dashboard_api:
     build: 
-      context: ./4_dash_docker/
+      context: ./4_dashboard/
       dockerfile: Dockerfile
     container_name: afklm_dashboard_api
     hostname: afklm_dashboard_api
@@ -107,5 +110,13 @@ services:
     ports:
       - 8050:8050
     depends_on:
-      ml_api:
+      dst_de_airlines_ml_api:
         condition: service_healthy
+      dst_de_airlines_postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8050"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s

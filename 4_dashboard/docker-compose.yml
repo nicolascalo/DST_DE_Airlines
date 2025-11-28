@@ -1,0 +1,10 @@
+services:
+  dashboard:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: dashboard
+    hostname: dashboard
+    restart: always
+    ports:
+      - 8050:8050
