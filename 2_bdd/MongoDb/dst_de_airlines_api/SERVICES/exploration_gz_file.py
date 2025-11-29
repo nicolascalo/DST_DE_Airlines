@@ -84,6 +84,24 @@ def get_collection_name_by_end_gz_file_name(gz_name):
     else:
         collection_name = 'historic_operational_flights'
     return collection_name
+
+
+
+def create_csv_tar_gz(df, filename):
+
+
+    csv_buffer = io.StringIO()
+    df.to_csv(csv_buffer, index=False, na_rep="")
+    csv_data = csv_buffer.getvalue().encode('utf-8')
+
+    
+    tar_buffer = io.BytesIO()
+    with tarfile.open(fileobj=tar_buffer, mode='w:gz') as tar:
+        tarinfo = tarfile.TarInfo(name=filename)
+        tarinfo.size = len(csv_data)
+        tar.addfile(tarinfo, io.BytesIO(csv_data))
+
+    return tar_buffer.getvalue()
         
 
 

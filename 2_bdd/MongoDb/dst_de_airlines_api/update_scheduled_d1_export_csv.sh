@@ -1,4 +1,4 @@
-read -p "nb_flight: " nb_flights
+read -p "nb_flights (optionnel - press enter to ignore): " nb_flights
 
 read -p "Date (YYYYMMDD-HH-MM-SS, optionnel - press enter to ignore): " date_param
 
@@ -14,8 +14,13 @@ fi
 read -p "start_id (optionnel - press enter to ignore): " start_id
 
 
+args=()
 
-args=("$nb_flights")
+if [ -n "$nb_flights" ]; then
+    args+=("$nb_flights")
+else
+    args+=("") 
+fi
 
 if [ -n "$date_param" ]; then
     args+=("$date_param")

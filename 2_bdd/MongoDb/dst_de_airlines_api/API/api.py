@@ -1,28 +1,26 @@
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import StreamingResponse
+import tarfile
 from datetime import datetime
 from zoneinfo import ZoneInfo
 import subprocess
 from SERIALIZER.utils import mongo_to_json
 import gzip
 import io
-from USE_CASES.get_by_id_uc import get_flight_by_id
-from USE_CASES.count_documents_by_collection_uc import count_documents_by_collection
-from USE_CASES.get_csv_flights_uc import get_csv_flights
 from dotenv import load_dotenv
 from typing import Optional
 import os
 import re
-
-
-
-
+from USE_CASES.get_by_id_uc import get_flight_by_id
+from USE_CASES.count_documents_by_collection_uc import count_documents_by_collection
+from USE_CASES.get_df_flights_uc import get_df_flights
+from SERVICES.exploration_gz_file import create_csv_tar_gz
 
 app = FastAPI(
     title="Airlines API",
     description="REST API for querying and exporting Air France-KLM flight data from Europe's 30 largest airports",
     version="1.0.0",
-    docs_url="/docs",
+    docs_url="/",
     openapi_tags=[
         {
             'name': 'historic',
@@ -79,7 +77,7 @@ def get_scheduled_d1_by_id(id: str):
 
 @app.get("/remove_scheduled/export", tags=['scheduled'])
 def export_removed_scheduled(
-    date: str = Query(
+    date: Optional[str] = Query(
         ...,
         description="Date filter in format YYYYMMDD-HH-MM-SS (French time - Europe/Paris)",
         example="20251114-15-30-45",
@@ -96,52 +94,48 @@ def export_removed_scheduled(
         Gzipped CSV file containing removed flights data
     """
 
-    try:
-        parsed_date = datetime.strptime(date, "%Y%m%d-%H-%M-%S")
-        now_paris = datetime.now(ZoneInfo("Europe/Paris"))
-        
-        if parsed_date.replace(tzinfo=ZoneInfo("Europe/Paris")) > now_paris:
+    if date is not None:
+        try:
+            parsed_date = datetime.strptime(date, "%Y%m%d-%H-%M-%S")
+            now_paris = datetime.now(ZoneInfo("Europe/Paris"))
+            
+            if parsed_date.replace(tzinfo=ZoneInfo("Europe/Paris")) > now_paris:
+                raise HTTPException(
+                    status_code=400,
+                    detail="Date cannot be in the future"
+                )
+        except ValueError:
             raise HTTPException(
                 status_code=400,
-                detail="Date cannot be in the future"
+                detail="Invalid date format. Use YYYYMMDD-HH-MM-SS"
             )
-    except ValueError:
-        raise HTTPException(
-            status_code=400,
-            detail="Invalid date format. Use YYYYMMDD-HH-MM-SS"
-        )
 
     collection_name = "removed_scheduled_flights"
     id = None
     nb_flights = None
 
-    df, filename = get_csv_flights(collection_name, date, id, nb_flights)
+    df, filename = get_df_flights(collection_name, date, id, nb_flights)
     
     if df is None or df.empty:
         raise HTTPException(
             status_code=404,
             detail=f"No flights found after {date}"
         )
-    
 
-    buffer = io.BytesIO()
-    with gzip.GzipFile(fileobj=buffer, mode='wb') as f:
-        df.to_csv(f, index=False, na_rep="")
-    csv_content = buffer.getvalue()
-    
+    tar_filename = create_csv_tar_gz(df, filename)
     return StreamingResponse(
-        iter([csv_content]),
+        iter([tar_filename]),
         media_type="application/gzip",
         headers={
-            "Content-Disposition": f"attachment; filename={filename}"
+            "Content-Disposition": f"attachment; filename={filename.replace('.csv', '.tar.gz')}"
         }
     )
     
 
 @app.get("/removed_scheduled_d1/export", tags=['scheduled d1'])
 def export_removed_d1_flights(
-    date: str = Query(
-        ...,
+    date: Optional[str] = Query(
+        None,
         description="Date filter in format YYYYMMDD-HH-MM-SS (French time - Europe/Paris)",
         example="20251114-15-30-45",
         regex=r"^\d{8}-\d{2}-\d{2}-\d{2}$"
@@ -157,49 +151,43 @@ def export_removed_d1_flights(
         Gzipped CSV file containing removed flights data
     """
 
-    try:
-        parsed_date = datetime.strptime(date, "%Y%m%d-%H-%M-%S")
-        now_paris = datetime.now(ZoneInfo("Europe/Paris"))
-        
-        if parsed_date.replace(tzinfo=ZoneInfo("Europe/Paris")) > now_paris:
+    if date is not None:
+
+        try:
+            parsed_date = datetime.strptime(date, "%Y%m%d-%H-%M-%S")
+            now_paris = datetime.now(ZoneInfo("Europe/Paris"))
+            
+            if parsed_date.replace(tzinfo=ZoneInfo("Europe/Paris")) > now_paris:
+                raise HTTPException(
+                    status_code=400,
+                    detail="Date cannot be in the future"
+                )
+        except ValueError:
             raise HTTPException(
                 status_code=400,
-                detail="Date cannot be in the future"
+                detail="Invalid date format. Use YYYYMMDD-HH-MM-SS"
             )
-    except ValueError:
-        raise HTTPException(
-            status_code=400,
-            detail="Invalid date format. Use YYYYMMDD-HH-MM-SS"
-        )
     
     collection_name = "removed_scheduled_flights"
     id = None
     nb_flights = None
 
-    df, filename = get_csv_flights(collection_name, id, date, nb_flights)
+    df, filename = get_df_flights(collection_name, id, date, nb_flights)
     
     if df is None or df.empty:
         raise HTTPException(
             status_code=404,
             detail=f"No flights found after {date}"
         )
-    
 
-    buffer = io.BytesIO()
-    with gzip.GzipFile(fileobj=buffer, mode='wb') as f:
-        df.to_csv(f, index=False, na_rep="")
-    csv_content = buffer.getvalue()
-    
+    tar_filename = create_csv_tar_gz(df, filename)
     return StreamingResponse(
-        iter([csv_content]),
+        iter([tar_filename]),
         media_type="application/gzip",
         headers={
-            "Content-Disposition": f"attachment; filename={filename}"
+            "Content-Disposition": f"attachment; filename={filename.replace('.csv', '.tar.gz')}"
         }
     )
-
-
-
 
 @app.get("/historic/export", tags=['historic'])
 def export_historic_flights(
@@ -234,23 +222,25 @@ def export_historic_flights(
                 detail="Invalid date format. Use YYYYMMDD-HH-MM-SS (French time - Europe/Paris)"
             )
     collection_name = "historic_flights"
-    df, filename = get_csv_flights(collection_name, date, start_id,limit)
 
-    buffer = io.BytesIO()
-    with gzip.GzipFile(fileobj=buffer, mode='wb') as f:
-        df.to_csv(f, index=False, na_rep="")
-    csv_content = buffer.getvalue()
-    
-    if csv_content is None:
-        raise HTTPException(status_code=404, detail="No flights found")
 
+    df, filename = get_df_flights(collection_name, date, start_id, limit )
+
+    if df is None or df.empty:
+        raise HTTPException(
+            status_code=404,
+            detail=f"No flights found after {date}"
+        )
+
+    tar_filename = create_csv_tar_gz(df, filename)
     return StreamingResponse(
-        iter([csv_content]),
+        iter([tar_filename]),
         media_type="application/gzip",
         headers={
-            "Content-Disposition": f"attachment; filename={filename}"
+            "Content-Disposition": f"attachment; filename={filename.replace('.csv', '.tar.gz')}"
         }
     )
+    
 
 @app.get("/scheduled/export", tags=['scheduled'])
 def export_scheduled_flights(
@@ -285,26 +275,22 @@ def export_scheduled_flights(
                 detail="Invalid date format. Use YYYYMMDD-HH-MM-SS (French time - Europe/Paris)"
             )
     collection_name = "scheduled_flights"
-    df, filename = get_csv_flights(collection_name, date, start_id, limit)
+    df, filename = get_df_flights(collection_name, date, start_id, limit)
 
-    buffer = io.BytesIO()
-    with gzip.GzipFile(fileobj=buffer, mode='wb') as f:
-        df.to_csv(f, index=False, na_rep="")
-    csv_content = buffer.getvalue()
-    
-    if csv_content is None:
-        raise HTTPException(status_code=404, detail="No flights found")
+    if df is None or df.empty:
+        raise HTTPException(
+            status_code=404,
+            detail=f"No flights found after {date}"
+        )
 
+    tar_filename = create_csv_tar_gz(df, filename)
     return StreamingResponse(
-        iter([csv_content]),
+        iter([tar_filename]),
         media_type="application/gzip",
         headers={
-            "Content-Disposition": f"attachment; filename={filename}"
+            "Content-Disposition": f"attachment; filename={filename.replace('.csv', '.tar.gz')}"
         }
     )
-
-
-
 
 
 @app.get("/update_scheduled_d1/export", tags=['scheduled d1'])
@@ -342,21 +328,19 @@ def export_scheduled_d1_flights(
         
     collection_name = "update_scheduled_d1_flights"
     
-    df, filename = get_csv_flights(collection_name, date, start_id, limit )
+    df, filename = get_df_flights(collection_name, date, start_id, limit )
+    if df is None or df.empty:
+        raise HTTPException(
+            status_code=404,
+            detail=f"No flights found after {date}"
+        )
 
-    buffer = io.BytesIO()
-    with gzip.GzipFile(fileobj=buffer, mode='wb') as f:
-        df.to_csv(f, index=False, na_rep="")
-    csv_content = buffer.getvalue()
-    
-    if csv_content is None:
-        raise HTTPException(status_code=404, detail="No flights found")
-
+    tar_filename = create_csv_tar_gz(df, filename)
     return StreamingResponse(
-        iter([csv_content]),
+        iter([tar_filename]),
         media_type="application/gzip",
         headers={
-            "Content-Disposition": f"attachment; filename={filename}"
+            "Content-Disposition": f"attachment; filename={filename.replace('.csv', '.tar.gz')}"
         }
     )
 
