@@ -167,7 +167,7 @@ def update_graphs(row_ids, selected_row_ids, active_cell):
 
 
     try:
-        response = requests.get("http://afklm_ml_api:8001/get_delay_predictions",
+        response = requests.post("http://afklm_ml_api:8001/get_delay_predictions",
             json=json_tosend  
         )
 
