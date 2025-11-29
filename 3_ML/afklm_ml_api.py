@@ -90,7 +90,11 @@ def get_dayPeriod(x):
     else:
         return 'night'
 
-api = FastAPI(openapi_tags=[
+api = FastAPI(
+    description = "REST API for managing, training and querying the machine learning pipelines that aim at prediction delay on flights from the Air France - KLM API ",
+    docs_url = "/",
+
+    openapi_tags=[
     {
         'name': 'tests',
         'description': 'Utility functions'
