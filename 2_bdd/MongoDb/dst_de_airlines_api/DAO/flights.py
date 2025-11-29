@@ -13,15 +13,11 @@ def insert_one(flight):
 
 
 def get_by_id(colleciton_name, id):
-    check_db_connection() 
     try:
         flight = mongo_db_connect[colleciton_name].find_one({"id": id})
-        return flight
+        return flight  # ← Retourne None si pas trouvé, PAS D'ERREUR
     except (TypeError, KeyError):
         return None
-    except Exception as e: 
-        print(f"critical error : {e}")
-        raise 
     
 
   

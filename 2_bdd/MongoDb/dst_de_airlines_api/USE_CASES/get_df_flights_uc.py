@@ -10,7 +10,10 @@ def get_df_flights(collection_name, date = None, id= None, nb_flights = None):
 
     filename = f"afklm_{collection_name}_from_mongo_filtered_{date_time}.csv"
     if id != None:
-        get_flight_by_id(collection_name, id)
+        
+        flight = get_flight_by_id(collection_name, id)
+        if flight is None:
+            return None, filename
 
     flights = get_flights(collection_name, date, id, nb_flights)
     df = format_json_flight_to_df(flights)

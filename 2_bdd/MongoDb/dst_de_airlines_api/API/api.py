@@ -172,7 +172,7 @@ def export_removed_d1_flights(
     id = None
     nb_flights = None
 
-    df, filename = get_df_flights(collection_name, id, date, nb_flights)
+    df, filename = get_df_flights(collection_name, date, id, nb_flights)
     
     if df is None or df.empty:
         raise HTTPException(
@@ -224,7 +224,7 @@ def export_historic_flights(
     collection_name = "historic_flights"
 
 
-    df, filename = get_df_flights(collection_name, date, start_id, limit )
+    df, filename = get_df_flights(collection_name, date, start_id, limit)
 
     if df is None or df.empty:
         raise HTTPException(
