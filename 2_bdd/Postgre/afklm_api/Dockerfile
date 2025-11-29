@@ -14,4 +14,4 @@ EXPOSE 8000
 
 
 
-CMD ["uvicorn", "API.api:app", "--host", "0.0.0.0", "--port", "3434"]
+CMD ["uvicorn", "API.api:app", "--host", "0.0.0.0", "--port", "7374"]
