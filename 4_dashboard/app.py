@@ -4,10 +4,19 @@ import pandas as pd
 import requests, json
 from sqlalchemy import create_engine
 import datetime
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+
+
+ml_api_host = os.getenv('ML_API_HOST')
+ml_api_port = os.getenv('ML_API_PORT')
 
 
 try:
-    response = requests.get("http://afklm_ml_api:8001/model_parameters_and_metrics")
+    response = requests.get(f"http://{ml_api_host}:{ml_api_port}/model_parameters_and_metrics")
     model_metrics_dict = response.json()
     model_metrics = pd.DataFrame(model_metrics_dict).drop(['mode','best_pipeline'],axis=1)
     print("Model metrics loaded")
@@ -17,11 +26,14 @@ except:
     model_metrics = pd.DataFrame({"Error":"Issue when fetching the model metrics"})
 
 
-username = 'postgres'
-password = 'postgres'
-host = 'afklm_postgres'
-port = '5432'
-database_name = 'afklm'
+
+
+
+username = os.getenv('POSTGRES_USER')
+password = os.getenv('POSTGRES_PASSWORD')
+host = os.getenv('POSTGRES_URI')
+port = os.getenv('POSTGRES_PORT')
+database_name = os.getenv('POSTGRES_DB')
 
 DATABASE_URL = f"postgresql://{username}:{password}@{host}:{port}/{database_name}"
 engine = create_engine(DATABASE_URL)
@@ -167,19 +179,23 @@ def update_graphs(row_ids, selected_row_ids, active_cell):
 
 
     try:
-        response = requests.post("http://afklm_ml_api:8001/get_delay_predictions",
+        response = requests.post(f"http://{ml_api_host}:{ml_api_port}/get_delay_predictions",
             json=json_tosend  
         )
 
+        response_json = response.json()
+        df_response = pd.DataFrame.from_records(response_json, index=[0])
+        df_response = df_response.transpose().reset_index()
+        df_response.columns = ['prediction_type','prediction_value']
+        df_response.dropna(subset=['prediction_value'])
+        df_response = df_response[df_response['prediction_value'] != "NA"]
+
+
     except Exception as e:
         print("Issue with the request:", e)    
+        
+        df_response = pd.DataFrame({"Issue":e})
     
-    response_json = response.json()
-    df_response = pd.DataFrame.from_records(response_json, index=[0])
-    df_response = df_response.transpose().reset_index()
-    df_response.columns = ['prediction_type','prediction_value']
-    df_response.dropna(subset=['prediction_value'])
-    df_response = df_response[df_response['prediction_value'] != "NA"]
     
 
     return html.Div([

@@ -1,0 +1,18 @@
+FROM python:3.10-slim
+
+WORKDIR /app
+
+RUN mkdir /data_for_update
+COPY afklm_postgre_api_requirements.txt /app/
+
+
+RUN apt-get update && apt-get -y install curl && pip install --upgrade pip  && pip install uvicorn fastapi && pip install --no-cache-dir -r afklm_postgre_api_requirements.txt
+COPY afklm_postgre_api.py afklm_postgre_api.py
+COPY /docker-entrypoint-initdb.d /app/docker-entrypoint-initdb.d
+
+
+WORKDIR /app
+
+EXPOSE 8002
+
+CMD ["uvicorn", "afklm_postgre_api:api", "--host", "0.0.0.0", "--port", "8002"]

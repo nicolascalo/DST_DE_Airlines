@@ -20,6 +20,14 @@ services:
       - ./3_ML/outputs:/outputs
       - ./3_ML/config:/config
       - ./3_ML/data:/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: afklm
+      POSTGRES_URI: afklm_postgres
+      POSTGRES_PORT: 5432
+      OUTPUT_DIR: "outputs"
+
 
   #------------------------------ MONGO DB BDD-------------------------------------------------------------------------------------------
     
@@ -88,9 +96,36 @@ services:
       start_period: 15s      
     volumes:
       - ./2_bdd/Postgre/postgres_volume:/var/lib/postgresql/data
-      
 
-#------------------------------------------------------------------------------PG ADMIN-------------------------------------------------------------------
+
+
+#-------------------------------------------------------------------------POSTGRES API--------------------------------------------------------------------------------
+
+  afklm_postgre_api:
+    build: 
+      context: ./2_bdd/Postgre/
+      dockerfile: afklm_postgre_api_Dockerfile
+    container_name: afklm_postgre_api
+    hostname: afklm_postgre_api
+    restart: always
+    ports:
+      - 8002:8002
+    depends_on:
+      afklm_postgres:
+        condition: service_healthy
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: afklm
+      POSTGRES_URI: afklm_postgres
+      POSTGRES_PORT: 5432
+      SQL_FILE_FOLDER: /app/docker-entrypoint-initdb.d
+      DATA_FILE_FOLDER: /app/data_input
+    volumes:
+      - ./2_bdd/Postgre/data_input:/app/data_input
+
+
+#------------------------------------------------------------------------------PG PGADMIN-------------------------------------------------------------------
 
   afklm_postgres_pgadmin:
     container_name: afklm_pgadmin4
@@ -124,3 +159,11 @@ services:
         condition: service_healthy
       afklm_postgres:
         condition: service_healthy
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: afklm
+      POSTGRES_URI: afklm_postgres
+      POSTGRES_PORT: 5432
+      ML_API_PORT: 8001
+      ML_API_HOST: afklm_ml_api

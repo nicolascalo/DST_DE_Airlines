@@ -47,3 +47,5 @@ def download_update_d1_flights():
     if path is None:
         raise HTTPException(status_code=404, detail="update scheduled d1 flights not found")
     return {'message': file_name + 'saved in' + path}
+
+
