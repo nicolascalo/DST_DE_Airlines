@@ -11,8 +11,8 @@ L’objectif est d’offrir une **aide à la décision** et une **anticipation p
 # 🎯 Objectif du modèle
 Prédire si un vol sera :
 
-- **en retard**,  
-- ou **à l’heure**.
+- **en retard**  
+- ou **à l’heure**
 
 Le modèle repose sur un ensemble de variables consolidées dans PostgreSQL, prétraitées et nettoyées avant l’entraînement.
 
