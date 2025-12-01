@@ -23,6 +23,13 @@ def get_folder_path_in_env():
     folder_path = os.getenv('FOLDER_PATH')
     return folder_path
 
+def get_file_names(folder_path,in_cloud = True):
+    if in_cloud:
+        return get_file_names_on_gcp()
+    else:
+        return get_file_names_by_folder(folder_path)
+
+
 
 def get_file_names_by_folder(folder_path):
     file_names = os.listdir(folder_path)

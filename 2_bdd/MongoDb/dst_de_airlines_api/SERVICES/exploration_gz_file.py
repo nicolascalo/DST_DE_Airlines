@@ -10,7 +10,12 @@ import lzma
 from CONNECTION.check_gcp_connection import check_gcp_connection
 
 
-
+def get_json_in_gz_file_by_its_name(gz_file_name, in_cloud = True):
+    if in_cloud:
+        return get_json_in_gz_file_by_its_name_gcp(gz_file_name)
+    else:
+        return get_json_in_gz_file_by_its_name_local(gz_file_name)
+    
 
 
 def get_json_in_gz_file_by_its_name_local(gz_file_name):
@@ -38,8 +43,7 @@ def get_json_in_gz_file_by_its_name_local(gz_file_name):
     return decompressed_file
 
 
-def get_json_in_gz_file_by_its_name_gcp(gz_file_name):
-    bucket = check_gcp_connection()
+def get_json_in_gz_file_by_its_name_gcp(gz_file_name,bucket):
     try:
         blob = bucket.blob(gz_file_name)
         compressed_content = blob.download_as_bytes()  

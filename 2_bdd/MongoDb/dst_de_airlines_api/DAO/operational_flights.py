@@ -2,6 +2,7 @@ from CONNECTION.db_context import mongo_db_connect, client
 from CONNECTION.check_database_connection import check_db_connection
 from datetime import datetime
 import gc
+from pymongo import UpdateOne
 
 collection = "operation_flights"
 flight_colleciton = "flights"
@@ -33,14 +34,20 @@ def delete_duplicates(collection_name):
     duplicates = list(mongo_db_connect[collection_name].aggregate(pipeline))
         
     total_deleted = 0
+    total_docs_to_delete = []
     for dup in duplicates:
     
         docs_to_delete = dup["docs"][1:] 
+        total_docs_to_delete.extend(docs_to_delete)
+    batch_size = 10000 
+    for i in range(0, len(total_docs_to_delete), batch_size):
+        batch = total_docs_to_delete[i:i + batch_size]
         result = mongo_db_connect[collection_name].delete_many(
-            {"_id": {"$in": docs_to_delete}}
+            {"_id": {"$in": batch}}
         )
         total_deleted += result.deleted_count
-    gc.collect()
+        print(f"nb duplicates deleted : {total_deleted}")
+        gc.collect()
         
 
 
@@ -85,13 +92,21 @@ def remove_past_flights_on_d1_collection():
         
     flights_to_remove = list(mongo_db_connect['update_scheduled_d1_flights'].find(query))
 
+    batch_size = 1000
+
     if flights_to_remove:
-         for flight in flights_to_remove:
-                mongo_db_connect['removed_update_scheduled_d1_flights'].update_one(
-                {"id": flight["id"]},
-                {"$setOnInsert": flight},
-                upsert=True
-            )
+        for i in range(0, len(flights_to_remove), batch_size):
+            batch = flights_to_remove[i:i + batch_size]
+            operations = [
+                UpdateOne(
+                    {"id": flight["id"]},
+                    {"$setOnInsert": flight},
+                    upsert=True
+                )
+                for flight in batch
+            ]
+            if operations:
+                mongo_db_connect['removed_update_scheduled_d1_flights'].bulk_write(operations)
    
     deleting = mongo_db_connect['update_scheduled_d1_flights'].delete_many(query)
 
@@ -115,17 +130,26 @@ def remove_past_flights_on_scheduled_collection():
         }
     }
     flights_to_remove = list(mongo_db_connect['scheduled_flights'].find(query))
-    if flights_to_remove:
-        for flight in flights_to_remove:
+    batch_size = 1000
 
-            mongo_db_connect['removed_scheduled_flights'].update_one(
-                {"id": flight["id"]},
-                {"$setOnInsert": flight},
-                upsert=True
-            )
-      
+    if flights_to_remove:
+        for i in range(0, len(flights_to_remove), batch_size):
+            batch = flights_to_remove[i:i + batch_size]
+            operations = [
+                UpdateOne(
+                    {"id": flight["id"]},
+                    {"$setOnInsert": flight},
+                    upsert=True
+                )
+                for flight in batch
+            ]
+            if operations:
+                mongo_db_connect['removed_scheduled_flights'].bulk_write(operations)
+
     deleting = mongo_db_connect['scheduled_flights'].delete_many(query)
     print(f"nb scheduled flights deleted : {deleting.deleted_count}")
+
+    # Nettoyage mémoire
     gc.collect()
     return deleting.deleted_count
     

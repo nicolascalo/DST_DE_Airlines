@@ -1,0 +1,6 @@
+from SCRIPTS.insert_by_operational_flights_with_batch import  import_operationalflights_in_mongodb, clean, add_date_insertion_in_flights
+
+import_operationalflights_in_mongodb()
+
+clean()
+add_date_insertion_in_flights()
