@@ -49,6 +49,29 @@ services:
       start_period: 10s
     restart: unless-stopped
 
+
+#------------------------------------------DATA INSERTION FROM DATA FILE--------------------------------------
+  afklm_mongodb_init:
+    build:
+      context: ./2_bdd/MongoDb/dst_de_airlines_api/
+      dockerfile: Insert_by_op_flights_Dockerfile
+    container_name: afklm_mongodb_init
+    environment:
+      - MONGODB_URI=mongodb://airlines:airlines@afklm_mongodb:27017/airlines?authSource=admin
+      - DATABASE_NAME=airlines
+      - FOLDER_PATH=/app/data/
+    volumes:
+    - ./1_data_collection/afklm_api_collection/data:/app/data
+    depends_on:
+      afklm_mongodb:
+        condition: service_healthy
+    restart: "no"
+    networks:
+      - default
+
+
+      
+
 #--------------------------------------------------------------------------------------------------MONGO_DB_API--------------------------------------------------------
   afklm_mongodb_api:
     build:
@@ -66,6 +89,8 @@ services:
     depends_on:
       afklm_mongodb:
         condition: service_healthy
+      afklm_mongodb_init:
+        condition: service_completed_successfully
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "--fail", "http://localhost:8000/docs"]
@@ -167,3 +192,6 @@ services:
       POSTGRES_PORT: 5432
       ML_API_PORT: 8001
       ML_API_HOST: afklm_ml_api
+
+
+
