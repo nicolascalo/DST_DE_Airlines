@@ -1,4 +1,4 @@
-# 🧭 Dashboard de Prédiction des Retards – DST Airlines
+# 🧭 Dashboard de prédiction des retards
 
 Ce module constitue l’interface utilisateur du projet DST Airlines. Il permet de visualiser les données consolidées, consulter les métriques des modèles de Machine Learning et exécuter des prédictions en temps réel via un formulaire interactif. Le Dashboard repose sur Dash (Plotly) et interagit directement avec :
 - l’API PostgreSQL (vues métier et données tabulaires)
