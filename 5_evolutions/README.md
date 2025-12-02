@@ -1,5 +1,5 @@
 # ✈️ 5 — Évolutions  
-*Suite du projet AF-KLM — Prédiction des Retards de Vols*
+*Suite du projet AF-KLM — Prédiction des retards de vols*
 
 Ce document présente les axes d’amélioration identifiés pour faire évoluer le projet dans ses prochaines phases de développement.  
 Les pistes listées ci-dessous sont techniquement réalistes, alignées avec l’architecture existante, et visent à renforcer la **précision**, la **robustesse** et l’**expérience utilisateur** de la plateforme.
