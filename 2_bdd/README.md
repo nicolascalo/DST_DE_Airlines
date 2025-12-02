@@ -1,4 +1,4 @@
-# 📁 2 — bdd (Bases de Données)
+# 📁 2 — Bases de Données
 Conception et alimentation des bases PostgreSQL et MongoDB pour le projet DST Airlines
 
 ## ✈️ Introduction
