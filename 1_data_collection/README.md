@@ -32,6 +32,8 @@ L’API AFKLM offre :
 - une structure homogène et documentée  
 - une bonne stabilité, indispensable pour un pipeline
 
+<img width="1309" height="1526" alt="image" src="https://github.com/user-attachments/assets/a205b6ff-d885-4207-a07b-8d759cde63d5" />
+
 ### 3. Pipeline d’extraction
 Les scripts Python réalisent :    
 - la gestion des limites API (plusieurs clés API pour pallier aux limites de la version gratuite)  
