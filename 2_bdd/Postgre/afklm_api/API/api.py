@@ -1,6 +1,15 @@
 from fastapi import FastAPI, HTTPException
-
+from dotenv import load_dotenv
+import os
 from USE_CASES.download_data import download_data
+
+
+load_dotenv()
+
+
+folder_path = os.getenv('DATA_INPUT')
+
+
 
 app = FastAPI(
     title="AFKLM API",
@@ -8,8 +17,11 @@ app = FastAPI(
     docs_url="/"
 )
 
-@app.get("/download_historic_flights")
+@app.get("/download_historic_flights",
+         description=f"Download a file named afklm_historic_from_mongo.csv.tar.gz in {folder_path}"
+)
 def download_historic_flights():
+    
 
     route = "historic/export"
 
@@ -37,7 +49,7 @@ def download_update_d1_flights():
 
 
 @app.get("/download_scheduled_flights")
-def download_update_d1_flights():
+def download_scheduled_flights():
 
     route = "/scheduled/export"
 
