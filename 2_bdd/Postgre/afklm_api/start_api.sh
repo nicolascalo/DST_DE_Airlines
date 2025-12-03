@@ -1,3 +1,3 @@
 #!/bin/bash
 
-./venv/bin/python ./venv/bin/uvicorn API.api:app --host 0.0.0.0 --port 7374 --reload
+./venv/bin/python ./venv/bin/uvicorn API.api:app --host 0.0.0.0 --port 8004 --reload

@@ -6,6 +6,6 @@ services:
       MONGO_INITDB_ROOT_USERNAME: airlines
       MONGO_INITDB_ROOT_PASSWORD: airlines
     volumes:
-      - ./bdd_afklm_volumes:/data/db
+      - ./mongodb_volume:/data/db
     ports:
       - 27017:27017

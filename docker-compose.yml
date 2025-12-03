@@ -60,7 +60,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - MONGODB_URI=mongodb://airlines:airlines@host.docker.internal:27017/airlines?authSource=admin
+      - MONGODB_URI=mongodb://airlines:airlines@afklm_mongodb:27017/airlines?authSource=admin
       - DATABASE_NAME=airlines
       - FOLDER_PATH=/app/data
     extra_hosts:
@@ -77,7 +77,7 @@ services:
 
 
 
-  #------------------------------------------DATA INSERTION FROM DATA FILE--------------------------------------
+  #------------------------------------------GET OPERATIONAL FLIGHTS FROM DATA FOLDER--------------------------------------
   afklm_mongodb_init:
     build:
       context: ./2_bdd/MongoDb/dst_de_airlines_api/
@@ -86,9 +86,9 @@ services:
     environment:
       - MONGODB_URI=mongodb://airlines:airlines@afklm_mongodb:27017/airlines?authSource=admin
       - DATABASE_NAME=airlines
-      - FOLDER_PATH=/app/data/
+      - FOLDER_PATH=/app/data_test/
     volumes:
-    - ./1_data_collection/afklm_api_collection/data:/app/data
+    - ./1_data_collection/afklm_api_collection/data_test:/app/data_test
     depends_on:
       afklm_mongodb:
         condition: service_healthy
@@ -127,6 +127,26 @@ services:
         start_period: 15s
 
 
+
+#---------------------------------------------------------DOWNLOAD DATA TO INPUT IT IN INPUT DATA FOLDER-----------------
+
+
+  afklm_download_data:
+    build:
+      context: ./2_bdd/Postgre/
+      dockerfile: download_collection_to_input_data_Dokerfile
+    container_name: afklm_download_data
+    environment:
+      - AFKLM_API_URL=http://afklm_api:8004/
+    depends_on:
+      afklm_api:
+        condition: service_healthy
+    restart: "no"
+    networks:
+      - default
+
+
+
 #-------------------------------------------------------------BDD POSTGRES--------------------------------------------------------------
 
   afklm_postgres:
@@ -144,6 +164,8 @@ services:
     depends_on:
         afklm_api:
           condition: service_healthy
+        afklm_download_data:
+          condition: service_completed_successfully
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "postgres"]
       interval: 10s
