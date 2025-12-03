@@ -34,7 +34,8 @@ def download_historic_flights():
 
 
 
-@app.get("/download_update_scheduled_d1_flights")
+@app.get("/download_update_scheduled_d1_flights",
+         description=f"afklm_d1_from_mongo.csv.tar.gz in {folder_path}")
 def download_update_d1_flights():
 
     route = "/update_scheduled_d1/export"
@@ -48,7 +49,8 @@ def download_update_d1_flights():
 
 
 
-@app.get("/download_scheduled_flights")
+@app.get("/download_scheduled_flights",
+         description=f"afklm_scheduled_from_mongo.csv.tar.gz in {folder_path}")
 def download_scheduled_flights():
 
     route = "/scheduled/export"

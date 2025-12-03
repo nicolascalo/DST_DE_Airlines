@@ -50,7 +50,34 @@ services:
     restart: unless-stopped
 
 
-#------------------------------------------DATA INSERTION FROM DATA FILE--------------------------------------
+
+#--------------------------------------------------------------------------------------------------MONGO_DB_API--------------------------------------------------------
+  afklm_mongodb_api:
+    build:
+      context: ./2_bdd/MongoDb/dst_de_airlines_api/
+      dockerfile: Dockerfile
+    container_name: afklm_mongodb_api
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGODB_URI=mongodb://airlines:airlines@host.docker.internal:27017/airlines?authSource=admin
+      - DATABASE_NAME=airlines
+      - FOLDER_PATH=/app/data
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      afklm_mongodb:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8000/"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+
+
+
+  #------------------------------------------DATA INSERTION FROM DATA FILE--------------------------------------
   afklm_mongodb_init:
     build:
       context: ./2_bdd/MongoDb/dst_de_airlines_api/
@@ -70,35 +97,36 @@ services:
       - default
 
 
-      
-
-#--------------------------------------------------------------------------------------------------MONGO_DB_API--------------------------------------------------------
-  afklm_mongodb_api:
-    build:
-      context: ./2_bdd/MongoDb/dst_de_airlines_api/
-      dockerfile: Dockerfile
-    container_name: afklm_mongodb_api
-    ports:
-      - "8000:8000"
-    environment:
-      - MONGODB_URI=mongodb://airlines:airlines@host.docker.internal:27017/airlines?authSource=admin
-      - DATABASE_NAME=airlines
-      - FOLDER_PATH=/app/data
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
-    depends_on:
-      afklm_mongodb:
-        condition: service_healthy
-      afklm_mongodb_init:
-        condition: service_completed_successfully
-    restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "curl", "--fail", "http://localhost:8000/docs"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-      start_period: 15s
+#----------------------------------------------------AFKLM API---------------------
     
+  afklm_api:
+      build:
+        context: ./2_bdd/Postgre/afklm_api/
+        dockerfile: Dockerfile
+      container_name: afklm_api
+      ports:
+        - "8004:8004"
+      environment:
+        - API_DST_AIRLINES_URL=http://afklm_mongodb_api:8000/
+        - DATA_INPUT=/app/data_input/
+      extra_hosts:
+        - "host.docker.internal:host-gateway"
+      depends_on:
+        afklm_mongodb_api:
+          condition: service_healthy
+        afklm_mongodb_init:
+          condition: service_completed_successfully
+      restart: unless-stopped
+      volumes:
+        - ./2_bdd/Postgre/data_input:/app/data_input
+      healthcheck:
+        test: ["CMD", "curl", "--fail", "http://localhost:8004"]
+        interval: 10s
+        timeout: 5s
+        retries: 5
+        start_period: 15s
+
+
 #-------------------------------------------------------------BDD POSTGRES--------------------------------------------------------------
 
   afklm_postgres:
@@ -113,6 +141,9 @@ services:
       POSTGRES_DB: afklm
     ports:
       - "5432:5432"
+    depends_on:
+        afklm_api:
+          condition: service_healthy
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "postgres"]
       interval: 10s
@@ -192,6 +223,3 @@ services:
       POSTGRES_PORT: 5432
       ML_API_PORT: 8001
       ML_API_HOST: afklm_ml_api
-
-
-
