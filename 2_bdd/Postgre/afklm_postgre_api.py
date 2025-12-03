@@ -35,8 +35,11 @@ def get_index():
 
 
 
-@api.get('/retrieve_latest_data_for_training', name="Retrieve the latest training dataset", tags=['training'],response_class=PlainTextResponse)
+@api.get('/load_mongodb_data_into_postgres', name="Loads the contents of the files in the data_input folder into the postreSQL database", tags=['training'],response_class=PlainTextResponse)
 def retrieve_latest_training_dataset():
+    """Check if the API is running"""
+
+
 
     sql_file_folder = os.getenv('SQL_FILE_FOLDER')
     username = os.getenv('POSTGRES_USER')
@@ -53,29 +56,65 @@ def retrieve_latest_training_dataset():
                             port=port)
 
     cur = conn.cursor()
-    data_file_folder = os.getenv('DATA_FILE_FOLDER')
 
-    file_list = os.listdir(data_file_folder)
 
-    file_list = [file for file in file_list if ".tar.gz" in file]
+
+    data_file_folder = os.getenv('DATA_FILE_FOLDER')  # /data_input
+    tmp_path = f"{data_file_folder}/tmp"
+
+    os.makedirs(tmp_path, exist_ok=True)
+
+    for file in file_list_data:
+        print(f"Decompressing {file} into {tmp_path}")
+        shutil.unpack_archive(f"{data_file_folder}/{file}", tmp_path)
+
+    print("Extracted files:", os.listdir(tmp_path))
+
+
+
+
+    file_list_data = os.listdir(data_file_folder)
+
+    file_list_data = [file for file in file_list_data if ".tar.gz" in file]
+
+    file_list_sql = os.listdir(sql_file_folder)
+
+    file_list_sql = [file for file in file_list_sql if ".sql" in file]
+    file_list_sql.sort()
 
     os.makedirs('/app/data_input/',exist_ok=True)
 
-    try:
-        for file in file_list:
-            shutil.unpack_archive(f"{data_file_folder}/{file}", f'/tmp/data_input/')
-        print("Decompressing the data files")
-    except:
-        return("issue with decompression")
+
+    file_list_data_expected = ['afklm_d1_from_mongo.csv.tar.gz',
+                               'afklm_historic_from_mongo.csv.tar.gz',
+                               'afklm_scheduled_from_mongo.csv.tar.gz']
+    
+    file_list_missing = list(set(file_list_data_expected) - set(file_list_data))
+
+    if len(file_list_missing) != 0:
+        
+        raise HTTPException(status_code=444, detail=f"Missing data files {file_list_missing}")
 
     try:
-        print("5_insert_mongodbdump")
-        sql_file = open(f'{sql_file_folder}/5_insert_mongodbdump.sql','r')
-        cur.execute(sql_file.read())
-        print("6_insert_select_flight")
-        sql_file = open(f'{sql_file_folder}/6_insert_select_flight.sql','r')
-        print("execute")
-        cur.execute(sql_file.read())
+        for file in file_list_data:
+
+            print(f"Decompressing {file} into tmp/")
+            shutil.unpack_archive(f"{data_file_folder}/{file}", f'tmp/')
+        print("Decompression over")
+    except:
+        return("issue with decompression")
+    
+    print(os.getcwd())
+    print(os.listdir('.'))
+    print(os.listdir('./tmp'))
+    try:
+
+        for file in file_list_sql:
+            print(f"{file}")
+            sql_file = open(f'{sql_file_folder}/{file}','r')
+            cur.execute(sql_file.read())
+
+
         print("commit")
         conn.commit()
         cur.close()

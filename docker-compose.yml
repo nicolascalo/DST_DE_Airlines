@@ -86,9 +86,9 @@ services:
     environment:
       - MONGODB_URI=mongodb://airlines:airlines@afklm_mongodb:27017/airlines?authSource=admin
       - DATABASE_NAME=airlines
-      - FOLDER_PATH=/app/data_test/
+      - FOLDER_PATH=/app/data/
     volumes:
-    - ./1_data_collection/afklm_api_collection/data_test:/app/data_test
+    - ./1_data_collection/afklm_api_collection/data:/app/data
     depends_on:
       afklm_mongodb:
         condition: service_healthy
@@ -161,11 +161,11 @@ services:
       POSTGRES_DB: afklm
     ports:
       - "5432:5432"
-    depends_on:
-        afklm_api:
-          condition: service_healthy
-        afklm_download_data:
-          condition: service_completed_successfully
+#    depends_on:
+#        afklm_api:
+#          condition: service_healthy
+#        afklm_download_data:
+#          condition: service_completed_successfully
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "postgres"]
       interval: 10s
@@ -174,7 +174,7 @@ services:
       start_period: 15s      
     volumes:
       - ./2_bdd/Postgre/postgres_volume:/var/lib/postgresql/data
-
+      - ./2_bdd/Postgre/data_input:/data_input
 
 
 #-------------------------------------------------------------------------POSTGRES API--------------------------------------------------------------------------------
@@ -197,10 +197,10 @@ services:
       POSTGRES_DB: afklm
       POSTGRES_URI: afklm_postgres
       POSTGRES_PORT: 5432
-      SQL_FILE_FOLDER: /app/docker-entrypoint-initdb.d
-      DATA_FILE_FOLDER: /app/data_input
+      SQL_FILE_FOLDER: /postgres_data_import_scripts
+      DATA_FILE_FOLDER: /data_input
     volumes:
-      - ./2_bdd/Postgre/data_input:/app/data_input
+      - ./2_bdd/Postgre/data_input:/data_input
 
 
 #------------------------------------------------------------------------------PG PGADMIN-------------------------------------------------------------------

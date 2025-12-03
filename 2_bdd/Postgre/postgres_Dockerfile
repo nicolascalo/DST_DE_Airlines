@@ -1,7 +1,6 @@
 FROM postgres:16-alpine
 
 RUN rm -rf postgres_volume
-ADD /data_input/afklm_historic_from_mongo.csv.tar.gz /data_input/afklm_scheduled_from_mongo.csv.tar.gz /data_input/afklm_d1_from_mongo.csv.tar.gz /tmp/data_input/
 
 
 COPY /docker-entrypoint-initdb.d /docker-entrypoint-initdb.d/
