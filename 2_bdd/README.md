@@ -79,7 +79,6 @@ Deux vues SQL sont créées automatiquement afin de faciliter l’analyse et l�
 Ces données permettent la préparation des données destinées au modèle ML et l’analyse des performances historiques.
 
 - Vue des vols futurs : liste les vols programmés à venir, combinant horaires prévus, données géographiques et métadonnées opérationnelles.
- 
 Ces vues permettent d’éviter les jointures complexes répétitives, tout en structurant la donnée selon les besoins principaux du projet. 
 
 ---
@@ -129,5 +128,8 @@ La BDD constitue la **colonne vertébrale** du projet :
 - MongoDB sert de sauvegarde brute et d’outil de validation
 
 Sans une base propre, aucune prédiction cohérente n’est possible.
+
+<img width="4746" height="3291" alt="image" src="https://github.com/user-attachments/assets/d07618c1-63fb-48a2-ab8d-582eb7ac3a83" />
+
 
 ---
