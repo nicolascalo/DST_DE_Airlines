@@ -47,7 +47,7 @@ def retrieve_latest_training_dataset():
     host = os.getenv('POSTGRES_URI')
     port = os.getenv('POSTGRES_PORT')
     database_name = os.getenv('POSTGRES_DB')
-
+    tmp_path = "/tmp"
 
     conn = psycopg2.connect(database=database_name,
                             host=host,
@@ -60,30 +60,12 @@ def retrieve_latest_training_dataset():
 
 
     data_file_folder = os.getenv('DATA_FILE_FOLDER')  # /data_input
-    tmp_path = f"{data_file_folder}/tmp"
 
     os.makedirs(tmp_path, exist_ok=True)
-
-    for file in file_list_data:
-        print(f"Decompressing {file} into {tmp_path}")
-        shutil.unpack_archive(f"{data_file_folder}/{file}", tmp_path)
-
-    print("Extracted files:", os.listdir(tmp_path))
-
-
-
 
     file_list_data = os.listdir(data_file_folder)
 
     file_list_data = [file for file in file_list_data if ".tar.gz" in file]
-
-    file_list_sql = os.listdir(sql_file_folder)
-
-    file_list_sql = [file for file in file_list_sql if ".sql" in file]
-    file_list_sql.sort()
-
-    os.makedirs('/app/data_input/',exist_ok=True)
-
 
     file_list_data_expected = ['afklm_d1_from_mongo.csv.tar.gz',
                                'afklm_historic_from_mongo.csv.tar.gz',
@@ -94,35 +76,68 @@ def retrieve_latest_training_dataset():
     if len(file_list_missing) != 0:
         
         raise HTTPException(status_code=444, detail=f"Missing data files {file_list_missing}")
+    
+    for file in file_list_data:
+        print(f"Decompressing {file} into {tmp_path}")
+        shutil.unpack_archive(f"{data_file_folder}/{file}", tmp_path)
+
+    print("Extracted files:", os.listdir(tmp_path))
+
+
+
+
+    file_list_sql = os.listdir(sql_file_folder)
+
+    file_list_sql = [file for file in file_list_sql if ".sql" in file]
+    file_list_sql.sort()
+
+
+    os.makedirs(tmp_path, exist_ok=True)
 
     try:
         for file in file_list_data:
 
-            print(f"Decompressing {file} into tmp/")
-            shutil.unpack_archive(f"{data_file_folder}/{file}", f'tmp/')
+            print(f"Decompressing {file} into {tmp_path}")
+            shutil.unpack_archive(f"{data_file_folder}/{file}", tmp_path)
+        print("Extracted files:", os.listdir(tmp_path))
         print("Decompression over")
     except:
         return("issue with decompression")
     
-    print(os.getcwd())
-    print(os.listdir('.'))
-    print(os.listdir('./tmp'))
     try:
+        print(f"SQL scripts to run: {file_list_sql}")
 
         for file in file_list_sql:
-            print(f"{file}")
-            sql_file = open(f'{sql_file_folder}/{file}','r')
-            cur.execute(sql_file.read())
+            full_path = os.path.join(sql_file_folder, file)
+            print(f"--- STARTING {file} ---")
 
+            with open(full_path, 'r') as sql_file:
+                sql_content = sql_file.read()
 
-        print("commit")
-        conn.commit()
-        cur.close()
-        conn.close()
-        return "PostgreSQL database updated with the latest dataset from MongoDB"
+                # Enable autocommit for index scripts
+                if "create_index" in file.lower():
+                    conn.autocommit = True
+                    cur.execute(sql_content)
+                    conn.autocommit = False
+                else:
+                    cur.execute(sql_content)
+                    conn.commit()  
+
+        print(f"PostgreSQL database with the contents of the files located in {data_file_folder}")
+
     except Exception as e:
         conn.rollback()
+        return f"Erreur: {e}"
+
+    finally:
+
         cur.close()
         conn.close()
 
-        return f"Erreur: {e}"
+        try:
+            for f in os.listdir(tmp_path):
+                os.remove(os.path.join(tmp_path, f))
+            return("Postgres database updated and temporary files in /tmp erased successfully.")
+
+        except Exception as cleanup_error:
+            print(f"Warning: failed to clean /tmp: {cleanup_error}")

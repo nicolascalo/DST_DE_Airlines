@@ -78,23 +78,24 @@ services:
 
 
   #------------------------------------------GET OPERATIONAL FLIGHTS FROM DATA FOLDER--------------------------------------
-  afklm_mongodb_init:
-    build:
-      context: ./2_bdd/MongoDb/dst_de_airlines_api/
-      dockerfile: Insert_by_op_flights_Dockerfile
-    container_name: afklm_mongodb_init
-    environment:
-      - MONGODB_URI=mongodb://airlines:airlines@afklm_mongodb:27017/airlines?authSource=admin
-      - DATABASE_NAME=airlines
-      - FOLDER_PATH=/app/data/
-    volumes:
-    - ./1_data_collection/afklm_api_collection/data:/app/data
-    depends_on:
-      afklm_mongodb:
-        condition: service_healthy
-    restart: "no"
-    networks:
-      - default
+#  afklm_mongodb_init:
+#    build:
+#      context: ./2_bdd/MongoDb/dst_de_airlines_api/
+#      dockerfile: Insert_by_op_flights_Dockerfile
+#    container_name: afklm_mongodb_init
+#
+#    environment:
+#      - MONGODB_URI=mongodb://airlines:airlines@afklm_mongodb:27017/airlines?authSource=admin
+#      - DATABASE_NAME=airlines
+#      - FOLDER_PATH=/app/data/
+#    volumes:
+#    - ./1_data_collection/afklm_api_collection/data:/app/data
+#    depends_on:
+#      afklm_mongodb:
+#        condition: service_healthy
+#    restart: "no"
+#    networks:
+#      - default
 
 
 #----------------------------------------------------AFKLM API---------------------
@@ -114,8 +115,8 @@ services:
       depends_on:
         afklm_mongodb_api:
           condition: service_healthy
-        afklm_mongodb_init:
-          condition: service_completed_successfully
+#        afklm_mongodb_init:
+#          condition: service_completed_successfully
       restart: unless-stopped
       volumes:
         - ./2_bdd/Postgre/data_input:/app/data_input
@@ -131,19 +132,19 @@ services:
 #---------------------------------------------------------DOWNLOAD DATA TO INPUT IT IN INPUT DATA FOLDER-----------------
 
 
-  afklm_download_data:
-    build:
-      context: ./2_bdd/Postgre/
-      dockerfile: download_collection_to_input_data_Dokerfile
-    container_name: afklm_download_data
-    environment:
-      - AFKLM_API_URL=http://afklm_api:8004/
-    depends_on:
-      afklm_api:
-        condition: service_healthy
-    restart: "no"
-    networks:
-      - default
+#  afklm_download_data:
+#    build:
+#      context: ./2_bdd/Postgre/
+#      dockerfile: download_collection_to_input_data_Dokerfile
+#    container_name: afklm_download_data
+#    environment:
+#      - AFKLM_API_URL=http://afklm_api:8004/
+#    depends_on:
+#      afklm_api:
+#        condition: service_healthy
+#    restart: "no"
+#    networks:
+#      - default
 
 
 
@@ -161,9 +162,9 @@ services:
       POSTGRES_DB: afklm
     ports:
       - "5432:5432"
-#    depends_on:
-#        afklm_api:
-#          condition: service_healthy
+    depends_on:
+        afklm_api:
+          condition: service_healthy
 #        afklm_download_data:
 #          condition: service_completed_successfully
     healthcheck:
@@ -175,6 +176,7 @@ services:
     volumes:
       - ./2_bdd/Postgre/postgres_volume:/var/lib/postgresql/data
       - ./2_bdd/Postgre/data_input:/data_input
+      - ./2_bdd/Postgre/tmp:/tmp
 
 
 #-------------------------------------------------------------------------POSTGRES API--------------------------------------------------------------------------------
@@ -201,7 +203,7 @@ services:
       DATA_FILE_FOLDER: /data_input
     volumes:
       - ./2_bdd/Postgre/data_input:/data_input
-
+      - ./2_bdd/Postgre/tmp:/tmp
 
 #------------------------------------------------------------------------------PG PGADMIN-------------------------------------------------------------------
 
