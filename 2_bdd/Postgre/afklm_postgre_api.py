@@ -22,6 +22,7 @@ load_dotenv()
 
 
 api = FastAPI(
+    title = "Air France KLM - PostgreSQL API",
     description = "REST API for updating the afklm PostgreSQL database with the latest data from MongoDB",
     docs_url = "/"
 

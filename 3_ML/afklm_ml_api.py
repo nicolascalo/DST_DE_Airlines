@@ -27,7 +27,6 @@ import traceback
 import shutil
 import glob
 import subprocess
-from dotenv import load_dotenv
 import os
 
 
@@ -95,6 +94,8 @@ def get_dayPeriod(x):
         return 'night'
 
 api = FastAPI(
+        title = "Air France KLM - ML API",
+
     description = "REST API for managing, training and querying the machine learning pipelines that aim at prediction delay on flights from the Air France - KLM API ",
     docs_url = "/",
 
