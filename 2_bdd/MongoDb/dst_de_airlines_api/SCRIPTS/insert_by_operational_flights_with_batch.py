@@ -3,7 +3,7 @@ from SERVICES.exploration_gz_file import get_json_in_gz_file_by_its_name_local, 
 from SERVICES.exploitation_json import delete_page_object_in_json
 from USE_CASES.insert_compressed_file_name_uc import insert_many_compressed_file_names
 from DAO.operational_flights import insert_many, delete_duplicates, move_to_dst_collection, delete_all_opreation_flights_collection, remove_past_flights_on_d1_collection, remove_duplicate_flights_from_scheduled,remove_past_flights_on_scheduled_collection
-from DAO.flights import add_date_insertion
+from DAO.flights import add_date_insertion, create_index
 from DAO.compressed_file_name import get_all_compressed_file_names
 from DAO.collections import get_all_collection_name
 from CONNECTION.check_gcp_connection import check_gcp_connection
@@ -124,8 +124,9 @@ def clean():
     org_collections = ['historic_operational_flights', 'update_scheduled_d1_operational_flights','scheduled_operational_flights']
     for org_collection in org_collections:
         dst_collection = org_collection.replace("_operational_","_")
-        move_to_dst_collection(org_collection, dst_collection)
         delete_duplicates(org_collection)
+        move_to_dst_collection(org_collection, dst_collection)
+        create_index(dst_collection)
         delete_all_opreation_flights_collection(org_collection)
         gc.collect()
     remove_duplicate_flights_from_scheduled()
@@ -133,6 +134,7 @@ def clean():
     remove_past_flights_on_d1_collection()
     gc.collect()
     remove_past_flights_on_scheduled_collection()
+   
 
     
     

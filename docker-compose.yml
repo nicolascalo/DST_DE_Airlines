@@ -51,6 +51,48 @@ services:
 
 
 
+  #------------------------------ MONGO DB IMPORT DUMP -------------------
+  
+  afklm_mongodb_import:
+    image: mongo:7.0
+    container_name: afklm_mongodb_import
+    depends_on:
+      afklm_mongodb:
+        condition: service_healthy
+    environment:
+      MONGO_HOST: afklm_mongodb
+      MONGO_PORT: 27017
+      MONGO_USERNAME: airlines
+      MONGO_PASSWORD: airlines
+      MONGO_DATABASE: airlines
+    volumes:
+      - ./2_bdd/MongoDb/data_dump:/dumps:ro
+    command: 
+      - bash
+      - -c
+      - |
+        set -e
+        echo "Checking for dump files in /dumps/..."
+        if ls /dumps/*.archive.gz 1> /dev/null 2>&1; then
+          DUMP_FILE=$$(ls /dumps/*.archive.gz | head -n 1)
+          echo "Found dump: $$DUMP_FILE"
+          echo "Starting mongorestore..."
+          mongorestore \
+            --host="$$MONGO_HOST:$$MONGO_PORT" \
+            --username="$$MONGO_USERNAME" \
+            --password="$$MONGO_PASSWORD" \
+            --authenticationDatabase=admin \
+            --db="$$MONGO_DATABASE" \
+            --archive="$$DUMP_FILE" \
+            --gzip \
+            --drop
+          echo "Import completed successfully!"
+        else
+          echo "No dump found, skipping import."
+        fi
+    restart: "no"
+
+
 #--------------------------------------------------------------------------------------------------MONGO_DB_API--------------------------------------------------------
   afklm_mongodb_api:
     build:
@@ -68,6 +110,9 @@ services:
     depends_on:
       afklm_mongodb:
         condition: service_healthy
+      afklm_mongodb_import:
+        condition: service_completed_successfully
+
     healthcheck:
       test: ["CMD", "curl", "--fail", "http://localhost:8000/"]
       interval: 10s
@@ -78,24 +123,24 @@ services:
 
 
   #------------------------------------------GET OPERATIONAL FLIGHTS FROM DATA FOLDER--------------------------------------
-#  afklm_mongodb_init:
-#    build:
-#      context: ./2_bdd/MongoDb/dst_de_airlines_api/
-#      dockerfile: Insert_by_op_flights_Dockerfile
-#    container_name: afklm_mongodb_init
-#
-#    environment:
-#      - MONGODB_URI=mongodb://airlines:airlines@afklm_mongodb:27017/airlines?authSource=admin
-#      - DATABASE_NAME=airlines
-#      - FOLDER_PATH=/app/data/
-#    volumes:
-#    - ./1_data_collection/afklm_api_collection/data:/app/data
-#    depends_on:
-#      afklm_mongodb:
-#        condition: service_healthy
-#    restart: "no"
-#    networks:
-#      - default
+  afklm_mongodb_init:
+    build:
+      context: ./2_bdd/MongoDb/dst_de_airlines_api/
+      dockerfile: Insert_by_op_flights_Dockerfile
+    container_name: afklm_mongodb_init
+
+    environment:
+      - MONGODB_URI=mongodb://airlines:airlines@afklm_mongodb:27017/airlines?authSource=admin
+      - DATABASE_NAME=airlines
+      - FOLDER_PATH=/app/data/
+    volumes:
+    - ./1_data_collection/afklm_api_collection/data:/app/data
+    depends_on:
+      afklm_mongodb_api:
+        condition: service_healthy
+    restart: "no"
+    networks:
+      - default
 
 
 #----------------------------------------------------AFKLM API---------------------
@@ -115,8 +160,8 @@ services:
       depends_on:
         afklm_mongodb_api:
           condition: service_healthy
-#        afklm_mongodb_init:
-#          condition: service_completed_successfully
+        afklm_mongodb_init:
+          condition: service_completed_successfully
       restart: unless-stopped
       volumes:
         - ./2_bdd/Postgre/data_input:/app/data_input
@@ -132,19 +177,19 @@ services:
 #---------------------------------------------------------DOWNLOAD DATA TO INPUT IT IN INPUT DATA FOLDER-----------------
 
 
-#  afklm_download_data:
-#    build:
-#      context: ./2_bdd/Postgre/
-#      dockerfile: download_collection_to_input_data_Dokerfile
-#    container_name: afklm_download_data
-#    environment:
-#      - AFKLM_API_URL=http://afklm_api:8004/
-#    depends_on:
-#      afklm_api:
-#        condition: service_healthy
-#    restart: "no"
-#    networks:
-#      - default
+  afklm_download_data:
+    build:
+      context: ./2_bdd/Postgre/
+      dockerfile: download_collection_to_input_data_Dokerfile
+    container_name: afklm_download_data
+    environment:
+      - AFKLM_API_URL=http://afklm_api:8004/
+    depends_on:
+      afklm_api:
+        condition: service_healthy
+    restart: "no"
+    networks:
+      - default
 
 
 
@@ -165,8 +210,8 @@ services:
     depends_on:
         afklm_api:
           condition: service_healthy
-#        afklm_download_data:
-#          condition: service_completed_successfully
+        afklm_download_data:
+          condition: service_completed_successfully
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "postgres"]
       interval: 10s

@@ -22,9 +22,9 @@ def get_by_id(colleciton_name, id):
 
   
 
-def create_index():
+def create_index(collection_name):
     check_db_connection() 
-    mongo_db_connect[collection].create_index([("id", 1)], unique=True)
+    mongo_db_connect[collection_name].create_index([("id", 1)], unique=True)
 
 
 def count_flight(collection_name):
