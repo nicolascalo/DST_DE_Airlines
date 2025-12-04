@@ -129,7 +129,6 @@ La BDD constitue la **colonne vertébrale** du projet :
 
 Sans une base propre, aucune prédiction cohérente n’est possible.
 
-<img width="4746" height="3291" alt="image" src="https://github.com/user-attachments/assets/d07618c1-63fb-48a2-ab8d-582eb7ac3a83" />
-
+<img width="1555" height="1543" alt="image" src="https://github.com/user-attachments/assets/427121b6-4772-4d9b-b738-f9eb8d49ace2" />
 
 ---
