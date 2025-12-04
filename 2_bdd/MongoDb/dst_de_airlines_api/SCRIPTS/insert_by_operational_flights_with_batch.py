@@ -36,15 +36,29 @@ def import_operationalflights_in_mongodb():
     batch_size = 200
 
     compressed_file_names = get_all_compressed_file_names()
-    existing_files = [doc['compressed_file_name'] for doc in compressed_file_names]
 
-    print("nb compressed file names already in data base"+str(len(existing_files)))
+
+      
+    compressed_file_names = list(compressed_file_names)
+
+    gz_file_names = []
+
+    for item in compressed_file_names:
+        gz_file_names.append(item['compressed_file_name'])
+
+    
+
+
+ 
+
+    missing_file_names = set(file_names) - set(gz_file_names)
+    
 
   
     i = batch_size
 
 
-    for file_name in file_names:
+    for file_name in missing_file_names:
         if is_gz_file(file_name) == True:
             gz_file_name = file_name
             collection_name = get_collection_name_by_end_gz_file_name(gz_file_name)
@@ -61,32 +75,31 @@ def import_operationalflights_in_mongodb():
             else:
                 json_file = delete_page_object_in_json(json_file)
 
-                if gz_file_name not in existing_files:
-                    if collection_name not in documents_by_collection:
-                        documents_by_collection[collection_name] = []
+
+                if collection_name not in documents_by_collection:
+                    documents_by_collection[collection_name] = []
                 
-                    print(gz_file_name + " add to list for insert")
+                print(gz_file_name + " add to list for insert")
                     
 
-                    documents_by_collection[collection_name].append(json_file)
+                documents_by_collection[collection_name].append(json_file)
 
 
-                    gz_file_name_json.append({"compressed_file_name": gz_file_name})
+                gz_file_name_json.append({"compressed_file_name": gz_file_name})
                     
 
-                    if len(documents_by_collection[collection_name])>= batch_size:
-                        insert_many(documents_by_collection[collection_name], collection_name)
-                        documents_by_collection[collection_name] = []
+                if len(documents_by_collection[collection_name])>= batch_size:
+                    insert_many(documents_by_collection[collection_name], collection_name)
+                    documents_by_collection[collection_name] = []
                 
-                        insert_many_compressed_file_names(gz_file_name_json)
-                        gz_file_name_json = []
+                    insert_many_compressed_file_names(gz_file_name_json)
+                    gz_file_name_json = []
 
                    
                 
-                        print("nb_inserted " + str(i))
-                        i = i + batch_size
-                else:
-                    print(gz_file_name + " is alredady in database")
+                    print("nb_inserted " + str(i))
+                    i = i + batch_size
+              
                        
         gc.collect()
 
@@ -112,7 +125,7 @@ def clean():
     for org_collection in org_collections:
         dst_collection = org_collection.replace("_operational_","_")
         move_to_dst_collection(org_collection, dst_collection)
-        delete_duplicates(dst_collection)
+        delete_duplicates(org_collection)
         delete_all_opreation_flights_collection(org_collection)
         gc.collect()
     remove_duplicate_flights_from_scheduled()

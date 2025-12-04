@@ -23,23 +23,26 @@ def insert_one(operation_flights, collection_name):
 
 
 def delete_duplicates(collection_name):
-    check_db_connection() 
+    check_db_connection()
     
-    print("deleting duplicates")
-    pipeline = [
-        {"$group": {"_id": "$id", "count": {"$sum": 1}, "docs": {"$push": "$_id"}}},
-        {"$match": {"count": {"$gt": 1}}}
-    ]
-    duplicates = list(mongo_db_connect[collection_name].aggregate(pipeline))
+    collection = mongo_db_connect[collection_name]
+    
+    seen_flight_ids = set()
+    flights_to_keep = []
+    
+    for operational_flight in collection.find():
+        flight_id = operational_flight.get('id')
         
-    total_deleted = 0
-    for dup in duplicates:
+        if flight_id not in seen_flight_ids:
+            seen_flight_ids.add(flight_id)
+            flights_to_keep.append(operational_flight['_id'])
     
-        docs_to_delete = dup["docs"][1:] 
-        result = mongo_db_connect[collection_name].delete_many(
-            {"_id": {"$in": docs_to_delete}}
-        )
-        total_deleted += result.deleted_count
+    all_ids = [doc['_id'] for doc in collection.find({}, {'_id': 1})]
+    ids_to_delete = [id for id in all_ids if id not in flights_to_keep]
+    
+    if ids_to_delete:
+        collection.delete_many({'_id': {'$in': ids_to_delete}})
+    
     gc.collect()
         
 
