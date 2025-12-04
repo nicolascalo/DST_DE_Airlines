@@ -21,28 +21,32 @@ def insert_one(operation_flights, collection_name):
     gc.collect
 
 
-
 def delete_duplicates(collection_name):
     check_db_connection()
-    
-    collection = mongo_db_connect[collection_name]
+    print("delete duplicates")
     
     seen_flight_ids = set()
-    flights_to_keep = []
     
-    for operational_flight in collection.find():
-        flight_id = operational_flight.get('id')
+    for op_flights in mongo_db_connect[collection_name].find():
+        operational_flights = op_flights.get('operationalFlights', [])
         
-        if flight_id not in seen_flight_ids:
-            seen_flight_ids.add(flight_id)
-            flights_to_keep.append(operational_flight['_id'])
-    
-    all_ids = [doc['_id'] for doc in collection.find({}, {'_id': 1})]
-    ids_to_delete = [id for id in all_ids if id not in flights_to_keep]
-    
-    if ids_to_delete:
-        collection.delete_many({'_id': {'$in': ids_to_delete}})
-    
+        if not operational_flights:
+            continue
+ 
+        unic_flights = []
+        
+        for flight in operational_flights:
+            flight_id = flight.get('id')
+            
+            if flight_id and flight_id not in seen_flight_ids:
+                seen_flight_ids.add(flight_id)
+                unic_flights.append(flight)
+        
+        if len(unic_flights) < len(operational_flights):
+            mongo_db_connect[collection_name].update_one(
+                {'_id': op_flights['_id']},
+                {'$set': {'operationalFlights': unic_flights}}
+            ) 
     gc.collect()
         
 
