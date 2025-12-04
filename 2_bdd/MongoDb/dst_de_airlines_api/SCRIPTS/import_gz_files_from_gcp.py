@@ -21,6 +21,3 @@ def import_gz_files_from_gcp():
                 download_gz_file_on_gcp(folder_path, file_name)
 
 import_gz_files_from_gcp()
-
-
-
