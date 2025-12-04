@@ -210,8 +210,8 @@ services:
     depends_on:
         afklm_api:
           condition: service_healthy
-        afklm_download_data:
-          condition: service_completed_successfully
+#        afklm_download_data:
+#          condition: service_completed_successfully
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "postgres"]
       interval: 10s

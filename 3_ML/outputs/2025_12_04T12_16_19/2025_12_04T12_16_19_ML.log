@@ -1,0 +1,294 @@
+2025-12-04 12:16:19,424 - __main__ - INFO - ==== Starting ML script====
+2025-12-04 12:16:19,429 - __main__ - INFO - Nb of cores: 6
+
+2025-12-04 12:16:19,466 - __main__ - INFO - ML pipeline settings loaded from afklm_ml_training_settings.json
+2025-12-04 12:16:19,838 - __main__ - INFO - Airport list loaded from airport_list.json
+2025-12-04 12:16:30,882 - __main__ - INFO - Loaded dataset: afklm_past_flight.csv.zip, shape=(750205, 60)
+2025-12-04 12:16:32,060 - __main__ - INFO - Step: raw_data | shape: (750205, 60) | null values: 3703144
+2025-12-04 12:16:33,178 - __main__ - INFO - Extracting 'company_flight' from 'flight_id' column
+2025-12-04 12:16:34,174 - __main__ - INFO - Dropping columns: Index(['flight_id', 'airline_code', 'airline_name',
+       'flightlegs_irregularity_delayinfo_delayreasonpubliclong',
+       'flightlegs_irregularity_delayinfo_delayreasonpublicshort',
+       'flightlegs_depinfo_airport_location_name',
+       'flightlegs_depinfo_airport_icao_code',
+       'flightlegs_depinfo_airport_places_depposterm_boardingterminal',
+       'flightlegs_depinfo_airport_places_depposterm_gatenumber',
+       'flightlegs_arrinfo_airport_location_name',
+       'flightlegs_arrinfo_airport_icao_code', 'company_flight'],
+      dtype='object') and rows with missing flightlegs_irregularity_delayduration_total_bracket
+2025-12-04 12:16:35,581 - __main__ - INFO - Step: drop_na_and_unused_cols | shape: (750201, 49) | null values: 1707447
+2025-12-04 12:17:26,143 - __main__ - INFO - Filtered past flights only, resulting shape: (750055, 52)
+2025-12-04 12:17:26,150 - __main__ - INFO - Filled missing flightlegs_irregularity_delayduration_total with 0
+2025-12-04 12:17:26,150 - __main__ - INFO - Categorizing flights into 'CANCELLED', 'LATE', 'ONTIME'
+2025-12-04 12:17:32,801 - __main__ - INFO - Step: categorize_flights | shape: (750055, 52) | null values: 1221822
+2025-12-04 12:17:33,518 - __main__ - INFO - Categorizing flights into 'cancelled', 'late', 'on_time'
+2025-12-04 12:17:37,713 - __main__ - INFO - Step: categorize_delay_brackets | shape: (750055, 53) | null values: 1221822
+2025-12-04 12:17:38,477 - __main__ - INFO - Filtering flights in optional list
+2025-12-04 12:17:38,740 - __main__ - INFO - AFiltering flights in mandatory list
+2025-12-04 12:17:39,595 - __main__ - INFO - Step: airport_filtering | shape: (550772, 53) | null values: 881141
+2025-12-04 12:17:40,142 - __main__ - INFO - Adding seasonality, isWeekend and dayPeriod
+2025-12-04 12:18:30,544 - __main__ - INFO - ==== Preparing classification_status dataset ====
+2025-12-04 12:18:30,569 - __main__ - INFO - Using the full dataset
+2025-12-04 12:18:30,835 - __main__ - INFO - Classification status dataset shape: X=(550772, 10), y=(550772,)
+2025-12-04 12:18:30,865 - __main__ - INFO - Classification status dataset class repartition: flightlegs_publishedstatus
+ONTIME       0.615342
+LATE         0.384092
+CANCELLED    0.000566
+Name: proportion, dtype: float64
+2025-12-04 12:18:31,265 - __main__ - INFO - Classification status train/test split: X_train=(440617, 10), X_test=(110155, 10), y_train=(440617,), y_test=(110155,)
+2025-12-04 12:18:31,265 - __main__ - INFO - Extracting features from dataset, target column: flightlegs_publishedstatus
+2025-12-04 12:18:31,328 - __main__ - INFO - Identified 0 numeric and 10 categorical features
+2025-12-04 12:18:31,328 - __main__ - INFO - Numeric features: []
+2025-12-04 12:18:31,328 - __main__ - INFO - Categorical features: ['flightlegs_aircraft_ownerairlinecode', 'flightlegs_aircraft_typecode', 'flightlegs_depinfo_airport_country_name', 'flightlegs_arrinfo_airport_code', 'flightlegs_arrinfo_airport_country_name', 'flightlegs_depinfo_airport_code', 'flightlegs_scheduledflightduration', 'flightlegs_season', 'flightlegs_arrinfo_times_scheduled_dayPeriod', 'flightlegs_depinfo_times_scheduled_dayPeriod']
+
+2025-12-04 12:20:28,762 - __main__ - INFO - Using the full dataset
+2025-12-04 12:21:44,149 - __main__ - INFO - ==== Starting ML script====
+2025-12-04 12:21:44,159 - __main__ - INFO - Nb of cores: 6
+
+2025-12-04 12:21:44,194 - __main__ - INFO - ML pipeline settings loaded from afklm_ml_training_settings.json
+2025-12-04 12:21:44,562 - __main__ - INFO - Airport list loaded from airport_list.json
+2025-12-04 12:21:54,496 - __main__ - INFO - Loaded dataset: afklm_past_flight.csv.zip, shape=(750205, 60)
+2025-12-04 12:21:55,425 - __main__ - INFO - Step: raw_data | shape: (750205, 60) | null values: 3703144
+2025-12-04 12:21:56,326 - __main__ - INFO - Extracting 'company_flight' from 'flight_id' column
+2025-12-04 12:21:57,154 - __main__ - INFO - Dropping columns: Index(['flight_id', 'airline_code', 'airline_name',
+       'flightlegs_irregularity_delayinfo_delayreasonpubliclong',
+       'flightlegs_irregularity_delayinfo_delayreasonpublicshort',
+       'flightlegs_depinfo_airport_location_name',
+       'flightlegs_depinfo_airport_icao_code',
+       'flightlegs_depinfo_airport_places_depposterm_boardingterminal',
+       'flightlegs_depinfo_airport_places_depposterm_gatenumber',
+       'flightlegs_arrinfo_airport_location_name',
+       'flightlegs_arrinfo_airport_icao_code', 'company_flight'],
+      dtype='object') and rows with missing flightlegs_irregularity_delayduration_total_bracket
+2025-12-04 12:21:58,523 - __main__ - INFO - Step: drop_na_and_unused_cols | shape: (750201, 49) | null values: 1707447
+2025-12-04 12:22:16,206 - __main__ - INFO - Computing 'flightlegs_scheduledflightduration' in minutes
+2025-12-04 12:22:23,998 - __main__ - INFO - Filtered past flights only, resulting shape: (750055, 51)
+2025-12-04 12:22:24,003 - __main__ - INFO - Filled missing flightlegs_irregularity_delayduration_total with 0
+2025-12-04 12:22:24,003 - __main__ - INFO - Categorizing flights into 'CANCELLED', 'LATE', 'ONTIME'
+2025-12-04 12:22:29,874 - __main__ - INFO - Step: categorize_flights | shape: (750055, 51) | null values: 1142080
+2025-12-04 12:22:30,557 - __main__ - INFO - Categorizing flights into 'cancelled', 'late', 'on_time'
+2025-12-04 12:22:34,965 - __main__ - INFO - Step: categorize_delay_brackets | shape: (750055, 52) | null values: 1142080
+2025-12-04 12:22:35,719 - __main__ - INFO - Filtering flights in optional list
+2025-12-04 12:22:35,988 - __main__ - INFO - AFiltering flights in mandatory list
+2025-12-04 12:22:36,808 - __main__ - INFO - Step: airport_filtering | shape: (550772, 52) | null values: 819304
+2025-12-04 12:22:37,324 - __main__ - INFO - Adding seasonality, isWeekend and dayPeriod
+2025-12-04 12:22:59,216 - __main__ - INFO - ==== Preparing classification_status dataset ====
+2025-12-04 12:22:59,225 - __main__ - INFO - Using the full dataset
+2025-12-04 12:22:59,525 - __main__ - INFO - Classification status dataset shape: X=(550772, 10), y=(550772,)
+2025-12-04 12:22:59,548 - __main__ - INFO - Classification status dataset class repartition: flightlegs_publishedstatus
+ONTIME       0.615342
+LATE         0.384092
+CANCELLED    0.000566
+Name: proportion, dtype: float64
+2025-12-04 12:23:00,017 - __main__ - INFO - Classification status train/test split: X_train=(440617, 10), X_test=(110155, 10), y_train=(440617,), y_test=(110155,)
+2025-12-04 12:23:00,018 - __main__ - INFO - Extracting features from dataset, target column: flightlegs_publishedstatus
+2025-12-04 12:23:00,078 - __main__ - INFO - Identified 1 numeric and 9 categorical features
+2025-12-04 12:23:00,078 - __main__ - INFO - Numeric features: ['flightlegs_scheduledflightduration']
+2025-12-04 12:23:00,078 - __main__ - INFO - Categorical features: ['flightlegs_aircraft_ownerairlinecode', 'flightlegs_aircraft_typecode', 'flightlegs_depinfo_airport_country_name', 'flightlegs_arrinfo_airport_code', 'flightlegs_arrinfo_airport_country_name', 'flightlegs_depinfo_airport_code', 'flightlegs_season', 'flightlegs_arrinfo_times_scheduled_dayPeriod', 'flightlegs_depinfo_times_scheduled_dayPeriod']
+
+2025-12-04 12:23:00,080 - __main__ - INFO - ==== Preparing classification_delay dataset ====
+2025-12-04 12:23:00,397 - __main__ - INFO - Step: lateFlights_filtering | shape: (211547, 11) | null values: 3899
+2025-12-04 12:23:00,467 - __main__ - INFO - Using the full dataset
+2025-12-04 12:23:00,485 - __main__ - INFO - Classification delay dataset shape: X=(211547, 10), y=(211547,)
+2025-12-04 12:23:00,517 - __main__ - INFO - Classification delay train/test split: X_train=(169237, 10), X_test=(42310, 10), y_train=(169237,), y_test=(42310,)
+2025-12-04 12:23:00,518 - __main__ - INFO - Extracting features from dataset, target column: flightlegs_irregularity_delayduration_total_bracket
+2025-12-04 12:23:00,529 - __main__ - INFO - Identified 1 numeric and 9 categorical features
+2025-12-04 12:23:00,530 - __main__ - INFO - Numeric features: ['flightlegs_scheduledflightduration']
+2025-12-04 12:23:00,530 - __main__ - INFO - Categorical features: ['flightlegs_aircraft_ownerairlinecode', 'flightlegs_aircraft_typecode', 'flightlegs_depinfo_airport_country_name', 'flightlegs_arrinfo_airport_code', 'flightlegs_arrinfo_airport_country_name', 'flightlegs_depinfo_airport_code', 'flightlegs_season', 'flightlegs_arrinfo_times_scheduled_dayPeriod', 'flightlegs_depinfo_times_scheduled_dayPeriod']
+
+2025-12-04 12:23:00,530 - __main__ - INFO - ==== Preparing regression dataset ====
+2025-12-04 12:23:00,833 - __main__ - INFO - Step: lateFlights_filtering | shape: (211547, 11) | null values: 3899
+2025-12-04 12:23:00,910 - __main__ - INFO - Saved dataset cleaning summary to 'outputs/2025_12_04T12_21_43/dataset_summary/dataset_cleaning_summary.csv'
+
+2025-12-04 12:23:00,911 - __main__ - INFO - Using the full dataset
+2025-12-04 12:23:00,932 - __main__ - INFO - Regression dataset shape: X=(211547, 10), y=(211547,)
+2025-12-04 12:23:00,969 - __main__ - INFO - Regression train/test split: X_train=(169237, 10), X_test=(42310, 10), y_train=(169237,), y_test=(42310,)
+2025-12-04 12:23:00,969 - __main__ - INFO - Extracting features from dataset, target column: flightlegs_irregularity_delayduration_total
+2025-12-04 12:23:00,980 - __main__ - INFO - Identified 1 numeric and 9 categorical features
+2025-12-04 12:23:00,980 - __main__ - INFO - Numeric features: ['flightlegs_scheduledflightduration']
+2025-12-04 12:23:00,980 - __main__ - INFO - Categorical features: ['flightlegs_aircraft_ownerairlinecode', 'flightlegs_aircraft_typecode', 'flightlegs_depinfo_airport_country_name', 'flightlegs_arrinfo_airport_code', 'flightlegs_arrinfo_airport_country_name', 'flightlegs_depinfo_airport_code', 'flightlegs_season', 'flightlegs_arrinfo_times_scheduled_dayPeriod', 'flightlegs_depinfo_times_scheduled_dayPeriod']
+
+2025-12-04 12:23:01,000 - __main__ - INFO - ==== Starting classification_status pipeline: Logistic_OVO ====
+
+2025-12-04 12:23:01,000 - __main__ - INFO - Running simple mode for Logistic_OVO
+2025-12-04 12:23:01,000 - __main__ - INFO - Starting classification_status pipeline: Logistic_OVO | mode: simple
+2025-12-04 12:23:08,108 - __main__ - INFO - Fitted simple pipeline for classification_status Logistic_OVO | Score: 0.864 | Total duration: 6 seconds
+2025-12-04 12:23:08,108 - __main__ - INFO - Saving feature importance for Logistic_OVO (classification_status)
+2025-12-04 12:23:08,110 - __main__ - WARNING - No feature importances available for Logistic_OVO
+2025-12-04 12:23:08,110 - __main__ - INFO - Generating classification_status metrics for Logistic_OVO | mode=simple
+2025-12-04 12:23:09,833 - __main__ - INFO - Skipping tree plot for Logistic_OVO_simple (not a DecisionTree model)
+2025-12-04 12:23:09,833 - __main__ - INFO - Simple mode completed for Logistic_OVO
+
+2025-12-04 12:23:09,833 - __main__ - INFO - ==== Finished classification_status pipeline: Logistic_OVO ====
+
+
+2025-12-04 12:23:09,833 - __main__ - INFO - ==== Starting classification_status pipeline: DecisionTree ====
+
+2025-12-04 12:23:09,833 - __main__ - INFO - Running simple mode for DecisionTree
+2025-12-04 12:23:09,833 - __main__ - INFO - Starting classification_status pipeline: DecisionTree | mode: simple
+2025-12-04 12:23:24,899 - __main__ - INFO - Fitted simple pipeline for classification_status DecisionTree | Score: 0.874 | Total duration: 14 seconds
+2025-12-04 12:23:24,899 - __main__ - INFO - Saving feature importance for DecisionTree (classification_status)
+2025-12-04 12:23:24,913 - __main__ - INFO - Feature importance CSV saved for DecisionTree
+2025-12-04 12:23:25,152 - __main__ - INFO - Feature importance plot saved for DecisionTree
+2025-12-04 12:23:25,153 - __main__ - INFO - Generating classification_status metrics for DecisionTree | mode=simple
+2025-12-04 12:23:26,641 - __main__ - INFO - Adjusted thresholds to original units for 1 scaled features
+2025-12-04 12:23:28,077 - __main__ - INFO - Decision tree plot saved for classification_status - DecisionTree_simple
+2025-12-04 12:23:28,077 - __main__ - INFO - Simple mode completed for DecisionTree
+
+2025-12-04 12:23:28,077 - __main__ - INFO - ==== Finished classification_status pipeline: DecisionTree ====
+
+
+2025-12-04 12:23:28,077 - __main__ - INFO - ==== Starting classification_status pipeline: RandomForest ====
+
+2025-12-04 12:23:28,077 - __main__ - INFO - Running simple mode for RandomForest
+2025-12-04 12:23:28,077 - __main__ - INFO - Starting classification_status pipeline: RandomForest | mode: simple
+2025-12-04 12:28:13,616 - __main__ - INFO - Fitted simple pipeline for classification_status RandomForest | Score: 0.874 | Total duration: 284 seconds
+2025-12-04 12:28:13,616 - __main__ - INFO - Saving feature importance for RandomForest (classification_status)
+2025-12-04 12:28:13,644 - __main__ - INFO - Feature importance CSV saved for RandomForest
+2025-12-04 12:28:13,903 - __main__ - INFO - Feature importance plot saved for RandomForest
+2025-12-04 12:28:13,904 - __main__ - INFO - Generating classification_status metrics for RandomForest | mode=simple
+2025-12-04 12:28:16,121 - __main__ - INFO - Skipping tree plot for RandomForest_simple (not a DecisionTree model)
+2025-12-04 12:28:16,121 - __main__ - INFO - Simple mode completed for RandomForest
+
+2025-12-04 12:28:16,121 - __main__ - INFO - ==== Finished classification_status pipeline: RandomForest ====
+
+
+2025-12-04 12:28:16,121 - __main__ - INFO - ==== Starting classification_status pipeline: Logistic_OVR ====
+
+2025-12-04 12:28:16,121 - __main__ - INFO - Running simple mode for Logistic_OVR
+2025-12-04 12:28:16,121 - __main__ - INFO - Starting classification_status pipeline: Logistic_OVR | mode: simple
+2025-12-04 12:28:24,734 - __main__ - INFO - Fitted simple pipeline for classification_status Logistic_OVR | Score: 0.864 | Total duration: 8 seconds
+2025-12-04 12:28:24,734 - __main__ - INFO - Saving feature importance for Logistic_OVR (classification_status)
+2025-12-04 12:28:24,735 - __main__ - WARNING - No feature importances available for Logistic_OVR
+2025-12-04 12:28:24,736 - __main__ - INFO - Generating classification_status metrics for Logistic_OVR | mode=simple
+2025-12-04 12:28:26,179 - __main__ - INFO - Skipping tree plot for Logistic_OVR_simple (not a DecisionTree model)
+2025-12-04 12:28:26,179 - __main__ - INFO - Simple mode completed for Logistic_OVR
+
+2025-12-04 12:28:26,179 - __main__ - INFO - ==== Finished classification_status pipeline: Logistic_OVR ====
+
+
+2025-12-04 12:28:26,182 - __main__ - INFO - ==== Starting classification_delay pipeline: Logistic_OVO ====
+
+2025-12-04 12:28:26,182 - __main__ - INFO - Running simple mode for Logistic_OVO
+2025-12-04 12:28:26,182 - __main__ - INFO - Starting classification_delay pipeline: Logistic_OVO | mode: simple
+2025-12-04 12:28:29,299 - __main__ - INFO - Fitted simple pipeline for classification_delay Logistic_OVO | Score: 0.334 | Total duration: 2 seconds
+2025-12-04 12:28:29,300 - __main__ - INFO - Saving feature importance for Logistic_OVO (classification_delay)
+2025-12-04 12:28:29,301 - __main__ - WARNING - No feature importances available for Logistic_OVO
+2025-12-04 12:28:29,301 - __main__ - INFO - Generating classification_delay metrics for Logistic_OVO | mode=simple
+2025-12-04 12:28:30,130 - __main__ - INFO - Skipping tree plot for Logistic_OVO_simple (not a DecisionTree model)
+2025-12-04 12:28:30,130 - __main__ - INFO - Simple mode completed for Logistic_OVO
+
+2025-12-04 12:28:30,130 - __main__ - INFO - ==== Finished classification_delay pipeline: Logistic_OVO ====
+
+
+2025-12-04 12:28:30,130 - __main__ - INFO - ==== Starting classification_delay pipeline: DecisionTree ====
+
+2025-12-04 12:28:30,130 - __main__ - INFO - Running simple mode for DecisionTree
+2025-12-04 12:28:30,130 - __main__ - INFO - Starting classification_delay pipeline: DecisionTree | mode: simple
+2025-12-04 12:28:38,399 - __main__ - INFO - Fitted simple pipeline for classification_delay DecisionTree | Score: 0.324 | Total duration: 8 seconds
+2025-12-04 12:28:38,399 - __main__ - INFO - Saving feature importance for DecisionTree (classification_delay)
+2025-12-04 12:28:38,402 - __main__ - INFO - Feature importance CSV saved for DecisionTree
+2025-12-04 12:28:38,614 - __main__ - INFO - Feature importance plot saved for DecisionTree
+2025-12-04 12:28:38,615 - __main__ - INFO - Generating classification_delay metrics for DecisionTree | mode=simple
+2025-12-04 12:28:39,380 - __main__ - INFO - Adjusted thresholds to original units for 1 scaled features
+2025-12-04 12:28:40,718 - __main__ - INFO - Decision tree plot saved for classification_delay - DecisionTree_simple
+2025-12-04 12:28:40,718 - __main__ - INFO - Simple mode completed for DecisionTree
+
+2025-12-04 12:28:40,718 - __main__ - INFO - ==== Finished classification_delay pipeline: DecisionTree ====
+
+
+2025-12-04 12:28:40,718 - __main__ - INFO - ==== Starting classification_delay pipeline: RandomForest ====
+
+2025-12-04 12:28:40,718 - __main__ - INFO - Running simple mode for RandomForest
+2025-12-04 12:28:40,718 - __main__ - INFO - Starting classification_delay pipeline: RandomForest | mode: simple
+2025-12-04 12:30:13,960 - __main__ - INFO - Fitted simple pipeline for classification_delay RandomForest | Score: 0.322 | Total duration: 92 seconds
+2025-12-04 12:30:13,960 - __main__ - INFO - Saving feature importance for RandomForest (classification_delay)
+2025-12-04 12:30:13,976 - __main__ - INFO - Feature importance CSV saved for RandomForest
+2025-12-04 12:30:14,209 - __main__ - INFO - Feature importance plot saved for RandomForest
+2025-12-04 12:30:14,210 - __main__ - INFO - Generating classification_delay metrics for RandomForest | mode=simple
+2025-12-04 12:30:15,169 - __main__ - INFO - Skipping tree plot for RandomForest_simple (not a DecisionTree model)
+2025-12-04 12:30:15,169 - __main__ - INFO - Simple mode completed for RandomForest
+
+2025-12-04 12:30:15,169 - __main__ - INFO - ==== Finished classification_delay pipeline: RandomForest ====
+
+
+2025-12-04 12:30:15,169 - __main__ - INFO - ==== Starting classification_delay pipeline: Logistic_OVR ====
+
+2025-12-04 12:30:15,169 - __main__ - INFO - Running simple mode for Logistic_OVR
+2025-12-04 12:30:15,169 - __main__ - INFO - Starting classification_delay pipeline: Logistic_OVR | mode: simple
+2025-12-04 12:30:18,710 - __main__ - INFO - Fitted simple pipeline for classification_delay Logistic_OVR | Score: 0.335 | Total duration: 3 seconds
+2025-12-04 12:30:18,711 - __main__ - INFO - Saving feature importance for Logistic_OVR (classification_delay)
+2025-12-04 12:30:18,712 - __main__ - WARNING - No feature importances available for Logistic_OVR
+2025-12-04 12:30:18,712 - __main__ - INFO - Generating classification_delay metrics for Logistic_OVR | mode=simple
+2025-12-04 12:30:19,370 - __main__ - INFO - Skipping tree plot for Logistic_OVR_simple (not a DecisionTree model)
+2025-12-04 12:30:19,370 - __main__ - INFO - Simple mode completed for Logistic_OVR
+
+2025-12-04 12:30:19,370 - __main__ - INFO - ==== Finished classification_delay pipeline: Logistic_OVR ====
+
+
+2025-12-04 12:30:19,373 - __main__ - INFO - ==== Starting regression pipeline: LinearRegression ====
+
+2025-12-04 12:30:19,373 - __main__ - INFO - Running simple mode for LinearRegression
+2025-12-04 12:30:19,373 - __main__ - INFO - Starting regression pipeline: LinearRegression | mode: simple
+2025-12-04 12:30:31,795 - __main__ - INFO - Fitted simple pipeline for LinearRegression | r2: 0.051 | Total duration: 12 seconds
+2025-12-04 12:30:31,795 - __main__ - INFO - Saving feature importance for LinearRegression (regression)
+2025-12-04 12:30:31,798 - __main__ - INFO - Feature importance CSV saved for LinearRegression
+2025-12-04 12:30:32,068 - __main__ - INFO - Feature importance plot saved for LinearRegression
+2025-12-04 12:30:32,069 - __main__ - INFO - Generating regression metrics for LinearRegression | mode=simple
+2025-12-04 12:30:32,552 - __main__ - INFO - Skipping tree plot for LinearRegression_simple (not a DecisionTree model)
+2025-12-04 12:30:32,552 - __main__ - INFO - Simple mode completed for LinearRegression
+
+2025-12-04 12:30:32,552 - __main__ - INFO - ==== Finished regression pipeline: LinearRegression ====
+
+
+2025-12-04 12:30:32,552 - __main__ - INFO - ==== Starting regression pipeline: DecisionTreeRegressor ====
+
+2025-12-04 12:30:32,552 - __main__ - INFO - Running simple mode for DecisionTreeRegressor
+2025-12-04 12:30:32,552 - __main__ - INFO - Starting regression pipeline: DecisionTreeRegressor | mode: simple
+2025-12-04 12:30:41,213 - __main__ - INFO - Fitted simple pipeline for DecisionTreeRegressor | r2: 0.001 | Total duration: 8 seconds
+2025-12-04 12:30:41,214 - __main__ - INFO - Saving feature importance for DecisionTreeRegressor (regression)
+2025-12-04 12:30:41,217 - __main__ - INFO - Feature importance CSV saved for DecisionTreeRegressor
+2025-12-04 12:30:41,479 - __main__ - INFO - Feature importance plot saved for DecisionTreeRegressor
+2025-12-04 12:30:41,479 - __main__ - INFO - Generating regression metrics for DecisionTreeRegressor | mode=simple
+2025-12-04 12:30:41,981 - __main__ - INFO - Adjusted thresholds to original units for 1 scaled features
+2025-12-04 12:30:43,451 - __main__ - INFO - Decision tree plot saved for regression - DecisionTreeRegressor_simple
+2025-12-04 12:30:43,451 - __main__ - INFO - Simple mode completed for DecisionTreeRegressor
+
+2025-12-04 12:30:43,452 - __main__ - INFO - ==== Finished regression pipeline: DecisionTreeRegressor ====
+
+
+2025-12-04 12:30:43,452 - __main__ - INFO - ==== Starting regression pipeline: RandomForestRegressor ====
+
+2025-12-04 12:30:43,452 - __main__ - INFO - Running simple mode for RandomForestRegressor
+2025-12-04 12:30:43,452 - __main__ - INFO - Starting regression pipeline: RandomForestRegressor | mode: simple
+2025-12-04 12:33:32,269 - __main__ - INFO - Fitted simple pipeline for RandomForestRegressor | r2: 0.021 | Total duration: 168 seconds
+2025-12-04 12:33:32,269 - __main__ - INFO - Saving feature importance for RandomForestRegressor (regression)
+2025-12-04 12:33:32,296 - __main__ - INFO - Feature importance CSV saved for RandomForestRegressor
+2025-12-04 12:33:32,512 - __main__ - INFO - Feature importance plot saved for RandomForestRegressor
+2025-12-04 12:33:32,512 - __main__ - INFO - Generating regression metrics for RandomForestRegressor | mode=simple
+2025-12-04 12:33:33,103 - __main__ - INFO - Skipping tree plot for RandomForestRegressor_simple (not a DecisionTree model)
+2025-12-04 12:33:33,103 - __main__ - INFO - Simple mode completed for RandomForestRegressor
+
+2025-12-04 12:33:33,103 - __main__ - INFO - ==== Finished regression pipeline: RandomForestRegressor ====
+
+
+2025-12-04 12:33:33,103 - __main__ - INFO - ==== Starting regression pipeline: XGBRegressor ====
+
+2025-12-04 12:33:33,103 - __main__ - INFO - Running simple mode for XGBRegressor
+2025-12-04 12:33:33,104 - __main__ - INFO - Starting regression pipeline: XGBRegressor | mode: simple
+2025-12-04 12:33:34,369 - __main__ - INFO - Fitted simple pipeline for XGBRegressor | r2: 0.068 | Total duration: 1 seconds
+2025-12-04 12:33:34,369 - __main__ - INFO - Saving feature importance for XGBRegressor (regression)
+2025-12-04 12:33:34,379 - __main__ - INFO - Feature importance CSV saved for XGBRegressor
+2025-12-04 12:33:34,649 - __main__ - INFO - Feature importance plot saved for XGBRegressor
+2025-12-04 12:33:34,649 - __main__ - INFO - Generating regression metrics for XGBRegressor | mode=simple
+2025-12-04 12:33:35,105 - __main__ - INFO - Skipping tree plot for XGBRegressor_simple (not a DecisionTree model)
+2025-12-04 12:33:35,105 - __main__ - INFO - Simple mode completed for XGBRegressor
+
+2025-12-04 12:33:35,105 - __main__ - INFO - ==== Finished regression pipeline: XGBRegressor ====
+
+
+2025-12-04 12:33:39,612 - __main__ - INFO - Saved top 20 features summary for all pipelines
+2025-12-04 12:33:49,369 - __main__ - INFO - Saved combined global ML summary for all pipelines and modes
+2025-12-04 12:41:06,486 - __main__ - INFO - Saved combined global ML summary for all pipelines and modes
+2025-12-04 12:41:06,491 - __main__ - INFO - Saved enhanced global ML summary
+2025-12-04 12:41:06,492 - __main__ - INFO - Created enhanced global ML summary to historical summaries

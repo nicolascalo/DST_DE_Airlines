@@ -797,8 +797,8 @@ df_cleaned['flightlegs_depinfo_times_scheduled'] = df_cleaned.apply(
 
 
 
-logger.info("Computing 'flightlegs_scheduledFlightDuration' in minutes")
-df_cleaned["flightlegs_scheduledFlightDuration"] = df_cleaned.apply(
+logger.info("Computing 'flightlegs_scheduledflightduration' in minutes")
+df_cleaned["flightlegs_scheduledflightduration"] = df_cleaned.apply(
     lambda row: (datetime.datetime.fromisoformat(row.flightlegs_arrinfo_times_scheduled)
                  - datetime.datetime.fromisoformat(row.flightlegs_depinfo_times_scheduled)).seconds / 60,
     axis=1
@@ -1258,39 +1258,32 @@ if global_summary:
     # Convert to DataFrame
     df_global = pd.DataFrame(global_summary)
 
-    # Expand hyperparameters JSON into separate columns
-    def expand_hyperparams(df, column='hyperparameters'):
-        if column in df.columns:
-            hp_expanded = df[column].apply(lambda x: json.loads(x) if pd.notnull(x) else {})
-            hp_df = pd.json_normalize(hp_expanded)
-            df = pd.concat([df.drop(columns=[column]), hp_df], axis=1)
-        return df
+    df_global = df_global.loc[:, ["pipeline","mode","problem_type","dataset_size_training","dataset_size_testing","accuracy","macro_avg_precision","macro_avg_recall","macro_avg_f1","mae","mse","rmse","r2","processing_time","target_variable","numeric_features","categorical_features","hyperparameters"]] 
 
-    df_global_expanded = expand_hyperparams(df_global)
 
-    df_global_expanded['best_pipeline'] = False
+    df_global['best_pipeline'] = False
 
     # Best classification_status pipeline (highest accuracy)
-    df_cls_status = df_global_expanded[df_global_expanded['problem_type']=='classification_status']
+    df_cls_status = df_global[df_global['problem_type']=='classification_status']
     if not df_cls_status.empty:
         idx_best_cls_status = df_cls_status['accuracy'].idxmax()
-        df_global_expanded.loc[idx_best_cls_status, 'best_pipeline'] = True
+        df_global.loc[idx_best_cls_status, 'best_pipeline'] = True
 
     # Best classification_delay pipeline (highest r2)
-    df_cls_delay = df_global_expanded[df_global_expanded['problem_type']=='classification_delay']
+    df_cls_delay = df_global[df_global['problem_type']=='classification_delay']
     if not df_cls_delay.empty:
         idx_best_cls_delay = df_cls_delay['accuracy'].idxmax()
-        df_global_expanded.loc[idx_best_cls_delay, 'best_pipeline'] = True
+        df_global.loc[idx_best_cls_delay, 'best_pipeline'] = True
 
     # Best regression pipeline (highest r2)
-    df_reg = df_global_expanded[df_global_expanded['problem_type']=='regression']
+    df_reg = df_global[df_global['problem_type']=='regression']
     if not df_reg.empty:
         idx_best_reg = df_reg['r2'].idxmax()
-        df_global_expanded.loc[idx_best_reg, 'best_pipeline'] = True
+        df_global.loc[idx_best_reg, 'best_pipeline'] = True
 
-    df_global_expanded['timestamp'] = script_start_time
+    df_global['timestamp'] = script_start_time
 
-    cols = df_global_expanded.columns.tolist()
+    cols = df_global.columns.tolist()
     if 'best_pipeline' in cols:
         cols.remove('best_pipeline')
         cols = ['pipeline', 'best_pipeline'] + cols[1:]  # keep 'pipeline' first, 'best_pipeline' second
@@ -1299,39 +1292,39 @@ if global_summary:
         cols.remove('timestamp')
         cols = ['pipeline', 'timestamp'] + cols[1:] 
 
-    df_global_expanded = df_global_expanded[cols]
+    df_global = df_global[cols]
 
 
-    df_global_expanded.to_csv(f"{output_folder}/{script_start_time}_global_ml_summary_expanded.csv", index=False)
-    logger.info("Saved enhanced global ML summary with expanded hyperparameters")
+    df_global.to_csv(f"{output_folder}/{script_start_time}_global_ml_summary.csv", index=False)
+    logger.info("Saved enhanced global ML summary")
 
     try:
-        historical_global = pd.read_csv(f"{ml_training_settings['OUTPUT_DIR']}/historical_global_ml_summary_expanded.csv")
-        historical_global = pd.concat([historical_global,df_global_expanded])
-        historical_global.drop_duplicates().to_csv(f"{ml_training_settings['OUTPUT_DIR']}/historical_global_ml_summary_expanded.csv", index=False)
-        logger.info("Appended current enhanced global ML summary with expanded hyperparameters to historical summaries")
+        historical_global = pd.read_csv(f"{ml_training_settings['OUTPUT_DIR']}/historical_global_ml_summary.csv")
+        historical_global = pd.concat([historical_global,df_global])
+        historical_global.drop_duplicates().to_csv(f"{ml_training_settings['OUTPUT_DIR']}/historical_global_ml_summary.csv", index=False)
+        logger.info("Appended current enhanced global ML summary to historical summaries")
     except:
-        historical_global = df_global_expanded
-        df_global_expanded.to_csv(f"{ml_training_settings['OUTPUT_DIR']}/historical_global_ml_summary_expanded.csv", index=False)
+        historical_global = df_global
+        df_global.to_csv(f"{ml_training_settings['OUTPUT_DIR']}/historical_global_ml_summary.csv", index=False)
 
-        logger.info("Created enhanced global ML summary with expanded hyperparameters to historical summaries")
+        logger.info("Created enhanced global ML summary to historical summaries")
 
 
     if ml_training_settings['MODEL_TO_KEEP'] == "LATEST":
 
 
-        best_model_summary_classification_status = df_global_expanded[(df_global_expanded['problem_type'] == "classification_status")]
+        best_model_summary_classification_status = df_global[(df_global['problem_type'] == "classification_status")]
         best_model_summary_classification_status = best_model_summary_classification_status[(best_model_summary_classification_status['accuracy'] == best_model_summary_classification_status['accuracy'].max())]
         
         best_model_summary_classification_status_filename = "_".join([best_model_summary_classification_status['problem_type'].values[0] ,best_model_summary_classification_status['timestamp'].values[0] ,best_model_summary_classification_status['pipeline'].values[0] ,best_model_summary_classification_status['mode'].values[0] ])
 
-        best_model_summary_classification_delay = df_global_expanded[(df_global_expanded['problem_type'] == "classification_delay")]
+        best_model_summary_classification_delay = df_global[(df_global['problem_type'] == "classification_delay")]
         best_model_summary_classification_delay = best_model_summary_classification_delay[(best_model_summary_classification_delay['accuracy'] == best_model_summary_classification_delay['accuracy'].max())]
         
         best_model_summary_classification_delay_filename = "_".join([best_model_summary_classification_delay['problem_type'].values[0] ,best_model_summary_classification_delay['timestamp'].values[0] ,best_model_summary_classification_delay['pipeline'].values[0] ,best_model_summary_classification_delay['mode'].values[0] ])
 
 
-        best_model_summary_regression = df_global_expanded[df_global_expanded['r2'] == df_global_expanded['r2'].max()]
+        best_model_summary_regression = df_global[df_global['r2'] == df_global['r2'].max()]
         best_model_summary_regression_filename = "_".join([best_model_summary_regression['problem_type'].values[0] ,best_model_summary_regression['timestamp'].values[0] ,best_model_summary_regression['pipeline'].values[0] ,best_model_summary_regression['mode'].values[0] ])
 
 

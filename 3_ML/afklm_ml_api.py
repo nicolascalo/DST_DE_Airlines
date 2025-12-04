@@ -437,7 +437,7 @@ def post_users(parameters: Payload_flight):
     )
 
 
-    entry_cleaned["flightlegs_scheduledFlightDuration"] = entry_cleaned.apply(
+    entry_cleaned["flightlegs_scheduledflightduration"] = entry_cleaned.apply(
         lambda row: (datetime.datetime.fromisoformat(row.flightlegs_arrinfo_times_scheduled)
                     - datetime.datetime.fromisoformat(row.flightlegs_depinfo_times_scheduled)).seconds / 60,
         axis=1
