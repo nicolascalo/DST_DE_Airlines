@@ -279,8 +279,8 @@ services:
     restart: always
     ports:
       - 8050:8050
-    volumes:
-      - ./4_dashboard/assets:/app/assets
+    #volumes:
+   #   - ./4_dashboard/assets:/app/assets
     depends_on:
       afklm_ml_api:
         condition: service_healthy
