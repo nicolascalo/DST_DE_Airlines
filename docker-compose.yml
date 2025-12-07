@@ -170,8 +170,8 @@ services:
           condition: service_healthy
         afklm_postgres:
           condition: service_healthy
-        afklm_mongodb_init:
-          condition: service_completed_successfully
+#        afklm_mongodb_init:
+#          condition: service_completed_successfully
 
 
       restart: unless-stopped

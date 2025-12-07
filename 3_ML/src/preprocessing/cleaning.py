@@ -1,11 +1,12 @@
 from config.config_ml import SETTINGS_ML
 from src.utils.logger import get_logger
 
-logger = get_logger()
 
 
 
 def clean_dataset(df, settings):
+    logger = get_logger()
+    
     df = df.copy()
 
     logger.info(f"================================== Data cleaning ==================================")

@@ -1,7 +1,6 @@
 from config.config_ml import SETTINGS_ML
 from src.utils.logger import get_logger
 
-logger = get_logger()
 
 
 def categorize_delay(row):   
@@ -32,6 +31,8 @@ def categorize_status(row):
 
 
 def engineer_classification_targets(df, SETTINGS_ML):
+    logger = get_logger()
+
     logger.info(f"================================== Target engineering ==================================")
     df = df.copy()
 

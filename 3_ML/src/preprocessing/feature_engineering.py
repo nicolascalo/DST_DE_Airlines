@@ -2,7 +2,6 @@ from config.config_ml import SETTINGS_ML
 from src.utils.logger import get_logger
 import datetime
 import re
-logger = get_logger()
 
 
 def categorize_delay(row):   
@@ -47,15 +46,21 @@ def safe_isoparse(val):
     except Exception:
         return None
 
-def add_features(df, SETTINGS_ML):
-    logger.info(f"================================== Feature engineering ==================================")
+def add_features(df, SETTINGS_ML, create_log = True):
+
+
+    if create_log:
+        logger = get_logger()
+        logger.info(f"================================== Feature engineering ==================================")
     
     df = df.copy()
 
 
     # extract company_flight if flight_id exists
+    if create_log:
+        logger.info("Extracting 'company_flight' from 'flight_id' column")
 
-    logger.info("Extracting 'company_flight' from 'flight_id' column")
+
     if 'flight_id' in df.columns:
         df['company_flight'] = df['flight_id'].astype(str).apply(lambda x: re.sub(r'^.*?\\+', '', x))
 
@@ -77,8 +82,8 @@ def add_features(df, SETTINGS_ML):
             return None
         df['flightlegs_scheduledflightduration'] = df.apply(compute_duration, axis=1)
 
-
-    logger.info("Adding seasonality, isWeekend and dayPeriod")
+    if create_log:
+        logger.info("Adding seasonality, isWeekend and dayPeriod")
 
 
     if 'flightlegs_depinfo_times_scheduled' in df.columns:

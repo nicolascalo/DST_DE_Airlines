@@ -3,9 +3,10 @@ import pandas as pd
 from config.config_ml import SETTINGS_ML
 from src.utils.logger import get_logger
 
-logger = get_logger()
 
 def load_latest_csv(SETTINGS_ML):
+    logger = get_logger()
+
     logger.info(f"================================== Data loading ==================================")
 
 
@@ -25,6 +26,8 @@ def load_latest_csv(SETTINGS_ML):
 
 
 def load_best_models(SETTINGS_ML):
+    logger = get_logger()
+
     logger.info(f"================================== Model loading ==================================")
     try:
         best_models = pd.read_csv(f"{SETTINGS_ML['OUTPUT_DIR']}/best_models/best_models.csv")

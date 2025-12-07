@@ -4,9 +4,11 @@ import matplotlib.pyplot as plt
 from src.utils.logger import get_logger
 import os
 
-logger = get_logger()
 
 def save_feature_importance(pipeline, pipeline_name, problem_type, settings):
+
+    logger = get_logger()
+    
     try:
         clf = pipeline.best_estimator_ if hasattr(pipeline, 'best_estimator_') else pipeline
         model = clf.named_steps.get('classifier', clf)

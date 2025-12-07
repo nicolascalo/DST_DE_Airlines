@@ -10,7 +10,6 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import os
 
-logger = get_logger()
 
 
 def sklearn_params_to_dict(params):
@@ -38,6 +37,9 @@ def extract_hyperparameters(pipe):
 
 
 def run_all_pipelines(pipelines, datasets, SETTINGS_ML, best_model_scores):
+
+    logger = get_logger()
+
     run_summary = pd.DataFrame()
     try:
         

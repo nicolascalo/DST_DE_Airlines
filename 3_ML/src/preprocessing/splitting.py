@@ -2,7 +2,6 @@ from sklearn.model_selection import train_test_split
 from config.config_ml import SETTINGS_ML
 from src.utils.logger import get_logger
 
-logger = get_logger()
 
 
 
@@ -30,6 +29,8 @@ def _limit_df(df, dataset):
 
 
 def prepare_all_datasets(df, SETTINGS_ML):
+    logger = get_logger()
+
     
     logger.info(f"================================== Dataset splitting and feature selection ==================================")
 

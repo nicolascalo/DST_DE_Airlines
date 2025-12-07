@@ -31,7 +31,7 @@ def get_delay_predictions(payload: PayloadFlight):
 
     # Feature engineering
     try:
-        entry_cleaned = add_features(entry_df, SETTINGS_ML)
+        entry_cleaned = add_features(entry_df, SETTINGS_ML, create_log = False)
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Feature engineering failed: {e}")
 

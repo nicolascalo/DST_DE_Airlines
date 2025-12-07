@@ -10,7 +10,6 @@ from xgboost import XGBRegressor
 from src.models.grid_params import get_grid_params
 from src.utils.preprocessing_utils import get_numeric_categorical
 from src.utils.logger import get_logger
-logger = get_logger()
 
 
 def build_preprocessor(X, target_col):
@@ -21,6 +20,7 @@ def build_preprocessor(X, target_col):
     return preproc
 
 def build_pipelines(datasets, settings):
+    logger = get_logger()
 
     logger.info(f"================================== Pipelines building ==================================")
 
