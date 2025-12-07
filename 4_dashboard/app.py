@@ -148,8 +148,8 @@ app.layout = html.Div(
                                 ),  
                                 html.Li(
                                     html.A(
-                                        "pgAdmin",
-                                        href="http://localhost:5050",
+                                        "postgreSQL",
+                                        href="http://localhost:8004",
                                         target="_blank"
                                         )
                                 ),                                
