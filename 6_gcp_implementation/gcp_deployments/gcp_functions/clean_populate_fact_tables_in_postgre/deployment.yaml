@@ -1,0 +1,122 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: clean-populate-fact-tables-in-postgre
+  namespace: '901450845940'
+  selfLink: /apis/serving.knative.dev/v1/namespaces/901450845940/services/clean-populate-fact-tables-in-postgre
+  uid: 7d13d1fe-3e83-4d40-bb81-514d4efafbb2
+  resourceVersion: AAZFGNhNpVo
+  generation: 2
+  creationTimestamp: '2025-12-04T04:21:05.259025Z'
+  labels:
+    run.googleapis.com/satisfiesPzs: 'true'
+    cloud.googleapis.com/location: europe-west9
+  annotations:
+    serving.knative.dev/creator: analdupont1995@gmail.com
+    serving.knative.dev/lastModifier: analdupont1995@gmail.com
+    run.googleapis.com/build-base-image: europe-west9-docker.pkg.dev/serverless-runtimes/google-22/runtimes/python312
+    run.googleapis.com/build-enable-automatic-updates: 'true'
+    run.googleapis.com/client-name: cloud-console
+    run.googleapis.com/build-function-target: clean_populate_fact_tables_in_postgre
+    run.googleapis.com/build-name: projects/901450845940/locations/europe-west9/builds/9c5169e2-dad6-4217-a804-27b833369f98
+    run.googleapis.com/build-source-location: gs://run-sources-trusty-anchor-473006-u9-europe-west9/services/clean-populate-fact-tables-in-postgre/1764822769.138000.zip#1764822769354743
+    run.googleapis.com/build-image-uri: europe-west9-docker.pkg.dev/trusty-anchor-473006-u9/cloud-run-source-deploy/clean-populate-fact-tables-in-postgre
+    run.googleapis.com/operation-id: 4e0161ef-9278-4640-b7b7-794fa2e11ca9
+    run.googleapis.com/ingress: all
+    run.googleapis.com/ingress-status: all
+    run.googleapis.com/minScale: '1'
+    run.googleapis.com/maxScale: '5'
+    run.googleapis.com/urls: '["https://clean-populate-fact-tables-in-postgre-901450845940.europe-west9.run.app","https://clean-populate-fact-tables-in-postgre-ofodcmkpga-od.a.run.app"]'
+spec:
+  template:
+    metadata:
+      labels:
+        run.googleapis.com/startupProbeType: Default
+      annotations:
+        run.googleapis.com/client-name: cloud-console
+        autoscaling.knative.dev/maxScale: '3'
+        run.googleapis.com/base-images: '{"clean-populate-fact-tables-in-postgre-1":"europe-west9-docker.pkg.dev/serverless-runtimes/google-22/runtimes/python312"}'
+        run.googleapis.com/startup-cpu-boost: 'true'
+    spec:
+      containerConcurrency: 80
+      timeoutSeconds: 300
+      serviceAccountName: 901450845940-compute@developer.gserviceaccount.com
+      containers:
+      - name: clean-populate-fact-tables-in-postgre-1
+        image: europe-west9-docker.pkg.dev/trusty-anchor-473006-u9/cloud-run-source-deploy/clean-populate-fact-tables-in-postgre@sha256:ed5d43bddfcce954b33ec56bdfc2831807974193283fe5fdaccdbe1708ee14ca
+        ports:
+        - name: http1
+          containerPort: 8080
+        env:
+        - name: MONGODB_URI_GET_ALL_CSV_URL
+          value: https://dst-de-airlines-api-901450845940.europe-west1.run.app/dump/all
+        - name: PROJECT_ID
+          value: trusty-anchor-473006-u9
+        - name: BUCKET_NAME
+          value: airfrance-bucket
+        - name: DATABASE_NAME
+          value: airlines_test
+        - name: POSTGRES_DB_NAME
+          value: new_airlines_db
+        - name: POSTGRES_USER
+          value: "[REDACTED]"
+        - name: POSTGRES_PASSWORD
+          value: "[REDACTED]"
+        - name: POSTGRES_HOST
+          value: "[REDACTED]"
+        - name: POSTGRES_PORT
+          value: '5432'
+        - name: TABLE_NAME
+          value: mongodb_past
+        - name: COLLECTION
+          value: historic
+        - name: MAPPING_FILE_BLOB_NAME
+          value: mongodb_postgres_mapping_files/mongodb_new_mapping_postgrsql.json
+        - name: MONGODB_FASTAPI_GET_CSV_URL_WITH_DATE
+          value: https://dst-de-airlines-api-latest.onrender.com/removed/scheduled/flights/csv/with_date?date=
+        - name: MONGODB_URI
+          value: "[REDACTED]"
+        - name: DATABASE_NAME
+          value: airlines
+        - name: FOLDER_PATH
+          value: ../../1_data_collection/afklm_api_collection/data/
+        - name: MONGODB_URI_GET_CSV
+          value: https://dst-de-airlines-api-901450845940.europe-west1.run.app
+        resources:
+          limits:
+            cpu: 1000m
+            memory: 512Mi
+        startupProbe:
+          timeoutSeconds: 240
+          periodSeconds: 240
+          failureThreshold: 1
+          tcpSocket:
+            port: 8080
+      runtimeClassName: run.googleapis.com/linux-base-image-update
+  traffic:
+  - percent: 100
+    latestRevision: true
+status:
+  observedGeneration: 2
+  conditions:
+  - type: Ready
+    status: 'True'
+    lastTransitionTime: '2025-12-04T04:34:30.762842Z'
+  - type: BaseImageValidated
+    status: 'True'
+    severity: Info
+  - type: ConfigurationsReady
+    status: 'True'
+    lastTransitionTime: '2025-12-04T04:34:22.428480Z'
+  - type: RoutesReady
+    status: 'True'
+    lastTransitionTime: '2025-12-04T04:34:30.717553Z'
+  latestReadyRevisionName: clean-populate-fact-tables-in-postgre-00002-spf
+  latestCreatedRevisionName: clean-populate-fact-tables-in-postgre-00002-spf
+  traffic:
+  - revisionName: clean-populate-fact-tables-in-postgre-00002-spf
+    percent: 100
+    latestRevision: true
+  url: https://clean-populate-fact-tables-in-postgre-ofodcmkpga-od.a.run.app
+  address:
+    url: https://clean-populate-fact-tables-in-postgre-ofodcmkpga-od.a.run.app

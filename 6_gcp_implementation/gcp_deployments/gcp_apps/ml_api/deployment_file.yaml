@@ -1,0 +1,137 @@
+
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: mongo-db
+  namespace: '901450845940'
+  selfLink: /apis/serving.knative.dev/v1/namespaces/901450845940/services/mongo-db
+  uid: 247e313d-d89e-4001-bdce-ac9ec65faf55
+  resourceVersion: AAZFUSmobtQ
+  generation: 6
+  creationTimestamp: '2025-12-06T23:19:16.954815Z'
+  labels:
+    commit-sha: 5779d8a02e2baeab90b622626df61d4c0c833f85
+    gcb-build-id: e654094b-543c-4498-af8f-722323a01842
+    gcb-trigger-id: db5dd155-1bc1-4c34-8922-2f627567b786
+    gcb-trigger-region: global
+    managed-by: gcp-cloud-build-deploy-cloud-run
+    cloud.googleapis.com/location: europe-west1
+  annotations:
+    serving.knative.dev/creator: analdupont1995@gmail.com
+    serving.knative.dev/lastModifier: 901450845940-compute@developer.gserviceaccount.com
+    run.googleapis.com/client-name: gcloud
+    run.googleapis.com/client-version: 548.0.0
+    run.googleapis.com/operation-id: 1c7a6b95-2da7-4a08-ab3f-9668f9ca5fab
+    run.googleapis.com/ingress: all
+    run.googleapis.com/ingress-status: all
+    run.googleapis.com/invoker-iam-disabled: 'true'
+    run.googleapis.com/minScale: '1'
+    run.googleapis.com/maxScale: '5'
+    run.googleapis.com/urls: '["https://mongo-db-901450845940.europe-west1.run.app","https://mongo-db-ofodcmkpga-ew.a.run.app"]'
+spec:
+  template:
+    metadata:
+      labels:
+        client.knative.dev/nonce: utimwhqqjc
+        commit-sha: 5779d8a02e2baeab90b622626df61d4c0c833f85
+        gcb-build-id: e654094b-543c-4498-af8f-722323a01842
+        gcb-trigger-id: db5dd155-1bc1-4c34-8922-2f627567b786
+        gcb-trigger-region: global
+        managed-by: gcp-cloud-build-deploy-cloud-run
+        run.googleapis.com/startupProbeType: Default
+      annotations:
+        autoscaling.knative.dev/maxScale: '3'
+        run.googleapis.com/client-name: gcloud
+        run.googleapis.com/client-version: 548.0.0
+        run.googleapis.com/startup-cpu-boost: 'true'
+    spec:
+      containerConcurrency: 80
+      timeoutSeconds: 300
+      serviceAccountName: 901450845940-compute@developer.gserviceaccount.com
+      containers:
+      - name: placeholder-1
+        image: europe-west1-docker.pkg.dev/trusty-anchor-473006-u9/cloud-run-source-deploy/mongo_db/mongo-db:5779d8a02e2baeab90b622626df61d4c0c833f85
+        ports:
+        - name: http1
+          containerPort: 8000
+        env:
+        - name: MONGODB_URI_GET_ALL_CSV_URL
+          value: https://dst-de-airlines-api-901450845940.europe-west1.run.app/dump/all
+        - name: PROJECT_ID
+          value: trusty-anchor-473006-u9
+        - name: BUCKET_NAME
+          value: airfrance-bucket
+        - name: POSTGRES_DB_NAME
+          value: new_airlines_db
+        - name: POSTGRES_USER
+          value: "[REDACTED]"
+        - name: POSTGRES_PASSWORD
+          value: "[REDACTED]"
+        - name: POSTGRES_HOST
+          value: "[REDACTED]"
+        - name: POSTGRES_PORT
+          value: '5432'
+        - name: TABLE_NAME
+          value: mongodb_past
+        - name: COLLECTION
+          value: historic
+        - name: MAPPING_FILE_BLOB_NAME
+          value: mongodb_postgres_mapping_files/mongodb_new_mapping_postgrsql.json
+        - name: MONGODB_FASTAPI_GET_CSV_URL_WITH_DATE
+          value: https://dst-de-airlines-api-latest.onrender.com/removed/scheduled/flights/csv/with_date?date=
+        - name: MONGODB_URI
+          value: "[REDACTED]"
+        - name: DATABASE_NAME
+          value: airlines
+        - name: FOLDER_PATH
+          value: ../../1_data_collection/afklm_api_collection/data/
+        - name: MONGODB_URI_GET_CSV
+          value: https://dst-de-airlines-api-901450845940.europe-west1.run.app
+        - name: OUTPUT_DIR
+          value: temp_ml/outputs
+        - name: ML_ROOT
+          value: temp_ml
+        - name: ML_API_HOST
+          value: 0.0.0.0
+        - name: ML_API_PORT
+          value: '8000'
+        - name: POSTGRES_URI
+          value: "[REDACTED]"
+        - name: POSTGRES_PORT
+          value: '5432'
+        - name: POSTGRES_DB
+          value: new_airlines_db
+        resources:
+          limits:
+            cpu: 1000m
+            memory: 512Mi
+        startupProbe:
+          timeoutSeconds: 240
+          periodSeconds: 240
+          failureThreshold: 1
+          tcpSocket:
+            port: 8000
+  traffic:
+  - percent: 100
+    latestRevision: true
+status:
+  observedGeneration: 6
+  conditions:
+  - type: Ready
+    status: 'True'
+    lastTransitionTime: '2025-12-06T23:45:53.835732Z'
+  - type: ConfigurationsReady
+    status: 'True'
+    lastTransitionTime: '2025-12-06T23:45:26.996634Z'
+  - type: RoutesReady
+    status: 'True'
+    lastTransitionTime: '2025-12-06T23:45:53.807279Z'
+  latestReadyRevisionName: mongo-db-00005-4bv
+  latestCreatedRevisionName: mongo-db-00005-4bv
+  traffic:
+  - revisionName: mongo-db-00005-4bv
+    percent: 100
+    latestRevision: true
+  url: https://mongo-db-ofodcmkpga-ew.a.run.app
+  address:
+    url: https://mongo-db-ofodcmkpga-ew.a.run.app

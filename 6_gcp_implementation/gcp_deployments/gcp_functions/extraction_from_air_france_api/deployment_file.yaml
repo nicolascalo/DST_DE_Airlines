@@ -1,0 +1,90 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: new-extract-function
+  namespace: '901450845940'
+  selfLink: /apis/serving.knative.dev/v1/namespaces/901450845940/services/new-extract-function
+  uid: a4c1da82-4c94-4dc8-98e1-c79e1af17ea8
+  resourceVersion: AAZFIpoOgoA
+  generation: 6
+  creationTimestamp: '2025-12-03T11:14:24.209281Z'
+  labels:
+    run.googleapis.com/satisfiesPzs: 'true'
+    cloud.googleapis.com/location: europe-west9
+  annotations:
+    serving.knative.dev/creator: analdupont1995@gmail.com
+    serving.knative.dev/lastModifier: analdupont1995@gmail.com
+    run.googleapis.com/build-base-image: europe-west9-docker.pkg.dev/serverless-runtimes/google-22/runtimes/python312
+    run.googleapis.com/build-enable-automatic-updates: 'true'
+    run.googleapis.com/client-name: cloud-console
+    run.googleapis.com/build-function-target: extract_from_airfrance_api
+    run.googleapis.com/build-name: projects/901450845940/locations/europe-west9/builds/99e6b7aa-afc1-408b-a9be-bbf8c330380e
+    run.googleapis.com/build-source-location: gs://run-sources-trusty-anchor-473006-u9-europe-west9/services/new-extract-function/1764761152.282000.zip#1764761151859538
+    run.googleapis.com/build-image-uri: europe-west9-docker.pkg.dev/trusty-anchor-473006-u9/cloud-run-source-deploy/new-extract-function
+    run.googleapis.com/operation-id: db2fda2f-459f-465f-9285-bbd1843e425e
+    run.googleapis.com/ingress: all
+    run.googleapis.com/ingress-status: all
+    run.googleapis.com/maxScale: '5'
+    run.googleapis.com/urls: '["https://new-extract-function-901450845940.europe-west9.run.app","https://new-extract-function-ofodcmkpga-od.a.run.app"]'
+spec:
+  template:
+    metadata:
+      labels:
+        client.knative.dev/nonce: 05f973f0-78d0-4326-8e38-ea2241656749
+        run.googleapis.com/startupProbeType: Default
+      annotations:
+        run.googleapis.com/client-name: cloud-console
+        autoscaling.knative.dev/maxScale: '3'
+        run.googleapis.com/base-images: '{"new-extract-function-1":"europe-west9-docker.pkg.dev/serverless-runtimes/google-22/runtimes/python312"}'
+        run.googleapis.com/startup-cpu-boost: 'true'
+    spec:
+      containerConcurrency: 80
+      timeoutSeconds: 3600
+      serviceAccountName: 901450845940-compute@developer.gserviceaccount.com
+      containers:
+      - name: new-extract-function-1
+        image: europe-west9-docker.pkg.dev/trusty-anchor-473006-u9/cloud-run-source-deploy/new-extract-function@sha256:e74c7a03e5be5137fb0c89e22ea48bbdec29f6c5c3561e7127bae25babe1f20b
+        ports:
+        - name: http1
+          containerPort: 8080
+        env:
+        - name: API_KEYS
+          value: '"[REDACTED]"'
+        resources:
+          limits:
+            cpu: 1000m
+            memory: 1Gi
+        startupProbe:
+          timeoutSeconds: 240
+          periodSeconds: 240
+          failureThreshold: 1
+          tcpSocket:
+            port: 8080
+      runtimeClassName: run.googleapis.com/linux-base-image-update
+  traffic:
+  - percent: 100
+    latestRevision: true
+status:
+  observedGeneration: 6
+  conditions:
+  - type: Ready
+    status: 'True'
+    lastTransitionTime: '2025-12-04T16:12:56.110720Z'
+  - type: BaseImageValidated
+    status: 'True'
+    severity: Info
+  - type: ConfigurationsReady
+    status: 'True'
+    lastTransitionTime: '2025-12-04T16:12:48.348118Z'
+  - type: RoutesReady
+    status: 'True'
+    lastTransitionTime: '2025-12-04T16:12:56.080777Z'
+  latestReadyRevisionName: new-extract-function-00006-r6z
+  latestCreatedRevisionName: new-extract-function-00006-r6z
+  traffic:
+  - revisionName: new-extract-function-00006-r6z
+    percent: 100
+    latestRevision: true
+  url: https://new-extract-function-ofodcmkpga-od.a.run.app
+  address:
+    url: https://new-extract-function-ofodcmkpga-od.a.run.app

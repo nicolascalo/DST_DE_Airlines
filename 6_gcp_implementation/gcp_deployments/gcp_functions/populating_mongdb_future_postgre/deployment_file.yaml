@@ -1,0 +1,122 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: populating-mongodb-future-postgre
+  namespace: '901450845940'
+  selfLink: /apis/serving.knative.dev/v1/namespaces/901450845940/services/populating-mongodb-future-postgre
+  uid: 32c8838b-05f7-4bdc-9e74-7d8139cc0e69
+  resourceVersion: AAZFHvnCpGg
+  generation: 5
+  creationTimestamp: '2025-12-04T03:19:34.080999Z'
+  labels:
+    cloud.googleapis.com/location: europe-west1
+  annotations:
+    serving.knative.dev/creator: analdupont1995@gmail.com
+    serving.knative.dev/lastModifier: analdupont1995@gmail.com
+    run.googleapis.com/build-base-image: europe-west1-docker.pkg.dev/serverless-runtimes/google-22/runtimes/python312
+    run.googleapis.com/build-enable-automatic-updates: 'true'
+    run.googleapis.com/client-name: cloud-console
+    run.googleapis.com/build-function-target: populate_mongodb_future_in_postgre
+    run.googleapis.com/build-name: projects/901450845940/locations/europe-west1/builds/0d0747e2-3789-42f4-9702-4ecfbddbd702
+    run.googleapis.com/build-source-location: gs://run-sources-trusty-anchor-473006-u9-europe-west1/services/populating-mongodb-future-postgre/1764849090.875000.zip#1764849091387527
+    run.googleapis.com/build-image-uri: europe-west1-docker.pkg.dev/trusty-anchor-473006-u9/cloud-run-source-deploy/populating-mongodb-future-postgre
+    run.googleapis.com/operation-id: 84add9e6-d604-4a23-8c46-b2fe37b580a4
+    run.googleapis.com/ingress: all
+    run.googleapis.com/ingress-status: all
+    run.googleapis.com/invoker-iam-disabled: 'true'
+    run.googleapis.com/minScale: '1'
+    run.googleapis.com/maxScale: '5'
+    run.googleapis.com/urls: '["https://populating-mongodb-future-postgre-901450845940.europe-west1.run.app","https://populating-mongodb-future-postgre-ofodcmkpga-ew.a.run.app"]'
+spec:
+  template:
+    metadata:
+      labels:
+        run.googleapis.com/startupProbeType: Default
+      annotations:
+        run.googleapis.com/client-name: cloud-console
+        autoscaling.knative.dev/maxScale: '3'
+        run.googleapis.com/base-images: '{"populating-mongodb-future-postgre-1":"europe-west1-docker.pkg.dev/serverless-runtimes/google-22/runtimes/python312"}'
+        run.googleapis.com/startup-cpu-boost: 'true'
+    spec:
+      containerConcurrency: 80
+      timeoutSeconds: 300
+      serviceAccountName: 901450845940-compute@developer.gserviceaccount.com
+      containers:
+      - name: populating-mongodb-future-postgre-1
+        image: europe-west1-docker.pkg.dev/trusty-anchor-473006-u9/cloud-run-source-deploy/populating-mongodb-future-postgre@sha256:3a0ff00da1f91fa84ada01c2f7a6749802eabb5b890c3078250a99e7bdbec01b
+        ports:
+        - name: http1
+          containerPort: 8080
+        env:
+        - name: MONGODB_URI_GET_ALL_CSV_URL
+          value: https://dst-de-airlines-api-901450845940.europe-west1.run.app/dump/all
+        - name: PROJECT_ID
+          value: trusty-anchor-473006-u9
+        - name: BUCKET_NAME
+          value: airfrance-bucket
+        - name: DATABASE_NAME
+          value: airlines_test
+        - name: POSTGRES_DB_NAME
+          value: new_airlines_db
+        - name: POSTGRES_USER
+          value: "[REDACTED]"
+        - name: POSTGRES_PASSWORD
+          value: "[REDACTED]"
+        - name: POSTGRES_HOST
+          value: "[REDACTED]"
+        - name: POSTGRES_PORT
+          value: '5432'
+        - name: TABLE_NAME
+          value: mongodb_future
+        - name: COLLECTION
+          value: scheduled
+        - name: MAPPING_FILE_BLOB_NAME
+          value: mongodb_postgres_mapping_files/mongodb_new_mapping_postgrsql.json
+        - name: MONGODB_FASTAPI_GET_CSV_URL_WITH_DATE
+          value: https://dst-de-airlines-api-latest.onrender.com/removed/scheduled/flights/csv/with_date?date=
+        - name: MONGODB_URI
+          value: "[REDACTED]"
+        - name: DATABASE_NAME
+          value: airlines
+        - name: FOLDER_PATH
+          value: ../../1_data_collection/afklm_api_collection/data/
+        - name: MONGODB_URI_GET_CSV
+          value: https://dst-de-airlines-api-901450845940.europe-west1.run.app
+        resources:
+          limits:
+            cpu: 1000m
+            memory: 512Mi
+        startupProbe:
+          timeoutSeconds: 240
+          periodSeconds: 240
+          failureThreshold: 1
+          tcpSocket:
+            port: 8080
+      runtimeClassName: run.googleapis.com/linux-base-image-update
+  traffic:
+  - percent: 100
+    latestRevision: true
+status:
+  observedGeneration: 5
+  conditions:
+  - type: Ready
+    status: 'True'
+    lastTransitionTime: '2025-12-04T11:53:21.882216Z'
+  - type: BaseImageValidated
+    status: 'True'
+    severity: Info
+  - type: ConfigurationsReady
+    status: 'True'
+    lastTransitionTime: '2025-12-04T11:53:12.675309Z'
+  - type: RoutesReady
+    status: 'True'
+    lastTransitionTime: '2025-12-04T11:53:21.844344Z'
+  latestReadyRevisionName: populating-mongodb-future-postgre-00005-j2l
+  latestCreatedRevisionName: populating-mongodb-future-postgre-00005-j2l
+  traffic:
+  - revisionName: populating-mongodb-future-postgre-00005-j2l
+    percent: 100
+    latestRevision: true
+  url: https://populating-mongodb-future-postgre-ofodcmkpga-ew.a.run.app
+  address:
+    url: https://populating-mongodb-future-postgre-ofodcmkpga-ew.a.run.app
