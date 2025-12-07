@@ -2,10 +2,11 @@ services:
 
 #------------------------------------------------------------------------------------API MACHINE LEARNING--------------------------------------
 
+
   afklm_ml_api:
     build:
       context: ./3_ML
-      dockerfile: afklm_ml_api_Dockerfile
+      dockerfile: Dockerfile
     container_name: afklm_ml_api
     ports:
       - "8001:8001"
@@ -18,7 +19,6 @@ services:
     restart: unless-stopped
     volumes:
       - ./3_ML/outputs:/outputs
-      - ./3_ML/config:/config
       - ./3_ML/data:/data
     environment:
       POSTGRES_USER: postgres
@@ -143,28 +143,41 @@ services:
       - default
 
 
-#----------------------------------------------------AFKLM API---------------------
+#-------------------------------------------------------------------------POSTGRES API--------------------------------------------------------------------------------
     
-  afklm_api:
+  afklm_postgre_api:
       build:
         context: ./2_bdd/Postgre/afklm_api/
         dockerfile: Dockerfile
-      container_name: afklm_api
+      container_name: afklm_postgre_api
       ports:
         - "8004:8004"
       environment:
         - API_DST_AIRLINES_URL=http://afklm_mongodb_api:8000/
         - DATA_INPUT=/app/data_input/
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=postgres
+        - POSTGRES_DB=afklm
+        - POSTGRES_URI=afklm_postgres
+        - POSTGRES_PORT=5432
+        - SQL_FILE_FOLDER=/app/postgres_data_import_scripts
+        - DATA_FILE_FOLDER=/app/data_input
+        
       extra_hosts:
         - "host.docker.internal:host-gateway"
       depends_on:
         afklm_mongodb_api:
           condition: service_healthy
+        afklm_postgres:
+          condition: service_healthy
         afklm_mongodb_init:
           condition: service_completed_successfully
+
+
       restart: unless-stopped
       volumes:
         - ./2_bdd/Postgre/data_input:/app/data_input
+        - ./2_bdd/Postgre/tmp:/app/tmp
       healthcheck:
         test: ["CMD", "curl", "--fail", "http://localhost:8004"]
         interval: 10s
@@ -177,15 +190,15 @@ services:
 #---------------------------------------------------------DOWNLOAD DATA TO INPUT IT IN INPUT DATA FOLDER-----------------
 
 
-  afklm_download_data:
+  afklm_mongodb_export_data_for_postgres:
     build:
       context: ./2_bdd/Postgre/
-      dockerfile: download_collection_to_input_data_Dokerfile
-    container_name: afklm_download_data
+      dockerfile: download_collection_to_input_data_Dockerfile
+    container_name: afklm_mongodb_export_data_for_postgres
     environment:
-      - AFKLM_API_URL=http://afklm_api:8004/
+      - AFKLM_API_URL=http://afklm_postgre_api:8004/
     depends_on:
-      afklm_api:
+      afklm_postgre_api:
         condition: service_healthy
     restart: "no"
     networks:
@@ -207,11 +220,6 @@ services:
       POSTGRES_DB: afklm
     ports:
       - "5432:5432"
-    depends_on:
-        afklm_api:
-          condition: service_healthy
-#        afklm_download_data:
-#          condition: service_completed_successfully
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "postgres"]
       interval: 10s
@@ -224,31 +232,6 @@ services:
       - ./2_bdd/Postgre/tmp:/tmp
 
 
-#-------------------------------------------------------------------------POSTGRES API--------------------------------------------------------------------------------
-
-  afklm_postgre_api:
-    build: 
-      context: ./2_bdd/Postgre/
-      dockerfile: afklm_postgre_api_Dockerfile
-    container_name: afklm_postgre_api
-    hostname: afklm_postgre_api
-    restart: always
-    ports:
-      - 8002:8002
-    depends_on:
-      afklm_postgres:
-        condition: service_healthy
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: afklm
-      POSTGRES_URI: afklm_postgres
-      POSTGRES_PORT: 5432
-      SQL_FILE_FOLDER: /postgres_data_import_scripts
-      DATA_FILE_FOLDER: /data_input
-    volumes:
-      - ./2_bdd/Postgre/data_input:/data_input
-      - ./2_bdd/Postgre/tmp:/tmp
 
 #------------------------------------------------------------------------------PG PGADMIN-------------------------------------------------------------------
 
@@ -279,8 +262,10 @@ services:
     restart: always
     ports:
       - 8050:8050
-    #volumes:
-   #   - ./4_dashboard/assets:/app/assets
+#    volumes:
+#      - ./4_dashboard/assets:/app/assets
+      
+      
     depends_on:
       afklm_ml_api:
         condition: service_healthy
@@ -294,3 +279,5 @@ services:
       POSTGRES_PORT: 5432
       ML_API_PORT: 8001
       ML_API_HOST: afklm_ml_api
+      ML_PRED_ROUTE: "/predictions/get_delay_predictions"
+      ML_METRICS_ROUTE: "/metrics/get_model_metrics"

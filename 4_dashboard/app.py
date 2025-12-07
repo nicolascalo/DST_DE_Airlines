@@ -10,15 +10,16 @@ import os
 load_dotenv()
 
 
-
 ml_api_host = os.getenv('ML_API_HOST')
 ml_api_port = os.getenv('ML_API_PORT')
-
+metrics_route = os.getenv('ML_METRICS_ROUTE')
+prediction_route = os.getenv('ML_PRED_ROUTE')
 
 try:
-    response = requests.get(f"http://{ml_api_host}:{ml_api_port}/model_parameters_and_metrics")
+    response = requests.get(f"http://{ml_api_host}:{ml_api_port}{metrics_route}")
+    print(response)
     model_metrics_dict = response.json()
-    model_metrics = pd.DataFrame(model_metrics_dict).drop(['mode','best_pipeline',"processing_time","target_variable","numeric_features","categorical_features","hyperparameters","macro_avg_precision","macro_avg_recall","macro_avg_f1","mae","mse","rmse"],axis=1)
+    model_metrics = pd.DataFrame(model_metrics_dict).drop(['mode','best_pipeline',"processing_time","target_variable","numeric_features","categorical_features","hyperparameters","macro_avg_precision","macro_avg_recall","macro_avg_f1","mae","mse","rmse"],axis=1,errors="ignore")
 
 
     model_metrics = model_metrics.loc[:, ["pipeline","problem_type","dataset_size_training","dataset_size_testing","accuracy","r2"]] 
@@ -27,7 +28,8 @@ try:
 
 except:
     response = "Issue when fetching the model metrics" 
-    model_metrics = pd.DataFrame({"Error":"Issue when fetching the model metrics"})
+    model_metrics = pd.DataFrame({"Error":"Issue when fetching the model metrics"}, index=[0])
+
 
 
 
@@ -42,14 +44,11 @@ database_name = os.getenv('POSTGRES_DB')
 DATABASE_URL = f"postgresql://{username}:{password}@{host}:{port}/{database_name}"
 engine = create_engine(DATABASE_URL)
 
-query = "select v_future_flight.flight_id,  v_future_flight.flightNumber,  v_future_flight.airline_code,  v_future_flight.airline_name,  v_future_flight.flightStatusPublic,  v_future_flight.flightLegs_aircraft_typeCode,  v_future_flight.flightLegs_scheduledFlightDuration,  v_future_flight.flightLegs_serviceType,  v_future_flight.flightLegs_aircraft_ownerAirlineCode,  v_future_flight.flightLegs_status,  v_future_flight.flightLegs_serviceTypeName, v_future_flight.flightLegs_publishedStatus, v_future_flight.flightLegs_legStatusPublic, v_future_flight.flightLegs_statusName, v_geod.flightLegs_depInfo_airport_Continent_Name,  v_geod.flightLegs_depInfo_airport_Subcontinent_Name,  v_geod.flightLegs_depInfo_airport_Country_Code,  v_geod.flightLegs_depInfo_airport_Country_Name,  v_geod.flightLegs_depInfo_airport_Location_name,  v_geod.flightLegs_depInfo_airport_Airport_Name,  v_geod.flightLegs_depInfo_airport_Icao_Code,  v_geod.flightLegs_depInfo_airport_Latitude,  v_geod.flightLegs_depInfo_airport_Longitude, v_future_flight.flightLegs_depInfo_airport_code, v_future_flight.flightLegs_depInfo_airport_places_depPosTerm_boardingTerminal, v_future_flight.flightLegs_depInfo_airport_places_depPosTerm_gateNumber, v_future_flight.flightLegs_depInfo_times_scheduled_date, v_future_flight.flightLegs_depInfo_times_scheduled_time, v_future_flight.flightLegs_depInfo_times_scheduled_year, v_future_flight.flightLegs_depInfo_times_scheduled_month, v_future_flight.flightLegs_depInfo_times_scheduled_day , v_future_flight.flightLegs_depInfo_times_scheduled_hour, v_future_flight.flightLegs_depInfo_times_scheduled_minute, v_future_flight.flightLegs_depInfo_times_scheduled_timezone, v_future_flight.flightLegs_depInfo_times_number_week, v_geoa.flightLegs_arrInfo_airport_Continent_Name,  v_geoa.flightLegs_arrInfo_airport_Subcontinent_Name,  v_geoa.flightLegs_arrInfo_airport_Country_Code,  v_geoa.flightLegs_arrInfo_airport_Country_Name,  v_geoa.flightLegs_arrInfo_airport_Location_name,  v_geoa.flightLegs_arrInfo_airport_Airport_Name,  v_geoa.flightLegs_arrInfo_airport_Icao_Code,  v_geoa.flightLegs_arrInfo_airport_Latitude,  v_geoa.flightLegs_arrInfo_airport_Longitude, v_future_flight.flightLegs_arrInfo_airport_code, v_future_flight.flightLegs_arrInfo_airport_places_arrivalPositionTerminal, v_future_flight.flightLegs_arrInfo_times_scheduled_date, v_future_flight.flightLegs_arrInfo_times_scheduled_time, v_future_flight.flightLegs_arrInfo_times_scheduled_year, v_future_flight.flightLegs_arrInfo_times_scheduled_month, v_future_flight.flightLegs_arrInfo_times_scheduled_day, v_future_flight.flightLegs_arrInfo_times_scheduled_hour, v_future_flight.flightLegs_arrInfo_times_scheduled_minute, v_future_flight.flightLegs_arrInfo_times_scheduled_timezone, v_future_flight.flightLegs_arrInfo_times_number_week from v_future_flight v_future_flight   INNER JOIN v_geod v_geod ON v_geod.flightLegs_depInfo_airport_Iata_Code = v_future_flight.flightLegs_depInfo_airport_code    INNER JOIN v_geoa v_geoa ON v_geoa.flightLegs_arrInfo_airport_Iata_Code = v_future_flight.flightLegs_arrInfo_airport_code"
 
-query = " select v_future_flight.flight_id,  v_future_flight.flightNumber,   v_future_flight.airline_name,    v_future_flight.flightLegs_aircraft_typeCode,  v_future_flight.flightLegs_serviceTypeName , v_geod.flightLegs_depInfo_airport_Continent_Name,  v_geod.flightLegs_depInfo_airport_Subcontinent_Name,    v_geod.flightLegs_depInfo_airport_Country_Name,    v_geod.flightLegs_depInfo_airport_Airport_Name, v_future_flight.flightLegs_depInfo_airport_code, v_future_flight.flightLegs_depInfo_times_scheduled_date, v_future_flight.flightLegs_depInfo_times_scheduled_time, v_future_flight.flightLegs_depInfo_times_scheduled_year, v_future_flight.flightLegs_depInfo_times_scheduled_month, v_future_flight.flightLegs_depInfo_times_scheduled_day , v_future_flight.flightLegs_depInfo_times_scheduled_hour, v_future_flight.flightLegs_depInfo_times_scheduled_minute, v_future_flight.flightLegs_depInfo_times_scheduled_timezone, v_geoa.flightLegs_arrInfo_airport_Continent_Name,  v_geoa.flightLegs_arrInfo_airport_Subcontinent_Name,    v_geoa.flightLegs_arrInfo_airport_Country_Name,   v_geoa.flightLegs_arrInfo_airport_Airport_Name,      v_future_flight.flightLegs_arrInfo_airport_code, v_future_flight.flightLegs_arrInfo_airport_places_arrivalPositionTerminal, v_future_flight.flightLegs_arrInfo_times_scheduled_date, v_future_flight.flightLegs_arrInfo_times_scheduled_time, v_future_flight.flightLegs_arrInfo_times_scheduled_year, v_future_flight.flightLegs_arrInfo_times_scheduled_month, v_future_flight.flightLegs_arrInfo_times_scheduled_day, v_future_flight.flightLegs_arrInfo_times_scheduled_hour, v_future_flight.flightLegs_arrInfo_times_scheduled_minute, v_future_flight.flightLegs_arrInfo_times_scheduled_timezone from v_future_flight v_future_flight   INNER JOIN v_geod v_geod ON v_geod.flightLegs_depInfo_airport_Iata_Code = v_future_flight.flightLegs_depInfo_airport_code    INNER JOIN v_geoa v_geoa ON v_geoa.flightLegs_arrInfo_airport_Iata_Code = v_future_flight.flightLegs_arrInfo_airport_code WHERE flightLegs_depInfo_times_scheduled_date >= CURRENT_DATE;"
 
 query = " select v_future_flight.flight_id,  v_future_flight.flightNumber,   v_future_flight.airline_name,    v_future_flight.flightLegs_aircraft_typeCode,  v_future_flight.flightLegs_serviceTypeName , v_geod.flightLegs_depInfo_airport_Continent_Name,  v_geod.flightLegs_depInfo_airport_Subcontinent_Name,    v_geod.flightLegs_depInfo_airport_Country_Name,    v_geod.flightLegs_depInfo_airport_Airport_Name, v_future_flight.flightLegs_depInfo_airport_code, v_future_flight.flightLegs_depInfo_times_scheduled_date, v_future_flight.flightLegs_depInfo_times_scheduled_time, v_future_flight.flightLegs_depInfo_times_scheduled_year, v_future_flight.flightLegs_depInfo_times_scheduled_month, v_future_flight.flightLegs_depInfo_times_scheduled_day , v_future_flight.flightLegs_depInfo_times_scheduled_timezone, v_geoa.flightLegs_arrInfo_airport_Continent_Name,  v_geoa.flightLegs_arrInfo_airport_Subcontinent_Name,    v_geoa.flightLegs_arrInfo_airport_Country_Name,   v_geoa.flightLegs_arrInfo_airport_Airport_Name,      v_future_flight.flightLegs_arrInfo_airport_code, v_future_flight.flightLegs_arrInfo_airport_places_arrivalPositionTerminal, v_future_flight.flightLegs_arrInfo_times_scheduled_date, v_future_flight.flightLegs_arrInfo_times_scheduled_time, v_future_flight.flightLegs_arrInfo_times_scheduled_year, v_future_flight.flightLegs_arrInfo_times_scheduled_month, v_future_flight.flightLegs_arrInfo_times_scheduled_day, v_future_flight.flightLegs_arrInfo_times_scheduled_timezone from v_future_flight  INNER JOIN v_geod v_geod ON v_geod.flightLegs_depInfo_airport_Iata_Code = v_future_flight.flightLegs_depInfo_airport_code    INNER JOIN v_geoa v_geoa ON v_geoa.flightLegs_arrInfo_airport_Iata_Code = v_future_flight.flightLegs_arrInfo_airport_code WHERE flightLegs_depInfo_times_scheduled_date >= CURRENT_DATE;"
 
 
-#df = pd.read_csv('afklm_flight_from_mongo_filtered_20251113-21-36-51_test.csv', low_memory=False)
 try :
 
 
@@ -61,31 +60,40 @@ try :
 
     df = get_sql_data(query)
     print("PostreSQL data retrieved")
+
+
+
+
+
+
+
 except Exception as e:
     prediction_status = "Issues with the PostreSQL query"
     raise RuntimeError(f"STATUS MODEL ERROR: {e}")            
 
+try:
+
+    columns_new = df.columns.copy(deep=True)
+    columns_new = [w.replace('flightlegs_', '') for w in columns_new]
+    columns_new = [w.replace('info_times', '') for w in columns_new]
+    columns_new = [w.replace('info_airport', '') for w in columns_new]
+    columns_new = [w.replace('scheduled_', '') for w in columns_new]
+    columns_new = [w.replace('_depposterm', '') for w in columns_new]
+
+    df.columns = columns_new
 
 
-columns_new = df.columns.copy(deep=True)
-columns_new = [w.replace('flightlegs_', '') for w in columns_new]
-columns_new = [w.replace('info_times', '') for w in columns_new]
-columns_new = [w.replace('info_airport', '') for w in columns_new]
-columns_new = [w.replace('scheduled_', '') for w in columns_new]
-columns_new = [w.replace('_depposterm', '') for w in columns_new]
+    df = df[df['servicetypename'] != 'Service operated by Surface Vehicle']
+    df = df.drop(['servicetypename'],axis=1,errors='ignore')
 
-df.columns = columns_new
+    #df = df.dropna(axis=1, how='all')
 
+    df['id'] = df['flight_id']
+    df.set_index('id', inplace=True, drop=False)
 
-df = df[df['servicetypename'] != 'Service operated by Surface Vehicle']
-df = df.drop(['servicetypename'],axis=1,errors='ignore')
-
-#df = df.dropna(axis=1, how='all')
-
-df['id'] = df['flight_id']
-df.set_index('id', inplace=True, drop=False)
-
-
+except Exception as e:
+    prediction_status = "Issues with dataframe column renaming"
+    raise RuntimeError(f"{e}")            
 
 
 app = Dash(__name__)
@@ -164,9 +172,6 @@ def update_graphs(row_ids, selected_row_ids, active_cell):
 
 
 
-
-
-
     query = f"select *  from v_future_flight where flight_id = '{active_row_id}';"
 
     df_row = get_sql_data(query)
@@ -185,7 +190,7 @@ def update_graphs(row_ids, selected_row_ids, active_cell):
 
 
     try:
-        response = requests.post(f"http://{ml_api_host}:{ml_api_port}/get_delay_predictions",
+        response = requests.post(f"http://{ml_api_host}:{ml_api_port}{prediction_route}",
             json=json_tosend  
         )
 

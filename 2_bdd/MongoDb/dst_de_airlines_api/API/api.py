@@ -21,7 +21,7 @@ from typing import Any
 
 
 app = FastAPI(
-    title="Airlines API",
+    title="Air France KLM - MongoDB API",
     description="REST API for querying and exporting Air France-KLM flight data from Europe's 30 largest airports",
     version="1.0.0",
     docs_url="/",

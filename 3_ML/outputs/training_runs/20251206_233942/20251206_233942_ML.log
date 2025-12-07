@@ -1,0 +1,136 @@
+2025-12-06 23:40:57,806 - afklm_ml - INFO - Starting ML pipeline
+2025-12-06 23:40:57,807 - afklm_ml - INFO - ================================== Data loading ==================================
+2025-12-06 23:40:57,807 - afklm_ml - INFO - Looking for .csv.gz files in data
+2025-12-06 23:40:57,807 - afklm_ml - INFO - Found files ['afklm_past_flight.csv.zip']
+2025-12-06 23:40:57,807 - afklm_ml - INFO - Loading afklm_past_flight.csv.zip
+2025-12-06 23:41:06,446 - afklm_ml - INFO - Loaded dataset: afklm_past_flight.csv.zip, shape=(750205, 60)
+2025-12-06 23:41:06,446 - afklm_ml - INFO - ================================== Model loading ==================================
+2025-12-06 23:41:06,606 - afklm_ml - INFO - ================================== Data cleaning ==================================
+2025-12-06 23:41:07,649 - afklm_ml - INFO - Step: 'raw_data' | shape: (750205, 60) | null values: 3703144
+2025-12-06 23:41:07,733 - afklm_ml - INFO - Dropping columns: Index(['flight_id', 'airline_code', 'airline_name',
+       'flightlegs_irregularity_delayinfo_delayreasonpubliclong',
+       'flightlegs_irregularity_delayinfo_delayreasonpublicshort',
+       'flightlegs_depinfo_airport_location_name',
+       'flightlegs_depinfo_airport_icao_code',
+       'flightlegs_depinfo_airport_places_depposterm_boardingterminal',
+       'flightlegs_depinfo_airport_places_depposterm_gatenumber',
+       'flightlegs_arrinfo_airport_location_name',
+       'flightlegs_arrinfo_airport_icao_code'],
+      dtype='object')
+2025-12-06 23:41:08,007 - afklm_ml - INFO - Dropping rows with missing flightlegs_publishedstatus
+2025-12-06 23:41:08,874 - afklm_ml - INFO - Step: filtered past flights only | shape: (750055, 49) | null values: 1707249
+2025-12-06 23:41:08,874 - afklm_ml - INFO - Filled missing flightlegs_irregularity_delayduration_total with 0
+2025-12-06 23:41:09,501 - afklm_ml - INFO - Step: After cleaning | shape: (750055, 49) | null values: 1221822
+2025-12-06 23:41:09,501 - afklm_ml - INFO - Filtering airports in optional list
+2025-12-06 23:41:09,718 - afklm_ml - INFO - Filtering airports in mandatory list
+2025-12-06 23:41:10,274 - afklm_ml - INFO - Step: Airport_filtering | shape: (550772, 49) | null values: 881141
+2025-12-06 23:41:10,274 - afklm_ml - INFO - ================================== Feature engineering ==================================
+2025-12-06 23:41:10,326 - afklm_ml - INFO - Extracting 'company_flight' from 'flight_id' column
+2025-12-06 23:41:36,164 - afklm_ml - INFO - Adding seasonality, isWeekend and dayPeriod
+2025-12-06 23:41:39,453 - afklm_ml - INFO - ================================== Target engineering ==================================
+2025-12-06 23:41:39,717 - afklm_ml - INFO - Categorizing flights into 'CANCELLED' (also if delay > 360min), 'LATE', 'ONTIME'
+2025-12-06 23:41:47,087 - afklm_ml - INFO - Step: categorize delay status | shape: (550772, 56) | null values: 819304
+2025-12-06 23:41:51,311 - afklm_ml - INFO - Step: categorize delay brackets | {']120;240]', ']030;060]', ']240;360]', ']060;120]', ']015;030]', ']000;005]', ']005;015]'}
+2025-12-06 23:41:51,930 - afklm_ml - INFO - Step: categorize delay brackets | shape: (550772, 57) | null values: 819304
+2025-12-06 23:41:51,930 - afklm_ml - INFO - ================================== Dataset splitting and feature selection ==================================
+2025-12-06 23:41:52,132 - afklm_ml - INFO - CLASSIFICATION_STATUS Using the full dataset
+2025-12-06 23:41:52,257 - afklm_ml - INFO - CLASSIFICATION_STATUS columns dropped: {'flightlegs_legstatuspublic', 'flightnumber', 'flightlegs_arrinfo_times_scheduled_hour', 'flightlegs_depinfo_airport_latitude', 'flightlegs_depinfo_times_scheduled_minute', 'flightlegs_irregularity_delayduration_total', 'flightlegs_depinfo_times_number_week', 'flightlegs_arrinfo_times_scheduled_month', 'flightlegs_arrinfo_times_scheduled', 'flightlegs_depinfo_times_scheduled', 'flightlegs_arrinfo_airport_country_code', 'flightlegs_arrinfo_airport_longitude', 'flightlegs_arrinfo_airport_places_arrivalpositionterminal', 'flightlegs_depinfo_times_scheduled_time', 'flightlegs_depinfo_times_scheduled_year', 'flightstatuspublic', 'flightlegs_arrinfo_times_scheduled_date', 'flightlegs_arrinfo_times_scheduled_day', 'delay_status', 'flightlegs_arrinfo_times_number_week', 'flightlegs_depinfo_airport_longitude', 'flightlegs_depinfo_times_scheduled_date', 'flightlegs_servicetypename', 'flightlegs_depinfo_airport_continent_name', 'flightlegs_depinfo_times_scheduled_hour', 'flightlegs_arrinfo_times_scheduled_isWeekend', 'flightlegs_publishedstatus', 'flightlegs_servicetype', 'flightlegs_depinfo_times_scheduled_timezone', 'flightlegs_depinfo_airport_country_code', 'flightlegs_arrinfo_airport_continent_name', 'flightlegs_arrinfo_airport_airport_name', 'flightlegs_arrinfo_times_scheduled_year', 'flightlegs_depinfo_times_scheduled_isWeekend', 'flightlegs_statusname', 'flightlegs_arrinfo_times_scheduled_timezone', 'flightlegs_arrinfo_airport_subcontinent_name', 'flightlegs_irregularity_delayduration', 'flightlegs_arrinfo_times_scheduled_minute', 'flightlegs_arrinfo_times_scheduled_time', 'flightlegs_status', 'flightlegs_irregularity_delayduration_total_bracket', 'flightlegs_depinfo_airport_subcontinent_name', 'flightlegs_depinfo_times_scheduled_month', 'flightlegs_depinfo_airport_airport_name', 'flightlegs_arrinfo_airport_latitude', 'flightlegs_depinfo_times_scheduled_day'}
+2025-12-06 23:41:52,257 - afklm_ml - INFO - CLASSIFICATION_STATUS features: {'flightlegs_season', 'flightlegs_arrinfo_airport_code', 'flightlegs_aircraft_typecode', 'flightlegs_depinfo_times_scheduled_dayPeriod', 'flightlegs_depinfo_airport_country_name', 'flightlegs_arrinfo_airport_country_name', 'flightlegs_depinfo_airport_code', 'flightlegs_aircraft_ownerairlinecode', 'flightlegs_arrinfo_times_scheduled_dayPeriod', 'flightlegs_scheduledflightduration'}
+2025-12-06 23:41:52,257 - afklm_ml - INFO - CLASSIFICATION_STATUS target: flightlegs_publishedstatus
+2025-12-06 23:41:52,790 - afklm_ml - INFO - CLASSIFICATION_STATUS dataset class repartition: flightlegs_publishedstatus
+ONTIME       0.615342
+LATE         0.384092
+CANCELLED    0.000566
+Name: proportion, dtype: float64
+2025-12-06 23:41:52,790 - afklm_ml - INFO - CLASSIFICATION_STATUS train/test split: X_train=(440617, 10), X_test=(110155, 10), y_train=(440617,), y_test=(110155,)
+2025-12-06 23:41:52,998 - afklm_ml - INFO - CLASSIFICATION_STATUS Removing non-LATE flights
+2025-12-06 23:41:53,114 - afklm_ml - INFO - CLASSIFICATION_DELAY Using the full dataset
+2025-12-06 23:41:53,177 - afklm_ml - INFO - CLASSIFICATION_DELAY columns dropped: {'flightlegs_legstatuspublic', 'flightnumber', 'flightlegs_arrinfo_times_scheduled_hour', 'flightlegs_depinfo_airport_latitude', 'flightlegs_depinfo_times_scheduled_minute', 'flightlegs_irregularity_delayduration_total', 'flightlegs_depinfo_times_number_week', 'flightlegs_arrinfo_times_scheduled_month', 'flightlegs_arrinfo_times_scheduled', 'flightlegs_depinfo_times_scheduled', 'flightlegs_arrinfo_airport_country_code', 'flightlegs_arrinfo_airport_longitude', 'flightlegs_arrinfo_airport_places_arrivalpositionterminal', 'flightlegs_depinfo_times_scheduled_time', 'flightlegs_depinfo_times_scheduled_year', 'flightstatuspublic', 'flightlegs_arrinfo_times_scheduled_date', 'flightlegs_arrinfo_times_scheduled_day', 'delay_status', 'flightlegs_arrinfo_times_number_week', 'flightlegs_depinfo_airport_longitude', 'flightlegs_depinfo_times_scheduled_date', 'flightlegs_servicetypename', 'flightlegs_depinfo_airport_continent_name', 'flightlegs_depinfo_times_scheduled_hour', 'flightlegs_arrinfo_times_scheduled_isWeekend', 'flightlegs_publishedstatus', 'flightlegs_servicetype', 'flightlegs_depinfo_times_scheduled_timezone', 'flightlegs_depinfo_airport_country_code', 'flightlegs_arrinfo_airport_continent_name', 'flightlegs_arrinfo_airport_airport_name', 'flightlegs_arrinfo_times_scheduled_year', 'flightlegs_depinfo_times_scheduled_isWeekend', 'flightlegs_statusname', 'flightlegs_arrinfo_times_scheduled_timezone', 'flightlegs_arrinfo_airport_subcontinent_name', 'flightlegs_irregularity_delayduration', 'flightlegs_arrinfo_times_scheduled_minute', 'flightlegs_arrinfo_times_scheduled_time', 'flightlegs_status', 'flightlegs_irregularity_delayduration_total_bracket', 'flightlegs_depinfo_airport_subcontinent_name', 'flightlegs_depinfo_times_scheduled_month', 'flightlegs_depinfo_airport_airport_name', 'flightlegs_arrinfo_airport_latitude', 'flightlegs_depinfo_times_scheduled_day'}
+2025-12-06 23:41:53,177 - afklm_ml - INFO - CLASSIFICATION_DELAY features: {'flightlegs_season', 'flightlegs_arrinfo_airport_code', 'flightlegs_aircraft_typecode', 'flightlegs_depinfo_times_scheduled_dayPeriod', 'flightlegs_depinfo_airport_country_name', 'flightlegs_arrinfo_airport_country_name', 'flightlegs_depinfo_airport_code', 'flightlegs_aircraft_ownerairlinecode', 'flightlegs_arrinfo_times_scheduled_dayPeriod', 'flightlegs_scheduledflightduration'}
+2025-12-06 23:41:53,177 - afklm_ml - INFO - CLASSIFICATION_DELAY target: flightlegs_irregularity_delayduration_total_bracket
+2025-12-06 23:41:53,409 - afklm_ml - INFO - CLASSIFICATION_DELAY dataset class repartition: flightlegs_irregularity_delayduration_total_bracket
+]005;015]    0.328967
+]015;030]    0.245473
+]000;005]    0.170364
+]030;060]    0.168327
+]060;120]    0.045049
+]120;240]    0.037467
+]240;360]    0.004354
+Name: proportion, dtype: float64
+2025-12-06 23:41:53,410 - afklm_ml - INFO - CLASSIFICATION_DELAY train/test split: X_train=(169237, 10), X_test=(42310, 10), y_train=(169237,), y_test=(42310,)
+2025-12-06 23:41:53,650 - afklm_ml - INFO - CLASSIFICATION_DELAY Removing non-LATE flights
+2025-12-06 23:41:53,782 - afklm_ml - INFO - REGRESSION Using the full dataset
+2025-12-06 23:41:53,845 - afklm_ml - INFO - REGRESSION columns dropped: {'flightlegs_legstatuspublic', 'flightnumber', 'flightlegs_arrinfo_times_scheduled_hour', 'flightlegs_depinfo_airport_latitude', 'flightlegs_depinfo_times_scheduled_minute', 'flightlegs_irregularity_delayduration_total', 'flightlegs_depinfo_times_number_week', 'flightlegs_arrinfo_times_scheduled_month', 'flightlegs_arrinfo_times_scheduled', 'flightlegs_depinfo_times_scheduled', 'flightlegs_arrinfo_airport_country_code', 'flightlegs_arrinfo_airport_longitude', 'flightlegs_arrinfo_airport_places_arrivalpositionterminal', 'flightlegs_depinfo_times_scheduled_time', 'flightlegs_depinfo_times_scheduled_year', 'flightstatuspublic', 'flightlegs_arrinfo_times_scheduled_date', 'flightlegs_arrinfo_times_scheduled_day', 'delay_status', 'flightlegs_arrinfo_times_number_week', 'flightlegs_depinfo_airport_longitude', 'flightlegs_depinfo_times_scheduled_date', 'flightlegs_servicetypename', 'flightlegs_depinfo_airport_continent_name', 'flightlegs_depinfo_times_scheduled_hour', 'flightlegs_arrinfo_times_scheduled_isWeekend', 'flightlegs_publishedstatus', 'flightlegs_servicetype', 'flightlegs_depinfo_times_scheduled_timezone', 'flightlegs_depinfo_airport_country_code', 'flightlegs_arrinfo_airport_continent_name', 'flightlegs_arrinfo_airport_airport_name', 'flightlegs_arrinfo_times_scheduled_year', 'flightlegs_depinfo_times_scheduled_isWeekend', 'flightlegs_statusname', 'flightlegs_arrinfo_times_scheduled_timezone', 'flightlegs_arrinfo_airport_subcontinent_name', 'flightlegs_irregularity_delayduration', 'flightlegs_arrinfo_times_scheduled_minute', 'flightlegs_arrinfo_times_scheduled_time', 'flightlegs_status', 'flightlegs_irregularity_delayduration_total_bracket', 'flightlegs_depinfo_airport_subcontinent_name', 'flightlegs_depinfo_times_scheduled_month', 'flightlegs_depinfo_airport_airport_name', 'flightlegs_arrinfo_airport_latitude', 'flightlegs_depinfo_times_scheduled_day'}
+2025-12-06 23:41:53,845 - afklm_ml - INFO - REGRESSION features: {'flightlegs_season', 'flightlegs_arrinfo_airport_code', 'flightlegs_aircraft_typecode', 'flightlegs_depinfo_times_scheduled_dayPeriod', 'flightlegs_depinfo_airport_country_name', 'flightlegs_arrinfo_airport_country_name', 'flightlegs_depinfo_airport_code', 'flightlegs_aircraft_ownerairlinecode', 'flightlegs_arrinfo_times_scheduled_dayPeriod', 'flightlegs_scheduledflightduration'}
+2025-12-06 23:41:53,845 - afklm_ml - INFO - REGRESSION target: flightlegs_irregularity_delayduration_total
+2025-12-06 23:41:53,876 - afklm_ml - INFO - REGRESSION train/test split: X_train=(169237, 10), X_test=(42310, 10), y_train=(169237,), y_test=(42310,)
+2025-12-06 23:41:53,881 - afklm_ml - INFO - ================================== Pipelines building ==================================
+2025-12-06 23:41:53,923 - afklm_ml - INFO - ================================== classification_status training ==================================
+2025-12-06 23:41:53,923 - afklm_ml - INFO - Starting classification_status pipeline DecisionTree
+2025-12-06 23:41:53,923 - afklm_ml - INFO - classification_status_20251206_233942_DecisionTree.pkl
+2025-12-06 23:41:53,923 - afklm_ml - INFO - Fitting simple pipeline for classification_status DecisionTree
+2025-12-06 23:42:12,048 - afklm_ml - INFO - DecisionTree accuracy: 0.874
+2025-12-06 23:42:12,291 - afklm_ml - INFO - Not better than previous
+2025-12-06 23:42:12,291 - afklm_ml - INFO - Starting classification_status pipeline RandomForest
+2025-12-06 23:42:12,291 - afklm_ml - INFO - classification_status_20251206_233942_RandomForest.pkl
+2025-12-06 23:42:12,291 - afklm_ml - INFO - Fitting simple pipeline for classification_status RandomForest
+2025-12-06 23:47:48,436 - afklm_ml - INFO - RandomForest accuracy: 0.874
+2025-12-06 23:47:48,747 - afklm_ml - INFO - Not better than previous
+2025-12-06 23:47:48,747 - afklm_ml - INFO - Starting classification_status pipeline Logistic_OVO
+2025-12-06 23:47:48,747 - afklm_ml - INFO - classification_status_20251206_233942_Logistic_OVO.pkl
+2025-12-06 23:47:48,747 - afklm_ml - INFO - Fitting simple pipeline for classification_status Logistic_OVO
+2025-12-06 23:47:59,482 - afklm_ml - INFO - Logistic_OVO accuracy: 0.864
+2025-12-06 23:47:59,485 - afklm_ml - WARNING - No feature importance for Logistic_OVO
+2025-12-06 23:47:59,485 - afklm_ml - INFO - Not better than previous
+2025-12-06 23:47:59,486 - afklm_ml - INFO - Starting classification_status pipeline Logistic_OVR
+2025-12-06 23:47:59,486 - afklm_ml - INFO - classification_status_20251206_233942_Logistic_OVR.pkl
+2025-12-06 23:47:59,486 - afklm_ml - INFO - Fitting simple pipeline for classification_status Logistic_OVR
+2025-12-06 23:48:11,448 - afklm_ml - INFO - Logistic_OVR accuracy: 0.864
+2025-12-06 23:48:11,451 - afklm_ml - WARNING - No feature importance for Logistic_OVR
+2025-12-06 23:48:11,451 - afklm_ml - INFO - Not better than previous
+2025-12-06 23:48:11,451 - afklm_ml - INFO - ================================== classification_delay training ==================================
+2025-12-06 23:48:11,451 - afklm_ml - INFO - Starting classification_delay pipeline DecisionTree
+2025-12-06 23:48:11,451 - afklm_ml - INFO - classification_delay_20251206_233942_DecisionTree.pkl
+2025-12-06 23:48:11,451 - afklm_ml - INFO - Fitting simple pipeline for classification_delay DecisionTree
+2025-12-06 23:48:22,140 - afklm_ml - INFO - DecisionTree accuracy: 0.322
+2025-12-06 23:48:22,474 - afklm_ml - INFO - Not better than previous
+2025-12-06 23:48:22,474 - afklm_ml - INFO - Starting classification_delay pipeline RandomForest
+2025-12-06 23:48:22,474 - afklm_ml - INFO - classification_delay_20251206_233942_RandomForest.pkl
+2025-12-06 23:48:22,474 - afklm_ml - INFO - Fitting simple pipeline for classification_delay RandomForest
+2025-12-06 23:50:13,551 - afklm_ml - INFO - RandomForest accuracy: 0.319
+2025-12-06 23:50:13,865 - afklm_ml - INFO - Not better than previous
+2025-12-06 23:50:13,865 - afklm_ml - INFO - Starting classification_delay pipeline Logistic_OVO
+2025-12-06 23:50:13,865 - afklm_ml - INFO - classification_delay_20251206_233942_Logistic_OVO.pkl
+2025-12-06 23:50:13,865 - afklm_ml - INFO - Fitting simple pipeline for classification_delay Logistic_OVO
+2025-12-06 23:50:17,568 - afklm_ml - INFO - Logistic_OVO accuracy: 0.338
+2025-12-06 23:50:17,571 - afklm_ml - WARNING - No feature importance for Logistic_OVO
+2025-12-06 23:50:17,571 - afklm_ml - INFO - Not better than previous
+2025-12-06 23:50:17,572 - afklm_ml - INFO - Starting classification_delay pipeline Logistic_OVR
+2025-12-06 23:50:17,572 - afklm_ml - INFO - classification_delay_20251206_233942_Logistic_OVR.pkl
+2025-12-06 23:50:17,572 - afklm_ml - INFO - Fitting simple pipeline for classification_delay Logistic_OVR
+2025-12-06 23:50:21,674 - afklm_ml - INFO - Logistic_OVR accuracy: 0.339
+2025-12-06 23:50:21,677 - afklm_ml - WARNING - No feature importance for Logistic_OVR
+2025-12-06 23:50:21,678 - afklm_ml - INFO - Better than previous: 0.3386433467265421, new 0.33864334672654217
+2025-12-06 23:50:21,678 - afklm_ml - INFO - OK
+2025-12-06 23:50:21,680 - afklm_ml - INFO - ================================== regression training ==================================
+2025-12-06 23:50:21,680 - afklm_ml - INFO - Starting regression pipeline LinearRegression
+2025-12-06 23:50:21,680 - afklm_ml - INFO - regression_20251206_233942_LinearRegression.pkl
+2025-12-06 23:50:21,680 - afklm_ml - INFO - Fitting simple pipeline for regression LinearRegression
+2025-12-06 23:50:30,905 - afklm_ml - INFO - LinearRegression r2: 0.05133652472481587
+2025-12-06 23:50:31,167 - afklm_ml - INFO - Not better than previous
+2025-12-06 23:50:31,167 - afklm_ml - INFO - Starting regression pipeline DecisionTreeRegressor
+2025-12-06 23:50:31,167 - afklm_ml - INFO - regression_20251206_233942_DecisionTreeRegressor.pkl
+2025-12-06 23:50:31,167 - afklm_ml - INFO - Fitting simple pipeline for regression DecisionTreeRegressor
+2025-12-06 23:50:39,332 - afklm_ml - INFO - DecisionTreeRegressor r2: 0.0014060999353540105
+2025-12-06 23:50:39,558 - afklm_ml - INFO - Not better than previous
+2025-12-06 23:50:39,558 - afklm_ml - INFO - Starting regression pipeline RandomForestRegressor
+2025-12-06 23:50:39,558 - afklm_ml - INFO - regression_20251206_233942_RandomForestRegressor.pkl
+2025-12-06 23:50:39,558 - afklm_ml - INFO - Fitting simple pipeline for regression RandomForestRegressor
+2025-12-06 23:53:36,573 - afklm_ml - INFO - RandomForestRegressor r2: 0.02050873866209668
+2025-12-06 23:53:36,875 - afklm_ml - INFO - Not better than previous
+2025-12-06 23:53:36,875 - afklm_ml - INFO - Starting regression pipeline XGBRegressor
+2025-12-06 23:53:36,875 - afklm_ml - INFO - regression_20251206_233942_XGBRegressor.pkl
+2025-12-06 23:53:36,875 - afklm_ml - INFO - Fitting simple pipeline for regression XGBRegressor
+2025-12-06 23:53:37,953 - afklm_ml - INFO - XGBRegressor r2: 0.06794161618498173
+2025-12-06 23:53:38,258 - afklm_ml - INFO - Not better than previous
+2025-12-06 23:53:38,275 - afklm_ml - INFO - Finished ML pipeline
