@@ -15,6 +15,8 @@ import shutil
 from dotenv import load_dotenv
 import psycopg2
 import subprocess
+from pymongo import MongoClient
+from pymongo.errors import ConnectionFailure, ConfigurationError, ServerSelectionTimeoutError, InvalidURI
 
 load_dotenv()
 
@@ -203,8 +205,6 @@ def retrieve_latest_training_dataset():
 
 
 
-from pymongo import MongoClient
-from pymongo.errors import ConnectionFailure, ConfigurationError, ServerSelectionTimeoutError, InvalidURI
 
 
 
@@ -384,11 +384,8 @@ def get_flights_by_id( collection_name,  date=None, id=None, nb_flight=None, col
 
 @app.get("/export_all_collections_to_postgres_data_input",
         description=f"afklm_d1_from_mongo.csv.tar.gz in {folder_path}", tags=['training'])
-def download_update_d1_flights_test( ):
+def export_all_collections_to_postgres_data_input( ):
 
-    folder_path = "/data/output_for_postgres"
-    csv_file = f"{folder_path}/afklm_d1_from_mongo.csv"
-    tar_file = f"{csv_file}.tar.gz"
 
     CSV_FIELDS = (
         "_id,id,airline_code,airline_name,"
