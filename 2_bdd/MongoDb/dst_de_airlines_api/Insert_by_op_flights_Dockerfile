@@ -5,7 +5,7 @@ WORKDIR /app
 
 COPY requirements.txt .
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN apt-get update && apt-get install -y docker.io && pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
@@ -15,5 +15,8 @@ ENV PYTHONUNBUFFERED=1
 
 CMD echo "===  START DATA INSERTION ===" && \
     python -u -m SCRIPTS.insert_by_operational_flights && \
+    echo "Installing docker-cli..." && \
+    echo "Restarting the afklm_mongodb container"  &&   \
+    docker restart afklm_mongodb && \
     echo "=== DATA INSERTED ===" || \
-    echo "=== INSERTION ERROR ==="
+    echo "=== INSERTION ERROR ==="  

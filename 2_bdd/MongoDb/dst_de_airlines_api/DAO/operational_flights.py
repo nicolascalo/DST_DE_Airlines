@@ -17,7 +17,7 @@ def insert_many(operation_flights, collection_name):
 def insert_one(operation_flights, collection_name):
     check_db_connection() 
     
-    mongo_db_connect[collection_name].insert_one(operation_flights)
+    mongo_db_connect[collection_name].replace_one(operation_flights,operation_flights, upsert=True)
     gc.collect
 
 
@@ -45,9 +45,11 @@ def delete_duplicates(collection_name):
         if len(unic_flights) < len(operational_flights):
             mongo_db_connect[collection_name].update_one(
                 {'_id': op_flights['_id']},
-                {'$set': {'operationalFlights': unic_flights}}
+                {'$set': {'operationalFlights': unic_flights} },upsert = True
             ) 
     gc.collect()
+
+
         
 
 
@@ -76,6 +78,7 @@ def delete_all_opreation_flights_collection(collection_name):
 
 
 def remove_past_flights_on_d1_collection():
+    print(f"Removing past flights from d1 flights")
     check_db_connection() 
     query = {
         "$expr": {
@@ -90,16 +93,42 @@ def remove_past_flights_on_d1_collection():
         }
     }
         
+
+    print(f"Listing flights to remove")
     flights_to_remove = list(mongo_db_connect['update_scheduled_d1_flights'].find(query))
 
+
+
     if flights_to_remove:
-         for flight in flights_to_remove:
-                mongo_db_connect['removed_update_scheduled_d1_flights'].update_one(
-                {"id": flight["id"]},
-                {"$setOnInsert": flight},
-                upsert=True
-            )
-   
+        print(f"Nb of flights to remove: {len(flights_to_remove)}")
+
+        '''
+        to_remove_id_list = [flight["id"] for flight in flights_to_remove]
+
+        mongo_db_connect['removed_update_scheduled_d1_flights'].updateMany(
+        {"id": {"$in": to_remove_id_list}},
+        {"$setOnInsert": "$flight"},
+        upsert=True)
+
+        '''       
+
+
+        '''
+
+        for flight in flights_to_remove:
+            mongo_db_connect['removed_update_scheduled_d1_flights'].update_one(
+            {"id": flight["id"]},
+            {"$setOnInsert": flight},
+            upsert=True)
+
+        '''
+            
+    else:
+        print("No flight to remove")            
+
+
+    print(f"Deleting flight")
+
     deleting = mongo_db_connect['update_scheduled_d1_flights'].delete_many(query)
 
     print(f"nb d1 flights deleted : {deleting.deleted_count}")
@@ -107,6 +136,8 @@ def remove_past_flights_on_d1_collection():
     return deleting.deleted_count
 
 def remove_past_flights_on_scheduled_collection():
+    print(f"Cleaning scheduled flights")
+    
     check_db_connection() 
     query = {
    
@@ -121,6 +152,9 @@ def remove_past_flights_on_scheduled_collection():
             ]
         }
     }
+
+    '''
+    
     flights_to_remove = list(mongo_db_connect['scheduled_flights'].find(query))
     if flights_to_remove:
         for flight in flights_to_remove:
@@ -131,6 +165,9 @@ def remove_past_flights_on_scheduled_collection():
                 upsert=True
             )
       
+    '''
+
+
     deleting = mongo_db_connect['scheduled_flights'].delete_many(query)
     print(f"nb scheduled flights deleted : {deleting.deleted_count}")
     gc.collect()
@@ -138,7 +175,7 @@ def remove_past_flights_on_scheduled_collection():
     
 def remove_duplicate_flights_from_scheduled():
     check_db_connection() 
-    
+    print(f"Remopving duplicates scheduled_flights")
  
     ids_to_remove = mongo_db_connect['update_scheduled_d1_flights'].distinct("id")
     

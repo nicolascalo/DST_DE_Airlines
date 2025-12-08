@@ -40,6 +40,8 @@ def count_flight(collection_name):
         raise
 
 def add_date_insertion(collection_name):
+    print(f"Updating date on {collection_name}")
+    
     check_db_connection() 
     date_now = datetime.now(ZoneInfo("Europe/Paris")).strftime("%Y%m%d-%H-%M-%S")
 

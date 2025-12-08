@@ -1,7 +1,7 @@
 FROM python:3.12
 
 RUN apt-get update && \
-    apt-get install -y wget && \
+    apt-get install -y wget tar && \
     wget https://fastdl.mongodb.org/tools/db/mongodb-database-tools-debian12-x86_64-100.9.4.deb && \
     apt install -y ./mongodb-database-tools-debian12-x86_64-100.9.4.deb && \
     rm mongodb-database-tools-debian12-x86_64-100.9.4.deb && \

@@ -34,11 +34,13 @@ def insert_by_operational_flights():
 
    
     for file_name in missing_file_names:
+        print(file_name)
         
         if is_gz_file(file_name) == True:
             gz_file_name = file_name
             
             collection_name = get_collection_name_by_end_gz_file_name(gz_file_name)
+            print(collection_name)
 
             json_file = get_json_in_gz_file_by_its_name_local(gz_file_name)
 
@@ -61,7 +63,7 @@ def clean():
         dst_collection = org_collection.replace("_operational_","_")
         delete_duplicates(org_collection)
         move_to_dst_collection(org_collection, dst_collection)
-        create_index(dst_collection)
+        #create_index(dst_collection)
         delete_all_opreation_flights_collection(org_collection)
     remove_duplicate_flights_from_scheduled()
     remove_past_flights_on_d1_collection()
