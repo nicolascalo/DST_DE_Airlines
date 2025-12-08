@@ -1,7 +1,20 @@
 services:
 
-
-
+  #------------------------------------------AFKLM DATA COLLECTOR--------------------------------------
+  afklm_data_collection:
+    build:
+      context: ./1_data_collection/afklm_api_collection
+      dockerfile: Dockerfile
+    container_name: afklm_data_collection
+    volumes:
+    - ./1_data_collection/afklm_api_collection/data:/app/data
+    - ./1_data_collection/afklm_api_collection/api_keys:/app/api_keys
+    - ./1_data_collection/afklm_api_collection/call_parameter_lists:/app/call_parameter_lists
+    restart: "no"
+    networks:
+      - default
+    environment:
+        - PYTHONUNBUFFERED=1
   #------------------------------ MONGO DB BDD-------------------------------------------------------------------------------------------
     
   afklm_mongodb:

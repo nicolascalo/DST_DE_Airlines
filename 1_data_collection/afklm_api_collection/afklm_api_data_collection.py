@@ -48,6 +48,7 @@ import google
 import google.cloud
 
 
+
 ### GCP parameters
 PROJECT_ID = "trusty-anchor-473006-u9"
 bucket_name = "airfrance-bucket"
@@ -203,27 +204,11 @@ def info_message(text:str, color:str=None, level_info:str=None) -> None:
 
 
 
-def list_json_files(path_data_storage:str, bucket = bucket) -> list:
-    if on_cloud:
-        json_list_blobs = client_storage.list_blobs(bucket, prefix=path_data_storage)
-        json_list = [val.name for val in json_list_blobs if 'json' in val.name]
-    
-    else:
-        json_list = os.listdir(path_data_storage)
-        json_list = [val for val in json_list if 'json' in val]
-
-    
-    json_list.sort()
-
-    return json_list
-
-
-
-def save_and_compress_json(path_data_storage:str,json_to_make:str, bucket = bucket) -> None:
+def compress_and_save_file(path_data_storage:str,file_to_compress:str, bucket = bucket) -> None:
 
     if on_cloud:
 
-        gzip_blob_name = f"{path_data_storage}/{json_to_make}.gz"    
+        gzip_blob_name = f"{path_data_storage}/{file_to_compress}.gz"    
         gzip_blob = bucket.blob(gzip_blob_name)
         buffer=BytesIO()
         with gzip.GzipFile(fileobj=buffer, mode='wb') as gzip_file:
@@ -233,73 +218,60 @@ def save_and_compress_json(path_data_storage:str,json_to_make:str, bucket = buck
         # logger.info(f"blob:'{gzip_blob_name}' uploaded")
 
     else:
-        with gzip.open(f"{path_data_storage}/{json_to_make}.gz", 'wt', encoding='utf-8') as f:
+        with gzip.open(f"{path_data_storage}/{file_to_compress}.gz", 'wt', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=4)
     
     return None
 
-def delete_json(path_data_storage:str,json_to_make:str, bucket = bucket) -> None:      
+
+
+def delete_file(path_data_storage:str,file_to_delete:str, bucket = bucket, additional_ext:str = 'gz') -> None:      
 
     if not on_cloud:
         try:
-            os.remove(f"{path_data_storage}/{json_to_make}.gz")
+            os.remove(f"{path_data_storage}/{file_to_delete}.{additional_ext}")
         except:
             pass
     
     return None
 
 
-def open_json(path_data_storage:str,file_to_open:str, bucket = bucket) -> None:
+def open_compressed_json(path_data_storage:str,json_to_open:str, bucket = bucket) -> None:
 
     if on_cloud:
+        ## TODO Check if working on GCP
 
-        gzip_blob_name = f"{path_data_storage}/{json_to_make}.gz"    
-        gzip_blob = bucket.blob(gzip_blob_name)
+        gzip_blob_name = f"{path_data_storage}/{json_to_open}.gz"    
         buffer=BytesIO()
         with gzip.open(fileobj=buffer, mode='rb') as json_file:
             data = json.load(json_file)
 
     else:
-        with gzip.open(f"{path_data_storage}/" + file_to_open) as json_file:
+        with gzip.open(f"{path_data_storage}/" + json_to_open) as json_file:
             data = json.load(json_file)
     
     return data
 
 
 
-
-def list_api_files(api_key_list_folder:str, bucket = bucket) -> list:
+    
+def list_files(file_folder:str, pattern:str = '.',file_ext:str = '.', bucket = bucket) -> list:
 
     if on_cloud:
-        api_file_list = client_storage.list_blobs(bucket,prefix=api_key_list_folder)
-        api_file_list = [val.name for val in api_file_list if (len(re.findall("csv$",val.name)) > 0)]
+        path = client_storage.list_blobs(bucket,prefix=file_folder)
+        file_list = [val.name for val in path if (pattern  in val.name) & (len(re.findall(f"{file_ext}$",val.name)) > 0)]
     
     else:
-        api_file_list = os.listdir(api_key_list_folder)
-        api_file_list = [val for val in api_file_list if (len(re.findall("csv$",val)) > 0)]
-    
-    return api_file_list
-
-    
-
-def list_call_parameters(path_call_parameter_file_folder:str, bucket = bucket) -> list:
-
-    if on_cloud:
-        path_call_parameter_csv_list = client_storage.list_blobs(bucket,prefix=path_call_parameter_file_folder)
-        call_parameter_csv_list = [val.name for val in path_call_parameter_csv_list if ('df_call_parameters'  in val.name) & (len(re.findall("csv$",val.name)) > 0)]
-    
-    else:
-        call_parameter_csv_list = os.listdir(path_call_parameter_file_folder)
-        call_parameter_csv_list = [val for val in call_parameter_csv_list if ('df_call_parameters'  in val) & (len(re.findall("csv$",val) )> 0
+        file_list = os.listdir(file_folder)
+        file_list = [val for val in file_list if (pattern in val) & (len(re.findall(f"{file_ext}$",val) )> 0
 
 )]
     
-    call_parameter_csv_list.sort()
+    file_list.sort()
 
-    return call_parameter_csv_list
+    return file_list
 
     
-
 
 
 ### Working directory adjustments
@@ -320,8 +292,8 @@ if not on_cloud:
 
 ### List of already retrieved data and parameter CSV files
 
-call_parameter_csv_list = list_call_parameters(path_call_parameter_file_folder=path_call_parameter_file_folder,bucket=bucket)
-json_list = list_json_files(path_data_storage,bucket)
+call_parameter_csv_list = list_files(file_folder=path_call_parameter_file_folder,bucket=bucket, pattern= 'df_call_parameters',file_ext= "csv")
+json_list = list_files(file_folder= path_data_storage,bucket= bucket,pattern = 'json')
 
 
 
@@ -407,7 +379,7 @@ if add_new_dates_csv_parameters :
 
 if on_cloud:
 
-    API_key_file_list = list_api_files(api_key_list_folder=api_key_list_folder,bucket=bucket)[0]
+    API_key_file_list = list_files(file_folder=api_key_list_folder,bucket=bucket, file_ext= "csv")[0]
     API_key_list_cleaned = import_csv(path_folder = api_key_list_folder,path_file = API_key_file_list)
 
 
@@ -634,7 +606,7 @@ for index, record in API_key_list_cleaned.iterrows():
             
             if (day_diff_now_startRange < -180) | (day_diff_now_endRange < -180)   :
 
-                info_message(f"endRange earlier than startRange",'red','warning')
+                info_message(f"startRange or endRange too far in the past",'red','warning')
                 continue
             
             if  (day_diff_now_startRange > 365) | (day_diff_now_endRange > 365)  :
@@ -645,7 +617,7 @@ for index, record in API_key_list_cleaned.iterrows():
             
             if  (day_diff_now_startRange > 365)   :
 
-                info_message(f"startRange too far in the past",'red','warning')
+                info_message(f"startRange too far in the future",'red','warning')
                 continue
             if   (day_diff_now_endRange > 365)  :
 
@@ -707,9 +679,11 @@ for index, record in API_key_list_cleaned.iterrows():
                     if not df_item :
                         info_message("loading page info from already retrieved files",'blue')
                         file_to_open = [file for file in json_list if json_to_make in file][0]
-                        data = open_json(path_data_storage,file_to_open,bucket)
+                        data = open_compressed_json(path_data_storage,json_to_open = json_to_make,bucket=bucket)
                         page_max = data['page']['totalPages']
                         df_subset.loc[0, ['totalPages']] = page_max
+                        totalFlights = data['page']['fullCount']
+                        df_subset.loc[0, ['totalFlights']] = totalFlights
                     else:
                         page_max = df_item
 
@@ -720,12 +694,12 @@ for index, record in API_key_list_cleaned.iterrows():
                         
                         if day_diff_now_startRange < 0 :
                             df_subset.loc[0, ['completion']] = 100
-                            delete_json(path_data_storage, json_to_make_root + f"_{pageNumber}_sched.json", bucket)
-                            delete_json(path_data_storage, json_to_make_root + f"_{pageNumber}_updSchedD1.json", bucket)
+                            delete_file(path_data_storage, json_to_make_root + f"_{pageNumber}_sched.json", bucket)
+                            delete_file(path_data_storage, json_to_make_root + f"_{pageNumber}_updSchedD1.json", bucket)
                             
                         elif day_diff_now_startRange == 0:
                             df_subset.loc[0, ['completion']] = 66
-                            delete_json(path_data_storage, json_to_make_root + f"_{pageNumber}_sched.json", bucket)
+                            delete_file(path_data_storage, json_to_make_root + f"_{pageNumber}_sched.json", bucket)
                         else:
                             df_subset.loc[0, ['completion']] = 33
                             
@@ -788,7 +762,7 @@ for index, record in API_key_list_cleaned.iterrows():
                     page_max = data['page']['totalPages']
                     fullCount = data['page']['fullCount']
 
-                    save_and_compress_json(path_data_storage,json_to_make, bucket)
+                    compress_and_save_file(path_data_storage= path_data_storage,file_to_compress = json_to_make, bucket = bucket)
                     
                     info_message(f"Page {pageNumber} : retrieval OK    Total: {page_max}",'green','info')
 
@@ -806,12 +780,12 @@ for index, record in API_key_list_cleaned.iterrows():
                     if day_diff_now_startRange < 0 :
                         df_subset.loc[0, ['completion']] = float(f"{100*(pageNumber+1)/page_max:.0f}")
                         
-                        delete_json(path_data_storage, json_to_make_root + f"_{pageNumber}_sched.json", bucket)
-                        delete_json(path_data_storage, json_to_make_root + f"_{pageNumber}_updSchedD1.json", bucket)
+                        delete_file(path_data_storage, json_to_make_root + f"_{pageNumber}_sched.json", bucket)
+                        delete_file(path_data_storage, json_to_make_root + f"_{pageNumber}_updSchedD1.json", bucket)
        
                     elif day_diff_now_startRange == 0:
                         df_subset.loc[0, ['completion']] = float(f"{66*(pageNumber+1)/page_max:.0f}")
-                        delete_json(path_data_storage, json_to_make_root + f"_{pageNumber}_sched.json", bucket)
+                        delete_file(path_data_storage, json_to_make_root + f"_{pageNumber}_sched.json", bucket)
                         
                     else:
                         df_subset.loc[0, ['completion']] = float(f"{33*(pageNumber+1)/page_max:.0f}")
