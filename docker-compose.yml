@@ -252,6 +252,30 @@ services:
       - default
 
 
+#-----------------------------------------------------------------EXPORT POSTGRES DATA TO ML----------------------------
+
+  afklm_export_postgres_data_to_ml:
+    build:
+      context: ./2_bdd/Postgre/export_data_to_ml/
+      dockerfile: Dockerfile
+    container_name: afklm_export_postgres_data_to_ml
+    restart: "no"
+    volumes:
+      - ./3_ML/data:/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: afklm
+      POSTGRES_URI: afklm_postgres
+      POSTGRES_PORT: 5432
+      OUTPUT_DIR: "outputs"
+    depends_on:
+      afklm_postgres:
+        condition: service_healthy
+      afklm_load_input_data_into_postgres:
+        condition: service_completed_successfully
+
+
 
 
 
@@ -307,6 +331,8 @@ services:
     depends_on:
       afklm_postgres:
         condition: service_healthy
+      afklm_export_postgres_data_to_ml:
+        condition: service_completed_successfully
 
 
 

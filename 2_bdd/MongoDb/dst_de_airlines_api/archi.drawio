@@ -1,0 +1,52 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram name="Page-1" id="5dTN1wau0OmfxU4z_lOa">
+    <mxGraphModel dx="1678" dy="1045" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Iss7GiUJHMb26E-gFRQW-3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="75" y="590" width="635" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Iss7GiUJHMb26E-gFRQW-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#33FF33;" vertex="1" parent="1">
+          <mxGeometry x="60" y="350" width="640" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Iss7GiUJHMb26E-gFRQW-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6666FF;" vertex="1" parent="1">
+          <mxGeometry x="55" y="120" width="640" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Iss7GiUJHMb26E-gFRQW-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="Iss7GiUJHMb26E-gFRQW-6" target="Iss7GiUJHMb26E-gFRQW-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Iss7GiUJHMb26E-gFRQW-6" value="Controller" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="210" y="150" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Iss7GiUJHMb26E-gFRQW-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="Iss7GiUJHMb26E-gFRQW-7" target="Iss7GiUJHMb26E-gFRQW-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Iss7GiUJHMb26E-gFRQW-7" value="Use case" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="400" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Iss7GiUJHMb26E-gFRQW-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="Iss7GiUJHMb26E-gFRQW-8" target="Iss7GiUJHMb26E-gFRQW-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Iss7GiUJHMb26E-gFRQW-8" value="Dao" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="620" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Iss7GiUJHMb26E-gFRQW-12" value="&lt;font style=&quot;color: rgb(102, 204, 0);&quot;&gt;Couche Applicative&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="370" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Iss7GiUJHMb26E-gFRQW-13" value="&lt;font style=&quot;color: rgb(51, 51, 255);&quot;&gt;Couche API&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="170" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Iss7GiUJHMb26E-gFRQW-15" value="&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;Couche Infrastructure&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="540" y="630" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Iss7GiUJHMb26E-gFRQW-16" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="260" y="800" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Iss7GiUJHMb26E-gFRQW-20" value="Stockage données" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="850" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
