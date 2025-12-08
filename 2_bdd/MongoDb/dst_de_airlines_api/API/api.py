@@ -414,91 +414,9 @@ def create_database_dump():
         )
 
 
-    
-#################################################################################################################
-
-
-class collection_filenames(BaseModel):
-    collection: str
-    filename: str
-
-class Payload_flights(BaseModel):
-    model_config = {
-    "extra": "allow",
-    "json_schema_extra": 
-    
-    
-    {
-            "examples": [{"limit":None,
-                          "date":None,
-                          "start_id":None,
-                          "coll_files": [{"collection":"historic_flights","filename":'afklm_historic_from_mongo.csv'},                                        {"collection":'scheduled_flights',"filename":'afklm_scheduled_from_mongo.csv'},
-                                        {"collection":'update_scheduled_d1_flights',"filename":'afklm_d1_from_mongo.csv'}],
-                                        "target_folder":"test"
-                                        }
-                                        ]
-               
-            
-        }
-    
-    }
-
-    limit: int = None,
-    date: str | None = None,
-    start_id: str | None = None,
-    coll_files :list[collection_filenames] = None
-    target_folder: str | None = None
 
 
 
-
-
-
-
-
-@app.post("/get_flights")
-def post_users(parameters: Payload_flights):
-
-    param_dict = parameters.model_dump()
-
-    print(param_dict)
-
-    if param_dict.date:
-        if not re.match(r'^\d{8}-\d{2}-\d{2}-\d{2}$', date):
-            raise HTTPException(
-                status_code=400,
-                detail="Invalid date format. Use YYYYMMDD-HH-MM-SS (French time - Europe/Paris)"
-            )
-
-    for item in param_dict.coll_files:        
-        collection_name = item.collection
-        filename = item.filename
-
-
-        df, filename = get_df_flights(collection_name, param_dict.date, param_dict.start_id, param_dict.limit)
-
-        if df is None or df.empty:
-            raise HTTPException(
-                status_code=404,
-                detail=f"No flights found after {param_dict.date}"
-            )
-
-        tar_filename = create_csv_tar_gz(df, param_dict.filename)
-
-        if param_dict.target_folder:
-            print(f"saving data in {param_dict.target_folder}")
-
-
-
-        else:
-
-            return StreamingResponse(
-                iter([tar_filename]),
-                media_type="application/gzip",
-                headers={
-                    "Content-Disposition": f"attachment; filename={filename.replace('.csv', '.tar.gz')}"
-                }
-            )
         
 
 
