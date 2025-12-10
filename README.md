@@ -49,7 +49,7 @@ Le dépôt est organisé autour de **4 grands blocs fonctionnels** :
    - Sélection d’un vol via une table des futurs vols
    - Visualisation de la prédiction de retard et des métriques du modèle
 
-> 🔁 L’ensemble est orchestré via `docker-compose.yml` (base de données, API, dashboard, etc.).
+> 🔁 L’ensemble est orchestré via Docker Compose (base de données, API, dashboard, ordonnancement des flux de données, etc.).
 
 ---
 
@@ -95,25 +95,52 @@ Les ports exacts peuvent être adaptés dans `docker-compose.yml`, mais l’arch
 5. **Perspectives d'évolutions**
    - algorithme  K-means
    - système d'authentification pour accèder au tableau de bord
-   - intégration du projet à gcp
+   - intégration du projet à GCP
    - monitoring via Grafana
 
 ---
 
-## 👥 Équipe projet
+## 👥 Équipe et contributions
 
-- **Nicolas Calos**
+### Equipe:
+
+- **Nicolas Calo**
 - **Johan Cloos**
 - **Rathana Lat**
 - **Younes Es-Soualhi**
 - **Youssef Znati**
 
-Rôles principaux :  
-Collecte de données, modélisation SQL, Machine Learning, mise en place du Dashboard et intégration finale
+### Contributions:
+
+#### Sélection des sources de données
+Johan Cloos, Nicolas Calo, Rathana Lat, Youssef Znati
+#### Collecte des données
+Nicolas Calo, Rathana Lat
+#### MongoDB 
+Johan Cloos, Nicolas Calo
+#### PostgreSQL 
+Rathana Lat, Nicolas Calo
+#### Exploration des données 
+Youssef Znati, Nicolas Calo, Johan Cloos
+#### Apprentissage machine 
+Nicolas Calo, Youssef Znati
+#### Conteneurisation 
+Johan Cloos, Nicolas Calo
+#### Ordonnancment (Docker Compose) 
+Nicolas Calo, Johan Cloos
+#### APIs 
+Nicolas Calo, Johan Cloos
+#### UI/UX Dashboard 
+Youssef Znati, Nicolas Calo, Rathana Lat
+#### Déploiement sur le cloud (GCP) 
+Younes Es-Soualhi, Johan Cloos, Nicolas Calo
+#### Documentation 
+Youssef Znati, Nicolas Calo, Rathana Lat, Johan Cloos, Younes Es-Soualhi
+
 
 ---
 
-## 🚀 Lancer le projet (vue d’ensemble)
+## 🚀 Lancer le projet
 
 > ⚠️ Les commandes exactes et prérequis seront détaillés dans les README de chaque dossier (`1_data_collection/`, `2_database/`, `3_ml/`, `4_dashboard/`).  
 > Ci-dessous, une vision très simplifiée.
@@ -123,12 +150,17 @@ Collecte de données, modélisation SQL, Machine Learning, mise en place du Dash
 git clone https://github.com/nicolascalo/DST_DE_Airlines.git
 cd DST_DE_Airlines
 
-# 2. Lancer l’environnement Docker complet
+# 2a. Lancer l’environnement Docker complet avec initialisation des données
 docker-compose build
 docker-compose up
 
-# 3. Accéder aux services principaux
-# Dashboard
+# OU
+
+# 2b. Lancer l’environnement Docker complet sans initialisation des données
+docker-compose -f docker-compose-mount.yml build
+docker-compose -f docker-compose-mount.yml up
+
+# 3. Accéder au Dashboard
 # => http://localhost:8050
 # API ML (FastAPI)
-# => http://localhost:8000/docs
+
