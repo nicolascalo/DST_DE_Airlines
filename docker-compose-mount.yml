@@ -1,0 +1,217 @@
+services:
+
+  #------------------------------ MONGO DB BDD-------------------------------------------------------------------------------------------
+    
+  afklm_mongodb:
+    image: mongo:7.0
+    container_name: afklm_mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: airlines
+      MONGO_INITDB_ROOT_PASSWORD: airlines
+    volumes:
+      - ./2_bdd/MongoDb/mongodb_volume:/data/db
+      - ./2_bdd/Postgre/data_input:/data/output_for_postgres
+
+    ports:
+      - "27017:27017"
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet | grep 1
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 10s
+    restart: unless-stopped
+
+
+
+#--------------------------------------------------------------------------------------------------MONGO_DB_API--------------------------------------------------------
+  afklm_mongodb_api:
+    build:
+      context: ./2_bdd/MongoDb/dst_de_airlines_api/
+      dockerfile: Dockerfile
+    container_name: afklm_mongodb_api
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGODB_URI=mongodb://airlines:airlines@afklm_mongodb:27017/airlines?authSource=admin
+      - DATABASE_NAME=airlines
+      - FOLDER_PATH=/app/data
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      afklm_mongodb:
+        condition: service_healthy
+
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8000/"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+
+
+
+
+
+
+#-------------------------------------------------------------BDD POSTGRES--------------------------------------------------------------
+
+  afklm_postgres:
+    container_name: afklm_postgres
+    build:
+      context: ./2_bdd/Postgre/
+      dockerfile: postgres_Dockerfile
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: afklm
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD", "pg_isready","--host=afklm_postgres", "-U", "postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s      
+    volumes:
+      - ./2_bdd/Postgre/postgres_volume:/var/lib/postgresql/data
+      - ./2_bdd/Postgre/data_input:/data_input
+      - ./2_bdd/Postgre/tmp:/tmp
+
+#-------------------------------------------------------------------------POSTGRES API--------------------------------------------------------------------------------
+    
+  afklm_postgre_api:
+      build:
+        context: ./2_bdd/Postgre/afklm_api/
+        dockerfile: Dockerfile
+      container_name: afklm_postgre_api
+      ports:
+        - "8004:8004"
+      environment:
+        - API_DST_AIRLINES_URL=http://afklm_mongodb_api:8000/
+        - DATA_INPUT=/app/data_input/
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=postgres
+        - POSTGRES_DB=afklm
+        - POSTGRES_URI=afklm_postgres
+        - POSTGRES_PORT=5432
+        - SQL_FILE_FOLDER=/app/postgres_data_import_scripts
+        - DATA_FILE_FOLDER=/app/data_input
+        - MONGODB_URI=mongodb://airlines:airlines@afklm_mongodb:27017/airlines?authSource=admin
+        - DATABASE_NAME=airlines
+        
+      extra_hosts:
+        - "host.docker.internal:host-gateway"
+      depends_on:
+        afklm_mongodb_api:
+          condition: service_healthy
+        afklm_postgres:
+          condition: service_healthy
+
+
+      restart: unless-stopped
+      volumes:
+        - ./2_bdd/Postgre/data_input:/app/data_input
+        - ./2_bdd/Postgre/tmp:/app/tmp
+        - /var/run/docker.sock:/var/run/docker.sock        
+      healthcheck:
+        test: ["CMD", "curl", "--fail", "http://localhost:8004"]
+        interval: 10s
+        timeout: 5s
+        retries: 5
+        start_period: 15s
+
+
+
+
+
+
+
+
+#------------------------------------------------------------------------------PG PGADMIN-------------------------------------------------------------------
+
+  afklm_postgres_pgadmin:
+    container_name: afklm_pgadmin4
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: postgres@datascientest.com
+      PGADMIN_DEFAULT_PASSWORD: password
+    ports:
+      - "5050:80"
+    healthcheck:
+      test: ["CMD", "wget", "-O", "-", "http://localhost:80/misc/ping"]
+      interval: 10s
+      timeout: 10s
+      start_period: 160s
+      retries: 3
+    depends_on:
+      afklm_postgres:
+        condition: service_healthy
+
+
+#------------------------------------------------------------------------------------API MACHINE LEARNING--------------------------------------
+
+
+  afklm_ml_api:
+    build:
+      context: ./3_ML
+      dockerfile: Dockerfile
+    container_name: afklm_ml_api
+    ports:
+      - "8001:8001"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8001/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+    restart: unless-stopped
+    volumes:
+      - ./3_ML/outputs:/outputs
+      - ./3_ML/data:/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: afklm
+      POSTGRES_URI: afklm_postgres
+      POSTGRES_PORT: 5432
+      OUTPUT_DIR: "outputs"
+    depends_on:
+      afklm_postgres:
+        condition: service_healthy
+
+
+
+#-------------------------------------------------------------------------DASH--------------------------------------------------------------------------------
+
+  afklm_dashboard_api:
+    build: 
+      context: ./4_dashboard/
+      dockerfile: Dockerfile
+    container_name: afklm_dashboard_api
+    hostname: afklm_dashboard_api
+    restart: always
+    ports:
+      - 8050:8050
+    volumes:
+      - ./4_dashboard/assets:/app/assets
+      
+      
+    depends_on:
+      afklm_ml_api:
+        condition: service_healthy
+      afklm_postgres:
+        condition: service_healthy
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: afklm
+      POSTGRES_URI: afklm_postgres
+      POSTGRES_PORT: 5432
+      ML_API_PORT: 8001
+      ML_API_HOST: afklm_ml_api
+      ML_PRED_ROUTE: "/predictions/get_delay_predictions"
+      ML_METRICS_ROUTE: "/metrics/get_model_metrics"
+
