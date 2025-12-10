@@ -1,6 +1,6 @@
 # ✈️ DST Airlines – Prédiction des retards de vols AF-KLM
 
-Projet de fin de formation DataScientest visant à **prédire les retards de vols du groupe Air France–KLM** à partir des données opérationnelles de vols.
+Projet fil rouge de Data Engineering (formation DataScientest) visant à **prédire les retards de vols du groupe Air France – KLM** à partir des données opérationnelles de vols.
 
 L’objectif est double :
 
@@ -11,17 +11,16 @@ L’objectif est double :
 
 ## 🎯 Contexte & objectifs
 
-- **Contexte métier**  
-  AF-KLM publie des informations opérationnelles (statuts de vols, horaires, retards, causes publiques).  
-  Ces données sont consommables via l’API officielle du groupe.
+### Contexte métier  
+  - AF-KLM publie des informations opérationnelles (statuts, horaires, retards, causes publiques) sur les vols des avions de son réseau partenaire. Ces données sont récupérables via l’API officielle du groupe.
 
-- **Objectif principal**  
-  Prédire **si un vol sera en retard ou non** (classification binaire) à partir de caractéristiques du vol  
-  (ligne, horaires, appareil, statut, etc.).
+### Objectifs principaux du projet
+- Etablir un pipeline automatisé complet d'ingéniérie de données permettant de collecter, trier, transformer et stocker les données de vols d'Air France KLM
+- Utiliser ces données pour entraîner un alogrithem d'apprentissage machine afin de prédire **l'occurence et la durée de retard des vols futurs** (classification et régression) à partir de caractéristiques du vol (ligne, horaires, appareil, statut, etc.).
 
-- **Contraintes du projet**
+### Contraintes du projet
   - Infrastructure et outils **100% gratuits** (pas de budget pour des ressources cloud payantes)
-  - Collaboration à 5, avec séparation claire des répartition des tâches
+  - Collaboration à 5, avec répartition des tâches
 
 ---
 
@@ -31,23 +30,28 @@ Le dépôt est organisé autour de **4 grands blocs fonctionnels** :
 
 1. **`1_data_collection/` – Collecte & structuration des données**
    - Scripts d’appel à l’**API AF-KLM** (endpoints vols)
-   - Récupération incrémentale sur 2 mois, sans doublons
-   - Stockage intermédiaire en JSON / CSV puis dépôt dans la base relationnelle
+   - Récupération journalière des vols passés et futurs sans doublons sur la base de paramètres définis par l'utilisateur
+   - Stockage des fichiers en fichiers JSON compressés
 
-2. **`2_bdd/` – Modélisation & alimentation PostgreSQL**
+2. **`2_bdd/` – Stockage/tri des données dans MongoDB et PostgreSQL**
+   - Stockage des données brutes sous forme de documents et filtrage/reformatage dans MongoDB
+   - Transfert des données sous forme tabulaire dans la base relationnelle PostgreSQL
    - Schéma relationnel (tables `Continent`, `Country`, `Airport`, `Flight`, `Delay`, etc.)
    - Scripts SQL d’initialisation et de création de la base `airline`
-   - Intégration des données issues de la collecte
+   - Intégration des données issues de la collecte et depuis Wikipédia
 
 3. **`3_ML/` – Modèle de Machine Learning**
    - Préparation des features, nettoyage et choix des variables explicatives
-   - Modèle principal : **Random Forest** pour prédire la probabilité de retard
+   - Pipline d'apprentissage machine SciKit-Learn: Validation croisée d'algorithmes de Classification/Régression pour prédire la probabilité de retard
    - Exposition du modèle via une **API FastAPI** (service ML)
 
 4. **`4_dashboard/` – Dashboard Dash (interface utilisateur)**
    - Application **Dash (Plotly)** pour interagir avec les vols et lancer des prédictions
    - Sélection d’un vol via une table des futurs vols
    - Visualisation de la prédiction de retard et des métriques du modèle
+  
+5. **`5_gcp_implementation/` – Déploiement sur GCP**
+   - Adaptation du pipeline à l'environnement GCP
 
 > 🔁 L’ensemble est orchestré via Docker Compose (base de données, API, dashboard, ordonnancement des flux de données, etc.).
 
@@ -60,10 +64,11 @@ Les ports exacts peuvent être adaptés dans `docker-compose.yml`, mais l’arch
 | Service | Rôle | URL locale (par défaut) |
 |-----------------------------|----------------------------------------|----------------------------------|
 | **Dashboard Dash** | Interface utilisateur principale | `http://localhost:8050` |
-| **ML API (FastAPI)** | Prédiction de retard | `http://localhost:8001/docs` |
+| **ML API** | Prédiction de retard | `http://localhost:8001` |
 | **MongoDB** | Base NoSQL MongoDB | `localhost:27017` |
-| **MongoDB API** | Exposition des données Mongo | `http://localhost:8000/docs` |
+| **MongoDB API** | Exposition des données Mongo | `http://localhost:8000` |
 | **PostgreSQL** | Base relationnelle principale | `localhost:5432` |
+| **PostgreSQL API** | Base relationnelle principale | `localhost:8004` |
 | **pgAdmin** | UI d’administration PostgreSQL | `http://localhost:5050` |
 
 ---
@@ -92,12 +97,42 @@ Les ports exacts peuvent être adaptés dans `docker-compose.yml`, mais l’arch
      - interroger l’API
      - afficher la prédiction + quelques métriques/modèles
 
-5. **Perspectives d'évolutions**
-   - algorithme  K-means
-   - système d'authentification pour accèder au tableau de bord
-   - intégration du projet à GCP
-   - monitoring via Grafana
+---
 
+
+##  Perspectives d'évolutions du projet
+   - Optimisation du pipeline d'apprentissage machine (algorithme K-means, etc.)
+   - Système d'authentification pour accèder au tableau de bord
+   - Ordonnancement par Airlfow qu sein de GCP
+   - Pipeline CI/CD
+
+---
+
+
+## 🚀 Lancer le projet
+
+> ⚠️ Les commandes exactes et prérequis seront détaillés dans les README de chaque dossier (`1_data_collection/`, `2_database/`, `3_ml/`, `4_dashboard/`).  
+> Ci-dessous, une vision très simplifiée.
+
+```bash
+# 1. Cloner le dépôt
+git clone https://github.com/nicolascalo/DST_DE_Airlines.git
+cd DST_DE_Airlines
+
+# 2a. Lancer l’environnement Docker complet avec initialisation des données
+docker-compose build
+docker-compose up
+
+# OU
+
+# 2b. Lancer l’environnement Docker complet sans initialisation des données
+docker-compose -f docker-compose-mount.yml build
+docker-compose -f docker-compose-mount.yml up
+
+# 3. Accéder au Dashboard
+# => http://localhost:8050
+# API ML (FastAPI)
+```
 ---
 
 ## 👥 Équipe et contributions
@@ -138,29 +173,4 @@ Younes Es-Soualhi, Johan Cloos, Nicolas Calo
 Youssef Znati, Nicolas Calo, Rathana Lat, Johan Cloos, Younes Es-Soualhi
 
 
----
-
-## 🚀 Lancer le projet
-
-> ⚠️ Les commandes exactes et prérequis seront détaillés dans les README de chaque dossier (`1_data_collection/`, `2_database/`, `3_ml/`, `4_dashboard/`).  
-> Ci-dessous, une vision très simplifiée.
-
-```bash
-# 1. Cloner le dépôt
-git clone https://github.com/nicolascalo/DST_DE_Airlines.git
-cd DST_DE_Airlines
-
-# 2a. Lancer l’environnement Docker complet avec initialisation des données
-docker-compose build
-docker-compose up
-
-# OU
-
-# 2b. Lancer l’environnement Docker complet sans initialisation des données
-docker-compose -f docker-compose-mount.yml build
-docker-compose -f docker-compose-mount.yml up
-
-# 3. Accéder au Dashboard
-# => http://localhost:8050
-# API ML (FastAPI)
 
