@@ -247,7 +247,7 @@ def open_compressed_json(path_data_storage:str,json_to_open:str, bucket = bucket
             data = json.load(json_file)
 
     else:
-        with gzip.open(f"{path_data_storage}/" + json_to_open) as json_file:
+        with gzip.open(f"{path_data_storage}/{json_to_open}.gz"  ) as json_file:
             data = json.load(json_file)
     
     return data

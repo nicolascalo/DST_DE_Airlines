@@ -41,9 +41,9 @@ services:
 
   #------------------------------ MONGO DB IMPORT DUMP -------------------
   
-  afklm_mongodb_import:
+  afklm_mongodb_import_dump:
     image: mongo:7.0
-    container_name: afklm_mongodb_import
+    container_name: afklm_mongodb_import_dump
     depends_on:
       afklm_mongodb:
         condition: service_healthy
@@ -105,7 +105,7 @@ services:
     depends_on:
       afklm_mongodb:
         condition: service_healthy
-      afklm_mongodb_import:
+      afklm_mongodb_import_dump:
         condition: service_completed_successfully
 
     healthcheck:
