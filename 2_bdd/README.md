@@ -5,8 +5,8 @@ Conception et alimentation des bases PostgreSQL et MongoDB pour le projet DST Ai
 Cette seconde brique du projet consiste à transformer les données collectées via l’API Air France–KLM en un schéma relationnel structuré, fiable et exploitable pour le Machine Learning et le Dashboard.  
 Elle comporte deux volets complémentaires :
 
+- **MongoDB** : stockage documentaire pour conserver les réponses API brutes (JSON), essentielles pour la traçabilité et l’analyse technique, et pour l'export sous format tabulaire des données jugées pertinentes
 - **PostgreSQL** : stockage principal, structuré, normé et optimisé pour les requêtes analytiques
-- **MongoDB** : stockage documentaire pour conserver les réponses API brutes (JSON), essentielles pour la traçabilité et l’analyse technique
 
 Cette double architecture permet à la fois une exploitation métier robuste et une conservation exacte des données sources.
 
@@ -25,7 +25,7 @@ Cette double architecture permet à la fois une exploitation métier robuste et 
 
 # 🧱 Modèle relationnel
 
-Le modèle SQL repose sur les entités clés retournées par l’API AFKLM :
+Le modèle SQL repose sur les entités clés retournées par l’API AFKLM enrichies par les données géographiques Wikipédia sur les aéoroports internationaux:
 
 | Table | Contenu |
 |-------|----------|
@@ -38,7 +38,7 @@ Le modèle SQL repose sur les entités clés retournées par l’API AFKLM :
 | **Departure_Airport** | Point de départ des vols |
 | **Delay** | Informations de retard (durée, cause) |
 
-Les relations suivent la hiérarchie officielle AFKLM :  
+Les relations suivent la hiérarchie suivante:  
 Continent → Subcontinent → Country → Location → Airport → Flight → Delay.
 
 Ce modèle relationnel a été conçu pour :
@@ -64,12 +64,12 @@ L'ensemble du schéma relationnel (tables, types, contraintes et clés étrangè
 Ces scripts définissent la structure complète de la base ainsi qu'une fonctionnalité cohérente.
 
 ### 3. Insertion des données
-Lecture des CSV issus de la Data Collection et :
+Lecture des CSV exportés depuis MongDB et :
 
 - insertion des tables dans l’ordre des dépendances
 - application des règles de nettoyage
 - vérification des clés étrangères
-- mise à jour des statuts de vol
+- mise à jour des statuts de vol (historiques, futurs ou actualisés à J-1)
 
 ### 4. Génération des vues métiers
 
@@ -85,7 +85,7 @@ Ces vues permettent d’éviter les jointures complexes répétitives, tout en s
 
 # 🗄️ Rôle de MongoDB
 
-PostgreSQL stocke les données **propres**.  
+PostgreSQL stocke les données **propres** en format tabulaire.  
 MongoDB stocke les données **brutes**, **exactement telles que retournées par l’API**.
 
 Avantages :
@@ -108,12 +108,13 @@ Un ensemble de scripts vérifie la qualité :
 
 # ⚙️ Fonctionnement avec Docker
 
-La BDD est entièrement automatisée via Docker Compose :  
-- PostgreSQL s’initialise  
-- Les scripts d’insertion tournent automatiquement  
-- MongoDB charge la structure documentaire  
+L'initialisation de MongoDB et PostreSQL est entièrement automatisée via Docker Compose  et s'effectue au sein de conteneurs Docker:  
+
+- Le conteneur Docker de collecte des données est lancé
+- Les fichiers récupérés sont insérés dans MongoDB, filtrés et exportés sous forme tabulaire consolidée  
+- Ces données tabulaires sont insérées dans PostgreSQL et réparties dans les tables appropriées
 - Le Dashboard se connecte à PostgreSQL directement  
-- Le ML appelle l’API PostgreSQL
+- Le ML appelle l’API PostgreSQL pour obtenir les données de vols futurs
 
 Aucune installation locale n’est requise.
 
@@ -123,7 +124,7 @@ Aucune installation locale n’est requise.
 
 La BDD constitue la **colonne vertébrale** du projet :  
 - Le Dashboard requête directement PostgreSQL  
-- Le modèle ML s’entraîne à partir des vues SQL  
+- Le modèle ML s’entraîne à partir des vues SQL
 - Les analyses statistiques proviennent des tables consolidées  
 - MongoDB sert de sauvegarde brute et d’outil de validation
 

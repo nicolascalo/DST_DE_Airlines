@@ -5,8 +5,8 @@ Acquisition et préparation des données issues de l’API Air France–KLM
 Cette première brique constitue le socle du projet DST Airlines.  
 L’objectif est de collecter, structurer et fiabiliser les données provenant de l’API Air France–KLM (AFKLM), afin d’alimenter un pipeline de base de données, machine learning et Dashboard.
 
-Plusieurs sources externes ont été explorées (OpenMeteo, OpenSky, Lufthansa API, FlightRoute, EDI, GLA), mais abandonnées pour manque de stabilité ou d’intérêt métier.  
-La collecte repose donc entièrement sur l’API AFKLM, seule source offrant un historique riche, cohérent et exploitable gratuitement.
+Plusieurs sources externes ont été explorées (OpenMeteo, OpenSky, Lufthansa API, FlightRoute, EDI, GLA), mais abandonnées pour manque de pertinence ou d’intérêt métier.  
+La collecte des données de vol repose donc sur l’API AFKLM, seule source offrant un historique riche, cohérent et exploitable gratuitement. Des sources additionelles "statiques" (Wikipedia et le GitHub IPLocation) ont été ajoutées pour enrichier le jeu de données d'Air France KLM
 
 ## 🎯 Objectifs
 - Construire un pipeline d’extraction stable et automatisé 
@@ -65,8 +65,8 @@ Malgré cela, une base de données complète et exploitable a pu être construit
 
 ## 🧩 Rôle dans le projet global
 Les données collectées alimentent :  
+- MongoDB (données brutes)  
 - la base PostgreSQL (tables et vues)  
-- MongoDB (data dumps)  
 - les modèles ML (classification & régression)  
 - le dashboard (analyse et prédictions)
 

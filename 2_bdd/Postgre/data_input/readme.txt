@@ -1,0 +1,1 @@
+The files in the data_input.zip.XXX archives have randomized data to comply with the Air France KLM API terms of service. Please just unzip the contents of this split archive to get dummy data and test the pipeline.

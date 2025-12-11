@@ -6,13 +6,18 @@ PATH_DATA = "2_bdd/Postgre/data_input"
 
 def shuffle_cols(folder_path:str):
 
+    csv = os.listdir(PATH_DATA)
+    csv = [file for file in csv if "from_mongo.csv" in file]
 
 
-    for file in  os.listdir(PATH_DATA):
+    for file in  csv:
+
+
 
         print(file)
 
-        data = pd.read_csv(f"{PATH_DATA}/{file}")
+        data = pd.read_csv(f"{PATH_DATA}/{file}",low_memory=False)
+        cols_og = data.columns
 
         col_groups = ['flightNumber',
                       'arrivalInformation_airport',
@@ -31,13 +36,13 @@ def shuffle_cols(folder_path:str):
     
 
     
-    
-    data.apply(
-    lambda row: re.sub("T.*","",(row['flightLegs_departureInformation_times_scheduled'])) .replace("-","")  +"+"   + row['airline_code']+ "+"+ str(row['flightNumber']) ,            axis=1)
-                                                                                 
+        
+        data.apply(
+        lambda row: re.sub("T.*","",(row['flightLegs_departureInformation_times_scheduled'])) .replace("-","")  +"+"   + row['airline_code']+ "+"+ str(row['flightNumber']) ,            axis=1)
+                                                                                    
+        data = data.loc[:, cols_og]
 
-
-    data.to_csv(f"{PATH_DATA}/{file}")
+        data.to_csv(f"{PATH_DATA}/dummy_{file}", index=0)
 
 
 

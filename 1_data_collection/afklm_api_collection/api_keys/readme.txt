@@ -1,0 +1,1 @@
+PLease rename the afklm_api_keys_template.csv file into afklm_api_keys.csv after adding your API keys obtained on https://developer.airfranceklm.com/
