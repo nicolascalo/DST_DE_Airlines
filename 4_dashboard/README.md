@@ -43,32 +43,24 @@ Les informations affichées incluent :
 - **Nom du modèle** (DecisionTree, Logistic Regression, XGBRegressor)
 - **Type de tâche** (classification du statut ou du retard)
 - **Indicateurs clés** :
-  - **Taux de bonnes prédictions (accuracy)**
-  - **Rappel (recall)**
-  - **Score F1**
-- **Taille des jeux de données** utilisés lors de l’entraînement
+  - **Accuracy pour les problèmes de classification**
+  - **r2 pour les problèmes de régression**
+- **Taille des jeux de données** utilisés lors de l’entraînement et du test
 
 L’ensemble est présenté de façon synthétique pour permettre une compréhension rapide, même sans expertise en data science.
 
 ### 3️⃣ Formulaire de prédiction
 Un module interactif permet de saisir les paramètres d’un vol pour obtenir :
-- une prédiction retard oui/non  
-- une catégorie (ON TIME / LATE)
+- une catégorie de vol (ON TIME / LATE / CANCELLED)
+- une estimation du retard de vol le cas échéant
 
 L’utilisateur sélectionne les paramètres, puis déclenche la prédiction via l’API ML.
 
 ---
 
-## 🖼️ Tableau de bord (à intégrer ultérieurement)
+## 🖼️ Tableau de bord
+<img width="2148" height="2070" alt="image" src="https://github.com/user-attachments/assets/d4a74474-0359-40b2-bbef-537dfda0e2cf" />
 
-### Vue générale du Dashboard
-*(image à insérer ici)*
-
-### Formulaire de prédiction
-*(image à insérer ici)*
-
-### Résultat de prédiction
-*(image à insérer ici)*
 
 ---
 
