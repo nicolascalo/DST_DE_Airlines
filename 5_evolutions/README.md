@@ -73,7 +73,7 @@ L’intégration de **Grafana** et **Prometheus** serait idéale pour mettre en 
 
 ---
 
-## 4. ☁️ Intégration complète sur GCP [YOUNES QU'EN PENSES-TU ? HESITES PAS à MODIFIER]
+## 4. ☁️ Intégration complète sur GCP
 
 Une migration partielle vers GCP avait été amorcée (Compute Engine, stockage, etc.).  
 Pour aller plus loin, plusieurs améliorations sont envisageables :
@@ -120,15 +120,6 @@ Pour consulter directement depuis le Dash :
 - Heatmap des retards par aéroport
 
 Ces améliorations visent à rendre le dashboard plus immersif et agréable, tout en respectant un design moderne lié au secteur aérien.
-
----
-
-## 6. 🚀 Autres pistes d’évolution possibles
-
--  [METTEZ VOS IDEES]
--   
-- 
-- 
 
 ---
 
