@@ -116,7 +116,10 @@ L'initialisation de MongoDB et PostreSQL est entièrement automatisée via Docke
 - Le Dashboard se connecte à PostgreSQL directement  
 - Le ML appelle l’API PostgreSQL pour obtenir les données de vols futurs
 
-Aucune installation locale n’est requise.
+## Diagramme de l'architecture des dépendances Docker et du flux de données
+
+<img width="946" height="1362" alt="docker_compose_schema drawio" src="https://github.com/user-attachments/assets/03f9fcf7-0b6e-4cf3-a597-6c22499983ca" />
+
 
 ---
 
@@ -129,6 +132,8 @@ La BDD constitue la **colonne vertébrale** du projet :
 - MongoDB sert de sauvegarde brute et d’outil de validation
 
 Sans une base propre, aucune prédiction cohérente n’est possible.
+
+## Diagramme UML de la base de données POstgrSQL
 
 <img width="1555" height="1543" alt="image" src="https://github.com/user-attachments/assets/427121b6-4772-4d9b-b738-f9eb8d49ace2" />
 
