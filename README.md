@@ -15,7 +15,7 @@ L’objectif est double :
   - AF-KLM publie des informations opérationnelles (statuts, horaires, retards, causes publiques) sur les vols des avions de son réseau partenaire. Ces données sont récupérables via l’API officielle du groupe.
 
 ### Objectifs principaux du projet
-- Etablir un pipeline automatisé complet d'ingéniérie de données permettant de collecter, trier, transformer et stocker les données de vols d'Air France KLM
+- Etablir un pipeline automatisé complet d'ingénierie de données permettant de collecter, trier, transformer et stocker les données de vols d'Air France KLM
 - Utiliser ces données pour entraîner un algorithme d'apprentissage machine afin de prédire **l'occurrence et la durée de retard des vols futurs** (classification et régression) à partir de caractéristiques du vol (ligne, horaires, appareil, statut, etc.).
 
 ### Contraintes du projet
@@ -169,7 +169,7 @@ Youssef Znati, Nicolas Calo, Johan Cloos
 Nicolas Calo, Youssef Znati
 #### Conteneurisation 
 Johan Cloos, Nicolas Calo
-#### Ordonnancment (Docker Compose) 
+#### Ordonnancement (Docker Compose) 
 Nicolas Calo, Johan Cloos
 #### APIs 
 Nicolas Calo, Johan Cloos
