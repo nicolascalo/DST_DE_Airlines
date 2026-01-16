@@ -7,6 +7,8 @@ L’objectif est double :
 - aider à **anticiper les retards** (information passager, opérations)  
 - fournir une **preuve de concept** réutilisable : collecte de données, stockage, modèle de ML, API et tableau de bord interactif
 
+![output](https://github.com/user-attachments/assets/9c32e7d0-db90-4bd0-a44a-c5b45d53beed)
+
 ---
 
 ## 🎯 Contexte & objectifs
