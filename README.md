@@ -59,6 +59,8 @@ Le dépôt est organisé autour de **4 grands blocs fonctionnels** :
 
 ## 🔌 Services & URLs (en local, via Docker)
 
+### Ports d'accès aux services Docker
+
 Les ports exacts peuvent être adaptés dans `docker-compose.yml`, mais l’architecture cible est la suivante :
 
 | Service | Rôle | URL locale (par défaut) |
@@ -70,6 +72,12 @@ Les ports exacts peuvent être adaptés dans `docker-compose.yml`, mais l’arch
 | **PostgreSQL** | Base relationnelle principale | `localhost:5432` |
 | **PostgreSQL API** | Base relationnelle principale | `localhost:8004` |
 | **pgAdmin** | UI d’administration PostgreSQL | `http://localhost:5050` |
+
+
+### Architecture des services Docker
+
+<img width="947" height="1238" alt="image" src="https://github.com/user-attachments/assets/6d2a4c17-f21f-4f1b-8da1-acc165cee3b9" />
+
 
 ---
 
